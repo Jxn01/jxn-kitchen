@@ -45,7 +45,7 @@ kiosk and usable from any phone or PC on the home network. Hungarian and English
 ```mermaid
 flowchart LR
     subgraph Browsers
-        K[Kiosk: Chrome --kiosk<br/>under the Go agent]
+        K[Kiosk: Chrome in kiosk mode<br/>under the Go agent]
         P[Phones and PCs]
     end
     K & P -- HTTPS + SSE --> S[FastAPI app<br/>SQLite · Tesseract]
