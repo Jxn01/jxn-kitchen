@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#FFF4DF" />
     <link rel="icon" href="/favicon.svg" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <!-- the iPhone's home screen (mobile-first pass, 2026-10-26): iOS ignores the SVG icon and screenshots the page instead;
+    <!-- the iPhone's home screen: iOS ignores the SVG icon and screenshots the page instead;
          180 px full-bleed square (iOS rounds the corners itself). Opens standalone through the manifest. -->
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Kitchen" />
@@ -20,8 +20,8 @@
   <body>
     <div id="app"></div>
     <script>
-      /* Boot guard: if the app has not mounted 20 s after this point (its bundle failed — the kiosk's Wi-Fi was not up
-         yet at boot on 2026-10-11 and the screen stayed blank), reload. After three tries, once a minute. */
+      /* Boot guard: if the app has not mounted 20 s after this point (its bundle failed, e.g. the kiosk's Wi-Fi was not up
+         yet at boot), reload. After three tries, once a minute. */
       (function () {
         var tries = 0;
         try { tries = Number(sessionStorage.getItem('kitchen.boot') || 0); } catch (e) {}

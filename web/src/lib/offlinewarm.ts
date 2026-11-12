@@ -1,7 +1,7 @@
-// The kiosk keeps the whole library ready for offline use (owner's list item 5, 2026-11-12).
+// The kiosk keeps the whole library ready for offline use.
 //
-// The service worker only ever caches what a screen asked for, so on Saturday 2026-11-07 — Wi-Fi gone for 11½ h — a
-// recipe nobody had opened since the last deploy had no steps to show. Now the kiosk asks the worker, now and then,
+// The service worker only ever caches what a screen asked for, so after a long outage a
+// recipe nobody had opened since the last deploy would have no steps to show. So the kiosk asks the worker, now and then,
 // to fetch every read a screen can make: the start-up lists, every recipe, sauce and blend, every recipe photo. The
 // worker does the fetching itself (the 'warm' message, public/sw.js) into its deploy-proof data cache; the page only
 // builds the list. Kiosk only: it is the screen on the wall; a phone opens the app through the tailnet anyway.

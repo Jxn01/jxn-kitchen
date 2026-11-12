@@ -162,8 +162,8 @@ def test_oversized_upload_is_refused_without_reading_it_all(c):
 
 
 def test_startup_rematches_old_lines_but_never_hand_corrections(tmp_path):
-    """A line matched under an older catalogue (here: soup noodles -> the GF tile, the review-I6 bug) is re-pointed
-    at start-up, so an old recipe loses a wrong ✓ GF; a line the owner corrected by hand is left alone."""
+    """A line matched under an older catalogue (here: soup noodles -> the GF tile) is re-pointed
+    at start-up, so an old recipe loses a wrong ✓ GF; a line the user corrected by hand is left alone."""
     cfg = Config(data_dir=tmp_path, static_dir=None, ha_url=None, ha_token=None, catalogue_dir=REAL)
     with TestClient(create_app(cfg, shopping_sync_every=None)) as c:
         rid = c.post('/api/recipes', json={'title': 'Leves', 'servings': 4,
@@ -199,8 +199,7 @@ def test_each_line_names_its_pantry_tile(c):
 
 
 def test_a_recipe_without_lines_never_reads_gluten_free(c):
-    # A list page imported as an empty draft read "Gluten-free as it is ✓" in the list and on the page (live,
-    # 2026-10-11). An empty recipe has nothing checked: 'empty', in the summary and in the full recipe.
+    # A list page imported as an empty draft read "Gluten-free as it is ✓" in the list and on the page. An empty recipe has nothing checked: 'empty', in the summary and in the full recipe.
     r = c.post('/api/recipes', json={'title': 'Üres piszkozat', 'ingredients': [], 'steps': []})
     assert r.status_code == 200, r.text
     rid = r.json()['id']
@@ -232,7 +231,7 @@ def _db(tmp_path):
 
 
 def test_a_gluten_item_in_the_note_keeps_the_line_from_reading_ok(c):
-    # Security review 2026-10-11: purpose phrases moved to the note must not take their gluten out of the check.
+    # purpose phrases moved to the note must not take their gluten out of the check.
     rid = c.post('/api/recipes', json={'title': 'Vajas', 'ingredients': ['2 db tojás', '1 ek vaj a kenyérhez'],
                                        'steps': []}).json()['id']
     r = c.get(f'/api/recipes/{rid}?lang=hu').json()
@@ -262,6 +261,6 @@ def test_rematch_never_downgrades_a_gluten_line_on_its_own(c, tmp_path):
     R.rematch_all(db, c.app.state.matcher)
     got = {r['pos']: (r['name'], r['item_id']) for r in db.execute(
         'SELECT pos, name, item_id FROM recipe_ingredient WHERE recipe_id = ?', (rid,))}
-    assert got[0] == ('vaj a tészta kenéséhez', 'wheat-pasta-short')      # contains -> butter: held for the owner
+    assert got[0] == ('vaj a tészta kenéséhez', 'wheat-pasta-short')      # contains -> butter: held for the user
     assert got[1] == ('liszt', 'wheat-flour')                            # free -> contains: applied at once
     assert got[2][1] == 'celery'                                         # unmatched -> matched: applied, as at import

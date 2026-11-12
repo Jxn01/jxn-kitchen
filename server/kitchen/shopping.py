@@ -1,4 +1,4 @@
-"""The shopping list (spec §6.6), mirrored two-way with Home Assistant's to-do list `todo.shopping_list`.
+"""The shopping list, mirrored two-way with Home Assistant's to-do list `todo.shopping_list`.
 
 Local rows carry `pending` for changes HA has not seen yet: 'add' (never sent), 'adding' (a push is awaiting HA),
 'update', 'delete' (a tombstone until HA has removed it). A sync round PULLS first (apply HA's renames, ticks and
@@ -7,9 +7,9 @@ absorbs an add whose response was lost), then PUSHES what is still pending, then
 
 Every local write bumps `rev`. A push only finishes what it started: its writes after an `await` are conditional on
 the row's rev being unchanged, so a tick, rename or delete that lands while HA is answering is never lost, undone or
-resurrected (review I1, 2026-10-10). HA being down just skips the round; everything keeps working locally.
+resurrected. HA being down just skips the round; everything keeps working locally.
 
-Gluten (a fully gluten-free kitchen, spec §7): a GF twin of a wheat product ("Long pasta" for spaghetti) or a `label` item goes
+Gluten: a GF twin of a wheat product ("Long pasta" for spaghetti) or a `label` item goes
 on the shared list WITH the marker ("GM Hosszú tészta") — whoever shops from the phone must not buy the wheat one.
 """
 from __future__ import annotations
@@ -59,7 +59,7 @@ def text_for_item(cat: Catalogue, item_id: str, lang: str) -> str:
 def entry(cat: Catalogue, index: dict[str, str], lang: str, text: str | None,
           item_id: str | None) -> tuple[str, str | None]:
     """(text, item_id) for a new list row. A catalogue item gets its name in the UI language; typed text keeps the
-    owner's words but is linked to the item it names, and marked when it is gluten-sensitive."""
+    user's words but is linked to the item it names, and marked when it is gluten-sensitive."""
     if item_id:
         return text_for_item(cat, item_id, lang), canonical(cat, item_id).id
     text = (text or '').strip()
@@ -174,7 +174,7 @@ class ShoppingSync:
             elif r['pending'] is None:                      # HA's version wins when we have nothing pending
                 done = h.get('status') == 'completed'
                 if h['summary'] != r['text'] or done != bool(r['done']) or done != bool(r['gone']):
-                    # ticked off in HA -> gone here (spec §6.6); unticked there -> back
+                    # ticked off in HA -> gone here; unticked there -> back
                     c.execute('UPDATE shopping_item SET text = ?, ha_text = ?, done = ?, gone = ?, updated_at = ? '
                               'WHERE id = ?', (h['summary'], h['summary'], int(done), int(done), now, r['id']))
                     changed = True

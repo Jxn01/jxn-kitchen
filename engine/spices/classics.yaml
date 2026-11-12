@@ -1,8 +1,8 @@
-# The reference blends (spec 2026-10-19 §4.2) — ONE structured source.
+# The reference blends — ONE structured source.
 #   source: diy   = the know-how's "Make your own" page; seeded into the library once, and tested against that page's text
 #           world = reference only: the know-how's World and Hungarian-kitchen pages, and a few more — for "nearest classic"
 #   parts in level teaspoons (the page's own numbers; optional "(+ …)" extras on the page are left out)
-#   expected: the calibration fixture — the verdict word and EXACTLY the finding ids the engine must report (§9)
+#   expected: the calibration fixture — the verdict word and EXACTLY the finding ids the engine must report
 classics:
   # --- diy: the 16 of "Make your own" --------------------------------------------------------------------------------
   - id: porkolt

@@ -60,7 +60,7 @@
   .screen { height: 100%; display: flex; flex-direction: column; }
   .screen.night { background: #2A2420; }
   /* one row of minmax(0, 1fr): an auto row grew to the panel's full height, so the panel never scrolled and .body cut its
-     buttons off on a short screen (a phone on its side — scripts/clip-audit.py, 2026-11-11) */
+     buttons off on a short screen (a phone on its side; scripts/clip-audit.py) */
   .body { flex: 1; min-height: 0; display: grid; grid-template-columns: auto 1fr; grid-template-rows: minmax(0, 1fr); gap: 16px;
           padding: 12px 18px; overflow: hidden; }
   .stage { display: grid; place-items: center; padding: 40px 20px 0; }
@@ -71,7 +71,7 @@
   .b.on { background: var(--butter); }
   /* minmax(0, 1fr), not 1fr: a 1fr column never shrinks below its widest item (the mascot's stage), so on a phone it
      grew past the screen, the button rows wrapped at that width and .body cut "snore" & co off on the right
-     (scripts/clip-audit.py, 2026-11-11). The stage keeps its drawing centred and clips what does not fit. */
+     (scripts/clip-audit.py). The stage keeps its drawing centred and clips what does not fit. */
   @media (max-aspect-ratio: 1/1) {
     .body { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; overflow-y: auto; }
     .stage { overflow: hidden; }

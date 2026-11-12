@@ -23,7 +23,7 @@ def _site_ids(v: Any) -> bool:
 
 
 def _custom_sites(v: Any) -> bool:
-    """The owner's own Browse sites: up to 8 of {name 1–40 chars, url http(s) ≤ 300 chars}."""
+    """The user's own Browse sites: up to 8 of {name 1–40 chars, url http(s) ≤ 300 chars}."""
     if type(v) is not list or len(v) > 8:
         return False
     for x in v:
@@ -43,7 +43,7 @@ SCHEMA: dict[str, tuple[Any, Callable[[Any], bool]]] = {
     'night_brightness': (20, _int_range(5, 100)),       # backlight % at night (never 0: the display never turns off)
     'day_brightness':   (80, _int_range(5, 100)),
     'browse_sites':     (list(SITE_IDS), _site_ids),    # which built-in sites Browse shows, in this order
-    'browse_custom':    ([], _custom_sites),             # the owner's own sites (GF blogs…)
+    'browse_custom':    ([], _custom_sites),             # the user's own sites (GF blogs…)
 }
 
 

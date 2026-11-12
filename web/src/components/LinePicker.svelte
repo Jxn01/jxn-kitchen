@@ -1,5 +1,5 @@
 <script lang="ts">
-  // "What is this line?" — pick the catalogue item by search, or declare the line gluten-free by hand (spec §7.2).
+  // "What is this line?" — pick the catalogue item by search, or declare the line gluten-free by hand.
   import Icon from './Icon.svelte';
   import { catalogue } from '../lib/pantry';
   import { search, nameOf } from '../lib/search';
@@ -7,7 +7,7 @@
   import { osk } from '../lib/osk';
   let { name, onpick, onok, oncancel }:
     { name: string; onpick: (itemId: string) => void; onok: () => void; oncancel: () => void } = $props();
-  // the search starts from the line's name and is the owner's from then on (the picker is built for one line)
+  // the search starts from the line's name and is the user's from then on (the picker is built for one line)
   // svelte-ignore state_referenced_locally
   let q = $state(name);
   let hits = $derived($catalogue ? search($catalogue, q, 12).filter((h) => h.kind === 'item') : []);

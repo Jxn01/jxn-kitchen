@@ -1,4 +1,4 @@
-"""The spice engine's knowledge (spec 2026-10-19 §4.2): engine/spices/*.yaml, every cell hand-judged.
+"""The spice engine's knowledge: engine/spices/*.yaml, every cell hand-judged.
 
 Loaded and validated at start — like the catalogue and the know-how, the server refuses to start on one bad cell.
 `load()` never raises on bad content: it records what it could not read in `errors`, and `validate()` adds every rule
@@ -412,7 +412,7 @@ def validate(data: SpiceData, cat: Any | None = None, icon_ids: set[str] | None 
     if [w.get('id') for w in meta.get('words') or []] != ['sings', 'good', 'muddled', 'fighting']:
         errors.append('meta.yaml: words must be sings, good, muddled, fighting')
 
-    # --- consistency (spec §9): what the classics prove about the pairs ---------------------------------------------
+    # --- consistency: what the classics prove about the pairs ---------------------------------------------
     together = Counter()
     for c in data.classics:
         for a, b in itertools.combinations(sorted(c.get('parts') or {}), 2):

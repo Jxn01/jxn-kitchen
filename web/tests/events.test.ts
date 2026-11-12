@@ -58,7 +58,7 @@ describe('connectEvents', () => {
   });
 });
 
-describe('watchdog (review: a silently dead stream was never noticed)', () => {
+describe('watchdog: a silently dead stream is noticed', () => {
   beforeEach(() => { vi.useFakeTimers(); FakeES.all = []; });
   afterEach(() => vi.useRealTimers());
   it('reconnects when nothing — not even a ping — arrives for STALE_MS', async () => {

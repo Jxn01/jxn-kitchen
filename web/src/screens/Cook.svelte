@@ -2,7 +2,7 @@
   import { failKey } from '../lib/api';
   import { onMount } from 'svelte';
   import Mascot from '../components/Mascot.svelte';
-  // Cook mode (spec §6.5; for sauces 2026-10-19 §6.3): one step at a time, huge text; ‹ › or a swipe to move;
+  // Cook mode one step at a time, huge text; ‹ › or a swipe to move;
   // durations in a step are buttons that start a labelled timer; the ingredients (GF version, scaled) in a drawer with
   // a checklist and their GF chips; after the last step, "Used up anything?" — a sauce ends on how long it keeps
   // instead (the pantry is not an input to the engines). It cooks a *cookable* (lib/cook): a recipe or a sauce, read
@@ -32,8 +32,8 @@
   let ticked = $state<Set<number>>(new Set());
   let finished = $state(false);
   let usedTaken = $state<Set<string>>(new Set());
-  // a sauce reads its lines' names from the shelves, the rack and the owner's blends: loaded once here (an effect that
-  // loaded the blends whenever the list was empty would reload forever for an owner with none)
+  // a sauce reads its lines' names from the shelves, the rack and the user's blends: loaded once here (an effect that
+  // loaded the blends whenever the list was empty would reload forever for a user with none)
   onMount(() => { if (kind === 'sauce') { if (!$shelves) loadShelves(); if (!$rack) loadRack(); loadBlends(); } });
   $effect(() => {
     if (kind === 'recipe') { api.get(id, servings ?? undefined).then((x) => { r = fromRecipe(x); }).catch(() => { r = null; }); return; }

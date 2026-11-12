@@ -55,7 +55,7 @@ func setBrightness(pct int) error {
 
 // reconnectWifi asks the radio for a fresh scan, drops the association and joins the saved profile again: a fresh
 // 4-way handshake, which is what a link left dead by a missed re-key needs. The scan is for the other mode, a radio
-// whose list of visible networks is empty (2026-11-07: netsh refused every connect without Windows even starting
+// whose list of visible networks is empty (netsh refuses every connect without Windows even starting
 // one); it is best-effort — a scan that cannot run is noted in the error only if the connect fails too. Everything
 // runs on the kiosk user's limited token. The 4 s after the scan is the time drivers are given to finish one; the 3 s after the
 // disconnect lets the adapter settle; the disconnect's failure is ignored (an adapter that is already down).
@@ -91,7 +91,7 @@ func runCapture(exe string, args ...string) (string, error) {
 	return oneLine(string(out)), err
 }
 
-// runShutdown runs shutdown.exe; the kiosk user's limited token keeps SeShutdownPrivilege (proven on the box by
+// runShutdown runs shutdown.exe; the kiosk user's limited token keeps SeShutdownPrivilege (proven by
 // -selftest-reboot, which schedules a reboot and aborts it).
 func runShutdown(args ...string) (string, error) { return runCapture(shutdownExe, args...) }
 

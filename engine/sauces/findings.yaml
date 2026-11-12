@@ -1,4 +1,4 @@
-# The sauce engine's sentences (spec 2026-10-19 §5.2, §5.3): the ledger lines that are not a pair, the stability lines,
+# The sauce engine's sentences: the ledger lines that are not a pair, the stability lines,
 # the keeps card and the fix-it rows. Every one bilingual; the engine fills the placeholders and capitalises the first
 # letter. Weights live in sauce_engine.py (WEIGHTS) and are listed in the README. Placeholders:
 #   {name} {note} a family · {items} a list of ingredients · {suggest} an ingredient that would help · {pct} a whole

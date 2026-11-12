@@ -93,7 +93,7 @@
             font-weight: 900; font-size: 16px; box-shadow: var(--shadow-sm); }
   .screen { height: 100%; display: flex; flex-direction: column; }
   /* minmax(0, 1fr), not 1fr: a grid track never shrinks below its content's min width, so a wide table stretched the whole
-     article past the screen (phone, 2026-10-11) — now the table scrolls inside its own box */
+     article past the screen — now the table scrolls inside its own box */
   .body { flex: 1; min-height: 0; display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 16px; padding: 14px 20px 16px; }
   .rail { min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 8px; }
   .sticker { position: relative; margin-top: auto; align-self: center; width: 160px; height: 130px; flex: none; display: grid; place-items: center; }

@@ -25,7 +25,7 @@ describe('service worker routing', () => {
   });
 });
 
-describe('usable (review I3: a 502 from Caddy used to replace the cached app)', () => {
+describe('usable: a 502 from the proxy never replaces the cached app', () => {
   it.each([[200, true], [404, true], [422, true], [500, false], [502, false], [503, false]])('%i -> %s', (status, want) => {
     expect(usable({ status })).toBe(want);
   });
@@ -57,7 +57,7 @@ describe('the data cache (item 5: a deploy no longer empties the kiosk\'s offlin
   });
 });
 
-describe('the shell a build precaches (2026-11-12: the kiosk\'s build cache held no app code)', () => {
+describe('the shell a build precaches', () => {
   const html = '<link rel="icon" href="/favicon.svg"><link rel="preload" href="/fonts/archivo-latin.woff2" as="font">'
     + '<script type="module" crossorigin src="/assets/index-BNF1_toA.js"></script>'
     + '<link rel="stylesheet" crossorigin href="/assets/index-Cd2Cjz81.css"><link rel="manifest" href="/manifest.webmanifest">'

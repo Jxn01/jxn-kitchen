@@ -1,4 +1,4 @@
-// Offline edits (owner's list item 5, 2026-11-12): recipe edits, settings, folders queue in the outbox; timers keep a
+// Offline edits: recipe edits, settings, folders queue in the outbox; timers keep a
 // local copy and are handed to the server at the next reconnect. Every failing action's toast goes through failKey.
 import { describe, expect, it, vi } from 'vitest';
 import { get } from 'svelte/store';

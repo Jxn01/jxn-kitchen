@@ -1,4 +1,4 @@
-"""The know-how library (spec §6.8): knowhow/<section>.yaml, bilingual from the start. Loaded and validated at start —
+"""The know-how library knowhow/<section>.yaml, bilingual from the start. Loaded and validated at start —
 the server refuses to start on any error, like the catalogue — and served whole as /api/knowhow.
 
 A section: {id, order, icon, color, en: {title, sub}, hu: {title, sub}, pages: [...]}.

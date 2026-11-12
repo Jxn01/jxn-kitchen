@@ -1,4 +1,4 @@
-"""Know-how infographics drawn from data (owner, 2026-10-11: "do more infographics wherever you can").
+"""Know-how infographics drawn from data.
 
 A page may carry `chart: {type, ...}` instead of a hand-made `illustration`. The web app draws each type as an object
 the data fills (web/src/components/illus/Chart.svelte): a measuring jug or a pot that fills to the tapped measure, a

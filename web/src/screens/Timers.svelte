@@ -1,6 +1,6 @@
 <script lang="ts">
   import { failKey } from '../lib/api';
-  // The Cook tile: free kitchen timers (spec §6.5) — big presets, a custom length, an optional label — and every
+  // The Cook tile: free kitchen timers — big presets, a custom length, an optional label — and every
   // timer that runs, with pause/resume, +1 min and cancel. Recipes are cooked from their own page ("Start cooking").
   import PageHeader from '../components/PageHeader.svelte';
   import { timers, tick, left, fmtTime, timerApi } from '../lib/cooktimers';

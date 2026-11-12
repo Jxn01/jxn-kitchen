@@ -4,7 +4,7 @@
   // 120 edge slots, positions fixed): a change of blend only sets attributes, it never creates a node or a line.
   // Lighting a pair or a jar never touches those 120 lines: the base layer only dims (an HTML layer's opacity — the
   // compositor's job) and a small top layer (a pool of 15 lines, the most one jar can have) draws what is lit.
-  // Repainting all 120 lines to dim them cost a 168 ms frame on the kiosk (2026-10-19).
+  // Repainting all 120 lines to dim them cost a 168 ms frame on the kiosk.
   import type { Edge } from '../../lib/spices';
   let { nodes, edges, names, fills, highlight = null, focus = null, size = 300 }:
     { nodes: { id: string; share: number }[]; edges: Edge[]; names: Record<string, string>; fills: Record<string, string>;

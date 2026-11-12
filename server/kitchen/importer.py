@@ -1,4 +1,4 @@
-"""Import a recipe from a URL (spec §6.3).
+"""Import a recipe from a URL.
 
 `recipe-scrapers` reads the page field by field; any field it fails on (a site changed its markup — Mindmegette's
 scraper broke this way) falls back to our own reader of the page's schema.org Recipe JSON-LD, which most recipe
@@ -43,7 +43,7 @@ class FetchFailed(RuntimeError):
 
 # every reason code a draft can carry (the web app has a sentence for each; a test keeps them in step)
 DRAFT_REASONS = ('http_status', 'too_large', 'unreachable', 'redirects', 'private', 'unknown_host', 'no_recipe',
-                 'scraper', 'scan')   # 'scan': a draft read by OCR (sub-project 7)
+                 'scraper', 'scan')   # 'scan': a draft read by OCR
 
 
 def default_resolver(host: str) -> list[str]:

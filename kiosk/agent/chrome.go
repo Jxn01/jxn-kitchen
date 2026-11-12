@@ -58,7 +58,7 @@ type Supervisor struct {
 	MaxProbeFails int
 	// BeforeStart runs before every launch. On the kiosk it ends any Chrome still holding our profile: otherwise
 	// each new chrome.exe hands its window to that one and exits at once, and the supervisor relaunches every
-	// RestartDelay, opening a window each time (review, 2026-10-10).
+	// RestartDelay, opening a window each time.
 	BeforeStart func()
 }
 

@@ -1,4 +1,4 @@
-# Reason codes → bilingual sentences for the sauce matrices (spec 2026-10-19 §4.3, §5.3). Every cell names one.
+# Reason codes → bilingual sentences for the sauce matrices. Every cell names one.
 #   kind   pair (placeholders {a} {b}: two drivers) | food ({s}: a driver, {f}: a food)
 #   sign   + | - | 0 — must match the sign of every score that uses it (a guard)
 # Names go in lower case (the entry's `say` name or the catalogue name); the first letter of a sentence is capitalised.

@@ -38,7 +38,7 @@ func CDPVersion(ctx context.Context, port int) error {
 
 // PageProbe is the watchdog's liveness check: the PAGE must evaluate script. /json/version (CDPVersion) only proves
 // the browser process is alive — an "Aw, Snap!" renderer crash or a hung renderer keeps answering it, so the kiosk
-// would sit on a dead page until the nightly reboot (review I4, 2026-10-10). A crashed page answers with an error, a
+// would sit on a dead page until the nightly reboot. A crashed page answers with an error, a
 // hung one not at all (the caller's context times out); both fail.
 func PageProbe(ctx context.Context, port int) error {
 	pages, err := cdpPages(ctx, port)

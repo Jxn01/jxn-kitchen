@@ -1,6 +1,6 @@
 <script lang="ts">
   import { failKey } from '../lib/api';
-  // The spice engine (spec 2026-10-19 §6.2). Left: the rack — shelf tabs, the jars of a shelf (tap: onto your tray;
+  // The spice engine. Left: the rack — shelf tabs, the jars of a shelf (tap: onto your tray;
   // hold: the jar's know-how note), and your tray (± in half teaspoons; tap a jar to see only its lines; hold it to put
   // it back), with the engine's suggestions at the end of the tray. Right: the live panel — 300 ms after the last tap
   // the engine reads the blend, and an answer older than the newest request is dropped.
@@ -132,7 +132,7 @@
           <span class="th">{$t('edit.blend.tray')} · {tray.length}/{max}</span>
           <div class="cards">
             <!-- a fixed pool of as many cards as a blend holds, filled in order (vacant ones hidden): a jar landing only
-                 fills a card — a card built on every tap was the editor's slowest residue (82–101 ms, SP10) -->
+                 fills a card — a card built on every tap was the editor's slowest residue (82–101 ms) -->
             {#each pool(tray, max) as p, k (k)}
               {@const j = p ? jars.get(p.spice) : undefined}
               <div class="card" class:vacant={!p} class:on={!!p && focus === p.spice}>
@@ -159,7 +159,7 @@
             {/each}
           </div>
           <!-- always there, hidden on an empty tray: a line that came with the first jar grew the tray and shrank the rack
-               above it, and the kiosk laid out and repainted every jar (84–100 ms frames, 2026-10-19) -->
+               above it, and the kiosk laid out and repainted every jar (84–100 ms frames) -->
           <span class="hint" class:blank={!tray.length}>{$t('edit.blend.hold')}</span>
         </div>
       </section>
@@ -197,7 +197,7 @@
   .hbtn.save:disabled { opacity: .5; }
   .hbtn.del.armed { background: var(--tomato); color: var(--ink); }
   /* an explicit row: with an auto row the grid measured both panes' contents whenever either changed — every answer
-     re-laid out the rack and the tray (kiosk trace, 2026-10-19) */
+     re-laid out the rack and the tray */
   .body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 56%) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
   .left { min-height: 0; display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 10px 18px; border-right: var(--outline) dashed #E2D6C4; }
   .right { min-height: 0; padding: 10px 16px 0 14px; display: flex; flex-direction: column; }

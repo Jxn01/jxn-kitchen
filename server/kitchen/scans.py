@@ -1,4 +1,4 @@
-"""Scans -> draft recipes (sub-project 7): the in-app photo upload (`POST /api/scan`) and the scan inbox (the share's
+"""Scans -> draft recipes: the in-app photo upload (`POST /api/scan`) and the scan inbox (the share's
 `scans/` folder, where the scanner UI saves; polled, each file imported once).
 
 OCR runs in a worker thread (it is CPU-heavy); everything that touches SQLite stays on the event loop (the
@@ -100,7 +100,7 @@ class Scanner:
             try:
                 ids = await self.import_bytes(f.read_bytes(), key[0])
             except Exception as e:
-                # ANY failure is recorded too (security review): an unrecorded file would be retried every minute
+                # ANY failure is recorded too: an unrecorded file would be retried every minute
                 # forever and, sorted first, block every scan after it
                 log.warning('scan inbox: skipped %r (%r)', key[0], e)
                 ids = []

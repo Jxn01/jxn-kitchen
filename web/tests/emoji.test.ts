@@ -3,9 +3,8 @@ import { describe, expect, it } from 'vitest';
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
-// The look (owner's brief): OpenMoji icons from our sprite, NEVER emoji glyphs — on the kiosk's Windows a glyph falls
-// back to Segoe UI Emoji and sits there in colour, off-style. Found 2026-10-11: 💡 in the GF tips, ⏱ in the recipe
-// list, ⏲ on unlabelled timer chips. Typographic symbols (✓ ✕ ✎ ⌫ ▶ →) are fine: they render as plain text.
+// The look: OpenMoji icons from our sprite, NEVER emoji glyphs — on the kiosk's Windows a glyph falls
+// back to Segoe UI Emoji and sits there in colour, off-style. Typographic symbols (✓ ✕ ✎ ⌫ ▶ →) are fine: they render as plain text.
 const EMOJI = /[\u{1F000}-\u{1FAFF}\u{FE0F}⌚⌛⏩-⏳⏸-⏺☔☕⚡⭐✅❌✨]/u;
 const stripComments = (s: string) => s.replace(/<!--[\s\S]*?-->/g, '').replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:])\/\/.*$/gm, '$1');
 

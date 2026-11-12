@@ -1,4 +1,4 @@
-// Episodic ambient animation (spec §2/§5): one short "act" at a time, a random 15–40 s rest between acts (doubled
+// Episodic ambient animation: one short "act" at a time, a random 15–40 s rest between acts (doubled
 // at night), nothing scheduled while the page is hidden. Between acts NOTHING animates, which is what keeps the
 // Atom's CPU low 24/7 (measured: ~1 % CPU per continuously animated element).
 export interface Act {

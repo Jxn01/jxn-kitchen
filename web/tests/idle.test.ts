@@ -49,7 +49,7 @@ describe('idle controller', () => {
   });
 });
 
-describe('idle screen without the idle flag (review I2: reload on #/idle, or Back into it, froze the kiosk)', () => {
+describe('idle screen without the idle flag (a reload on #/idle, or Back into it)', () => {
   beforeEach(() => vi.useFakeTimers());
   afterEach(() => vi.useRealTimers());
   it('a touch while the idle screen shows always wakes, even if the controller never went idle', () => {

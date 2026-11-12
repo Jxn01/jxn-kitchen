@@ -16,8 +16,8 @@ else
   npm install --no-audit --no-fund --loglevel=error
   cp package-lock.json "$REPO/web/package-lock.json"     # first run: commit the lockfile it produced
 fi
-# the type check is part of the tests: no error and no warning (it once reported 76 errors in the test files alone, so a
-# real one in src/ went unseen — 2026-10-20)
+# the type check is part of the tests: no error and no warning (errors in the test files alone could hide
+# a real one in src/)
 check() { npx svelte-check --tsconfig ./tsconfig.json --fail-on-warnings --output human-verbose >/dev/null 2>&1 \
             || { npx svelte-check --tsconfig ./tsconfig.json --fail-on-warnings; return 1; }; echo "svelte-check: 0 errors, 0 warnings"; }
 case "${1:-}" in

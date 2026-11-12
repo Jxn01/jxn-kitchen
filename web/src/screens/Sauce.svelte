@@ -1,6 +1,6 @@
 <script lang="ts">
   import { failKey } from '../lib/api';
-  // One sauce (spec 2026-10-19 §6.3): the vessel big; what goes in, with the yield scaler (± 50 ml, the amounts scale)
+  // One sauce: the vessel big; what goes in, with the yield scaler (± 50 ml, the amounts scale)
   // and every line's GF chip; the steps, their durations as timer buttons; Cook it, Riff on it, Edit, Delete; and
   // everything the engine says, read-only, in one scroll.
   import { onMount } from 'svelte';

@@ -18,7 +18,7 @@
   let preview = $state<Awaited<ReturnType<typeof api.parse>>>([]);
   let file = $state<File | null>(null);
   let confirmDelete = $state(false), saving = $state(false);
-  let scanImage = $state<string | null>(null);      // a draft read by OCR: its page beside the form (spec §6.7)
+  let scanImage = $state<string | null>(null);      // a draft read by OCR: its page beside the form
   let draftCode = $derived($importDraft && $importDraft.id === id ? $importDraft.code : null);
 
   $effect(() => {

@@ -47,7 +47,7 @@ export function createPantry(api: PantryApi = restApi, queue: { push: typeof out
       try {
         accept(await api.put(node, have));
       } catch (e) {
-        if (e instanceof OfflineError) {              // server away: keep the tap, send it when it's back (spec §9)
+        if (e instanceof OfflineError) {              // server away: keep the tap, send it when it's back
           queue.push({ kind: 'pantry', node, have });
           return have;
         }

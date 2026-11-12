@@ -1,4 +1,4 @@
-# Reason codes → bilingual sentences (spec 2026-10-19 §4.2, §5.3). Every cell of the pair and food matrices names one.
+# Reason codes → bilingual sentences. Every cell of the pair and food matrices names one.
 #   kind   pair (placeholders {a} {b}: two spices) | food ({s}: a spice, {f}: a food)
 #   sign   + | - | 0 — must match the sign of every score that uses it (a guard)
 # Names go in lower case (the jar's `say` name or the catalogue name); the first letter of a sentence is capitalised.

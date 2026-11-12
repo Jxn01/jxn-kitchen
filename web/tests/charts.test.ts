@@ -41,7 +41,7 @@ describe('every chart in the library renders, in both languages, with every labe
   });
 });
 
-// Re-creating icons on every choice cost the kiosk 370–440 ms a tap (the lábas's floating food, 2026-10-11): an
+// Re-creating icons on every choice cost the kiosk 370–440 ms a tap: an
 // OpenMoji drawing is expensive to build and paint on the Atom. Everything a choice can show must exist from the start
 // and be switched by opacity — so no {#key} block in an infographic may contain an <Icon>.
 import { readdirSync } from 'node:fs';

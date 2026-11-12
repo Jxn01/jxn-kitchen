@@ -40,7 +40,7 @@ describe('filterRecipes', () => {
   it('tag filter', () => expect(filterRecipes(all, { mode: 'all', tag: 'leves' }).map((r) => r.id)).toEqual([3]));
 });
 
-describe('an empty recipe never wears the GF tick (live, 2026-10-11)', () => {
+describe('an empty recipe never wears the GF tick', () => {
   it("'empty' maps to the neutral badge, not the ✓ tone", async () => {
     const { badge } = await import('../src/lib/recipes');
     expect(badge({ state: 'empty', swaps: 0, check: 0, unknown: 0 })).toEqual({ kind: 'empty', tone: 'unknown', n: 0 });

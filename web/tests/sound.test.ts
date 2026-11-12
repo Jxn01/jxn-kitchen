@@ -23,7 +23,7 @@ class FakeCtx {
 vi.stubGlobal('AudioContext', FakeCtx);
 const { sound, RING_EVERY_MS } = await import('../src/lib/sound');
 
-describe('the timer ring is a soft chime, not an alarm (owner, 2026-10-11)', () => {
+describe('the timer ring is a soft chime, not an alarm', () => {
   sound.ring();
   const fundamentals = notes.filter((n, i, all) => all.every((m) => m.start !== n.start || m.freq >= n.freq));
 

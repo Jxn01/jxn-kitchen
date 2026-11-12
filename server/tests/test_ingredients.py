@@ -86,7 +86,7 @@ def test_format_and_scale():
     assert format_qty(0.33333, 'cup', 'en') == '⅓ cup'
 
 
-# --- what an ingredient is FOR goes to the note (celiac hazard, 2026-10-11: "liszt a tejföl behabarásához" matched
+# --- what an ingredient is FOR goes to the note (gluten hazard: "liszt a tejföl behabarásához" matched
 # sour cream because "a tejföl …" stayed in the name)
 @pytest.mark.parametrize('raw,name,note', [
     ('1 ek liszt a tejföl behabarásához', 'liszt', 'a tejföl behabarásához'),

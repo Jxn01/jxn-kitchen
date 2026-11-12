@@ -11,7 +11,7 @@ export function shouldReload(server: string | undefined, client: string, triedFo
 
 export async function checkForUpdate(): Promise<void> {
   try {
-    // raw fetch, any status: /api/health answers 503 (with the build) when stored ids dangle (spec §9) — that must
+    // raw fetch, any status: /api/health answers 503 (with the build) when stored ids dangle — that must
     // neither block updates nor count as "offline"
     const h = (await (await fetch('/api/health', { cache: 'no-store' })).json()) as { build?: string };
     let tried: string | null = null;

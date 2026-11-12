@@ -1,5 +1,5 @@
 <script lang="ts">
-  // The shelf (spec 2026-10-19 §6.2): the owner's blends as jars on wooden planks — each jar the colour of what is in
+  // The shelf: the user's blends as jars on wooden planks — each jar the colour of what is in
   // it, its name on a hand-lettered label, heat pips, the verdict's colour on the lid, a ribbon on the classics. The
   // jars are reused by place (keyed by index): a letter typed in the search changes what they show, it builds none.
   import { onMount } from 'svelte';

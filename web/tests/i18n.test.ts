@@ -51,7 +51,7 @@ describe('plural', () => {
   });
 });
 
-describe('no hard-coded aria-labels (review: "remove", "undo", "keyboard" were English-only)', () => {
+describe('no hard-coded aria-labels', () => {
   it('every aria-label in the markup comes from $t', () => {
     const walk = (d: string): string[] => readdirSync(d).flatMap((f) => statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : [join(d, f)]);
     const bad = walk(join(__dirname, '../src')).filter((f) => f.endsWith('.svelte'))

@@ -1,5 +1,5 @@
 // One import flow for every place a link comes in (Recipes' "From a link", Browse's import box, the phone's
-// #/add share route): import, then the recipe — or, for a draft, the editor with the reason (spec §9).
+// #/add share route): import, then the recipe — or, for a draft, the editor with the reason.
 import { get } from 'svelte/store';
 import { api, importDraft, ImportRefusedError } from './recipes';
 import { go } from './router';

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { BUILT_IN, isWebLink, searchUrl, siteList } from '../src/lib/sites';
 
 describe('browse sites', () => {
-  it('follow the enabled order, then the owner\'s own', () => {
+  it('follow the enabled order, then the custom ones', () => {
     const l = siteList(['receptneked', 'nosalty'], [{ name: 'Mentes', url: 'https://mentes.example/' }]);
     expect(l.map((s) => s.id)).toEqual(['receptneked', 'nosalty', 'custom-0']);
     expect(siteList(['gone'], []).length).toBe(0);

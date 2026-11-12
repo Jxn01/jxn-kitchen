@@ -1,7 +1,7 @@
 <script lang="ts">
   // The family tree: all forty sauce families in their ten groups, the sauce's path lit (a group, its family, a child —
   // mayonnaise → aïoli). On the sauce's page it is a picture of where the sauce sits; in the editor's family sheet each
-  // family is a button (`onpick`) and the owner's choice is marked. Built once: a new answer only moves the lit path.
+  // family is a button (`onpick`) and the user's choice is marked. Built once: a new answer only moves the lit path.
   import { familyTree, type Family } from '../../lib/sauces';
   import type { Lang } from '../../lib/i18n';
   let { families, path = [], lang, onpick = null, chosen = null }:

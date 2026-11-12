@@ -35,7 +35,7 @@ export async function load(): Promise<void> {
 export async function save(patch: Partial<Settings>): Promise<void> {
   settings.update((s) => ({ ...s, ...patch }));                 // optimistic: the screen reacts at once
   if (patch.language) lang.set(patch.language);
-  // offline (2026-11-12): the change is queued (one merged patch) and sent at the next reconnect, before the reload —
+  // offline: the change is queued (one merged patch) and sent at the next reconnect, before the reload —
   // until then a change made offline was overwritten by the server's old settings on reconnect. While writes are
   // waiting it joins the queue, which is drained at once.
   if (get(outbox.pending) > 0) { outbox.push({ kind: 'settings', patch }); void outbox.drain(); return; }

@@ -1,5 +1,5 @@
 // The palette as hex values for code that needs them (contrast, per-category colours). Mirrors tokens.css (tested).
-// Every colour carries INK text at >= 7:1 (owner, 2026-10-11: white text on tiles was hard to read) — tested.
+// Every colour carries INK text at >= 7:1 (white text on tiles was hard to read) — tested.
 export const P = {
   ink: '#1F1A17', cream: '#FFF4DF', tomato: '#FF826E', mustard: '#F2B705', herb: '#62C46A', sky: '#5BB5F0',
   tangerine: '#F28C28', berry: '#F57FB0', teal: '#33C5B5', plum: '#C39BF2', cocoa: '#D6A27C', butter: '#FFD23F',

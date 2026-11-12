@@ -1,4 +1,4 @@
-# The structure findings of the spice engine (spec 2026-10-19 §5.1) — the ledger lines that are not a pair. Every one
+# The structure findings of the spice engine — the ledger lines that are not a pair. Every one
 # bilingual; the engine fills the placeholders and capitalises the first letter. Weights live in spice_engine.py
 # (WEIGHTS) and are listed in the README. Placeholders:
 #   {spice} one jar · {spices} a list of jars · {name} {note} a backbone · {pct} a whole percent · {suggest} up to three

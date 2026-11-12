@@ -1,4 +1,4 @@
-"""Kitchen timers (spec §6.5): server state every screen shares; when one ends HA notifies the phone, once."""
+"""Kitchen timers: server state every screen shares; when one ends HA notifies the phone, once."""
 import pathlib
 from datetime import datetime, timedelta, timezone
 
@@ -43,7 +43,7 @@ def test_create_list_and_count_down(tmp_path):
         assert c.get('/api/timers').json()[0]['remaining'] == 510
         assert c.post('/api/timers', json={'label': 'x', 'seconds': 0}).status_code == 422
         assert c.post('/api/timers', json={'label': 'x' * 61, 'seconds': 5}).status_code == 422
-        # security review: a newline in a label could forge log lines (and lands in the phone notification)
+        # a newline in a label could forge log lines (and lands in the phone notification)
         assert c.post('/api/timers', json={'label': 'ok\nFAKE LOG LINE', 'seconds': 5}).status_code == 422
 
 
@@ -146,8 +146,8 @@ def test_timers_ending_together_make_one_notification(tmp_path):
 
 
 def test_phone_pings_are_capped_so_nobody_can_spam_the_phone(tmp_path):
-    """Security review: no logins (LAN/tailnet by design), so a guest on the Wi-Fi could fire urgent notifications at
-    the owner's phone with short timers. At most 6 pings per 10 minutes; past that the kiosk still rings."""
+    """No logins (LAN/tailnet by design), so a guest on the Wi-Fi could fire urgent notifications at
+    the phone with short timers. At most 6 pings per 10 minutes; past that the kiosk still rings."""
     clock, ha = Clock(), FakeHA()
     with make(tmp_path, ha, clock) as c:
         for i in range(10):

@@ -34,7 +34,7 @@
          style:transform="translateY({-lift}px)"></div>
     {#if chart.items.some((x) => x.icons?.length)}
       <!-- every item's floating icons exist from the start, each set on its own layer; a choice only switches which set is
-           visible. Re-creating them on each tap cost the kiosk 370–440 ms a tap (measured 2026-10-11) -->
+           visible. Re-creating them on each tap cost the kiosk 370–440 ms a tap -->
       <div class="float" style:left="{IN.x}px" style:top="{IN.y + IN.h - 24}px" style:width="{IN.w}px" style:transform="translateY({-lift}px)">
         {#each chart.items as item, k}
           <div class="set" class:on={k === sel}>

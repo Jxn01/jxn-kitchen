@@ -10,7 +10,7 @@ export function budapestHour(d: Date): number {
   return Number(new Intl.DateTimeFormat('en-GB', { hour: '2-digit', hour12: false, timeZone: 'Europe/Budapest' }).format(d)) % 24;
 }
 
-/** Whether the screen shows the DARK palette. Only the idle scene dims (spec §5 "Idle & night"); an awake screen at
+/** Whether the screen shows the DARK palette. Only the idle scene dims; an awake screen at
  *  night keeps the light palette (the agent's lowered backlight does the dimming), or its text would be unreadable. */
 export function darkScene(night: boolean, routeName: string): boolean {
   return night && routeName === 'idle';

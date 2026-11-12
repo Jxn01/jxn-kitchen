@@ -3,7 +3,7 @@
   // on top, then the Why ledger, the harmony web, the goes-with board, timing and heat, the nearest classics and the
   // cuisines. `tabs` (the editor): one section at a time under segment buttons. `scroll` (the blend's page): all of them.
   //
-  // Built ONCE (measured on the kiosk, 2026-10-19): the panel exists before the first jar (`e` null = the empty shape),
+  // Built ONCE: the panel exists before the first jar (`e` null = the empty shape),
   // and every section is mounted when the page opens — a tap never creates a component (creating the panel on the
   // first jar cost a 450 ms frame, mounting a section on its first tab 170–320 ms). Every section follows every
   // evaluation (keyed lists: only what is new is created) — see `held` — so a tab tap only flips opacity. Letting a
@@ -71,7 +71,7 @@
     lastWord = w;
   });
   // episodic life: blinks and glances for 15 s after each new evaluation, then the face rests until the blend changes
-  // (a reading screen left open must cost what a still page costs — measured on the kiosk, 2026-10-19)
+  // (a reading screen left open must cost what a still page costs)
   let alive = $state(true);
   $effect(() => {
     void e;

@@ -1,4 +1,4 @@
-// Spices on the client (spec 2026-10-19 §6.2): types, API calls, the editor's evaluator and tray, and the small pure
+// Spices on the client: types, API calls, the editor's evaluator and tray, and the small pure
 // helpers the screens share (tested in spices.test.ts). The engine itself is on the server — the web composes no
 // sentences: every line it shows arrives in both languages and is only picked by language here.
 import { writable } from 'svelte/store';
@@ -81,7 +81,7 @@ export function jarIndex(r: Rack | null): Map<string, Jar> {
 
 export const pick = (b: Bi | null | undefined, l: Lang): string => (b ? b[l] : '');
 
-/** Parts in level teaspoons, as the owner reads them: 1, 1½, ½, 2½ (anything off the half-steps keeps one decimal). */
+/** Parts in level teaspoons, as the user reads them: 1, 1½, ½, 2½ (anything off the half-steps keeps one decimal). */
 export const fmtParts = (n: number): string => fmtFrac(n);
 
 export const STEP = 0.5, MIN_PARTS = 0.5, MAX_PARTS = 50;
@@ -102,7 +102,7 @@ export function trayDrop(tray: Part[], spice: string): Part[] {
   return tray.filter((p) => p.spice !== spice);
 }
 
-/** Pool sizes, from the engine's limits (3000 random blends, 2026-10-19: at most 14 findings, 3 classics and cuisines,
+/** Pool sizes, from the engine's limits (3000 random blends: at most 14 findings, 3 classics and cuisines,
  *  9 missing and 15 extra jars against a classic, 4 vouchers, 14 jars in one timing lane). */
 export const SLOTS = { findings: 20, classics: 3, cuisines: 3, chips: 6, vouchers: 4, lane: 16, suggest: 3 } as const;
 
@@ -118,7 +118,7 @@ export function batchGrams(parts: Part[], jars: Map<string, Jar>, tbsp: number):
 
 /** An evaluation with nothing in it — the panel's shape before the first jar (no score, no words: nothing is said). It
  *  lets the panel and every section be BUILT ONCE when the page opens; the first jar then only updates them (creating
- *  the panel on the first tap cost the kiosk a 450 ms frame, 2026-10-19). */
+ *  the panel on the first tap cost the kiosk a 450 ms frame). */
 export const EMPTY_EVALUATION: Evaluation = {
   score: 0, base: 50, word: 'muddled', word_text: { en: '', hu: '' }, mascot: 'think', findings: [],
   radar: { warm: 0, earthy: 0, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 0, savoury: 0 },

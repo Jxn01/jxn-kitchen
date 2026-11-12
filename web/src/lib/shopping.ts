@@ -18,7 +18,7 @@ export const restShoppingApi: ShoppingApi = {
   clear: () => postJSON<ShopItem[]>('/api/shopping/clear-done', {}),
 };
 
-// Offline (spec §9): every action stays optimistic and queues its write (lib/outbox.ts). An item added offline gets a
+// Offline: every action stays optimistic and queues its write (lib/outbox.ts). An item added offline gets a
 // NEGATIVE temporary id; its later tick/removal folds into the queued add. After a replay the list is reloaded.
 export function createShopping(api: ShoppingApi = restShoppingApi, queue: { push: typeof outbox.push } = outbox) {
   let nextTmp = -1;

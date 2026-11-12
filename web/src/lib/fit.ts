@@ -1,14 +1,14 @@
 // Svelte action: shrink a one-line label's font until it fits its box (long Hungarian words, e.g. "Konyhatudás",
 // "Bevásárlólista"). Re-runs when the text changes (pass it as the parameter), on resize and once fonts load.
 //
-// 🚨 It must never react to a resize it caused itself. If the observed container is shrink-to-fit, its width follows
+// It must never react to a resize it caused itself. If the observed container is shrink-to-fit, its width follows
 // the text's font size: each fit resizes the container, the observer fires, fit runs again — on the real kiosk a
-// home tile title re-fitted ~330×/s and kept Chrome 60 % busy (2026-10-10). So the observer only re-fits when the
+// home tile title re-fitted ~330×/s and kept Chrome 60 % busy. So the observer only re-fits when the
 // container's width differs from the width it had right after our own last run.
 //
-// 🚨 And it must never leave the text cut off (2026-11-11). Below its floor (55 % of the size, at least 11 px) it used to
+// And it must never leave the text cut off. Below its floor (55 % of the size, at least 11 px) it used to
 // stop and let `overflow: hidden` eat the end of the label — "Pasta, rice & gr", "Sauces & condi" on a phone held
-// sideways, found by scripts/clip-audit.py. Now, when the floor is not enough, a label whose element asks for
+// sideways (scripts/clip-audit.py checks this). Now, when the floor is not enough, a label whose element asks for
 // `text-overflow: ellipsis` keeps it (a deliberate one-line title: the page header, Cook), and every other label WRAPS:
 // the largest size from the top again at which it fits on at most two lines, then smaller still if it must, and a
 // word longer than the box is broken as the last resort. The element carries `data-fit-wrapped` while it does.

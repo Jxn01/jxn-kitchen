@@ -24,7 +24,7 @@ describe('timer display', () => {
   });
 });
 
-describe('offline (2026-11-12: a timer running when the network dropped never rang on the kiosk)', () => {
+describe('offline: a timer running when the network drops still rings', () => {
   const run = (over: Partial<ServerTimer> = {}): ServerTimer =>
     ({ id: 1, label: 'Tészta', seconds: 600, state: 'running', remaining: 300, ends_at: '2026-11-12T02:00:00Z', recipe_id: null, step_pos: null, ...over });
 

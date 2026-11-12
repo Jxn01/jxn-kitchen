@@ -22,7 +22,7 @@
   let picking = $state<Line | null>(null);
   let filing = $state(false);
   // load ONCE (the SSE `recipes` event keeps it fresh): conditioned on the list being empty, every load set a new
-  // empty array, re-ran this, and fetched again as fast as the server answered while no folder existed (2026-11-03)
+  // empty array, re-ran this, and fetched again as fast as the server answered while no folder existed
   $effect(() => { if (!$foldersLoaded) loadFolders(); });
   const st = pantry.state;
 

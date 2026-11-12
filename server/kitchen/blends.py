@@ -1,4 +1,4 @@
-"""The owner's spice blends (spec 2026-10-19 §4.4, §6.2, §8): storage, the seeds, summaries and the blend's GF line.
+"""The user's spice blends: storage, the seeds, summaries and the blend's GF line.
 
 The flavour verdict comes from the spice engine (a pure function of the parts); the gluten line comes from the gluten
 engine (catalogue + pantry), like a recipe's — the two never mix. Seeds: the 16 DIY classics, inserted once (a
@@ -25,7 +25,7 @@ class NotFound(KeyError):
 
 
 class InUse(Exception):
-    """A sauce uses this blend: deleting it would leave the sauce with a hole (spec §4.4)."""
+    """A sauce uses this blend: deleting it would leave the sauce with a hole."""
 
     def __init__(self, sauces: list[dict[str, Any]]):
         super().__init__('used by sauces')
@@ -78,7 +78,7 @@ def save(conn: sqlite3.Connection, data: dict[str, Any], now: datetime, bid: int
 
 
 def users(conn: sqlite3.Connection, bid: int) -> list[dict[str, Any]]:
-    """The sauces that use a blend (none until the sauces exist — SP11 adds the table)."""
+    """The sauces that use a blend (none until the sauces exist yet)."""
     if not conn.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='sauce_ingredient'").fetchone():
         return []
     return [{'id': r['id'], 'name': r['name']} for r in conn.execute(
@@ -97,7 +97,7 @@ def delete(conn: sqlite3.Connection, bid: int) -> None:
 
 
 def names(r: sqlite3.Row, data: SpiceData) -> dict[str, str]:
-    """A seed shows the classic's name in each language while it still has its own (English) name; once the owner
+    """A seed shows the classic's name in each language while it still has its own (English) name; once the user
     renames it, the typed name stands in both."""
     if r['origin'] == 'seed' and r['classic_id']:
         c = next((c for c in data.classics if c['id'] == r['classic_id']), None)
@@ -145,7 +145,7 @@ def method(r: sqlite3.Row, data: SpiceData) -> dict[str, str] | None:
 
 def gluten_line(engine: SpiceEngine, cat: Catalogue, state: dict[str, Any], spice_ids: list[str]) -> dict[str, Any]:
     """The blend's GF state, from the gluten engine: single spices are GF; a `label` jar (asafoetida, chilli powder,
-    mustard powder) reads `check` until it is the owner's own (in the pantry) — then `yours`."""
+    mustard powder) reads `check` until it is the user's own (in the pantry) — then `yours`."""
     per = {s: gluten.check_line(cat, state, s, False).status for s in spice_ids}
     status = max(per.values(), key=lambda s: CAUTION[s]) if per else 'ok'
     f = engine.f

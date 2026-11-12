@@ -1,11 +1,11 @@
 <script lang="ts">
-  // Everything the sauce engine says about a sauce, laid out for reading (spec 2026-10-19 §6.3): the ring, the
+  // Everything the sauce engine says about a sauce, laid out for reading: the ring, the
   // mascot's face and the taste wheel on top, the gluten line, then Why (the ledger), Balance (the seven tastes, salt,
   // heat), Body & stability (the spoon, the dials), Goes with (the 25 foods) and Keeps (the fridge, the fix-it ledger).
   // `tabs` (the editor): one section at a time under segment buttons. `scroll` (a sauce's page): all of them, and the
   // family tree at the end.
   //
-  // Built ONCE, as the spice panel (the SP10 lessons, measured on the kiosk): the panel exists before the first line
+  // Built ONCE, as the spice panel (measured on the kiosk): the panel exists before the first line
   // (`e` null = the empty shape), every section is mounted when the page opens, every list is a fixed pool, and after
   // an answer the sections follow it ONE PER FRAME — the one on screen first.
   import { untrack } from 'svelte';
@@ -160,7 +160,7 @@
   .body { display: flex; flex-direction: column; gap: 18px; }
   .tabs .body { flex: 1; min-height: 0; display: grid; position: relative; }
   .tabs .body > section { grid-area: 1 / 1; min-height: 0; overflow-y: auto; padding-bottom: 12px; will-change: opacity; contain: strict; }
-  /* 0.002, not 0 (a fully transparent layer is never rasterised; its first show paints during the tap) — the SP10 rule */
+  /* 0.002, not 0 (a fully transparent layer is never rasterised; its first show paints during the tap) */
   .tabs .body > section.off { opacity: .002; pointer-events: none; }
   .tabs .body > section.off * { pointer-events: none; }
   .empty { margin: 0; font-weight: 800; font-size: 17px; opacity: .7; text-align: center; padding: 14px; }

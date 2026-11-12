@@ -1,4 +1,4 @@
-"""Blends (spec 2026-10-19 §4.4, §6.2, §8): seeds, the rack, CRUD, riff, the GF line, stored ids, events."""
+"""Blends: seeds, the rack, CRUD, riff, the GF line, stored ids, events."""
 import pathlib
 import sqlite3
 import time
@@ -108,7 +108,7 @@ def test_evaluate_echoes_its_sequence_and_carries_the_gf_line(c):
     assert big['batch']['tsp'] == 18
 
 
-def test_a_label_jar_reads_check_until_it_is_the_owners_own(c):
+def test_a_label_jar_reads_check_until_it_is_in_the_pantry(c):
     """Single spices are GF; mustard powder, chilli powder and asafoetida can hide wheat flour (the know-how says so)."""
     gl = {b['classic_id']: b['gluten'] for b in c.get('/api/blends').json()}
     assert gl['grill-rub']['status'] == 'check' and gl['grill-rub']['about'] == ['mustard-powder']

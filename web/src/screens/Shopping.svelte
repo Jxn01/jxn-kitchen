@@ -39,7 +39,7 @@
     try {
       await shopping.remove(it.id);
       sound.off();
-      // ✕ sits next to the tick: a slip must be one tap to undo (review I7)
+      // ✕ sits next to the tick: a slip must be one tap to undo
       showToast({ text: $t('toast.removed', { name: it.text }), undo: () => { shopping.restore(it).catch(() => {}); } });
     } catch (e) { showToast({ text: $t(failKey(e)), tone: 'warn' }); }
   }

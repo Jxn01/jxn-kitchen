@@ -1,4 +1,4 @@
-// The Atom guards both engines' screens are held to (SP10, measured on the kiosk, 2026-10-19): source checks shared by
+// The Atom guards both engines' screens are held to (measured on the kiosk): source checks shared by
 // spices-ui.test.ts and sauces-ui.test.ts, so a rule tightened for one is tightened for both. Each has a positive control
 // in those files.
 

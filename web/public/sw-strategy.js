@@ -21,9 +21,8 @@ export function isShell(url) {
 }
 
 /** The cache that outlives deploys: every GET /api answer and every recipe photo. The app page and its hashed
- *  assets live in a cache named after the build instead (`kitchen-<build>`), which each new build replaces. Until
- *  2026-11-12 the data lived there too, so every deploy emptied the kiosk's offline copy, and a recipe was there
- *  offline only if it had been opened since. */
+ *  assets live in a cache named after the build instead (`kitchen-<build>`), which each new build replaces. Data
+ *  kept there would be emptied by every deploy, losing the offline copy. */
 export const DATA_CACHE = 'kitchen-data';
 
 /** Which cache a response belongs in: 'data' (DATA_CACHE) for /api/*, 'shell' (the build's) for the rest. */
@@ -48,9 +47,8 @@ export function staleImageKeys(cachedUrls, wantedUrls) {
 }
 
 /** What a build's page needs to start with no network, as its HTML names it: the hashed /assets/* (script and
- *  stylesheet) and the preloaded /fonts/*. The worker precaches these at install (2026-11-12: the kiosk's build cache
- *  held only '/' and the sprite — the bundle had been fetched under the previous worker, whose cache `activate` then
- *  deleted — so a cold start with no network had no app code). */
+ *  stylesheet) and the preloaded /fonts/*. The worker precaches these at install (otherwise a cold start with no
+ *  network has no app code: the bundle may have been fetched under the previous worker, whose cache `activate` deletes). */
 export function shellAssets(html) {
   return [...new Set([...html.matchAll(/(?:src|href)="(\/(?:assets|fonts)\/[^"]+)"/g)].map((m) => m[1]))];
 }
@@ -61,7 +59,7 @@ export function fontUrls(css) {
 }
 
 /** A network answer worth showing instead of the cache. A 5xx (Caddy's 502 while the container restarts) is a
- *  failure: the cached shell/data is better than an error page (spec §9: the kiosk never shows one). A 4xx is a real
+ *  failure: the cached shell/data is better than an error page (the kiosk never shows one). A 4xx is a real
  *  answer (a deleted recipe is gone) and passes through. */
 export function usable(res) {
   return !!res && res.status < 500;

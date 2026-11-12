@@ -1,5 +1,5 @@
-// The six home tiles (spec §6.1, amended 2026-10-19: Shopping and Cook moved to round buttons beside Settings, their
-// places went to Spices and Sauces). Each leads to its section (a tile with no route shows the "being built" card).
+// The six home tiles (Shopping and Cook are round buttons beside Settings; Spices and Sauces took their
+// places). Each leads to its section (a tile with no route shows the "being built" card).
 import { P } from './palette';
 
 export interface HomeTile { id: string; icon: string; color: string; title: string; sub: string; route?: string }

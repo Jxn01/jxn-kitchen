@@ -4,7 +4,7 @@
 
 <script lang="ts">
   // A spice jar, drawn once: glass, a cork lid, the contents in their colour — one mixed colour with a scatter of
-  // grains (the owner's blend on the shelf), or stripes of every part bottom up (the composition). Static svg only:
+  // grains (the user's blend on the shelf), or stripes of every part bottom up (the composition). Static svg only:
   // nothing in it animates (the screens move the HTML wrapper). The hand-lettered label is HTML over the glass, so
   // long names wrap and shrink like text, not like a drawing.
   let { fill = '#CCBFA8', stripes = null, size = 120, label = '', heat = 0, dot = null, ribbon = '', empty = false, level = 1 }:

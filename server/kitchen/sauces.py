@@ -1,14 +1,14 @@
-"""The owner's sauces (spec 2026-10-19 §4.4, §6.3, §7, §8): storage, the seeds, typed lines, the views and the GF lines.
+"""The user's sauces: storage, the seeds, typed lines, the views and the GF lines.
 
 The flavour, body and stability verdict comes from the sauce engine (a pure function of the lines and steps); the
 gluten lines come from the gluten engine (catalogue + pantry), exactly like a recipe's — the two never mix. **Every line's
 gluten state is `gluten.check_line`, and the sauce's is `gluten.verdict`** (a guard test fails if this file decides a
 gluten state any other way): a blend line has no item of its own, so it reads the most cautious `check_line` over the
-blend's jars — never an owner's "OK" — and its tip names the jar. Seeds: the twelve classics, inserted once (a `counter`
+blend's jars — never a user "OK" — and its tip names the jar. Seeds: the twelve classics, inserted once (a `counter`
 row `seeded:sauces` remembers it, so deleting every sauce never brings them back).
 
 A stored line is one of: a sauce-shelf item (`shelf_id`, with its catalogue `item_id`), a rack jar (`spice_id`), one of
-the owner's blends (`blend_id`), a typed line matched to a catalogue item off the shelves (`item_id` + `raw`), or a typed
+the user's blends (`blend_id`), a typed line matched to a catalogue item off the shelves (`item_id` + `raw`), or a typed
 line nothing matched (`raw` only — it counts for nothing and reads `unknown` until matched or marked OK).
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ from .sauce_data import SauceData
 from .sauce_engine import BODY_CLASSES, MAX_LINES, UNIT_ML, SauceEngine, SauceInputError
 
 SEEDED = 'seeded:sauces'
-CAUTION = {'ok': 0, 'yours': 1, 'check': 2, 'unknown': 3, 'swap': 4}     # spec §7: a blend line reads its most cautious jar
+CAUTION = {'ok': 0, 'yours': 1, 'check': 2, 'unknown': 3, 'swap': 4}     # a blend line reads its most cautious jar
 
 
 class NotFound(KeyError):
@@ -121,7 +121,7 @@ def engine_lines(conn: sqlite3.Connection, stored: list[dict[str, Any]] | list[s
 
 def gluten_lines(conn: sqlite3.Connection, eng: SauceEngine, cat: Catalogue, state: dict[str, Any],
                  stored: list[dict[str, Any]] | list[sqlite3.Row], lang: str = 'en') -> dict[str, Any]:
-    """Every line through the gluten engine, and the sauce's verdict (spec §7)."""
+    """Every line through the gluten engine, and the sauce's verdict."""
     lines = []
     for pos, r in enumerate(stored):
         if r['blend_id'] is not None:
@@ -219,7 +219,7 @@ def _tsp(profile: dict[str, Any], qty: float | None, unit: str | None) -> float:
 # --- storage -----------------------------------------------------------------------------------------------------------
 def save(conn: sqlite3.Connection, data: dict[str, Any], stored: list[dict[str, Any]], now: datetime,
          sid: int | None = None, origin: str = 'typed', classic_id: str | None = None) -> int:
-    """Create (sid None) or replace a sauce. `data`: name, notes?, tags?, yield_ml?, family? (the owner's override),
+    """Create (sid None) or replace a sauce. `data`: name, notes?, tags?, yield_ml?, family? (the user's override),
     steps, lang?; `stored`: the lines from check_lines."""
     ts = now.isoformat()
     name = data['name'].strip()
@@ -388,7 +388,7 @@ def get(conn: sqlite3.Connection, eng: SauceEngine, cat: Catalogue, state: dict[
 
 def shelves(eng: SauceEngine, cat: Catalogue) -> dict[str, Any]:
     """GET /api/sauces/shelves: the editor's shelves and their items, and every label the sauce screens show. Static (the
-    owner's blends and the rack jars come from /api/blends and /api/spices, which the web already has)."""
+    user's blends and the rack jars come from /api/blends and /api/spices, which the web already has)."""
     data, meta = eng.data, eng.data.meta
 
     def display(iid: str) -> dict[str, str]:

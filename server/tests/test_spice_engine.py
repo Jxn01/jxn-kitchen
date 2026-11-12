@@ -1,4 +1,4 @@
-"""The spice engine (spec 2026-10-19 §5.1, §9): calibration against the classics, the bad blends, and its properties."""
+"""The spice engine: calibration against the classics, the bad blends, and its properties."""
 import pathlib
 import random
 import unittest

@@ -1,8 +1,8 @@
-"""The sauce engine's knowledge (spec 2026-10-19 §4.3, §9): the loader and the validator, and the guards bite.
+"""The sauce engine's knowledge: the loader and the validator, and the guards bite.
 
 First against a tiny fixture shelf written here (three drivers, two structural items, two foods) — every rule with a
 positive control: a copy broken in exactly one way must fail with a message naming the break. The real knowledge is
-checked by TheRealKnowledge once engine/sauces exists.
+checked by TheRealKnowledge.
 """
 import copy
 import itertools
@@ -292,7 +292,7 @@ class TheRealKnowledge(unittest.TestCase):
         self.assertEqual({i: e['pairs_as'] for i, e in REAL.ingredients.items() if e.get('pairs_as')}, sauce_data.PAIRS_AS)
 
     def test_the_dual_spices_are_the_specs_list(self):
-        """Spec §4.1: sweet, hot and smoked paprika, chilli flakes, cayenne, black and white pepper, mustard powder, salt,
+        """Sweet, hot and smoked paprika, chilli flakes, cayenne, black and white pepper, mustard powder, salt,
         sugar, brown sugar, garlic powder, onion powder — and no other rack jar is a sauce ingredient."""
         self.assertEqual(set(sauce_data.DUALS), set(REAL.ingredients) & set(SPICES.profiles))
 

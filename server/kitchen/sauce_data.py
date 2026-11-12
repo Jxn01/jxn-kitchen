@@ -1,4 +1,4 @@
-"""The sauce engine's knowledge (spec 2026-10-19 §4.3): engine/sauces/*.yaml, every cell hand-judged.
+"""The sauce engine's knowledge: engine/sauces/*.yaml, every cell hand-judged.
 
 Loaded and validated at start — like the spice knowledge, the server refuses to start on one bad cell. `load()` never
 raises on bad content: it records what it could not read in `errors`, and `validate()` adds every rule breach.
@@ -32,10 +32,10 @@ KEEPS = ('raw-egg', 'fresh-dairy', 'fresh', 'oil-infusion', 'cooked', 'acid-pres
 VESSELS = ('jug', 'sauceboat', 'bowl', 'bottle', 'jar')
 CHIPS = ('hungarian', 'roux-dairy', 'emulsions', 'dressings', 'dips-cold', 'marinades', 'asian', 'sweet')
 STEP_CLASSES = ('heat', 'boil', 'simmer-long', 'reduce', 'blend', 'mount', 'marinate', 'chill')
-# the rack jars that are sauce ingredients in their own right (spec §4.1): drivers, with a spice profile too
+# the rack jars that are sauce ingredients in their own right: drivers, with a spice profile too
 DUALS = ('sweet-paprika', 'smoked-paprika', 'hot-paprika', 'chili-flakes', 'cayenne', 'black-pepper', 'white-pepper',
          'mustard-powder', 'salt', 'sugar', 'brown-sugar', 'garlic-powder', 'onion-powder')
-PAIRS_AS = {'greek-yogurt': 'yogurt', 'dijon': 'mustard', 'red-onion': 'onion'}     # the plan's three, and no more
+PAIRS_AS = {'greek-yogurt': 'yogurt', 'dijon': 'mustard', 'red-onion': 'onion'}     # three only
 NO_FOODS = ('salt',)         # salt seasons everything and decides nothing about what a sauce suits: a driver with no food row
 ING_KEYS = {'id', 'item', 'say', 'role', 'driver', 'shelf', 'unit', 'default', 'step', 'alt', 'g_per_ml', 'g_per_pc',
             'per100', 'body', 'stability', 'keeps', 'fill', 'pairs_as', 'offer'}
@@ -274,7 +274,7 @@ def validate(data: SauceData, cat: Any | None = None, spices: Any | None = None,
         pa = e.get('pairs_as')
         if pa is not None:
             if PAIRS_AS.get(iid) != pa:
-                errors.append(f'{w}: pairs_as is reserved for {sorted(PAIRS_AS)} (the plan\'s three)')
+                errors.append(f'{w}: pairs_as is reserved for {sorted(PAIRS_AS)} (three only)')
             t = data.ingredients.get(pa)
             if t is None or t.get('driver') is not True or t.get('pairs_as') or t.get('role') != e.get('role'):
                 errors.append(f'{w}: pairs_as {pa} must be a driver of the same role')

@@ -1,8 +1,7 @@
 """Every file the sprite is built from must be COMMITTED.
 
 `icons/build_sprite.py --fetch` drops each newly named OpenMoji drawing into icons/openmoji/; a commit that names the
-icon in the YAML but forgets the file leaves a fresh clone unable to rebuild the sprite. It happened to the
-classic-blends picker's four (taco, curry, gyros, star) on 2026-10-11 — every other test passed, because the files were
+icon in the YAML but forgets the file leaves a fresh clone unable to rebuild the sprite. Every other test passes in that case, because the files are
 on disk. This one asks git.
 """
 from __future__ import annotations

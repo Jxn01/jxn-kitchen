@@ -63,8 +63,7 @@
   onMount(() => {
     document.addEventListener('visibilitychange', onVis);
   });
-  // `alive` is live: a screen may let the face rest and wake it again (it was read once, at mount, until 2026-10-19 —
-  // switching it off later did nothing). start() is idempotent; stop() clears every pending timer.
+  // `alive` is reactive: a screen may let the face rest and wake it again. start() is idempotent; stop() clears every pending timer.
   $effect(() => { if (alive) brain.start(); else brain.stop(); });
   onDestroy(() => {
     brain.stop();
@@ -325,7 +324,7 @@
   }
   .m.night { --m-ol: #7A6D62; }
   /* only the rig and the squash wrapper hold permanent layers: the breath scales the squash layer, and separately
-     composited children under a scaling parent get re-rasterised at the new scale (measured on the kiosk: 20–60 % CPU
+     composited children under a scaling parent get re-rasterised at the new scale (on the kiosk: 20–60 % CPU
      breathing vs ~1 % still). Parts are promoted by Chrome only while their own animation runs. */
   .p { position: absolute; }
   .rig, .squash { will-change: transform; }
@@ -363,7 +362,7 @@
   .zol { fill: none; stroke: var(--ink); stroke-linecap: round; stroke-linejoin: round; }
   .zline { fill: none; stroke: var(--cream); stroke-linecap: round; stroke-linejoin: round; }
 
-  /* no clipping on the eye: a rounded clip of moving children costs a mask pass per frame on the kiosk's GPU (measured);
+  /* no clipping on the eye: a rounded clip of moving children costs a mask pass per frame on the kiosk's GPU;
      the pupil's travel stays inside the white, and the lid is an ellipse that scales down from the top */
   .ring { pointer-events: none; }
 
@@ -398,10 +397,10 @@
   .e-alarm .pupil { transform: scale(.7); } .e-surprised .pupil { transform: scale(.85); }
   .e-happy .cheek, .e-joy .cheek, .e-proud .cheek { opacity: .85; }
 
-  /* ---- always-on: breathing (measured on the kiosk; see the README) and the idle micro-moves ---- */
+  /* ---- always-on: breathing and the idle micro-moves ---- */
   /* The breath is STEPPED, ~10 fps (eight eased segments, 5 or 7 steps each): it is a sub-pixel motion, and on the
      kiosk any 60 Hz animation costs ~14 % CPU whatever its size (compositor + GPU process + DWM present per frame),
-     while the identical frames between steps are not drawn at all. Measured 2026-10-11: breath + brain 16.7 % smooth
+     while the identical frames between steps are not drawn at all. Measured: breath + brain 16.7 % smooth
      → 7.4–9.3 % stepped; asleep 10.5 % → 4.8 %. */
   .breathe .squash { animation: breathe 4.2s steps(5, jump-end) infinite; }
   .breathe.e-asleep .squash { animation: breathe-deep 5.6s steps(7, jump-end) infinite; }

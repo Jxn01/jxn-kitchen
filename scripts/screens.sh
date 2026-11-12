@@ -8,11 +8,11 @@
 #        SCREENS_TIMERS='Tészta:600;Rizs:1' scripts/screens.sh / /timers  — running timers (and an ended one)
 #        SCREENS_LANGS='en' SCREENS_SIZES='kiosk phone' scripts/screens.sh …   — only these languages / sizes
 #        (sizes: kiosk 720p phone iphone = 393x852 @ DPR 3, an iPhone 15/16; iphone-app = 393x759 @ 3, the same phone
-#         running the home-screen app, whose notch and home bar take 59 + 34 px — what the owner sees; se = 375x667 @ 2,
+#         running the home-screen app, whose notch and home bar take 59 + 34 px — what a user sees; se = 375x667 @ 2,
 #         the smallest iPhone; land = 844x390 @ 3, an iPhone on its side, which gets the two-column kiosk layout)
 #        SCREENS_STILL=1 …   — animations off (prefers-reduced-motion), so two builds can be compared pixel for pixel
 # Output: ~/.cache/jxn-kitchen/screens/<lang>-<size>-<route>.png. LOOK at them — that is the point.
-# The FIRST shot of a run can catch the app mid-load (2026-11-11: a pantry with one tile of twelve); shoot it again, or put
+# The FIRST shot of a run can catch the app mid-load (e.g. a pantry with one tile of twelve); shoot it again, or put
 # a cheap route first, before reading anything into it.
 set -euo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
@@ -20,7 +20,7 @@ CACHE="${KITCHEN_SCRATCH:-$HOME/.cache/jxn-kitchen}"
 OUT="$CACHE/screens"; DATA="$CACHE/screens-data"; PORT="${PORT:-8765}"
 mkdir -p "$OUT" "$DATA"
 # a FRESH browser profile every run: the app's service worker would otherwise serve the previous build's shell (and its
-# assets) from the profile's cache — a screenshot that may not show the current build proves nothing (2026-10-11)
+# assets) from the profile's cache — a screenshot that may not show the current build proves nothing
 rm -rf "$CACHE/chrome-shots"
 ROUTES=("$@"); [ ${#ROUTES[@]} -eq 0 ] && ROUTES=(/ /settings /idle)
 CHROME="$(command -v google-chrome-stable || command -v google-chrome || command -v chromium)"

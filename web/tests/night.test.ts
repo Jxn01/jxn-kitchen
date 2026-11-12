@@ -12,7 +12,7 @@ describe('isNight', () => {
   it('equal means never', () => { for (let h = 0; h < 24; h++) expect(isNight(h, 5, 5)).toBe(false); });
 });
 
-describe('darkScene — night styling is scoped (review C1: the dark palette made every other screen unreadable)', () => {
+describe('darkScene — night styling is scoped to the idle scene', () => {
   it('only the idle scene goes dark at night', () => {
     expect(darkScene(true, 'idle')).toBe(true);
     for (const r of ['home', 'pantry', 'pantry-cat', 'shopping', 'recipes', 'recipe', 'recipe-edit', 'settings', 'cook'])
@@ -23,7 +23,7 @@ describe('darkScene — night styling is scoped (review C1: the dark palette mad
 
 describe('the night palette stays inside the idle scene', () => {
   // Overlays (timer card, toasts, keyboard) sit above the idle scene; with the palette on :root they got dark
-  // backgrounds under dark ink — the timer's Stop button was unreadable at midnight (2026-10-11).
+  // backgrounds under dark ink — the timer's Stop button was unreadable at midnight.
   it('no stylesheet redefines --cream/--paper at document level, and nothing toggles a class on <html> for night', async () => {
     const { readdirSync, readFileSync, statSync } = await import('node:fs');
     const { join } = await import('node:path');

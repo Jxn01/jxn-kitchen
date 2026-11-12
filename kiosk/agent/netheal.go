@@ -17,10 +17,10 @@ import (
 // NetHeal gets a dead network link back without anyone in the kitchen touching the box. Two failure modes are
 // known on the kiosk's Realtek RTL8723BS, and each has its rung:
 //
-//  1. Missed re-key (2026-11-03): the radio missed one of the router's periodic WPA2 re-keys (every 90 min on
+//  1. Missed re-key: the radio missed one of the router's periodic WPA2 re-keys (every 90 min on
 //     the guest network) and sat "connected" with a dead link for 90 minutes. A disconnect + connect redoes the
 //     handshake and gives the link fresh keys — the Reconnect rung, every Cooldown.
-//  2. Deaf radio after a boot (2026-11-07): after the nightly reboot the radio never associated at all, and
+//  2. Deaf radio after a boot: after the nightly reboot the radio never associated at all, and
 //     Windows never even started a connection attempt for 11½ hours; every `netsh wlan connect` failed. Only a
 //     reboot cured it (1 boot in 27 came up like that). The Reboot rung: when the uplink has been dead for
 //     RebootAfter AND the Wi-Fi is not associated, reboot — only while nobody is using the screen, at most once

@@ -68,7 +68,7 @@ export function lineText(l: Line, gfView: boolean): { text: string; struck: stri
   return { text: original, struck: null };
 }
 
-/** The recipe's gluten badge. "unknown" is never green (spec §7: an unmatched line blocks ✓ GF). */
+/** The recipe's gluten badge. "unknown" is never green (an unmatched line blocks ✓ GF). */
 export function badge(v: Verdict): { kind: Verdict['state']; tone: 'ok' | 'swap' | 'warn' | 'unknown'; n: number } {
   switch (v.state) {
     case 'gf': return { kind: 'gf', tone: 'ok', n: 0 };
@@ -89,7 +89,7 @@ export function filterRecipes(list: Summary[], f: { mode: FilterMode; tag?: stri
 
 export class ImportRefusedError extends Error { constructor(public code: string) { super(code); } }
 
-/** A draft import hands its reason to the editor it opens (spec §9: "the editor opens with the reason shown"). */
+/** A draft import hands its reason to the editor it opens (the editor opens with the reason shown). */
 export const importDraft = writable<{ id: number; code: string } | null>(null);
 
 export const recipeList = writable<Summary[]>([]);

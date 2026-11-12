@@ -110,7 +110,7 @@ export interface OverlayConfig { app: string; lang: 'en' | 'hu'; idleMinutes: nu
 
 /** Runs FIRST, in every frame, before any of the page's own scripts: take the agent's config (it carries the
  *  session's secret) and the kitchenSave binding into this closure, and delete both globals — so neither a site's
- *  script nor an ad iframe can read the secret or call the binding (security review, 2026-10-10). */
+ *  script nor an ad iframe can read the secret or call the binding. */
 export function takeSecrets(w: Window & Record<string, any>): { cfg: OverlayConfig; save: ((p: string) => void) | null } {
   const cfg: OverlayConfig = { app: 'https://kitchen.example.com/?kiosk=1', lang: 'hu', idleMinutes: 2, ...(w.__kitchenOverlayConfig ?? {}) };
   const b = w.kitchenSave;
@@ -121,7 +121,7 @@ export function takeSecrets(w: Window & Record<string, any>): { cfg: OverlayConf
 }
 
 /** Some sites (Next.js on Street Kitchen) rebuild their document after load and throw away nodes they don't know —
- *  our bar vanished 3–6 s after every page load there (measured on the kiosk). Watch the document and put the host
+ *  our bar vanished 3–6 s after every page load there. Watch the document and put the host
  *  back whenever it is removed. */
 export function keepAttached(doc: Document, host: Element): MutationObserver {
   const mo = new MutationObserver(() => {

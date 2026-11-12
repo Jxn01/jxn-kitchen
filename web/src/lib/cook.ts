@@ -1,5 +1,5 @@
 // Cook mode's pure parts (tested in cook.test.ts). Cook mode cooks a *cookable*: a recipe or a sauce, each read into
-// the same shape by its adapter below (spec 2026-10-19 §6.5).
+// the same shape by its adapter below.
 import type { Lang } from './i18n';
 import { lineText, type Line, type Recipe } from './recipes';
 import { lineLabel, type GlutenStatus, type Sauce } from './sauces';

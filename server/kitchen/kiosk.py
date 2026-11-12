@@ -16,7 +16,7 @@ class Heartbeat(BaseModel):
     agent: StrictStr
     chrome_ok: StrictBool
     free_mb: StrictInt
-    overlay_ok: StrictBool | None = None   # the Browse overlay is registered (agent ≥ SP5); None = an older agent
+    overlay_ok: StrictBool | None = None   # the Browse overlay is registered (newer agents); None = an older agent
 
 
 class KioskState:

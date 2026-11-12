@@ -5,7 +5,7 @@ import { createEvaluator, fmtParts, ledgerFor, ledgerTotal, pool, stepParts, tra
 const ev = (seq: number, over: Partial<Evaluation> = {}) => ({ seq, score: 60, base: 50, findings: [], ...over }) as unknown as Evaluation;
 
 describe('parts in level teaspoons', () => {
-  it('reads like the owner writes them', () => {
+  it('reads like a cook writes them', () => {
     expect([0.5, 1, 1.5, 2, 4.5, 0.3].map(fmtParts)).toEqual(['½', '1', '1½', '2', '4½', '0.3']);
   });
   it('steps by half a teaspoon, never below ½ nor above 50', () => {

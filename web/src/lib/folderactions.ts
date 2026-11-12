@@ -1,4 +1,4 @@
-// Folder writes that keep working offline (owner's list item 5, 2026-11-12). Each tries the server first; when it is
+// Folder writes that keep working offline. Each tries the server first; when it is
 // away (OfflineError) the change is made to the local lists at once — the same way the server would make it — and
 // queued in the outbox (lib/outbox.ts), which replays it at the next reconnect; App.svelte then reloads the truth.
 // A folder created offline has a temporary negative id until then (the outbox rewrites it in every later op).

@@ -189,7 +189,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
         if cfg.spices:
             spices = spice_data.load(cfg.engine_path / 'spices')
             sp_errors = spice_data.validate(spices, cat)
-            if sp_errors:                              # one bad cell and the server does not start (spec 2026-10-19 §3)
+            if sp_errors:                              # one bad cell and the server does not start 
                 raise RuntimeError(f'invalid spice knowledge ({len(sp_errors)} errors): ' + '; '.join(sp_errors[:10]))
             app.state.spices = spice_engine.SpiceEngine(spices, cat)
             app.state.rack_json = json.dumps(blends.rack(app.state.spices, cat, lib), ensure_ascii=False,
@@ -242,7 +242,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
 
     @app.get('/api/health')
     async def health() -> JSONResponse:
-        # spec §9: a stored id the catalogue no longer has fails LOUDLY — Gatus goes red, deploy.sh reports it —
+        # a stored id the catalogue no longer has fails LOUDLY — Gatus goes red, deploy.sh reports it —
         # while the app keeps serving (such a reference only stops matching; it never invents a match)
         body = {'ok': not app.state.dangling, 'version': __version__, 'build': cfg.build}
         if app.state.dangling:
@@ -571,7 +571,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
         recipe_changed(rid)
         return {'id': rid, 'draft': False}
 
-    # --- spice blends (spec 2026-10-19 §6.2) ---------------------------------------------------------------------
+    # --- spice blends ---------------------------------------------------------------------
     def blend_changed(bid: int) -> None:
         app.state.events.publish('blends', {'id': bid})
 
@@ -653,7 +653,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
         blend_changed(new)
         return {'id': new}
 
-    # --- sauces (spec 2026-10-19 §6.3) -------------------------------------------------------------------------------
+    # --- sauces -------------------------------------------------------------------------------
     def sauce_changed(sid: int) -> None:
         app.state.events.publish('sauces', {'id': sid})
 
@@ -748,7 +748,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
         sauce_changed(new)
         return {'id': new}
 
-    # --- digitising (sub-project 7) ------------------------------------------------------------------------------
+    # --- digitising ------------------------------------------------------------------------------
     @app.post('/api/scan')
     async def post_scan(request: Request) -> dict[str, Any]:
         limit = scans.MAX_BYTES
@@ -769,7 +769,7 @@ def create_app(cfg: Config, *, http: httpx.AsyncClient | None = None,
     async def scans_status() -> dict[str, Any]:
         return app.state.scans.status()
 
-    # --- kitchen timers (spec §6.5) ------------------------------------------------------------------------------
+    # --- kitchen timers ------------------------------------------------------------------------------
     @app.get('/api/timers')
     async def get_timers() -> list[dict[str, Any]]:
         return cooktimers.list_active(app.state.db, now())
@@ -853,8 +853,8 @@ class WebFiles(StaticFiles):
     Vite content-hashes ``/assets/*``: a name there never changes meaning, so it is cached for a year. Everything else
     keeps its name across builds (``/``, ``sw.js``, ``sw-strategy.js``, ``sprite.svg``, fonts, icons) and must
     revalidate every time (``no-cache``; its ETag makes that a 304). Without a ``Cache-Control`` header Chrome guesses
-    a freshness of 10 % of the file's age: on 2026-11-12 the kiosk reused a copy of ``sw-strategy.js`` it held for
-    another ~8 h, the new service worker's import of it failed, and the kiosk stayed on the old worker after a deploy.
+    a freshness of 10 % of the file's age: the kiosk reused a stale copy of ``sw-strategy.js`` for hours, the new service
+    worker's import of it failed, and the kiosk stayed on the old worker after a deploy.
     """
 
     async def get_response(self, path: str, scope):

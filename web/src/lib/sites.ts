@@ -1,4 +1,4 @@
-// Browse's sites: the verified built-in list (sites.json) in the order the settings give, then the owner's own.
+// Browse's sites: the verified built-in list (sites.json) in the order the settings give, then the user's own.
 import data from './sites.json';
 import { P } from './palette';
 

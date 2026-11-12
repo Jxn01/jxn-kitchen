@@ -1,4 +1,4 @@
-# Sauces that fail, and how (spec 2026-10-19 §9, plan SP11 step 6). Each must score under 40 with at least the findings
+# Sauces that fail, and how. Each must score under 40 with at least the findings
 # named here — a sauce engine that praises a split mayonnaise or a botulism risk is broken.
 bad:
   - id: split-mayonnaise

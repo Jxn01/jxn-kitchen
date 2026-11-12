@@ -1,4 +1,4 @@
-"""Spec §9: catalogue ids are stable; a removed id maps through catalogue/replaced.yaml, and a start-up check fails
+"""Catalogue ids are stable; a removed id maps through catalogue/replaced.yaml, and a start-up check fails
 loudly (health 503 + the list) when something stored still points at an id that no longer exists."""
 import pathlib
 import shutil

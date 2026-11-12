@@ -1,4 +1,4 @@
-"""Digitising (sub-project 7): printed recipe -> OCR -> a draft recipe. Pages are rendered here (DejaVu), so the tests
+"""Digitising: printed recipe -> OCR -> a draft recipe. Pages are rendered here (DejaVu), so the tests
 need no fixture images; OCR needs the hun/eng models (scripts/get-tessdata.sh)."""
 import io
 import os
@@ -180,7 +180,7 @@ def test_the_inbox_imports_each_scan_once(tmp_path):
         assert c.get('/api/scans').json()['imported'] == 1
 
 
-# --- security review of the scans commit -----------------------------------------------------------------------
+# --- scan upload hardening -----------------------------------------------------------------------
 def _png_header(w, h):
     import struct
     import zlib

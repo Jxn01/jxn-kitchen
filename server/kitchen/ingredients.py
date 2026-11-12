@@ -1,4 +1,4 @@
-"""Ingredient-line parser (spec §7.5): "50 dkg Finomliszt", "2–3 gerezd fokhagyma", "só, bors ízlés szerint",
+"""Ingredient-line parser: "50 dkg Finomliszt", "2–3 gerezd fokhagyma", "só, bors ízlés szerint",
 "1 (400 g) can chopped tomatoes" -> quantity (+ range), canonical unit, name, note. Hungarian and English.
 
 Units are normalised to a small canonical set (mass to g, volume to ml, spoons to tbsp/tsp, countables as they are);
@@ -84,7 +84,7 @@ def _take_qty(text: str) -> tuple[float | None, float | None, str]:
 
 # What an ingredient is FOR goes to the note: "liszt a tejföl behabarásához", "vaj a forma kikenéséhez", "olaj
 # sütéshez", "flour for dusting". Left in the name, its nouns compete with the ingredient — "a tejföl" made a flour line
-# match sour cream and read OK (celiac hazard, 2026-10-11). Hungarian: a standalone "a/az" followed by a purpose word
+# match sour cream and read OK (a gluten hazard). Hungarian: a standalone "a/az" followed by a purpose word
 # (…hoz/hez/höz or a postposition), or such a word with no article; English: "for …".
 _PURPOSE_WORD = re.compile(r'(hoz|hez)$')   # folded: höz -> hoz
 _POSTPOSITIONS = {'melle', 'ala', 'fole', 'tetejere', 'helyett', 'utan', 'koze', 'koré', 'kore'}

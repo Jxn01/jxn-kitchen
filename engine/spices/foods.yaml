@@ -1,4 +1,4 @@
-# The 25 foods a blend can suit (spec 2026-10-19 §4.2) — the "goes with" board. Every rack jar is scored 0-3 against
+# The 25 foods a blend can suit — the "goes with" board. Every rack jar is scored 0-3 against
 # every one of them (engine/spices/spice_foods/). `say` is the name inside a sentence, in lower case.
 foods:
   - {id: pork, icon: "om:1F416", en: Pork, hu: Sertés, say: {en: pork, hu: sertés}}

@@ -84,7 +84,7 @@
            gap: 20px; min-height: 0; }
 
   /* A short landscape screen (a phone on its side, 390 px tall): the fixed mascot scene, sized for the kiosk's 640 px,
-     sat on top of the language chip and hid the timer, shopping and settings buttons entirely (found 2026-11-11). It
+     sat on top of the language chip and hid the timer, shopping and settings buttons entirely. It
      goes, as it does on a phone held upright, and the page scrolls when the tiles need the room. */
   @media (max-height: 500px) and (min-aspect-ratio: 1/1) {
     .home { overflow-y: auto; }

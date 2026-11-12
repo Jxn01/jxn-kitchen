@@ -17,12 +17,12 @@ import (
 	"time"
 )
 
-// The Browse overlay (spec §8.2): on every page outside the kitchen app, Chrome runs our overlay script (the Home ·
+// The Browse overlay: on every page outside the kitchen app, Chrome runs our overlay script (the Home ·
 // Back · Save bar + keyboard, web/src/overlay → the server's /overlay.js). The agent keeps one long-lived CDP session
 // on the page and, per session: Runtime.enable (binding events), Page.enable (the registered script only runs with
 // it — measured on real Chrome), Runtime.addBinding("kitchenSave"),
 // Page.addScriptToEvaluateOnNewDocument(config + source), and the same evaluated into the page already open.
-// The site's CSP is left alone (security review 2026-10-10: switching it off weakened every site for nothing — none
+// The site's CSP is left alone (switching it off would weaken every site for nothing — none
 // of the built-in sites sends one, and the overlay styles itself through CSSOM).
 //
 // The save channel is ours alone: the config carries a per-session secret; the overlay takes it and the binding into
@@ -221,7 +221,7 @@ func overlaySession(ctx context.Context, cfg Config, st *OverlayStatus, checkEve
 			return nil
 		case <-timerTick.C:
 			// A kitchen timer ended while the kiosk is on a recipe site: bring it back to the app, where the "Time's
-			// up!" card rings (spec §6.5). Done here, not in the overlay, so the timers API needs no CORS.
+			// up!" card rings. Done here, not in the overlay, so the timers API needs no CORS.
 			if anyTimerDone(ctx, cfg) {
 				raw, err := call("Runtime.evaluate", map[string]any{"expression": "location.href", "returnByValue": true})
 				var cur struct {

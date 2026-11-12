@@ -1,4 +1,4 @@
-"""The spice engine's knowledge (spec 2026-10-19 §4.2, §9): complete, consistent, and the guards bite.
+"""The spice engine's knowledge: complete, consistent, and the guards bite.
 
 Every check here has a positive control: a copy of the real data broken in exactly one way must fail with a message
 naming the break — a guard that cannot fail proves nothing.

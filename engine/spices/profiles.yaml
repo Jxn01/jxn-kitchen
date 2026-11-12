@@ -1,4 +1,4 @@
-# One profile per rack jar (spec 2026-10-19 §4.2). Hand-judged, like every number in engine/. Fields:
+# One profile per rack jar. Hand-judged, like every number in engine/. Fields:
 #   id         a catalogue id (catalogue/food/*.yaml) — names, aliases and gluten come from there
 #   say?       the short name on the jar and in sentences (default: the catalogue name, lower case)
 #   shelf      meta.yaml shelves

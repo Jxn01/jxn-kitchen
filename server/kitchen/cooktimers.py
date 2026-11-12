@@ -1,8 +1,8 @@
-"""Kitchen timers (spec §6.5): any number, labelled, kept on the server so the kiosk, the phone and HA see the same
+"""Kitchen timers: any number, labelled, kept on the server so the kiosk, the phone and HA see the same
 ones. A scheduler sleeps until the next end, marks the timer done (the kiosk rings until someone taps it), broadcasts
 SSE `timers`, and asks Home Assistant to notify the phone through `script.notify_owner` — priority `urgent` (iOS
 *time-sensitive*, so it breaks through a Focus such as Sleep; `normal` would arrive silently). The script sends at once;
-the 22:00–08:00 hold belongs to HA's own alert automations, not to the script. HA unreachable: the ring alone (§9).
+the 22:00–08:00 hold belongs to HA's own alert automations, not to the script. HA unreachable: the ring alone.
 
 States: running (ends_at) · paused (remaining) · done (rang; shown until dismissed) · dismissed (gone).
 """
@@ -19,8 +19,8 @@ from .ha import HAClient
 
 log = logging.getLogger(__name__)
 LATE_PING = timedelta(minutes=10)      # a timer found ended longer ago than this (server was down) rings, but no ping
-# Phone pings are capped (security review): the app has no logins (LAN/tailnet by design), so anyone on the home
-# Wi-Fi could otherwise fire urgent notifications at the owner's phone with 1-second timers. Past the cap the kiosk
+# Phone pings are capped: the app has no logins (LAN/tailnet by design), so anyone on the home
+# Wi-Fi could otherwise fire urgent notifications at the phone with 1-second timers. Past the cap the kiosk
 # still rings; only the phone stays quiet.
 PING_LIMIT, PING_WINDOW = 6, timedelta(minutes=10)
 

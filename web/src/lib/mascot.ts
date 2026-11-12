@@ -1,4 +1,4 @@
-// The mascot (spec §5: a cast-iron-pan mascot; owner 2026-10-11: "a REALLY well animated mascot, and use it").
+// The mascot (a cast-iron-pan mascot).
 //
 // Mascot.svelte is a RIG: one absolutely positioned HTML div per moving part (shadow, body, handle, egg, yolk, eyes,
 // pupils, lids, brows, mouths, cheeks, arms in three segments, props, effects), each wrapping a STATIC svg fragment

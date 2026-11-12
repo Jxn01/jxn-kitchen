@@ -1,4 +1,4 @@
-// Sauces on the client (spec 2026-10-19 §6.3): types, API calls, the editor's tray and units, and the small pure
+// Sauces on the client: types, API calls, the editor's tray and units, and the small pure
 // helpers the sauce screens share (tested in sauces.test.ts). The engine is on the server — the web composes no
 // sentences: every line it shows arrives in both languages and is only picked by language here; an amount is a number
 // and the server's label for its unit.
@@ -53,7 +53,7 @@ export interface SauceEvaluation {
 }
 
 /** One line of a sauce as the editor holds it and the server takes it: exactly one of shelf / spice / blend / item / raw.
- *  A typed line keeps its text (`raw`) and how it was matched beside what it became; `ok_gf` is the owner's override. */
+ *  A typed line keeps its text (`raw`) and how it was matched beside what it became; `ok_gf` is the user's override. */
 export interface SauceLine {
   shelf?: string; spice?: string; blend?: number; item?: string; raw?: string;
   qty?: number; unit?: Unit; ok_gf?: boolean; match_how?: MatchHow | null;
@@ -223,7 +223,7 @@ export function lineLabel(v: LineView, l: Lang, units: Labelled[], names: Record
   return `${fmtAmount(q, v.unit, units, l)} ${name}`;
 }
 
-/** The yield the page starts from: the owner's, else the sauce's weight rounded to 50 ml, else 250 ml. */
+/** The yield the page starts from: the user's, else the sauce's weight rounded to 50 ml, else 250 ml. */
 export function baseYield(s: { yield_ml: number | null; evaluation: SauceEvaluation | null }): number {
   if (s.yield_ml) return s.yield_ml;
   if (s.evaluation) return Math.max(50, Math.round(s.evaluation.total_g / 50) * 50);
@@ -262,7 +262,7 @@ export function fromTyped(t: Typed): SauceLine {
   return { raw: t.raw };
 }
 /** A saved sauce's lines back as the tray lines that were sent — nothing the editor sent may be dropped by a round trip
- *  (the owner's GF override above all). Only the fields that are set are carried. */
+ *  (the user's GF override above all). Only the fields that are set are carried. */
 export function fromView(lines: LineView[]): SauceLine[] {
   return lines.map((v) => {
     const l: SauceLine = v.kind === 'shelf' ? { shelf: v.shelf_id!, qty: v.qty!, unit: v.unit! }
@@ -299,16 +299,16 @@ export function sortSauces<S extends Pick<SauceSummary, 'names' | 'updated_at'>>
                                      : (a, b) => a.names[l].localeCompare(b.names[l], l));
 }
 
-/** Pool sizes, from the engine's limits: 4000 random sauces of up to 24 lines (2026-10-20) gave at most 13 findings,
+/** Pool sizes, from the engine's limits: 4000 random sauces of up to 24 lines gave at most 13 findings,
  *  5 stability lines (one per kind), 4 vouchers, 5 suggestions and a family path of 3; the fixes are read off the
  *  engine's list, which names at most all nine (sauce_data.FIXES) — the sweep only ever met 6. */
 export const SAUCE_SLOTS = { findings: 20, stability: 5, fixes: 9, vouchers: 4, suggest: 5, path: 3, lines: 24 } as const;
 
-/** A line's GF chip colour by its gluten state: fine (ok, the owner's own), look at it (check, unknown), swap it. */
+/** A line's GF chip colour by its gluten state: fine (ok, the user's own), look at it (check, unknown), swap it. */
 export const GF_LEVEL: Record<GlutenStatus, 'ok' | 'check' | 'swap'> = { ok: 'ok', yours: 'ok', check: 'check', unknown: 'check', swap: 'swap' };
 
 /** An evaluation with nothing in it — the panel's shape before the first line (no score, no words). It lets the panel
- *  and every section be BUILT ONCE when the page opens (the SP10 lesson: creating the panel on the first tap cost the
+ *  and every section be BUILT ONCE when the page opens (creating the panel on the first tap cost the
  *  kiosk a 450 ms frame). */
 export const EMPTY_SAUCE_EVALUATION: SauceEvaluation = {
   score: 0, base: 50, word: 'muddled', word_text: { en: '', hu: '' }, mascot: 'think', findings: [],

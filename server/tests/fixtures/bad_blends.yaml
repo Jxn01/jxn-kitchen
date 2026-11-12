@@ -1,4 +1,4 @@
-# Blends the spice engine must call bad (spec 2026-10-19 §9): each scores under 40 and reports the named findings.
+# Blends the spice engine must call bad: each scores under 40 and reports the named findings.
 - id: ninety-percent-clove
   parts: {cloves: 9, cinnamon: 1}
   findings: [one-note]

@@ -1,5 +1,5 @@
 <script lang="ts">
-  // The engines' answer, docked at the bottom of a phone (mobile-first pass, 2026-10-26). On a phone the blend and sauce
+  // The engines' answer, docked at the bottom of a phone. On a phone the blend and sauce
   // editors stack: name, shelves, tray, then the live panel far below — the score changed out of sight with every tap.
   // This shows the score and its word all the time and scrolls to the panel on a tap; it hides while the panel itself is
   // on screen. Phones only: `display: none` elsewhere, and the observer is only made where the phone query matches, so

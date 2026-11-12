@@ -14,7 +14,7 @@ _CONDITIONS = {
     'hail': 'hail', 'exceptional': 'exceptional',
 }
 TTL = timedelta(minutes=10)
-MAX_STALE = timedelta(hours=1)    # through a longer HA outage the chip hides rather than show old weather (spec §9)
+MAX_STALE = timedelta(hours=1)    # through a longer HA outage the chip hides rather than show old weather
 
 
 def map_condition(ha_state: str) -> str:

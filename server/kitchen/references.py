@@ -1,4 +1,4 @@
-"""Stored catalogue references (spec §9): rewritten through catalogue/replaced.yaml at start-up, then checked.
+"""Stored catalogue references: rewritten through catalogue/replaced.yaml at start-up, then checked.
 
 Everything that stores a catalogue id: pantry switches (an item id or `group:<group id>`), shopping items' `item_id`,
 recipe lines' `item_id` (lines not corrected by hand are re-matched anyway — recipes.rematch_all) and blend parts'

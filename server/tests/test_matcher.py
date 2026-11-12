@@ -69,7 +69,7 @@ def test_how_is_reported():
     assert M.match('vöröshagma').how == 'fuzzy'
 
 
-# 🚨 Celiac safety guard: the everyday words for wheat products must land on a hidden `contains` item, so a recipe
+# Celiac safety guard: the everyday words for wheat products must land on a hidden `contains` item, so a recipe
 # shows the swap. If a GF tile's plain display name ("Zsemlemorzsa") ever absorbs one of these, this fails.
 
 
@@ -90,7 +90,7 @@ def test_wheat_words_land_on_a_contains_item(word):
     assert M.cat.items[m.item_id].gluten == 'contains', (word, m)
 
 
-# --- review I6: the CLASS guard. A gf-* item is "the GF version of a wheat product": its display name is the generic
+# --- the CLASS guard. A gf-* item is "the GF version of a wheat product": its display name is the generic
 # product name ("Soup noodles", "Zsemle, buci"), and a recipe saying it means the WHEAT product. So every plain part
 # of a gf-* display name must resolve to a `contains` item — or to nothing (unknown fails safe) — never to a GF item.
 import re as _re  # noqa: E402
@@ -116,7 +116,7 @@ def test_plain_name_of_a_gf_version_means_the_wheat_product(gf_id, name):
     assert got is None or _CAT.items[got].gluten == 'contains', f'{name!r} -> {got} (would earn ✓ GF)'
 
 
-def test_gf_guard_bites():   # positive control: the display name that slipped through in the review
+def test_gf_guard_bites():   # positive control: the display name that once slipped through
     import dataclasses
     cat = C.load(REAL)
     soup = cat.items['soup-noodles']
@@ -130,7 +130,7 @@ def test_more_wheat_words(word):
     assert got and _CAT.items[got].gluten == 'contains', (word, got)
 
 
-# --- Task 2 (SP3) guards the review found missing: breadth of the real catalogue, and the owner's own example
+# --- breadth of the real catalogue, and a few everyday examples
 def test_catalogue_breadth():
     visible = [i for i in _CAT.items.values() if i.pantry]
     assert len(visible) >= 450
@@ -144,14 +144,14 @@ def test_sechuan_pepper_is_there(typed):
     assert M.match(typed, None, None).item_id == 'sichuan-pepper'
 
 
-# found unmatched in the first live imports (2026-10-10): Street Kitchen töltött paprika, Nosalty rétes/morzsasüti
+# found unmatched in live imports: Street Kitchen töltött paprika, Nosalty rétes/morzsasüti
 @pytest.mark.parametrize('name,want', [('zellerzöld', 'celery'), ('Mandulapehely kissé összetörve', 'almonds'),
                                        ('Mandulapehely pirított', 'almonds')])
 def test_live_import_gaps(name, want):
     assert M.match(name, None, None).item_id == want
 
 
-# --- stage 4, compounds (live gap 2026-10-11: Street Kitchen's "25 dkg csuszatészta" stayed '?')
+# --- stage 4, compounds ("25 dkg csuszatészta" must not stay '?')
 def test_compound_heads_are_only_gluten_containing_items():
     assert M.compound_heads, 'no compound heads at all'
     assert all(M.cat.items[item].gluten == 'contains' for _, item in M.compound_heads)
@@ -180,7 +180,7 @@ def test_compound_guard_bites():   # positive control: without stage 4 the live 
     assert M.match('csuszatészta').how == 'compound'
 
 
-# --- the gluten safety net in the stem stage (celiac hazard found 2026-10-11): a longer GF word in the same name
+# --- the gluten safety net in the stem stage (gluten hazard): a longer GF word in the same name
 # ("liszt a tejföl behabarásához" -> sour cream) must never outrank a gluten-containing one
 @pytest.mark.parametrize('name', ['liszt a tejföl behabarásához', 'liszt a paradicsom sűrítéséhez', 'liszt a paprika mellé',
                                   'zsemlemorzsa a padlizsán panírozásához', 'tejföl liszttel', 'paradicsom liszt'])

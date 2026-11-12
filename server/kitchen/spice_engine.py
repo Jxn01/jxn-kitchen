@@ -1,8 +1,8 @@
-"""The spice engine (spec 2026-10-19 §5.1): a blend in, its evaluation out — a pure function of the blend.
+"""The spice engine: a blend in, its evaluation out — a pure function of the blend.
 
-No I/O, no pantry, no cookbook (owner's decision D2). Everything it knows is engine/spices/ (spice_data.py), every cell
-of it hand-judged. **The ledger is the score:** score = clamp(50 + Σ finding weights, 0, 100), and every weight is a
-line the owner can read, in English and Hungarian. The web composes no sentences.
+No I/O, no pantry, no cookbook. Everything it knows is engine/spices/ (spice_data.py), every cell of it hand-judged.
+**The ledger is the score:** score = clamp(50 + Σ finding weights, 0, 100), and every weight is a line the user can
+read, in English and Hungarian. The web composes no sentences.
 
 Perceived share: s_i = parts_i × intensity_i / Σ parts × intensity — a teaspoon of cloves is not a teaspoon of parsley.
 Volume share (parts_i / Σ parts) is used where the eye or the scale matters: the jar's colour, salt %, the batch grams.
@@ -19,7 +19,7 @@ from .spice_data import AXES, SpiceData, say, slot_ids
 MAX_SPICES = 16
 MAX_PARTS = 1000.0
 
-# The weights of the structure findings and the pair factor (spec §5.1), tuned until every classic blend reads
+# The weights of the structure findings and the pair factor, tuned until every classic blend reads
 # good/sings with exactly its expected findings and every bad blend reads under 40 (server/tests/test_spice_engine.py).
 WEIGHTS = {
     'pair': 20.0,             # every pair contributes s_a × s_b × score × this (a "random bite" of the blend)…
@@ -63,7 +63,7 @@ class _Text:
 
 def _num(v: Any, lang: str) -> Any:
     """A number as a sentence in `lang` writes it: whole numbers without a decimal part (3, never 3.0), others with the
-    language's decimal mark (0.6 / 0,6 — the béchamel's Hungarian ledger read "kb. 0.6 % só", 2026-10-20)."""
+    language's decimal mark (0.6 / 0,6)."""
     if isinstance(v, float):
         if v.is_integer():
             return int(v)

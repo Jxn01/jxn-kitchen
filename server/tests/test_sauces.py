@@ -1,4 +1,4 @@
-"""Sauces (spec 2026-10-19 §4.4, §6.3, §7, §8): seeds, the shelves, typed lines, CRUD, riff, the gluten lines, events."""
+"""Sauces: seeds, the shelves, typed lines, CRUD, riff, the gluten lines, events."""
 import pathlib
 import re
 import time
@@ -44,7 +44,7 @@ def test_the_twelve_classics_are_seeded_once_in_a_lifetime(tmp_path):
 
 
 def test_every_seed_reads_as_its_classic_and_its_gluten_line_is_honest(c):
-    """The seeds need no swap; mayonnaise, vinaigrette and vadas carry mustard and read `check` until the owner's own GF
+    """The seeds need no swap; mayonnaise, vinaigrette and vadas carry mustard and read `check` until the user's own GF
     mustard is in the pantry (then `gf`, through `yours`) — exactly like a recipe."""
     data = c.app.state.sauces.data
     for cl in data.classics:
@@ -127,8 +127,8 @@ def test_a_typed_line_is_read_like_a_recipe_line(c, text, want):
 
 
 def test_wheat_and_soy_read_swap_tamari_reads_ok_and_unknown_fails_closed(c):
-    """Spec §7, through gluten.check_line: a wheat roux and soy sauce need their swap; tamari is GF; a typed line nothing
-    matched can never read GF until it is matched or the owner marks it."""
+    """Through gluten.check_line: a wheat roux and soy sauce need their swap; tamari is GF; a typed line nothing
+    matched can never read GF until it is matched or the user marks it."""
     lines = [c.post('/api/sauces/line', json={'text': t}).json() for t in
              ('3 ek búzaliszt', '3 ek szójaszósz', '2 ek tamari', 'egy marék titok')]
     lines = [{**ln, 'qty': ln.get('qty'), 'unit': ln.get('unit')} for ln in lines]
@@ -138,17 +138,17 @@ def test_wheat_and_soy_read_swap_tamari_reads_ok_and_unknown_fails_closed(c):
     assert st == ['ok', 'swap', 'swap', 'ok', 'unknown']
     assert g['lines'][2]['swap_id'] == 'tamari'
     assert g['verdict']['state'] == 'unknown'
-    lines[-1]['ok_gf'] = True                                        # the owner looked: it is fine
+    lines[-1]['ok_gf'] = True                                        # the user looked: it is fine
     assert c.post('/api/sauces/evaluate', json={'lines': lines}).json()['gluten']['lines'][-1]['status'] == 'ok'
 
 
-def test_a_blend_line_reads_its_most_cautious_jar_and_never_an_owners_ok(c):
+def test_a_blend_line_reads_its_most_cautious_jar_and_never_a_manual_ok(c):
     gf = c.post('/api/blends', json={'name': 'Plain', 'parts': [{'spice': 'cumin', 'parts': 2}, {'spice': 'coriander-seed', 'parts': 1}]}).json()['id']
     hing = c.post('/api/blends', json={'name': 'Hing mix', 'parts': [{'spice': 'cumin', 'parts': 2}, {'spice': 'asafoetida', 'parts': 0.5}]}).json()['id']
     base = [{'shelf': 'yogurt', 'qty': 200, 'unit': 'g'}]
     ok = c.post('/api/sauces/evaluate', json={'lines': base + [{'blend': gf, 'qty': 1, 'unit': 'tsp'}]}).json()['gluten']['lines'][1]
     assert ok['status'] == 'ok'
-    # positive control for the guard: the owner's "OK" on a blend line holding asafoetida changes nothing
+    # positive control for the guard: the user's "OK" on a blend line holding asafoetida changes nothing
     chk = c.post('/api/sauces/evaluate', json={'lines': base + [{'blend': hing, 'qty': 1, 'unit': 'tsp', 'ok_gf': True}]}).json()
     line = chk['gluten']['lines'][1]
     assert line['status'] == 'check' and line['about'] == ['asafoetida']
@@ -158,7 +158,7 @@ def test_a_blend_line_reads_its_most_cautious_jar_and_never_an_owners_ok(c):
 
 
 def test_the_gluten_state_is_only_ever_the_gluten_engines():
-    """Spec §7 guard: sauces.py and sauce_engine.py never decide a gluten state themselves."""
+    """Guard: sauces.py and sauce_engine.py never decide a gluten state themselves."""
     rules = [re.compile(r'\.gluten\s*(==|!=|in\b)'), re.compile(r"\[['\"]gluten['\"]\]\s*(==|!=)"),
              re.compile(r"status\W{0,4}[:=]\s*['\"](ok|yours|check|swap|unknown)['\"]"), re.compile(r"['\"]contains['\"]")]
 
@@ -186,7 +186,7 @@ def test_crud_family_override_and_riff(c):
 
 
 def test_a_saved_line_gives_back_everything_the_editor_sent(c):
-    """The editor reloads a sauce from its line views: a typed line's text and how it was matched, the owner's GF
+    """The editor reloads a sauce from its line views: a typed line's text and how it was matched, the user's GF
     override and the amounts must all come back, or an edit silently drops them (an override lost = a line that reads
     "check" again; a typed shelf line that lost its text shows only the item)."""
     lines = [{'shelf': 'olive-oil', 'qty': 6, 'unit': 'tbsp', 'raw': '6 tbsp olive oil', 'match_how': 'exact'},

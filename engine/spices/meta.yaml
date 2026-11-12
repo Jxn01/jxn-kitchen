@@ -1,4 +1,4 @@
-# The spice engine's vocabulary of labels (spec 2026-10-19 §4.2). Everything here is shown on screen, so every entry is
+# The spice engine's vocabulary of labels. Everything here is shown on screen, so every entry is
 # bilingual. Order matters: shelves appear in this order in the rack picker, and the pair blocks are named after it.
 shelves:
   - {id: warm, en: "Warm & sweet", hu: "Meleg, édes"}
@@ -43,7 +43,7 @@ timings:
   - {id: during, en: "During cooking", hu: "Főzés közben"}
   - {id: finish, en: "At the end", hu: "A végén"}
 
-# the verdict word by score (spec §5.1: >= 80 sings, >= 60 good, >= 40 muddled, else fighting) and the mascot's face
+# the verdict word by score (>= 80 sings, >= 60 good, >= 40 muddled, else fighting) and the mascot's face
 words:
   - {id: sings, min: 80, mascot: proud, en: Sings, hu: Ragyog}
   - {id: good, min: 60, mascot: happy, en: Good, hu: Jó}

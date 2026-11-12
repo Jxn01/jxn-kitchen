@@ -182,7 +182,7 @@ func TestLogRotatesAtLimitKeepingOneOld(t *testing.T) {
 	}
 }
 
-// --- review I4: the watchdog must see the PAGE, not only the browser process ------------------------------------
+// --- the watchdog must see the PAGE, not only the browser process ------------------------------------
 
 // fakeCDP serves /json/list with one page whose websocket answers Runtime.evaluate the way `answer` says.
 func fakeCDP(t *testing.T, answer string) (port int) {

@@ -1,5 +1,5 @@
-"""The know-how library (spec §6.8): the real content must validate — both languages on every page — and keep the
-sections the spec lists, the celiac chapter included."""
+"""The know-how library: the real content must validate — both languages on every page — and keep the
+required sections, the celiac chapter included."""
 import pathlib
 import re
 
@@ -15,9 +15,8 @@ def test_the_real_library_validates():
 
 
 def test_every_section_the_spec_lists():
-    # the spec's ten, plus the owner's spice blends (2026-10-11), placed right after spices
-    # 2026-10-11: + the owner's know-how expansion (coffee, appliances, storage, eggs, grains, sauces, times, cheese),
-    # ordered for the 5 x 4 home grid
+    # the core sections, the spice blends right after spices, and the expansion (coffee, appliances, storage, eggs,
+    # grains, sauces, times, cheese), ordered for the 5 x 4 home grid
     assert [s['id'] for s in LIB] == ['temperatures', 'times', 'methods', 'appliances', 'knife', 'cuts', 'eggs', 'grains', 'sauces', 'cheese', 'spices', 'blends', 'hungarian',
                                       'baking', 'coffee', 'storage', 'conversions', 'substitutions', 'celiac']
     for s in LIB:
@@ -39,7 +38,7 @@ def test_food_safety_numbers_are_the_standard_ones():
 
 
 def test_may_contain_is_never_a_warning():
-    """§7: 'may contain traces' is a faint note, never a gluten warning. The library says so, in both languages."""
+    """'may contain traces' is a faint note, never a gluten warning. The library says so, in both languages."""
     labels = next(p for p in next(s for s in LIB if s['id'] == 'celiac')['pages'] if p['id'] == 'labels')
     assert 'may contain' in labels['en']['body'].lower() and 'nyomokban' in labels['hu']['body'].lower()
 
@@ -75,7 +74,7 @@ def test_the_web_fixture_is_the_current_library():
 
 
 def test_section_colours_are_exactly_the_web_palette():
-    # the server's list was a hand-copied subset and drifted (rust was missing, 2026-10-11)
+    # the server's list was a hand-copied subset and drifted (rust was missing)
     src = (REPO / 'web/src/lib/palette.ts').read_text()
     block = src[src.index('export const P = {'):src.index('} as const')]
     keys = set(re.findall(r"([a-z]+): '#", block)) - {'ink', 'cream'}

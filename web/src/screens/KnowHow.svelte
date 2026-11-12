@@ -1,6 +1,6 @@
 <script lang="ts">
   import MascotNote from '../components/MascotNote.svelte';
-  // The know-how library (spec §6.8): every section as a tile and a search over every page in both languages.
+  // The know-how library: every section as a tile and a search over every page in both languages.
   import { onMount } from 'svelte';
   import Mascot from '../components/Mascot.svelte';
   import MascotBubble from '../components/MascotBubble.svelte';

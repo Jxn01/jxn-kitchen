@@ -1,4 +1,4 @@
-"""Find durations in recipe step text (spec §6.5) so cook mode can turn them into tappable timer chips.
+"""Find durations in recipe step text so cook mode can turn them into tappable timer chips.
 Hungarian and English; ranges take the upper bound; "1 hour 30 minutes" is one timer."""
 from __future__ import annotations
 

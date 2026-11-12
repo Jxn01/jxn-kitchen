@@ -1,16 +1,16 @@
-"""The sauce engine (spec 2026-10-19 §5.2): a sauce in, its evaluation out — a pure function of the sauce.
+"""The sauce engine a sauce in, its evaluation out — a pure function of the sauce.
 
-No I/O, no pantry, no cookbook (owner's decision D2); gluten is not computed here (sauces.py runs every line through the
+No I/O, no pantry, no cookbook; gluten is not computed here (sauces.py runs every line through the
 gluten engine). Everything it knows is engine/sauces/ (sauce_data.py) plus the spice engine for the spices in a sauce.
 **The ledger is the score:** score = clamp(50 + Σ finding weights, 0, 100); every weight is a line in both languages.
 
 A sauce is a list of lines — {id, qty, unit} a shelf item · {spice, qty, unit} a rack jar · {blend, name, parts, qty,
-unit} one of the owner's blends (the caller resolves its parts) · {item, name, qty?, unit?} a typed line matched to a
+unit} one of the user's blends (the caller resolves its parts) · {item, name, qty?, unit?} a typed line matched to a
 catalogue item that is not on the shelves (gluten only) · {raw} a typed line nothing matched (counts for nothing) —
 and its steps (text, in either language: the engine reads heat, boiling, long simmering, reducing, blending, mounting,
 marinating and chilling from them).
 
-Every spice dimension is counted once (plan SP11 §7): a dual item (paprika, pepper, salt, sugar…) brings its plain
+Every spice dimension is counted once: a dual item (paprika, pepper, salt, sugar…) brings its plain
 tastes through `per100`; the spices — rack jars, blend parts and the duals — are one virtual blend for the spice engine,
 which adds aroma for all of them and heat only for the non-dual ones; its pair lines join at half weight except pairs of
 two drivers (the sauce matrix judges those); the duals' foods come from their driver rows only.
@@ -37,7 +37,7 @@ EMULSION_OK, EMULSION_LIMIT = 1.0, 1.3        # oil ÷ room: up to the know-how'
 PUREE_UNBLENDED = 0.4        # a purée item left in pieces (no blending step) thickens this much of what it would
 MOUNT_SHARE = 0.20           # butter whisked into a pan sauce: from this share of the sauce up
 VINAIGRETTE_FAT = 0.30       # oil and acid without an egg, the oil at least this share of the volume: a vinaigrette
-CURDLE_ACID = 0.30           # spec §5.2: a curdling dairy, the acid axis at least this, and heat
+CURDLE_ACID = 0.30           # a curdling dairy, the acid axis at least this, and heat
 CORN_ACID = 0.40
 KEEP_ACID = 0.40             # acid-preserved lifts fresh things to 14 days from this acid up (no raw egg, no fresh dairy)
 GARLIC_ACID = 0.05           # fresh garlic or herbs in oil under this acid, uncooked: the safety warning

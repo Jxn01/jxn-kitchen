@@ -1,4 +1,4 @@
-"""The ingredient & supplies catalogue: category -> group -> item, bilingual, gluten-flagged (spec §4.1, §7).
+"""The ingredient & supplies catalogue: category -> group -> item, bilingual, gluten-flagged.
 
 The YAML in catalogue/ is the source of truth; it is loaded at start and validated (validate() returns every
 problem; the guard test requires zero). Ids are stable: pantry state and recipe matches key on them.
@@ -168,7 +168,7 @@ def validate(cat: Catalogue, icon_ids: set[str] | None = None) -> list[str]:
     for c in cat.categories:
         if c.kind not in KINDS:
             errors.append(f'bad kind: {c.id}')
-    # Matching keys (spec §7.5): aliases outrank display names. Aliases must be unique; display names must be
+    # Matching keys: aliases outrank display names. Aliases must be unique; display names must be
     # unique; a display name may equal another item's alias only for a wheat -> GF swap pair ("kenyér" in a recipe
     # is the hidden wheat bread, whose swap is the "Kenyér" GF tile).
     alias_owner: dict[str, str] = {}

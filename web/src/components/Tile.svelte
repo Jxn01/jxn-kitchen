@@ -12,9 +12,9 @@
 </button>
 
 <style>
-  /* The tile's content never shrinks to fit its box — neither the plate nor the text (2026-11-11). It used to: in a
+  /* The tile's content never shrinks to fit its box — neither the plate nor the text. In a
      row shorter than the content Chrome squashed the plate's HEIGHT only (an oval), and Safari kept the plate and cut
-     the subtitle off at the bottom (the owner's iPhone, every home tile). Now the box must grow instead (Home's rows
+     the subtitle off at the bottom (iPhone, every home tile). Now the box must grow instead (Home's rows
      are minmax(min-content, 1fr) and the phone layout scrolls), and phones get a smaller plate so it rarely has to.
      scripts/clip-audit.py fails the build when any text is cut off like that again. */
   .tile {

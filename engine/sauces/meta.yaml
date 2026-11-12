@@ -1,4 +1,4 @@
-# The sauce engine's vocabulary of labels (spec 2026-10-19 §4.3). Everything here is shown on screen, so every entry is
+# The sauce engine's vocabulary of labels. Everything here is shown on screen, so every entry is
 # bilingual. Order matters: shelves appear in this order in the sauce editor, and the pair blocks are named after it.
 shelves:
   - {id: fats, en: "Fats & oils", hu: "Zsiradék, olaj"}
@@ -45,7 +45,7 @@ units:
   - {id: g, en: g, hu: g}
   - {id: pcs, en: pcs, hu: db}
 
-# how long a sauce keeps in the fridge: the shortest class among its ingredients (spec §5.2)
+# how long a sauce keeps in the fridge: the shortest class among its ingredients
 keeps:
   - {id: raw-egg, days: 2, en: "Raw egg", hu: "Nyers tojás"}
   - {id: fresh-dairy, days: 3, en: "Fresh dairy", hu: "Friss tejtermék"}
@@ -55,7 +55,7 @@ keeps:
   - {id: acid-preserved, days: 14, en: "Kept by its acid", hu: "A sava tartósítja"}
   - {id: dry-stable, days: 30, en: "Keeps well", hu: "Jól eláll"}
 
-# the sideboard's family filter chips (spec §6.3)
+# the sideboard's family filter chips
 chips:
   - {id: hungarian, en: "Hungarian mártások", hu: "Magyar mártások"}
   - {id: roux-dairy, en: "Roux, pan & dairy", hu: "Rántásos, serpenyős"}

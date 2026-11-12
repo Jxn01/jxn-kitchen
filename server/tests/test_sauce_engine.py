@@ -1,4 +1,4 @@
-"""The sauce engine (spec 2026-10-19 §5.2, §9): the physics, the virtual blend, the typed fallback, the seeds.
+"""The sauce engine: the physics, the virtual blend, the typed fallback, the seeds.
 
 Phase 1 (physics — needs no pair cell): emulsions against the know-how's 250 ml per yolk, curdling, the starches, raw egg,
 garlic in oil, the body classes of the know-how's béchamel, keeps, family detection; and every seed lands in its family,
@@ -228,7 +228,7 @@ def sauce_data_full(axis):
 
 
 class TheSeedsPhysics(unittest.TestCase):
-    """Calibration, phase 1: each seed lands in its family, body class and keeps class (spec §9)."""
+    """Calibration, phase 1: each seed lands in its family, body class and keeps class."""
 
     def test_every_seed(self):
         for c in DATA.classics:
@@ -315,7 +315,7 @@ class TheLedger(unittest.TestCase):
 
 class ThePairs(unittest.TestCase):
     def test_cumin_and_coriander_in_a_sauce_earn_their_line(self):
-        """Spec §9: the spices of a sauce evaluate as one virtual blend; its pair lines join at half weight."""
+        """The spices of a sauce evaluate as one virtual blend; its pair lines join at half weight."""
         e = ENG.evaluate([L('yogurt', 300, 'g'), {'spice': 'cumin', 'qty': 1, 'unit': 'tsp'},
                           {'spice': 'coriander-seed', 'qty': 2, 'unit': 'tsp'}], [])
         self.assertIn('pair:coriander-seed+cumin', ids(e))

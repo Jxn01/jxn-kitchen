@@ -1,8 +1,8 @@
-// Kitchen timers on the client (spec §6.5). The server owns them (every screen and the phone see the same ones);
+// Kitchen timers on the client. The server owns them (every screen and the phone see the same ones);
 // this mirrors its list (load + SSE "timers") and counts down locally from the server's `remaining` at the moment the
 // list arrived — so a device whose clock is off still shows the right time. The 1 s tick only runs while a timer does.
 //
-// 🚨 Offline (2026-11-12): a timer RINGS when its local countdown passes zero, not only when the server says `done` —
+// Offline: a timer RINGS when its local countdown passes zero, not only when the server says `done` —
 // until then a timer running when the network dropped reached 0:00 on the kiosk and stayed silent. Stop silences at
 // once and is remembered (localStorage) until the server has it, replayed at the next reconnect (App.svelte). A list
 // the service worker served from its cache counts down from `ends_at` (its `remaining` is as old as the copy).
@@ -39,7 +39,7 @@ export function fmtTime(s: number): string {
   return h ? `${h}:${pad(m)}:${pad(sec)}` : `${m}:${pad(sec)}`;
 }
 
-// ---- offline timers (2026-11-12) ------------------------------------------------------------------------------------
+// ---- offline timers ------------------------------------------------------------------------------------
 // Starting, pausing, resuming, "+ time" and removing work with the server away: the change is made to a LOCAL copy of
 // the timer (an override, kept in localStorage), which counts down and rings here like any other. A timer started
 // offline has a temporary negative id. At the next reconnect `flushOfflineTimers` hands each override to the server as

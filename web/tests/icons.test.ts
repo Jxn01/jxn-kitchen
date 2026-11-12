@@ -4,7 +4,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // An icon named in code (not in the YAML the sprite builder reads) silently renders as nothing when the sprite lacks
-// it — the fridge's drink carton did (2026-10-11). Every literal icon name in web/src must be a symbol in the sprite;
+// it. Every literal icon name in web/src must be a symbol in the sprite;
 // declare new ones in icons/manifest.yaml.
 const sprite = new Set([...readFileSync(join(__dirname, '../public/sprite.svg'), 'utf8').matchAll(/<symbol id="i-([^"]+)"/g)].map((m) => m[1]));
 const walk = (d: string): string[] => readdirSync(d, { withFileTypes: true }).flatMap((e) =>

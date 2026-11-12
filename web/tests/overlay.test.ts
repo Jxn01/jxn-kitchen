@@ -93,7 +93,7 @@ describe('overlay: never stuck on a site', () => {
 
 import { takeSecrets } from '../src/overlay/core';
 
-describe('overlay: the save channel is ours alone (security review, 2026-10-10)', () => {
+describe('overlay: the save channel is ours alone', () => {
   it('takes the config (with its secret) and the binding, then removes both globals before any site script runs', () => {
     const calls: string[] = [];
     const w: any = { __kitchenOverlayConfig: { app: 'https://kitchen.example.com/?kiosk=1', lang: 'hu', idleMinutes: 2, nonce: 's3cret' },
@@ -114,7 +114,7 @@ describe('overlay: the save channel is ours alone (security review, 2026-10-10)'
 
 import { keepAttached } from '../src/overlay/core';
 
-describe('overlay: survives the site rebuilding its document (found live on Street Kitchen, 2026-10-10)', () => {
+describe('overlay: survives the site rebuilding its document', () => {
   it('puts its host back whenever the page removes it', async () => {
     const host = document.createElement('kitchen-overlay');
     document.documentElement.appendChild(host);

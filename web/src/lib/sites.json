@@ -1,5 +1,5 @@
 {
-  "_comment": "Browse's built-in recipe sites (spec §6.3). Every url and search template was verified by loading it in a real browser on 2026-10-10 (Mindmegette's search takes no URL query, so it opens the home page). The server validates the ids (settings browse_sites).",
+  "_comment": "Browse's built-in recipe sites. Every url and search template was verified by loading it in a real browser (Mindmegette's search takes no URL query, so it opens the home page). The server validates the ids (settings browse_sites).",
   "sites": [
     {
       "id": "nosalty",

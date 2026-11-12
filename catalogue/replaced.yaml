@@ -1,4 +1,4 @@
-# Removed or renamed catalogue ids -> the id that replaces them (spec §9). Ids are stable, so this stays short.
+# Removed or renamed catalogue ids -> the id that replaces them. Ids are stable, so this stays short.
 # At start-up the server rewrites everything stored (pantry switches, shopping items, hand-corrected recipe lines)
 # through this map; anything still pointing at a missing id turns /api/health red (503 + the list).
 # Rules (validated): the target must exist (chains are followed); a removed id must not exist any more.

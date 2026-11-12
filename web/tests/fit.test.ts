@@ -3,7 +3,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { fit } from '../src/lib/fit';
 
-// Found on the real kiosk 2026-10-10: a Hungarian home tile title re-fitted ~330×/s (Chrome busy 60 %). Its
+// On the real kiosk a Hungarian home tile title re-fitted ~330×/s (Chrome busy 60 %). Its
 // container was shrink-to-fit, so its width depended on the title's own font size: every fit() resized the
 // container, the ResizeObserver fired, fit() ran again… This models such a container and counts the font writes.
 describe('fit never feeds back on its own resizes', () => {
@@ -93,7 +93,7 @@ describe('fit re-fits when a web font arrives', () => {
   });
 });
 
-// Found by scripts/clip-audit.py, 2026-11-11: on a phone held sideways the pantry's category names ("Pasta, rice &
+// On a phone held sideways (scripts/clip-audit.py) the pantry's category names ("Pasta, rice &
 // grains") did not fit even at fit's floor, and fit stopped there, leaving overflow: hidden to cut the end off.
 describe('fit never leaves a label cut off', () => {
   // layout model: 10 px of text width per font px; the box is `box` px wide; with white-space normal the text

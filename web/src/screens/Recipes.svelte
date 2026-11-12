@@ -66,7 +66,7 @@
     if (await importLink(link)) { link = ''; importing = false; }
     busy = false;
   }
-  // What can I cook (spec §6.3): ranked by the share in stock, GF-ready first — the server's order
+  // What can I cook: ranked by the share in stock, GF-ready first — the server's order
   $effect(() => { if (mode === 'cook') api.cookable().then((x) => (cookable = x)).catch(() => {}); void $recipeList; });
 
   // --- folders: name, move, delete; select recipes and move them ---------------------------------------------

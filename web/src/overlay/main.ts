@@ -40,7 +40,7 @@ function start() {
     const host = document.createElement('kitchen-overlay');
     host.setAttribute('style', 'all: initial; position: fixed; top: 0; left: 0; width: 0; height: 0; z-index: 2147483647;');
     const root = host.attachShadow({ mode: 'closed' });
-    // The agent does NOT switch the site's CSP off (security review): styles go in as a constructable sheet (CSSOM,
+    // The agent does NOT switch the site's CSP off: styles go in as a constructable sheet (CSSOM,
     // not governed by style-src), markup through a Trusted Types policy where the browser enforces them.
     let styled = false;
     try {

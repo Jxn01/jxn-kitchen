@@ -1,5 +1,5 @@
 <script lang="ts">
-  // Browse (spec §6.3): recipe-site shortcuts + a search box. On the kiosk a tap takes Chrome to the real site and
+  // Browse: recipe-site shortcuts + a search box. On the kiosk a tap takes Chrome to the real site and
   // the kiosk agent lays our Home · Back · Save bar and keyboard over it. Elsewhere sites open in a new tab and the
   // import box takes links.
   import { onMount } from 'svelte';

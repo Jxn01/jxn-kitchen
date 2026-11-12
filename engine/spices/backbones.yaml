@@ -1,4 +1,4 @@
-# Recognised bases (spec 2026-10-19 §4.2): when a blend holds `need` of a backbone's slots, the ledger gets a good line
+# Recognised bases: when a blend holds `need` of a backbone's slots, the ledger gets a good line
 # (+10) naming it. A slot is one spice id, or a list of ids any one of which fills it (sweet OR smoked paprika).
 backbones:
   - id: hungarian-base

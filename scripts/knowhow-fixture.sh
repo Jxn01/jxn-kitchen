@@ -8,7 +8,7 @@ import json, pathlib, sys
 sys.path.insert(0, 'server')
 from kitchen import knowhow
 import re
-# the trap that kept biting (2026-10-11): in a YAML flow mapping {en: A, B, hu: C} the comma ends the value — the
+# a common trap: in a YAML flow mapping {en: A, B, hu: C} the comma ends the value — the
 # validator then reports a broken label; this names the line and the fix
 lint = []
 for f in sorted(pathlib.Path('knowhow').glob('*.yaml')):

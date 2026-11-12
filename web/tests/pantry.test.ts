@@ -36,7 +36,7 @@ describe('pantry store', () => {
   });
 });
 
-describe('stale pantry state is dropped (review: a late answer could overwrite newer state)', () => {
+describe('stale pantry state is dropped: a late answer never overwrites newer state', () => {
   it('an older rev never replaces a newer one', () => {
     const p = createPantry({ put: vi.fn() } as any);
     p.accept({ have: ['a', 'b'], groups_some: [], staples_off: [], rev: 5 });

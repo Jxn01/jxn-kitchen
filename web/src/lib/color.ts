@@ -1,4 +1,4 @@
-// WCAG contrast: tiles pick ink or white text, whichever reads better on their colour (spec §5).
+// WCAG contrast: tiles pick ink or white text, whichever reads better on their colour.
 export const INK = '#1F1A17';
 
 function lum(hex: string): number {

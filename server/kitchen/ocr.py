@@ -1,9 +1,9 @@
-"""Digitising (sub-project 7): a printed recipe (a scan or a photo) -> text -> a draft recipe.
+"""Digitising: a printed recipe (a scan or a photo) -> text -> a draft recipe.
 
 OCR is the `tesseract` CLI (Hungarian + English models; `--psm 1` = automatic page layout WITH orientation detection,
 so a page scanned sideways comes out upright). Images are cleaned up first with Pillow; PDFs are split into one image
 per page with `pdftoppm`. `recipe_from_text()` turns the text into title / servings / ingredient lines / steps. The
-result is always a DRAFT for the owner to check: OCR text never earns a gluten verdict by itself — every line still
+result is always a DRAFT for the user to check: OCR text never earns a gluten verdict by itself — every line still
 goes through the parser, the matcher and the gluten engine, and an unreadable line stays "unknown".
 """
 from __future__ import annotations

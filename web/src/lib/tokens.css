@@ -1,4 +1,4 @@
-/* Design tokens — "cast-iron diner" (spec §5). Kiosk viewport: 1024×640 CSS px at DPR 1.25. */
+/* Design tokens — "cast-iron diner". Kiosk viewport: 1024×640 CSS px at DPR 1.25. */
 :root {
   --ink: #1F1A17;
   --cream: #FFF4DF;
@@ -30,7 +30,7 @@
   --r-sm: 10px;
   --r: 16px;
   --r-lg: 22px;
-  --touch: 64px;                 /* every touch target, both sides (spec §2); scripts/touch-audit.py checks */
+  --touch: 64px;                 /* every touch target, both sides; scripts/touch-audit.py checks */
   --kb-key: 64px;
   --kb-h: 302px;                 /* the on-screen keyboard: 4 rows of --kb-key + gaps + padding */
 
@@ -40,9 +40,9 @@
   --ease-pop: cubic-bezier(.34, 1.56, .64, 1);
 }
 
-/* The night palette belongs to the idle scene ONLY (Idle.svelte puts .night-palette on its root). It used to sit on
-   :root, so everything layered over the night scene — the timer card, toasts, the keyboard — got dark backgrounds
-   under dark ink: the timer's Stop button was unreadable at midnight (2026-10-11). Guarded in tests/night.test.ts. */
+/* The night palette belongs to the idle scene ONLY (Idle.svelte puts .night-palette on its root). On :root,
+   everything layered over the night scene — the timer card, toasts, the keyboard — would get dark backgrounds
+   under dark ink and become unreadable. Guarded in tests/night.test.ts. */
 .night-palette {
   --cream: #2A2420;
   --paper: #3A322C;

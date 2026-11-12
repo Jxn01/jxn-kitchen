@@ -71,12 +71,12 @@ export const TIPS: Tip[] = [
   { to: 'baking/trouble-bread', en: 'Gummy GF bread? Bake to 96–98 °C inside, then cool it 2 hours before slicing.', hu: 'Szalonnás GM kenyér? Belül 96–98 °C-ig süsd, és 2 órát hűtsd szeletelés előtt.' },
   { to: 'baking/trouble-cakes', en: 'GF cookies spreading? Chill the dough 30 minutes before baking.', hu: 'Szétfolyik a GM keksz? Sütés előtt hűtsd a tésztát 30 percig.' },
   { to: 'cuts/chicken', en: 'Thighs stay juicy where breasts dry out — perfect for paprikás.', hu: 'A felsőcomb szaftos marad, ahol a mell kiszárad — paprikáshoz tökéletes.' },
-  // the Spices section (2026-10-19): app routes
+  // the Spices section: app routes
   { to: '/spices/new', en: 'Mix your own blend on the Spices shelf — the engine tells you why it works.', hu: 'Keverj saját fűszert a Fűszerek polcán — a motor megmondja, miért működik.' },
   { to: '/spices', en: 'Cumin and coriander: the backbone of every curry. Try them on the spice rack.', hu: 'Római kömény és koriander: minden curry gerince. Próbáld ki a fűszerpolcon.' },
   { to: '/spices/new', en: 'Lavender and chilli fight: soap and fire. The spice engine shows every clash.', hu: 'Levendula és chili: szappan és tűz. A fűszermotor minden veszekedést megmutat.' },
   { to: 'blends/diy', en: 'Mustard powder and chilli powder can hide wheat flour — read the label.', hu: 'A mustárpor és a chilipor búzalisztet rejthet — nézd meg a címkét.' },
-  // the Sauces section (2026-10-20): app routes
+  // the Sauces section: app routes
   { to: '/sauces/new', en: 'Build a sauce on the Sauces shelves — the engine reads its body, balance and shelf life.', hu: 'Rakj össze egy szószt a polcon — a motor elolvassa a sűrűségét és hogy meddig áll el.' },
   { to: '/sauces', en: 'Raw-yolk mayonnaise keeps 2 days in the fridge — the sideboard shows every sauce\'s days.', hu: 'A nyers sárgájás majonéz 2 napig áll el a hűtőben — a tálalón minden szószé ott van.' },
 ];

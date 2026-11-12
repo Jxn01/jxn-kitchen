@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // Moving between two pages of one section that use the same chart type re-used the component and kept its selection:
-// choosing the 5th band of one thermometer and opening a 4-band one read a band that is not there (2026-10-11).
+// choosing the 5th band of one thermometer and opening a 4-band one read a band that is not there.
 // The infographic area must be keyed by the page, so it mounts fresh.
 describe('the know-how page remounts its infographic per page', () => {
   const src = readFileSync(join(__dirname, '../src/screens/KnowHowSection.svelte'), 'utf8');

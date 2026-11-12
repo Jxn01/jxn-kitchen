@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 // A kiosk that boots before its Wi-Fi gets a page whose bundle never loads: blank, and the agent's probe still sees a
-// live page (2026-10-11). index.html carries a guard that reloads unless main.ts says the app mounted.
+// live page. index.html carries a guard that reloads unless main.ts says the app mounted.
 describe('the boot guard', () => {
   const html = readFileSync(join(__dirname, '../index.html'), 'utf8');
   const main = readFileSync(join(__dirname, '../src/main.ts'), 'utf8');

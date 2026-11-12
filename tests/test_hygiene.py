@@ -86,7 +86,7 @@ class OneWebBuild(unittest.TestCase):
 
 
 class NoRawUserTextInLogs(unittest.TestCase):
-    """Log injection (security review 2026-10-10): text a user or HA can influence goes into a log line as %r (control
+    """Log injection: text a user or HA can influence goes into a log line as %r (control
     characters escaped), never as a bare %s. Allowed %s arguments are listed here by what they are."""
     SAFE_S = ('domain', 'service', 'entity_id', 'e', 'PING_WINDOW', 'r.status_code', 'n')
 
@@ -109,7 +109,7 @@ class NoRawUserTextInLogs(unittest.TestCase):
 
 class OneImageOpener(unittest.TestCase):
     """Untrusted image bytes are opened ONLY through images.open_image (format allow-list + pixel count checked before
-    decoding). A second raw Image.open is how OCR shipped without the bomb guard (security review 2026-10-10)."""
+    decoding). A second raw Image.open is how OCR shipped without the bomb guard."""
     def test_no_raw_image_open(self):
         bad = [f.name for f in (ROOT / 'server/kitchen').glob('*.py')
                if f.name != 'images.py' and 'Image.open(' in f.read_text()]
@@ -122,7 +122,7 @@ if __name__ == '__main__':      # at the END: anything defined after it would no
 
 class HeadlessChromeUsesTheSharedFlags(unittest.TestCase):
     """Every headless Chrome a script starts takes scripts/chrome-flags.txt (Python: cdp.CHROME_FLAGS; screens.sh: the same
-    file), and that file keeps the two flags that cost the evening of 2026-11-11: --password-store=basic (without it
+    file), and that file keeps the two flags that matter: --password-store=basic (without it
     Chrome hangs forever on the locked GNOME keyring while nobody is logged in) and --disable-background-networking (a fresh
     profile's background work on the browser main thread stalled every DevTools call: 3m27s vs 43.6 s for one walk)."""
     LAUNCH = re.compile(r'--headless')
@@ -155,7 +155,7 @@ class HeadlessChromeUsesTheSharedFlags(unittest.TestCase):
 class OneCdpClient(unittest.TestCase):
     """No script reads a Chrome DevTools websocket itself: scripts/cdp.py's Page reads it continuously on its own task.
     Reading only while awaiting a reply let Chrome's events pile up unread, and the socket's flow control then made every
-    later call stall for seconds, growing (a clip-audit pass took ~7 minutes instead of ~1.5; 2026-11-11)."""
+    later call stall for seconds, growing (a clip-audit pass took ~7 minutes instead of ~1.5)."""
     RECV = re.compile(r'\.recv\(\)')
     ALLOWED = {
         'cdp.py': 'the client itself',

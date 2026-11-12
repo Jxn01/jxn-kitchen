@@ -1,4 +1,4 @@
-"""Recipe folders (2026-11-03): a tree the owner files recipes into — create, rename, nest, move, delete.
+"""Recipe folders: a tree the user files recipes into — create, rename, nest, move, delete.
 
 Rules, all kept here (the endpoints only translate errors):
 - A folder's name is 1–60 characters after trimming, and unique among its siblings, compared accent- and case-folded

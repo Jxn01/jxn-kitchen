@@ -1,6 +1,6 @@
-"""Both engines' sentences, as text (spec 2026-10-19 §6.1: everything bilingual): a number in a Hungarian sentence takes
-the Hungarian decimal mark. The béchamel's ledger read "Jól sózva — kb. 0.6 % só." (2026-10-20) — a float formatted the
-English way into a Hungarian template; the class is every number either engine puts into either language."""
+"""Both engines' sentences, as text (everything bilingual): a number in a Hungarian sentence takes
+the Hungarian decimal mark. A float formatted the
+English way into a Hungarian template reads "kb. 0.6 % só."; the class is every number either engine puts into either language."""
 import pathlib
 import random
 import re

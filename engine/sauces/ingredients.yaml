@@ -1,4 +1,4 @@
-# The sauce shelves (spec 2026-10-19 §4.3): one entry per item the sauce editor offers (or, `offer: false`, accepts only
+# The sauce shelves: one entry per item the sauce editor offers (or, `offer: false`, accepts only
 # typed). Ids are catalogue ids; `item:` names the catalogue item when the shelf entry is one kitchen form of it (egg yolk
 # of `eggs`, lime juice of `lime` — the catalogue keeps one item so recipes match what you have).
 #   role     fat | acid | dairy | egg | allium | herb | umami | sweet | heat | thickener | liquid | veg — exactly one

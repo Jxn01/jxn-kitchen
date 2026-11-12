@@ -5,8 +5,8 @@ import { join } from 'node:path';
 import { ACTIONS, AMBIENT, createBrain, NIGHT_AMBIENT } from '../src/lib/mascot';
 
 // Chrome composites transform/opacity animations of HTML elements, never of svg children (<g>, <path>, … — even
-// through a class): those repaint the svg on the main thread every frame, the "≈1 % CPU per animated element" the
-// spec measured. So the rig animates only its divs. This scans a component: every class used on an svg element (or
+// through a class): those repaint the svg on the main thread every frame, the "≈1 % CPU per animated element" that
+// was measured. So the rig animates only its divs. This scans a component: every class used on an svg element (or
 // the element names themselves) must never be the target of an animation or a transition, and keyframes may touch
 // only transform and opacity.
 const SVG_TAGS = ['svg', 'g', 'path', 'circle', 'ellipse', 'rect', 'line', 'polygon', 'polyline', 'text'];
@@ -139,7 +139,7 @@ describe('the brain runs on the real timers', () => {
 
 
 // On the kiosk ANY animation running at 60 Hz costs ~14 % CPU, whatever its size (compositor + GPU process + DWM
-// present per frame — measured 2026-10-11: a 120 px and a 360 px mascot cost the same). So nothing may run forever at
+// present per frame — a 120 px and a 360 px mascot cost the same). So nothing may run forever at
 // full rate: a never-ending animation is stepped (identical frames between steps are not drawn), or it is marked
 // `episodic:` with what ends it.
 export function foreverProblems(src: string): string[] {

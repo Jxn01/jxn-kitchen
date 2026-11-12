@@ -162,7 +162,7 @@ func TestWifiReconnectArgs(t *testing.T) {
 	}
 }
 
-// --- The Reboot rung (2026-11-07: a radio that never associated after a boot; only a reboot cured it) ---
+// --- The Reboot rung (a radio that never associated after a boot; only a reboot cures it) ---
 
 type rebootRig struct {
 	*healRig

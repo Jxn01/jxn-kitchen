@@ -15,7 +15,7 @@ MIGRATIONS: list[str] = [
     """CREATE TABLE shopping_item (id INTEGER PRIMARY KEY, text TEXT NOT NULL, item_id TEXT, ha_uid TEXT UNIQUE,
        done INTEGER NOT NULL DEFAULT 0, pending TEXT, added_at TEXT NOT NULL, updated_at TEXT NOT NULL)""",
     # 4: recipes. Ingredient lines keep the raw text AND the parse/match; ok_gf = "marked GF by hand" for an
-    # unmatched line; user_item = the owner corrected the match.
+    # unmatched line; user_item = the user corrected the match.
     """CREATE TABLE recipe (id INTEGER PRIMARY KEY, title TEXT NOT NULL, lang TEXT NOT NULL, source_url TEXT,
        source_site TEXT, image TEXT, servings INTEGER, prep_min INTEGER, cook_min INTEGER, total_min INTEGER,
        notes TEXT, origin TEXT NOT NULL, created_at TEXT NOT NULL, updated_at TEXT NOT NULL);
@@ -29,7 +29,7 @@ MIGRATIONS: list[str] = [
        PRIMARY KEY (recipe_id, tag));""",
     # 5: shopping sync safety. rev = bumped by every local write, so a sync round only finishes what it started
     # (a write that landed while HA was answering is never overwritten). ha_text = the text HA last knew, so a row
-    # renamed while its add was in flight still links. gone = ticked off in HA: hidden here (spec §6.6).
+    # renamed while its add was in flight still links. gone = ticked off in HA: hidden here.
     """ALTER TABLE shopping_item ADD COLUMN rev INTEGER NOT NULL DEFAULT 0;
      ALTER TABLE shopping_item ADD COLUMN ha_text TEXT;
      ALTER TABLE shopping_item ADD COLUMN gone INTEGER NOT NULL DEFAULT 0;
@@ -38,7 +38,7 @@ MIGRATIONS: list[str] = [
     # (older) answer or SSE event instead of letting it overwrite newer state.
     """CREATE TABLE counter (name TEXT PRIMARY KEY, value INTEGER NOT NULL);
      INSERT INTO counter (name, value) VALUES ('pantry', 0)""",
-    # 7: kitchen timers (spec §6.5) — state running (ends_at) | paused (remaining s) | done | dismissed; notified =
+    # 7: kitchen timers — state running (ends_at) | paused (remaining s) | done | dismissed; notified =
     # the phone was pinged (once).
     """CREATE TABLE timer (id INTEGER PRIMARY KEY, label TEXT NOT NULL, seconds INTEGER NOT NULL, ends_at TEXT,
        remaining INTEGER, state TEXT NOT NULL, recipe_id INTEGER, step_pos INTEGER, notified INTEGER NOT NULL DEFAULT 0,
@@ -48,16 +48,16 @@ MIGRATIONS: list[str] = [
     """CREATE TABLE scan_import (path TEXT NOT NULL, size INTEGER NOT NULL, mtime REAL NOT NULL, recipe_ids TEXT NOT NULL,
        at TEXT NOT NULL, PRIMARY KEY (path, size, mtime))""",
     # 9: the gluten item a line's NOTE mentions ("vaj a kenyérhez" -> wheat bread). Purpose phrases moved to the note
-    # (2026-10-11) must not take their gluten out of the check: a GF item with such a note reads 'check', not OK.
+    # must not take their gluten out of the check: a GF item with such a note reads 'check', not OK.
     """ALTER TABLE recipe_ingredient ADD COLUMN note_gluten TEXT""",
-    # 10: the owner's spice blends (spec 2026-10-19 §4.4). origin: typed | seed | riff; classic_id = the classic a seed
+    # 10: the user's spice blends. origin: typed | seed | riff; classic_id = the classic a seed
     # or a riff came from (engine/spices/classics.yaml). parts are level teaspoons; spice_id is a catalogue id.
     """CREATE TABLE blend (id INTEGER PRIMARY KEY, name TEXT NOT NULL, lang TEXT NOT NULL, notes TEXT, origin TEXT NOT NULL,
        classic_id TEXT, created_at TEXT NOT NULL, updated_at TEXT NOT NULL);
      CREATE TABLE blend_part (blend_id INTEGER NOT NULL REFERENCES blend(id), pos INTEGER NOT NULL, spice_id TEXT NOT NULL,
        parts REAL NOT NULL CHECK (parts > 0), PRIMARY KEY (blend_id, pos));
      CREATE TABLE blend_tag (blend_id INTEGER NOT NULL REFERENCES blend(id), tag TEXT NOT NULL, PRIMARY KEY (blend_id, tag))""",
-    # 11: the owner's sauces (spec 2026-10-19 §4.4, plan SP11). A line is one of: a sauce-shelf item (shelf_id = the
+    # 11: the user's sauces. A line is one of: a sauce-shelf item (shelf_id = the
     # engine/sauces entry, item_id = its catalogue item — they differ for a kitchen form like egg yolk of `eggs`), a rack
     # jar (spice_id = item_id), a blend (blend_id), a typed line matched to a catalogue item off the shelves (item_id,
     # raw) or a typed line nothing matched (raw only). Gluten is read from item_id by the gluten engine, like a recipe's.
@@ -71,7 +71,7 @@ MIGRATIONS: list[str] = [
      CREATE TABLE sauce_step (sauce_id INTEGER NOT NULL REFERENCES sauce(id), pos INTEGER NOT NULL, text TEXT NOT NULL,
        PRIMARY KEY (sauce_id, pos));
      CREATE TABLE sauce_tag (sauce_id INTEGER NOT NULL REFERENCES sauce(id), tag TEXT NOT NULL, PRIMARY KEY (sauce_id, tag))""",
-    # 12: recipe folders (2026-11-03). A tree: parent_id NULL = top level. A recipe sits in at most one folder
+    # 12: recipe folders. A tree: parent_id NULL = top level. A recipe sits in at most one folder
     # (folder_id NULL = top level). Names are unique among siblings, compared accent- and case-folded — kept by
     # folders.py, not by an index, because SQLite cannot index the fold. Deleting a folder never deletes a recipe.
     """CREATE TABLE recipe_folder (id INTEGER PRIMARY KEY, name TEXT NOT NULL,

@@ -1,4 +1,4 @@
-"""Match a parsed ingredient name to a catalogue item (spec §7.5).
+"""Match a parsed ingredient name to a catalogue item.
 
 1. exact: the whole folded name is a catalogue key (aliases outrank display names — catalogue.match_index);
 2. stem: the LONGEST key whose tokens appear as a contiguous run in the name, where a name token matches a key token
@@ -8,7 +8,7 @@
 4. compound: Hungarian puts the head noun last (csusza|tészta, kocka|tészta, lebbencs|tészta). An otherwise unmatched
    word that ENDS in the one-word key (≥ 5 letters) of a gluten-CONTAINING item, after a ≥ 3-letter prefix and with
    ≤ 3 suffix letters, means that item. Only `contains` heads: this stage can turn '?' into "contains gluten" (the
-   safe direction), never into OK — "búzakeményítő" must not become starch. (Live gap 2026-10-11: csuszatészta.)
+   safe direction), never into OK — "búzakeményítő" must not become starch.
 Below that the line stays unmatched — and an unmatched line is never assumed gluten-free (gluten.py).
 """
 from __future__ import annotations
@@ -114,9 +114,9 @@ class Matcher:
         return None
 
     def _longest(self, toks: list[str]) -> Match | None:
-        """Safety net (spec §7): when a gluten-CONTAINING key appears anywhere in the name, the answer is that item even
+        """Safety net: when a gluten-CONTAINING key appears anywhere in the name, the answer is that item even
         if a longer free key also appears — "liszt … tejföl …" must never resolve to sour cream and read OK. Erring
-        towards "contains" is the safe side; the owner can mark a line OK by hand."""
+        towards "contains" is the safe side; the user can mark a line OK by hand."""
         best: tuple[int, int, int] | None = None
         best_match: Match | None = None
         best_g: tuple[int, int, int] | None = None

@@ -1,6 +1,6 @@
-"""Recipes (spec §6.3): storage, the per-line view (parse → match → gluten → pantry), summaries, "what can I cook".
+"""Recipes: storage, the per-line view (parse → match → gluten → pantry), summaries, "what can I cook".
 
-Ingredient lines are stored parsed AND raw; matching is redone on every save, except where the owner corrected a
+Ingredient lines are stored parsed AND raw; matching is redone on every save, except where the user corrected a
 line by hand (kept by raw text). The view is computed on read so pantry changes show at once.
 """
 from __future__ import annotations
@@ -91,13 +91,13 @@ _CAUTION = {'contains': 3, None: 2, 'label': 1, 'free': 0}     # None = unmatche
 
 
 def rematch_all(conn: sqlite3.Connection, matcher: Matcher) -> int:
-    """Re-run parsing and matching on every line the owner did not correct by hand, against the parser and catalogue
+    """Re-run parsing and matching on every line the user did not correct by hand, against the parser and catalogue
     as they are NOW (run at start-up), so fixes reach recipes saved earlier. That is a safety matter, not a nicety —
-    when a wheat word is re-pointed from a GF tile to its wheat item (review I6), an old recipe must lose its ✓ GF too.
+    when a wheat word is re-pointed from a GF tile to its wheat item, an old recipe must lose its ✓ GF too.
 
     It may only make a line MORE cautious on its own. A line that was `contains` or `label` is never moved to a less
-    cautious item behind the owner's back (security review, 2026-10-11): such a line is left exactly as stored and
-    logged — the owner can still fix it by hand. A line's note is re-scanned for mentioned gluten (`note_gluten`),
+    cautious item behind the user's back: such a line is left exactly as stored and
+    logged — the user can still fix it by hand. A line's note is re-scanned for mentioned gluten (`note_gluten`),
     which can only add caution. Only a raw line that still parses to ONE ingredient with the same quantity and unit
     gets a new name/note. Returns how many lines changed."""
     changed, held = 0, 0
@@ -118,7 +118,7 @@ def rematch_all(conn: sqlite3.Connection, matcher: Matcher) -> int:
             new_c = _CAUTION[new.gluten if new else None]
             if old is not None and old.gluten in ('contains', 'label') and new_c < old_c:
                 held += 1
-                log.warning('rematch: kept %r as %r (would have become %r) — a downgrade needs the owner',
+                log.warning('rematch: kept %r as %r (would have become %r) — a downgrade needs a manual match',
                             r['raw'], r['item_id'], m.item_id)
                 name, note, m = r['name'], r['note'], None
             if m is not None and ((name, note) != (r['name'], r['note']) or (m.item_id, m.how) != (r['item_id'], r['match_how'])):

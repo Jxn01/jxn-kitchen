@@ -1,5 +1,5 @@
-"""The image takes Debian's security fixes on every build, from a freshly pulled base (2026-10-26: the python:3.13-slim
-base still carried a libbrotli1 vulnerable to Node2Shell, CVE-2026-111497, weeks after Debian's fix). a weekly
+"""The image takes Debian's security fixes on every build, from a freshly pulled base (a stale python:3.13-slim
+base can carry vulnerable libraries weeks after Debian's fix). a weekly
 image refresh can rebuild this same Dockerfile with --pull and the build id the app was deployed with."""
 import pathlib
 import re

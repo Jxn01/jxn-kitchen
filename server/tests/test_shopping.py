@@ -70,7 +70,7 @@ def test_rename_and_complete_in_ha_flow_back(tmp_path):
         assert texts(c) == ['Laktózmentes tej']
         ha.by_summary('Laktózmentes tej')['status'] = 'completed'
         sync(c)
-        assert c.get('/api/shopping').json() == []          # ticked off in HA -> gone here (spec §6.6)
+        assert c.get('/api/shopping').json() == []          # ticked off in HA -> gone here
 
 
 def test_tick_and_delete_here_flow_to_ha(tmp_path):
@@ -136,7 +136,7 @@ def test_every_change_is_an_sse_event(tmp_path):
         assert [q.get_nowait()[0] for _ in range(3)] == ['shopping'] * 3
 
 
-# --- review I1: writes landing while the sync awaits HA ---------------------------------------------------------
+# --- writes landing while the sync awaits HA ---------------------------------------------------------
 
 import httpx  # noqa: E402
 
@@ -237,7 +237,7 @@ def test_ticked_in_ha_disappears_here_and_comes_back_if_unticked(tmp_path):
         sync(c)
         ha.by_summary('Tej')['status'] = 'completed'
         sync(c)
-        assert c.get('/api/shopping').json() == []          # spec §6.6: ticked off in HA -> gone here
+        assert c.get('/api/shopping').json() == []          # ticked off in HA -> gone here
         ha.by_summary('Tej')['status'] = 'needs_action'
         sync(c)
         assert texts(c) == ['Tej']

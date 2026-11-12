@@ -1,7 +1,7 @@
-# The mother-sauce tree and how a sauce is recognised (spec 2026-10-19 §4.3). Detection walks this file in order: a
+# The mother-sauce tree and how a sauce is recognised. Detection walks this file in order: a
 # top-level family is tried, then its children in order; the deepest family whose `detect` passes wins, and the first
 # top-level family that passes is the answer (no backtracking). A family with `any_child: true` passes when one of its
-# children does. The owner can override the family on a sauce.
+# children does. The user can override the family on a sauce.
 #   detect: {all: [...], any: [...], none: [...], any_child: true} — `all` must all hold, `any` at least one, `none` none
 #   predicates: item:<id> (a line of that ingredient, or one that pairs as it) · role:<role> · body:<method> (a line
 #   with that body method) · step:<heat|boil|simmer-long|reduce|blend|mount|marinate|chill> (the steps say so) ·

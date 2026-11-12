@@ -1,13 +1,13 @@
-// Writes made while the server is unreachable (spec §9): kept, queued in localStorage and replayed in order when the
+// Writes made while the server is unreachable: kept, queued in localStorage and replayed in order when the
 // connection comes back. The screens stay optimistic meanwhile; the offline badge shows how many are waiting.
 //
-// What is queued: pantry toggles (coalesced per node — only the last one matters), shopping-list changes, and since
-// 2026-11-12 (owner's list item 5) recipe edits (`recipe-put`, last edit per recipe wins), settings (one merged patch),
+// What is queued: pantry toggles (coalesced per node — only the last one matters), shopping-list changes, and
+// recipe edits (`recipe-put`, last edit per recipe wins), settings (one merged patch),
 // folder create / rename / move / delete and filing recipes into a folder. A tick or removal of an item that was itself
 // added offline (negative temporary id) folds into its queued add, so nothing ever refers to an id the server has not
 // given out; a folder created offline also gets a temporary id, and every later op that names it is rewritten to the
 // server's id once its add has been sent (the map is kept in localStorage, so a drain cut short by a reload still
-// knows it). Edits made here and elsewhere meanwhile: the last write wins (the owner: "very very small edge case").
+// knows it). Edits made here and elsewhere meanwhile: the last write wins.
 // A network failure or a 5xx (OfflineError) keeps the rest of the queue for the next drain; any other refusal (a 404 for
 // an item deleted meanwhile, a 422, a folder name taken) drops that op — and an op naming a folder whose add was dropped
 // is dropped with it.
@@ -143,8 +143,8 @@ export function createOutbox(storage: Store | undefined, sender: Sender) {
 
   /** Send the queue in order, one drain at a time. true = empty now; false = still offline (the rest stays queued).
    *  The guard is cleared in .finally() on the OUTER promise: inside an async function an empty queue finishes
-   *  synchronously, and a `finally` there ran before the guard was even set — leaving it stuck forever (found
-   *  end-to-end 2026-10-10: after the page's first, empty drain nothing was ever replayed). */
+   *  synchronously, and a `finally` there ran before the guard was even set — leaving it stuck forever (after the
+   *  page's first, empty drain nothing would ever be replayed). */
   function drain(): Promise<boolean> {
     if (!draining) draining = run().finally(() => { draining = null; });
     return draining;

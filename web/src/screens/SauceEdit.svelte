@@ -1,13 +1,13 @@
 <script lang="ts">
-  // The sauce engine (spec 2026-10-19 §6.3). Left: the shelves — eleven shelf tabs, the owner's Blends, the Spices
+  // The sauce engine. Left: the shelves — eleven shelf tabs, the user's Blends, the Spices
   // (the rack, by its seven shelves) and Notes (steps, notes, yield, tags) — a fixed set of slots every tab reuses; tap:
   // onto the tray with the item's usual amount. Your sauce, the tray: − amount + in the item's step, the unit chip flips
   // through its units (converted), tap a line to see only its findings, hold it to put it back; "Something else…" reads
   // a typed line on the server and it lands as what it is. The header: the name, the family chip (detected, or the
-  // owner's choice from the family sheet), Save, Delete. Right: the live panel — 300 ms after the last change (the tray,
+  // user's choice from the family sheet), Save, Delete. Right: the live panel — 300 ms after the last change (the tray,
   // the steps or the family) the engine reads the sauce; an answer older than the newest request is dropped.
   //
-  // The SP10 rules from the first line: nothing is built on a tap — the slots, the tray's cards, the suggestion cards,
+  // Nothing is built on a tap — the slots, the tray's cards, the suggestion cards,
   // the notes pane, the typed-line sheet and the family sheet are all mounted with the page and shown by class.
   import { onDestroy, onMount } from 'svelte';
   import PageHeader from '../components/PageHeader.svelte';
@@ -30,7 +30,7 @@
   let { id = null }: { id?: number | null } = $props();
   let name = $state(''), notes = $state(''), tags = $state(''), stepsText = $state(''), yieldText = $state('');
   let tray = $state<SauceLine[]>([]);
-  let family = $state<string | null>(null);        // the owner's choice; null = the engine detects it
+  let family = $state<string | null>(null);        // the user's choice; null = the engine detects it
   let tab = $state(0);                              // 0..10 a shelf · BLENDS · SPICES · NOTES
   let rackShelf = $state(0);
   let focus = $state<string | null>(null);         // a tray line's item or jar: the ledger shows only its lines
@@ -67,7 +67,7 @@
     line: { blend: b.id, qty: 1, unit: 'tsp' }, key: `blend:${b.id}`, label: b.names[$lang], fill: b.jar_fill, jar: true, gf: b.gluten.status === 'check' }));
   const jarSlots = (i: number): Slot[] => ($rack?.shelves[i]?.jars ?? []).map((j) => ({
     line: { spice: j.id, qty: 1, unit: 'tsp' }, key: `spice:${j.id}`, label: j.label[$lang], fill: j.fill, jar: true, gf: j.gluten === 'label' }));
-  // the slots are as many as the fullest tab: a tab tap only changes what each one shows (SP10: building one shelf's
+  // the slots are as many as the fullest tab: a tab tap only changes what each one shows (building one shelf's
   // jars and dropping the last one's cost a 168 ms frame on the kiosk)
   let slots = $derived(Math.max(0, ...($shelves?.shelves ?? []).map((s) => s.items.length), ...($rack?.shelves ?? []).map((s) => s.jars.length), $blendList.length));
   let onTab = $derived<Slot[]>(tab < shelfCount ? shelfSlots(tab) : tab === BLENDS ? blendSlots() : tab === SPICES ? jarSlots(rackShelf) : []);
@@ -82,7 +82,7 @@
   onDestroy(() => ev.cancel());
   const about = (l: SauceLine) => l.shelf ?? l.spice ?? null;
   $effect(() => { if (focus && !tray.some((l) => about(l) === focus)) focus = null; });
-  // the engine's suggestions follow an answer a moment later (SP10: three new cards in the answer's frame, 84 ms)
+  // the engine's suggestions follow an answer a moment later (three new cards in the answer's frame, 84 ms)
   let offered = $state<string[]>([]);
   $effect(() => {
     const s = e?.suggest ?? [];
@@ -279,7 +279,7 @@
   .hbtn.fam .fl { overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
   .hbtn.fam small { font-size: 10.5px; font-weight: 900; text-transform: uppercase; opacity: .7; }
   .hbtn.fam.mine { background: var(--butter); }
-  /* an explicit row (SP10: with an auto row the grid measured both panes whenever either changed) */
+  /* an explicit row (with an auto row the grid measured both panes whenever either changed) */
   .body { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 56%) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr); }
   .left { min-height: 0; display: flex; flex-direction: column; gap: 8px; padding: 10px 12px 10px 18px; border-right: var(--outline) dashed #E2D6C4; }
   .right { min-height: 0; padding: 10px 16px 0 14px; display: flex; flex-direction: column; }
@@ -322,7 +322,7 @@
   .card.typed { border-style: dashed; background: transparent; min-height: var(--touch); width: 112px; padding: 4px 8px; align-self: stretch; gap: 6px;
                 animation: none; }
   .card.typed b { font-size: 22px; line-height: 1; }
-  /* a fixed height (SP10: the hint and a row of cards differed by a few pixels, and the shelf above was repainted) */
+  /* a fixed height (the hint and a row of cards differed by a few pixels, and the shelf above was repainted) */
   .cards { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; height: 82px; align-items: center; contain: layout paint; }
   .card { contain: content; flex: none; display: flex; align-items: center; gap: 4px; background: var(--paper); border: 2.5px solid var(--ink); border-radius: var(--r-sm);
           padding: 3px; animation: land .45s cubic-bezier(.3, 1.6, .5, 1) backwards; }

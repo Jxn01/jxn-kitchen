@@ -1,4 +1,4 @@
-"""The pantry: have / don't-have per catalogue item, plus the "I've got some <group> somewhere" switches (spec §6.2).
+"""The pantry: have / don't-have per catalogue item, plus the "I've got some <group> somewhere" switches.
 
 State shape (GET /api/pantry, SSE `pantry`):
   have        — every item that counts as in: switched on, or a staple not switched off

@@ -6,8 +6,7 @@ import { P } from '../src/lib/palette';
 import { contrast, INK, textOn } from '../src/lib/color';
 import sites from '../src/lib/sites.json';
 
-// Owner, 2026-10-11: "the white texts on the tiles are hard to read — change the background colours so you can put
-// black text there". Every palette colour carries ink text at >= 7:1, and white text sits only on ink.
+// White text on tiles is hard to read, so every palette colour carries ink text at >= 7:1, and white text sits only on ink.
 const src = join(__dirname, '../src');
 const walk = (d: string): string[] => readdirSync(d).flatMap((f) => statSync(join(d, f)).isDirectory() ? walk(join(d, f)) : [join(d, f)]);
 

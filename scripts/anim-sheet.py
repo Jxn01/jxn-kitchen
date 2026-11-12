@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Filmstrips of the mascot's actions — motion is judged by LOOKING (owner's law: verify UI by looking).
+"""Filmstrips of the mascot's actions — motion is judged by LOOKING.
 
 Serves the scratch build (like screens.sh), opens #/lab/mascot in headless Chrome over CDP, plays each action, pauses
 every animation (Web Animations API) and steps `currentTime` through the action, screenshotting the stage at each

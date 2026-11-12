@@ -1,4 +1,4 @@
-// One toast at a time (spec §6.2): "Wings → in · Undo", with an optional extra action ("+ shopping list"). 5 s.
+// One toast at a time: "Wings → in · Undo", with an optional extra action ("+ shopping list"). 5 s.
 import { writable } from 'svelte/store';
 
 export interface ToastSpec { text: string; undo?: () => void; action?: { label: string; run: () => void }; tone?: 'ok' | 'warn' }

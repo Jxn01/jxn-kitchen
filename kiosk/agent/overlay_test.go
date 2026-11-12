@@ -177,12 +177,12 @@ func TestOverlaySetsUpTheSession(t *testing.T) {
 	go overlayLoop(ctx, f.cfg(), &st, time.Hour, time.Hour)
 	waitFor(t, func() bool { return st.OK() })
 	if len(f.seen("Page.setBypassCSP")) != 0 {
-		t.Fatal("the agent must not switch the site's CSP off (security review)")
+		t.Fatal("the agent must not switch the site's CSP off")
 	}
 	if len(f.nonce()) < 32 {
 		t.Fatalf("no per-session secret in the injected config: %q", f.nonce())
 	}
-	// measured on real Chrome 2026-10-10: without Page.enable a registered script never runs on navigation
+	// on real Chrome, without Page.enable a registered script never runs on navigation
 	f.mu.Lock()
 	order := strings.Join(f.calls, " ")
 	f.mu.Unlock()

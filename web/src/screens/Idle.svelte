@@ -1,5 +1,5 @@
 <script lang="ts">
-  // The idle scene (spec §5): a big clock, the weather, running timers — and the kitchen counter, where the mascot
+  // The idle scene: a big clock, the weather, running timers — and the kitchen counter, where the mascot
   // lives between a pot of basil and the cutting board. At night the mascot sleeps in its nightcap and only snores;
   // the props rest. Acts come from lib/ambient.ts (one at a time, nothing between them but the mascot's blinks).
   import { onMount } from 'svelte';

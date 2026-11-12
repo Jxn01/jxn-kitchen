@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Clipped-text audit: no text may be cut off by a box that hides its overflow. Exit 1 when any is.
 
-Why (2026-11-11): on the owner's iPhone every home tile's subtitle was cut off at the tile's bottom edge — a row shorter
+Why: on an iPhone every home tile's subtitle was cut off at the tile's bottom edge — a row shorter
 than its content, `overflow: hidden` on the tile — and Chrome hid it by squashing the icon plate into an oval instead,
 so no kiosk screenshot ever showed it. This audit measures text against its clipping boxes in the browser, so the class
 is caught on any screen, at any size, in either language, whatever the engine chose to sacrifice.
@@ -25,8 +25,8 @@ se 375x667 @2, land 844x390 @3 — measured at 1x (layout is in CSS px; CLIP_DPR
 all of them, both languages.
 
 Runtime: ~1 minute per size x language pass; a full run ~2.5 minutes with one process per size side by side (CLIP_PORT
-moves a run's ports: --sizes kiosk on 8800, --sizes 720p on 8810, ...). It once took ~7 minutes a pass and hung outright:
-the shared Chrome flags (scripts/chrome-flags.txt) and the shared client (scripts/cdp.py) say why.
+moves a run's ports: --sizes kiosk on 8800, --sizes 720p on 8810, ...). Without the shared Chrome flags (scripts/chrome-flags.txt) and the shared client (scripts/cdp.py)
+a pass takes ~7 minutes or hangs.
 """
 from __future__ import annotations
 
@@ -66,7 +66,7 @@ MEASURE = r'''(() => {
   const label = (e) => e.tagName.toLowerCase() + '.' + String(e.className?.baseVal ?? e.className ?? '').split(' ')
                          .filter((c) => c && !c.startsWith('svelte-')).join('.');
   // each element's overflow and box, read once per page: walking every text node's ancestors without a cache asked the
-  // browser for thousands of styles on a dense know-how page and made a full run take ~70 minutes (2026-11-11)
+  // browser for thousands of styles on a dense know-how page and made a full run take ~70 minutes
   const styles = new Map(), boxes = new Map();
   const S = (e) => { let v = styles.get(e); if (!v) { const c = getComputedStyle(e);
     v = { ox: c.overflowX, oy: c.overflowY, to: c.textOverflow, lc: c.webkitLineClamp }; styles.set(e, v); } return v; };
@@ -157,7 +157,7 @@ async def run(routes: list[str], sizes: list[str], langs: list[str]) -> int:
                 for size in sizes:
                     w, h, dpr, kiosk = SIZES[size]
                     # measured at 1x: layout is in CSS px whatever the density, and software-rasterising every
-                    # animated frame at 2-3x is what made a pass take ~7 minutes (2026-11-11). CLIP_DPR=1 keeps the
+                    # animated frame at 2-3x is what made a pass take ~7 minutes. CLIP_DPR=1 keeps the
                     # real density for a check of text metrics at that density.
                     scale = dpr if os.environ.get('CLIP_DPR') == '1' else 1
                     await page.call('Emulation.setDeviceMetricsOverride',

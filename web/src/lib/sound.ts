@@ -1,4 +1,4 @@
-// Tiny synthesised sounds (no files): "tok" for a toggle on, "tuk" for off, "ring" for timers (SP6).
+// Tiny synthesised sounds (no files): "tok" for a toggle on, "tuk" for off, "ring" for timers.
 // Muted when settings.sounds is off. The kiosk's Chrome runs with --autoplay-policy=no-user-gesture-required.
 import { get } from 'svelte/store';
 import { settings } from './settings';
@@ -32,8 +32,8 @@ function blip(freqFrom: number, freqTo: number, ms: number, gain = 0.18): void {
 }
 
 /** The timer chime — a soft music-box phrase, G5 B5 D6 G6 rising. Each note is a sine with a faint octave above it,
- *  fades in over 12 ms (no click) and rings out slowly. It replaced a hard double strike on E6 every 1.6 s, which the
- *  owner heard from bed as "some earthquake warning" (2026-10-11): high, click-sharp and relentless. */
+ *  fades in over 12 ms (no click) and rings out slowly. It replaces a hard double strike on E6 every 1.6 s, which was
+ *  high, click-sharp and relentless. */
 const CHIME: readonly (readonly [number, number])[] = [[784, 0], [988, 0.15], [1175, 0.3], [1568, 0.45]];
 /** How often the chime repeats while a finished timer waits for a tap (TimerDone uses this). */
 export const RING_EVERY_MS = 3000;

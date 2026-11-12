@@ -1,5 +1,5 @@
 <script lang="ts">
-  // The sideboard (spec 2026-10-19 §6.3): the owner's sauces as vessels on the shelves of a sideboard — each the
+  // The sideboard: the user's sauces as vessels on the shelves of a sideboard — each the
   // family's vessel (a jug, a sauceboat, a bowl, a bottle, a jar), filled with the sauce's colour, its name on a tag,
   // the family under it, how many days it keeps, the verdict's colour on a dot, a ribbon on the classics. Family chips
   // filter it. The vessels are reused by place (keyed by index): a chip or a letter typed in the search changes what
@@ -28,7 +28,7 @@
   });
   // each sauce keeps its own cell, built once (keyed by id); a chip, a letter or the sort only says which cells show and
   // in what order (CSS `order`) — refilling a pool of cells with other sauces re-ran every vessel, tag and pill: 78 ms of
-  // script when a chip went back to All (kiosk, 2026-10-20)
+  // script when a chip went back to All
   let place = $derived(new Map(shown.map((s, i) => [s.id, i])));
 </script>
 

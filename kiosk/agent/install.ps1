@@ -5,8 +5,8 @@
 # through the interactive scheduled task `kiosk-agent-start` (created here; /IT = runs only in the logged-on
 # session, which is where the kiosk's desktop is). Its pre-launch cleanup replaces the old agent's orphaned Chrome.
 # A few seconds of blank screen in the kitchen; no logoff, no reboot.
-# 🚨 Winlogon does NOT restart a custom shell that is killed, AutoRestartShell=1 or not (measured 2026-10-10: the
-# agent stayed gone until started by hand) — so never just Stop-Process it.
+# Winlogon does NOT restart a custom shell that is killed, AutoRestartShell=1 or not (the
+# agent stays gone until started by hand) — so never just Stop-Process it.
 # -SelfTest (after the install, and after -Restart when both are given) runs `agent.exe -selftest-reboot` through a
 # second interactive task, `kiosk-agent-selftest`, so it has exactly the agent's limited token and desktop session
 # (an elevated SSH shell would prove nothing about that token), then prints its `selftest:` lines from agent.log:

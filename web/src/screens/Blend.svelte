@@ -1,6 +1,6 @@
 <script lang="ts">
   import { failKey } from '../lib/api';
-  // One blend (spec 2026-10-19 §6.2): the jar big, its parts striped bottom up; the parts list with the batch scaler
+  // One blend: the jar big, its parts striped bottom up; the parts list with the batch scaler
   // (one jar = N tablespoons → grams of each, and the jar on screen fills to that level); the method; and everything
   // the engine says, read-only, in one scroll.
   import PageHeader from '../components/PageHeader.svelte';

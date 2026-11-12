@@ -1,4 +1,4 @@
-// The ambient acts (spec §5 motion) wired to stores the screens read. One scheduler for the whole app: one act at a
+// The ambient acts wired to stores the screens read. One scheduler for the whole app: one act at a
 // time, a random rest between acts, nothing while the page is hidden. The mascot has its own small life between acts
 // (blinks, glances — lib/mascot.ts); the scheduler hands it the bigger ones, and plays the idle scene's props.
 import { get, writable } from 'svelte/store';

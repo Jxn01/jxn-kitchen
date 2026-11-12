@@ -1,9 +1,9 @@
 """The one CDP (Chrome DevTools Protocol) client for the scripts that drive Chrome: touch-audit.py, clip-audit.py,
 anim-sheet.py. (kiosk-tapthrough.py has its own Page with the same reader; this one is modelled on it.)
 
-🚨 It reads the websocket CONTINUOUSLY, on a task of its own, and hands each reply to the call waiting for it — the
-pattern kiosk-tapthrough.py already had. The audits used to read only while awaiting a reply, leaving Chrome's events
-unread between calls. (The multi-second, growing stalls of the evening of 2026-11-11 were mostly something else: a fresh
+It reads the websocket CONTINUOUSLY, on a task of its own, and hands each reply to the call waiting for it — the
+pattern kiosk-tapthrough.py already had. Reading only while awaiting a reply leaves Chrome's events
+unread between calls. (Multi-second, growing stalls were mostly something else: a fresh
 profile's background machinery on Chrome's browser main thread, which also serves every DevTools call — see
 chrome-flags.txt; with those flags a 9-screen walk went from 3m27s to 43.6 s.)
 tests/test_hygiene.py keeps every other script from reading a CDP websocket itself.

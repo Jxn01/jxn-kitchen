@@ -1,6 +1,6 @@
 <script lang="ts">
   import Mascot from './Mascot.svelte';
-  // A timer ended: full screen until someone taps (spec §6.5). The kiosk chimes meanwhile (every RING_EVERY_MS,
+  // A timer ended: full screen until someone taps. The kiosk chimes meanwhile (every RING_EVERY_MS,
   // muted with the `sounds` setting); other devices just show the card. "+1 min" gives it another minute.
   import { onDestroy } from 'svelte';
   import { dismissTimers, doneTimers, timerApi } from '../lib/cooktimers';

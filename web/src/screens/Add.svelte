@@ -1,6 +1,6 @@
 <script lang="ts">
   import MascotNote from '../components/MascotNote.svelte';
-  // The phone's share target (spec §6.3): an iOS Shortcut opens #/add?url=<the page>. One tap saves it — never on
+  // The phone's share target: an iOS Shortcut opens #/add?url=<the page>. One tap saves it — never on
   // its own, so a stray link can't import anything by itself.
   import PageHeader from '../components/PageHeader.svelte';
   import { importLink } from '../lib/importflow';

@@ -1,4 +1,4 @@
-// What both engines' screens share (spec 2026-10-19 §6.2, §6.3): the fixed pool every engine-filled list is drawn
+// What both engines' screens share: the fixed pool every engine-filled list is drawn
 // through, and the editor's evaluator (debounced, sequenced, stale answers dropped). Tested in spices.test.ts and
 // sauces.test.ts.
 import { writable } from 'svelte/store';
@@ -9,7 +9,7 @@ import type { Lang } from './i18n';
  * A list as a FIXED POOL of slots: the list, then nulls up to `n` (never shorter than the list — nothing is dropped).
  * Every list the engine fills is drawn through one: the screen renders every slot, keyed by its place, and hides the
  * empty ones, so an answer only fills slots and never builds a row. Rows built on a tap — the first time a list grew
- * past its longest yet — were the kiosk's last 84 ms frames (2026-10-19).
+ * past its longest yet — were the kiosk's slowest frames (84 ms).
  */
 export function pool<T>(list: readonly T[], n: number): (T | null)[] {
   return list.length >= n ? [...list] : [...list, ...Array<null>(n - list.length).fill(null)];

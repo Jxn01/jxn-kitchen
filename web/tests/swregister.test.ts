@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-describe('registration (2026-11-12: a stale sw-strategy.js in the HTTP cache killed the new worker\'s install)', () => {
+describe('registration: a stale sw-strategy.js in the HTTP cache cannot break the install', () => {
   it('passes updateViaCache none and the build, and a failure is logged rather than thrown', async () => {
     const { registerWorker } = await import('../src/lib/swregister');
     const register = vi.fn(() => Promise.reject(new Error('import failed')));

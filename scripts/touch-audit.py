@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Touch-target audit (spec §2: every touch target >= 64 CSS px). Exit 1 when anything is smaller.
+"""Touch-target audit (every touch target >= 64 CSS px). Exit 1 when anything is smaller.
 
 Runs the scratch build (scripts/build-web.sh) on a local server with demo data, opens each screen in headless Chrome
 at the kiosk's 1024x640 CSS px as the kiosk (?kiosk=1), opens the overlays (on-screen keyboard, match picker, toast),
@@ -47,11 +47,11 @@ SCREENS: list[tuple[str, list[str]]] = [
     ('/recipes', ["[...document.querySelectorAll('.f')][1].click()"]),   # What can I cook (not an overlay: see below)
     ('/knowhow', []), ('/knowhow', ["document.querySelector('.search').focus()"]),
     ('/knowhow/blends/season', []), ('/knowhow/blends/diy', []), ('/knowhow/cuts/pork', []), ('/lab/mascot?still=1', []),
-    # the infographics (2026-10-11): one page per chart type and the three knife drawings
+    # the infographics: one page per chart type and the three knife drawings
     ('/knowhow/conversions/hungarian-measures', []), ('/knowhow/hungarian/porkolt-paprikas-gulyas', []), ('/knowhow/celiac/basics', []),
     ('/knowhow/temperatures/food-safety', []), ('/knowhow/spices/paprika', []), ('/knowhow/baking/bread', []),
     ('/knowhow/knife/onion', []), ('/knowhow/knife/sharpening', []), ('/knowhow/knife/cuts', []),
-    # the know-how expansion (2026-10-11): every new chart type and drawing
+    # the know-how expansion: every new chart type and drawing
     ('/knowhow/appliances/where', []), ('/knowhow/appliances/rice-cooker', []), ('/knowhow/spices/warm', []),
     ('/knowhow/coffee/french-press', []), ('/knowhow/coffee/moka', []), ('/knowhow/coffee/milk-drinks', []),
     ('/knowhow/coffee/nespresso', []), ('/knowhow/eggs/boiling', []), ('/knowhow/eggs/freshness', []),
@@ -61,13 +61,13 @@ SCREENS: list[tuple[str, list[str]]] = [
     ('/knowhow/blends/classics', []), ('/knowhow/methods/roast', []),
     ('/timers', []), ('/cook/1', []), ('/cook/1', ["document.querySelector('header .ing').click()"]),   # the drawer
     ('/cook/1', ["for (let i = 0; i < 30; i++) document.querySelector('nav .next')?.click()"]),        # used up?
-    # Spices (2026-10-19): the shelf, a blend, the engine — every tab, the notes with the keyboard, a jar's note sheet
+    # Spices: the shelf, a blend, the engine — every tab, the notes with the keyboard, a jar's note sheet
     ('/spices', []), ('/spices/1', []), ('/spices/new', []), ('/spices/4/edit', []),
     *[('/spices/4/edit', [f"[...document.querySelectorAll('.sg')][{i}].click()"]) for i in (1, 2, 3, 4)],
     ('/spices/4/edit', ["[...document.querySelectorAll('.tab')].at(-1).click()", "document.querySelector('.notes textarea').focus()"]),
     ('/spices/new', ["new Promise((r) => { const b = document.querySelector('.rj'), x = b.getBoundingClientRect();"
                         " b.dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, clientX: x.x + 9, clientY: x.y + 9})); setTimeout(r, 800); })"]),
-    # Sauces (2026-10-20): the sideboard, a sauce, the engine — every tab, the notes with the keyboard, both sheets, cook mode
+    # Sauces: the sideboard, a sauce, the engine — every tab, the notes with the keyboard, both sheets, cook mode
     ('/sauces', []), ('/sauces/1', []), ('/sauces/new', []), ('/sauces/4/edit', []),
     *[('/sauces/4/edit', [f"[...document.querySelectorAll('.sg')][{i}].click()"]) for i in (1, 2, 3, 4)],
     ('/sauces/4/edit', ["[...document.querySelectorAll('.tab')].at(-1).click()", "document.querySelector('.notes textarea').focus()"]),
@@ -84,7 +84,7 @@ MEASURE = '''(() => {
   const R = %d / 2 - 1, out = [], ok = [];
   const clampX = (x) => Math.min(innerWidth - 1, Math.max(0, x)), clampY = (y) => Math.min(innerHeight - 1, Math.max(0, y));
   // clipped by the viewport or by a scrolling ancestor (a chip at the end of a row, a slot half under the tray): the
-  // owner scrolls it into view first, so it is measured scrolled into view — one that is still clipped there is real
+  // user scrolls it into view first, so it is measured scrolled into view — one that is still clipped there is real
   const clipped = (el, r) => {
     for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) {
       const cs = getComputedStyle(p);
@@ -99,14 +99,14 @@ MEASURE = '''(() => {
     let r = el.getBoundingClientRect();
     if (!r.width || !r.height) continue;
     // out of view or clipped (below the fold, past the end of a row): measured where scrolling brings it — before
-    // 2026-10-20 a target wholly out of view was skipped, so nothing past a scroll edge was ever measured
+    // a target wholly out of view must not be skipped, or nothing past a scroll edge is ever measured
     if (off(r) || clipped(el, r)) { el.scrollIntoView({ block: 'nearest', inline: 'nearest' }); r = el.getBoundingClientRect(); }
     if (off(r)) continue;                       // unreachable by scrolling (off-canvas): not a target
     const st = getComputedStyle(el);
     if (st.visibility === 'hidden' || st.display === 'none' || el.closest('[aria-hidden="true"]') || el.type === 'hidden') continue;
     const mine = (x, y) => { const h = document.elementFromPoint(clampX(x), clampY(y));
       return !!h && (h === el || el.contains(h) || (h.tagName === 'LABEL' && h.contains(el))); };
-    // partly under an overlay (the keyboard, a toast): the owner scrolls it into view, so not a size defect
+    // partly under an overlay (the keyboard, a toast): the user scrolls it into view, so not a size defect
     const under = (x, y) => { const h = document.elementFromPoint(clampX(x), clampY(y));
       const ov = h?.closest('.kb, .toast, .sheet'); return !!ov && !ov.contains(el); };
     const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
@@ -209,7 +209,7 @@ SELFTEST_HTML = ('<!doctype html><html><body style="margin:0"><div style="displa
 async def selftest() -> int:
     """The audit's positive control: a row of 64 px pills running off the edge of a scroller (none may be flagged — a
     clipped target is measured scrolled into view) and two 40 px buttons, one visible and one past the row's end (both
-    must be: a target out of view was once skipped, so nothing past a scroll edge was ever measured)."""
+    must be: a target out of view must still be measured)."""
     from urllib.parse import quote
     data = pathlib.Path(tempfile.mkdtemp(prefix='kk-touch-self-'))
     chrome_bin = shutil.which('google-chrome-stable') or shutil.which('chromium')

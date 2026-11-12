@@ -1,9 +1,9 @@
-"""The gluten engine (spec §7) — safety-critical: the kitchen it serves is fully gluten-free.
+"""The gluten engine — safety-critical: the kitchen is fully gluten-free.
 
 Per ingredient line:
-  ok      — a gluten-free item, or an unmatched line the owner marked OK by hand
+  ok      — a gluten-free item, or an unmatched line the user marked OK by hand
   swap    — a `contains` item (wheat flour, nokedli, soy sauce…): shown struck through with its GF swap (+ a tip)
-  yours   — a `label` item that is in the pantry: the kitchen is fully GF, so it is the owner's GF one
+  yours   — a `label` item that is in the pantry: the kitchen is fully GF, so the one in the pantry is GF
   check   — a `label` item not in the pantry: check the label (and buy it as "GF …")
   unknown — not matched: NEVER assumed gluten-free; the recipe can't be ✓ GF until it is matched or marked OK
 "May contain traces" is not a gluten state at all.
@@ -30,7 +30,7 @@ class LineGluten:
 def check_line(cat: Catalogue, state: dict[str, Any], item_id: str | None, ok_override: bool,
                note_gluten: str | None = None) -> LineGluten:
     """`note_gluten`: a gluten-containing item the line's note mentions ("vaj a kenyérhez"). It never lets the line read
-    OK by itself — 'check', with a tip naming it (fail closed). A line the owner marked OK by hand stays OK."""
+    OK by itself — 'check', with a tip naming it (fail closed). A line the user marked OK by hand stays OK."""
     if item_id is None or item_id not in cat.items:
         return LineGluten('ok' if ok_override else 'unknown')
     item = cat.items[item_id]
@@ -48,8 +48,7 @@ def check_line(cat: Catalogue, state: dict[str, Any], item_id: str | None, ok_ov
 
 def verdict(statuses: Iterable[str]) -> dict[str, Any]:
     """The recipe's gluten verdict. ✓ GF ('gf') needs at least one line and every line OK or your GF one: a recipe with
-    NO lines (a failed import, an empty scan draft) is 'empty', never 'gf' — nothing has been checked (spec §7.2; it
-    read 'gf' until 2026-10-11, found on a live import of a list page)."""
+    NO lines (a failed import, an empty scan draft) is 'empty', never 'gf' — nothing has been checked."""
     c = Counter(statuses)
     state = ('empty' if not sum(c.values()) else 'unknown' if c['unknown'] else 'swaps' if c['swap']
              else 'check' if c['check'] else 'gf')

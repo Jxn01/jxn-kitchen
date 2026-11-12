@@ -59,7 +59,7 @@
   const night = derived([now, settings], ([$n, $s]) => !demo.includes('day') && isNight(budapestHour($n), $s.night_start, $s.night_end));
   let dark = $derived(darkScene($night, $route.name));
   $effect(() => { document.documentElement.classList.toggle('kiosk', $isKiosk); });
-  // ?demo=nobreathe (measurements): the mascot's continuous breath off, to weigh its cost on the kiosk
+  // ?demo=nobreathe: the mascot's continuous breath off, to weigh its cost on the kiosk
   if (demo.includes('nobreathe')) document.documentElement.classList.add('demo-nobreathe');
   if (demo.includes('layers')) document.documentElement.classList.add('demo-layers');
 
@@ -97,7 +97,7 @@
     const warm = $isKiosk && !shotMode ? startOfflineWarm() : null;
     let ev: ReturnType<typeof connectEvents> | null = null;
     if (!shotMode) {
-      // back online: first replay what was done offline (spec §9), then reload, so the reload already includes it
+      // back online: first replay what was done offline, then reload, so the reload already includes it
       ev = connectEvents({ onStatus: (ok) => { report(ok); if (ok) { checkForUpdate(); registerWorker(__BUILD__); outbox.drain().finally(() => { load(); loadPantry(); loadShopping(); flushDismissals().then(() => flushOfflineTimers()).finally(() => loadTimers()); }); warm?.poke(); } } });
       ev.on('settings', (s: S) => apply(s));
       ev.on('pantry', (e: { state: PantryState }) => pantry.accept(e.state));

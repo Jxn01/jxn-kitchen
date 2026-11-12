@@ -8,7 +8,7 @@ function mem() {
   return { getItem: (k: string) => m.get(k) ?? null, setItem: (k: string, v: string) => void m.set(k, v), m };
 }
 
-describe('outbox (spec §9: writes made offline are queued and replayed)', () => {
+describe('outbox: writes made offline are queued and replayed', () => {
   it('pantry writes coalesce per node: the last one wins', () => {
     const ob = createOutbox(mem(), { send: vi.fn() });
     ob.push({ kind: 'pantry', node: 'eggs', have: true });
@@ -55,7 +55,7 @@ describe('outbox (spec §9: writes made offline are queued and replayed)', () =>
     expect(await ob.drain()).toBe(true);              // nothing queued yet: finishes without awaiting anything
     ob.push({ kind: 'pantry', node: 'eggs', have: true });
     expect(await ob.drain()).toBe(true);
-    expect(send).toHaveBeenCalledOnce();               // found end-to-end: this second drain used to do nothing
+    expect(send).toHaveBeenCalledOnce();               // this second drain must still send
   });
 
   it('survives a reload (persisted), and a broken store never breaks the app', () => {

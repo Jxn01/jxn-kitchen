@@ -38,8 +38,8 @@ func (r *rotatingFile) Write(p []byte) (int, error) {
 }
 
 // Close releases the file. The agent never needs it (the log lives as long as the process), but Windows refuses to
-// delete or move a file that is still open — a test that leaves it open fails its own cleanup there (found running
-// the windows/386 test binary under Wine, 2026-10-11).
+// delete or move a file that is still open — a test that leaves it open fails its own cleanup there (seen running
+// the windows/386 test binary under Wine).
 func (r *rotatingFile) Close() error {
 	r.mu.Lock()
 	defer r.mu.Unlock()

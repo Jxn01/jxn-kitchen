@@ -1,5 +1,5 @@
 /// <reference types="node" />
-// The mobile-first pass (2026-10-26): the owner's iPhone in Safari is first-class, and the kiosk view must not move.
+// The mobile-first pass: an iPhone in Safari is first-class, and the kiosk view must not move.
 // Three source guards, each with a positive control:
 //  1. every media query is one that cannot match the kiosk (1024×640 CSS px, landscape) — so a phone rule can never
 //     leak onto it (the kiosk screenshots were compared pixel for pixel before and after: README → Phones);

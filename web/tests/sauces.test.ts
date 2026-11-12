@@ -15,7 +15,7 @@ const SH = shelvesFx as unknown as Shelves;
 const items = itemIndex(SH);
 const jars = new Map([['cumin', { g_per_tsp: 2.1 }], ['sweet-paprika', { g_per_tsp: 2.3 }]]);
 
-describe('amounts as the owner reads them', () => {
+describe('amounts as a cook reads them', () => {
   it('quarters and halves as fractions, the rest with the language\'s decimal mark', () => {
     expect([0.25, 0.5, 0.75, 1, 1.5, 2.25, 0.3].map((n) => fmtFrac(n, 'en'))).toEqual(['¼', '½', '¾', '1', '1½', '2¼', '0.3']);
     expect(fmtFrac(0.3, 'hu')).toBe('0,3');
@@ -128,7 +128,7 @@ describe('the tray', () => {
     expect(fromTyped({ item: 'ketchup', raw: 'ketchup', match_how: 'exact' })).toEqual({ item: 'ketchup', raw: 'ketchup', match_how: 'exact' });
     expect(fromTyped({ raw: 'valami' })).toEqual({ raw: 'valami' });
   });
-  it('a saved sauce comes back as the lines that were sent: text, match and the owner\'s GF override kept', () => {
+  it('a saved sauce comes back as the lines that were sent: text, match and the GF override kept', () => {
     const view = [
       { pos: 0, kind: 'shelf', shelf_id: 'olive-oil', spice_id: null, blend_id: null, item_id: 'olive-oil', raw: '6 tbsp olive oil', qty: 6, unit: 'tbsp', ok_gf: false, match_how: 'exact' },
       { pos: 1, kind: 'spice', shelf_id: null, spice_id: 'cumin', blend_id: null, item_id: 'cumin', raw: null, qty: 1, unit: 'tsp', ok_gf: true, match_how: null },
@@ -203,7 +203,7 @@ describe('the families, the sideboard', () => {
     expect(sortSauces(list, 'new', 'en').map((x) => x.id)).toEqual([2, 3, 1]);
     expect(sortSauces(list, 'az', 'hu').map((x) => x.id)).toEqual([2, 3, 1]);
   });
-  it('a sauce\'s yield: the owner\'s, else its weight rounded to 50 ml, else 250', () => {
+  it('a sauce\'s yield: the one set by hand, else its weight rounded to 50 ml, else 250', () => {
     expect(baseYield({ yield_ml: 400, evaluation: null })).toBe(400);
     expect(baseYield({ yield_ml: null, evaluation: { total_g: 659.6 } as SauceEvaluation })).toBe(650);
     expect(baseYield({ yield_ml: null, evaluation: { total_g: 12 } as SauceEvaluation })).toBe(50);

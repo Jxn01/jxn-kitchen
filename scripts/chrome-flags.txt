@@ -1,8 +1,8 @@
 # The flags EVERY headless Chrome in scripts/ starts with (read by cdp.py's CHROME_FLAGS and by screens.sh; a hygiene test
-# keeps each launch on them). Puppeteer's automation baseline, measured 2026-11-11: a 9-screen walk took 3m27s
+# keeps each launch on them). Puppeteer's automation baseline, measured: a 9-screen walk took 3m27s
 # without them and 43.6 s with them — a fresh profile otherwise starts Chrome's background machinery (component updates,
 # safe-browsing lists, optimization hints, sync…) on the browser's MAIN thread, the thread that also serves every DevTools
-# call, so each call queued behind it (seen: CrBrowserMain at 99.8 % CPU, the page itself idle). Bisected the same night:
+# call, so each call queued behind it (seen: CrBrowserMain at 99.8 % CPU, the page itself idle). Bisected:
 # --disable-background-networking ALONE takes the walk to 43 s; --disable-ipc-flooding-protection alone changes nothing (207 s).
 --password-store=basic
 # ^ without it Chrome asks the GNOME keyring for its key; while nobody is logged in to GNOME the keyring is locked and can only
