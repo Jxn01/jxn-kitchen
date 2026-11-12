@@ -8,6 +8,8 @@ kitchen.env
 node_modules/
 dist/
 __pycache__/
+*.egg-info/
+server/build/
 .pytest_cache/
 *.pyc
 kiosk/agent/*.exe

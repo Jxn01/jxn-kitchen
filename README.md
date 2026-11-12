@@ -65,19 +65,25 @@ flowchart LR
 
 ## Quick start
 
+Needs Python 3.13, Node 22 with npm, rsync and Go (only for the kiosk agent). The web app is built **outside the
+repo** — `scripts/build-web.sh` copies `web/` to `~/.cache/jxn-kitchen/web` and builds there (the repo grew up on a
+drive two operating systems share, and a guard test keeps `node_modules` out of the tree):
+
 ```bash
 python3.13 -m venv ~/.local/share/venvs/jxn-kitchen
-~/.local/share/venvs/jxn-kitchen/bin/pip install -e 'server[test]'
-(cd web && npm ci && npm run build)                     # → web/dist
-KITCHEN_DATA_DIR=/tmp/kitchen-data KITCHEN_STATIC_DIR=web/dist KITCHEN_SHOPPING_SYNC_SECONDS=0 \
+~/.local/share/venvs/jxn-kitchen/bin/pip install -e './server[test]'
+scripts/build-web.sh                                    # → ~/.cache/jxn-kitchen/web/dist
+KITCHEN_DATA_DIR=/tmp/kitchen-data KITCHEN_STATIC_DIR=~/.cache/jxn-kitchen/web/dist KITCHEN_SHOPPING_SYNC_SECONDS=0 \
   PYTHONPATH=server ~/.local/share/venvs/jxn-kitchen/bin/uvicorn kitchen.main:app --port 8765
 ```
 
 Open `http://localhost:8765` (add `?kiosk=1` for the kiosk layout). Home Assistant is optional: without `HA_URL` and
-`HA_TOKEN` the weather chip, the shopping-list sync and phone notifications simply stay off. To seed three demo
-recipes: `python scripts/demo-recipes.py > recipes.json`, then `POST` each body to `/api/recipes`.
+`HA_TOKEN` the weather chip, the shopping-list sync and phone notifications simply stay off. To seed the four demo
+recipes: `~/.local/share/venvs/jxn-kitchen/bin/python scripts/demo-recipes.py > recipes.json`, then `POST` each body
+to `/api/recipes`.
 
-Tests: `pytest` (repo guards + server, from the repo root), `(cd web && npx vitest run)`, `(cd kiosk/agent && go test ./...)`.
+Tests: `~/.local/share/venvs/jxn-kitchen/bin/python -m pytest` (repo guards + server, from the repo root),
+`scripts/build-web.sh --test-only` (vitest + svelte-check), `(cd kiosk/agent && go test ./...)`.
 
 ## About this copy
 

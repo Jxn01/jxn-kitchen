@@ -1,4 +1,4 @@
-# Install or update the kiosk agent as the kiosk user's Windows shell. Run over SSH as the kiosk user (an administrator) after copying
+# Install or update the kiosk agent as the kiosk user's Windows shell. Run as the kiosk user after copying
 # agent.exe to the profile:  scp agent.exe install.ps1 <user>@<kiosk>:   then   powershell -File install.ps1 [-Restart]
 # A running agent.exe is locked but may be RENAMED, so an update renames it to agent.exe.prev (the rollback copy)
 # and copies the new one in. -Restart then ends the running agent and starts the new one in the kiosk user's desktop session
@@ -36,7 +36,7 @@ if ($Restart) {
   schtasks /Run /TN kiosk-agent-start | Out-Null
   Start-Sleep 5
   $new = Get-Process agent -EA SilentlyContinue | Where-Object { $_.Path -eq $dst -and $_.SessionId -ne 0 }
-  if (-not $new) { throw "the new agent did not start in the desktop session - reboot the kiosk (autologon starts it)" }
+  if (-not $new) { throw "the new agent did not start in the desktop session - reboot the kiosk (its logon starts it)" }
   "restarted: old pid(s) $($old.Id -join ', ') -> new pid $($new.Id) in session $($new.SessionId)"
 }
 if ($SelfTest) {
