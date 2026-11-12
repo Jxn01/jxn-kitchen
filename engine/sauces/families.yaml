@@ -1,0 +1,331 @@
+# The mother-sauce tree and how a sauce is recognised (spec 2026-10-19 §4.3). Detection walks this file in order: a
+# top-level family is tried, then its children in order; the deepest family whose `detect` passes wins, and the first
+# top-level family that passes is the answer (no backtracking). A family with `any_child: true` passes when one of its
+# children does. The owner can override the family on a sauce.
+#   detect: {all: [...], any: [...], none: [...], any_child: true} — `all` must all hold, `any` at least one, `none` none
+#   predicates: item:<id> (a line of that ingredient, or one that pairs as it) · role:<role> · body:<method> (a line
+#   with that body method) · step:<heat|boil|simmer-long|reduce|blend|mount|marinate|chill> (the steps say so) ·
+#   share:<role>>=x (that role is at least x of the sauce's grams) · emulsion (an egg emulsifier holds fat that is at
+#   least 30 % of the sauce) · spices (a rack spice or a blend on the tray) · blend · spice:<rack jar>
+#   vessel: jug | sauceboat | bowl | bottle | jar (the sideboard draws it) · chip: the sideboard's filter chip
+#   body: the class this sauce usually has — a sauce off by a class gets a line and a fix
+#   kind: savoury (the default) | rich (fat-based by design: emulsions, dressings, pestos, marinades) | sweet | condiment
+#   (used sparingly: glazes and dips) — which balance rules apply (a teriyaki is meant to be salty)
+families:
+  # --- Hungarian -------------------------------------------------------------------------------------------------------
+  - {id: hungarian, en: "Hungarian mártások", hu: "Magyar mártások", parent: null, vessel: jug, chip: hungarian, detect: {any_child: true}}
+  - id: paprikas
+    en: Paprikás sauce
+    hu: Paprikás mártás
+    parent: hungarian
+    vessel: jug
+    chip: hungarian
+    body: coats
+    detect: {all: ["item:sour-cream", "role:allium"], any: ["item:sweet-paprika", "item:smoked-paprika", "item:hot-paprika"], none: ["item:dill", "item:horseradish", "item:sour-cherry", "item:carrot"]}
+    note: {en: "Paprika stirred into the onion's fat off the heat, sour cream tempered in — the base of csirkepaprikás.", hu: "A paprika a tűzről lehúzva a hagymás zsiradékba, a tejföl elhabarva — ez a csirkepaprikás alapja."}
+  - id: kapormartas
+    en: Dill sauce
+    hu: Kapormártás
+    parent: hungarian
+    vessel: jug
+    chip: hungarian
+    body: coats
+    detect: {all: ["item:dill", "role:dairy", "role:thickener"], none: ["emulsion"]}
+    note: {en: "A pale roux, milk and sour cream, dill, a little sugar and vinegar — sweet-sour and green.", hu: "Világos rántás, tej és tejföl, kapor, egy kevés cukor és ecet — édes-savanyú és zöld."}
+  - id: vadas
+    en: Vadas
+    hu: Vadas
+    parent: hungarian
+    vessel: jug
+    chip: hungarian
+    body: coats
+    detect: {all: ["item:carrot", "role:dairy"], any: ["item:parsley-root", "item:celeriac"]}
+    note: {en: "Roots cooked soft and blended, mustard, sugar and lemon, sour cream — the sauce of a Sunday roast.", hu: "Puhára főtt, turmixolt gyökérzöldség, mustár, cukor és citrom, tejföl — a vasárnapi sült mártása."}
+  - id: meggymartas
+    en: Sour cherry sauce
+    hu: Meggymártás
+    parent: hungarian
+    vessel: jug
+    chip: hungarian
+    kind: sweet
+    body: coats
+    detect: {all: ["item:sour-cherry"]}
+    note: {en: "Sour cherries with sugar and cinnamon, thickened and softened with sour cream — for boiled beef, or cold in summer.", hu: "Meggy cukorral és fahéjjal, besűrítve és tejföllel lágyítva — főtt marhához, vagy nyáron hidegen."}
+
+  # --- dips and cold sauces --------------------------------------------------------------------------------------------
+  - {id: cold, en: "Dips and cold sauces", hu: "Mártogatósok, hideg mártások", parent: null, vessel: bowl, chip: dips-cold, detect: {any_child: true}}
+  - id: tzatziki
+    en: Tzatziki
+    hu: Tzatziki
+    parent: cold
+    vessel: bowl
+    chip: dips-cold
+    body: thick
+    detect: {all: ["item:cucumber", "item:yogurt"], none: ["step:heat"]}
+    note: {en: "Thick yoghurt, cucumber squeezed dry, garlic, and dill or mint.", hu: "Sűrű joghurt, kinyomkodott uborka, fokhagyma, kapor vagy menta."}
+  - id: tormamartas
+    en: Horseradish sauce
+    hu: Tormamártás
+    parent: cold
+    vessel: bowl
+    chip: dips-cold
+    detect: {all: ["item:horseradish", "role:dairy"]}
+    note: {en: "Grated horseradish softened with sour cream (or a white roux), a little sugar and acid — for ham and boiled beef.", hu: "Reszelt torma tejföllel (vagy világos rántással) lágyítva, egy kevés cukor és sav — sonkához, főtt húshoz."}
+  - id: herb-yoghurt
+    en: Herb yoghurt
+    hu: Zöldfűszeres joghurt
+    parent: cold
+    vessel: bowl
+    chip: dips-cold
+    body: thick
+    detect: {all: ["item:yogurt", "role:herb"], none: ["step:heat"]}
+    note: {en: "Yoghurt and a fistful of herbs: a cool sauce for grilled meat.", hu: "Joghurt és egy marék zöldfűszer: hűsítő mártás grillezett húshoz."}
+
+  # --- emulsions ---------------------------------------------------------------------------------------------------------
+  - {id: emulsions, en: Emulsions, hu: Emulziók, parent: null, vessel: bowl, chip: emulsions, detect: {any_child: true}}
+  - id: mayonnaise
+    en: Mayonnaise
+    hu: Majonéz
+    parent: emulsions
+    vessel: bowl
+    chip: emulsions
+    kind: rich
+    body: stiff
+    detect: {all: ["emulsion"], none: ["step:heat"]}
+    note: {en: "Oil held in tiny drops by the yolk — about 250 ml per yolk.", hu: "A sárgája apró cseppekben tartja az olajat — sárgájánként kb. 250 ml."}
+  - id: aioli
+    en: Aioli
+    hu: Aioli
+    parent: mayonnaise
+    vessel: bowl
+    chip: emulsions
+    kind: rich
+    body: stiff
+    detect: {all: ["item:garlic"]}
+    note: {en: "Garlic mayonnaise.", hu: "Fokhagymás majonéz."}
+  - id: tartare
+    en: Tartare sauce
+    hu: Tartármártás
+    parent: mayonnaise
+    vessel: bowl
+    chip: emulsions
+    kind: rich
+    body: thick
+    detect: {all: ["item:capers"]}
+    note: {en: "Mayonnaise with capers and chopped pickles — for fish.", hu: "Majonéz kapribogyóval és apróra vágott csemegeuborkával — halhoz."}
+  - id: hollandaise
+    en: Hollandaise
+    hu: Hollandi mártás
+    parent: emulsions
+    vessel: sauceboat
+    chip: emulsions
+    kind: rich
+    body: coats
+    detect: {all: ["emulsion", "step:heat", "item:butter"]}
+    note: {en: "Yolks whisked warm, butter in a thin stream, lemon — for eggs, fish and asparagus.", hu: "Melegen felvert sárgája, vékony sugárban vaj, citrom — tojáshoz, halhoz, spárgához."}
+  - id: bearnaise
+    en: Béarnaise
+    hu: Béarnaise
+    parent: hollandaise
+    vessel: sauceboat
+    chip: emulsions
+    kind: rich
+    body: coats
+    detect: {all: ["item:tarragon"]}
+    note: {en: "Hollandaise with tarragon and a shallot-and-vinegar reduction — for steak.", hu: "Hollandi tárkonnyal és salottás-ecetes redukcióval — steakhez."}
+  - id: beurre-blanc
+    en: Beurre blanc
+    hu: Beurre blanc
+    parent: emulsions
+    vessel: sauceboat
+    chip: emulsions
+    kind: rich
+    body: coats
+    detect: {all: ["item:butter", "role:acid", "step:reduce"], none: ["role:egg", "role:thickener"]}
+    note: {en: "A wine-and-shallot reduction with cold butter whisked in — for fish.", hu: "Boros-salottás redukció, hideg vajjal felverve — halhoz."}
+
+  # --- dressings ---------------------------------------------------------------------------------------------------------
+  - {id: dressings, en: Dressings, hu: Öntetek, parent: null, vessel: bottle, chip: dressings, detect: {any_child: true}}
+  - id: vinaigrette
+    en: Vinaigrette
+    hu: Vinaigrette
+    parent: dressings
+    vessel: bottle
+    chip: dressings
+    kind: rich
+    body: thin
+    detect: {all: ["role:fat", "role:acid", "share:fat>=0.4"], none: ["emulsion", "step:heat", "role:dairy", "role:thickener"]}
+    note: {en: "Three parts oil to one of acid, and mustard to hold it a while.", hu: "Három rész olaj, egy rész sav, és mustár, hogy egy ideig együtt maradjon."}
+
+  # --- Asian-style ---------------------------------------------------------------------------------------------------------
+  - {id: asian, en: Asian-style, hu: Ázsiai, parent: null, vessel: bottle, chip: asian, detect: {any_child: true}}
+  - id: teriyaki
+    en: Teriyaki
+    hu: Teriyaki
+    parent: asian
+    vessel: bottle
+    chip: asian
+    kind: condiment
+    body: coats
+    detect: {all: ["role:sweet"], any: ["item:tamari", "item:soy-sauce"], none: ["item:peanut-butter", "item:coconut-milk"]}
+    note: {en: "Tamari, honey and rice vinegar (2 : 1 : ½), simmered glossy — GF, unlike the bottled soy one.", hu: "Tamari, méz és rizsecet (2 : 1 : ½), fényesre főzve — GM, nem úgy, mint az üveges, szójaszószos."}
+  - id: peanut
+    en: Peanut sauce
+    hu: Mogyorószósz
+    parent: asian
+    vessel: bowl
+    chip: asian
+    kind: condiment
+    body: coats
+    detect: {all: ["item:peanut-butter"]}
+    note: {en: "Peanut butter loosened with tamari and lime, a little sweet and a little heat.", hu: "Mogyoróvaj tamarival és limével lazítva, egy kevés édessel és csípőssel."}
+  - id: sweet-chilli
+    en: Sweet chilli sauce
+    hu: Édes chiliszósz
+    parent: asian
+    vessel: bottle
+    chip: asian
+    kind: condiment
+    body: coats
+    detect: {all: ["role:sweet", "role:acid"], any: ["item:fresh-chili", "item:chili-flakes"], none: ["role:dairy", "role:fat"]}
+    note: {en: "Chilli, sugar and vinegar, cooked to a glossy dip.", hu: "Chili, cukor és ecet, fényes mártogatóssá főzve."}
+
+  # --- sweet ---------------------------------------------------------------------------------------------------------------
+  - {id: sweet, en: Sweet sauces, hu: Édes mártások, parent: null, vessel: jug, chip: sweet, detect: {any_child: true}}
+  - id: custard
+    en: Custard
+    hu: Vaníliasodó
+    parent: sweet
+    vessel: jug
+    chip: sweet
+    kind: sweet
+    body: coats
+    detect: {all: ["role:egg", "role:dairy", "step:heat", "share:sweet>=0.05"]}
+    note: {en: "Milk, yolks and sugar, stirred gently until it coats a spoon — never boiled.", hu: "Tej, sárgája, cukor, lassan kevergetve, amíg bevonja a kanalat — sosem forralva."}
+  - id: chocolate
+    en: Chocolate sauce
+    hu: Csokoládéöntet
+    parent: sweet
+    vessel: jug
+    chip: sweet
+    kind: sweet
+    body: coats
+    detect: {all: ["item:dark-chocolate"]}
+    note: {en: "Dark chocolate melted into warm cream.", hu: "Étcsokoládé meleg tejszínben megolvasztva."}
+  - id: caramel
+    en: Caramel sauce
+    hu: Karamellszósz
+    parent: sweet
+    vessel: jug
+    chip: sweet
+    kind: sweet
+    body: coats
+    detect: {all: ["item:sugar", "role:fat"], any: ["item:cream-whipping", "item:cream-cooking"], none: ["role:allium", "role:herb"]}
+    note: {en: "Sugar cooked to amber, cream and butter whisked in.", hu: "Borostyánszínűre főzött cukor, beledolgozott tejszín és vaj."}
+  - id: coulis
+    en: Fruit coulis
+    hu: Gyümölcsöntet
+    parent: sweet
+    vessel: jug
+    chip: sweet
+    kind: sweet
+    body: coats
+    detect: {all: ["item:raspberry", "role:sweet"]}
+    note: {en: "Fruit blended with sugar and a little lemon, then sieved.", hu: "Cukorral és kevés citrommal turmixolt, átszűrt gyümölcs."}
+
+  # --- purées and pestos -------------------------------------------------------------------------------------------------
+  - {id: purees, en: "Purées and pestos", hu: "Pürék, pestók", parent: null, vessel: jar, chip: dips-cold, detect: {any_child: true}}
+  - id: pesto
+    en: Pesto
+    hu: Pesto
+    parent: purees
+    vessel: jar
+    chip: dips-cold
+    kind: rich
+    body: thick
+    detect: {all: ["item:basil", "role:fat"], any: ["item:pine-nuts", "item:walnuts", "item:parmesan"]}
+    note: {en: "Basil, nuts, hard cheese and olive oil, pounded or blitzed.", hu: "Bazsalikom, olajos mag, kemény sajt és olívaolaj, mozsárban vagy aprítóval."}
+  - id: pepper-paste
+    en: Pepper paste
+    hu: Paprikakrém
+    parent: purees
+    vessel: jar
+    chip: dips-cold
+    kind: rich
+    body: thick
+    detect: {all: ["item:roasted-peppers"]}
+    note: {en: "Roasted peppers blended smooth — ajvar's family.", hu: "Simára turmixolt sült paprika — az ajvár rokona."}
+
+  # --- marinades and wet rubs ----------------------------------------------------------------------------------------------
+  - {id: marinades, en: "Marinades and wet rubs", hu: "Pácok, fűszerpaszták", parent: null, vessel: bottle, chip: marinades, detect: {any_child: true}}
+  - id: wet-rub
+    en: Wet rub
+    hu: Fűszerpaszta
+    parent: marinades
+    vessel: jar
+    chip: marinades
+    kind: rich
+    body: thick
+    detect: {all: ["step:marinate", "spices"], none: ["role:liquid", "role:dairy"]}
+    note: {en: "Spices in a little oil, rubbed into the meat.", hu: "Fűszerek kevés olajban, a húsba dörzsölve."}
+  - id: marinade
+    en: Marinade
+    hu: Pác
+    parent: marinades
+    vessel: bottle
+    chip: marinades
+    kind: rich
+    body: thin
+    detect: {all: ["step:marinate"]}
+    note: {en: "Acid, oil and aromatics; the meat sits in it before it is cooked.", hu: "Sav, olaj és aromák; a hús sütés előtt ebben áll."}
+
+  # --- pan and reduced sauces ----------------------------------------------------------------------------------------------
+  - {id: pan, en: "Pan and reduced sauces", hu: "Serpenyős, beforralt mártások", parent: null, vessel: jug, chip: roux-dairy, detect: {any_child: true}}
+  - id: red-wine-sauce
+    en: Red wine sauce
+    hu: Vörösboros mártás
+    parent: pan
+    vessel: jug
+    chip: roux-dairy
+    body: coats
+    detect: {all: ["item:red-wine", "step:reduce"]}
+    note: {en: "Red wine reduced with shallot and stock, butter at the end.", hu: "Salottával és alaplével beforralt vörösbor, a végén vaj."}
+  - id: gravy
+    en: Gravy
+    hu: Pecsenyelé
+    parent: pan
+    vessel: jug
+    chip: roux-dairy
+    body: coats
+    detect: {all: ["step:heat"], any: ["item:stock-liquid", "item:stock-cube"], none: ["role:dairy", "item:red-wine", "body:roux"]}
+    note: {en: "The pan's juices with stock, thickened — the stock must be GF.", hu: "A sült leve alaplével, besűrítve — az alaplé legyen GM."}
+
+  # --- roux sauces (the generic white sauces: last) ------------------------------------------------------------------------
+  - {id: roux, en: Roux sauces, hu: Rántásos mártások, parent: null, vessel: jug, chip: roux-dairy, detect: {any_child: true}}
+  - id: bechamel
+    en: Béchamel
+    hu: Besamel
+    parent: roux
+    vessel: jug
+    chip: roux-dairy
+    body: coats
+    detect: {all: ["body:roux", "item:milk"]}
+    note: {en: "Butter and rice flour, milk whisked in: 30 g + 30 g + 500 ml coats a spoon.", hu: "Vaj és rizsliszt, beledolgozott tej: 30 g + 30 g + 500 ml bevonja a kanalat."}
+  - id: mornay
+    en: Cheese sauce (Mornay)
+    hu: Sajtmártás (Mornay)
+    parent: bechamel
+    vessel: jug
+    chip: roux-dairy
+    body: coats
+    detect: {any: ["item:semi-hard-cheese", "item:parmesan", "item:cheddar"]}
+    note: {en: "Béchamel with grated cheese stirred in off the heat.", hu: "Besamel, a tűzről levéve belekevert reszelt sajttal."}
+  - id: veloute
+    en: Velouté
+    hu: Velouté
+    parent: roux
+    vessel: jug
+    chip: roux-dairy
+    body: coats
+    detect: {all: ["body:roux"], any: ["item:stock-liquid", "item:stock-cube"]}
+    note: {en: "A pale roux with stock instead of milk.", hu: "Világos rántás, tej helyett alaplével."}

@@ -1,0 +1,45 @@
+# Earthy & seeds × earthy & seeds — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+cumin:
+  caraway: [0, harmless]
+  coriander-seed: [3, classic-partners, "Cumin and coriander: the backbone of every curry — earthy under, citrusy over.", "Római kömény és koriander: minden curry gerince — földes alul, citrusos felül."]
+  fennel-seed: [2, cuisine-mates]
+  turmeric: [3, classic-partners, "Cumin and turmeric: the earth and the gold of Indian cooking.", "Római kömény és kurkuma: az indiai konyha földje és aranya."]
+  fenugreek: [2, cuisine-mates]
+  mustard-seed: [2, cuisine-mates]
+  celery-seed: [0, harmless]
+  dill-seed: [0, harmless]
+caraway:
+  coriander-seed: [1, gentle-company]
+  fennel-seed: [-1, doubled-note]
+  turmeric: [0, strangers]
+  fenugreek: [0, strangers]
+  mustard-seed: [1, cuisine-mates]
+  celery-seed: [1, cuisine-mates]
+  dill-seed: [1, same-family]
+coriander-seed:
+  fennel-seed: [2, bridge]
+  turmeric: [2, cuisine-mates]
+  fenugreek: [2, cuisine-mates]
+  mustard-seed: [2, cuisine-mates]
+  celery-seed: [1, gentle-company]
+  dill-seed: [2, cuisine-mates]
+fennel-seed:
+  turmeric: [0, harmless]
+  fenugreek: [1, cuisine-mates]
+  mustard-seed: [1, cuisine-mates]
+  celery-seed: [0, harmless]
+  dill-seed: [0, harmless]
+turmeric:
+  fenugreek: [2, cuisine-mates]
+  mustard-seed: [2, cuisine-mates]
+  celery-seed: [-1, muddy]
+  dill-seed: [0, strangers]
+fenugreek:
+  mustard-seed: [2, cuisine-mates]
+  celery-seed: [-2, bitter-pile]
+  dill-seed: [-1, bitter-pile]
+mustard-seed:
+  celery-seed: [2, cuisine-mates]
+  dill-seed: [3, classic-partners, "Mustard seed and dill seed: the classic pickle jar.", "Mustármag és kapormag: a klasszikus savanyúságos üveg."]
+celery-seed:
+  dill-seed: [1, cuisine-mates]

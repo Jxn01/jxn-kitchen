@@ -1,0 +1,19 @@
+# Blends the spice engine must call bad (spec 2026-10-19 §9): each scores under 40 and reports the named findings.
+- id: ninety-percent-clove
+  parts: {cloves: 9, cinnamon: 1}
+  findings: [one-note]
+- id: eight-accents
+  parts: {cloves: 1, star-anise: 1, cardamom: 1, fenugreek: 1, lavender: 1, saffron: 1, juniper: 1, asafoetida: 1}
+  findings: [shouting, pair:asafoetida+lavender, pair:asafoetida+saffron]
+- id: cinnamon-cumin-lavender-chilli
+  parts: {cinnamon: 1, cumin: 1, lavender: 1, cayenne: 1}
+  findings: [pair:cayenne+lavender, pair:cumin+lavender]
+- id: salt-only
+  parts: {salt: 1}
+  findings: [single-spice, seasoning-salt]
+- id: vanilla-garlic-dill
+  parts: {vanilla-pod: 2, garlic-powder: 2, dill-dried: 1}
+  findings: [pair:garlic-powder+vanilla-pod]
+- id: clove-and-mint
+  parts: {cloves: 2, mint-dried: 2, sugar: 1}
+  findings: [pair:cloves+mint-dried]

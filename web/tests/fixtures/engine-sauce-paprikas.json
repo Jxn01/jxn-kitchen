@@ -1,0 +1,788 @@
+{
+ "score": 74,
+ "base": 50,
+ "word": "good",
+ "word_text": {
+  "en": "Good",
+  "hu": "Jó"
+ },
+ "mascot": "happy",
+ "findings": [
+  {
+   "id": "pair:onion+sour-cream",
+   "kind": "good",
+   "weight": 8,
+   "about": [
+    "onion",
+    "sour-cream"
+   ],
+   "en": "Onion and sour cream — the taste of the Hungarian kitchen.",
+   "hu": "Vöröshagyma és tejföl — a magyar konyha íze."
+  },
+  {
+   "id": "family:paprikas",
+   "kind": "good",
+   "weight": 6,
+   "about": [],
+   "en": "Recognised: Paprikás sauce. Paprika stirred into the onion's fat off the heat, sour cream tempered in — the base of csirkepaprikás.",
+   "hu": "Felismerve: Paprikás mártás. A paprika a tűzről lehúzva a hagymás zsiradékba, a tejföl elhabarva — ez a csirkepaprikás alapja."
+  },
+  {
+   "id": "seasoned",
+   "kind": "good",
+   "weight": 4,
+   "about": [],
+   "en": "Seasoned right — about 0.9 % salt.",
+   "hu": "Jól sózva — kb. 0,9 % só."
+  },
+  {
+   "id": "body-right",
+   "kind": "good",
+   "weight": 3,
+   "about": [],
+   "en": "The right body for Paprikás sauce: it coats a spoon.",
+   "hu": "Pont jó sűrűség ehhez: Paprikás mártás — bevonja a kanalat."
+  },
+  {
+   "id": "pair:onion+salt",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "onion",
+    "salt"
+   ],
+   "en": "Onion and salt: the salt brings out what the other has.",
+   "hu": "Vöröshagyma és só: a só kihozza a másikból, ami benne van."
+  },
+  {
+   "id": "pairs-rest",
+   "kind": "good",
+   "weight": 1,
+   "about": [],
+   "en": "4 more pairs get along on balance.",
+   "hu": "További 4 páros összességében jól megvan egymással."
+  },
+  {
+   "id": "heat:mild",
+   "kind": "info",
+   "weight": 0,
+   "about": [],
+   "en": "Heat: mild — fine for anyone.",
+   "hu": "Csípősség: enyhe — bárkinek jó."
+  }
+ ],
+ "taste": {
+  "salt": 0.596,
+  "acid": 0.121,
+  "fat": 0.147,
+  "sweet": 0.066,
+  "heat": 0.087,
+  "umami": 0.1,
+  "aromatic": 0.428
+ },
+ "salt_pct": 0.9,
+ "body": {
+  "index": 1.5,
+  "class": "coats",
+  "by": "base",
+  "reduce": false,
+  "en": "Coats a spoon",
+  "hu": "Bevonja a kanalat"
+ },
+ "stability": [],
+ "keeps": {
+  "class": "fresh-dairy",
+  "days": 3,
+  "en": "Keeps 3 days in the fridge — fresh dairy.",
+  "hu": "3 napig eláll a hűtőben — friss tejtermék."
+ },
+ "family": {
+  "id": "paprikas",
+  "en": "Paprikás sauce",
+  "hu": "Paprikás mártás",
+  "path": [
+   "hungarian",
+   "paprikas"
+  ],
+  "user": false,
+  "kind": "savoury",
+  "chip": "hungarian"
+ },
+ "vessel": "jug",
+ "fill": "#F0F0EA",
+ "heat": {
+  "value": 0.087,
+  "word": "mild",
+  "en": "Mild",
+  "hu": "Enyhe"
+ },
+ "web": {
+  "nodes": [
+   {
+    "id": "onion",
+    "share": 0.5436
+   },
+   {
+    "id": "sweet-paprika",
+    "share": 0.0106
+   },
+   {
+    "id": "salt",
+    "share": 0.0718
+   },
+   {
+    "id": "sour-cream",
+    "share": 0.374
+   }
+  ],
+  "edges": [
+   {
+    "a": "onion",
+    "b": "sweet-paprika",
+    "score": 3,
+    "reason": "hungarian-heart",
+    "en": "Onion and paprika: every pörkölt and paprikás begins with them.",
+    "hu": "Hagyma és pirospaprika: minden pörkölt és paprikás velük kezdődik."
+   },
+   {
+    "a": "onion",
+    "b": "salt",
+    "score": 2,
+    "reason": "salt-lifts",
+    "en": "Onion and salt: the salt brings out what the other has.",
+    "hu": "Vöröshagyma és só: a só kihozza a másikból, ami benne van."
+   },
+   {
+    "a": "onion",
+    "b": "sour-cream",
+    "score": 2,
+    "reason": "hungarian-heart",
+    "en": "Onion and sour cream — the taste of the Hungarian kitchen.",
+    "hu": "Vöröshagyma és tejföl — a magyar konyha íze."
+   },
+   {
+    "a": "salt",
+    "b": "sweet-paprika",
+    "score": 2,
+    "reason": "salt-lifts",
+    "en": "Salt and sweet paprika: the salt brings out what the other has.",
+    "hu": "Só és édes pirospaprika: a só kihozza a másikból, ami benne van."
+   },
+   {
+    "a": "sour-cream",
+    "b": "sweet-paprika",
+    "score": 3,
+    "reason": "hungarian-heart",
+    "en": "Sour cream and paprika: the soul of every paprikás.",
+    "hu": "Tejföl és pirospaprika: minden paprikás lelke."
+   },
+   {
+    "a": "salt",
+    "b": "sour-cream",
+    "score": 2,
+    "reason": "salt-lifts",
+    "en": "Salt and sour cream: the salt brings out what the other has.",
+    "hu": "Só és tejföl: a só kihozza a másikból, ami benne van."
+   }
+  ]
+ },
+ "foods": [
+  {
+   "id": "potatoes",
+   "score": 1.0,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 3,
+     "en": "Onion is a classic with potatoes.",
+     "hu": "Krumpli — vöröshagyma: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with potatoes.",
+     "hu": "Krumpli — tejföl: klasszikus társ."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 3,
+     "en": "Sweet paprika is a classic with potatoes.",
+     "hu": "Krumpli — édes pirospaprika: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "soups",
+   "score": 1.0,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 3,
+     "en": "Onion is a classic with soups and stews.",
+     "hu": "Leves, ragu — vöröshagyma: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with soups and stews.",
+     "hu": "Leves, ragu — tejföl: klasszikus társ."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 3,
+     "en": "Sweet paprika is a classic with soups and stews.",
+     "hu": "Leves, ragu — édes pirospaprika: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "cabbage",
+   "score": 0.996,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 3,
+     "en": "Onion is a classic with cabbage and greens.",
+     "hu": "Káposzta, levélzöld — vöröshagyma: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with cabbage and greens.",
+     "hu": "Káposzta, levélzöld — tejföl: klasszikus társ."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives cabbage and greens savoury depth.",
+     "hu": "Káposzta, levélzöld — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "pork",
+   "score": 0.866,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 3,
+     "en": "Onion is a classic with pork.",
+     "hu": "Sertés — vöröshagyma: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes pork rich and round.",
+     "hu": "Sertés — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 3,
+     "en": "Sweet paprika is a classic with pork.",
+     "hu": "Sertés — édes pirospaprika: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "beef",
+   "score": 0.866,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 3,
+     "en": "Onion is a classic with beef.",
+     "hu": "Marha — vöröshagyma: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes beef rich and round.",
+     "hu": "Marha — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 3,
+     "en": "Sweet paprika is a classic with beef.",
+     "hu": "Marha — édes pirospaprika: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "chicken",
+   "score": 0.805,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — tejföl: klasszikus társ."
+    },
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives chicken and duck savoury depth.",
+     "hu": "Csirke, kacsa — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 3,
+     "en": "Sweet paprika is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — édes pirospaprika: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "mushrooms",
+   "score": 0.801,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with mushrooms.",
+     "hu": "Gomba — tejföl: klasszikus társ."
+    },
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives mushrooms savoury depth.",
+     "hu": "Gomba — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives mushrooms savoury depth.",
+     "hu": "Gomba — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "game",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives game savoury depth.",
+     "hu": "Vad — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes game rich and round.",
+     "hu": "Vad — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives game savoury depth.",
+     "hu": "Vad — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "eggs",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives eggs savoury depth.",
+     "hu": "Tojás — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes eggs rich and round.",
+     "hu": "Tojás — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives eggs savoury depth.",
+     "hu": "Tojás — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "pulses",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives beans and lentils savoury depth.",
+     "hu": "Bab, lencse — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes beans and lentils rich and round.",
+     "hu": "Bab, lencse — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives beans and lentils savoury depth.",
+     "hu": "Bab, lencse — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "score": 0.663,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives root vegetables savoury depth.",
+     "hu": "Gyökérzöldség — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes root vegetables rich and round.",
+     "hu": "Gyökérzöldség — tejföl: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "pasta",
+   "score": 0.663,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives GF pasta savoury depth.",
+     "hu": "GM tészta — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes GF pasta rich and round.",
+     "hu": "GM tészta — tejföl: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "tomato",
+   "score": 0.532,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives tomatoes savoury depth.",
+     "hu": "Paradicsom — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives tomatoes savoury depth.",
+     "hu": "Paradicsom — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "grilled-veg",
+   "score": 0.532,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives grilled vegetables savoury depth.",
+     "hu": "Grillezett zöldség — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives grilled vegetables savoury depth.",
+     "hu": "Grillezett zöldség — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "lamb",
+   "score": 0.529,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives lamb savoury depth.",
+     "hu": "Bárány — vöröshagyma: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "pickles",
+   "score": 0.529,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives pickles savoury depth.",
+     "hu": "Savanyúság — vöröshagyma: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "score": 0.471,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes fish rich and round.",
+     "hu": "Hal — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives fish savoury depth.",
+     "hu": "Hal — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "baking",
+   "score": 0.464,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes cakes and baking rich and round.",
+     "hu": "Sütemény — tejföl: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "score": 0.398,
+   "vouchers": [
+    {
+     "item": "onion",
+     "score": 2,
+     "en": "Onion gives rice and grains savoury depth.",
+     "hu": "Rizs, gabona — vöröshagyma: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives rice and grains savoury depth.",
+     "hu": "Rizs, gabona — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "cheese",
+   "score": 0.337,
+   "vouchers": [
+    {
+     "item": "sweet-paprika",
+     "score": 2,
+     "en": "Sweet paprika gives cheese and yoghurt savoury depth.",
+     "hu": "Sajt, joghurt — édes pirospaprika: sós-ízes mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "seafood",
+   "score": 0.333,
+   "vouchers": []
+  },
+  {
+   "id": "bread",
+   "score": 0.333,
+   "vouchers": []
+  },
+  {
+   "id": "fruit",
+   "score": 0.134,
+   "vouchers": []
+  },
+  {
+   "id": "chocolate",
+   "score": 0.0,
+   "vouchers": []
+  },
+  {
+   "id": "coffee-tea",
+   "score": 0.0,
+   "vouchers": []
+  }
+ ],
+ "fixes": [
+  {
+   "id": "lumpy",
+   "axis": "body",
+   "direction": "smooth",
+   "label": {
+    "en": "Lumpy",
+    "hu": "Csomós"
+   },
+   "en": "Whisk hard; still lumpy — pass it through a sieve or give it a blitz with a stick blender.",
+   "hu": "Erősen habard ki; ha még mindig csomós, szűrd át, vagy turmixold át egy botmixerrel."
+  },
+  {
+   "id": "curdled",
+   "axis": "stability",
+   "direction": "mend",
+   "label": {
+    "en": "Curdled cream sauce",
+    "hu": "Kicsapódott tejfölös"
+   },
+   "en": "Off the heat, a splash of cold cream, whisk. Next time temper the sour cream first (habarás) and don't boil it hard.",
+   "hu": "Vedd le a tűzről, egy kevés hideg tejszín, habard el. Legközelebb előbb hígítsd a tejfölt (habarás), és ne forrald erősen."
+  },
+  {
+   "id": "raw-flour",
+   "axis": "body",
+   "direction": "cook",
+   "label": {
+    "en": "Tastes of raw flour",
+    "hu": "Nyers lisztíz"
+   },
+   "en": "It needs more time: simmer 5 more minutes, stirring.",
+   "hu": "Több idő kell neki: még 5 percig gyöngyöztesd, kevergetve."
+  }
+ ],
+ "suggest": [
+  "garlic",
+  "tomato-paste",
+  "passata",
+  "eros-pista",
+  "hot-paprika"
+ ],
+ "spices": {
+  "jars": {
+   "sweet-paprika": 3.0,
+   "salt": 1.0
+  },
+  "radar": {
+   "warm": 0.265,
+   "earthy": 0.176,
+   "hot": 0.0,
+   "bright": 0.235,
+   "herbal": 0.0,
+   "floral": 0.0,
+   "bitter": 0.0,
+   "savoury": 1.0
+  }
+ },
+ "lines": [
+  {
+   "pos": 0,
+   "kind": "item",
+   "id": "lard",
+   "g": 27.0,
+   "share": 0.0409
+  },
+  {
+   "pos": 1,
+   "kind": "item",
+   "id": "onion",
+   "g": 110.0,
+   "share": 0.1668
+  },
+  {
+   "pos": 2,
+   "kind": "item",
+   "id": "sweet-paprika",
+   "g": 6.9,
+   "share": 0.0105
+  },
+  {
+   "pos": 3,
+   "kind": "item",
+   "id": "water",
+   "g": 300.0,
+   "share": 0.4548
+  },
+  {
+   "pos": 4,
+   "kind": "item",
+   "id": "salt",
+   "g": 5.7,
+   "share": 0.0086
+  },
+  {
+   "pos": 5,
+   "kind": "item",
+   "id": "sour-cream",
+   "g": 200.0,
+   "share": 0.3032
+  },
+  {
+   "pos": 6,
+   "kind": "item",
+   "id": "rice-flour",
+   "g": 10.1,
+   "share": 0.0152
+  }
+ ],
+ "total_g": 659.6,
+ "gluten": {
+  "lines": [
+   {
+    "pos": 0,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 1,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 2,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 3,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 4,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 5,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 6,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   }
+  ],
+  "verdict": {
+   "state": "gf",
+   "swaps": 0,
+   "check": 0,
+   "unknown": 0
+  }
+ }
+}

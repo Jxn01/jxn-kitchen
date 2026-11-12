@@ -1,0 +1,10 @@
+sesame-oil:
+  parsley: [-1, kitchens-apart]
+  dill: [-2, kitchens-apart]
+  chives: [1, gentle-company]
+  basil: [0, harmless]
+  coriander-leaf: [2, cuisine-mates]
+  mint: [1, cuisine-mates]
+  tarragon: [-2, perfume-clash]
+  thyme-fresh: [-1, kitchens-apart]
+  rosemary-fresh: [-2, perfume-clash]

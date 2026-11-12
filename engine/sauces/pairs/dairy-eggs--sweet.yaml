@@ -1,0 +1,36 @@
+sour-cream:
+  honey: [1, gentle-company]
+  maple-syrup: [0, harmless]
+  sour-cherry: [3, hungarian-heart, "Sour cream and sour cherries: meggymártás, sweet and sharp.", "Tejföl és meggy: a meggymártás, édesen és élesen."]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+creme-fraiche:
+  honey: [1, gentle-company]
+  maple-syrup: [1, gentle-company]
+  sour-cherry: [1, gentle-company]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+yogurt:
+  honey: [3, classic-partners, "Yoghurt and honey: tangy and sweet, the Greek way.", "Joghurt és méz: savanykás és édes, görög módra."]
+  maple-syrup: [1, gentle-company]
+  sour-cherry: [1, gentle-company]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+parmesan:
+  honey: [2, classic-partners]
+  maple-syrup: [-1, odd-couple]
+  sour-cherry: [-1, odd-couple]
+  sugar: [-1, odd-couple]
+  brown-sugar: [-1, odd-couple]
+feta:
+  honey: [2, classic-partners]
+  maple-syrup: [-1, odd-couple]
+  sour-cherry: [0, harmless]
+  sugar: [0, harmless]
+  brown-sugar: [-1, odd-couple]
+blue-cheese:
+  honey: [3, classic-partners, "Blue cheese and honey: salt and sweet, the cheese board's best pair.", "Kéksajt és méz: sós és édes, a sajttál legjobb párosa."]
+  maple-syrup: [1, gentle-company]
+  sour-cherry: [1, gentle-company]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]

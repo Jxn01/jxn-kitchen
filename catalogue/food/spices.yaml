@@ -1,0 +1,114 @@
+category: spices
+groups:
+  - id: paprika-chili
+    en: Paprika & chili
+    hu: Paprika, chili
+    icon: "om:1FAD9-200D-1F7E5"
+    items:
+      - {id: sweet-paprika, en: Sweet paprika, hu: Édes pirospaprika, aliases: [paprika, pirospaprika, ground paprika, édes paprika, őrölt paprika, fűszerpaprika, édesnemes paprika, pirospaprikát]}
+      - {id: hot-paprika, en: Hot paprika, hu: Csípős pirospaprika, aliases: [hot paprika powder, csípős őrölt paprika, erős pirospaprika, rózsapaprika]}
+      - {id: smoked-paprika, en: Smoked paprika, hu: Füstölt paprika, aliases: [pimentón, pimenton, füstölt pirospaprika]}
+      - {id: chili-flakes, en: Chili flakes, hu: Chilipehely, aliases: [red pepper flakes, crushed chili, chili pehely, morzsolt chili]}
+      - {id: chili-powder, en: Chili powder, hu: Chilipor, gluten: label, aliases: [ground chili, őrölt chili, chili por]}
+      - {id: cayenne, en: Cayenne pepper, hu: Cayenne-bors, aliases: [cayenne, cayenne bors]}
+      - {id: chipotle, en: Chipotle (smoked chilli), hu: Chipotle (füstölt chili), aliases: [chipotle powder, chipotle chili, chipotle chilli, chipotle por, őrölt chipotle]}
+  - id: pepper
+    en: Pepper
+    hu: Bors
+    icon: "om:1FAD9-200D-1F7EB"
+    items:
+      - {id: black-pepper, en: Black pepper, hu: Fekete bors, staple: true, aliases: [pepper, bors, ground pepper, black peppercorns, őrölt bors, őrölt fekete bors, frissen őrölt bors, szemes bors, borsot]}
+      - {id: white-pepper, en: White pepper, hu: Fehér bors, aliases: [őrölt fehér bors]}
+      - {id: sichuan-pepper, en: Sichuan pepper, hu: Szecsuáni bors, aliases: [sichuan peppercorn, sichuan peppercorns, szecsuán bors, szecsuani bors, szechuan pepper, sechuan pepper, sechuan, szecsuáni borsot]}
+      - {id: pink-pepper, en: Pink peppercorns, hu: Rózsabors, aliases: [pink pepper]}
+      - {id: allspice, en: Allspice, hu: Szegfűbors, aliases: [jamaica pepper, szegfűborsot]}
+  - id: salt-all
+    en: Salt
+    hu: Só
+    icon: "om:1F9C2"
+    items:
+      - {id: salt, en: Salt, hu: Só, staple: true, icon: "om:1F9C2", aliases: [table salt, konyhasó, sót, kevés só, csipet só]}
+      - {id: sea-salt, en: Sea salt flakes, hu: Tengeri só, icon: "om:1F9C2", aliases: [sea salt, flaky salt, fleur de sel, maldon]}
+  - id: dried-herbs
+    en: Dried herbs
+    hu: Szárított fűszernövény
+    icon: "om:1FAD9-200D-1F7E9"
+    items:
+      - {id: oregano, en: Oregano, hu: Oregánó, aliases: [dried oregano, szárított oregánó, oregánót]}
+      - {id: marjoram, en: Marjoram, hu: Majoránna, aliases: [dried marjoram, majoránnát]}
+      - {id: thyme, en: Thyme, hu: Kakukkfű, aliases: [dried thyme, szárított kakukkfű, kakukkfüvet]}
+      - {id: rosemary, en: Rosemary, hu: Rozmaring, aliases: [dried rosemary, szárított rozmaring, rozmaringot]}
+      - {id: basil-dried, en: Dried basil, hu: Szárított bazsalikom}
+      - {id: bay-leaf, en: Bay leaves, hu: Babérlevél, aliases: [bay leaf, babérlevelet, babér]}
+      - {id: dill-dried, en: Dried dill, hu: Szárított kapor}
+      - {id: parsley-dried, en: Dried parsley, hu: Szárított petrezselyem}
+      - {id: tarragon-dried, en: Dried tarragon, hu: Szárított tárkony}
+      - {id: savory, en: Savory, hu: Csombord, aliases: [borsikafű, summer savory]}
+      - {id: sage-dried, en: Dried sage, hu: Szárított zsálya, aliases: [rubbed sage, ground sage, morzsolt zsálya]}
+      - {id: lavender, en: Lavender (dried), hu: Levendula, aliases: [culinary lavender, dried lavender, levendulavirág, szárított levendula]}
+      - {id: lovage-dried, en: Dried lovage, hu: Szárított lestyán, aliases: [dried levelzeller]}
+      - {id: mint-dried, en: Dried mint, hu: Szárított menta, aliases: [dried mint leaves, morzsolt menta]}
+      - {id: chives-dried, en: Dried chives, hu: Szárított metélőhagyma, aliases: [freeze-dried chives]}
+      - {id: coriander-leaf-dried, en: Dried coriander leaf, hu: Szárított korianderzöld, aliases: [dried cilantro, szárított koriander levél]}
+      - {id: wild-garlic-dried, en: Dried wild garlic, hu: Szárított medvehagyma, aliases: [dried ramsons, medvehagyma por]}
+      - {id: herbes-de-provence, en: Herbes de Provence, hu: Provence-i fűszerkeverék, gluten: label, aliases: [provence-i fűszer, provencei fűszerkeverék]}
+      - {id: italian-herbs, en: Italian herbs, hu: Olasz fűszerkeverék, gluten: label, aliases: [italian seasoning, olasz fűszer]}
+  - id: seeds-whole
+    en: Seeds & whole spices
+    hu: Magvas fűszerek
+    icon: "om:1FAD9-200D-1F7EB"
+    items:
+      - {id: caraway, en: Caraway, hu: Kömény, aliases: [caraway seeds, köménymag, egész kömény, őrölt kömény, köményt]}
+      - {id: cumin, en: Cumin, hu: Római kömény, aliases: [ground cumin, cumin seeds, őrölt római kömény, római köményt, jeera]}
+      - {id: coriander-seed, en: Coriander seeds, hu: Koriandermag, aliases: [ground coriander, őrölt koriander, coriander]}
+      - {id: mustard-seed, en: Mustard seeds, hu: Mustármag, aliases: [mustard seed]}
+      - {id: fennel-seed, en: Fennel seeds, hu: Édesköménymag, aliases: [fennel seed]}
+      - {id: star-anise, en: Star anise, hu: Csillagánizs}
+      - {id: cloves, en: Cloves, hu: Szegfűszeg, aliases: [clove, egész szegfűszeg, szegfűszeget]}
+      - {id: cardamom, en: Cardamom, hu: Kardamom, aliases: [cardamom pods]}
+      - {id: nutmeg, en: Nutmeg, hu: Szerecsendió, aliases: [ground nutmeg, őrölt szerecsendió, szerecsendiót]}
+      - {id: juniper, en: Juniper berries, hu: Borókabogyó, aliases: [juniper]}
+      - {id: saffron, en: Saffron, hu: Sáfrány}
+      - {id: anise-seed, en: Anise seed, hu: Ánizs, aliases: [aniseed, anise, ánizsmag, ánizst]}
+      - {id: fenugreek, en: Fenugreek, hu: Görögszéna, aliases: [fenugreek seeds, methi, görögszénamag, görögszéna mag]}
+      - {id: celery-seed, en: Celery seed, hu: Zellermag, aliases: [celery seeds, celery salt seed]}
+      - {id: dill-seed, en: Dill seed, hu: Kapormag, aliases: [dill seeds, kapormagot]}
+      - {id: mustard-powder, en: Mustard powder, hu: Mustárpor, gluten: label, aliases: [dry mustard, ground mustard, english mustard powder, őrölt mustármag, mustárport]}
+  - id: specials
+    en: Specials & peels
+    hu: Különlegességek, héjak
+    icon: "om:1FAD9-200D-1F7EB"
+    items:
+      - {id: sumac, en: Sumac, hu: Szömörce, aliases: [sumak, szumák, szömörcét]}
+      - {id: nigella, en: Nigella seeds, hu: Feketekömény, aliases: [nigella, kalonji, black onion seeds, feketeköménymag, feketeköményt]}
+      - {id: asafoetida, en: Asafoetida, hu: Asafoetida, gluten: label, aliases: [hing, asafetida, ördöggyökér]}
+      - {id: orange-peel, en: Dried orange peel, hu: Szárított narancshéj, aliases: [orange peel powder, dried orange zest, narancshéjpor]}
+      - {id: lemon-peel, en: Dried lemon peel, hu: Szárított citromhéj, aliases: [lemon peel powder, dried lemon zest, citromhéjpor]}
+  - id: sweet-spices
+    en: Sweet spices
+    hu: Édes fűszerek
+    icon: "om:1FAD9-200D-1F7E7"
+    items:
+      - {id: cinnamon, en: Cinnamon, hu: Fahéj, aliases: [ground cinnamon, őrölt fahéj, fahéjat]}
+      - {id: cinnamon-stick, en: Cinnamon sticks, hu: Fahéjrúd, aliases: [cinnamon stick, rúd fahéj]}
+      - {id: vanilla-pod, en: Vanilla pod, hu: Vaníliarúd, aliases: [vanilla bean, vanilla beans, vaníliarúd kikapart magja, vanília, vanilla]}
+      - {id: vanilla-extract, en: Vanilla extract, hu: Vaníliakivonat, aliases: [vanilla essence, vanília aroma, vaníliaaroma]}
+      - {id: vanilla-sugar, en: Vanilla sugar, hu: Vaníliás cukor, gluten: label, aliases: [vaníliáscukor, bourbon vaníliás cukor, vanillin sugar]}
+      - {id: ground-ginger, en: Ground ginger, hu: Őrölt gyömbér, aliases: [gyömbérpor, ginger powder]}
+      - {id: gingerbread-spice, en: Gingerbread spice, hu: Mézeskalács fűszerkeverék, gluten: label, aliases: [mézeskalács fűszer, mixed spice, pumpkin spice]}
+  - id: blends
+    en: Blends & powders
+    hu: Fűszerkeverékek
+    icon: "om:1FAD9-200D-1F7E8"
+    items:
+      - {id: turmeric, en: Turmeric, hu: Kurkuma, aliases: [ground turmeric, kurkumát]}
+      - {id: curry-powder, en: Curry powder, hu: Curry por, gluten: label, aliases: [curry, currypor, curry fűszer]}
+      - {id: garam-masala, en: Garam masala, hu: Garam masala, gluten: label}
+      - {id: five-spice, en: Chinese five spice, hu: Ötfűszer-keverék, gluten: label, aliases: [five spice, kínai ötfűszer]}
+      - {id: garlic-powder, en: Garlic powder, hu: Fokhagymapor, aliases: [granulated garlic, fokhagyma granulátum, fokhagymagranulátum]}
+      - {id: onion-powder, en: Onion powder, hu: Hagymapor, aliases: [hagymagranulátum]}
+      - {id: vegeta, en: All-purpose seasoning (Vegeta), hu: Ételízesítő, gluten: label, aliases: [vegeta, delikát, ételízesítőt, all-purpose seasoning]}
+      - {id: chicken-seasoning, en: Chicken seasoning, hu: Csirke fűszersó, gluten: label, aliases: [grillcsirke fűszersó, csirke fűszerkeverék, poultry seasoning]}
+      - {id: gyros-spice, en: Gyros spice, hu: Gyros fűszerkeverék, gluten: label, aliases: [gyros fűszer]}
+      - {id: grill-spice, en: BBQ rub, hu: Grill fűszerkeverék, gluten: label, aliases: [bbq rub, grill fűszer, steak fűszer]}
+      - {id: cajun, en: Cajun seasoning, hu: Cajun fűszer, gluten: label}

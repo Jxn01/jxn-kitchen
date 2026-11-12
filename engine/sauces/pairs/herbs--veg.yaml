@@ -1,0 +1,36 @@
+parsley:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-1, odd-couple]
+  tahini: [2, cuisine-mates]
+dill:
+  cucumber: [3, classic-partners, "Dill and cucumber: pickles, salads and the green in tzatziki.", "Kapor és uborka: kovászos, saláta és a tzatziki zöldje."]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-1, odd-couple]
+chives:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, strangers]
+  tahini: [0, harmless]
+basil:
+  cucumber: [1, gentle-company]
+  peanut-butter: [1, cuisine-mates]
+  tahini: [0, harmless]
+coriander-leaf:
+  cucumber: [2, cuisine-mates]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]
+mint:
+  cucumber: [3, classic-partners, "Mint and cucumber: cool on cool, for raita and summer sauces.", "Menta és uborka: hűvös a hűvösre, raitához és nyári mártásokhoz."]
+  peanut-butter: [1, cuisine-mates]
+  tahini: [1, gentle-company]
+tarragon:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-1, odd-couple]
+thyme-fresh:
+  cucumber: [0, harmless]
+  peanut-butter: [-1, odd-couple]
+  tahini: [0, harmless]
+rosemary-fresh:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [-1, odd-couple]
+  tahini: [0, harmless]

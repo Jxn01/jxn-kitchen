@@ -1,0 +1,15 @@
+category: grains
+groups:
+  - id: pasta
+    en: Pasta
+    hu: Tészta
+    icon: "om:1F35D"
+    items:
+      - {id: gf-pasta-long, en: Long pasta, hu: Hosszú tészta, aliases: [spaghetti, spagetti], gluten: free}
+      - {id: wheat-pasta, en: Wheat pasta, hu: Búzatészta, aliases: [pasta, tészta], gluten: contains, swap: gf-pasta-long, pantry: false}
+  - id: rice
+    en: Rice
+    hu: Rizs
+    icon: "om:1F35A"
+    items:
+      - {id: rice-white, en: White rice, hu: Fehér rizs, aliases: [rice, rizs], gluten: free, staple: true}

@@ -1,0 +1,179 @@
+id: substitutions
+order: 18
+icon: "om:1F504"
+color: plum
+en: {title: Substitutions, sub: "eggs · dairy · acids · thickeners"}
+hu: {title: Helyettesítések, sub: "tojás · tejtermék · savak · sűrítők"}
+pages:
+  - id: eggs
+    chart:
+      type: picker
+      items:
+        - {label: {en: Flax egg, hu: Lenmagtojás}, icon: "om:1F33E", value: {en: "1 tbsp + 3 tbsp water", hu: "1 ek + 3 ek víz"}, note: {en: "Ground flaxseed and water, rested 10 minutes. Muffins, pancakes, cookies.", hu: "Őrölt lenmag és víz, 10 percig állni hagyva. Muffin, palacsinta, keksz."}}
+        - {label: {en: Chia egg, hu: Chiatojás}, icon: "om:1F331", value: {en: "1 tbsp + 3 tbsp water", hu: "1 ek + 3 ek víz"}, note: {en: "Chia and water, rested 10 minutes. The same uses as a flax egg.", hu: "Chia és víz, 10 percig állni hagyva. Ugyanarra jó, mint a lenmagtojás."}}
+        - {label: Aquafaba, icon: "om:1FAD8", value: {en: 3 tbsp, hu: 3 ek}, note: {en: "The liquid from a can of chickpeas — whipped for meringue. Meringues, mousse, binding.", hu: "A konzerv csicseriborsó leve — habbá verve habcsókhoz. Habcsók, mousse, kötés."}}
+        - {label: {en: "Banana, apple purée", hu: "Banán, almapüré"}, icon: "om:1F34C", value: "60 g", note: {en: "Sweet cakes — it adds its own flavour.", hu: "Édes sütemények — a saját ízét is hozza."}}
+        - {label: {en: Yoghurt, hu: Joghurt}, icon: "om:1F963", value: "60 g", note: {en: "Moist cakes.", hu: "Nedves, puha sütemények."}}
+    en:
+      title: Eggs
+      body: |
+        In GF baking eggs do a lot of the structural work gluten would do — **replace them only where a recipe has one or
+        two**, and expect a denser result.
+
+        | Instead of 1 egg | Use | Works in |
+        |---|---|---|
+        | Flax egg | 1 tbsp ground flaxseed + 3 tbsp water, rest 10 min | muffins, pancakes, cookies |
+        | Chia egg | 1 tbsp chia + 3 tbsp water, rest 10 min | the same |
+        | Aquafaba | 3 tbsp chickpea can liquid (whipped for meringue) | meringues, mousse, binding |
+        | Banana / apple purée | 60 g | sweet cakes (adds flavour) |
+        | Yoghurt | 60 g | moist cakes |
+
+        - **Egg wash** for shine: milk, or melted butter, or a little maple syrup in water.
+        - **Binding meatballs:** soaked GF bread or cooked mashed potato instead of an egg.
+    hu:
+      title: Tojás
+      body: |
+        GM sütésben a tojás végzi a szerkezeti munka nagy részét, amit a sikér végezne — **csak ott cseréld le, ahol egy
+        vagy kettő van a receptben**, és számíts tömörebb eredményre.
+
+        | 1 tojás helyett | Használj | Mihez jó |
+        |---|---|---|
+        | Lenmagtojás | 1 ek darált lenmag + 3 ek víz, 10 perc állás | muffin, palacsinta, keksz |
+        | Chiatojás | 1 ek chia + 3 ek víz, 10 perc állás | ugyanezek |
+        | Aquafaba | 3 ek csicseriborsó-konzerv lé (habnak felverve) | habcsók, mousse, kötés |
+        | Banán- / almapüré | 60 g | édes sütemények (ízt is ad) |
+        | Joghurt | 60 g | nedves sütemények |
+
+        - **Tojásos kenés** fényhez: tej, olvasztott vaj, vagy kevés juharszirup vízben.
+        - **Húsgombóc kötése:** tojás helyett beáztatott GM kenyér vagy főtt, tört krumpli.
+  - id: dairy
+    chart:
+      type: picker
+      items:
+        - {label: {en: Buttermilk (író), hu: Író}, icon: "om:1F95B", value: {en: "250 ml milk + 1 tbsp lemon", hu: "250 ml tej + 1 ek citrom"}, note: {en: "250 ml milk with 1 tbsp lemon juice or vinegar, left 10 minutes.", hu: "250 ml tej 1 ek citromlével vagy ecettel, 10 percig állni hagyva."}}
+        - {label: {en: Sour cream (tejföl), hu: Tejföl}, icon: "om:1F963", note: {en: "Greek yoghurt; for cooking, stir it in off the boil so it doesn't curdle.", hu: "Görög joghurt; főzéshez forrás nélkül keverd bele, hogy ne csapódjon ki."}}
+        - {label: {en: Cream for cooking, hu: Főzőtejszín}, icon: "om:1F965", note: {en: "Crème fraîche (it doesn't split when boiled), or coconut cream.", hu: "Crème fraîche (forralva sem válik ki), vagy kókuszkrém."}}
+        - {label: {en: Milk, hu: Tej}, icon: "om:1F95B", note: {en: "Oat (GF-labelled only), rice, almond or soy milk — unsweetened for cooking.", hu: "Zab- (csak GM jelölésű), rizs-, mandula- vagy szójaital — főzéshez cukrozatlan."}}
+        - {label: {en: Butter in baking, hu: Vaj sütéshez}, icon: "om:1F9C8", value: {en: "or 80 % as oil", hu: "vagy 80 % olaj"}, note: {en: "The same weight of margarine, or 80 % of it as oil — cakes get moister.", hu: "Ugyanannyi margarin, vagy a 80 %-a olaj — a sütemény nedvesebb lesz."}}
+        - {label: {en: Túró, hu: Túró}, icon: "om:1F9C0", note: {en: "Ricotta, or drained quark.", hu: "Ricotta, vagy lecsöpögtetett krémtúró."}}
+    en:
+      title: Dairy
+      body: |
+        | Instead of | Use |
+        |---|---|
+        | Buttermilk (író), 250 ml | 250 ml milk + 1 tbsp lemon juice or vinegar, 10 min |
+        | Sour cream (tejföl) | Greek yoghurt; for cooking, stir in off the boil so it doesn't curdle |
+        | Cream for cooking | crème fraîche (doesn't split when boiled), coconut cream |
+        | Milk | oat (GF-labelled only), rice, almond, soy milk — unsweetened for cooking |
+        | Butter in baking | the same weight of margarine, or 80 % of it as oil (cakes get moister) |
+        | Túró (curd cheese) | ricotta, or drained quark |
+
+        > Plant milks and "barista" oat drinks: oat drinks are often made from ordinary oats — only GF-labelled ones are safe.
+    hu:
+      title: Tejtermékek
+      body: |
+        | Helyett | Használj |
+        |---|---|
+        | Író, 250 ml | 250 ml tej + 1 ek citromlé vagy ecet, 10 perc |
+        | Tejföl | görög joghurt; főzéshez a forrásról levéve keverd bele, hogy ne csapódjon ki |
+        | Főzőtejszín | crème fraîche (forralva sem válik ki), kókuszkrém |
+        | Tej | zab- (csak GM jelölésű), rizs-, mandula-, szójaital — főzéshez cukrozatlan |
+        | Vaj sütésben | ugyanannyi margarin, vagy 80 %-nyi olaj (nedvesebb lesz) |
+        | Túró | ricotta, vagy lecsöpögtetett quark |
+
+        > Növényi italok és „barista" zabitalok: a zabital gyakran sima zabból készül — csak a GM jelölésű biztonságos.
+  - id: acids-flavour
+    chart:
+      type: picker
+      items:
+        - {label: {en: Lemon juice, hu: Citromlé}, icon: "om:1F34B", note: {en: "White wine vinegar or cider vinegar, a little less.", hu: "Fehérborecet vagy almaecet, kicsit kevesebb."}}
+        - {label: {en: Wine in a sauce, hu: Bor a mártásban}, icon: "om:1F377", note: {en: "Stock with a splash of vinegar or lemon.", hu: "Alaplé egy kevés ecettel vagy citrommal."}}
+        - {label: {en: Soy sauce, hu: Szójaszósz}, icon: "om:26A0", note: {en: "Tamari or GF soy sauce — ordinary soy sauce contains wheat.", hu: "Tamari vagy GM szójaszósz — a sima szójaszószban búza van."}}
+        - {label: Worcestershire, icon: "om:26A0", note: {en: "Check the label: some contain malt vinegar (barley).", hu: "Nézd meg a címkét: némelyikben malátaecet (árpa) van."}}
+        - {label: {en: Beer, hu: Sör}, icon: "om:1F37A", note: {en: "GF beer, or sparkling water with a pinch of yeast flakes in a batter or stew.", hu: "GM sör, vagy masszába, raguba szódavíz egy csipet élesztőpehellyel."}}
+        - {label: {en: Fresh herbs, hu: Friss fűszernövény}, icon: "om:1F33F", value: {en: "⅓, earlier", hu: "⅓, korábban"}, note: {en: "Dried, a third of the amount, added earlier.", hu: "Szárítva, harmadannyi, korábban hozzáadva."}}
+        - {label: {en: A garlic clove, hu: Egy gerezd fokhagyma}, icon: "om:1F9C4", value: {en: "⅛ tsp powder", hu: "⅛ tk por"}, note: {en: "⅛ tsp garlic powder, or ½ tsp jarred minced garlic.", hu: "⅛ tk fokhagymapor, vagy ½ tk üveges, aprított fokhagyma."}}
+    en:
+      title: Acids and flavour
+      body: |
+        | Instead of | Use |
+        |---|---|
+        | Lemon juice | white wine vinegar or apple cider vinegar, a little less |
+        | Wine in a sauce | stock + a splash of vinegar or lemon |
+        | Soy sauce | tamari or GF soy sauce (ordinary soy sauce contains wheat) |
+        | Worcestershire sauce | check the label: some contain malt vinegar (barley) |
+        | Beer in a batter or stew | GF beer, or sparkling water + a pinch of yeast flakes |
+        | Fresh herbs | dried, a third of the amount, added earlier |
+        | Garlic clove | ⅛ tsp garlic powder (½ tsp jarred minced garlic) |
+    hu:
+      title: Savak és ízek
+      body: |
+        | Helyett | Használj |
+        |---|---|
+        | Citromlé | fehérborecet vagy almaecet, kicsit kevesebb |
+        | Bor a mártásban | alaplé + egy kevés ecet vagy citrom |
+        | Szójaszósz | tamari vagy GM szójaszósz (a sima szójaszószban búza van) |
+        | Worcestershire szósz | nézd meg a címkét: némelyikben malátaecet (árpa) van |
+        | Sör bundában vagy raguban | GM sör, vagy szénsavas víz + egy csipet élesztőpehely |
+        | Friss zöldfűszer | szárított, harmadannyi, korábban hozzáadva |
+        | Egy gerezd fokhagyma | ⅛ tk fokhagymapor (½ tk üveges, aprított fokhagyma) |
+  - id: thickeners
+    chart:
+      type: bars
+      unit: {en: tbsp/l, hu: ek/l}
+      max: 5
+      items:
+      - value: 2
+        to: 3
+        label: {en: Cornstarch, hu: Kukoricakeményítő}
+        fill: '#FFFDF6'
+        note: {en: slurry · glossy, hu: hideg vízzel · fényes}
+      - value: 2
+        label: {en: Potato starch, hu: Burgonyakeményítő}
+        fill: '#F6F2E8'
+        note: {en: 'slurry · very clear, strong', hu: 'hideg vízzel · nagyon tiszta, erős'}
+      - value: 2
+        to: 3
+        label: {en: Tapioca starch, hu: Tápiókakeményítő}
+        fill: '#F4F1EA'
+        note: {en: slurry · freezes well, hu: hideg vízzel · jól fagyasztható}
+      - value: 2
+        label: {en: Arrowroot, hu: Arrowroot}
+        fill: '#EFE8D6'
+        note: {en: 'at the end · clear, not with dairy', hu: 'a végén · tiszta, tejtermékkel nem'}
+      - value: 3
+        to: 4
+        label: {en: Rice flour, hu: Rizsliszt}
+        fill: '#F6F0E2'
+        note: {en: roux (rántás) · browns, hu: rántásnak · pirul}
+      - value: 3
+        to: 4
+        label: {en: GF flour mix, hu: GM lisztkeverék}
+        fill: '#F1E4C6'
+        note: {en: roux or habarás, hu: rántás vagy habarás}
+    en:
+      title: Thickeners (all GF)
+      body: |
+        | Thickener | How much for 1 litre | How | Notes |
+        |---|---|---|---|
+        | Cornstarch | 2–3 tbsp | mixed with cold water, stirred in, simmer 1 min | glossy; thins if boiled long or frozen |
+        | Potato starch | 2 tbsp | the same, don't boil long | very clear, strong |
+        | Rice flour | 3–4 tbsp | as a roux (rántás) or mixed with cold liquid | browns like wheat flour — best for rántás |
+        | GF flour mix | 3–4 tbsp | roux or habarás | closest to the original |
+        | Tapioca starch | 2–3 tbsp | slurry | glossy, freezes well, slightly stretchy |
+        | Arrowroot | 2 tbsp | slurry, add at the end | clear, for fruit sauces; not with dairy |
+
+        > Never add starch straight to hot liquid — it lumps. Always slurry it in cold liquid first.
+    hu:
+      title: Sűrítők (mind GM)
+      body: |
+        | Sűrítő | 1 literhez | Hogyan | Megjegyzés |
+        |---|---|---|---|
+        | Kukoricakeményítő | 2–3 ek | hideg vízzel elkeverve, belekeverve, 1 perc forralás | fényes; sokáig forralva vagy fagyasztva hígul |
+        | Burgonyakeményítő | 2 ek | ugyanígy, ne forrald sokáig | nagyon áttetsző, erős |
+        | Rizsliszt | 3–4 ek | rántásnak vagy hideg folyadékkal elkeverve | úgy pirul, mint a búzaliszt — rántáshoz a legjobb |
+        | GM lisztkeverék | 3–4 ek | rántás vagy habarás | a legközelebb az eredetihez |
+        | Tápiókakeményítő | 2–3 ek | hideg vízzel elkeverve | fényes, jól fagyasztható, kicsit nyúlós |
+        | Nyílgyökér (arrowroot) | 2 ek | elkeverve, a végén | áttetsző, gyümölcsmártáshoz; tejtermékkel ne |
+
+        > Keményítőt soha ne szórj közvetlenül forró folyadékba — csomós lesz. Mindig keverd el előbb hideg folyadékkal.

@@ -1,0 +1,262 @@
+id: storage
+order: 16
+icon: "om:1F9CA"
+color: mint
+en:
+  title: Storage & freezing
+  sub: "the fridge · how long · the freezer · thawing · where things keep"
+hu:
+  title: Tárolás, fagyasztás
+  sub: "a hűtő · meddig áll el · fagyasztó · kiolvasztás · mi hol tartható"
+pages:
+  - id: fridge
+    illustration: fridge
+    en:
+      title: The fridge, shelf by shelf
+      body: |
+        Keep it at **0–5 °C** — about 4 °C is right. A cheap fridge thermometer on the middle shelf tells you the truth;
+        the dial does not.
+
+        | Where | What | Why |
+        |---|---|---|
+        | Top shelf | leftovers, cooked food, yoghurt, cheese | ready-to-eat, away from raw meat |
+        | Middle shelf | milk, eggs in their box, butter, opened jars | steady and cold |
+        | Bottom shelf | raw meat, poultry, fish — sealed, on a plate | coldest; nothing can drip onto ready food |
+        | Drawers | vegetables, fruit | humid; keep apples apart if you can |
+        | Door | drinks, sauces, jams, mustard | the warmest place — not milk or eggs |
+
+        - **Cover everything** — food dries out and takes on smells.
+        - **Don't overfill:** cold air has to move. Never put hot pots in; cool leftovers first, then refrigerate within
+          **2 hours**.
+        - Wipe spills at once, clean it monthly.
+    hu:
+      title: A hűtő, polcról polcra
+      body: |
+        **0–5 °C** között tartsd — kb. 4 °C a jó. Egy olcsó hűtőhőmérő a középső polcon megmondja az igazat; a tekerőgomb nem.
+
+        | Hol | Mi | Miért |
+        |---|---|---|
+        | Felső polc | maradék, főtt étel, joghurt, sajt | fogyasztásra kész, távol a nyers hústól |
+        | Középső polc | tej, tojás a dobozában, vaj, felbontott üvegek | egyenletesen hideg |
+        | Alsó polc | nyers hús, szárnyas, hal — lezárva, tányéron | a leghidegebb; semmi nem csöpöghet a kész ételre |
+        | Fiókok | zöldség, gyümölcs | párás; az almát ha lehet, tartsd külön |
+        | Ajtó | italok, szószok, lekvár, mustár | a legmelegebb hely — tejet, tojást ne |
+
+        - **Mindent takarj le** — kiszárad és átveszi a szagokat.
+        - **Ne tömd tele:** a hideg levegőnek mozognia kell. Forró fazekat ne tegyél be; a maradékot előbb hűtsd le, és
+          **2 órán belül** kerüljön a hűtőbe.
+        - A kiömlött dolgot azonnal töröld fel, havonta takarítsd ki.
+  - id: fridge-times
+    chart:
+      type: bars
+      unit: {en: days, hu: nap}
+      max: 8
+      items:
+        - {value: 1, label: {en: Cooked rice, hu: Főtt rizs}, fill: "#F4F1EA", note: {en: "eat within a day; reheat once", hu: "egy napon belül; egyszer melegítsd"}}
+        - {value: 1, to: 2, label: {en: "Raw mince, poultry", hu: "Nyers darált hús, szárnyas"}, fill: "#E8A27A"}
+        - {value: 1, to: 2, label: {en: Raw fish, hu: Nyers hal}, fill: "#F4A08A"}
+        - {value: 3, to: 4, label: {en: Cooked leftovers, hu: Főtt maradék}, fill: "#D4703A"}
+        - {value: 3, to: 4, label: {en: "Soups, stews", hu: "Levesek, raguk"}, fill: "#C8452F"}
+        - {value: 3, to: 5, label: {en: "Raw steaks, chops, roasts", hu: "Nyers szelet, karaj, sült hús"}, fill: "#B5523A"}
+        - {value: 3, to: 5, label: {en: Opened ham and deli meat, hu: Felbontott sonka és felvágott}, fill: "#E79AA0"}
+        - {value: 7, label: {en: Opened milk, hu: Felbontott tej}, fill: "#E9F1F7"}
+        - {value: 7, label: {en: Hard-boiled eggs, hu: Keményre főtt tojás}, fill: "#F6E7B0"}
+        - {value: 7, label: {en: "Soft cheese, opened", hu: "Lágy sajt, felbontva"}, fill: "#FBEFC9"}
+    en:
+      title: How long in the fridge?
+      body: |
+        At 0–5 °C. These are safety limits for food kept cold the whole time — when in doubt, throw it out.
+
+        | Food | Days |
+        |---|---|
+        | Cooked rice | 1 — eat it within a day, reheat once |
+        | Raw mince, poultry | 1–2 |
+        | Raw fish | 1–2 |
+        | Cooked leftovers | 3–4 |
+        | Soups, stews | 3–4 |
+        | Raw steaks, chops, roasts | 3–5 |
+        | Opened ham and deli meat | 3–5 |
+        | Opened milk | about 7 |
+        | Hard-boiled eggs | 7 |
+        | Soft cheese, opened | about 7 |
+
+        - Longer keepers: **raw eggs** 3–5 weeks, **hard cheese** (opened) 3–4 weeks, **butter** a few weeks.
+        - Write the date on a box of leftovers — "it was Tuesday, I think" is how fridges fill up with mysteries.
+        - Smell and look tell you about spoilage, not about danger.
+    hu:
+      title: Meddig áll el a hűtőben?
+      body: |
+        0–5 °C-on. Ezek biztonsági határok végig hidegen tartott ételre — ha kétséges, dobd ki.
+
+        | Étel | Nap |
+        |---|---|
+        | Főtt rizs | 1 — egy napon belül, egyszer melegítve |
+        | Nyers darált hús, szárnyas | 1–2 |
+        | Nyers hal | 1–2 |
+        | Főtt maradék | 3–4 |
+        | Levesek, raguk | 3–4 |
+        | Nyers szelet, karaj, sült hús | 3–5 |
+        | Felbontott sonka és felvágott | 3–5 |
+        | Felbontott tej | kb. 7 |
+        | Keményre főtt tojás | 7 |
+        | Lágy sajt, felbontva | kb. 7 |
+
+        - Tovább elállnak: a **nyers tojás** 3–5 hétig, a **kemény sajt** (felbontva) 3–4 hétig, a **vaj** néhány hétig.
+        - Írd rá a dátumot a maradékos dobozra — a „talán kedd volt” miatt telik meg a hűtő rejtélyekkel.
+        - A szag és a látvány a romlásról árulkodik, nem a veszélyről.
+  - id: freezer
+    chart:
+      type: bars
+      unit: {en: months, hu: hónap}
+      max: 12
+      items:
+        - {value: 2, to: 3, label: {en: "Cooked leftovers, soups", hu: "Főtt maradék, levesek"}, fill: "#D4703A"}
+        - {value: 3, to: 4, label: {en: Raw mince, hu: Nyers darált hús}, fill: "#C9612E"}
+        - {value: 4, to: 12, label: {en: "Raw steaks, roasts", hu: "Nyers szelet, sült hús"}, fill: "#B5523A"}
+        - {value: 9, to: 12, label: {en: Raw chicken, hu: Nyers csirke}, fill: "#E8A27A", note: {en: "pieces 9, whole 12", hu: "darabolva 9, egészben 12"}}
+        - {value: 2, to: 8, label: {en: Fish, hu: Hal}, fill: "#F4A08A", note: {en: "fatty 2–3, lean 6–8", hu: "zsíros 2–3, sovány 6–8"}}
+        - {value: 3, label: {en: "GF bread, sliced", hu: "GM kenyér, szeletelve"}, fill: "#E2B97E", note: {en: "toast from frozen", hu: "fagyosan pirítsd"}}
+        - {value: 6, to: 9, label: {en: Butter, hu: Vaj}, fill: "#F7D774"}
+        - {value: 8, to: 12, label: {en: "Vegetables (blanched), berries", hu: "Zöldség (blansírozva), bogyós gyümölcs"}, fill: "#8DC26F"}
+        - {value: 12, label: {en: Egg whites, hu: Tojásfehérje}, fill: "#F6F2E8"}
+    en:
+      title: How long in the freezer?
+      body: |
+        At **−18 °C** or colder, frozen food stays **safe indefinitely** — these times are for **best quality**: after
+        them it dries out and loses taste.
+
+        | Food | Months |
+        |---|---|
+        | Cooked leftovers, soups | 2–3 |
+        | Raw mince | 3–4 |
+        | Raw steaks, roasts | 4–12 |
+        | Raw chicken | 9 (pieces) – 12 (whole) |
+        | Fish | 2–3 (fatty) – 6–8 (lean) |
+        | GF bread, sliced | about 3 |
+        | Butter | 6–9 |
+        | Vegetables (blanched), berries | 8–12 |
+        | Egg whites | 12 |
+
+        - **GF bread** stales within a day — slice it and freeze it the day it is made, toast from frozen.
+    hu:
+      title: Meddig áll el a fagyasztóban?
+      body: |
+        **−18 °C**-on vagy hidegebben a fagyasztott étel **korlátlan ideig biztonságos** — ezek az idők a **legjobb
+        minőségre** vonatkoznak: utánuk kiszárad, veszít az ízéből.
+
+        | Étel | Hónap |
+        |---|---|
+        | Főtt maradék, levesek | 2–3 |
+        | Nyers darált hús | 3–4 |
+        | Nyers szelet, sült hús | 4–12 |
+        | Nyers csirke | 9 (darabolva) – 12 (egészben) |
+        | Hal | 2–3 (zsíros) – 6–8 (sovány) |
+        | GM kenyér, szeletelve | kb. 3 |
+        | Vaj | 6–9 |
+        | Zöldség (blansírozva), bogyós gyümölcs | 8–12 |
+        | Tojásfehérje | 12 |
+
+        - A **GM kenyér** egy nap alatt kiszárad — szeleteld fel, és még aznap fagyaszd le; fagyosan pirítsd.
+  - id: thawing
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F9CA", label: {en: Freeze it right, hu: Jól fagyaszd}, note: {en: "Cool it first, portion it, flat bags with the air pressed out, label with the date.", hu: "Előbb hűtsd le, adagold, lapos zacskóba, a levegőt nyomd ki, írd rá a dátumot."}}
+        - {icon: "om:1F9CA", label: {en: In the fridge, hu: A hűtőben}, time: {en: "1 day / 2 kg", hu: "1 nap / 2 kg"}, note: {en: "The best way: about a day for every 2 kg, on a plate on the bottom shelf.", hu: "A legjobb mód: kb. egy nap 2 kilónként, tányéron, az alsó polcon."}}
+        - {icon: "om:1F4A7", label: {en: In cold water, hu: Hideg vízben}, time: {en: "1 h / 0.5 kg", hu: "1 óra / 0,5 kg"}, note: {en: "Sealed in a bag, in cold water changed every 30 minutes — about an hour per half kilo. Cook at once.", hu: "Lezárt zacskóban, félóránként cserélt hideg vízben — kb. egy óra fél kilónként. Utána rögtön főzd meg."}}
+        - {icon: "c:microwave", label: {en: In the microwave, hu: A mikróban}, note: {en: "On the defrost setting, turning — then cook it straight away: parts of it start to cook.", hu: "Kiolvasztó fokozaton, forgatva — utána rögtön főzd meg: egyes részei már elkezdenek főni."}}
+        - {icon: "om:26A0", label: {en: Never on the counter, hu: Soha a pulton}, note: {en: "The outside sits in the danger zone (5–60 °C) for hours while the middle is still frozen.", hu: "A külseje órákig a veszélyzónában (5–60 °C) van, miközben a közepe még fagyott."}}
+    en:
+      title: Freezing and thawing
+      body: |
+        1. **Freeze it right:** cool it first, portion it, flat bags with the air pressed out, the date on the label.
+           Blanch vegetables 1–3 minutes first, then chill in iced water — they keep their colour and bite.
+        2. **In the fridge:** the best way — about a day for every 2 kg, on a plate on the bottom shelf.
+        3. **In cold water:** sealed in a bag, water changed every 30 minutes — about an hour per half kilo. Cook at once.
+        4. **In the microwave:** on defrost, turning — then cook it straight away.
+        5. **Never on the counter:** the outside sits in the danger zone for hours while the middle is still frozen.
+
+        - **Refreezing:** raw food thawed in the fridge may go back in the freezer (it loses some quality); thawed raw
+          meat cooked into a dish can be frozen again as a cooked dish.
+        - Small things — GF bread slices, berries, grated cheese — go straight from the freezer into use.
+    hu:
+      title: Fagyasztás és kiolvasztás
+      body: |
+        1. **Jól fagyaszd:** előbb hűtsd le, adagold, lapos zacskóba, a levegőt nyomd ki, dátum a címkén. A zöldséget
+           előbb blansírozd 1–3 percig, aztán jeges vízben hűtsd — megtartja a színét és a roppanósságát.
+        2. **A hűtőben:** a legjobb mód — kb. egy nap 2 kilónként, tányéron, az alsó polcon.
+        3. **Hideg vízben:** lezárt zacskóban, félóránként cserélt vízben — kb. egy óra fél kilónként. Utána rögtön főzd meg.
+        4. **A mikróban:** kiolvasztó fokozaton, forgatva — utána rögtön főzd meg.
+        5. **Soha a pulton:** a külseje órákig a veszélyzónában van, miközben a közepe még fagyott.
+
+        - **Újrafagyasztás:** a hűtőben kiolvasztott nyers étel visszamehet a fagyasztóba (kicsit romlik a minősége); a
+          kiolvasztott nyers húsból főzött étel főtt ételként újra fagyasztható.
+        - Az apróságok — GM kenyérszelet, bogyós gyümölcs, reszelt sajt — egyenesen a fagyasztóból mehetnek.
+  - id: pantry
+    chart:
+      type: board
+      groups:
+        - color: mint
+          icon: "om:1F9CA"
+          label: {en: Fridge, hu: Hűtő}
+          note: {en: "Dairy, eggs, meat, fish, opened jars, berries and most vegetables. Cooked food within 2 hours.", hu: "Tejtermék, tojás, hús, hal, felbontott üvegek, bogyós gyümölcs és a legtöbb zöldség. Főtt étel 2 órán belül."}
+          items:
+            - {label: {en: Dairy, hu: Tejtermék}, icon: "om:1F95B"}
+            - {label: {en: Eggs, hu: Tojás}, icon: "om:1F95A"}
+            - {label: {en: "Meat, fish", hu: "Hús, hal"}, icon: "om:1F969"}
+            - {label: {en: Opened jars, hu: Felbontott üvegek}, icon: "om:1FAD9"}
+            - {label: {en: Berries, hu: Bogyós gyümölcs}, icon: "om:1F353"}
+            - {label: {en: Most vegetables, hu: A legtöbb zöldség}, icon: "om:1F966"}
+        - color: cocoa
+          icon: "om:1F3E0"
+          label: {en: "Cool, dark cupboard", hu: "Hűvös, sötét kamra"}
+          note: {en: "Dry goods in airtight jars, labelled — GF flours, grains, spices, coffee beans. Potatoes and onions apart.", hu: "Száraz áru légmentes, felcímkézett üvegben — GM lisztek, gabonák, fűszerek, szemes kávé. A krumpli és a hagyma külön."}
+          items:
+            - {label: {en: Potatoes, hu: Krumpli}, icon: "om:1F954"}
+            - {label: {en: "Onions, garlic", hu: "Hagyma, fokhagyma"}, icon: "om:1F9C5"}
+            - {label: {en: GF flours and grains, hu: GM lisztek és gabonák}, icon: "om:1F35A"}
+            - {label: {en: Spices, hu: Fűszerek}, icon: "om:1F9C2"}
+            - {label: {en: "Oil, honey", hu: "Olaj, méz"}, icon: "om:1F36F"}
+            - {label: {en: Coffee beans, hu: Szemes kávé}, icon: "om:2615"}
+        - color: butter
+          icon: "om:1F34C"
+          label: {en: Counter, hu: Pult}
+          note: {en: "Ripening and flavour: tomatoes lose their taste in the fridge, bananas blacken. Into the fridge once ripe — except tomatoes.", hu: "Érés és íz: a paradicsom a hűtőben elveszti az ízét, a banán megfeketedik. Ha megérett, hűtőbe — kivéve a paradicsomot."}
+          items:
+            - {label: {en: Tomatoes, hu: Paradicsom}, icon: "om:1F345"}
+            - {label: {en: Bananas, hu: Banán}, icon: "om:1F34C"}
+            - {label: {en: Avocados (to ripen), hu: Avokádó (érni)}, icon: "om:1F951"}
+            - {label: {en: Stone fruit (to ripen), hu: Csonthéjas (érni)}, icon: "om:1F351"}
+            - {label: {en: Whole melons, hu: Egész dinnye}, icon: "om:1F349"}
+        - color: sky
+          icon: "om:2744"
+          label: {en: Freezer, hu: Fagyasztó}
+          note: {en: "GF bread sliced on day one; nuts and GF flours for the long term; ginger (grate it frozen); herbs in oil; butter.", hu: "A GM kenyér már az első nap szeletelve; dió és GM liszt hosszú távra; gyömbér (fagyosan reszeld); fűszernövény olajban; vaj."}
+          items:
+            - {label: {en: "GF bread, sliced", hu: "GM kenyér, szeletelve"}, icon: "om:1F35E"}
+            - {label: {en: Nuts, hu: Diófélék}, icon: "om:1F95C"}
+            - {label: {en: Ginger, hu: Gyömbér}}
+            - {label: {en: Herbs in oil, hu: Fűszernövény olajban}, icon: "om:1F33F"}
+            - {label: {en: Butter, hu: Vaj}, icon: "om:1F9C8"}
+    en:
+      title: Where things keep best
+      body: |
+        - **Fridge:** dairy, eggs, meat, fish, opened jars, berries and most vegetables.
+        - **Cool, dark cupboard:** potatoes (dark, away from onions — together both spoil faster), onions and garlic, dry
+          goods in airtight, labelled jars (GF flours, rice and grains, spices), oil, honey, coffee beans.
+        - **Counter:** tomatoes (the fridge kills their flavour), bananas, and avocados or stone fruit until they ripen.
+        - **Freezer:** GF bread sliced on day one, nuts and GF flours for the long term (their oils go rancid), ginger
+          (grate it frozen), chopped herbs in oil, spare butter.
+
+        > Keep GF flours in their own sealed, labelled jars — a fully GF kitchen stays that way when nothing unlabelled comes in.
+    hu:
+      title: Mi hol tartható a legjobban?
+      body: |
+        - **Hűtő:** tejtermék, tojás, hús, hal, felbontott üvegek, bogyós gyümölcs és a legtöbb zöldség.
+        - **Hűvös, sötét kamra:** krumpli (sötétben, a hagymától távol — együtt mindkettő hamarabb romlik), hagyma és
+          fokhagyma, száraz áru légmentes, felcímkézett üvegben (GM lisztek, rizs és gabonák, fűszerek), olaj, méz, szemes kávé.
+        - **Pult:** paradicsom (a hűtő elveszi az ízét), banán, és az avokádó, csonthéjas gyümölcs, amíg meg nem érik.
+        - **Fagyasztó:** a GM kenyér már az első nap szeletelve, dió és GM liszt hosszú távra (az olajuk megavasodik),
+          gyömbér (fagyosan reszeld), aprított fűszernövény olajban, tartalék vaj.
+
+        > A GM liszteket saját, lezárt, felcímkézett üvegben tartsd — a teljesen GM konyha úgy marad az, ha semmi címkézetlen nem kerül be.

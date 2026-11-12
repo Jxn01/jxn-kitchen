@@ -1,0 +1,33 @@
+category: oils
+groups:
+  - id: oils-all
+    en: Oils
+    hu: Olaj
+    icon: "om:E0CB"
+    items:
+      - {id: sunflower-oil, en: Cooking oil, hu: Étolaj, staple: true, aliases: [oil, olaj, vegetable oil, sunflower oil, cooking oil, napraforgóolaj, napraforgó-olaj, repceolaj, rapeseed oil, canola oil, olajat, kevés olaj, sütőolaj]}
+      - {id: olive-oil, en: Olive oil, hu: Olívaolaj, aliases: [extra virgin olive oil, evoo, extra szűz olívaolaj, olívaolajat, oliva olaj]}
+      - {id: sesame-oil, en: Sesame oil, hu: Szezámolaj, aliases: [toasted sesame oil, pirított szezámolaj]}
+      - {id: coconut-oil, en: Coconut oil, hu: Kókuszolaj}
+      - {id: pumpkin-seed-oil, en: Pumpkin seed oil, hu: Tökmagolaj}
+      - {id: cooking-spray, en: Cooking spray, hu: Sütőspray, aliases: [oil spray, olajspray]}
+  - id: fats
+    en: Fats
+    hu: Zsiradék
+    icon: "om:1F9C8"
+    items:
+      - {id: lard, en: Lard, hu: Zsír, aliases: [pork fat, sertészsír, disznózsír, zsírt]}
+      - {id: duck-fat, en: Duck & goose fat, hu: "Kacsazsír, libazsír", aliases: [duck fat, goose fat, kacsazsír, libazsír]}
+      - {id: margarine, en: Margarine, hu: Margarin, aliases: [margarint, rama, sütőmargarin]}
+      - {id: ghee, en: Ghee, hu: Ghí, aliases: [clarified butter, tisztított vaj]}
+  - id: vinegars
+    en: Vinegar
+    hu: Ecet
+    icon: "om:E0CC"
+    items:
+      - {id: vinegar, en: Vinegar (10%), hu: Ecet, aliases: [white vinegar, distilled vinegar, ecet (10%), ételecet, háztartási ecet, ecetet, 10%-os ecet]}
+      - {id: apple-cider-vinegar, en: Apple cider vinegar, hu: Almaecet, aliases: [cider vinegar, almaecetet]}
+      - {id: wine-vinegar, en: Wine vinegar, hu: Borecet, aliases: [red wine vinegar, white wine vinegar, fehérborecet, vörösborecet]}
+      - {id: balsamic, en: Balsamic vinegar, hu: Balzsamecet, aliases: [balsamic, balsamic glaze, balzsamecetet, balzsamkrém, aceto balsamico]}
+      - {id: rice-vinegar, en: Rice vinegar, hu: Rizsecet, aliases: [rice wine vinegar]}
+      - {id: malt-vinegar, en: Malt vinegar, hu: Malátaecet, gluten: contains, swap: apple-cider-vinegar, pantry: false, aliases: [malt vinegar], tip_en: "Cider vinegar is a 1:1 swap.", tip_hu: "Az almaecet 1:1-ben helyettesíti."}

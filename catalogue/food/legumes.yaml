@@ -1,0 +1,53 @@
+category: legumes
+groups:
+  - id: dried-legumes
+    en: Dried beans & lentils
+    hu: Száraz hüvelyesek
+    icon: "om:1FAD8"
+    items:
+      - {id: dried-beans, en: Dried beans, hu: Szárazbab, icon: "om:1FAD8", aliases: [dried white beans, navy beans, fehér bab, tarkabab, babot, szárazbabot, bab]}
+      - {id: lentils, en: Lentils, hu: Lencse, aliases: [brown lentils, green lentils, barna lencse, lencsét]}
+      - {id: red-lentils, en: Red lentils, hu: Vörös lencse, aliases: [split red lentils, vöröslencse]}
+      - {id: dried-chickpeas, en: Dried chickpeas, hu: Szárított csicseriborsó, aliases: [dry chickpeas]}
+      - {id: split-peas, en: Split peas, hu: Sárgaborsó, aliases: [yellow split peas, felesborsó, sárga borsó, sárgaborsót]}
+  - id: nuts
+    en: Nuts
+    hu: Dió, mogyoró
+    icon: "om:1F95C"
+    items:
+      - {id: walnuts, en: Walnuts, hu: Dió, aliases: [walnut, darált dió, dióbél, diót, ground walnuts]}
+      - {id: hazelnuts, en: Hazelnuts, hu: Mogyoró, aliases: [hazelnut, törökmogyoró, mogyorót, darált mogyoró]}
+      - {id: peanuts, en: Peanuts, hu: Földimogyoró, icon: "om:1F95C", aliases: [peanut, roasted peanuts, sózott földimogyoró]}
+      - {id: almonds, en: Almonds, hu: Mandula, aliases: [almond, flaked almonds, sliced almonds, mandulát, mandulaforgács, mandulapehely, mandulapelyhet, hámozott mandula]}
+      - {id: cashews, en: Cashews, hu: Kesudió, aliases: [cashew, cashew nuts]}
+      - {id: pistachios, en: Pistachios, hu: Pisztácia, aliases: [pistachio]}
+      - {id: pine-nuts, en: Pine nuts, hu: Fenyőmag, aliases: [pine nut, pinoli]}
+      - {id: coconut-flakes, en: Desiccated coconut, hu: Kókuszreszelék, aliases: [shredded coconut, coconut flakes, kókuszreszeléket]}
+      - {id: chestnut, en: Chestnuts, hu: Gesztenye, icon: "om:1F330", aliases: [chestnut, sült gesztenye, cooked chestnuts]}
+  - id: seeds
+    en: Seeds
+    hu: Magvak
+    icon: "om:1F33B"
+    items:
+      - {id: sunflower-seeds, en: Sunflower seeds, hu: Napraforgómag, aliases: [napraforgómagot]}
+      - {id: pumpkin-seeds, en: Pumpkin seeds, hu: Tökmag, aliases: [pepitas, tökmagot]}
+      - {id: sesame, en: Sesame seeds, hu: Szezámmag, aliases: [sesame, szezám, szezámmagot]}
+      - {id: poppy-seeds, en: Poppy seeds, hu: Mák, aliases: [poppy seed, darált mák, mákot]}
+      - {id: flaxseed, en: Flaxseed, hu: Lenmag, aliases: [linseed, flax, lenmagot]}
+      - {id: chia, en: Chia seeds, hu: Chia mag, aliases: [chia]}
+  - id: plant-protein
+    en: Tofu & tempeh
+    hu: Tofu, tempeh
+    icon: "om:1F9C8"
+    items:
+      - {id: tofu, en: Tofu, hu: Tofu, aliases: [firm tofu, silken tofu, smoked tofu, füstölt tofu, tofut, selyemtofu]}
+      - {id: tempeh, en: Tempeh, hu: Tempeh, gluten: label, aliases: [tempe]}
+      - {id: seitan, en: Seitan, hu: Szejtán, gluten: contains, swap: tofu, pantry: false, aliases: [vital wheat gluten, wheat gluten, búzasikér, sikér, búzafehérje, seitant, szejtánt], tip_en: "Seitan IS wheat gluten. Use firm tofu (pressed, then marinated) or tempeh.", tip_hu: "A szejtán maga a búzasikér. Kemény tofuval (kinyomkodva, bepácolva) vagy tempeh-vel helyettesítsd."}
+  - id: nut-butters
+    en: Nut butters & pastes
+    hu: Magvajak, krémek
+    icon: "om:1FAD9-200D-1F7EB"
+    items:
+      - {id: peanut-butter, en: Peanut butter, hu: Mogyoróvaj, gluten: label, aliases: [peanut butter, földimogyoró-krém]}
+      - {id: tahini, en: Tahini, hu: Tahini, aliases: [sesame paste, szezámpaszta, szezámkrém]}
+      - {id: almond-butter, en: Almond butter, hu: Mandulavaj, aliases: [mandulakrém]}

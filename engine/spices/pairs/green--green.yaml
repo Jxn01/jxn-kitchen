@@ -1,0 +1,36 @@
+# Green & Hungarian herbs × green & Hungarian herbs — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+dill-dried:
+  parsley-dried: [3, herb-garden, "Dill and parsley: the green bunch on every Hungarian market stall — new potatoes, soups, salads.", "Kapor és petrezselyem: minden magyar piaci stand zöld csokra — újkrumpli, levesek, saláták."]
+  lovage-dried: [1, hungarian-heart]
+  tarragon-dried: [-1, doubled-note]
+  mint-dried: [1, cuisine-mates]
+  chives-dried: [3, classic-partners, "Dill and chives: the two best friends of sour cream.", "Kapor és metélőhagyma: a tejföl két legjobb barátja."]
+  coriander-leaf-dried: [-1, two-leads]
+  wild-garlic-dried: [1, gentle-company]
+parsley-dried:
+  lovage-dried: [2, hungarian-heart]
+  tarragon-dried: [2, cuisine-mates]
+  mint-dried: [2, cuisine-mates]
+  chives-dried: [2, herb-garden]
+  coriander-leaf-dried: [1, gentle-company]
+  wild-garlic-dried: [1, gentle-company]
+lovage-dried:
+  tarragon-dried: [-1, two-leads]
+  mint-dried: [-2, two-leads]
+  chives-dried: [1, gentle-company]
+  coriander-leaf-dried: [-1, two-leads]
+  wild-garlic-dried: [1, gentle-company]
+tarragon-dried:
+  mint-dried: [-1, two-leads]
+  chives-dried: [2, herb-garden]
+  coriander-leaf-dried: [-1, two-leads]
+  wild-garlic-dried: [0, harmless]
+mint-dried:
+  chives-dried: [0, harmless]
+  coriander-leaf-dried: [3, classic-partners, "Mint and coriander leaf: India's green chutney and Vietnam's plate of fresh herbs.", "Menta és korianderzöld: az indiai zöld chutney és a vietnami friss fűszertál."]
+  wild-garlic-dried: [-1, two-leads]
+chives-dried:
+  coriander-leaf-dried: [1, gentle-company]
+  wild-garlic-dried: [1, same-family]
+coriander-leaf-dried:
+  wild-garlic-dried: [0, harmless]

@@ -1,0 +1,292 @@
+id: baking
+order: 14
+icon: "om:1F370"
+color: salmon
+en: {title: Baking, sub: "GF flours · bread · cakes · pastry · troubleshooting"}
+hu: {title: Sütés, sub: "GM lisztek · kenyér · sütemény · tészta · hibaelhárítás"}
+pages:
+  - id: flours
+    chart:
+      type: swatches
+      shape: jars
+      items:
+        - {fill: "#F6F0E2", label: {en: White rice flour, hu: Fehér rizsliszt}, value: {en: "neutral base, crisp", hu: "semleges alap, ropogós"}, note: {en: "Everything — grainy if coarse: buy it fine.", hu: "Mindenre — durván őrölve homokos: finomat vegyél."}}
+        - {fill: "#D8C3A0", label: {en: Brown rice flour, hu: Barna rizsliszt}, value: {en: "nuttier, more fibre", hu: "diósabb, rostosabb"}, note: {en: "Bread, cookies.", hu: "Kenyér, keksz."}}
+        - {fill: "#F2C94C", label: {en: "Corn flour, polenta", hu: "Kukoricaliszt, polenta"}, value: {en: "golden, sweet", hu: "aranyló, édeskés"}, note: {en: "Cakes, crumbs, coating.", hu: "Sütemény, morzsa, bunda."}}
+        - {fill: "#8A6A4A", label: {en: Buckwheat, hu: Hajdinaliszt}, value: {en: "earthy, dark", hu: "földes, sötét"}, note: {en: "Pancakes, bread, rye-like loaves.", hu: "Palacsinta, kenyér, rozsszerű cipók."}}
+        - {fill: "#E6D4A8", label: {en: "Sorghum, millet", hu: "Cirok, köles"}, value: {en: "mild, soft", hu: "enyhe, puha"}, note: {en: "Bread, cakes.", hu: "Kenyér, sütemény."}}
+        - {fill: "#D9B48A", label: {en: "Almond, hazelnut", hu: "Mandula, mogyoró"}, value: {en: "rich, moist, heavy", hu: "gazdag, nedves, nehéz"}, note: {en: "Cakes, biscuits — not a 1 : 1 swap: more egg, less liquid.", hu: "Sütemény, keksz — nem cserélhető 1 : 1-ben: több tojás, kevesebb folyadék."}}
+        - {fill: "#E6C98A", label: {en: Chickpea, hu: Csicseriliszt}, value: {en: "beany, a strong binder", hu: "babos, erős kötőanyag"}, note: {en: "Batters, flatbreads.", hu: "Bunda, lepények."}}
+        - {fill: "#E9DDC0", label: {en: Oats (GF only), hu: Zab (csak GM)}, value: {en: "soft, chewy", hu: "puha, rágós"}, note: {en: "Crumbles, cookies, bread — GF-certified oats only.", hu: "Morzsa, keksz, kenyér — csak tanúsítottan GM zab."}}
+        - {fill: "#FFFDF6", label: {en: Starches, hu: Keményítők}, value: {en: "light, tender, binding", hu: "könnyű, omlós, köt"}, note: {en: "Potato, tapioca, corn: 30–40 % of a mix — a base flour with a starch, roughly 60 : 40.", hu: "Burgonya, tápióka, kukorica: a keverék 30–40 %-a — alapliszt keményítővel, nagyjából 60 : 40."}}
+    en:
+      title: The GF flours and what they do
+      body: |
+        No single GF flour behaves like wheat: **mix a base flour with a starch** (roughly 60 : 40) — or use a good
+        ready-made mix and learn its habits.
+
+        | Flour | Does | Use |
+        |---|---|---|
+        | White rice flour (fine) | neutral base, crisp | everything; grainy if coarse |
+        | Brown rice flour | nuttier, more fibre | bread, cookies |
+        | Corn flour (fine) / polenta | golden, sweet | cakes, crumbs, coating |
+        | Buckwheat (hajdina) | earthy, dark | pancakes, bread, rye-like loaves |
+        | Sorghum, millet (köles) | mild, soft | bread, cakes |
+        | Almond, hazelnut | rich, moist, heavy | cakes, biscuits (not a 1:1 swap) |
+        | Chickpea | beany, strong binder | batters, flatbreads |
+        | Oats (GF-certified only) | soft, chewy | crumbles, cookies, bread |
+        | Potato / tapioca / corn starch | light, tender, binding | 30–40 % of a mix |
+
+        > Grain-free swaps change the recipe: almond flour cakes need more egg and less liquid. Start from recipes written for GF flours.
+    hu:
+      title: A GM lisztek és mit csinálnak
+      body: |
+        Egyik GM liszt sem viselkedik úgy, mint a búza: **keverj egy alaplisztet egy keményítővel** (kb. 60 : 40) — vagy
+        használj egy jó kész keveréket, és ismerd meg a szokásait.
+
+        | Liszt | Mit tesz | Mire |
+        |---|---|---|
+        | Fehér rizsliszt (finom) | semleges alap, ropogós | mindenre; durván őrölve szemcsés |
+        | Barna rizsliszt | diósabb, több rost | kenyér, keksz |
+        | Kukoricaliszt (finom) / kukoricadara | aranyszínű, édeskés | sütemény, morzsa, bunda |
+        | Hajdina | földes, sötét | palacsinta, kenyér, rozsos jellegű cipók |
+        | Cirok, köles | enyhe, puha | kenyér, sütemény |
+        | Mandula, mogyoró | gazdag, nedves, nehéz | sütemény, keksz (nem 1:1 csere) |
+        | Csicseriborsó | babos, erősen köt | bunda, lepény |
+        | Zab (csak GM tanúsítvánnyal) | puha, rágós | morzsasüti, keksz, kenyér |
+        | Burgonya- / tápióka- / kukoricakeményítő | könnyű, omlós, köt | a keverék 30–40 %-a |
+
+        > A gabonamentes cserék megváltoztatják a receptet: a mandulalisztes sütihez több tojás és kevesebb folyadék kell. GM lisztekre írt receptből indulj.
+  - id: binders
+    chart:
+      type: picker
+      items:
+        - {label: {en: Xanthan gum, hu: Xantán}, icon: "om:1F9EA", value: {en: "½–1 tsp / 100 g", hu: "½–1 tk / 100 g"}, note: {en: "About ½ tsp per 100 g flour for cakes and biscuits, 1 tsp for bread. Many mixes already contain it — too much makes it gummy.", hu: "Süteményhez, kekszhez 100 g liszthez kb. ½ tk, kenyérhez 1 tk. Sok keverékben már benne van — a túl sok gumissá teszi."}}
+        - {label: {en: Psyllium husk, hu: Útifűmaghéj}, icon: "om:1F33E", value: {en: "5–8 % of the flour", hu: "a liszt 5–8 %-a"}, note: {en: "The bread maker's friend: shapeable dough, bendy bread. Add about 8–10 times its weight in extra liquid.", hu: "A kenyérsütő barátja: formázható tészta, hajlékony kenyér. Súlya kb. 8–10-szeresét add hozzá extra folyadékként."}}
+        - {label: {en: Rest, hu: Pihentetés}, icon: "om:23F2", value: {en: "15–30 min", hu: "15–30 perc"}, note: {en: "GF flours hydrate slowly — rest doughs and batters before shaping or baking.", hu: "A GM liszt lassan szívja magába a vizet — formázás vagy sütés előtt pihentesd a tésztát."}}
+        - {label: {en: More liquid, hu: Több folyadék}, icon: "om:1F4A7", value: {en: "bread 80–100 %", hu: "kenyér 80–100 %"}, note: {en: "GF doughs are wetter than wheat ones; bread dough is closer to a thick batter.", hu: "A GM tészta nedvesebb a búzásnál; a kenyértészta inkább sűrű massza."}}
+        - {label: {en: Eggs, hu: Tojás}, icon: "om:1F95A", note: {en: "Eggs add structure — don't cut them from GF cakes without a reason.", hu: "A tojás szerkezetet ad — GM süteményből ne hagyd ki ok nélkül."}}
+    en:
+      title: Xanthan, psyllium and resting
+      body: |
+        Gluten is the glue and the stretch. GF baking replaces it:
+
+        - **Xanthan gum:** about **½ tsp per 100 g flour** for cakes and biscuits, **1 tsp per 100 g** for bread. Many
+          mixes already contain it — check before adding more (too much makes it gummy).
+        - **Psyllium husk (útifűmaghéj):** the bread maker's friend — **5–8 % of the flour weight**, it makes doughs
+          shapeable and bread bendy. It drinks water: add about 8–10 times its weight in extra liquid.
+        - **Rest the dough or batter 15–30 minutes** before shaping or baking: GF flours hydrate slowly. Pancake and
+          nokedli batters thicken as they rest — adjust with a spoon of liquid.
+        - **More liquid:** GF doughs are wetter than wheat ones; bread dough is closer to a thick batter (80–100 %
+          hydration).
+        - **Eggs** add structure — don't cut them from GF cakes without a reason.
+    hu:
+      title: Xantán, útifűmaghéj és pihentetés
+      body: |
+        A sikér a ragasztó és a rugalmasság. A GM sütés pótolja:
+
+        - **Xantángumi:** sütihez, kekszhez **100 g liszthez kb. ½ tk**, kenyérhez **100 g-hoz 1 tk**. Sok keverékben már
+          benne van — mielőtt hozzáadsz, nézd meg (túl sok gumis lesz tőle).
+        - **Útifűmaghéj (psyllium):** a kenyérsütő barátja — **a lisztmennyiség 5–8 %-a**, formázhatóvá teszi a tésztát, és
+          hajlékonnyá a kenyeret. Sok vizet köt: tömegének kb. 8–10-szeresét add hozzá plusz folyadékként.
+        - **Pihentesd a tésztát 15–30 percig** formázás vagy sütés előtt: a GM liszt lassan veszi fel a vizet. A palacsinta- és
+          a nokedlitészta pihenés közben sűrűsödik — egy kanál folyadékkal igazíts rajta.
+        - **Több folyadék:** a GM tészta nedvesebb a búzásnál; a kenyértészta inkább sűrű massza (80–100 % hidratáltság).
+        - A **tojás** szerkezetet ad — GM süteményből ne hagyd ki ok nélkül.
+  - id: bread
+    chart:
+      type: steps
+      items:
+        - {icon: "om:2696", label: {en: Weigh, hu: Mérd ki}, note: {en: "500 g GF bread mix (or 300 g rice/buckwheat flour + 200 g starches), 25 g psyllium, 10 g salt, 7 g dry yeast, 450–500 ml lukewarm water, 2 tbsp oil.", hu: "500 g GM kenyérliszt-keverék (vagy 300 g rizs-/hajdinaliszt + 200 g keményítő), 25 g útifűmaghéj, 10 g só, 7 g szárított élesztő, 450–500 ml langyos víz, 2 ek olaj."}}
+        - {icon: "om:1F963", label: {en: Mix, hu: Keverd}, time: {en: 5 min gel, hu: 5 perc zselé}, note: {en: "Psyllium into the water first and let it gel 5 minutes, then everything else. Knead briefly with wet hands: it holds a shape but stays tacky.", hu: "Előbb az útifűmaghéjat keverd a vízbe, 5 percig zselésedjen, aztán jöhet minden más. Vizes kézzel gyúrd át röviden: tartsa a formáját, de maradjon ragacsos."}}
+        - {icon: "om:23F2", label: {en: Proof once, hu: Egyszer keleszd}, time: {en: 45–75 min, hu: 45–75 perc}, note: {en: "Shape on baking paper or in a tin. Proof once, until about 1.5 times the size — not doubled.", hu: "Formázd sütőpapíron vagy formában. Egyszer keleszd, kb. másfélszeresére — nem duplájára."}}
+        - {icon: "om:1F525", label: {en: Bake hot, hu: Süsd forrón}, time: {en: 15 + 40–50 min, hu: 15 + 40–50 perc}, note: {en: "230 °C with steam (a tray of water) for 15 minutes, then 200 °C for 40–50, until the core reads 96–98 °C and the base sounds hollow.", hu: "230 °C-on gőzzel (egy tál víz) 15 percig, aztán 200 °C-on 40–50 percig, amíg a belseje 96–98 °C, és az alja kongó hangot ad."}}
+        - {icon: "om:1F35E", label: {en: Cool completely, hu: Hűtsd ki teljesen}, time: {en: 2 hours, hu: 2 óra}, note: {en: "Cool completely before slicing — the crumb is still setting. Freeze sliced; toast from frozen.", hu: "Szeletelés előtt hűtsd ki teljesen — a bélzet még köt. Szeletelve fagyaszd; fagyosan pirítsd."}}
+    en:
+      title: GF bread
+      body: |
+        1. **Weigh everything.** A reliable start: 500 g GF bread mix (or 300 g rice/buckwheat flour + 200 g starches),
+           25 g psyllium, 10 g salt, 7 g dry yeast, 450–500 ml lukewarm water, 2 tbsp oil.
+        2. Mix the psyllium into the water first and let it gel 5 minutes, then everything else. Knead briefly with wet
+           hands: it should hold a shape but stay tacky.
+        3. Shape on baking paper or into a tin. Proof once, **until about 1.5 times the size** (45–75 min), not doubled.
+        4. Bake hot and long: 230 °C with steam (a tray of water) for 15 minutes, then 200 °C for 40–50 minutes, until
+           the core reads **96–98 °C** and the base sounds hollow.
+        5. **Cool completely** (2 hours) before slicing — the crumb is still setting. Freeze sliced; toast from frozen.
+    hu:
+      title: GM kenyér
+      body: |
+        1. **Mindent mérj le.** Megbízható kiindulás: 500 g GM kenyérliszt-keverék (vagy 300 g rizs-/hajdinaliszt + 200 g
+           keményítő), 25 g útifűmaghéj, 10 g só, 7 g szárított élesztő, 450–500 ml langyos víz, 2 ek olaj.
+        2. Az útifűmaghéjat először keverd a vízbe, és hagyd 5 percig zselésedni, aztán jöhet minden más. Nedves kézzel
+           röviden dagaszd: tartsa az alakját, de maradjon kicsit ragacsos.
+        3. Formázd sütőpapírra vagy formába. Egyszer keleszd, **kb. másfélszeresére** (45–75 perc), ne duplájára.
+        4. Forrón és sokáig süsd: 230 °C, gőzzel (egy tálca víz) 15 percig, aztán 200 °C 40–50 percig, amíg a belseje
+           **96–98 °C** és az alja kopogtatva üregesen kong.
+        5. **Hagyd teljesen kihűlni** (2 óra), mielőtt felvágod — a bélzet még köt. Szeletelve fagyaszd, fagyosan pirítsd.
+  - id: cakes-pastry
+    chart:
+      type: picker
+      items:
+        - {label: {en: Sponge (piskóta), hu: Piskóta}, icon: "om:1F370", value: {en: easiest, hu: a legkönnyebb}, note: {en: "The eggs do the lifting: swap the flour 1 : 1 for a GF mix, sift twice, fold gently.", hu: "A tojás emeli: cseréld a lisztet 1 : 1-ben GM keverékre, szitáld kétszer, óvatosan forgasd."}}
+        - {label: {en: "Butter cakes, muffins", hu: "Vajas sütemény, muffin"}, icon: "om:1F9C1", value: {en: "+5–10 min", hu: "+5–10 perc"}, note: {en: "GF mix with xanthan, a little extra milk; 5–10 minutes longer at the same temperature. Wrap airtight.", hu: "GM keverék xantánnal, kevés extra tej; ugyanazon a hőn 5–10 perccel tovább. Légmentesen csomagold."}}
+        - {label: {en: Shortcrust (omlós), hu: Omlós tészta}, icon: "om:1F967", note: {en: "Works beautifully GF: cold butter, GF mix, an egg yolk; roll between baking paper, chill 30 minutes, patch cracks.", hu: "GM-en is remek: hideg vaj, GM keverék, egy tojássárgája; sütőpapírok között nyújtsd, 30 perc hűtés, a repedéseket foltozd."}}
+        - {label: {en: "Puff, filo, rétes", hu: "Leveles, rétes"}, icon: "om:26A0", value: {en: the hard ones, hu: a nehezek}, note: {en: "Buy GF puff pastry; for rétes, GF filo if you find it, or GF puff rolled very thin.", hu: "Vegyél GM leveles tésztát; réteshez GM filót, ha találsz, vagy nagyon vékonyra nyújtott GM leveles tésztát."}}
+        - {label: {en: "Crumble, crumbs", hu: "Morzsa, morzsasüti"}, icon: "om:1F36A", note: {en: "GF oats (certified), almond flour, GF biscuits blitzed.", hu: "GM (tanúsított) zab, mandulaliszt, összetört GM keksz."}}
+        - {label: {en: Hungarian GF sweets, hu: Magyar GM édességek}, icon: "om:1F36E", note: {en: "Gesztenyepüré, madártej, rizsfelfújt, somlói with a GF sponge, túrógombóc with corn or rice semolina, beigli and flódni fillings on a GF dough.", hu: "Gesztenyepüré, madártej, rizsfelfújt, somlói GM piskótával, túrógombóc kukorica- vagy rizsdarával, bejgli és flódni töltelékei GM tésztán."}}
+    en:
+      title: Cakes, biscuits and pastry
+      body: |
+        - **Sponge (piskóta):** the easiest GF bake — the eggs do the lifting. Swap the flour 1:1 for a GF mix or
+          rice flour + cornstarch, sift twice, fold gently.
+        - **Butter cakes and muffins:** GF mix with xanthan, a little extra milk; bake 5–10 minutes longer at the same
+          temperature. They keep better wrapped airtight — GF cakes dry out faster.
+        - **Shortcrust (omlós tészta):** works beautifully GF — cold butter, GF mix, an egg yolk; roll between baking
+          paper, chill 30 minutes, patch cracks with offcuts.
+        - **Puff and filo (leveles, rétes):** the hard ones. Buy GF puff pastry; for rétes, GF filo where you can find it,
+          or roll GF puff very thin.
+        - **Crumble and crumbs:** GF oats (certified), almond flour, GF biscuits blitzed.
+        - Hungarian sweets that are GF by nature or with one swap: **gesztenyepüré**, **madártej**, **rizsfelfújt**,
+          **somlói** with a GF sponge, **túrógombóc** with corn or rice semolina instead of wheat semolina (búzadara), and
+          the poppy, walnut and apple fillings of **beigli** and **flódni** on a GF dough.
+    hu:
+      title: Sütemények, keksz, tészták
+      body: |
+        - **Piskóta:** a legkönnyebb GM sütemény — a tojás emeli. Cseréld a lisztet 1:1-ben GM keverékre vagy rizsliszt +
+          kukoricakeményítő párosra, szitáld kétszer, óvatosan forgasd bele.
+        - **Vajas sütemény, muffin:** xantános GM keverék, kicsit több tej; ugyanazon a hőfokon 5–10 perccel tovább süsd.
+          Légmentesen csomagolva tovább friss — a GM sütemény gyorsabban szárad.
+        - **Omlós tészta:** GM-en is gyönyörű — hideg vaj, GM keverék, egy tojássárgája; két sütőpapír közt nyújtsd,
+          30 percig hűtsd, a repedéseket foltozd a maradékkal.
+        - **Leveles és rétestészta:** a nehezek. Vegyél GM leveles tésztát; réteshez GM réteslapot, ha kapsz, vagy nagyon
+          vékonyra nyújtott GM leveles tésztát.
+        - **Morzsa, morzsasüti:** GM (tanúsított) zab, mandulaliszt, GM keksz összetörve.
+        - Természeténél fogva vagy egyetlen cserével GM magyar édességek: **gesztenyepüré**, **madártej**, **rizsfelfújt**,
+          **somlói** GM piskótával, **túrógombóc** búzadara helyett kukorica- vagy rizsdarával, valamint a **bejgli** és a
+          **flódni** mákos, diós, almás töltelékei GM tésztán.
+  - id: trouble-bread
+    chart:
+      type: picker
+      items:
+        - label: {en: Dense and heavy, hu: Tömör és nehéz}
+          icon: "om:1F35E"
+          note: {en: "Too little water or binder, or under-proofed. Make the dough wetter, psyllium 5–8 % of the flour, proof to 1.5 times.", hu: "Kevés víz vagy kötőanyag, vagy kevés kelesztés. Nedvesebb tészta, az útifűmaghéj a liszt 5–8 %-a, kelesztés másfélszeresére."}
+        - label: {en: Gummy inside, hu: Szalonnás belül}
+          icon: "om:1F321"
+          note: {en: "Underbaked, or sliced warm. Bake until the core reads 96–98 °C, then cool it for 2 hours before cutting.", hu: "Sületlen, vagy melegen szeletelted. Süsd, amíg a belseje 96–98 °C, és vágás előtt hűtsd 2 órán át."}
+        - label: {en: Sank in the middle, hu: Középen beesett}
+          icon: "om:26A0"
+          note: {en: "Over-proofed or too wet. GF dough rises once, to about 1.5 times — not doubled.", hu: "Túlkelt vagy túl nedves. A GM tészta egyszer kel, kb. másfélszeresére — nem a duplájára."}
+        - label: {en: Crumbles apart, hu: Szétmorzsálódik}
+          icon: "om:1F9F1"
+          note: {en: "Not enough binder or rest. Psyllium or xanthan, and rest the dough 15–30 minutes before shaping.", hu: "Kevés kötőanyag vagy pihentetés. Útifűmaghéj vagy xantán, és formázás előtt 15–30 perc pihentetés."}
+        - label: {en: Tunnel under the crust, hu: Üreg a héj alatt}
+          icon: "om:1F573"
+          note: {en: "The crust set before the rise finished. Proof a little longer and give it steam at the start (a tray of water).", hu: "A héj hamarabb megkötött, mint ahogy befejezte a kelést. Keleszd kicsit tovább, és az elején adj gőzt (egy tál víz)."}
+        - label: {en: Pale crust, hu: Sápadt héj}
+          icon: "om:1F525"
+          note: {en: "Too cool. Start hot — 230 °C for 15 minutes — and brush with milk or oil.", hu: "Túl hűvös. Kezdd forrón — 230 °C 15 percig —, és kend meg tejjel vagy olajjal."}
+        - label: {en: Too dark too soon, hu: Túl korán sötét}
+          icon: "om:1F321"
+          note: {en: "GF flours brown faster. Lower the heat 10–15 °C or cover the loaf with foil for the last part.", hu: "A GM liszt hamarabb barnul. Vedd lejjebb 10–15 °C-kal, vagy a végére takard le fóliával."}
+        - label: {en: Stale the next day, hu: Másnapra száraz}
+          icon: "om:2744"
+          note: {en: "GF bread stales within a day. Slice and freeze it on day one; toast from frozen.", hu: "A GM kenyér egy nap alatt kiszárad. Már az első nap szeleteld és fagyaszd; fagyosan pirítsd."}
+    en:
+      title: "Troubleshooting: GF bread"
+      body: |
+        | Problem | Likely cause | Fix |
+        |---|---|---|
+        | Dense and heavy | too little water or binder; under-proofed | wetter dough, psyllium 5–8 %, proof to 1.5× |
+        | Gummy inside | underbaked or sliced warm | bake to 96–98 °C inside, cool 2 hours |
+        | Sank in the middle | over-proofed or too wet | proof once, to about 1.5× — not doubled |
+        | Crumbles apart | not enough binder or rest | psyllium or xanthan; rest 15–30 minutes |
+        | Tunnel under the crust | the crust set before the rise finished | proof a little longer; steam at the start |
+        | Pale crust | too cool | start at 230 °C; brush with milk or oil |
+        | Too dark too soon | GF flours brown faster | 10–15 °C lower, or foil for the last part |
+        | Stale the next day | GF bread stales fast | slice and freeze on day one, toast from frozen |
+
+        See *GF bread* for the method, *Xanthan, psyllium and resting* for the binders.
+    hu:
+      title: "Hibaelhárítás: GM kenyér"
+      body: |
+        | Gond | Valószínű ok | Megoldás |
+        |---|---|---|
+        | Tömör és nehéz | kevés víz vagy kötőanyag; kevés kelesztés | nedvesebb tészta, útifűmaghéj 5–8 %, kelesztés másfélszeresre |
+        | Szalonnás belül | sületlen vagy melegen szeletelve | süsd 96–98 °C-ig belül, hűtsd 2 órán át |
+        | Középen beesett | túlkelt vagy túl nedves | egyszer keleszd, kb. másfélszeresre — nem duplájára |
+        | Szétmorzsálódik | kevés kötőanyag vagy pihentetés | útifűmaghéj vagy xantán; 15–30 perc pihentetés |
+        | Üreg a héj alatt | a héj megkötött, mielőtt befejezte a kelést | keleszd kicsit tovább; az elején gőz |
+        | Sápadt héj | túl hűvös | kezdd 230 °C-on; kend meg tejjel vagy olajjal |
+        | Túl korán sötét | a GM liszt hamarabb barnul | 10–15 °C-kal lejjebb, vagy a végére fólia |
+        | Másnapra száraz | a GM kenyér hamar kiszárad | az első nap szeleteld és fagyaszd, fagyosan pirítsd |
+
+        A módszert lásd a *GM kenyér*, a kötőanyagokat a *Xantán, útifűmaghéj és pihentetés* oldalon.
+  - id: trouble-cakes
+    chart:
+      type: picker
+      items:
+        - label: {en: Dry and crumbly, hu: Száraz és morzsálódó}
+          icon: "om:1F370"
+          note: {en: "Too much flour or overbaked. Weigh the flour, add 1–2 tbsp yoghurt or oil, rest the batter 15–30 minutes, check 5 minutes early.", hu: "Sok liszt vagy túlsütve. Mérd grammra a lisztet, tégy bele 1–2 ek joghurtot vagy olajat, pihentesd a masszát 15–30 percig, 5 perccel előbb nézd meg."}
+        - label: {en: Gritty, hu: Homokos}
+          icon: "om:1F35A"
+          note: {en: "The rice flour is coarse. Use superfine rice flour, and rest the batter 30 minutes so it softens.", hu: "Durva a rizsliszt. Finom őrlésű rizslisztet használj, és pihentesd a masszát 30 percig, hogy megpuhuljon."}
+        - label: {en: Sank in the middle, hu: Középen beesett}
+          icon: "om:26A0"
+          note: {en: "Underbaked, the door opened early, or too much raising agent. Skewer test; keep the door shut for the first two thirds; GF baking powder, measured level.", hu: "Sületlen, korán kinyitottad az ajtót, vagy sok a sütőpor. Tűpróba; az első kétharmadban ne nyisd ki; GM sütőpor, csapott mérővel."}
+        - label: {en: Gummy streak at the bottom, hu: Ragacsos csík alul}
+          icon: "om:1F321"
+          note: {en: "Too wet or underbaked. A little less liquid, a longer bake at a slightly lower heat.", hu: "Túl nedves vagy sületlen. Kicsit kevesebb folyadék, hosszabb sütés kicsit alacsonyabb hőn."}
+        - label: {en: Cookies spread flat, hu: Szétfolyt keksz}
+          icon: "om:1F36A"
+          note: {en: "Warm butter, too much sugar, no binder. Chill the dough 30 minutes; ¼–½ tsp xanthan per 100 g flour.", hu: "Meleg vaj, sok cukor, nincs kötőanyag. Hűtsd a tésztát 30 percig; 100 g liszthez ¼–½ tk xantán."}
+        - label: {en: Cookies hard as rock, hu: Kőkemény keksz}
+          icon: "om:1F36A"
+          note: {en: "Overbaked — GF bakes firm up as they cool. Take them out while the middle is still soft.", hu: "Túlsütve — a GM sütemény hűlve megkeményedik. Vedd ki, amíg a közepe még puha."}
+        - label: {en: Browns too fast, hu: Túl gyorsan barnul}
+          icon: "om:1F525"
+          note: {en: "GF flours brown sooner. Bake 10–15 °C lower, cover with foil if needed.", hu: "A GM liszt hamarabb barnul. Süsd 10–15 °C-kal alacsonyabban, ha kell, takard le fóliával."}
+        - label: {en: The sponge didn't rise, hu: Nem emelkedett a piskóta}
+          icon: "om:1F95A"
+          note: {en: "The eggs weren't whipped enough, or the flour was folded in too hard. Whip to a thick ribbon; fold gently.", hu: "Nem verted elég habosra a tojást, vagy erősen forgattad bele a lisztet. Sűrű, szalagos habbá verd; óvatosan forgasd."}
+        - label: {en: Pastry cracks, hu: Repedő tészta}
+          icon: "om:1F967"
+          note: {en: "Too dry or too cold. A spoon of water, roll it between two sheets of baking paper, patch the cracks.", hu: "Túl száraz vagy túl hideg. Egy kanál víz, két sütőpapír között nyújtsd, a repedéseket foltozd be."}
+        - label: {en: Tastes beany or bitter, hu: Babízű vagy keserű}
+          icon: "om:1FAD8"
+          note: {en: "Chickpea, bean or buckwheat flour. Mix it with rice flour and starch; vanilla, cinnamon or cocoa hide it.", hu: "Csicseri-, bab- vagy hajdinaliszt. Keverd rizsliszttel és keményítővel; a vanília, a fahéj vagy a kakaó elfedi."}
+    en:
+      title: "Troubleshooting: cakes and cookies"
+      body: |
+        | Problem | Likely cause | Fix |
+        |---|---|---|
+        | Dry and crumbly | too much flour; overbaked | weigh the flour; 1–2 tbsp yoghurt or oil; rest the batter 15–30 min; check early |
+        | Gritty | coarse rice flour | superfine rice flour; rest the batter 30 minutes |
+        | Sank in the middle | underbaked; door opened early; too much raising agent | skewer test; door shut for the first two thirds; GF baking powder, level |
+        | Gummy streak at the bottom | too wet or underbaked | less liquid; longer, slightly cooler bake |
+        | Cookies spread flat | warm butter, much sugar, no binder | chill the dough 30 min; ¼–½ tsp xanthan per 100 g |
+        | Cookies hard as rock | overbaked | out while the middle is still soft |
+        | Browns too fast | GF flours brown sooner | 10–15 °C lower; foil |
+        | The sponge didn't rise | eggs under-whipped, flour folded too hard | whip to a thick ribbon; fold gently |
+        | Pastry cracks | too dry or too cold | a spoon of water; roll between baking paper; patch |
+        | Tastes beany or bitter | chickpea, bean or buckwheat flour | blend with rice flour and starch; vanilla, cinnamon, cocoa |
+
+        > Baking powder: most is GF, but check — some contain wheat starch. The GF-labelled one is safe.
+    hu:
+      title: "Hibaelhárítás: sütemény és keksz"
+      body: |
+        | Gond | Valószínű ok | Megoldás |
+        |---|---|---|
+        | Száraz és morzsálódó | sok liszt; túlsütve | mérd grammra; 1–2 ek joghurt vagy olaj; 15–30 perc pihentetés; nézd meg előbb |
+        | Homokos | durva rizsliszt | finom őrlésű rizsliszt; 30 perc pihentetés |
+        | Középen beesett | sületlen; korán nyitott ajtó; sok sütőpor | tűpróba; az első kétharmadban zárt ajtó; GM sütőpor, csapottan |
+        | Ragacsos csík alul | túl nedves vagy sületlen | kevesebb folyadék; hosszabb, kicsit hűvösebb sütés |
+        | Szétfolyt keksz | meleg vaj, sok cukor, nincs kötőanyag | 30 perc hűtés; 100 g-hoz ¼–½ tk xantán |
+        | Kőkemény keksz | túlsütve | vedd ki, amíg a közepe puha |
+        | Túl gyorsan barnul | a GM liszt hamarabb barnul | 10–15 °C-kal alacsonyabban; fólia |
+        | Nem emelkedett a piskóta | kevés habverés, erős forgatás | sűrű, szalagos habbá; óvatos forgatás |
+        | Repedő tészta | túl száraz vagy hideg | egy kanál víz; sütőpapírok között nyújtsd; foltozd |
+        | Babízű vagy keserű | csicseri-, bab- vagy hajdinaliszt | keverd rizsliszttel és keményítővel; vanília, fahéj, kakaó |
+
+        > Sütőpor: a legtöbb GM, de ellenőrizd — némelyikben búzakeményítő van. A GM jelölésű biztonságos.

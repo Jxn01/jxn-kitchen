@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- maximum-scale=1: iOS Safari otherwise zooms the page into any input under 16 px when it is tapped (and stays
+         zoomed); since iOS 10 it still lets the user pinch-zoom. Desktop Chrome (the kiosk) ignores this tag. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#FFF4DF" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <!-- the iPhone's home screen (mobile-first pass, 2026-10-26): iOS ignores the SVG icon and screenshots the page instead;
+         180 px full-bleed square (iOS rounds the corners itself). Opens standalone through the manifest. -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kitchen" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="preload" href="/fonts/alfa-slab-one-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <title>JXN Kitchen</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      /* Boot guard: if the app has not mounted 20 s after this point (its bundle failed — the kiosk's Wi-Fi was not up
+         yet at boot on 2026-10-11 and the screen stayed blank), reload. After three tries, once a minute. */
+      (function () {
+        var tries = 0;
+        try { tries = Number(sessionStorage.getItem('kitchen.boot') || 0); } catch (e) {}
+        setTimeout(function () {
+          if (window.__kitchenUp) return;
+          try { sessionStorage.setItem('kitchen.boot', String(tries + 1)); } catch (e) {}
+          location.reload();
+        }, tries < 3 ? 20000 : 60000);
+      })();
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

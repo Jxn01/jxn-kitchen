@@ -1,0 +1,36 @@
+tamari:
+  honey: [3, classic-partners, "Tamari and honey: the sticky, glossy glaze of teriyaki.", "Tamari és méz: a teriyaki ragacsos, fényes máza."]
+  maple-syrup: [2, gentle-company]
+  sour-cherry: [-1, odd-couple]
+  sugar: [2, classic-partners]
+  brown-sugar: [2, classic-partners]
+fish-sauce:
+  honey: [1, gentle-company]
+  maple-syrup: [-1, odd-couple]
+  sour-cherry: [-2, odd-couple]
+  sugar: [3, classic-partners, "Fish sauce and sugar: salty and sweet, the Vietnamese balance.", "Halszósz és cukor: sós és édes, a vietnami egyensúly."]
+  brown-sugar: [2, classic-partners]
+miso:
+  honey: [2, classic-partners]
+  maple-syrup: [2, classic-partners]
+  sour-cherry: [-1, odd-couple]
+  sugar: [1, gentle-company]
+  brown-sugar: [1, gentle-company]
+tomato-paste:
+  honey: [1, gentle-company]
+  maple-syrup: [1, gentle-company]
+  sour-cherry: [-1, odd-couple]
+  sugar: [2, classic-partners]
+  brown-sugar: [2, classic-partners]
+worcestershire:
+  honey: [1, gentle-company]
+  maple-syrup: [1, gentle-company]
+  sour-cherry: [-1, odd-couple]
+  sugar: [1, gentle-company]
+  brown-sugar: [2, classic-partners]
+salt:
+  honey: [1, salt-lifts]
+  maple-syrup: [1, salt-lifts]
+  sour-cherry: [1, salt-lifts]
+  sugar: [1, salt-lifts]
+  brown-sugar: [1, salt-lifts]

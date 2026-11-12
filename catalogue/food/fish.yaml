@@ -1,0 +1,40 @@
+category: fish
+groups:
+  - id: fresh-fish
+    en: Fish
+    hu: Hal
+    icon: "om:1F41F"
+    items:
+      - {id: salmon, en: Salmon, hu: Lazac, icon: "c:fish-fillet", aliases: [salmon fillet, lazacfilé, lazacszelet]}
+      - {id: trout, en: Trout, hu: Pisztráng, aliases: [rainbow trout, pisztrángfilé]}
+      - {id: carp, en: Carp, hu: Ponty, aliases: [pontyszelet, pontyfilé]}
+      - {id: catfish, en: Catfish, hu: Harcsa, aliases: [harcsafilé, wels catfish]}
+      - {id: pike-perch, en: Pike-perch (zander), hu: Fogas (süllő), icon: "c:fish-fillet", aliases: [zander, pikeperch, fogas, süllő, süllőfilé, fogasfilé]}
+      - {id: cod, en: Cod, hu: Tőkehal, icon: "c:fish-fillet", aliases: [cod fillet, tőkehalfilé, alaszkai tőkehal, pollock]}
+      - {id: hake, en: Hake, hu: Hekk, aliases: [hekkfilé]}
+      - {id: tuna-steak, en: Tuna steak, hu: Tonhalsteak, aliases: [fresh tuna, friss tonhal]}
+      - {id: sea-bass, en: Sea bass, hu: Tengeri sügér, aliases: [branzino, loup de mer]}
+      - {id: sea-bream, en: Sea bream, hu: Dorade, aliases: [dorade, orata, aranydurbincs, tengeri keszeg]}
+      - {id: mackerel, en: Mackerel, hu: Makréla, aliases: [makrélafilé]}
+  - id: seafood
+    en: Seafood
+    hu: Tenger gyümölcsei
+    icon: "om:1F990"
+    items:
+      - {id: shrimp, en: Shrimp & prawns, hu: Garnélarák, icon: "om:1F990", aliases: [shrimp, prawns, prawn, garnéla, rák, királyrák, tigrisrák]}
+      - {id: mussels, en: Mussels, hu: Kagyló, aliases: [mussel, feketekagyló, kékkagyló]}
+      - {id: clams, en: Clams, hu: Vongole, aliases: [clam, vongole kagyló, szívkagyló]}
+      - {id: squid, en: Squid (calamari), hu: Tintahal, icon: "om:1F991", aliases: [calamari, kalmár, tintahalkarika]}
+      - {id: octopus, en: Octopus, hu: Polip, icon: "om:1F419", aliases: [polipkar]}
+      - {id: scallops, en: Scallops, hu: Fésűkagyló, aliases: [scallop, szent jakab kagyló]}
+      - {id: seafood-mix, en: Seafood mix, hu: Tenger gyümölcsei mix, aliases: [frutti di mare, mixed seafood, tengergyümölcsei]}
+  - id: preserved-fish
+    en: Smoked & cured fish
+    hu: Füstölt, sózott hal
+    icon: "c:fish-fillet"
+    items:
+      - {id: smoked-salmon, en: Smoked salmon, hu: Füstölt lazac, aliases: [lox, gravlax, pácolt lazac]}
+      - {id: anchovies, en: Anchovies, hu: Szardella, aliases: [anchovy, ancsovis, szardellafilé]}
+      - {id: smoked-mackerel, en: Smoked mackerel, hu: Füstölt makréla}
+      - {id: surimi, en: Surimi sticks, hu: Rákrúd (surimi), gluten: label, aliases: [crab sticks, surimi, rákrúd]}
+      - {id: herring, en: Pickled herring, hu: Hering, aliases: [herring, ecetes hering, matjes]}

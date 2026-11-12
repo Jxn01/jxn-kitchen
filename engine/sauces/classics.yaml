@@ -1,0 +1,345 @@
+# The twelve classic sauces (spec 2026-10-19 §8): the seeds of the Sauces section and the engine's calibration. Every
+# seed is gluten-free by construction — rice flour for the roux, tamari for soy, no item that needs a swap; where the dish
+# is the same either way it uses the ingredient that reads GF (water, not a stock that needs a label check). Mayonnaise,
+# vinaigrette and vadas carry mustard and read "check the label", exactly as the know-how says.
+#   ingredients: {id: <ingredients.yaml id>, qty, unit} or {spice: <rack jar>, qty, unit: tsp|tbsp|g}
+#   expected: what the engine must read — {word, body, keeps, gluten: gf|check, findings: [ids, exactly]} (tests)
+classics:
+  - id: bechamel
+    en: Béchamel
+    hu: Besamel
+    family: bechamel
+    yield_ml: 500
+    ingredients:
+      - {id: butter, qty: 30, unit: g}
+      - {id: rice-flour, qty: 3, unit: tbsp}
+      - {id: milk, qty: 5, unit: dl}
+      - {id: salt, qty: 0.5, unit: tsp}
+      - {id: white-pepper, qty: 0.25, unit: tsp}
+      - {spice: nutmeg, qty: 0.125, unit: tsp}
+    steps:
+      en:
+        - Melt the butter over medium-low heat.
+        - Stir in the rice flour for 1–2 minutes — it should not colour.
+        - Whisk in the warm milk a little at a time, every lump gone before the next splash.
+        - Simmer 5 minutes, stirring, until it coats a spoon and the raw-flour taste is gone.
+        - Season with the salt, white pepper and a grating of nutmeg.
+      hu:
+        - Olvaszd meg a vajat közepes-alacsony lángon.
+        - Keverd bele a rizslisztet, 1–2 percig — ne színeződjön.
+        - Apránként habard bele a meleg tejet, minden adag előtt csomómentesre.
+        - 5 percig gyöngyöztesd, kevergetve, amíg bevonja a kanalat, és eltűnik a nyers lisztíz.
+        - Ízesítsd sóval, fehér borssal és egy kis reszelt szerecsendióval.
+    method: {en: "For lasagne, moussaka, croquettes and vegetables au gratin. A skin forms as it cools: press baking paper onto it.", hu: "Lasagnéhoz, rakott ételekhez, kroketthez, csőben sült zöldséghez. Hűlés közben bőrösödik: nyomj sütőpapírt a felszínére."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, family:bechamel, heat:mild, pair:nutmeg+white-pepper, pair:salt+white-pepper, seasoned]}
+
+  - id: mornay
+    en: Cheese sauce (Mornay)
+    hu: Sajtmártás (Mornay)
+    family: mornay
+    yield_ml: 550
+    ingredients:
+      - {id: butter, qty: 30, unit: g}
+      - {id: rice-flour, qty: 3, unit: tbsp}
+      - {id: milk, qty: 5, unit: dl}
+      - {id: semi-hard-cheese, qty: 60, unit: g}
+      - {id: parmesan, qty: 20, unit: g}
+      - {id: salt, qty: 0.25, unit: tsp}
+      - {id: white-pepper, qty: 0.25, unit: tsp}
+      - {spice: nutmeg, qty: 0.125, unit: tsp}
+    steps:
+      en:
+        - Melt the butter over medium-low heat and stir in the rice flour for 1–2 minutes, without colour.
+        - Whisk in the warm milk a little at a time and simmer 5 minutes, stirring, until it coats a spoon.
+        - Off the heat, stir in the grated cheeses until smooth.
+        - Season with salt, white pepper and nutmeg — the cheese is salty, so taste first.
+      hu:
+        - Olvaszd meg a vajat közepes-alacsony lángon, és keverd bele a rizslisztet 1–2 percig, színeződés nélkül.
+        - Apránként habard bele a meleg tejet, és 5 percig gyöngyöztesd, kevergetve, amíg bevonja a kanalat.
+        - A tűzről levéve keverd simára benne a reszelt sajtokat.
+        - Ízesítsd sóval, fehér borssal, szerecsendióval — a sajt sós, előbb kóstold meg.
+    method: {en: "For cauliflower, broccoli, pasta bakes and croque-monsieur on GF bread.", hu: "Karfiolhoz, brokkolihoz, rakott tésztához, GM kenyérből készült croque-monsieur-höz."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, family:mornay, heat:mild, pair:nutmeg+white-pepper, seasoned]}
+
+  - id: mayonnaise
+    en: Mayonnaise
+    hu: Majonéz
+    family: mayonnaise
+    yield_ml: 250
+    ingredients:
+      - {id: egg-yolk, qty: 1, unit: pcs}
+      - {id: mustard, qty: 1, unit: tsp}
+      - {id: salt, qty: 0.25, unit: tsp}
+      - {id: sunflower-oil, qty: 200, unit: ml}
+      - {id: lemon-juice, qty: 1, unit: tbsp}
+    steps:
+      en:
+        - Everything at room temperature. Whisk the yolk with the mustard and the salt.
+        - Whisk in the oil a few drops at a time until it thickens and turns pale — the emulsion has caught.
+        - Then a thin stream, whisking all the time, until the oil is in.
+        - Finish with the lemon juice and taste for salt.
+      hu:
+        - Minden legyen szobahőmérsékletű. Habard ki a sárgáját a mustárral és a sóval.
+        - Cseppenként keverd bele az olajat, amíg besűrűsödik és kifehéredik — megvan az emulzió.
+        - Aztán vékony sugárban, folyamatosan keverve, amíg az olaj elfogy.
+        - Citromlével fejezd be, és kóstold meg, kell-e só.
+    method: {en: "Split? A fresh yolk in a clean bowl, then whisk the split mayonnaise into it, drop by drop. Raw yolk: for pregnant, elderly or very young guests, pasteurised eggs.", hu: "Kivált? Egy új sárgája tiszta tálban, és cseppenként keverd bele a kivált majonézt. Nyers sárgája: várandós, idős vagy egészen kicsi vendégnek pasztőrözött tojásból."}
+    expected: {word: good, body: stiff, keeps: raw-egg, gluten: check,
+      findings: [body-right, emulsion-ok, family:mayonnaise, heat:mild, pair:lemon-juice+salt, pairs-rest, raw-egg, seasoned]}
+
+  - id: hollandaise
+    en: Hollandaise
+    hu: Hollandi mártás
+    family: hollandaise
+    yield_ml: 250
+    ingredients:
+      - {id: egg-yolk, qty: 2, unit: pcs}
+      - {id: water, qty: 2, unit: tbsp}
+      - {id: butter, qty: 150, unit: g}
+      - {id: lemon-juice, qty: 1, unit: tbsp}
+      - {id: salt, qty: 0.25, unit: tsp}
+    steps:
+      en:
+        - Melt the butter and keep it warm.
+        - Whisk the yolks with the water in a bowl over barely simmering water until thick and foamy — about 65 °C, no hotter.
+        - Off the heat, whisk in the warm butter in a thin stream.
+        - Season with the lemon juice and salt; serve warm.
+      hu:
+        - Olvaszd meg a vajat, és tartsd melegen.
+        - A sárgáját a vízzel alig gyöngyöző víz fölötti tálban verd sűrű habosra — kb. 65 °C, ne melegebbre.
+        - A tűzről levéve vékony sugárban habard bele a meleg vajat.
+        - Ízesítsd citromlével és sóval; melegen tálald.
+    method: {en: "For eggs Benedict on GF bread, asparagus and fish. Split? An ice cube or a spoon of cold water, whisked hard.", hu: "GM kenyeres Benedict-tojáshoz, spárgához, halhoz. Kivált? Egy jégkocka vagy egy kanál hideg víz, erősen elkeverve."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, emulsion-ok, family:hollandaise, heat:mild, pair:lemon-juice+salt, seasoned, yolk-heat]}
+
+  - id: vinaigrette
+    en: Vinaigrette
+    hu: Vinaigrette
+    family: vinaigrette
+    yield_ml: 120
+    ingredients:
+      - {id: wine-vinegar, qty: 2, unit: tbsp}
+      - {id: mustard, qty: 1, unit: tsp}
+      - {id: salt, qty: 0.25, unit: tsp}
+      - {id: black-pepper, qty: 0.25, unit: tsp}
+      - {id: olive-oil, qty: 6, unit: tbsp}
+    steps:
+      en:
+        - Whisk the vinegar with the mustard, salt and pepper until the salt dissolves.
+        - Whisk in the oil in a thin stream — or shake it all in a jar.
+        - Taste on a leaf; a drop of honey if it is too sharp.
+      hu:
+        - Habard el az ecetet a mustárral, sóval és borssal, amíg a só feloldódik.
+        - Vékony sugárban habard bele az olajat — vagy rázd össze az egészet egy üvegben.
+        - Kóstold meg egy salátalevélen; ha túl éles, egy csepp méz.
+    method: {en: "Keeps two weeks in a jar in the fridge; shake before use.", hu: "Üvegben, hűtőben két hétig eláll; használat előtt rázd fel."}
+    expected: {word: good, body: thin, keeps: acid-preserved, gluten: check,
+      findings: [body-right, family:vinaigrette, heat:mild, pair:mustard+wine-vinegar, pair:salt+wine-vinegar, pairs-rest, seasoned, vinaigrette]}
+
+  - id: paprikas
+    en: Paprikás sauce
+    hu: Paprikás mártás
+    family: paprikas
+    yield_ml: 600
+    ingredients:
+      - {id: lard, qty: 2, unit: tbsp}
+      - {id: onion, qty: 1, unit: pcs}
+      - {id: sweet-paprika, qty: 1, unit: tbsp}
+      - {id: water, qty: 3, unit: dl}
+      - {id: salt, qty: 1, unit: tsp}
+      - {id: sour-cream, qty: 2, unit: dl}
+      - {id: rice-flour, qty: 1, unit: tbsp}
+    steps:
+      en:
+        - Cook the finely chopped onion in the lard over low heat until glassy, 8–10 minutes.
+        - Off the heat, stir in the paprika — it burns in seconds.
+        - Add the water and salt and simmer 10 minutes.
+        - Whisk the sour cream with the rice flour and temper it with a ladle of the hot liquid (habarás).
+        - Stir it in and simmer gently 2–3 minutes; don't let it boil hard.
+      hu:
+        - A finomra vágott hagymát a zsírban, alacsony lángon párold üvegesre, 8–10 percig.
+        - A tűzről lehúzva keverd bele a paprikát — másodpercek alatt megég.
+        - Öntsd fel a vízzel, sózd, és 10 percig főzd.
+        - A tejfölt keverd simára a rizsliszttel, és egy merőkanál forró lével hígítsd el (habarás).
+        - Keverd a mártásba, és 2–3 percig gyöngyöztesd; ne forrjon erősen.
+    method: {en: "Cook chicken, veal or mushrooms in it before the sour cream goes in: that is the paprikás.", hu: "A tejföl előtt ebben főzd meg a csirkét, a borjút vagy a gombát: ez a paprikás."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, family:paprikas, heat:mild, pair:onion+salt, pair:onion+sour-cream, pairs-rest, seasoned]}
+
+  - id: kapormartas
+    en: Dill sauce
+    hu: Kapormártás
+    family: kapormartas
+    yield_ml: 600
+    ingredients:
+      - {id: butter, qty: 30, unit: g}
+      - {id: rice-flour, qty: 2, unit: tbsp}
+      - {id: milk, qty: 4, unit: dl}
+      - {id: dill, qty: 3, unit: tbsp}
+      - {id: sour-cream, qty: 1, unit: dl}
+      - {id: vinegar, qty: 1, unit: tsp}
+      - {id: sugar, qty: 1, unit: tsp}
+      - {id: salt, qty: 0.5, unit: tsp}
+    steps:
+      en:
+        - Melt the butter and stir in the rice flour for 1–2 minutes, keeping it pale.
+        - Whisk in the cold milk a little at a time and simmer 5 minutes, until it coats a spoon.
+        - Stir in the chopped dill, the sugar, the salt and the vinegar.
+        - Temper the sour cream with a ladle of the sauce, stir it in and warm it through without boiling.
+      hu:
+        - Olvaszd meg a vajat, és keverd bele a rizslisztet 1–2 percig, világosan.
+        - Apránként habard bele a hideg tejet, és 5 percig gyöngyöztesd, amíg bevonja a kanalat.
+        - Keverd bele az apróra vágott kaprot, a cukrot, a sót és az ecetet.
+        - A tejfölt egy merőkanál mártással hígítsd el, keverd bele, és forralás nélkül melegítsd át.
+    method: {en: "For boiled beef, new potatoes, eggs or meatballs.", hu: "Főtt marhához, újkrumplihoz, tojáshoz vagy fasírthoz."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, family:kapormartas, heat:mild, pair:dill+sour-cream, pair:salt+sour-cream, pair:sour-cream+vinegar, pairs-rest, seasoned]}
+
+  - id: vadas
+    en: Vadas
+    hu: Vadas
+    family: vadas
+    yield_ml: 700
+    ingredients:
+      - {id: sunflower-oil, qty: 2, unit: tbsp}
+      - {id: carrot, qty: 150, unit: g}
+      - {id: parsley-root, qty: 100, unit: g}
+      - {id: celeriac, qty: 80, unit: g}
+      - {id: onion, qty: 1, unit: pcs}
+      - {id: sugar, qty: 1, unit: tbsp}
+      - {id: water, qty: 5, unit: dl}
+      - {spice: bay-leaf, qty: 0.3, unit: g}
+      - {spice: allspice, qty: 0.25, unit: tsp}
+      - {id: black-pepper, qty: 0.25, unit: tsp}
+      - {id: mustard, qty: 1, unit: tbsp}
+      - {id: lemon-juice, qty: 2, unit: tbsp}
+      - {id: sour-cream, qty: 1.5, unit: dl}
+      - {id: salt, qty: 1, unit: tsp}
+    steps:
+      en:
+        - Dice the roots and the onion and soften them in the oil for 10 minutes.
+        - Sprinkle on the sugar and let it catch golden.
+        - Add the water, bay leaves, allspice and pepper; simmer 25 minutes, until soft.
+        - Take out the bay leaves and blend it smooth.
+        - Season with the mustard, lemon juice and salt; stir in the tempered sour cream and warm it through.
+      hu:
+        - Kockázd fel a gyökereket és a hagymát, és 10 percig párold puhára az olajon.
+        - Szórd meg a cukorral, és hagyd aranyszínűre kapni.
+        - Öntsd fel a vízzel, add hozzá a babérlevelet, a szegfűborsot és a borsot; 25 percig főzd, amíg megpuhul.
+        - Vedd ki a babérlevelet, és turmixold simára.
+        - Ízesítsd mustárral, citromlével, sóval; keverd bele az elhabart tejfölt, és melegítsd át.
+    method: {en: "For roast beef or game, with GF bread dumplings or nokedli made with a GF mix.", hu: "Marhasülthöz vagy vadhoz, GM zsemlegombóccal vagy GM lisztkeverékből készült nokedlivel."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: check,
+      findings: [body-right, family:vadas, heat:mild, pair:onion+sour-cream, pairs-rest, seasoned]}
+
+  - id: tormamartas
+    en: Horseradish sauce
+    hu: Tormamártás
+    family: tormamartas
+    yield_ml: 250
+    ingredients:
+      - {id: sour-cream, qty: 2, unit: dl}
+      - {id: horseradish, qty: 3, unit: tbsp}
+      - {id: sugar, qty: 1, unit: tsp}
+      - {id: lemon-juice, qty: 1, unit: tbsp}
+      - {id: salt, qty: 0.25, unit: tsp}
+    steps:
+      en:
+        - Grate the horseradish finely — open a window.
+        - Stir it into the sour cream with the sugar, lemon juice and salt.
+        - Chill it for 15 minutes before serving; the bite softens a little.
+      hu:
+        - Reszeld le finomra a tormát — nyiss ablakot.
+        - Keverd a tejfölbe a cukorral, citromlével és sóval.
+        - Tálalás előtt 15 percig hűtsd; a csípőssége kicsit szelídül.
+    method: {en: "For ham, boiled beef, smoked fish and the Easter table.", hu: "Sonkához, főtt marhához, füstölt halhoz, a húsvéti asztalra."}
+    expected: {word: good, body: thick, keeps: fresh-dairy, gluten: gf,
+      findings: [family:tormamartas, heat:hot, pair:horseradish+sour-cream, pair:lemon-juice+sour-cream, pairs-rest, seasoned]}
+
+  - id: meggymartas
+    en: Sour cherry sauce
+    hu: Meggymártás
+    family: meggymartas
+    yield_ml: 600
+    ingredients:
+      - {id: sour-cherry, qty: 300, unit: g}
+      - {id: water, qty: 2, unit: dl}
+      - {id: sugar, qty: 3, unit: tbsp}
+      - {spice: cinnamon, qty: 0.25, unit: tsp}
+      - {spice: cloves, qty: 0.125, unit: tsp}
+      - {id: sour-cream, qty: 1, unit: dl}
+      - {id: rice-flour, qty: 1, unit: tbsp}
+      - {id: salt, qty: 0.125, unit: tsp}
+    steps:
+      en:
+        - Simmer the pitted cherries with the water, sugar, cinnamon and cloves for 10 minutes.
+        - Whisk the sour cream with the rice flour and temper it with a ladle of the hot liquid.
+        - Stir it in and simmer gently 2–3 minutes, until it coats a spoon.
+        - Serve it warm with boiled beef, or chilled in summer.
+      hu:
+        - A kimagozott meggyet a vízzel, cukorral, fahéjjal és szegfűszeggel 10 percig főzd.
+        - A tejfölt keverd simára a rizsliszttel, és egy merőkanál forró lével hígítsd el.
+        - Keverd a mártásba, és 2–3 percig gyöngyöztesd, amíg bevonja a kanalat.
+        - Melegen főtt marhához, nyáron hidegen tálald.
+    method: {en: "A pinch of salt keeps it a sauce, not a dessert.", hu: "Egy csipet só mártás marad tőle, nem desszert."}
+    expected: {word: good, body: coats, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, curdle-notice, family:meggymartas, heat:mild, pair:cinnamon+sugar, pair:sour-cherry+sour-cream, pair:sour-cherry+sugar]}
+
+  - id: tzatziki
+    en: Tzatziki
+    hu: Tzatziki
+    family: tzatziki
+    yield_ml: 400
+    ingredients:
+      - {id: greek-yogurt, qty: 300, unit: g}
+      - {id: cucumber, qty: 150, unit: g}
+      - {id: garlic, qty: 2, unit: pcs}
+      - {id: dill, qty: 1, unit: tbsp}
+      - {id: olive-oil, qty: 1, unit: tbsp}
+      - {id: lemon-juice, qty: 1, unit: tsp}
+      - {id: salt, qty: 0.5, unit: tsp}
+    steps:
+      en:
+        - Grate the cucumber, salt it lightly and squeeze it dry after 10 minutes.
+        - Crush the garlic.
+        - Stir the cucumber, garlic, dill and lemon juice into the yoghurt; drizzle the oil on top.
+        - Chill it for 30 minutes.
+      hu:
+        - Reszeld le az uborkát, sózd meg enyhén, és 10 perc múlva nyomkodd ki.
+        - Zúzd össze a fokhagymát.
+        - Keverd a joghurtba az uborkát, a fokhagymát, a kaprot és a citromlevet; csorgasd a tetejére az olajat.
+        - 30 percig hűtsd.
+    method: {en: "For grilled meat, gyros on GF pita, and as a dip.", hu: "Grillezett húshoz, GM pitás gyroshoz, mártogatósnak."}
+    expected: {word: good, body: thick, keeps: fresh-dairy, gluten: gf,
+      findings: [body-right, family:tzatziki, heat:mild, pair:cucumber+greek-yogurt, pair:garlic+greek-yogurt, pairs-rest, seasoned]}
+
+  - id: teriyaki
+    en: GF teriyaki
+    hu: GM teriyaki
+    family: teriyaki
+    yield_ml: 200
+    ingredients:
+      - {id: tamari, qty: 4, unit: tbsp}
+      - {id: honey, qty: 2, unit: tbsp}
+      - {id: rice-vinegar, qty: 1, unit: tbsp}
+      - {id: water, qty: 3, unit: tbsp}
+      - {id: ginger, qty: 1, unit: tsp}
+      - {id: garlic, qty: 1, unit: pcs}
+      - {id: cornstarch, qty: 1, unit: tsp}
+    steps:
+      en:
+        - Simmer the tamari, honey, vinegar, water, grated ginger and crushed garlic for 2 minutes.
+        - Stir the cornstarch into a spoon of cold water.
+        - Whisk it in and simmer a minute, until glossy.
+        - Brush it on grilled chicken or salmon, or toss it with rice noodles.
+      hu:
+        - A tamarit, mézet, ecetet, vizet, reszelt gyömbért és zúzott fokhagymát 2 percig főzd.
+        - Keverd el a keményítőt egy kanál hideg vízben.
+        - Habard bele, és egy percig főzd, amíg fényes lesz.
+        - Kend a grillezett csirkére vagy lazacra, vagy forgasd össze rizstésztával.
+    method: {en: "Bottled teriyaki is made with soy sauce — wheat. This one is tamari: GF.", hu: "Az üveges teriyaki szójaszószból készül — búza. Ez tamariból: GM."}
+    expected: {word: good, body: coats, keeps: fresh, gluten: gf,
+      findings: [body-right, family:teriyaki, heat:mild, pair:honey+tamari, pair:rice-vinegar+tamari, pairs-rest]}

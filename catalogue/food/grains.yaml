@@ -1,0 +1,58 @@
+category: grains
+# The kitchen is fully gluten-free: the pantry tiles are the GF products. Everyday wheat words in recipes
+# ("spaghetti", "tészta", "nokedli"…) match the hidden `contains` items below, which swap to the GF tiles.
+groups:
+  - id: pasta
+    en: Pasta (GF)
+    hu: Tészta (gluténmentes)
+    icon: "om:1F35D"
+    items:
+      - {id: gf-pasta-long, en: Long pasta, hu: Hosszú tészta, icon: "om:1F35D", aliases: [gf spaghetti, gluten-free spaghetti, gluténmentes spagetti, gf linguine, gf tagliatelle, gm spagetti]}
+      - {id: gf-pasta-short, en: Short pasta, hu: Rövid tészta, aliases: [gf pasta, gluten-free pasta, gluténmentes tészta, gf penne, gf fusilli, gf macaroni, gm tészta, gluténmentes makaróni]}
+      - {id: gf-lasagne, en: Lasagne sheets, hu: Lasagne lap, aliases: [gf lasagne, gluten-free lasagne, gluténmentes lasagne lap]}
+      - {id: gf-soup-noodles, en: Soup noodles, hu: Levestészta, aliases: [gf soup pasta, gluténmentes levestészta, gluténmentes cérnametélt, gf vermicelli]}
+      - {id: gf-tarhonya, en: Tarhonya (GF), hu: Tarhonya (GM), aliases: [gf tarhonya, gluténmentes tarhonya]}
+      - {id: gf-gnocchi, en: Gnocchi (GF), hu: Gnocchi (GM), aliases: [gf gnocchi, gluténmentes gnocchi]}
+      - {id: rice-noodles, en: Rice noodles, hu: Rizstészta, aliases: [rice noodles, rizsmetélt, pad thai noodles, rice vermicelli, rice stick noodles]}
+      - {id: glass-noodles, en: Glass noodles, hu: Üvegtészta, aliases: [cellophane noodles, mungbab tészta, bean thread noodles]}
+      - {id: wheat-pasta-long, en: Long pasta (wheat), hu: Hosszú tészta (búza), gluten: contains, swap: gf-pasta-long, pantry: false, aliases: [spaghetti, spagetti, linguine, tagliatelle, fettuccine, long pasta, hosszú tészta, spagettit, metélt], tip_en: "GF pasta overcooks fast: boil it 1–2 minutes less than the packet says and rinse briefly.", tip_hu: "A GM tészta könnyen szétfő: 1–2 perccel rövidebben főzd, mint a csomagon áll, és öblítsd le röviden."}
+      - {id: wheat-pasta-short, en: Pasta (wheat), hu: Tészta (búza), gluten: contains, swap: gf-pasta-short, pantry: false, aliases: [pasta, tészta, penne, fusilli, macaroni, makaróni, farfalle, masni, masnitészta, orsótészta, csavart tészta, rigatoni, short pasta, rövid tészta, száraztészta, tésztát, szarvacska], tip_en: "GF pasta overcooks fast: boil it 1–2 minutes less than the packet says and rinse briefly.", tip_hu: "A GM tészta könnyen szétfő: 1–2 perccel rövidebben főzd, mint a csomagon áll, és öblítsd le röviden."}
+      - {id: wheat-lasagne, en: Lasagne sheets (wheat), hu: Lasagne lap (búza), gluten: contains, swap: gf-lasagne, pantry: false, aliases: [lasagne, lasagna, lasagna sheets, lasagne sheets, lasagne lap, lasagne lapok, lasagnelap], tip_en: "GF lasagne sheets: pre-boil briefly unless the packet says oven-ready, and use a little more sauce.", tip_hu: "GM lasagne lap: röviden főzd elő, hacsak a csomagon nem áll, hogy elősütés nélküli, és tegyél bele kicsit több szószt."}
+      - {id: soup-noodles, en: Soup noodles (wheat), hu: Levestészta (búza), gluten: contains, swap: gf-soup-noodles, pantry: false, aliases: [soup noodles, soup pasta, cérnametélt, levestészta, csigatészta, betűtészta, eperlevél, vermicelli, angel hair, kagylótészta], tip_en: "Cook GF soup noodles separately and add them to the bowl, or they turn the soup cloudy and mushy.", tip_hu: "A GM levestésztát külön főzd ki, és a tányérba tedd, különben a leves zavaros lesz, a tészta pedig szétmállik."}
+      - {id: egg-noodles, en: Egg noodles (wheat), hu: Tojásos tészta, gluten: contains, swap: gf-pasta-long, pantry: false, aliases: [egg noodles, noodles, tojásos metélt, széles metélt, házi tészta, metélt tészta], tip_en: "GF pasta overcooks fast: boil it 1–2 minutes less than the packet says.", tip_hu: "A GM tészta könnyen szétfő: 1–2 perccel rövidebben főzd, mint a csomagon áll."}
+      - {id: nokedli, en: Nokedli / spätzle, hu: Nokedli, gluten: contains, swap: gf-flour-mix, pantry: false, aliases: [galuska, spätzle, spaetzle, szaggatott galuska, nokedlit, galuskát, dumplings (nokedli)], tip_en: "GF nokedli: GF flour mix + 1 extra egg, rest the dough 10 min, drop small pieces and cook until they float.", tip_hu: "GM nokedli: GM lisztkeverék + 1 tojással több, a tészta pihenjen 10 percet, kis darabokat szaggass, és addig főzd, amíg feljönnek."}
+      - {id: tarhonya, en: Tarhonya, hu: Tarhonya, gluten: contains, swap: gf-tarhonya, pantry: false, aliases: [egg barley, tarhonyát], tip_en: "GF tarhonya cooks faster: toast it in fat, then simmer about 12 minutes.", tip_hu: "A GM tarhonya gyorsabban fő: zsiradékon pirítsd, aztán kb. 12 percig párold."}
+      - {id: csipetke, en: Csipetke, hu: Csipetke, gluten: contains, swap: gf-flour-mix, pantry: false, aliases: [pinched noodles, csipetkét], tip_en: "Pinch it from a stiff GF flour-mix-and-egg dough; it softens fast, so add it last.", tip_hu: "Kemény GM lisztkeverékes-tojásos tésztából csipkedd; hamar megpuhul, ezért utoljára tedd bele."}
+      - {id: wheat-gnocchi, en: Gnocchi (wheat), hu: Gnocchi (búza), gluten: contains, swap: gf-gnocchi, pantry: false, aliases: [gnocchi, potato gnocchi, burgonyás gnocchi], tip_en: "GF gnocchi are softer: cook only until they float.", tip_hu: "A GM gnocchi puhább: csak addig főzd, amíg feljön."}
+      - {id: udon, en: Udon, hu: Udon, gluten: contains, swap: rice-noodles, pantry: false, aliases: [udon noodles], tip_en: "Rice noodles: boil or soak briefly, then rinse cold so they don't stick.", tip_hu: "Rizstészta: röviden főzd vagy áztasd, aztán öblítsd hidegen, hogy ne ragadjon össze."}
+      - {id: ramen-noodles, en: Ramen noodles, hu: Ramen tészta, gluten: contains, swap: rice-noodles, pantry: false, aliases: [ramen, instant noodles, wheat noodles], tip_en: "Rice noodles: boil or soak briefly, then rinse cold so they don't stick.", tip_hu: "Rizstészta: röviden főzd vagy áztasd, aztán öblítsd hidegen, hogy ne ragadjon össze."}
+  - id: rice
+    en: Rice
+    hu: Rizs
+    icon: "om:1F35A"
+    items:
+      - {id: rice-white, en: White rice, hu: Rizs, icon: "om:1F35A", aliases: [rice, long grain rice, hosszú szemű rizs, fehér rizs, rizst]}
+      - {id: rice-basmati, en: Basmati rice, hu: Basmati rizs, aliases: [basmati]}
+      - {id: rice-jasmine, en: Jasmine rice, hu: Jázmin rizs, aliases: [jasmine, thai rice]}
+      - {id: rice-arborio, en: Risotto rice, hu: Rizottó rizs, aliases: [arborio, carnaroli, risotto rice, rizottórizs]}
+      - {id: rice-pudding, en: Pudding rice, hu: Gömbölyű szemű rizs, aliases: [round grain rice, tejberizs rizs, short grain rice]}
+      - {id: rice-brown, en: Brown rice, hu: Barna rizs, aliases: [wholegrain rice, barnarizs]}
+      - {id: rice-sushi, en: Sushi rice, hu: Sushi rizs, aliases: [sushi rizst]}
+      - {id: rice-semolina, en: Rice semolina, hu: Rizsdara, aliases: [ground rice, rice grits, rizsdarát]}
+  - id: grains-sides
+    en: Grains & sides
+    hu: Gabona, köret
+    icon: "om:1F33E"
+    items:
+      - {id: polenta, en: Polenta (cornmeal), hu: Kukoricadara, aliases: [polenta, cornmeal, grits, puliszka, kukoricadarát, kukoricagríz]}
+      - {id: quinoa, en: Quinoa, hu: Quinoa, aliases: [kinoa]}
+      - {id: millet, en: Millet, hu: Köles, aliases: [kölest]}
+      - {id: buckwheat, en: Buckwheat, hu: Hajdina, aliases: [kasha, hajdinát]}
+      - {id: oats, en: Oats (GF), hu: Zabpehely (GM), gluten: label, aliases: [oats, rolled oats, oatmeal, porridge oats, zabpehely, zabpelyhet, gf oats]}
+      - {id: amaranth, en: Amaranth, hu: Amaránt}
+      - {id: couscous, en: Couscous, hu: Kuszkusz, gluten: contains, swap: quinoa, pantry: false, aliases: [cous cous, kuszkuszt], tip_en: "Quinoa instead: rinse it, cook 1:2 in water about 12 minutes, then rest covered 5 minutes.", tip_hu: "Quinoa helyette: öblítsd át, 1:2 arányban vízben kb. 12 percig főzd, aztán letakarva pihentesd 5 percig."}
+      - {id: bulgur, en: Bulgur, hu: Bulgur, gluten: contains, swap: quinoa, pantry: false, aliases: [bulgurt, bulghur], tip_en: "Quinoa instead: rinse it, cook 1:2 in water about 12 minutes, then rest covered 5 minutes.", tip_hu: "Quinoa helyette: öblítsd át, 1:2 arányban vízben kb. 12 percig főzd, aztán letakarva pihentesd 5 percig."}
+      - {id: barley, en: Pearl barley, hu: Gersli, gluten: contains, swap: rice-white, pantry: false, aliases: [barley, árpagyöngy, gerslit, árpa], tip_en: "Rice instead of gersli: add it in the last 20 minutes.", tip_hu: "Gersli helyett rizs: a főzés utolsó 20 percében tedd bele."}
+      - {id: semolina, en: Semolina (wheat), hu: Búzadara, gluten: contains, swap: rice-semolina, pantry: false, aliases: [semolina, búzadarát, gríz, grízt, daragaluska, durum semolina], tip_en: "Rice semolina thickens faster: use a little less and stir constantly.", tip_hu: "A rizsdara gyorsabban sűrűsödik: tegyél belőle kicsit kevesebbet, és folyamatosan keverd."}
+      - {id: spelt-grain, en: Spelt, hu: Tönköly, gluten: contains, swap: quinoa, pantry: false, aliases: [spelt, tönkölybúza, farro], tip_en: "Quinoa or buckwheat instead; both cook in about 15 minutes.", tip_hu: "Helyette quinoa vagy hajdina; mindkettő kb. 15 perc alatt megfő."}
+      - {id: freekeh-rye, en: Rye grains, hu: Rozs, gluten: contains, swap: buckwheat, pantry: false, aliases: [rye, rozsszem], tip_en: "Buckwheat instead; it cooks in about 15 minutes.", tip_hu: "Helyette hajdina; kb. 15 perc alatt megfő."}

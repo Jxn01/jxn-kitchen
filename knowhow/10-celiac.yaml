@@ -1,0 +1,333 @@
+id: celiac
+order: 19
+icon: "om:1F33E"
+color: herb
+en: {title: Celiac, sub: "hidden gluten · labels · GF flours · guests"}
+hu: {title: Cöliákia, sub: "rejtett glutén · címkék · GM lisztek · vendégek"}
+pages:
+  - id: basics
+    chart:
+      type: board
+      groups:
+        - color: herb
+          icon: "om:2705"
+          label: {en: Naturally gluten-free, hu: Természettől gluténmentes}
+          note: {en: "Safe as they come. Flour and flakes milled where wheat is milled can carry it — buy those GF-labelled.", hu: "Eredendően biztonságosak. A liszt és a pehely olyan malomból, ahol búzát is őrölnek, szennyezett lehet — azt GM jelöléssel vedd."}
+          items:
+            - {label: {en: Rice, hu: Rizs}, icon: "om:1F35A"}
+            - {label: {en: Corn, hu: Kukorica}, icon: "om:1F33D"}
+            - {label: {en: Potatoes, hu: Krumpli}, icon: "om:1F954"}
+            - {label: {en: Buckwheat, hu: Hajdina}}
+            - {label: {en: Millet, hu: Köles}}
+            - {label: Quinoa}
+            - {label: {en: Amaranth, hu: Amaránt}}
+            - {label: {en: Sorghum, hu: Cirok}}
+            - {label: {en: Meat & fish, hu: Hús és hal}, icon: "om:1F969"}
+            - {label: {en: Eggs & milk, hu: Tojás és tej}, icon: "om:1F95A"}
+            - {label: {en: Vegetables & fruit, hu: Zöldség és gyümölcs}, icon: "om:1F966"}
+            - {label: {en: Nuts & pulses, hu: Diófélék és hüvelyesek}, icon: "om:1F95C"}
+        - color: butter
+          icon: "om:26A0"
+          label: {en: Only with a GF label, hu: Csak GM jelöléssel}
+          note: {en: "Oats are gluten-free in themselves but almost always contaminated in the field and the mill. Only GF-labelled oats — and a few people react even to those.", hu: "A zab önmagában gluténmentes, de a földön és a malomban szinte mindig szennyeződik. Csak GM jelölésű zab — és néhányan még arra is reagálnak."}
+          items:
+            - {label: {en: Oats, hu: Zab}}
+        - color: tomato
+          icon: "om:274C"
+          label: {en: Never — gluten, hu: Soha — glutén}
+          note: {en: "Wheat, barley, rye and their relatives — and everything made from them. Crumbs count.", hu: "A búza, az árpa, a rozs és rokonaik — és minden, ami belőlük készül. A morzsa is számít."}
+          items:
+            - {label: {en: Wheat, hu: Búza}, icon: "om:1F35E"}
+            - {label: {en: Barley, hu: Árpa}}
+            - {label: {en: Rye, hu: Rozs}}
+            - {label: {en: Spelt, hu: Tönköly}}
+            - {label: Kamut}
+            - {label: {en: Einkorn, hu: Alakor}}
+            - {label: {en: Emmer, hu: Tönke}}
+            - {label: {en: Triticale, hu: Tritikálé}}
+            - {label: Bulgur}
+            - {label: {en: Couscous, hu: Kuszkusz}}
+            - {label: {en: Semolina, hu: Búzadara}}
+            - {label: {en: Malt, hu: Maláta}}
+            - {label: {en: Seitan, hu: Szejtán}}
+    en:
+      title: What gluten-free means here
+      body: |
+        **Celiac disease** is an autoimmune reaction to **gluten** — the proteins in **wheat, barley and rye** and their
+        relatives: **spelt (tönköly), kamut, einkorn, emmer, triticale**, and products made from them (bulgur, couscous,
+        semolina, malt, seitan). The only treatment is a strict, lifelong gluten-free diet; crumbs count.
+
+        - **Oats** are gluten-free in themselves but almost always contaminated with wheat in the field and the mill.
+          Only oats labelled **gluten-free** are safe, and a few people react even to those.
+        - **This kitchen is fully gluten-free.** Every tile in the pantry is the GF version, recipes show their GF
+          version by default, and wheat words in recipes become swaps.
+        - The EU limit for "gluten-free" is **20 mg gluten per kg** of food — about the amount a crumb carries into a
+          plate. That is why separate boards, toasters and fryers matter where gluten food is also made.
+
+        > Naturally GF and safe: rice, corn, potatoes, buckwheat, millet, quinoa, amaranth, sorghum, all fresh meat, fish, eggs, milk, vegetables, fruit, nuts, pulses.
+    hu:
+      title: Mit jelent itt a gluténmentes
+      body: |
+        A **cöliákia** autoimmun reakció a **gluténre** — a **búza, az árpa és a rozs** fehérjéire és rokonaikra: **tönköly,
+        kamut, alakor, tönke, tritikálé**, és a belőlük készült termékekre (bulgur, kuszkusz, búzadara, maláta, szejtán).
+        Az egyetlen kezelés a szigorú, életre szóló gluténmentes étrend; a morzsa is számít.
+
+        - A **zab** önmagában gluténmentes, de a földön és a malomban szinte mindig búzával szennyeződik. Csak a
+          **gluténmentes** jelölésű zab biztonságos, és néhányan még arra is reagálnak.
+        - **Ez a konyha teljesen gluténmentes.** A kamra minden csempéje a GM változat, a receptek alapból a GM változatukat
+          mutatják, a receptekben a búzás szavakból csere lesz.
+        - Az EU-ban a „gluténmentes" határa **kilogrammonként 20 mg glutén** — nagyjából ennyit visz egy morzsa egy tányérba.
+          Ezért számít a külön deszka, kenyérpirító és olajsütő ott, ahol gluténos étel is készül.
+
+        > Természeténél fogva GM és biztonságos: rizs, kukorica, burgonya, hajdina, köles, quinoa, amarant, cirok, minden friss hús, hal, tojás, tej, zöldség, gyümölcs, olajos mag, hüvelyes.
+  - id: hidden-gluten
+    chart:
+      type: picker
+      items:
+        - {label: {en: "Soy sauce, teriyaki", hu: "Szójaszósz, teriyaki"}, icon: "om:26A0", note: {en: "Brewed with wheat. Instead: tamari, GF soy sauce.", hu: "Búzával erjesztik. Helyette: tamari, GM szójaszósz."}}
+        - {label: {en: "Malt, malt extract", hu: "Maláta, malátakivonat"}, icon: "om:1F33E", note: {en: "Barley — breakfast cereals and chocolate say so on the label.", hu: "Árpa — a gabonapelyheken és a csokin rajta van a címkén."}}
+        - {label: {en: "Malt vinegar, some pickles", hu: "Malátaecet, savanyúság"}, icon: "om:1FAD9", note: {en: "Barley. Instead: wine, cider or spirit vinegar.", hu: "Árpa. Helyette: bor-, alma- vagy szeszecet."}}
+        - {label: {en: "Beer, many ales", hu: "Sör, sok ale"}, icon: "om:1F37A", note: {en: "Barley, wheat. Instead: GF beer, cider.", hu: "Árpa, búza. Helyette: GM sör, almabor."}}
+        - {label: {en: "Stock cubes, soup powders", hu: "Leveskocka, levespor"}, icon: "om:1F372", note: {en: "Wheat flour, yeast extract from barley. Instead: GF-labelled stock.", hu: "Búzaliszt, árpából készült élesztőkivonat. Helyette: GM jelölésű alaplé."}}
+        - {label: {en: "Sausages, kolbász, virsli", hu: "Kolbász, hurka, virsli"}, icon: "c:kolbasz", note: {en: "Fillers, breadcrumbs. Instead: the maker's word or a GF label.", hu: "Töltőanyag, zsemlemorzsa. Helyette: a készítő szava vagy GM jelölés."}}
+        - {label: {en: "Fasírt, meatballs", hu: "Fasírt, húsgombóc"}, icon: "om:1F9C6", note: {en: "Zsemle, morzsa. Instead: GF bread or potato.", hu: "Zsemle, morzsa. Helyette: GM kenyér vagy krumpli."}}
+        - {label: {en: "Soups, főzelék", hu: "Levesek, főzelékek"}, icon: "om:1F963", note: {en: "Rántás, csipetke, galuska, tészta. Instead: rice-flour rántás, GF pasta.", hu: "Rántás, csipetke, galuska, tészta. Helyette: rizslisztes rántás, GM tészta."}}
+        - {label: {en: "Gravy, sauces", hu: "Mártások, szaft"}, icon: "om:1FAD5", note: {en: "Flour thickening. Instead: cornstarch.", hu: "Lisztes sűrítés. Helyette: kukoricakeményítő."}}
+        - {label: {en: "Spice blends, grill mixes", hu: "Fűszerkeverékek"}, icon: "om:1F9C2", note: {en: "Wheat as a carrier. Instead: single spices, or mix your own.", hu: "Búza mint hordozó. Helyette: egynemű fűszerek, vagy keverd magad."}}
+        - {label: {en: Breaded and battered food, hu: Panírozott ételek}, icon: "om:1F364", note: {en: "Wheat crumbs and batter. Instead: GF crumbs, rice flour.", hu: "Búzás morzsa és bunda. Helyette: GM morzsa, rizsliszt."}}
+        - {label: {en: "Seitan, bulgur, couscous, spelt", hu: "Szejtán, bulgur, kuszkusz, tönköly"}, icon: "om:274C", note: {en: "They ARE wheat. Instead: quinoa, rice, millet.", hu: "Ezek MAGUK a búza. Helyette: quinoa, rizs, köles."}}
+    en:
+      title: Where gluten hides
+      body: |
+        | Where | Why | Instead |
+        |---|---|---|
+        | Soy sauce, teriyaki | brewed with wheat | tamari, GF soy sauce |
+        | Malt, malt extract (maláta) | barley | breakfast cereals and chocolate say so on the label |
+        | Malt vinegar, some pickles | barley | wine, cider or spirit vinegar |
+        | Beer, many ales | barley, wheat | GF beer, cider |
+        | Stock cubes, soup powders | wheat flour, yeast extract from barley | GF-labelled stock |
+        | Sausages, kolbász, hurka, virsli | fillers, breadcrumbs | maker's word or GF label |
+        | Fasírt, meatballs, rolled meats | zsemle, morzsa | GF bread or potato |
+        | Soups and főzelék | rántás, csipetke, galuska, tészta | rice-flour rántás, GF pasta |
+        | Gravy, sauces, gyros sauce | flour thickening | cornstarch |
+        | Spice blends, grill mixes | wheat as a carrier | single spices |
+        | Breaded and battered food | wheat crumbs and batter | GF crumbs, rice flour |
+        | Liquorice, wafers, cones | wheat flour | read the label |
+        | Seitan, bulgur, couscous, spelt, freekeh | they *are* wheat | quinoa, rice, millet |
+        | Medicines (rarely) | wheat starch as filler | ask the pharmacist |
+
+        > Restaurant fries are GF potatoes — but if the fryer also cooks breaded food, they are not.
+    hu:
+      title: Ahol a glutén rejtőzik
+      body: |
+        | Hol | Miért | Helyette |
+        |---|---|---|
+        | Szójaszósz, teriyaki | búzával erjesztik | tamari, GM szójaszósz |
+        | Maláta, malátakivonat | árpa | a gabonapelyheken és a csokin rajta van a címkén |
+        | Malátaecet, egyes savanyúságok | árpa | bor-, alma- vagy szeszecet |
+        | Sör, sok ale | árpa, búza | GM sör, almabor |
+        | Leveskocka, levespor | búzaliszt, árpából készült élesztőkivonat | GM jelölésű alaplé |
+        | Kolbász, hurka, virsli | töltőanyag, zsemlemorzsa | a készítő szava vagy GM jelölés |
+        | Fasírt, húsgombóc, töltött húsok | zsemle, morzsa | GM kenyér vagy krumpli |
+        | Levesek és főzelékek | rántás, csipetke, galuska, tészta | rizslisztes rántás, GM tészta |
+        | Mártások, szaft, gyrosszósz | lisztes sűrítés | kukoricakeményítő |
+        | Fűszerkeverékek, grillfűszer | búza mint hordozó | egynemű fűszerek |
+        | Panírozott, bundázott ételek | búzás morzsa és bunda | GM morzsa, rizsliszt |
+        | Medvecukor, ostya, tölcsér | búzaliszt | olvasd el a címkét |
+        | Szejtán, bulgur, kuszkusz, tönköly, freekeh | ezek *maguk* a búza | quinoa, rizs, köles |
+        | Gyógyszerek (ritkán) | búzakeményítő töltőanyag | kérdezd a gyógyszerészt |
+
+        > Az étterem hasábburgonyája GM krumpli — de ha ugyanabban az olajban rántott ételt is sütnek, már nem az.
+  - id: labels
+    chart:
+      type: board
+      groups:
+        - color: herb
+          icon: "om:2705"
+          label: {en: Safe, hu: Biztonságos}
+          note: {en: "Gluténmentes means ≤ 20 mg/kg (EU 828/2014). Wheat starch is fine only in a product labelled gluténmentes; glucose syrup, dextrose and maltodextrin are processed so far the gluten is gone.", hu: "A gluténmentes ≤ 20 mg/kg-ot jelent (EU 828/2014). A búzakeményítő csak gluténmentes jelölésű termékben jó; a glükózszirup, a dextróz és a maltodextrin olyan feldolgozott, hogy nincs bennük glutén."}
+          items:
+            - {label: gluténmentes}
+            - {label: {en: búzakeményítő — in a GF product, hu: búzakeményítő — GM termékben}}
+            - {label: glükózszirup}
+            - {label: dextróz}
+            - {label: maltodextrin}
+        - color: butter
+          icon: "om:26A0"
+          label: {en: Not gluten-free, hu: Nem gluténmentes}
+          note: {en: "“Very low gluten” is up to 100 mg/kg — not gluten-free.", hu: "A „nagyon alacsony gluténtartalmú” 100 mg/kg-ig engedett — nem gluténmentes."}
+          items:
+            - {label: nagyon alacsony gluténtartalmú}
+        - color: tomato
+          icon: "om:274C"
+          label: {en: Avoid, hu: Kerülendő}
+          note: {en: "The gluten cereals and barley malt — oats only when GF-labelled. They are printed in bold in the ingredient list.", hu: "A glutént tartalmazó gabonák és az árpamaláta — a zab csak GM jelöléssel. Az összetevők között félkövérrel szedik őket."}
+          items:
+            - {label: búza}
+            - {label: árpa}
+            - {label: rozs}
+            - {label: {en: zab (unless GF), hu: zab (ha nem GM)}}
+            - {label: tönköly}
+            - {label: kamut}
+            - {label: maláta}
+        - color: slate
+          icon: "om:2139"
+          label: {en: Just a note, hu: Csak megjegyzés}
+          note: {en: "“May contain traces” is a voluntary, unregulated precaution — in this kitchen a faint note, never a warning. Read the ingredients and the gluténmentes mark.", hu: "A „nyomokban tartalmazhat” önkéntes, nem szabályozott óvatosság — ebben a konyhában halvány megjegyzés, soha nem figyelmeztetés. Az összetevőket és a gluténmentes jelölést nézd."}
+          items:
+            - {label: nyomokban glutént tartalmazhat}
+    en:
+      title: Reading Hungarian labels
+      body: |
+        In the EU the 14 allergens — **cereals containing gluten** among them — must be **emphasised** in the ingredient
+        list (usually **bold**), even inside compound ingredients.
+
+        | On the label | Means |
+        |---|---|
+        | **gluténmentes** | ≤ 20 mg/kg — safe (EU 828/2014). Often with the crossed-grain symbol. |
+        | nagyon alacsony gluténtartalmú | ≤ 100 mg/kg ("very low gluten") — not gluten-free |
+        | **búza, árpa, rozs, zab, tönköly, kamut** | gluten cereals — avoid (oats only if GF-labelled) |
+        | búzakeményítő | wheat starch: fine **only** in a product labelled gluténmentes |
+        | maláta, árpamaláta, malátakivonat | barley — avoid |
+        | glükózszirup, dextróz, maltodextrin (even from wheat) | processed so far the gluten is gone — legally exempt, safe |
+        | nyomokban glutént tartalmazhat | "may contain traces" — a voluntary, unregulated warning |
+
+        **"May contain"** (nyomokban tartalmazhat) is not a gluten ingredient: it is a voluntary precaution brands print
+        widely. In this kitchen it is only a faint note, never a warning — the house rule is to read the ingredient list
+        and the gluténmentes mark.
+
+        > When a product's recipe changes, the label changes first: re-read it now and then, even for the things you always buy.
+    hu:
+      title: Magyar címkék olvasása
+      body: |
+        Az EU-ban a 14 allergént — köztük a **glutént tartalmazó gabonákat** — az összetevők listájában **ki kell emelni**
+        (általában **félkövérrel**), az összetett összetevőkön belül is.
+
+        | A címkén | Jelentése |
+        |---|---|
+        | **gluténmentes** | ≤ 20 mg/kg — biztonságos (EU 828/2014). Gyakran az áthúzott kalász jellel. |
+        | nagyon alacsony gluténtartalmú | ≤ 100 mg/kg — nem gluténmentes |
+        | **búza, árpa, rozs, zab, tönköly, kamut** | glutént tartalmazó gabonák — kerülendő (zab csak GM jelöléssel) |
+        | búzakeményítő | **csak** gluténmentes jelölésű terméken belül rendben |
+        | maláta, árpamaláta, malátakivonat | árpa — kerülendő |
+        | glükózszirup, dextróz, maltodextrin (búzából is) | annyira feldolgozott, hogy a glutén eltűnt — jogszabály szerint kivétel, biztonságos |
+        | nyomokban glutént tartalmazhat | „nyomokban tartalmazhat" — önkéntes, nem szabályozott figyelmeztetés |
+
+        A **„nyomokban tartalmazhat"** nem gluténos összetevő: önkéntes óvatossági felirat, amit a márkák széles körben
+        ráírnak. Ebben a konyhában csak halvány megjegyzés, soha nem figyelmeztetés — a házirend: az összetevőlista és a
+        gluténmentes jelölés dönt.
+
+        > Ha egy termék receptje változik, előbb a címke változik: időnként olvasd el újra, a mindig megvett dolgokét is.
+  - id: gf-flours
+    chart:
+      type: picker
+      items:
+        - {label: {en: No stretch, hu: Nincs nyúlás}, icon: "om:1F9F6", note: {en: "Without gluten doughs tear and don't trap gas the same way: xanthan (½–1 tsp per 100 g) and psyllium (5–8 %) stand in.", hu: "Sikér nélkül a tészta szakad, és nem ugyanúgy tartja a gázt: xantán (100 g-hoz ½–1 tk) és útifűmaghéj (5–8 %) pótolja."}}
+        - {label: {en: Thirsty and slow, hu: Szomjas és lassú}, icon: "om:1F4A7", note: {en: "GF flours absorb water slowly: rest batters and doughs 15–30 minutes, expect wetter doughs.", hu: "A GM liszt lassan veszi fel a vizet: pihentesd a masszát és a tésztát 15–30 percig, és számíts nedvesebb tésztára."}}
+        - {label: {en: Faster browning, hu: Hamarabb barnul}, icon: "om:1F525", note: {en: "GF crumbs and bakes colour sooner — bake a little cooler or cover them.", hu: "A GM morzsa és sütemény hamarabb színeződik — süsd kicsit alacsonyabban, vagy takard le."}}
+        - {label: {en: Faster staling, hu: Hamarabb szárad}, icon: "om:2744", note: {en: "Bread and cakes dry out within a day — wrap airtight, freeze in slices.", hu: "A kenyér és a sütemény egy nap alatt kiszárad — légmentesen csomagold, szeletelve fagyaszd."}}
+        - {label: {en: One rise, hu: Egy kelesztés}, icon: "om:1F35E", note: {en: "Bread: shape, proof once to about 1.5 times, bake.", hu: "Kenyér: formázd, egyszer keleszd kb. másfélszeresére, süsd."}}
+        - {label: {en: Which flour for what, hu: Melyik liszt mire}, icon: "om:1F35A", note: {en: "Rice flour for rántás, cornstarch for habarás and gravies, GF mix for nokedli (+ 1 egg).", hu: "Rántáshoz rizsliszt, habaráshoz és szafthoz kukoricakeményítő, nokedlihez GM keverék (+ 1 tojás)."}}
+    en:
+      title: How GF flours behave
+      body: |
+        - **No stretch:** without gluten, doughs tear and don't trap gas the same way. **Xanthan** (½–1 tsp per 100 g)
+          and **psyllium husk** (5–8 % of the flour) stand in for the network.
+        - **Thirsty and slow:** GF flours absorb water slowly — **rest batters and doughs 15–30 minutes**, and expect
+          wetter doughs than in wheat recipes.
+        - **Faster browning, faster staling:** GF crumbs and bakes colour sooner (bake a little cooler or cover); bread
+          and cakes dry out within a day — wrap airtight, freeze in slices.
+        - **One rise for bread:** shape, proof once to about 1.5×, bake.
+        - **Rice flour for rántás**, **cornstarch for habarás and gravies**, **GF mix for nokedli** (+ 1 egg).
+
+        See *Baking* for amounts, and *Hungarian technique* for the classics.
+    hu:
+      title: Hogyan viselkednek a GM lisztek
+      body: |
+        - **Nincs nyúlás:** sikér nélkül a tészta szakad, és nem ugyanúgy tartja meg a gázt. A **xantán** (100 g-hoz ½–1 tk)
+          és az **útifűmaghéj** (a liszt 5–8 %-a) pótolja a hálót.
+        - **Szomjas és lassú:** a GM liszt lassan veszi fel a vizet — **pihentesd a masszát és a tésztát 15–30 percig**, és
+          számíts nedvesebb tésztára, mint a búzás receptekben.
+        - **Hamarabb barnul, hamarabb szárad:** a GM morzsa és sütemény gyorsabban színeződik (süsd kicsit alacsonyabban
+          vagy takard le); a kenyér és a sütemény egy nap alatt kiszárad — légmentesen csomagold, szeletelve fagyaszd.
+        - **Egy kelesztés a kenyérnél:** formázd, egyszer keleszd kb. másfélszeresére, süsd.
+        - **Rántáshoz rizsliszt**, **habaráshoz és szafthoz kukoricakeményítő**, **nokedlihez GM keverék** (+ 1 tojás).
+
+        A mennyiségekért lásd a *Sütés*, a klasszikusokért a *Magyaros technikák* részt.
+  - id: guests
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F37D", label: {en: Its own plate, hu: Saját tányér}, note: {en: "Gluten food on its own plate and board, cut with its own knife, away from where you cook. Wooden boards hold crumbs.", hu: "A gluténes étel saját tányéron és deszkán, saját késsel vágva, távol attól, ahol főzöl. A fadeszka megtartja a morzsát."}}
+        - {icon: "om:274C", label: {en: Not in our machines, hu: Nem a gépeinkbe}, note: {en: "Not in the toaster, the fryer, or the oven at the same time as uncovered GF food.", hu: "Se a kenyérpirítóba, se a fritőzbe, se a sütőbe egyszerre fedetlen GM étellel."}}
+        - {icon: "om:1F944", label: {en: No double-dipping, hu: Nincs visszamártás}, note: {en: "A knife that touched their bread makes the butter, jam or Nutella jar no longer GF — give guests a spoonful on their plate.", hu: "Ha a kenyerükhöz ért kés visszamegy, a vaj, a lekvár vagy a Nutella már nem GM — tegyél a vendégnek a tányérjára."}}
+        - {icon: "om:1F32C", label: {en: No wheat flour in the air, hu: Búzaliszt nem száll}, note: {en: "Wheat flour stays airborne for hours and settles everywhere — nobody bakes with it in this kitchen, ever.", hu: "A búzaliszt órákig a levegőben marad, és mindenhová leülepszik — ebben a konyhában soha senki nem süt vele."}}
+        - {icon: "om:1F9FD", label: {en: Clean up, hu: Takarítás}, note: {en: "Wipe the surfaces, wash their plates first or apart, shake out the tea towel, wash your hands before touching GF food.", hu: "Töröld le a felületeket, az ő tányérjaikat előbb vagy külön mosd, rázd ki a konyharuhát, moss kezet, mielőtt GM ételhez nyúlsz."}}
+    en:
+      title: Guests' food and cross-contamination
+      body: |
+        The kitchen is gluten-free. When a guest brings gluten food (a cake, a loaf, a beer), keep it from spreading:
+
+        - **Serve it on its own plate and board**, cut with its own knife, away from the counter you cook on. Wooden boards
+          and cracked plastic hold crumbs — never use them for both.
+        - **Not in the toaster, not in the fryer, not in the oven at the same time** as uncovered GF food.
+        - **No double-dipping:** a knife that touched their bread goes back into the butter, jam or Nutella — and that
+          jar is no longer GF. Give guests a separate spoonful on their plate.
+        - **Flour in the air:** wheat flour stays airborne for hours and settles everywhere. Nobody bakes with wheat flour
+          in this kitchen, ever.
+        - Afterwards: wipe the surfaces, wash their plates and cutlery separately or first, shake out the tea towel, and
+          wash your hands before touching GF food.
+        - **Cooking for guests:** just cook GF — they won't notice, and nobody has to think about it.
+    hu:
+      title: Vendégek étele és a keresztszennyeződés
+      body: |
+        A konyha gluténmentes. Ha egy vendég gluténos ételt hoz (süteményt, kenyeret, sört), ne hagyd szétterjedni:
+
+        - **Saját tányéron, saját deszkán**, saját késsel szeleteld, távol attól a pulttól, ahol főzöl. A fadeszka és a
+          karcos műanyag őrzi a morzsát — soha ne használd mindkettőre.
+        - **Ne a kenyérpirítóba, ne az olajsütőbe, ne a sütőbe** egyszerre fedetlen GM étellel.
+        - **Nincs visszamártás:** a kés, amelyik a kenyerükhöz ért, visszakerül a vajba, a lekvárba, a Nutellába — és az az
+          üveg már nem GM. Tegyél a vendégnek külön egy adagot a tányérjára.
+        - **Liszt a levegőben:** a búzaliszt órákig a levegőben marad, és mindenhová leülepszik. Ebben a konyhában soha
+          senki nem süt búzaliszttel.
+        - Utána: töröld le a felületeket, az ő tányérjaikat és evőeszközeiket külön vagy elsőként mosd el, rázd ki a
+          konyharuhát, és mosson kezet, aki GM ételhez nyúl.
+        - **Ha vendégeknek főzöl:** egyszerűen főzz GM-et — észre sem veszik, és senkinek nem kell rajta gondolkodnia.
+  - id: eating-out
+    chart:
+      type: picker
+      items:
+        - {label: {en: The sauce, hu: A mártás}, icon: "om:1FAD5", note: {en: "Is it thickened with flour — rántás, habarás? Is there flour on the meat?", hu: "Liszttel sűrítették — rántás, habarás? Van liszt a húson?"}}
+        - {label: {en: The fries, hu: A sült krumpli}, icon: "om:1F35F", note: {en: "Are they cooked in the same oil as breaded food? Then they are not GF.", hu: "Ugyanabban az olajban sütik, mint a panírozott ételt? Akkor nem GM."}}
+        - {label: {en: The soup, hu: A leves}, icon: "om:1F372", note: {en: "Is it made from stock cubes? Is there csipetke, galuska or pasta in it?", hu: "Leveskockából készül? Van benne csipetke, galuska vagy tészta?"}}
+        - {label: {en: "The grill, the pan", hu: "A grill, a serpenyő"}, icon: "om:1F373", note: {en: "Is it also used for bread?", hu: "Kenyérhez is használják?"}}
+        - {label: {en: Usually safe, hu: Általában biztonságos}, icon: "om:2705", note: {en: "Pörkölt and paprikás (without nokedli).", hu: "Pörkölt és paprikás (nokedli nélkül)."}}
+        - {label: {en: Usually not, hu: Általában nem}, icon: "om:274C", note: {en: "Nokedli, anything rántott, most soups.", hu: "Nokedli, minden rántott, a legtöbb leves."}}
+        - {label: {en: The celiac card, hu: A cöliákiás kártya}, icon: "om:1F4C7", note: {en: "Carry it in Hungarian (and the local language abroad) — the exact wording is on this page.", hu: "Hordd magadnál magyarul (és külföldön a helyi nyelven) — a pontos szöveg ezen az oldalon van."}}
+    en:
+      title: Eating out and travelling
+      body: |
+        Ask specific questions — "is this gluten-free?" gets a yes too easily:
+        - Is the sauce thickened with flour (rántás, habarás)? Is there flour on the meat?
+        - Are the fries cooked in the same oil as breaded food?
+        - Is the soup made from stock cubes? Is there csipetke, galuska or pasta in it?
+        - Is the grill or pan also used for bread?
+        - Pörkölt and paprikás are usually safe; nokedli, rántott anything and most soups are not.
+
+        Carry a **celiac card** in Hungarian (and the local language abroad). Hungarian: *„Cöliákiás vagyok: nem ehetek
+        búzát, árpát, rozsot, tönkölyt, zabot — lisztet, zsemlemorzsát, rántást sem. Kérem, külön deszkán és külön
+        olajban készüljön."* (I have celiac disease: no wheat, barley, rye, spelt, oats — no flour, breadcrumbs or roux.
+        Please use a separate board and separate oil.)
+    hu:
+      title: Étteremben és utazáskor
+      body: |
+        Kérdezz konkrétan — a „gluténmentes ez?" kérdésre túl könnyű igent mondani:
+        - Lisztes-e a mártás (rántás, habarás)? Liszteztek-e a húst?
+        - Ugyanabban az olajban sütik-e a hasábburgonyát, mint a rántott ételeket?
+        - Leveskockából készül-e a leves? Van-e benne csipetke, galuska vagy tészta?
+        - Sütnek-e kenyeret is ugyanazon a grillen vagy serpenyőben?
+        - A pörkölt és a paprikás általában biztonságos; a nokedli, a rántott ételek és a legtöbb leves nem.
+
+        Legyen nálad egy **cöliákiás kártya** (külföldön a helyi nyelven is). Magyarul: *„Cöliákiás vagyok: nem ehetek
+        búzát, árpát, rozsot, tönkölyt, zabot — lisztet, zsemlemorzsát, rántást sem. Kérem, külön deszkán és külön
+        olajban készüljön."*

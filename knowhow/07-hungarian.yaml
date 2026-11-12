@@ -1,0 +1,194 @@
+id: hungarian
+order: 13
+icon: "om:1F336"
+color: berry
+en: {title: Hungarian technique, sub: "rántás · habarás · pörkölt · nokedli"}
+hu: {title: Magyaros technikák, sub: "rántás · habarás · pörkölt · nokedli"}
+pages:
+  - id: rantas
+    chart:
+      type: swatches
+      items:
+        - {fill: "#F3E3BF", label: {en: White, hu: Fehér}, note: {en: "1–2 minutes over medium heat, no colour yet. For béchamel.", hu: "1–2 perc közepes lángon, még színtelen. Besamelhez."}}
+        - {fill: "#DDAE62", label: {en: Blond, hu: Szőke}, note: {en: "Light gold. For főzelék.", hu: "Világos arany. Főzelékhez."}}
+        - {fill: "#8E5A2B", label: {en: Brown, hu: Barna}, note: {en: "For darker soups like bableves. Paprika goes in off the heat, at the very end.", hu: "Sötétebb levesekhez, például bablevesbe. A paprika a legvégén, a tűzről levéve megy bele."}}
+    en:
+      title: Rántás (roux)
+      body: |
+        Fat + flour cooked together, then whisked into a soup, főzelék or sauce to thicken it and add a toasty taste.
+
+        1. Melt **2 tbsp fat** (lard, oil, butter), add **2 tbsp flour**, stir over medium heat.
+        2. Cook to the colour you want: **white** (1–2 min, for béchamel), **blond** (light gold, for főzelék), **brown**
+           (for darker soups like bableves).
+        3. Off the heat, often with **paprika** stirred in at the end (it burns in seconds — the pan must be off the flame).
+        4. Thin it with a little **cold** water or stock, whisk smooth, then whisk into the simmering dish. Simmer 5 min.
+
+        **GF rántás:** **rice flour** browns and thickens just like wheat flour — use the same amount, perhaps a little
+        more liquid. A GF flour mix also works. Cornstarch thickens but doesn't brown: no roux taste.
+    hu:
+      title: Rántás
+      body: |
+        Zsiradék és liszt együtt pirítva, aztán levesbe, főzelékbe, mártásba keverve sűrít, és pirult ízt ad.
+
+        1. Olvassz fel **2 ek zsiradékot** (zsír, olaj, vaj), add hozzá a **2 ek lisztet**, kevergesd közepes lángon.
+        2. Pirítsd a kívánt színig: **fehér** (1–2 perc, besamelhez), **világos** (halvány arany, főzelékhez), **barna**
+           (sötétebb levesekhez, például bableveshez).
+        3. Lehúzva a tűzről, gyakran a végén **pirospaprikát** keverve bele (pár másodperc alatt megég — a tűzről le kell venni).
+        4. Hígítsd kevés **hideg** vízzel vagy alaplével, keverd csomómentesre, aztán habverővel keverd a gyöngyöző ételbe. 5 perc forralás.
+
+        **GM rántás:** a **rizsliszt** pont úgy pirul és sűrít, mint a búzaliszt — ugyanannyi, esetleg kicsit több
+        folyadékkal. GM lisztkeverék is jó. A kukoricakeményítő sűrít, de nem pirul: nincs rántásíz.
+  - id: habaras
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F963", label: {en: Whisk, hu: Simára}, note: {en: "200 g sour cream with 1 tbsp cornstarch or rice flour (GF) and a little cold water or milk, until smooth.", hu: "200 g tejföl 1 ek kukoricakeményítővel vagy rizsliszttel (GM) és kevés hideg vízzel vagy tejjel, csomómentesre."}}
+        - {icon: "om:1F944", label: {en: Temper, hu: Hígítás}, note: {en: "Whisk in a ladle of the hot liquid, then another — the sour cream warms gradually and doesn't curdle.", hu: "Habarj bele egy merőkanál forró levet, aztán még egyet — a tejföl fokozatosan melegszik, és nem csapódik ki."}}
+        - {icon: "om:23F2", label: {en: "Stir in, simmer", hu: "Bele, gyöngyöztetés"}, time: {en: "2–3 min", hu: "2–3 perc"}, note: {en: "Stir it into the dish and simmer gently 2–3 minutes. With cornstarch, don't boil it hard afterwards.", hu: "Keverd az ételbe, és 2–3 percig gyöngyöztesd. Kukoricakeményítővel utána ne forrald erősen."}}
+    en:
+      title: Habarás (sour cream thickening)
+      body: |
+        Sour cream whisked with flour, tempered with hot liquid, stirred into soups, főzelék and paprikás at the end.
+
+        1. Whisk **200 g sour cream** with **1–2 tbsp flour** (and a little cold water or milk) until smooth.
+        2. **Temper:** whisk in a ladle of the hot liquid, then another — so the sour cream warms gradually and doesn't
+           curdle.
+        3. Stir it into the dish and simmer gently 2–3 minutes until the flour taste is gone.
+
+        **GF habarás:** 1 tbsp **cornstarch** or **rice flour** per 200 g sour cream. Cornstarch gives a glossier sauce;
+        don't boil it hard afterwards.
+    hu:
+      title: Habarás
+      body: |
+        Tejföl liszttel csomómentesre keverve, forró lével hígítva, a végén levesbe, főzelékbe, paprikásba keverve.
+
+        1. Keverj simára **200 g tejfölt** **1–2 ek liszttel** (és kevés hideg vízzel vagy tejjel).
+        2. **Temperálás:** keverj bele egy merőkanálnyi forró levet, aztán még egyet — így a tejföl fokozatosan melegszik, nem csapódik ki.
+        3. Keverd az ételbe, és lassú tűzön forrald 2–3 percig, amíg eltűnik a lisztíz.
+
+        **GM habarás:** 200 g tejfölhöz 1 ek **kukoricakeményítő** vagy **rizsliszt**. A keményítőtől fényesebb lesz;
+        utána ne forrald erősen.
+  - id: porkolt-paprikas-gulyas
+    chart:
+      type: vessel
+      shape: pot
+      max: 100
+      items:
+        - value: 34
+          label: Pörkölt
+          fill: "#9E3426"
+          icons: ["om:1F969", "om:1F9C5"]
+          note: {en: "A stew: the meat cooks in its own paprika-and-onion juice, with only a splash of water. Thick, no sour cream.", hu: "Ragu: a hús a saját paprikás-hagymás levében fő, csak egy kevés vízzel. Sűrű, tejföl nélkül."}
+        - value: 38
+          label: Paprikás
+          fill: "#E2774A"
+          icons: ["om:1F357", "om:1F344"]
+          note: {en: "A pörkölt — chicken, veal, fish or mushroom — finished with sour cream (habarás). Thicken it the GF way.", hu: "Pörkölt — csirke, borjú, hal vagy gomba — tejföllel (habarással) befejezve. GM-en sűrítsd."}
+        - value: 84
+          label: Gulyás
+          fill: "#C8452F"
+          icons: ["om:1F969", "om:1F954", "om:1F955"]
+          note: {en: "A soup — the shepherd's soup: plenty of water, potatoes, carrots and csipetke (make it GF).", hu: "Leves — a pásztorok levese: bőven víz, krumpli, répa és csipetke (GM-en készítsd)."}
+    en:
+      title: Pörkölt, paprikás, gulyás
+      body: |
+        Three different dishes, often mixed up:
+
+        | | What it is | Liquid | Finish |
+        |---|---|---|---|
+        | **Pörkölt** | a stew: meat braised with lots of onion and paprika | only a splash: the meat cooks in its own juice | thick, no sour cream |
+        | **Paprikás** | a pörkölt (chicken, veal, fish, mushroom) | the same | finished with sour cream (habarás) |
+        | **Gulyás** | a **soup** — the shepherd's soup | plenty of water | potatoes, carrots, csipetke |
+
+        **The pörkölt method:** fry finely diced onion slowly in lard until glassy and soft (10–15 min). Pan **off the
+        heat**, stir in the paprika (1–2 tbsp per kg of meat), then the meat at once. Back on, salt, a splash of water,
+        lid on, simmer low, adding water a little at a time. Peppers and tomato go in halfway.
+
+        > All three are naturally GF until **csipetke** (gulyás) or **nokedli** (with paprikás) arrive — see the next page. Thicken paprikás with GF habarás.
+    hu:
+      title: Pörkölt, paprikás, gulyás
+      body: |
+        Három különböző étel, amit gyakran összekevernek:
+
+        | | Mi ez | Folyadék | Befejezés |
+        |---|---|---|---|
+        | **Pörkölt** | ragu: a hús sok hagymával és paprikával párolva | csak egy kevés: a hús a saját levében fő | sűrű, tejföl nélkül |
+        | **Paprikás** | pörkölt (csirke, borjú, hal, gomba) | ugyanígy | tejföllel (habarással) befejezve |
+        | **Gulyás** | **leves** — a pásztorok levese | bőven víz | krumpli, répa, csipetke |
+
+        **A pörkölt módszere:** a finomra vágott hagymát zsíron lassan párold üvegesre, puhára (10–15 perc). A lábast
+        **húzd le a tűzről**, keverd bele a paprikát (kilónként 1–2 ek), aztán azonnal a húst. Vissza a tűzre, sózd,
+        egy kevés víz, fedő, lassú tűz, a vizet apránként pótolva. A paprika és a paradicsom félidőben megy bele.
+
+        > Mindhárom természeténél fogva GM, amíg meg nem érkezik a **csipetke** (gulyás) vagy a **nokedli** (a paprikás mellé) — lásd a következő oldalt. A paprikást GM habarással sűrítsd.
+  - id: nokedli-tarhonya
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F35A", label: {en: Batter, hu: Massza}, note: {en: "300 g GF flour mix, 3 eggs (one more than the wheat recipe), 1 tsp salt, about 1.5 dl water — thick and sticky.", hu: "300 g GM lisztkeverék, 3 tojás (eggyel több, mint a búzás receptben), 1 tk só, kb. 1,5 dl víz — sűrű, ragadós."}}
+        - {icon: "om:23F2", label: {en: Rest, hu: Pihentetés}, time: {en: "10 min", hu: "10 perc"}, note: {en: "GF flour needs time to drink the liquid; add a spoon of water if it stiffens.", hu: "A GM lisztnek idő kell, hogy felszívja a folyadékot; ha megkeményedik, egy kanál víz."}}
+        - {icon: "om:1F4A7", label: {en: Into the water, hu: A vízbe}, note: {en: "Press it through a nokedliszaggató into gently boiling salted water.", hu: "Nokedliszaggatón át szaggasd enyhén forrásban lévő sós vízbe."}}
+        - {icon: "om:2B06", label: {en: They float, hu: Feljönnek}, time: {en: "+ 1–2 min", hu: "+ 1–2 perc"}, note: {en: "They float when done: 1–2 minutes more, then lift them out.", hu: "Ha feljöttek, készek: még 1–2 perc, aztán szedd ki."}}
+        - {icon: "om:1F9C8", label: {en: Serve at once, hu: Azonnal tálald}, note: {en: "Toss with a little butter or lard. GF nokedli softens fast: make it last.", hu: "Forgasd át kevés vajjal vagy zsírral. A GM nokedli hamar megpuhul: utoljára készítsd."}}
+    en:
+      title: Nokedli, csipetke, tarhonya — GF
+      body: |
+        **Nokedli** (soft egg dumplings, with paprikás and pörkölt) — GF for 4:
+        - 300 g **GF flour mix**, 3 eggs (one more than the wheat recipe), 1 tsp salt, about 1.5 dl water.
+        - Beat to a thick, sticky batter that drops slowly from the spoon. **Rest it 10 minutes** — GF flour needs time
+          to drink the liquid; add a spoon of water if it stiffens.
+        - Press through a nokedli maker (nokedliszaggató) into gently boiling salted water. They float when done: 1–2
+          minutes more, lift out, toss with a little butter or lard.
+        - GF nokedli softens fast: make it last, serve at once.
+
+        **Csipetke** (pinched pasta for gulyás): a stiff dough of GF flour mix + 1 egg + a pinch of salt; pinch small
+        bits straight into the simmering soup 5 minutes before the end. It softens quickly in the soup.
+
+        **Tarhonya** (egg barley): buy GF tarhonya, or toast short-grain rice or quinoa in lard until golden, then cook it
+        like pilaf — the toasty taste is the point.
+    hu:
+      title: Nokedli, csipetke, tarhonya — GM
+      body: |
+        **Nokedli** (a paprikás és a pörkölt mellé) — GM, 4 főre:
+        - 300 g **GM lisztkeverék**, 3 tojás (eggyel több, mint a búzás receptben), 1 tk só, kb. 1,5 dl víz.
+        - Keverd sűrű, ragacsos tésztává, ami lassan csúszik le a kanálról. **Pihentesd 10 percig** — a GM lisztnek idő
+          kell, hogy felvegye a folyadékot; ha besűrűsödik, adj hozzá egy kanál vizet.
+        - Nokedliszaggatón szaggasd lassan forró, sós vízbe. Ha feljön: még 1–2 perc, szedd ki, forgasd össze kevés vajjal vagy zsírral.
+        - A GM nokedli hamar szétpuhul: az utolsó lépés legyen, azonnal tálald.
+
+        **Csipetke** (a gulyásba): kemény tészta GM lisztkeverékből + 1 tojás + egy csipet só; csipkedd apró darabokban
+        egyenesen a gyöngyöző levesbe 5 perccel a vége előtt. A levesben gyorsan megpuhul.
+
+        **Tarhonya:** vegyél GM tarhonyát, vagy pirítsd zsíron aranyszínűre a kerek szemű rizst vagy a quinoát, és főzd
+        úgy, mint a piláfot — a pirult íz a lényeg.
+  - id: fozelek-lecso
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F966", label: {en: Cook the vegetable, hu: A zöldség}, note: {en: "In salted water or stock until tender — potato, pea, green bean, lentil, spinach, squash, cabbage.", hu: "Sós vízben vagy alaplében puhára — krumpli, borsó, zöldbab, lencse, spenót, tök, káposzta."}}
+        - {icon: "om:1F35A", label: {en: Thicken, hu: Sűrítés}, note: {en: "A rántás (GF: rice flour) or a habarás (GF: cornstarch).", hu: "Rántás (GM: rizsliszt) vagy habarás (GM: kukoricakeményítő)."}}
+        - {icon: "om:23F2", label: {en: Simmer, hu: Főzés}, time: {en: "5 min", hu: "5 perc"}, note: {en: "Simmer 5 minutes until the flour taste is gone.", hu: "5 percig gyöngyöztesd, amíg eltűnik a lisztíz."}}
+        - {icon: "om:1F9C2", label: {en: Season, hu: Ízesítés}, note: {en: "Dill for squash, garlic for spinach, vinegar and a bay leaf for lentils, paprika for potatoes.", hu: "Tökhöz kapor, spenóthoz fokhagyma, lencséhez ecet és babérlevél, krumplihoz paprika."}}
+        - {icon: "om:1F373", label: {en: Top it, hu: Feltét}, note: {en: "A fried egg, a pörkölt topping (feltét) or a GF sausage.", hu: "Tükörtojás, pörköltfeltét vagy GM kolbász."}}
+    en:
+      title: Főzelék and lecsó
+      body: |
+        **Főzelék** — Hungary's thick vegetable stews (potato, pea, green bean, lentil, spinach, squash, cabbage):
+        1. Cook the vegetable in salted water or stock until tender.
+        2. Thicken with a **rántás** (GF: rice flour) or a **habarás** (GF: cornstarch), simmer 5 minutes.
+        3. Season: dill for squash (tökfőzelék), garlic for spinach, vinegar and a bay leaf for lentils, paprika for
+           potatoes. Served with fried egg, pörkölt topping (feltét) or sausage.
+
+        **Lecsó** — peppers, tomatoes and onion stewed in lard, with paprika; eggs or sausage stirred in. Naturally GF:
+        check only the sausage. Make a big batch in late summer and freeze it in portions.
+    hu:
+      title: Főzelék és lecsó
+      body: |
+        **Főzelék** — a magyar sűrű zöldségételek (krumpli, borsó, zöldbab, lencse, spenót, tök, káposzta):
+        1. Főzd puhára a zöldséget sós vízben vagy alaplében.
+        2. Sűrítsd **rántással** (GM: rizsliszt) vagy **habarással** (GM: kukoricakeményítő), forrald 5 percig.
+        3. Ízesítés: tökfőzelékhez kapor, spenóthoz fokhagyma, lencséhez ecet és babérlevél, krumplihoz paprika.
+           Tükörtojással, pörköltfeltéttel vagy kolbásszal tálald.
+
+        **Lecsó** — paprika, paradicsom és hagyma zsíron párolva, pirospaprikával; tojással vagy kolbásszal. Természeténél
+        fogva GM: csak a kolbászt ellenőrizd. Nyár végén főzz egy nagy adagot, és fagyaszd adagonként.

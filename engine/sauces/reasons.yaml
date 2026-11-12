@@ -1,0 +1,55 @@
+# Reason codes → bilingual sentences for the sauce matrices (spec 2026-10-19 §4.3, §5.3). Every cell names one.
+#   kind   pair (placeholders {a} {b}: two drivers) | food ({s}: a driver, {f}: a food)
+#   sign   + | - | 0 — must match the sign of every score that uses it (a guard)
+# Names go in lower case (the entry's `say` name or the catalogue name); the first letter of a sentence is capitalised.
+# Hungarian templates put no suffix or article on a placeholder, so any name reads right.
+
+# --- pairs: good together ----------------------------------------------------------------------------------------------
+classic-partners: {kind: pair, sign: "+", en: "{a} and {b} are classic partners.", hu: "{a} és {b}: klasszikus páros."}
+hungarian-heart: {kind: pair, sign: "+", en: "{a} and {b} — the taste of the Hungarian kitchen.", hu: "{a} és {b} — a magyar konyha íze."}
+acid-cuts-rich: {kind: pair, sign: "+", en: "{a} and {b}: the sour cuts through the rich.", hu: "{a} és {b}: a savanyú átvágja a gazdagot."}
+sweet-sour: {kind: pair, sign: "+", en: "{a} and {b} make the sweet-and-sour a sauce wants.", hu: "{a} és {b}: édes-savanyú, ahogy a mártás szereti."}
+sweet-tames-heat: {kind: pair, sign: "+", en: "{a} and {b}: the sweet tames the heat.", hu: "{a} és {b}: az édes megszelídíti a csípőset."}
+umami-depth: {kind: pair, sign: "+", en: "{a} and {b} deepen each other's savoury side.", hu: "{a} és {b} egymás sós-ízes mélységét erősíti."}
+salt-lifts: {kind: pair, sign: "+", en: "{a} and {b}: the salt brings out what the other has.", hu: "{a} és {b}: a só kihozza a másikból, ami benne van."}
+herb-lifts: {kind: pair, sign: "+", en: "{a} and {b}: the fresh green lifts it.", hu: "{a} és {b}: a friss zöld felemeli."}
+cream-softens: {kind: pair, sign: "+", en: "{a} and {b}: the creamy one softens the sharp one.", hu: "{a} és {b}: a krémes lekerekíti az élest."}
+aromatic-base: {kind: pair, sign: "+", en: "{a} and {b} build the same aromatic base.", hu: "{a} és {b} ugyanazt az illatos alapot építi."}
+cuisine-mates: {kind: pair, sign: "+", en: "{a} and {b} cook together in the same kitchens.", hu: "{a} és {b} ugyanazokban a konyhákban főz együtt."}
+heat-and-cool: {kind: pair, sign: "+", en: "{a} and {b}: the heat, and something cool to answer it.", hu: "{a} és {b}: a csípős, és valami hűsítő, ami felel rá."}
+same-family: {kind: pair, sign: "+", en: "{a} and {b} deepen the same note.", hu: "{a} és {b} ugyanazt a hangot mélyíti."}
+gentle-company: {kind: pair, sign: "+", en: "{a} and {b} get along without fuss.", hu: "{a} és {b} gond nélkül megvan egymással."}
+
+# --- pairs: nothing for or against -------------------------------------------------------------------------------------
+strangers: {kind: pair, sign: "0", en: "{a} and {b} have nothing to say to each other.", hu: "{a} és {b} nem mond semmit egymásnak."}
+harmless: {kind: pair, sign: "0", en: "{a} and {b} neither help nor hurt each other.", hu: "{a} és {b} se nem segít, se nem árt egymásnak."}
+same-job: {kind: pair, sign: "0", en: "{a} and {b} do the same job — you rarely need both.", hu: "{a} és {b} ugyanazt a munkát végzi — ritkán kell mindkettő."}
+
+# --- pairs: trouble ----------------------------------------------------------------------------------------------------
+two-leads: {kind: pair, sign: "-", en: "{a} and {b} both want the front.", hu: "{a} és {b} is előre akar állni."}
+splits-dairy: {kind: pair, sign: "-", en: "{a} and {b}: boiled together, the acid splits the dairy.", hu: "{a} és {b}: együtt forralva a sav kicsapja a tejterméket."}
+kitchens-apart: {kind: pair, sign: "-", en: "{a} and {b} come from kitchens that don't meet.", hu: "{a} és {b} olyan konyhákból jön, amelyek nem találkoznak."}
+salt-on-salt: {kind: pair, sign: "-", en: "{a} and {b}: salty on salty — easy to oversalt.", hu: "{a} és {b}: sós a sósra — könnyű elsózni."}
+sweet-buries: {kind: pair, sign: "-", en: "{a} and {b}: the sweet buries the delicate one.", hu: "{a} és {b}: az édes eltemeti a finomabbat."}
+bitter-clash: {kind: pair, sign: "-", en: "{a} and {b} turn each other bitter or metallic.", hu: "{a} és {b} kesernyéssé, fémessé teszi egymást."}
+heat-on-heat: {kind: pair, sign: "-", en: "{a} and {b}: heat on heat — it only burns.", hu: "{a} és {b}: csípős a csípősre — csak éget."}
+perfume-clash: {kind: pair, sign: "-", en: "{a} and {b}: two perfumes at once, and neither wins.", hu: "{a} és {b}: két parfüm egyszerre — egyik sem nyer."}
+odd-couple: {kind: pair, sign: "-", en: "{a} and {b}: an odd couple that rarely works.", hu: "{a} és {b}: furcsa pár, ritkán működik."}
+drowns: {kind: pair, sign: "-", en: "{a} and {b}: one drowns the other.", hu: "{a} és {b}: az egyik elnyomja a másikat."}
+
+# --- foods (0-3) -------------------------------------------------------------------------------------------------------
+classic-with: {kind: food, sign: "+", en: "{s} is a classic with {f}.", hu: "{f} — {s}: klasszikus társ."}
+dresses: {kind: food, sign: "+", en: "{s} dresses {f}.", hu: "{f} — {s}: jól öltözteti."}
+cuts-richness: {kind: food, sign: "+", en: "{s} cuts the richness of {f}.", hu: "{f} — {s}: ellensúlyozza a zsírosságát."}
+brightens: {kind: food, sign: "+", en: "{s} brightens {f}.", hu: "{f} — {s}: felfrissíti."}
+rich-for: {kind: food, sign: "+", en: "{s} makes {f} rich and round.", hu: "{f} — {s}: gazdaggá, kereksé teszi."}
+savoury-for: {kind: food, sign: "+", en: "{s} gives {f} savoury depth.", hu: "{f} — {s}: sós-ízes mélységet ad."}
+sweet-for: {kind: food, sign: "+", en: "{s} suits the sweetness of {f}.", hu: "{f} — {s}: illik az édességéhez."}
+glaze-for: {kind: food, sign: "+", en: "{s} glazes {f}.", hu: "{f} — {s}: fényes mázat ad."}
+heat-for: {kind: food, sign: "+", en: "{s} brings heat to {f}.", hu: "{f} — {s}: tüzet hoz."}
+green-for: {kind: food, sign: "+", en: "{s} gives {f} a green, fresh note.", hu: "{f} — {s}: zöld, friss hangot ad."}
+cool-for: {kind: food, sign: "+", en: "{s} cools and answers {f}.", hu: "{f} — {s}: hűsít és felel rá."}
+small-touch: {kind: food, sign: "+", en: "A little {s} works with {f}.", hu: "{f} — {s}: egy kevés jól áll neki."}
+nothing-to-say: {kind: food, sign: "0", en: "{s} has nothing to add to {f}.", hu: "{f} — {s}: nincs mit hozzátennie."}
+overpowers: {kind: food, sign: "0", en: "{s} would overpower {f}.", hu: "{f} — {s}: elnyomná."}
+wrong-kind: {kind: food, sign: "0", en: "{s} belongs with another kind of dish than {f}.", hu: "{f} — {s}: másfajta ételhez való."}

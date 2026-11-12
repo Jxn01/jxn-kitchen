@@ -1,0 +1,241 @@
+id: sauces
+order: 9
+icon: "om:1FAD5"
+color: indigo
+en:
+  title: Sauces & GF thickening
+  sub: "thickeners · the classic sauces · béchamel · emulsions · fixing a sauce"
+hu:
+  title: Mártások, GM sűrítés
+  sub: "sűrítők · klasszikus mártások · besamel · emulziók · mártásmentés"
+pages:
+  - id: thickeners
+    chart:
+      type: bars
+      unit: {en: tbsp/l, hu: ek/l}
+      max: 5
+      items:
+        - {value: 2, to: 3, label: {en: Cornstarch, hu: Kukoricakeményítő}, fill: "#FFFDF6", note: {en: "slurry · glossy", hu: "hideg vízzel · fényes"}}
+        - {value: 2, label: {en: Potato starch, hu: Burgonyakeményítő}, fill: "#F6F2E8", note: {en: "slurry · very clear, strong", hu: "hideg vízzel · nagyon tiszta, erős"}}
+        - {value: 2, to: 3, label: {en: Tapioca starch, hu: Tápiókakeményítő}, fill: "#F4F1EA", note: {en: "slurry · freezes well", hu: "hideg vízzel · jól fagyasztható"}}
+        - {value: 2, label: {en: Arrowroot, hu: Arrowroot}, fill: "#EFE8D6", note: {en: "at the end · clear, not with dairy", hu: "a végén · tiszta, tejtermékkel nem"}}
+        - {value: 3, to: 4, label: {en: Rice flour, hu: Rizsliszt}, fill: "#F6F0E2", note: {en: "roux (rántás) · browns", hu: "rántásnak · pirul"}}
+        - {value: 3, to: 4, label: {en: GF flour mix, hu: GM lisztkeverék}, fill: "#F1E4C6", note: {en: "roux or habarás", hu: "rántás vagy habarás"}}
+    en:
+      title: Thickening without wheat
+      body: |
+        How much for **1 litre** of liquid, to a medium sauce:
+
+        | Thickener | Per litre | How | Character |
+        |---|---|---|---|
+        | Cornstarch | 2–3 tbsp | slurry in cold water, simmer 1 min | glossy; thins if boiled long or frozen |
+        | Potato starch | 2 tbsp | slurry, don't boil long | very clear, strong |
+        | Tapioca starch | 2–3 tbsp | slurry | glossy, freezes well, a little stretchy |
+        | Arrowroot | 2 tbsp | slurry, at the end | clear — fruit sauces; not with dairy |
+        | Rice flour | 3–4 tbsp | roux (rántás) or slurry | browns like wheat — best for rántás |
+        | GF flour mix | 3–4 tbsp | roux or habarás | closest to the original |
+
+        - **Starch goes in cold**: stir it smooth in a little cold water (a slurry), then whisk it into the simmering
+          liquid. Straight into hot liquid it lumps.
+        - **Other ways to thicken:** reduce it (simmer uncovered), whisk in cold butter at the end, blend in some of the
+          cooked vegetables, or a pinch of **xanthan** (¼–½ teaspoon per litre, whisked in hard).
+        - The same figures are on *Substitutions → Thickeners*.
+    hu:
+      title: Sűrítés búza nélkül
+      body: |
+        Mennyi kell **1 liter** folyadékhoz közepes sűrűségig:
+
+        | Sűrítő | Literenként | Hogyan | Jellege |
+        |---|---|---|---|
+        | Kukoricakeményítő | 2–3 ek | hideg vízzel elkeverve, 1 perc forralás | fényes; hosszú forralástól, fagyasztástól hígul |
+        | Burgonyakeményítő | 2 ek | hideg vízzel, ne forrald sokáig | nagyon tiszta, erős |
+        | Tápiókakeményítő | 2–3 ek | hideg vízzel | fényes, jól fagyasztható, kicsit nyúlós |
+        | Arrowroot | 2 ek | hideg vízzel, a végén | tiszta — gyümölcsmártásokhoz; tejtermékkel nem |
+        | Rizsliszt | 3–4 ek | rántásnak vagy hideg vízzel | úgy pirul, mint a búzaliszt — rántáshoz a legjobb |
+        | GM lisztkeverék | 3–4 ek | rántás vagy habarás | a legközelebb az eredetihez |
+
+        - **A keményítő hidegen megy bele:** kevés hideg vízzel keverd simára, aztán habverővel a gyöngyöző folyadékba.
+          Egyenesen a forróba csomós lesz.
+        - **Más sűrítési módok:** forrald be (fedő nélkül), a végén keverj bele hideg vajat, turmixold bele a főtt
+          zöldség egy részét, vagy egy csipet **xantán** (literenként ¼–½ teáskanál, erősen elhabarva).
+        - Ugyanezek a számok vannak a *Helyettesítések → Sűrítők* oldalon is.
+  - id: families
+    open: sauces
+    chart:
+      type: board
+      groups:
+        - color: butter
+          icon: "om:1F95B"
+          label: {en: Roux sauces, hu: Rántásos mártások}
+          note: {en: "Butter + flour + liquid: béchamel, cheese sauce, velouté, főzelék. GF: rice flour or a GF mix, 1 : 1 with the butter.", hu: "Vaj + liszt + folyadék: besamel, sajtmártás, velouté, főzelék. GM: rizsliszt vagy GM keverék, a vajjal 1 : 1."}
+          items:
+            - {label: {en: Béchamel, hu: Besamel}}
+            - {label: {en: Cheese sauce, hu: Sajtmártás}}
+            - {label: {en: Velouté, hu: Velouté}}
+            - {label: {en: Főzelék, hu: Főzelék}}
+        - color: mustard
+          icon: "om:1F95A"
+          label: {en: Emulsions, hu: Emulziók}
+          note: {en: "Fat held in tiny drops by egg yolk or mustard — naturally GF (check the mustard).", hu: "A zsírt apró cseppekben a tojássárgája vagy a mustár tartja — természettől GM (a mustárt ellenőrizd)."}
+          items:
+            - {label: {en: Mayonnaise, hu: Majonéz}}
+            - {label: {en: Hollandaise, hu: Hollandi mártás}}
+            - {label: {en: Béarnaise, hu: Béarnaise}}
+            - {label: {en: Vinaigrette, hu: Vinaigrette}}
+        - color: rust
+          icon: "om:1F373"
+          label: {en: Pan and reduced sauces, hu: Serpenyős és beforralt mártások}
+          note: {en: "The brown bits in the pan, a splash of wine or stock, reduced — thicken with cornstarch. The stock must be GF.", hu: "A serpenyő alján maradt pirult részek, egy kevés bor vagy alaplé, beforralva — kukoricakeményítővel sűrítve. Az alaplé legyen GM."}
+          items:
+            - {label: {en: Pan gravy, hu: Pecsenyelé}}
+            - {label: {en: Red wine sauce, hu: Vörösboros mártás}}
+            - {label: {en: Beurre blanc, hu: Beurre blanc}}
+        - color: berry
+          icon: "om:1F336"
+          label: {en: Hungarian, hu: Magyaros}
+          note: {en: "Most are thickened with flour — make them with rice flour or cornstarch, and GF habarás.", hu: "A legtöbbet liszttel sűrítik — készítsd rizsliszttel vagy kukoricakeményítővel, GM habarással."}
+          items:
+            - {label: {en: Paprikás sauce, hu: Paprikás mártás}}
+            - {label: {en: Dill and sour cream, hu: Kapormártás}}
+            - {label: Vadas}
+            - {label: {en: Sour cherry, hu: Meggymártás}}
+            - {label: {en: Horseradish, hu: Tormamártás}}
+    en:
+      title: The classic sauces, GF
+      body: |
+        | Family | Examples | GF way |
+        |---|---|---|
+        | Roux sauces | béchamel, cheese sauce, velouté, főzelék | rice flour or a GF mix, 1 : 1 with the butter |
+        | Emulsions | mayonnaise, hollandaise, béarnaise, vinaigrette | naturally GF — check the mustard |
+        | Pan and reduced sauces | pan gravy, red wine sauce, beurre blanc | reduce; thicken with cornstarch; GF stock |
+        | Hungarian | paprikás sauce, kapormártás, vadas, meggymártás, tormamártás | rice flour or cornstarch; GF habarás |
+
+        > Hidden gluten in sauces: **stock cubes** and gravy granules (wheat), **soy sauce** (wheat — use tamari), **Worcestershire** (malt vinegar in some), ready **roux** and sauce mixes. Read every label.
+    hu:
+      title: A klasszikus mártások, GM
+      body: |
+        | Család | Példák | GM módon |
+        |---|---|---|
+        | Rántásos mártások | besamel, sajtmártás, velouté, főzelék | rizsliszt vagy GM keverék, a vajjal 1 : 1 |
+        | Emulziók | majonéz, hollandi, béarnaise, vinaigrette | természettől GM — a mustárt ellenőrizd |
+        | Serpenyős és beforralt | pecsenyelé, vörösboros mártás, beurre blanc | beforralás; kukoricakeményítő; GM alaplé |
+        | Magyaros | paprikás mártás, kapormártás, vadas, meggymártás, tormamártás | rizsliszt vagy keményítő; GM habarás |
+
+        > Rejtett glutén a mártásokban: **leveskocka** és szaftpor (búza), **szójaszósz** (búza — tamari helyette), **Worcestershire** (némelyikben malátaecet), kész **rántás** és mártáspor. Minden címkét olvass el.
+  - id: bechamel
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F9C8", label: {en: Melt, hu: Olvasztás}, note: {en: "30 g butter over medium-low heat.", hu: "30 g vaj közepes-alacsony lángon."}}
+        - {icon: "om:1F35A", label: {en: Roux, hu: Rántás}, time: {en: "1–2 min", hu: "1–2 perc"}, note: {en: "30 g rice flour (about 3 tbsp), stirred 1–2 minutes — no colour.", hu: "30 g rizsliszt (kb. 3 ek), 1–2 percig keverve — ne színeződjön."}}
+        - {icon: "om:1F95B", label: {en: Milk, hu: Tej}, note: {en: "500 ml warm milk, a little at a time, whisking out every lump before the next splash.", hu: "500 ml meleg tej, apránként, minden adag előtt csomómentesre habarva."}}
+        - {icon: "om:23F2", label: {en: Simmer, hu: Főzés}, time: {en: "5 min", hu: "5 perc"}, note: {en: "Simmer 5 minutes, stirring, until it coats a spoon and the flour taste is gone.", hu: "5 percig gyöngyöztesd, kevergetve, amíg bevonja a kanalat, és eltűnik a lisztíz."}}
+        - {icon: "om:1F9C2", label: {en: Season, hu: Ízesítés}, note: {en: "Salt, white pepper, a grating of nutmeg. Cheese sauce: off the heat, a handful of grated cheese.", hu: "Só, fehér bors, egy kis reszelt szerecsendió. Sajtmártás: a tűzről levéve egy marék reszelt sajt."}}
+    en:
+      title: GF béchamel
+      body: |
+        1. **Melt** 30 g butter over medium-low heat.
+        2. **Roux:** stir in 30 g rice flour (about 3 tablespoons) for 1–2 minutes — it should not colour.
+        3. **Milk:** 500 ml warm milk, a little at a time, whisking out every lump before the next splash.
+        4. **Simmer** 5 minutes, stirring, until it coats a spoon and the raw-flour taste is gone.
+        5. **Season:** salt, white pepper, a grating of nutmeg.
+
+        - **Thicker** (croquettes, stuffed vegetables): 40 g butter and 40 g rice flour. **Thinner** (lasagne): 20 g + 20 g.
+        - **Cheese sauce (Mornay):** off the heat, a handful of grated cheese.
+        - A skin forms as it cools: press baking paper onto the surface.
+    hu:
+      title: GM besamel
+      body: |
+        1. **Olvassz** meg 30 g vajat közepes-alacsony lángon.
+        2. **Rántás:** keverj bele 30 g rizslisztet (kb. 3 evőkanál), 1–2 percig — ne színeződjön.
+        3. **Tej:** 500 ml meleg tej, apránként, minden adag előtt csomómentesre habarva.
+        4. **Főzés:** 5 percig gyöngyöztesd, kevergetve, amíg bevonja a kanalat, és eltűnik a nyers lisztíz.
+        5. **Ízesítés:** só, fehér bors, egy kis reszelt szerecsendió.
+
+        - **Sűrűbb** (krokett, töltött zöldség): 40 g vaj és 40 g rizsliszt. **Hígabb** (lasagne): 20 g + 20 g.
+        - **Sajtmártás (Mornay):** a tűzről levéve egy marék reszelt sajt.
+        - Hűlés közben bőrösödik: nyomj sütőpapírt a felszínére.
+  - id: emulsions
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F95A", label: {en: Yolk base, hu: Sárgája-alap}, note: {en: "1 egg yolk at room temperature, 1 tsp mustard (GF), a pinch of salt.", hu: "1 szobahőmérsékletű tojássárgája, 1 tk mustár (GM), egy csipet só."}}
+        - {icon: "om:1F4A7", label: {en: Drop by drop, hu: Cseppenként}, note: {en: "Whisk in oil a few drops at a time until it thickens and turns pale — the emulsion has caught.", hu: "Cseppenként keverd bele az olajat, amíg besűrűsödik és kifehéredik — megvan az emulzió."}}
+        - {icon: "om:1FAD7", label: {en: Thin stream, hu: Vékony sugár}, note: {en: "Then a thin stream: about 200–250 ml oil per yolk.", hu: "Aztán vékony sugárban: sárgájánként kb. 200–250 ml olaj."}}
+        - {icon: "om:1F34B", label: {en: Finish, hu: Befejezés}, note: {en: "A squeeze of lemon or a splash of vinegar, salt to taste.", hu: "Egy kevés citromlé vagy ecet, só ízlés szerint."}}
+        - {icon: "om:26A0", label: {en: "Split? Rescue", hu: "Kivált? Mentés"}, note: {en: "A fresh yolk in a clean bowl, then whisk the split mayonnaise into it, drop by drop.", hu: "Egy új sárgája tiszta tálban, és cseppenként keverd bele a kivált majonézt."}}
+    en:
+      title: Mayonnaise and hollandaise
+      body: |
+        **Mayonnaise:**
+        1. 1 egg yolk at room temperature, 1 tsp mustard (GF), a pinch of salt.
+        2. Whisk in oil **drop by drop** until it thickens and turns pale.
+        3. Then a **thin stream** — about 200–250 ml oil per yolk.
+        4. Finish with lemon or vinegar and salt.
+        5. **Split?** A fresh yolk in a clean bowl; whisk the split mayonnaise into it, drop by drop.
+
+        **Hollandaise:** whisk 2 yolks with 2 tbsp water in a bowl over barely simmering water until thick and foamy
+        (about 65 °C — too hot and it scrambles). Off the heat, whisk in 150 g warm melted butter in a thin stream;
+        lemon and salt. **Split?** An ice cube or a spoon of cold water, whisked hard — or start again on a new yolk.
+
+        > Raw-yolk sauces for pregnant, elderly or very young guests: use pasteurised eggs.
+    hu:
+      title: Majonéz és hollandi mártás
+      body: |
+        **Majonéz:**
+        1. 1 szobahőmérsékletű tojássárgája, 1 tk mustár (GM), egy csipet só.
+        2. **Cseppenként** keverd bele az olajat, amíg besűrűsödik és kifehéredik.
+        3. Aztán **vékony sugárban** — sárgájánként kb. 200–250 ml olaj.
+        4. Citromlével vagy ecettel és sóval fejezd be.
+        5. **Kivált?** Egy új sárgája tiszta tálban; cseppenként keverd bele a kivált majonézt.
+
+        **Hollandi mártás:** 2 sárgáját 2 ek vízzel habverővel verj sűrű habosra, alig gyöngyöző víz fölötti tálban
+        (kb. 65 °C — forróbban rántotta lesz). A tűzről levéve vékony sugárban keverj bele 150 g meleg, olvasztott vajat;
+        citrom, só. **Kivált?** Egy jégkocka vagy egy kanál hideg víz, erősen elkeverve — vagy kezdd újra egy új sárgájával.
+
+        > Nyers sárgájás mártás várandós, idős vagy egészen kicsi vendégnek: pasztőrözött tojásból.
+  - id: fixes
+    chart:
+      type: picker
+      items:
+        - {label: {en: Too thin, hu: Túl híg}, icon: "om:1F4A7", note: {en: "Simmer it uncovered to reduce, or whisk in a cornstarch slurry (1 tsp in a spoon of cold water) and simmer a minute.", hu: "Forrald be fedő nélkül, vagy keverj bele hideg vízzel elkevert keményítőt (1 tk egy kanál vízben), és forrald egy percig."}}
+        - {label: {en: Too thick, hu: Túl sűrű}, icon: "om:1F963", note: {en: "Whisk in warm stock, milk or water, a splash at a time.", hu: "Apránként habarj bele meleg alaplét, tejet vagy vizet."}}
+        - {label: {en: Lumpy, hu: Csomós}, icon: "om:1F9F1", note: {en: "Whisk hard; still lumpy — pass it through a sieve or give it a blitz with a stick blender.", hu: "Erősen habard ki; ha még mindig csomós, szűrd át, vagy turmixold át egy botmixerrel."}}
+        - {label: {en: Curdled cream sauce, hu: Kicsapódott tejfölös}, icon: "om:1F95B", note: {en: "Off the heat, a splash of cold cream, whisk. Next time temper the sour cream first (habarás) and don't boil it hard.", hu: "Vedd le a tűzről, egy kevés hideg tejszín, habard el. Legközelebb előbb hígítsd a tejfölt (habarás), és ne forrald erősen."}}
+        - {label: {en: Split emulsion, hu: Kivált emulzió}, icon: "om:1F95A", note: {en: "Mayonnaise: a fresh yolk, whisk the split one into it. Hollandaise: an ice cube, whisked hard.", hu: "Majonéz: új sárgája, abba keverd bele a kiváltat. Hollandi: egy jégkocka, erősen elkeverve."}}
+        - {label: {en: Too salty, hu: Túl sós}, icon: "om:1F9C2", note: {en: "Dilute with unsalted liquid or more of the other ingredients. A potato does NOT draw salt out — that is a myth.", hu: "Hígítsd sótlan folyadékkal vagy a többi hozzávalóból. A krumpli NEM szívja ki a sót — ez tévhit."}}
+        - {label: {en: "Too sour, too sharp", hu: "Túl savanyú, éles"}, icon: "om:1F34B", note: {en: "A pinch of sugar, a knob of butter or a spoon of cream rounds it off.", hu: "Egy csipet cukor, egy darabka vaj vagy egy kanál tejszín lekerekíti."}}
+        - {label: {en: Greasy, hu: Zsíros}, icon: "om:1FAD2", note: {en: "Skim the fat with a spoon or a paper towel; or chill it and lift the fat off.", hu: "Szedd le a zsírt kanállal vagy papírtörlővel; vagy hűtsd le, és emeld le a megdermedt zsírt."}}
+        - {label: {en: Tastes of raw flour, hu: Nyers lisztíz}, icon: "om:23F2", note: {en: "It needs more time: simmer 5 more minutes, stirring.", hu: "Több idő kell neki: még 5 percig gyöngyöztesd, kevergetve."}}
+    en:
+      title: Fixing a sauce
+      body: |
+        | Problem | Fix |
+        |---|---|
+        | Too thin | reduce uncovered, or a cornstarch slurry and a minute's simmer |
+        | Too thick | warm stock, milk or water, a splash at a time |
+        | Lumpy | whisk hard; sieve it or blitz it |
+        | Curdled cream sauce | off the heat, a splash of cold cream, whisk; next time temper first and don't boil |
+        | Split emulsion | mayonnaise: a fresh yolk; hollandaise: an ice cube, whisked hard |
+        | Too salty | dilute with unsalted liquid — a potato does **not** draw salt out |
+        | Too sour or sharp | a pinch of sugar, a knob of butter, a spoon of cream |
+        | Greasy | skim it, or chill it and lift the fat off |
+        | Tastes of raw flour | simmer 5 more minutes |
+
+        More on seasoning — salt, acid, fat, heat — in *Spice blends → Fixing a dish*.
+    hu:
+      title: Mártásmentés
+      body: |
+        | Gond | Megoldás |
+        |---|---|
+        | Túl híg | forrald be fedő nélkül, vagy keményítős hideg keverék és egy perc forralás |
+        | Túl sűrű | meleg alaplé, tej vagy víz, apránként |
+        | Csomós | erősen habard; szűrd át vagy turmixold |
+        | Kicsapódott tejfölös | le a tűzről, egy kevés hideg tejszín, habard el; legközelebb előbb hígítsd, és ne forrald |
+        | Kivált emulzió | majonéz: új sárgája; hollandi: egy jégkocka, erősen elkeverve |
+        | Túl sós | hígítsd sótlan folyadékkal — a krumpli **nem** szívja ki a sót |
+        | Túl savanyú, éles | egy csipet cukor, egy darabka vaj, egy kanál tejszín |
+        | Zsíros | szedd le, vagy hűtsd le, és emeld le a zsírt |
+        | Nyers lisztíz | még 5 percig gyöngyöztesd |
+
+        Az ízesítésről — só, sav, zsír, csípősség — többet a *Fűszerkeverékek → Mentsük meg!* oldalon.

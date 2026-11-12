@@ -1,0 +1,45 @@
+# The fresh herbs with each other: the fines herbes get along; the strong perfumes fight.
+parsley:
+  dill: [1, same-family]
+  chives: [2, classic-partners]
+  basil: [1, gentle-company]
+  coriander-leaf: [0, same-job]
+  mint: [2, classic-partners]
+  tarragon: [2, classic-partners]
+  thyme-fresh: [1, gentle-company]
+  rosemary-fresh: [1, gentle-company]
+dill:
+  chives: [2, classic-partners]
+  basil: [-1, perfume-clash]
+  coriander-leaf: [-1, two-leads]
+  mint: [1, gentle-company]
+  tarragon: [-1, perfume-clash]
+  thyme-fresh: [-1, odd-couple]
+  rosemary-fresh: [-2, perfume-clash]
+chives:
+  basil: [1, gentle-company]
+  coriander-leaf: [1, gentle-company]
+  mint: [1, gentle-company]
+  tarragon: [2, classic-partners]
+  thyme-fresh: [1, gentle-company]
+  rosemary-fresh: [0, harmless]
+basil:
+  coriander-leaf: [1, cuisine-mates]
+  mint: [2, classic-partners]
+  tarragon: [-1, two-leads]
+  thyme-fresh: [0, harmless]
+  rosemary-fresh: [0, harmless]
+coriander-leaf:
+  mint: [3, classic-partners, "Coriander and mint: the pair in a green chutney.", "Korianderzöld és menta: a zöld chutney párosa."]
+  tarragon: [-2, perfume-clash]
+  thyme-fresh: [-1, kitchens-apart]
+  rosemary-fresh: [-2, perfume-clash]
+mint:
+  tarragon: [-2, perfume-clash]
+  thyme-fresh: [-1, two-leads]
+  rosemary-fresh: [-1, two-leads]
+tarragon:
+  thyme-fresh: [1, gentle-company]
+  rosemary-fresh: [-1, two-leads]
+thyme-fresh:
+  rosemary-fresh: [3, same-family, "Thyme and rosemary: the woody pair of Provence.", "Kakukkfű és rozmaring: Provence fás illatú párosa."]

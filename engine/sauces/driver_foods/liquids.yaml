@@ -1,0 +1,10 @@
+coconut-milk: {pork: [1, rich-for], chicken: [3, classic-with], beef: [2, rich-for], lamb: [1, rich-for], game: [0, nothing-to-say],
+  fish: [3, classic-with], seafood: [3, classic-with], eggs: [0, nothing-to-say], potatoes: [1, rich-for], roots: [2, rich-for],
+  cabbage: [0, nothing-to-say], tomato: [1, small-touch], mushrooms: [1, small-touch], pulses: [3, classic-with], rice: [3, classic-with],
+  pasta: [1, small-touch], cheese: [0, wrong-kind], bread: [0, nothing-to-say], fruit: [2, sweet-for], chocolate: [1, small-touch],
+  coffee-tea: [1, small-touch], soups: [3, classic-with], pickles: [0, wrong-kind], grilled-veg: [1, small-touch], baking: [2, sweet-for]}
+passata: {pork: [2, savoury-for], chicken: [2, savoury-for], beef: [3, classic-with], lamb: [1, small-touch], game: [1, small-touch],
+  fish: [2, savoury-for], seafood: [2, savoury-for], eggs: [3, classic-with], potatoes: [1, small-touch], roots: [1, small-touch],
+  cabbage: [2, savoury-for], tomato: [2, savoury-for], mushrooms: [2, savoury-for], pulses: [2, savoury-for], rice: [1, small-touch],
+  pasta: [3, classic-with], cheese: [2, savoury-for], bread: [1, small-touch], fruit: [0, wrong-kind], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [3, classic-with], pickles: [0, nothing-to-say], grilled-veg: [2, savoury-for], baking: [0, wrong-kind]}

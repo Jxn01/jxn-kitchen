@@ -1,0 +1,45 @@
+# Onions, garlic, ginger, horseradish, capers, anchovies and the two powders with each other.
+onion:
+  shallot: [0, same-job]
+  garlic: [3, aromatic-base, "Onion and garlic: the base under almost every savoury sauce.", "Hagyma és fokhagyma: szinte minden sós mártás alapja."]
+  ginger: [2, aromatic-base]
+  horseradish: [0, harmless]
+  capers: [1, gentle-company]
+  anchovies: [1, gentle-company]
+  garlic-powder: [1, aromatic-base]
+  onion-powder: [0, same-job]
+shallot:
+  garlic: [2, aromatic-base]
+  ginger: [1, aromatic-base]
+  horseradish: [0, harmless]
+  capers: [2, classic-partners]
+  anchovies: [1, gentle-company]
+  garlic-powder: [0, harmless]
+  onion-powder: [0, same-job]
+garlic:
+  ginger: [3, aromatic-base, "Garlic and ginger: the paste that starts a curry or a stir-fry.", "Fokhagyma és gyömbér: a curry és a wokos étel kezdő pasztája."]
+  horseradish: [-1, two-leads]
+  capers: [2, classic-partners]
+  anchovies: [3, classic-partners, "Garlic and anchovies: bagna cauda, melted into oil.", "Fokhagyma és szardella: a bagna cauda, olajba olvasztva."]
+  garlic-powder: [0, same-job]
+  onion-powder: [1, aromatic-base]
+ginger:
+  horseradish: [-1, heat-on-heat]
+  capers: [-2, kitchens-apart]
+  anchovies: [-1, kitchens-apart]
+  garlic-powder: [1, aromatic-base]
+  onion-powder: [0, harmless]
+horseradish:
+  capers: [1, gentle-company]
+  anchovies: [0, strangers]
+  garlic-powder: [0, harmless]
+  onion-powder: [0, harmless]
+capers:
+  anchovies: [3, classic-partners, "Capers and anchovies: briny and deep, the salsa verde pair.", "Kapribogyó és szardella: sós és mély, a salsa verde párosa."]
+  garlic-powder: [0, harmless]
+  onion-powder: [0, harmless]
+anchovies:
+  garlic-powder: [1, gentle-company]
+  onion-powder: [0, harmless]
+garlic-powder:
+  onion-powder: [2, classic-partners]

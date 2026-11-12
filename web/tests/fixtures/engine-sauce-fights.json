@@ -1,0 +1,952 @@
+{
+ "score": 38,
+ "base": 50,
+ "word": "fighting",
+ "word_text": {
+  "en": "Fighting",
+  "hu": "Veszekszik"
+ },
+ "mascot": "worried",
+ "findings": [
+  {
+   "id": "family:peanut",
+   "kind": "good",
+   "weight": 6,
+   "about": [],
+   "en": "Recognised: Peanut sauce. Peanut butter loosened with tamari and lime, a little sweet and a little heat.",
+   "hu": "Felismerve: Mogyorószósz. Mogyoróvaj tamarival és limével lazítva, egy kevés édessel és csípőssel."
+  },
+  {
+   "id": "pair:balsamic+fish-sauce",
+   "kind": "warn",
+   "weight": -6,
+   "about": [
+    "balsamic",
+    "fish-sauce"
+   ],
+   "en": "Balsamic vinegar and fish sauce come from kitchens that don't meet.",
+   "hu": "Balzsamecet és halszósz olyan konyhákból jön, amelyek nem találkoznak."
+  },
+  {
+   "id": "pair:fish-sauce+sour-cream",
+   "kind": "warn",
+   "weight": -6,
+   "about": [
+    "fish-sauce",
+    "sour-cream"
+   ],
+   "en": "Fish sauce and sour cream: an odd couple that rarely works.",
+   "hu": "Halszósz és tejföl: furcsa pár, ritkán működik."
+  },
+  {
+   "id": "pairs-rest",
+   "kind": "warn",
+   "weight": -4,
+   "about": [],
+   "en": "Among 9 more pairs, the ones that grate outweigh the rest.",
+   "hu": "További 9 páros között többet ér, ami dörzsölődik."
+  },
+  {
+   "id": "body-right",
+   "kind": "good",
+   "weight": 3,
+   "about": [],
+   "en": "The right body for Peanut sauce: it coats a spoon.",
+   "hu": "Pont jó sűrűség ehhez: Mogyorószósz — bevonja a kanalat."
+  },
+  {
+   "id": "pair:balsamic+coconut-milk",
+   "kind": "warn",
+   "weight": -3,
+   "about": [
+    "balsamic",
+    "coconut-milk"
+   ],
+   "en": "Balsamic vinegar and coconut milk come from kitchens that don't meet.",
+   "hu": "Balzsamecet és kókusztej olyan konyhákból jön, amelyek nem találkoznak."
+  },
+  {
+   "id": "pair:coconut-milk+sour-cream",
+   "kind": "warn",
+   "weight": -3,
+   "about": [
+    "coconut-milk",
+    "sour-cream"
+   ],
+   "en": "Coconut milk and sour cream come from kitchens that don't meet.",
+   "hu": "Kókusztej és tejföl olyan konyhákból jön, amelyek nem találkoznak."
+  },
+  {
+   "id": "pair:coconut-milk+fish-sauce",
+   "kind": "good",
+   "weight": 3,
+   "about": [
+    "coconut-milk",
+    "fish-sauce"
+   ],
+   "en": "Coconut milk and fish sauce: the savoury depth of a Thai curry.",
+   "hu": "Kókusztej és halszósz: a thai curry sós mélysége."
+  },
+  {
+   "id": "pair:peanut-butter+sour-cream",
+   "kind": "warn",
+   "weight": -2,
+   "about": [
+    "peanut-butter",
+    "sour-cream"
+   ],
+   "en": "Peanut butter and sour cream come from kitchens that don't meet.",
+   "hu": "Mogyoróvaj és tejföl olyan konyhákból jön, amelyek nem találkoznak."
+  },
+  {
+   "id": "unknown-line",
+   "kind": "notice",
+   "weight": 0,
+   "about": [],
+   "en": "“egy marék titok” is not matched: it counts for nothing here, and the sauce can't read gluten-free until it is.",
+   "hu": "„egy marék titok” nincs felismerve: itt semmibe sem számít bele, és addig a mártás nem lehet gluténmentes."
+  },
+  {
+   "id": "heat:mild",
+   "kind": "info",
+   "weight": 0,
+   "about": [],
+   "en": "Heat: mild — fine for anyone.",
+   "hu": "Csípősség: enyhe — bárkinek jó."
+  }
+ ],
+ "taste": {
+  "salt": 1.0,
+  "acid": 0.453,
+  "fat": 0.264,
+  "sweet": 0.16,
+  "heat": 0.0,
+  "umami": 0.59,
+  "aromatic": 0.962
+ },
+ "salt_pct": 2.2,
+ "body": {
+  "index": 1.81,
+  "class": "coats",
+  "by": "base",
+  "reduce": false,
+  "en": "Coats a spoon",
+  "hu": "Bevonja a kanalat"
+ },
+ "stability": [],
+ "keeps": {
+  "class": "fresh-dairy",
+  "days": 3,
+  "en": "Keeps 3 days in the fridge — fresh dairy.",
+  "hu": "3 napig eláll a hűtőben — friss tejtermék."
+ },
+ "family": {
+  "id": "peanut",
+  "en": "Peanut sauce",
+  "hu": "Mogyorószósz",
+  "path": [
+   "asian",
+   "peanut"
+  ],
+  "user": false,
+  "kind": "condiment",
+  "chip": "asian"
+ },
+ "vessel": "bowl",
+ "fill": "#DED3C7",
+ "heat": {
+  "value": 0.0,
+  "word": "mild",
+  "en": "Mild",
+  "hu": "Enyhe"
+ },
+ "web": {
+  "nodes": [
+   {
+    "id": "sour-cream",
+    "share": 0.1923
+   },
+   {
+    "id": "fish-sauce",
+    "share": 0.2942
+   },
+   {
+    "id": "balsamic",
+    "share": 0.2076
+   },
+   {
+    "id": "tarragon",
+    "share": 0.0335
+   },
+   {
+    "id": "peanut-butter",
+    "share": 0.1227
+   },
+   {
+    "id": "coconut-milk",
+    "share": 0.1496
+   }
+  ],
+  "edges": [
+   {
+    "a": "fish-sauce",
+    "b": "sour-cream",
+    "score": -2,
+    "reason": "odd-couple",
+    "en": "Fish sauce and sour cream: an odd couple that rarely works.",
+    "hu": "Halszósz és tejföl: furcsa pár, ritkán működik."
+   },
+   {
+    "a": "balsamic",
+    "b": "sour-cream",
+    "score": -1,
+    "reason": "odd-couple",
+    "en": "Balsamic vinegar and sour cream: an odd couple that rarely works.",
+    "hu": "Balzsamecet és tejföl: furcsa pár, ritkán működik."
+   },
+   {
+    "a": "sour-cream",
+    "b": "tarragon",
+    "score": 1,
+    "reason": "gentle-company",
+    "en": "Sour cream and tarragon get along without fuss.",
+    "hu": "Tejföl és tárkony gond nélkül megvan egymással."
+   },
+   {
+    "a": "peanut-butter",
+    "b": "sour-cream",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Peanut butter and sour cream come from kitchens that don't meet.",
+    "hu": "Mogyoróvaj és tejföl olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "coconut-milk",
+    "b": "sour-cream",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Coconut milk and sour cream come from kitchens that don't meet.",
+    "hu": "Kókusztej és tejföl olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "balsamic",
+    "b": "fish-sauce",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Balsamic vinegar and fish sauce come from kitchens that don't meet.",
+    "hu": "Balzsamecet és halszósz olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "fish-sauce",
+    "b": "tarragon",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Fish sauce and tarragon come from kitchens that don't meet.",
+    "hu": "Halszósz és tárkony olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "fish-sauce",
+    "b": "peanut-butter",
+    "score": 1,
+    "reason": "cuisine-mates",
+    "en": "Fish sauce and peanut butter cook together in the same kitchens.",
+    "hu": "Halszósz és mogyoróvaj ugyanazokban a konyhákban főz együtt."
+   },
+   {
+    "a": "coconut-milk",
+    "b": "fish-sauce",
+    "score": 3,
+    "reason": "classic-partners",
+    "en": "Coconut milk and fish sauce: the savoury depth of a Thai curry.",
+    "hu": "Kókusztej és halszósz: a thai curry sós mélysége."
+   },
+   {
+    "a": "balsamic",
+    "b": "tarragon",
+    "score": -1,
+    "reason": "two-leads",
+    "en": "Balsamic vinegar and tarragon both want the front.",
+    "hu": "Balzsamecet és tárkony is előre akar állni."
+   },
+   {
+    "a": "balsamic",
+    "b": "peanut-butter",
+    "score": -1,
+    "reason": "odd-couple",
+    "en": "Balsamic vinegar and peanut butter: an odd couple that rarely works.",
+    "hu": "Balzsamecet és mogyoróvaj: furcsa pár, ritkán működik."
+   },
+   {
+    "a": "balsamic",
+    "b": "coconut-milk",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Balsamic vinegar and coconut milk come from kitchens that don't meet.",
+    "hu": "Balzsamecet és kókusztej olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "peanut-butter",
+    "b": "tarragon",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Peanut butter and tarragon come from kitchens that don't meet.",
+    "hu": "Mogyoróvaj és tárkony olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "coconut-milk",
+    "b": "tarragon",
+    "score": -2,
+    "reason": "kitchens-apart",
+    "en": "Coconut milk and tarragon come from kitchens that don't meet.",
+    "hu": "Kókusztej és tárkony olyan konyhákból jön, amelyek nem találkoznak."
+   },
+   {
+    "a": "coconut-milk",
+    "b": "peanut-butter",
+    "score": 3,
+    "reason": "classic-partners",
+    "en": "Peanut butter and coconut milk: satay sauce.",
+    "hu": "Mogyoróvaj és kókusztej: a saté szósz."
+   }
+  ]
+ },
+ "foods": [
+  {
+   "id": "chicken",
+   "score": 0.833,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives chicken and duck savoury depth.",
+     "hu": "Csirke, kacsa — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — tejföl: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar glazes chicken and duck.",
+     "hu": "Csirke, kacsa — balzsamecet: fényes mázat ad."
+    }
+   ]
+  },
+  {
+   "id": "soups",
+   "score": 0.711,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 3,
+     "en": "Fish sauce is a classic with soups and stews.",
+     "hu": "Leves, ragu — halszósz: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with soups and stews.",
+     "hu": "Leves, ragu — tejföl: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with soups and stews.",
+     "hu": "Leves, ragu — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "tarragon",
+     "score": 3,
+     "en": "Tarragon is a classic with soups and stews.",
+     "hu": "Leves, ragu — tárkony: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "beef",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives beef savoury depth.",
+     "hu": "Marha — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar glazes beef.",
+     "hu": "Marha — balzsamecet: fényes mázat ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes beef rich and round.",
+     "hu": "Marha — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 2,
+     "en": "Coconut milk makes beef rich and round.",
+     "hu": "Marha — kókusztej: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "pork",
+   "score": 0.606,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives pork savoury depth.",
+     "hu": "Sertés — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar glazes pork.",
+     "hu": "Sertés — balzsamecet: fényes mázat ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes pork rich and round.",
+     "hu": "Sertés — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes pork rich and round.",
+     "hu": "Sertés — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "seafood",
+   "score": 0.571,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 3,
+     "en": "Fish sauce is a classic with seafood.",
+     "hu": "Tenger gyümölcsei — halszósz: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with seafood.",
+     "hu": "Tenger gyümölcsei — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "tarragon",
+     "score": 2,
+     "en": "Tarragon gives seafood a green, fresh note.",
+     "hu": "Tenger gyümölcsei — tárkony: zöld, friss hangot ad."
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "score": 0.557,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar glazes root vegetables.",
+     "hu": "Gyökérzöldség — balzsamecet: fényes mázat ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes root vegetables rich and round.",
+     "hu": "Gyökérzöldség — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 2,
+     "en": "Coconut milk makes root vegetables rich and round.",
+     "hu": "Gyökérzöldség — kókusztej: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes root vegetables rich and round.",
+     "hu": "Gyökérzöldség — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "fruit",
+   "score": 0.551,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 3,
+     "en": "Balsamic vinegar is a classic with fruit.",
+     "hu": "Gyümölcs — balzsamecet: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 2,
+     "en": "Coconut milk suits the sweetness of fruit.",
+     "hu": "Gyümölcs — kókusztej: illik az édességéhez."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter suits the sweetness of fruit.",
+     "hu": "Gyümölcs — mogyoróvaj: illik az édességéhez."
+    }
+   ]
+  },
+  {
+   "id": "cabbage",
+   "score": 0.54,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives cabbage and greens savoury depth.",
+     "hu": "Káposzta, levélzöld — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with cabbage and greens.",
+     "hu": "Káposzta, levélzöld — tejföl: klasszikus társ."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes cabbage and greens rich and round.",
+     "hu": "Káposzta, levélzöld — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "score": 0.526,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 3,
+     "en": "Fish sauce is a classic with rice and grains.",
+     "hu": "Rizs, gabona — halszósz: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with rice and grains.",
+     "hu": "Rizs, gabona — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes rice and grains rich and round.",
+     "hu": "Rizs, gabona — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "pasta",
+   "score": 0.525,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives GF pasta savoury depth.",
+     "hu": "GM tészta — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes GF pasta rich and round.",
+     "hu": "GM tészta — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes GF pasta rich and round.",
+     "hu": "GM tészta — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "grilled-veg",
+   "score": 0.513,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 3,
+     "en": "Balsamic vinegar is a classic with grilled vegetables.",
+     "hu": "Grillezett zöldség — balzsamecet: klasszikus társ."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter makes grilled vegetables rich and round.",
+     "hu": "Grillezett zöldség — mogyoróvaj: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "mushrooms",
+   "score": 0.501,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with mushrooms.",
+     "hu": "Gomba — tejföl: klasszikus társ."
+    },
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar gives mushrooms savoury depth.",
+     "hu": "Gomba — balzsamecet: sós-ízes mélységet ad."
+    },
+    {
+     "item": "tarragon",
+     "score": 2,
+     "en": "Tarragon gives mushrooms a green, fresh note.",
+     "hu": "Gomba — tárkony: zöld, friss hangot ad."
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "score": 0.496,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives fish savoury depth.",
+     "hu": "Hal — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with fish.",
+     "hu": "Hal — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes fish rich and round.",
+     "hu": "Hal — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "tarragon",
+     "score": 2,
+     "en": "Tarragon gives fish a green, fresh note.",
+     "hu": "Hal — tárkony: zöld, friss hangot ad."
+    }
+   ]
+  },
+  {
+   "id": "tomato",
+   "score": 0.472,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 3,
+     "en": "Balsamic vinegar is a classic with tomatoes.",
+     "hu": "Paradicsom — balzsamecet: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "baking",
+   "score": 0.42,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes cakes and baking rich and round.",
+     "hu": "Sütemény — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 3,
+     "en": "Peanut butter is a classic with cakes and baking.",
+     "hu": "Sütemény — mogyoróvaj: klasszikus társ."
+    },
+    {
+     "item": "coconut-milk",
+     "score": 2,
+     "en": "Coconut milk suits the sweetness of cakes and baking.",
+     "hu": "Sütemény — kókusztej: illik az édességéhez."
+    }
+   ]
+  },
+  {
+   "id": "pulses",
+   "score": 0.388,
+   "vouchers": [
+    {
+     "item": "coconut-milk",
+     "score": 3,
+     "en": "Coconut milk is a classic with beans and lentils.",
+     "hu": "Bab, lencse — kókusztej: klasszikus társ."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes beans and lentils rich and round.",
+     "hu": "Bab, lencse — tejföl: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "potatoes",
+   "score": 0.363,
+   "vouchers": [
+    {
+     "item": "sour-cream",
+     "score": 3,
+     "en": "Sour cream is a classic with potatoes.",
+     "hu": "Krumpli — tejföl: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "eggs",
+   "score": 0.358,
+   "vouchers": [
+    {
+     "item": "fish-sauce",
+     "score": 2,
+     "en": "Fish sauce gives eggs savoury depth.",
+     "hu": "Tojás — halszósz: sós-ízes mélységet ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes eggs rich and round.",
+     "hu": "Tojás — tejföl: gazdaggá, kereksé teszi."
+    },
+    {
+     "item": "tarragon",
+     "score": 3,
+     "en": "Tarragon is a classic with eggs.",
+     "hu": "Tojás — tárkony: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "bread",
+   "score": 0.284,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar dresses GF bread.",
+     "hu": "GM kenyér — balzsamecet: jól öltözteti."
+    },
+    {
+     "item": "peanut-butter",
+     "score": 2,
+     "en": "Peanut butter suits the sweetness of GF bread.",
+     "hu": "GM kenyér — mogyoróvaj: illik az édességéhez."
+    }
+   ]
+  },
+  {
+   "id": "cheese",
+   "score": 0.272,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 3,
+     "en": "Balsamic vinegar is a classic with cheese and yoghurt.",
+     "hu": "Sajt, joghurt — balzsamecet: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "game",
+   "score": 0.267,
+   "vouchers": [
+    {
+     "item": "balsamic",
+     "score": 2,
+     "en": "Balsamic vinegar glazes game.",
+     "hu": "Vad — balzsamecet: fényes mázat ad."
+    },
+    {
+     "item": "sour-cream",
+     "score": 2,
+     "en": "Sour cream makes game rich and round.",
+     "hu": "Vad — tejföl: gazdaggá, kereksé teszi."
+    }
+   ]
+  },
+  {
+   "id": "chocolate",
+   "score": 0.242,
+   "vouchers": [
+    {
+     "item": "peanut-butter",
+     "score": 3,
+     "en": "Peanut butter is a classic with chocolate.",
+     "hu": "Csokoládé — mogyoróvaj: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "lamb",
+   "score": 0.194,
+   "vouchers": []
+  },
+  {
+   "id": "pickles",
+   "score": 0.173,
+   "vouchers": []
+  },
+  {
+   "id": "coffee-tea",
+   "score": 0.05,
+   "vouchers": []
+  }
+ ],
+ "fixes": [],
+ "suggest": [
+  "fresh-chili",
+  "garlic",
+  "basil",
+  "sugar",
+  "shallot"
+ ],
+ "spices": {
+  "jars": {},
+  "radar": null
+ },
+ "lines": [
+  {
+   "pos": 0,
+   "kind": "item",
+   "id": "sour-cream",
+   "g": 200.0,
+   "share": 0.4491
+  },
+  {
+   "pos": 1,
+   "kind": "item",
+   "id": "fish-sauce",
+   "g": 36.0,
+   "share": 0.0808
+  },
+  {
+   "pos": 2,
+   "kind": "item",
+   "id": "balsamic",
+   "g": 49.5,
+   "share": 0.1111
+  },
+  {
+   "pos": 3,
+   "kind": "item",
+   "id": "tarragon",
+   "g": 11.2,
+   "share": 0.0253
+  },
+  {
+   "pos": 4,
+   "kind": "item",
+   "id": "peanut-butter",
+   "g": 48.6,
+   "share": 0.1091
+  },
+  {
+   "pos": 5,
+   "kind": "item",
+   "id": "coconut-milk",
+   "g": 100.0,
+   "share": 0.2245
+  },
+  {
+   "pos": 6,
+   "kind": "raw",
+   "id": null,
+   "g": 0.0,
+   "share": 0.0
+  }
+ ],
+ "total_g": 445.4,
+ "gluten": {
+  "lines": [
+   {
+    "pos": 0,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 1,
+    "status": "check",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 2,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 3,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 4,
+    "status": "check",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 5,
+    "status": "ok",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   },
+   {
+    "pos": 6,
+    "status": "unknown",
+    "swap_id": null,
+    "tip_en": null,
+    "tip_hu": null,
+    "about": []
+   }
+  ],
+  "verdict": {
+   "state": "unknown",
+   "swaps": 0,
+   "check": 2,
+   "unknown": 1
+  }
+ }
+}

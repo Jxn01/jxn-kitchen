@@ -1,0 +1,56 @@
+category: baking
+groups:
+  - id: flours
+    en: Flours (GF)
+    hu: Liszt (gluténmentes)
+    icon: "c:flour-bag"
+    items:
+      - {id: gf-flour-mix, en: GF flour mix, hu: GM lisztkeverék, staple: true, aliases: [gluten-free flour, gf flour, gluténmentes liszt, gluténmentes lisztkeverék, mix it, schär mix, mix c, mix b]}
+      - {id: gf-bread-mix, en: GF bread flour mix, hu: GM kenyérliszt-keverék, aliases: [gf bread mix, gluténmentes kenyérliszt, gluten-free bread flour]}
+      - {id: rice-flour, en: Rice flour, hu: Rizsliszt, aliases: [white rice flour, glutinous rice flour, rizslisztet]}
+      - {id: corn-flour-fine, en: Fine corn flour, hu: Kukoricaliszt, aliases: [corn flour (fine), masa harina, kukoricalisztet]}
+      - {id: cornstarch, en: Cornstarch, hu: Kukoricakeményítő, aliases: [corn starch, cornflour, maizena, étkezési keményítő, keményítő, kukoricakeményítőt]}
+      - {id: potato-starch, en: Potato starch, hu: Burgonyakeményítő, aliases: [potato flour, solamyl, burgonyakeményítőt]}
+      - {id: tapioca-starch, en: Tapioca starch, hu: Tápiókakeményítő, aliases: [tapioca flour, tápióka]}
+      - {id: arrowroot, en: Arrowroot, hu: Arrowroot, aliases: [arrowroot starch, arrowroot powder, nyílgyökér, nyílgyökérliszt, maranta]}
+      - {id: almond-flour, en: Almond flour, hu: Mandulaliszt, aliases: [ground almonds, almond meal, darált mandula]}
+      - {id: coconut-flour, en: Coconut flour, hu: Kókuszliszt}
+      - {id: buckwheat-flour, en: Buckwheat flour, hu: Hajdinaliszt}
+      - {id: chickpea-flour, en: Chickpea flour, hu: Csicseriborsóliszt, aliases: [gram flour, besan]}
+      - {id: wheat-flour, en: Wheat flour, hu: Búzaliszt, gluten: contains, swap: gf-flour-mix, pantry: false, aliases: [flour, liszt, all-purpose flour, plain flour, self-raising flour, finomliszt, rétesliszt, sima liszt, bl55, lisztet, finomlisztet, búzalisztet, egy ek liszt, kevés liszt], tip_en: "GF flour mix drinks a bit more liquid. For a roux (rántás) or habarás, cornflour or rice flour thickens just as well — mix it with cold liquid first.", tip_hu: "A GM lisztkeverék több folyadékot iszik. Rántáshoz, habaráshoz a kukoricakeményítő vagy a rizsliszt ugyanúgy sűrít — előbb hideg folyadékkal keverd ki."}
+      - {id: wheat-bread-flour, en: Bread flour (wheat), hu: Kenyérliszt, gluten: contains, swap: gf-bread-mix, pantry: false, aliases: [bread flour, strong flour, bl80, kenyérlisztet, tönkölyliszt, spelt flour, durumliszt, durum flour, wholemeal flour, teljes kiőrlésű liszt], tip_en: "Use a GF bread mix: GF doughs are wetter, need a longer rest, and a spoon of psyllium makes them hold together.", tip_hu: "GM kenyérliszt-keveréket használj: a GM tészta lágyabb, tovább kell pihennie, és egy kanál útifűmaghéj összetartja."}
+      - {id: rye-flour, en: Rye flour, hu: Rozsliszt, gluten: contains, swap: gf-bread-mix, pantry: false, aliases: [rozslisztet], tip_en: "Use a GF bread mix; add a little buckwheat flour for the rye-like taste.", tip_hu: "GM kenyérliszt-keveréket használj; egy kis hajdinaliszt adja a rozsos ízt."}
+  - id: leavening
+    en: Raising & setting
+    hu: Kelesztés, dermesztés
+    icon: "c:baking-powder"
+    items:
+      - {id: baking-powder, en: Baking powder, hu: Sütőpor, gluten: label, aliases: [sütőport, egy csomag sütőpor]}
+      - {id: baking-soda, en: Baking soda, hu: Szódabikarbóna, aliases: [bicarbonate of soda, bicarb, szódabikarbónát]}
+      - {id: dry-yeast, en: Dry yeast, hu: Szárított élesztő, aliases: [instant yeast, active dry yeast, porélesztő, instant élesztő]}
+      - {id: fresh-yeast, en: Fresh yeast, hu: Friss élesztő, aliases: [yeast, élesztő, élesztőt]}
+      - {id: xanthan, en: Xanthan gum, hu: Xantángumi, aliases: [xanthan]}
+      - {id: psyllium, en: Psyllium husk, hu: Útifűmaghéj, aliases: [psyllium, útifű maghéj, útifűmaghéjat]}
+      - {id: gelatin, en: Gelatine, hu: Zselatin, aliases: [gelatin, gelatin leaves, zselatinlap, porzselatin]}
+      - {id: agar, en: Agar-agar, hu: Agar-agar, aliases: [agar]}
+      - {id: pudding-powder, en: Custard powder, hu: Pudingpor, gluten: label, aliases: [pudding powder, vaníliás pudingpor, custard mix]}
+      - {id: cocoa-powder, en: Cocoa powder, hu: Kakaópor, aliases: [cocoa, kakaó, holland kakaó, cukrozatlan kakaópor]}
+      - {id: food-coloring, en: Food colouring, hu: Ételfesték, aliases: [food coloring, gel colour]}
+  - id: sugars
+    en: Sugar & sweeteners
+    hu: Cukor, édesítő
+    icon: "c:sugar-bag"
+    items:
+      - {id: sugar, en: Sugar, hu: Kristálycukor, staple: true, aliases: [white sugar, granulated sugar, cukor, kristálycukrot, cukrot]}
+      - {id: powdered-sugar, en: Icing sugar, hu: Porcukor, aliases: [powdered sugar, confectioners sugar, porcukrot]}
+      - {id: brown-sugar, en: Brown sugar, hu: Barna cukor, aliases: [cane sugar, demerara, muscovado, nádcukor, barnacukor]}
+      - {id: sweetener, en: Sweetener, hu: Édesítőszer, aliases: [erythritol, xylitol, eritrit, xilit, nyírfacukor, stevia]}
+  - id: baking-extras
+    en: Baking extras
+    hu: Sütés kellékei
+    icon: "om:1F9C1"
+    items:
+      - {id: chocolate-chips, en: Chocolate chips, hu: Csokoládé csepp, gluten: label, aliases: [choc chips, csokicsepp]}
+      - {id: sprinkles, en: Sprinkles, hu: Cukorszórás, gluten: label, aliases: [cukorgyöngy, színes cukorszórás]}
+      - {id: marzipan, en: Marzipan, hu: Marcipán, gluten: label}
+      - {id: candied-peel, en: Candied peel, hu: Kandírozott narancshéj, aliases: [candied fruit, kandírozott gyümölcs, aranka]}

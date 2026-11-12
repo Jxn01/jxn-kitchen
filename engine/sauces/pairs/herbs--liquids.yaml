@@ -1,0 +1,27 @@
+parsley:
+  coconut-milk: [-1, kitchens-apart]
+  passata: [2, classic-partners]
+dill:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [-1, odd-couple]
+chives:
+  coconut-milk: [0, harmless]
+  passata: [0, harmless]
+basil:
+  coconut-milk: [2, cuisine-mates]
+  passata: [3, classic-partners, "Passata and basil: the simplest sauce for pasta.", "Passata és bazsalikom: a legegyszerűbb tésztaszósz."]
+coriander-leaf:
+  coconut-milk: [3, classic-partners, "Coconut milk and coriander: the green finish of a curry.", "Kókusztej és korianderzöld: a curry zöld befejezése."]
+  passata: [1, gentle-company]
+mint:
+  coconut-milk: [1, gentle-company]
+  passata: [0, harmless]
+tarragon:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [0, harmless]
+thyme-fresh:
+  coconut-milk: [-1, kitchens-apart]
+  passata: [2, classic-partners]
+rosemary-fresh:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [2, classic-partners]

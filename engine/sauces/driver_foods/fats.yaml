@@ -1,0 +1,6 @@
+# Every driver × every food (the spice engine's 25), 0-3 with a reason (engine/sauces/reasons.yaml, kind food).
+sesame-oil: {pork: [2, savoury-for], chicken: [2, savoury-for], beef: [2, savoury-for], lamb: [0, nothing-to-say], game: [0, nothing-to-say],
+  fish: [2, dresses], seafood: [2, dresses], eggs: [1, small-touch], potatoes: [0, nothing-to-say], roots: [1, small-touch],
+  cabbage: [2, dresses], tomato: [0, wrong-kind], mushrooms: [2, savoury-for], pulses: [1, small-touch], rice: [3, classic-with],
+  pasta: [2, dresses], cheese: [0, wrong-kind], bread: [0, nothing-to-say], fruit: [0, wrong-kind], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [2, small-touch], pickles: [1, small-touch], grilled-veg: [2, dresses], baking: [0, wrong-kind]}

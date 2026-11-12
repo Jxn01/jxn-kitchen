@@ -1,0 +1,55 @@
+# Mediterranean herbs × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+oregano:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [3, classic-partners, "Oregano and garlic: gyros, pizza and every Greek grill.", "Oregánó és fokhagyma: gyros, pizza és minden görög grill."]
+  onion-powder: [2, cuisine-mates]
+thyme:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+rosemary:
+  salt: [3, classic-partners, "Rosemary and salt: rosemary salt — the whole secret of crisp roast potatoes and focaccia.", "Rozmaring és só: a rozmaringos só a ropogós sült krumpli és a focaccia egész titka."]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]
+sage-dried:
+  salt: [2, seasoning-basic]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [3, classic-partners, "Sage and onion: the stuffing of every roast bird.", "Zsálya és hagyma: minden sült szárnyas töltelékének párosa."]
+marjoram:
+  salt: [1, seasoning-basic]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, hungarian-heart]
+  onion-powder: [2, hungarian-heart]
+savory:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, strangers]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [1, gentle-company]
+bay-leaf:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, cuisine-mates]
+basil-dried:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [3, classic-partners, "Basil and garlic: the two loudest voices of pesto.", "Bazsalikom és fokhagyma: a pesto két leghangosabb hangja."]
+  onion-powder: [1, gentle-company]
+lavender:
+  salt: [1, seasoning-basic]
+  sugar: [2, bridge]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [-2, perfume-and-earth]
+  onion-powder: [-2, perfume-and-earth]

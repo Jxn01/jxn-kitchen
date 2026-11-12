@@ -1,0 +1,73 @@
+# Paprika, chilli & pepper × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+sweet-paprika:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [3, classic-partners, "Paprika and garlic: the red rub of every Hungarian roast and Balkan grill.", "Pirospaprika és fokhagyma: minden magyar sült és balkáni grill piros pácja."]
+  onion-powder: [2, cuisine-mates]
+smoked-paprika:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [3, classic-partners, "Smoked paprika and brown sugar: the sweet smoke of barbecue.", "Füstölt paprika és barna cukor: a barbecue édes füstje."]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+hot-paprika:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, hungarian-heart]
+  onion-powder: [1, gentle-company]
+chili-powder:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+chili-flakes:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [3, classic-partners, "Chilli and garlic: aglio, olio e peperoncino — and half the world's hot sauces.", "Chili és fokhagyma: aglio, olio e peperoncino — és a világ csípős szószainak fele."]
+  onion-powder: [1, gentle-company]
+cayenne:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+chipotle:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+black-pepper:
+  salt: [3, classic-partners, "Salt and black pepper: the oldest pair on any table.", "Só és fekete bors: a legrégebbi páros minden asztalon."]
+  sugar: [1, gentle-company]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+white-pepper:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [1, gentle-company]
+sichuan-pepper:
+  salt: [3, classic-partners, "Sichuan pepper and salt: jiao yan, the tingling salt for anything fried.", "Szecsuáni bors és só: a „jiao yan”, a bizsergető só minden sülthöz."]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [0, harmless]
+pink-pepper:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+  garlic-powder: [-1, drowned]
+  onion-powder: [-1, drowned]
+mustard-powder:
+  salt: [1, seasoning-basic]
+  sugar: [2, sweet-savoury]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]

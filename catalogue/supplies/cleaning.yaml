@@ -1,0 +1,42 @@
+category: cleaning
+groups:
+  - id: dishes
+    en: Dishes
+    hu: Mosogatás
+    icon: "om:1FAE7"
+    items:
+      - {id: dish-soap, en: Dish soap, hu: Mosogatószer, icon: "c:spray-bottle", aliases: [washing-up liquid, dishwashing liquid, jar, jar mosogatószer, fairy, mosogatószert]}
+      - {id: dishwasher-tabs, en: Dishwasher tablets, hu: Mosogatógép-tabletta, icon: "c:dishwasher-tab", aliases: [dishwasher tabs, finish, mosogatótabletta, mosogatógép tabletta]}
+      - {id: dishwasher-salt, en: Dishwasher salt, hu: Regeneráló só, aliases: [regenerating salt, mosogatógép só]}
+      - {id: rinse-aid, en: Rinse aid, hu: Öblítőszer (gépi), aliases: [dishwasher rinse aid, gépi öblítő]}
+      - {id: dishwasher-cleaner, en: Dishwasher cleaner, hu: Mosogatógép-tisztító, aliases: [machine cleaner, gépápoló]}
+  - id: laundry
+    en: Laundry
+    hu: Mosás
+    icon: "om:1F9FA"
+    items:
+      - {id: laundry-pods, en: Laundry pods, hu: Mosókapszula, icon: "c:laundry-pod", aliases: [washing machine tablets, washing capsules, laundry capsules, mosógép kapszula, kapszula, mosótabletta]}
+      - {id: detergent, en: Laundry detergent, hu: Mosószer, aliases: [washing powder, laundry liquid, mosópor, folyékony mosószer, mosógél]}
+      - {id: fabric-softener, en: Fabric softener, hu: Öblítő, aliases: [softener, conditioner (laundry), lenor, silan]}
+      - {id: stain-remover, en: Stain remover, hu: Folttisztító, aliases: [vanish, folteltávolító]}
+      - {id: washing-machine-cleaner, en: Washing machine cleaner, hu: Mosógép-tisztító, aliases: [calgon, vízlágyító, mosógépápoló]}
+  - id: surfaces
+    en: Surfaces & bathroom
+    hu: Takarítás
+    icon: "om:1F9F9"
+    items:
+      - {id: all-purpose-cleaner, en: All-purpose cleaner, hu: Általános tisztítószer, icon: "c:spray-bottle", aliases: [multi-purpose cleaner, surface spray, ajax, általános tisztító]}
+      - {id: degreaser, en: Degreaser, hu: Zsíroldó, icon: "c:spray-bottle", aliases: [kitchen degreaser, oven cleaner, sütőtisztító]}
+      - {id: bleach, en: Bleach, hu: Hypo, aliases: [domestos, disinfectant, fertőtlenítő, klór, hipó]}
+      - {id: descaler, en: Descaler, hu: Vízkőoldó, icon: "c:spray-bottle", aliases: [limescale remover, vízkőoldót, cillit bang]}
+      - {id: glass-cleaner, en: Glass cleaner, hu: Ablaktisztító, icon: "c:spray-bottle", aliases: [window cleaner, clin, üvegtisztító]}
+      - {id: floor-cleaner, en: Floor cleaner, hu: Padlótisztító, icon: "om:1FAA3", aliases: [mop solution, felmosószer]}
+      - {id: toilet-cleaner, en: Toilet cleaner, hu: WC-tisztító, aliases: [toilet gel, wc gél, wc tisztító]}
+      - {id: scouring-cream, en: Scouring cream, hu: Súrolókrém, aliases: [cif, cream cleaner, súrolószer]}
+  - id: personal
+    en: Soap & hands
+    hu: Szappan
+    icon: "om:1F9FC"
+    items:
+      - {id: hand-soap, en: Hand soap, hu: Folyékony szappan, icon: "om:1F9FC", aliases: [soap, liquid soap, szappan, kézmosó]}
+      - {id: hand-cream, en: Hand cream, hu: Kézkrém, icon: "om:1F9F4", aliases: [lotion]}

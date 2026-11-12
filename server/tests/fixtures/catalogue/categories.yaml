@@ -1,0 +1,4 @@
+categories:
+  - {id: meat, en: Meat, hu: Hús, icon: "om:1F969", color: tomato, kind: food}
+  - {id: grains, en: "Pasta, rice & grains", hu: "Tészta, rizs, gabona", icon: "om:1F35D", color: mustard, kind: food}
+  - {id: kitchen-supplies, en: Kitchen supplies, hu: Konyhai kellékek, icon: "om:1F9FB", color: slate, kind: supply}

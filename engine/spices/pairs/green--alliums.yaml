@@ -1,0 +1,49 @@
+# Green & Hungarian herbs × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+dill-dried:
+  salt: [2, seasoning-basic]
+  sugar: [2, sweet-savoury]
+  brown-sugar: [0, harmless]
+  garlic-powder: [3, classic-partners, "Dill and garlic: kovászos uborka and tzatziki.", "Kapor és fokhagyma: kovászos uborka és tzatziki."]
+  onion-powder: [1, gentle-company]
+parsley-dried:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [3, classic-partners, "Parsley and garlic: persillade — the green butter for snails, potatoes and steak.", "Petrezselyem és fokhagyma: a persillade — a csiga, a krumpli és a steak zöld vaja."]
+  onion-powder: [2, cuisine-mates]
+lovage-dried:
+  salt: [2, seasoning-basic]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [-1, dessert-or-roast]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, hungarian-heart]
+tarragon-dried:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, cuisine-mates]
+mint-dried:
+  salt: [1, seasoning-basic]
+  sugar: [2, sweet-savoury]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [0, harmless]
+chives-dried:
+  salt: [1, seasoning-basic]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [-1, dessert-or-roast]
+  garlic-powder: [2, same-family]
+  onion-powder: [1, same-family]
+coriander-leaf-dried:
+  salt: [1, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]
+wild-garlic-dried:
+  salt: [3, classic-partners, "Wild garlic and salt: medvehagymás só — spring in a jar.", "Medvehagyma és só: medvehagymás só — a tavasz egy üvegben."]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [-1, dessert-or-roast]
+  garlic-powder: [-1, doubled-note]
+  onion-powder: [1, gentle-company]

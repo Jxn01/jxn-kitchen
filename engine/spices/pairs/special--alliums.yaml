@@ -1,0 +1,55 @@
+# Specials × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+saffron:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+  garlic-powder: [-2, drowned]
+  onion-powder: [-1, drowned]
+sumac:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, cuisine-mates]
+juniper:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [1, gentle-company]
+nigella:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, strangers]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, same-family]
+poppy-seeds:
+  salt: [1, seasoning-basic]
+  sugar: [3, classic-partners, "Poppy seed and sugar: mákos tészta, the sweetest plate of a Hungarian childhood.", "Mák és cukor: mákos tészta, a magyar gyerekkor legédesebb tányérja."]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, cuisine-mates]
+sesame:
+  salt: [3, classic-partners, "Sesame and salt: gomasio — toasted sesame salt for rice and vegetables.", "Szezám és só: gomasio — pirított szezámos só rizshez, zöldséghez."]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+asafoetida:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [-2, doubled-note]
+  onion-powder: [-1, doubled-note]
+orange-peel:
+  salt: [1, seasoning-basic]
+  sugar: [2, classic-partners]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [0, harmless]
+  onion-powder: [0, harmless]
+lemon-peel:
+  salt: [2, seasoning-basic]
+  sugar: [2, classic-partners]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]

@@ -1,0 +1,14 @@
+honey:
+  maple-syrup: [0, same-job]
+  sour-cherry: [1, gentle-company]
+  sugar: [0, same-job]
+  brown-sugar: [0, same-job]
+maple-syrup:
+  sour-cherry: [0, harmless]
+  sugar: [0, same-job]
+  brown-sugar: [1, same-family]
+sour-cherry:
+  sugar: [2, classic-partners]
+  brown-sugar: [1, gentle-company]
+sugar:
+  brown-sugar: [0, same-job]

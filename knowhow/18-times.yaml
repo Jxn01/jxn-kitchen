@@ -1,0 +1,265 @@
+id: times
+order: 2
+icon: "om:23F2"
+color: berry
+en:
+  title: Cooking times
+  sub: "vegetables · roasting · meat and fish · by weight · pulses"
+hu:
+  title: Főzési idők
+  sub: "zöldség · sütőben · hús és hal · súly szerint · hüvelyesek"
+pages:
+  - id: vegetables
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 22
+      items:
+        - {value: 1, to: 2, label: {en: Spinach, hu: Spenót}, fill: "#4F8A3A", note: {en: wilted, hu: fonnyasztva}}
+        - {value: 3, to: 4, label: {en: "Peas (frozen)", hu: "Zöldborsó (fagyasztott)"}, fill: "#8DC26F"}
+        - {value: 4, to: 6, label: {en: Asparagus, hu: Spárga}, fill: "#A6D96A"}
+        - {value: 5, to: 7, label: {en: Green beans, hu: Zöldbab}, fill: "#62C46A"}
+        - {value: 5, to: 7, label: {en: Broccoli florets, hu: Brokkolirózsák}, fill: "#3F8F3A"}
+        - {value: 6, to: 8, label: {en: Cauliflower florets, hu: Karfiolrózsák}, fill: "#F4F1EA"}
+        - {value: 6, to: 8, label: {en: Sliced carrots, hu: Répakarikák}, fill: "#F28C28"}
+        - {value: 6, to: 8, label: {en: Corn on the cob, hu: Főtt kukorica}, fill: "#F2D36B", note: {en: boiled, hu: főzve}}
+        - {value: 8, to: 10, label: {en: Brussels sprouts, hu: Kelbimbó}, fill: "#7FA35A"}
+        - {value: 15, to: 20, label: {en: New potatoes (halved), hu: Újkrumpli (félbe)}, fill: "#E8C77A", note: {en: "from cold, salted water", hu: "hideg, sós vízből indítva"}}
+    en:
+      title: Vegetables
+      body: |
+        **Steamed** until just tender — boiling takes about a minute less. Cut evenly: same size, same time.
+
+        | Vegetable | Minutes |
+        |---|---|
+        | Spinach | 1–2, just wilted |
+        | Peas (frozen) | 3–4 |
+        | Asparagus | 4–6 |
+        | Green beans | 5–7 |
+        | Broccoli florets | 5–7 |
+        | Cauliflower florets | 6–8 |
+        | Sliced carrots | 6–8 |
+        | Corn on the cob | 6–8, boiled |
+        | Brussels sprouts | 8–10 |
+        | New potatoes, halved | 15–20, started in cold salted water |
+
+        - **Green vegetables:** into boiling water, then straight into cold water if they wait — they stay bright.
+        - **Roots and potatoes** start in cold water, so they cook evenly to the middle.
+        - The microwave: a splash of water, a vented lid, 3–5 minutes on high.
+    hu:
+      title: Zöldségek
+      body: |
+        **Gőzölve**, épp puhára — főzve kb. egy perccel rövidebb. Egyformára vágd: azonos méret, azonos idő.
+
+        | Zöldség | Perc |
+        |---|---|
+        | Spenót | 1–2, épp fonnyadásig |
+        | Zöldborsó (fagyasztott) | 3–4 |
+        | Spárga | 4–6 |
+        | Zöldbab | 5–7 |
+        | Brokkolirózsák | 5–7 |
+        | Karfiolrózsák | 6–8 |
+        | Répakarikák | 6–8 |
+        | Főtt kukorica | 6–8, főzve |
+        | Kelbimbó | 8–10 |
+        | Újkrumpli, félbevágva | 15–20, hideg sós vízből indítva |
+
+        - **Zöld zöldség:** forrásban lévő vízbe, és ha várnia kell, rögtön hideg vízbe — élénk zöld marad.
+        - **Gyökerek és krumpli** hideg vízből indulnak, így a közepük is egyenletesen fő meg.
+        - Mikróban: egy kevés víz, szellőzős fedő, 3–5 perc teljes erőn.
+  - id: roasting
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 45
+      marker: {value: 30, label: {en: "Fan oven 200 °C — the air fryer is about a fifth faster", hu: "Légkeveréses sütő 200 °C — a forrólevegős kb. egyötöddel gyorsabb"}}
+      items:
+        - {value: 15, to: 20, label: {en: "Broccoli, courgette", hu: "Brokkoli, cukkini"}, fill: "#62C46A"}
+        - {value: 20, to: 25, label: {en: "Peppers, Brussels sprouts", hu: "Paprika, kelbimbó"}, fill: "#E8442E"}
+        - {value: 25, to: 30, label: {en: "Cauliflower, sweet potato", hu: "Karfiol, édesburgonya"}, fill: "#F28C28"}
+        - {value: 25, to: 35, label: {en: Carrots, hu: Répa}, fill: "#E8892A"}
+        - {value: 30, to: 40, label: {en: "Onion wedges, squash", hu: "Hagymagerezdek, sütőtök"}, fill: "#F2B705"}
+        - {value: 35, to: 45, label: {en: Potato wedges, hu: Krumpligerezdek}, fill: "#E8C77A"}
+    en:
+      title: Roast vegetables
+      body: |
+        In a **fan oven at 200 °C**, tossed in oil and salt, one layer on the tray, turned once halfway.
+
+        | Vegetable | Minutes |
+        |---|---|
+        | Broccoli, courgette | 15–20 |
+        | Peppers, Brussels sprouts | 20–25 |
+        | Cauliflower, sweet potato | 25–30 |
+        | Carrots | 25–35 |
+        | Onion wedges, squash | 30–40 |
+        | Potato wedges | 35–45 |
+
+        - **Crowding steams them:** use two trays rather than one heaped one.
+        - Mixing vegetables? Put the slow ones in first, the quick ones 15–20 minutes later.
+        - The **air fryer** does it about a fifth faster — see *Appliances → Air fryer*.
+    hu:
+      title: Sült zöldségek
+      body: |
+        **Légkeveréses sütőben, 200 °C-on**, olajjal és sóval megforgatva, egy rétegben a tepsin, félidőben egyszer megforgatva.
+
+        | Zöldség | Perc |
+        |---|---|
+        | Brokkoli, cukkini | 15–20 |
+        | Paprika, kelbimbó | 20–25 |
+        | Karfiol, édesburgonya | 25–30 |
+        | Répa | 25–35 |
+        | Hagymagerezdek, sütőtök | 30–40 |
+        | Krumpligerezdek | 35–45 |
+
+        - **Ha zsúfolt, párolódik:** inkább két tepsi, mint egy púpozott.
+        - Vegyes zöldség? Előbb a lassúak mennek be, a gyorsak 15–20 perccel később.
+        - A **forrólevegős sütő** kb. egyötöddel gyorsabb — lásd *Konyhagépek → Forrólevegős sütő — puska*.
+  - id: meat
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 48
+      items:
+        - {value: 6, to: 8, label: {en: "White fish fillet, pan", hu: "Fehér halfilé, serpenyő"}, fill: "#F4F1EA", note: {en: "63 °C", hu: "63 °C"}}
+        - {value: 6, to: 8, label: {en: "Beef steak 2.5 cm, pan", hu: "Marhasteak 2,5 cm, serpenyő"}, fill: "#B5523A", note: {en: "medium-rare · rest 5 min", hu: "angolos-közepes · 5 perc pihentetés"}}
+        - {value: 8, to: 10, label: {en: "Pork chop 2 cm, pan", hu: "Sertésszelet 2 cm, serpenyő"}, fill: "#E8A27A", note: {en: "63 °C · rest", hu: "63 °C · pihentetés"}}
+        - {value: 8, to: 10, label: {en: Browning mince, hu: Darált hús pirítása}, fill: "#C9612E", note: {en: "71 °C", hu: "71 °C"}}
+        - {value: 12, to: 15, label: {en: "Salmon fillet, oven 200 °C", hu: "Lazacfilé, sütő 200 °C"}, fill: "#F4A08A", note: {en: "63 °C", hu: "63 °C"}}
+        - {value: 12, to: 15, label: {en: "GF sausages, pan", hu: "GM kolbász, serpenyő"}, fill: "#B23022"}
+        - {value: 12, to: 16, label: {en: "Chicken breast, pan", hu: "Csirkemell, serpenyő"}, fill: "#E8C77A", note: {en: "74 °C · turn once", hu: "74 °C · egyszer fordítsd"}}
+        - {value: 20, to: 25, label: {en: "Pork tenderloin, oven 200 °C", hu: "Sertésszűz, sütő 200 °C"}, fill: "#D4703A", note: {en: "63 °C · rest 5 min", hu: "63 °C · 5 perc pihentetés"}}
+        - {value: 35, to: 45, label: {en: "Chicken thighs, oven 200 °C", hu: "Csirkecomb, sütő 200 °C"}, fill: "#C9612E", note: {en: "74 °C", hu: "74 °C"}}
+    en:
+      title: Meat and fish
+      body: |
+        Starting points — the **thermometer** decides (see *Temperatures*): poultry 74 °C, mince 71 °C, whole cuts and
+        fish 63 °C.
+
+        | Cut | How | Minutes |
+        |---|---|---|
+        | White fish fillet | pan | 6–8 |
+        | Beef steak, 2.5 cm, medium-rare | pan, hot | 6–8 + rest 5 |
+        | Pork chop, 2 cm | pan | 8–10 + rest |
+        | Mince | browning in a pan | 8–10 |
+        | Salmon fillet | oven, 200 °C | 12–15 |
+        | GF sausages | pan, medium | 12–15 |
+        | Chicken breast | pan, turned once | 12–16 |
+        | Pork tenderloin | oven, 200 °C | 20–25 + rest 5 |
+        | Chicken thighs, bone-in | oven, 200 °C | 35–45 |
+
+        - Take meat out of the fridge 20–30 minutes before — it cooks more evenly.
+        - Pat it dry, salt it, hot pan, don't move it until it releases.
+    hu:
+      title: Hús és hal
+      body: |
+        Kiindulópontok — a **hőmérő** dönt (lásd *Hőfokok*): szárnyas 74 °C, darált hús 71 °C, egész húsok és hal 63 °C.
+
+        | Darab | Hogyan | Perc |
+        |---|---|---|
+        | Fehér halfilé | serpenyő | 6–8 |
+        | Marhasteak, 2,5 cm, angolos-közepes | forró serpenyő | 6–8 + 5 pihentetés |
+        | Sertésszelet, 2 cm | serpenyő | 8–10 + pihentetés |
+        | Darált hús | pirítás serpenyőben | 8–10 |
+        | Lazacfilé | sütő, 200 °C | 12–15 |
+        | GM kolbász | serpenyő, közepes láng | 12–15 |
+        | Csirkemell | serpenyő, egyszer fordítva | 12–16 |
+        | Sertésszűz | sütő, 200 °C | 20–25 + 5 pihentetés |
+        | Csirkecomb, csontos | sütő, 200 °C | 35–45 |
+
+        - Sütés előtt 20–30 perccel vedd ki a húst a hűtőből — egyenletesebben sül.
+        - Itasd le, sózd, forró serpenyő, és ne mozgasd, amíg magától el nem válik.
+  - id: by-weight
+    chart:
+      type: bars
+      unit: {en: min/kg, hu: perc/kg}
+      max: 130
+      items:
+        - {value: 40, label: {en: "Whole chicken, 200 °C", hu: "Egész csirke, 200 °C"}, fill: "#E8C77A", note: {en: "+ 20 min · 74 °C in the thigh", hu: "+ 20 perc · 74 °C a combban"}}
+        - {value: 45, label: {en: "Beef roast, medium, 180 °C", hu: "Marhasült, közepes, 180 °C"}, fill: "#B5523A", note: {en: "+ 20 min · 55–60 °C · rest 15", hu: "+ 20 perc · 55–60 °C · 15 perc pihentetés"}}
+        - {value: 55, label: {en: "Leg of lamb, medium, 180 °C", hu: "Báránycomb, közepes, 180 °C"}, fill: "#C9612E", note: {en: "+ 25 min · 60–63 °C · rest 15", hu: "+ 25 perc · 60–63 °C · 15 perc pihentetés"}}
+        - {value: 55, to: 65, label: {en: "Pork loin, 180 °C", hu: "Sertéskaraj, 180 °C"}, fill: "#E8A27A", note: {en: "63 °C · rest 10", hu: "63 °C · 10 perc pihentetés"}}
+        - {value: 120, label: {en: "Pork shoulder, slow, 150 °C", hu: "Sertéslapocka, lassan, 150 °C"}, fill: "#D4703A", note: {en: "to pull: 90 °C inside", hu: "tépett húshoz: 90 °C belül"}}
+    en:
+      title: Roasting by weight
+      body: |
+        Rough guides for an oven roast — **the probe thermometer is the real test**, in the thickest part, not touching
+        the bone.
+
+        | Roast | Oven | Time | Done at |
+        |---|---|---|---|
+        | Whole chicken | 200 °C | 40 min per kg (20 per 500 g) + 20 min | 74 °C in the thigh |
+        | Beef roast, medium | 180 °C | 45 min per kg + 20 min | 55–60 °C, rest 15 min |
+        | Leg of lamb, medium | 180 °C | 55 min per kg + 25 min | 60–63 °C, rest 15 min |
+        | Pork loin | 180 °C | 55–65 min per kg | 63 °C, rest 10 min |
+        | Pork shoulder, slow | 150 °C | about 2 hours per kg | 90 °C to pull apart |
+
+        - **Rest** every roast under loose foil — the juices settle and the inside rises another 3–5 °C.
+        - Start with the meat at room temperature (30 minutes out of the fridge) and the oven fully heated.
+    hu:
+      title: Sütés súly szerint
+      body: |
+        Hozzávetőleges útmutató sütőben sült húshoz — **a maghőmérő az igazi próba**, a legvastagabb részen, a csonthoz nem
+        érve.
+
+        | Sült | Sütő | Idő | Kész |
+        |---|---|---|---|
+        | Egész csirke | 200 °C | kilónként 40 perc (500 g-onként 20) + 20 perc | 74 °C a combban |
+        | Marhasült, közepes | 180 °C | kilónként 45 perc + 20 perc | 55–60 °C, 15 perc pihentetés |
+        | Báránycomb, közepes | 180 °C | kilónként 55 perc + 25 perc | 60–63 °C, 15 perc pihentetés |
+        | Sertéskaraj | 180 °C | kilónként 55–65 perc | 63 °C, 10 perc pihentetés |
+        | Sertéslapocka, lassan | 150 °C | kilónként kb. 2 óra | 90 °C, hogy széthúzható legyen |
+
+        - **Pihentesd** minden sültet lazán fóliával letakarva — a szaft megnyugszik, a belseje még 3–5 °C-ot emelkedik.
+        - A hús legyen szobahőmérsékletű (30 perccel előbb vedd ki), a sütő teljesen előmelegítve.
+  - id: pulses
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 100
+      items:
+        - {value: 10, to: 15, label: {en: Red lentils, hu: Vörös lencse}, fill: "#E8892A", note: {en: "no soaking", hu: "áztatás nélkül"}}
+        - {value: 25, to: 30, label: {en: "Green, brown lentils", hu: "Zöld, barna lencse"}, fill: "#7E7A3A", note: {en: "no soaking", hu: "áztatás nélkül"}}
+        - {value: 40, to: 60, label: {en: Split yellow peas, hu: Sárgaborsó}, fill: "#F2D36B", note: {en: "főzelék", hu: "főzelék"}}
+        - {value: 60, to: 90, label: {en: "White beans (soaked)", hu: "Fehér bab (áztatva)"}, fill: "#F4F1EA"}
+        - {value: 60, to: 90, label: {en: "Chickpeas (soaked)", hu: "Csicseriborsó (áztatva)"}, fill: "#E6C98A"}
+        - {value: 60, to: 90, label: {en: "Kidney beans (soaked)", hu: "Vörösbab (áztatva)"}, fill: "#8E2F3A", note: {en: "boil hard 10 min first", hu: "előbb 10 percig lobogva"}}
+    en:
+      title: Pulses
+      body: |
+        Simmer gently until creamy inside. Old beans take longer — the times are for this year's crop.
+
+        | Pulse | Soak | Simmer |
+        |---|---|---|
+        | Red lentils | no | 10–15 min |
+        | Green, brown lentils | no | 25–30 min |
+        | Split yellow peas (sárgaborsó) | no (or 1–2 h) | 40–60 min |
+        | White beans | 8–12 h | 60–90 min |
+        | Chickpeas | 8–12 h | 60–90 min |
+        | Kidney beans | 8–12 h | 60–90 min — **boil hard for 10 minutes first** |
+
+        - **Kidney beans** contain a toxin that only a hard boil destroys: 10 minutes at a rolling boil, then simmer.
+          Never cook them in a slow cooker from raw.
+        - Pour off the soaking water and cook in fresh water.
+        - Salt them from the start — it does not keep them hard; acid (tomato, vinegar) does, so add that at the end.
+
+        > Pulses are naturally GF, but **lentils and dried peas can hide stray wheat or barley grains** from the field — spread them on a tray and pick them over, then rinse. Buy GF-labelled where you can.
+    hu:
+      title: Hüvelyesek
+      body: |
+        Lassan főzd, amíg a belseje krémes nem lesz. Az öreg bab tovább fő — az idők az idei termésre vonatkoznak.
+
+        | Hüvelyes | Áztatás | Főzés |
+        |---|---|---|
+        | Vörös lencse | nem kell | 10–15 perc |
+        | Zöld, barna lencse | nem kell | 25–30 perc |
+        | Sárgaborsó | nem (vagy 1–2 óra) | 40–60 perc |
+        | Fehér bab | 8–12 óra | 60–90 perc |
+        | Csicseriborsó | 8–12 óra | 60–90 perc |
+        | Vörösbab | 8–12 óra | 60–90 perc — **előbb 10 percig lobogva forrald** |
+
+        - A **vörösbabban** méreg van, amit csak az erős forralás bont el: 10 perc lobogó forrás, aztán lassú főzés.
+          Nyersen soha ne tedd lassúfőzőbe.
+        - Az áztatóvizet öntsd le, friss vízben főzd.
+        - Sózd már az elején — nem marad tőle kemény; a sav (paradicsom, ecet) viszont igen, azt a végén add hozzá.
+
+        > A hüvelyesek természettől GM-ek, de **a lencsében és a szárazborsóban a földről búza- vagy árpaszem maradhat** — terítsd ki egy tálcára, válogasd át, aztán mosd meg. Ahol lehet, GM jelölésűt vegyél.

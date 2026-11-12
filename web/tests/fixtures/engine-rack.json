@@ -1,0 +1,2210 @@
+{
+ "shelves": [
+  {
+   "id": "warm",
+   "en": "Warm & sweet",
+   "hu": "Meleg, édes",
+   "jars": [
+    {
+     "id": "cinnamon",
+     "label": {
+      "en": "cinnamon",
+      "hu": "fahéj"
+     },
+     "name": {
+      "en": "Cinnamon",
+      "hu": "Fahéj"
+     },
+     "fill": "#B5651D",
+     "tag": {
+      "en": "sweet · warm · woody",
+      "hu": "édes · meleg · fás"
+     },
+     "heat": 0,
+     "role": "base",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.6,
+     "note": {
+      "en": "Goes with apple, plum, pumpkin, rice pudding, mulled wine, lamb. Ceylon is mild and sweet; cassia (the common one) is stronger.",
+      "hu": "Illik hozzá: alma, szilva, tök, tejberizs, forralt bor, bárány. A ceyloni enyhe és édes; a kasszia (a gyakoribb) erősebb."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "cloves",
+     "label": {
+      "en": "cloves",
+      "hu": "szegfűszeg"
+     },
+     "name": {
+      "en": "Cloves",
+      "hu": "Szegfűszeg"
+     },
+     "fill": "#5A3A2A",
+     "tag": {
+      "en": "intense · numbing · sweet",
+      "hu": "intenzív · zsibbasztó · édes"
+     },
+     "heat": 1,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.1,
+     "note": {
+      "en": "Goes with mulled wine, ham, gingerbread, pickles, red cabbage. Very strong: 2–3 whole cloves flavour a whole pot. Fish them out.",
+      "hu": "Illik hozzá: forralt bor, sonka, mézeskalács, savanyúság, párolt lilakáposzta. Nagyon erős: 2–3 szem egy egész fazékhoz elég. Szedd ki a végén."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "nutmeg",
+     "label": {
+      "en": "nutmeg",
+      "hu": "szerecsendió"
+     },
+     "name": {
+      "en": "Nutmeg",
+      "hu": "Szerecsendió"
+     },
+     "fill": "#A0704A",
+     "tag": {
+      "en": "warm · nutty · sweet",
+      "hu": "meleg · diós · édes"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.2,
+     "note": {
+      "en": "Goes with béchamel, mashed potato, spinach, főzelék, cakes. Grate it fresh, a little at a time — ground nutmeg fades fast.",
+      "hu": "Illik hozzá: besamel, krumplipüré, spenót, főzelék, sütemények. Frissen reszeld, keveset — az őrölt hamar elveszti az ízét."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "allspice",
+     "label": {
+      "en": "allspice",
+      "hu": "szegfűbors"
+     },
+     "name": {
+      "en": "Allspice",
+      "hu": "Szegfűbors"
+     },
+     "fill": "#7A4E35",
+     "tag": {
+      "en": "cinnamon + clove + pepper in one",
+      "hu": "fahéj + szegfűszeg + bors egyben"
+     },
+     "heat": 1,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.9,
+     "note": {
+      "en": "Goes with pickles, marinades, gingerbread, stews, jerk chicken. Whole berries in brines and stews; ground in baking.",
+      "hu": "Illik hozzá: savanyúság, pácok, mézeskalács, raguk, jerk csirke. Egészben pácléhez és ragukhoz, őrölve sütéshez."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "cardamom",
+     "label": {
+      "en": "cardamom",
+      "hu": "kardamom"
+     },
+     "name": {
+      "en": "Cardamom",
+      "hu": "Kardamom"
+     },
+     "fill": "#9BAF6E",
+     "tag": {
+      "en": "citrusy · eucalyptus · floral",
+      "hu": "citrusos · eukaliptuszos · virágos"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with coffee, rice, curries, sweet buns, chai. Crack the green pods and use the black seeds. One pod in the coffee grounds is a classic.",
+      "hu": "Illik hozzá: kávé, rizs, curryk, kalácsok, chai. Törd fel a zöld tokot, a fekete magok kellenek. Egy szem a kávéőrleménybe: klasszikus."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "star-anise",
+     "label": {
+      "en": "star anise",
+      "hu": "csillagánizs"
+     },
+     "name": {
+      "en": "Star anise",
+      "hu": "Csillagánizs"
+     },
+     "fill": "#6B3E2E",
+     "tag": {
+      "en": "liquorice · sweet",
+      "hu": "édesgyökér · édes"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with beef stews, plums, mulled wine, pho, five-spice. One star per pot — take it out before serving.",
+      "hu": "Illik hozzá: marharaguk, szilva, forralt bor, pho, ötfűszer. Fazekanként egy csillag — tálalás előtt vedd ki."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "vanilla-pod",
+     "label": {
+      "en": "vanilla",
+      "hu": "vanília"
+     },
+     "name": {
+      "en": "Vanilla pod",
+      "hu": "Vaníliarúd"
+     },
+     "fill": "#3A2A20",
+     "tag": {
+      "en": "sweet · creamy · floral",
+      "hu": "édes · krémes · virágos"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with custard, cakes, rice pudding, fruit, coffee. Scrape the pod; keep the empty pod in a jar of sugar. Vanillin sugar is the cheap stand-in.",
+      "hu": "Illik hozzá: puding, sütemények, tejberizs, gyümölcs, kávé. Kapard ki a rudat, az üreset tedd egy üveg cukorba. A vaníliás cukor az olcsó pótlék."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "ground-ginger",
+     "label": {
+      "en": "ginger",
+      "hu": "gyömbér"
+     },
+     "name": {
+      "en": "Ground ginger",
+      "hu": "Őrölt gyömbér"
+     },
+     "fill": "#E3B76A",
+     "tag": {
+      "en": "warm · sharp · lemony",
+      "hu": "meleg · csípős · citromos"
+     },
+     "heat": 1,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.8,
+     "note": {
+      "en": "Goes with gingerbread, curries, pumpkin, carrots, stir-fries. Warmer and less zingy than fresh: ¼ tsp ground is about 1 tbsp fresh.",
+      "hu": "Illik hozzá: mézeskalács, curryk, tök, répa, wokos ételek. Melegebb, kevésbé friss, mint a nyers: ¼ tk őrölt kb. 1 ek reszelt friss."
+     },
+     "page": "spices/warm"
+    },
+    {
+     "id": "anise-seed",
+     "label": {
+      "en": "anise",
+      "hu": "ánizs"
+     },
+     "name": {
+      "en": "Anise seed",
+      "hu": "Ánizs"
+     },
+     "fill": "#9B8A63",
+     "tag": {
+      "en": "liquorice · sweet · herbal",
+      "hu": "ánizsos · édes · füves"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.1,
+     "note": null,
+     "page": null
+    }
+   ]
+  },
+  {
+   "id": "earthy",
+   "en": "Earthy & seeds",
+   "hu": "Földes, magvas",
+   "jars": [
+    {
+     "id": "cumin",
+     "label": {
+      "en": "cumin",
+      "hu": "római kömény"
+     },
+     "name": {
+      "en": "Cumin",
+      "hu": "Római kömény"
+     },
+     "fill": "#A8743E",
+     "tag": {
+      "en": "earthy · warm · smoky",
+      "hu": "földes · meleg · füstös"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with chilli, curries, beans, lamb, roast carrots, hummus. Not the same as kömény (caraway) — Hungarian recipes mean caraway when they say kömény.",
+      "hu": "Illik hozzá: chili, curryk, bab, bárány, sült répa, humusz. Nem azonos a köménnyel — a magyar recept „kömény” alatt a köményt érti, nem a római köményt."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "caraway",
+     "label": {
+      "en": "caraway",
+      "hu": "kömény"
+     },
+     "name": {
+      "en": "Caraway",
+      "hu": "Kömény"
+     },
+     "fill": "#8A6A3B",
+     "tag": {
+      "en": "anise-like · earthy",
+      "hu": "ánizsos · földes"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.1,
+     "note": {
+      "en": "Goes with pörkölt, cabbage, potatoes, körözött, breads. Crush it for körözött and pörkölt; whole in cabbage and roast potatoes.",
+      "hu": "Illik hozzá: pörkölt, káposzta, krumpli, körözött, kenyerek. Körözöttbe, pörköltbe törve; káposztába, sült krumpliba egészben."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "coriander-seed",
+     "label": {
+      "en": "coriander",
+      "hu": "koriander"
+     },
+     "name": {
+      "en": "Coriander seeds",
+      "hu": "Koriandermag"
+     },
+     "fill": "#C9A86A",
+     "tag": {
+      "en": "citrusy · floral",
+      "hu": "citrusos · virágos"
+     },
+     "heat": 0,
+     "role": "base",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.8,
+     "note": {
+      "en": "Goes with curries, pickles, sausages, roast vegetables, gyros. Toast the whole seeds and crush them — the flavour doubles.",
+      "hu": "Illik hozzá: curryk, savanyúság, kolbász, sült zöldség, gyros. Pirítsd meg egészben, aztán törd meg — duplájára nő az íze."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "fennel-seed",
+     "label": {
+      "en": "fennel seed",
+      "hu": "édesköménymag"
+     },
+     "name": {
+      "en": "Fennel seeds",
+      "hu": "Édesköménymag"
+     },
+     "fill": "#A8B26A",
+     "tag": {
+      "en": "sweet · anise",
+      "hu": "édes · ánizsos"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with pork, sausages, fish, tomato sauce, breads. Lightly toasted fennel seed is the taste of Italian sausage.",
+      "hu": "Illik hozzá: sertés, kolbász, hal, paradicsomszósz, kenyerek. A pirított édesköménymag az olasz kolbász íze."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "turmeric",
+     "label": {
+      "en": "turmeric",
+      "hu": "kurkuma"
+     },
+     "name": {
+      "en": "Turmeric",
+      "hu": "Kurkuma"
+     },
+     "fill": "#F2B705",
+     "tag": {
+      "en": "earthy · bitter · golden",
+      "hu": "földes · kesernyés · aranysárga"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "bloom",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 3.0,
+     "note": {
+      "en": "Goes with curries, rice, lentils, eggs, golden milk. Mostly colour — a little goes far. It stains boards and fingers. Black pepper helps you absorb it.",
+      "hu": "Illik hozzá: curryk, rizs, lencse, tojás, aranytej. Főleg szín — kevés is elég. Megfogja a deszkát és az ujjat. A fekete bors segíti a felszívódását."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "fenugreek",
+     "label": {
+      "en": "fenugreek",
+      "hu": "görögszéna"
+     },
+     "name": {
+      "en": "Fenugreek",
+      "hu": "Görögszéna"
+     },
+     "fill": "#C99A4A",
+     "tag": {
+      "en": "bitter · maple-like",
+      "hu": "kesernyés · juharszirupos"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 3.7,
+     "note": {
+      "en": "Goes with curries, dal, spice rubs, pickles. Bitter raw: toast the seeds lightly. The dried leaves (kasuri methi) finish curries.",
+      "hu": "Illik hozzá: curryk, dal, fűszerdörzsölők, savanyúság. Nyersen keserű: pirítsd meg enyhén. A szárított levele (kasuri methi) a curry végére."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "mustard-seed",
+     "label": {
+      "en": "mustard seed",
+      "hu": "mustármag"
+     },
+     "name": {
+      "en": "Mustard seeds",
+      "hu": "Mustármag"
+     },
+     "fill": "#E5B53A",
+     "tag": {
+      "en": "hot when crushed · nutty when fried",
+      "hu": "törve csípős · sütve diós"
+     },
+     "heat": 1,
+     "role": "body",
+     "timing": "bloom",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 3.3,
+     "note": {
+      "en": "Goes with pickles (savanyúság), curries, dressings, cabbage. Fry in hot oil until they pop for a nutty taste; crush them raw for heat.",
+      "hu": "Illik hozzá: savanyúság, curryk, öntetek, káposzta. Forró olajban pattogtasd — diós lesz; nyersen törve csíp."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "celery-seed",
+     "label": {
+      "en": "celery seed",
+      "hu": "zellermag"
+     },
+     "name": {
+      "en": "Celery seed",
+      "hu": "Zellermag"
+     },
+     "fill": "#8C8A5A",
+     "tag": {
+      "en": "concentrated celery · bitter",
+      "hu": "tömény zeller · kesernyés"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with soups, coleslaw, pickles, potato salad, tomato juice. Strong — a pinch is enough. Dried lovage gives a similar taste.",
+      "hu": "Illik hozzá: levesek, káposztasaláta, savanyúság, krumplisaláta, paradicsomlé. Erős — egy csipet elég. A szárított lestyán hasonló ízű."
+     },
+     "page": "spices/earthy"
+    },
+    {
+     "id": "dill-seed",
+     "label": {
+      "en": "dill seed",
+      "hu": "kapormag"
+     },
+     "name": {
+      "en": "Dill seed",
+      "hu": "Kapormag"
+     },
+     "fill": "#8E8259",
+     "tag": {
+      "en": "dill · caraway-like · warm",
+      "hu": "kapros · köményes · meleg"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.1,
+     "note": null,
+     "page": null
+    }
+   ]
+  },
+  {
+   "id": "hot",
+   "en": "Paprika, chilli & pepper",
+   "hu": "Paprika, chili, bors",
+   "jars": [
+    {
+     "id": "sweet-paprika",
+     "label": {
+      "en": "paprika",
+      "hu": "pirospaprika"
+     },
+     "name": {
+      "en": "Sweet paprika",
+      "hu": "Édes pirospaprika"
+     },
+     "fill": "#C8281E",
+     "tag": {
+      "en": "sweet · fruity · mellow",
+      "hu": "édes · gyümölcsös · lágy"
+     },
+     "heat": 0,
+     "role": "base",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.3,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "smoked-paprika",
+     "label": {
+      "en": "smoked paprika",
+      "hu": "füstölt paprika"
+     },
+     "name": {
+      "en": "Smoked paprika",
+      "hu": "Füstölt paprika"
+     },
+     "fill": "#9E3426",
+     "tag": {
+      "en": "smoky · sweet",
+      "hu": "füstös · édes"
+     },
+     "heat": 0,
+     "role": "base",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.3,
+     "note": {
+      "en": "Goes with lecsó, beans, roasts, BBQ. Off the heat like all paprika — it burns in seconds.",
+      "hu": "Illik hozzá: lecsó, bab, sültek, BBQ. Mint minden paprika, a tűzről levéve — másodpercek alatt megég."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "hot-paprika",
+     "label": {
+      "en": "hot paprika",
+      "hu": "csípős paprika"
+     },
+     "name": {
+      "en": "Hot paprika",
+      "hu": "Csípős pirospaprika"
+     },
+     "fill": "#A8331C",
+     "tag": {
+      "en": "hot · fruity · Hungarian",
+      "hu": "csípős · gyümölcsös · magyaros"
+     },
+     "heat": 3,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.3,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "chili-powder",
+     "label": {
+      "en": "chilli powder",
+      "hu": "chilipor"
+     },
+     "name": {
+      "en": "Chili powder",
+      "hu": "Chilipor"
+     },
+     "fill": "#A8361F",
+     "tag": {
+      "en": "earthy · mild heat",
+      "hu": "földes · enyhén csípős"
+     },
+     "heat": 2,
+     "role": "base",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "label",
+     "g_per_tsp": 2.7,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "chili-flakes",
+     "label": {
+      "en": "chilli flakes",
+      "hu": "chilipehely"
+     },
+     "name": {
+      "en": "Chili flakes",
+      "hu": "Chilipehely"
+     },
+     "fill": "#B8322A",
+     "tag": {
+      "en": "fruity heat",
+      "hu": "gyümölcsös csípősség"
+     },
+     "heat": 3,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.3,
+     "note": {
+      "en": "Goes with pizza, pasta, stir-fries, chilli oil, marinades. Bloom in oil at the start for even heat, or sprinkle at the end for sparks.",
+      "hu": "Illik hozzá: pizza, tészta, wokos ételek, chiliolaj, pácok. Az elején olajban futtasd az egyenletes csípősségért, vagy a végén szórd rá."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "cayenne",
+     "label": {
+      "en": "cayenne",
+      "hu": "cayenne-bors"
+     },
+     "name": {
+      "en": "Cayenne pepper",
+      "hu": "Cayenne-bors"
+     },
+     "fill": "#C0392B",
+     "tag": {
+      "en": "clean, sharp heat",
+      "hu": "tiszta, éles csípősség"
+     },
+     "heat": 4,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.8,
+     "note": {
+      "en": "Goes with chilli, eggs, cheese sauces, rubs, hot chocolate. Start with a pinch.",
+      "hu": "Illik hozzá: chili, tojás, sajtmártás, fűszerdörzsölők, forró csoki. Egy csipettel kezdd."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "chipotle",
+     "label": {
+      "en": "chipotle",
+      "hu": "chipotle"
+     },
+     "name": {
+      "en": "Chipotle (smoked chilli)",
+      "hu": "Chipotle (füstölt chili)"
+     },
+     "fill": "#8B3A1E",
+     "tag": {
+      "en": "smoky heat",
+      "hu": "füstös csípősség"
+     },
+     "heat": 3,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with chilli con carne, beans, BBQ sauce, mayonnaise. Smoked, dried jalapeño: heat and smoke in one.",
+      "hu": "Illik hozzá: chili con carne, bab, BBQ-szósz, majonéz. Füstölt, szárított jalapeño: csípősség és füst egyben."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "black-pepper",
+     "label": {
+      "en": "black pepper",
+      "hu": "fekete bors"
+     },
+     "name": {
+      "en": "Black pepper",
+      "hu": "Fekete bors"
+     },
+     "fill": "#3A3430",
+     "tag": {
+      "en": "sharp · warm · piney",
+      "hu": "csípős · meleg · fenyős"
+     },
+     "heat": 2,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.3,
+     "note": {
+      "en": "Goes with almost everything savoury: steak, eggs, gulyás. Grind it fresh, near the end — pre-ground pepper is mostly dust.",
+      "hu": "Illik hozzá: szinte minden sós étel: steak, tojás, gulyás. Frissen őröld, a vége felé — az előre őrölt bors szinte csak por."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "white-pepper",
+     "label": {
+      "en": "white pepper",
+      "hu": "fehér bors"
+     },
+     "name": {
+      "en": "White pepper",
+      "hu": "Fehér bors"
+     },
+     "fill": "#E6DFCF",
+     "tag": {
+      "en": "sharp · earthy · funky",
+      "hu": "csípős · földes · fanyar"
+     },
+     "heat": 2,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.4,
+     "note": {
+      "en": "Goes with white sauces, mashed potato, fish, Asian soups. Hotter and earthier than black — and invisible in pale dishes.",
+      "hu": "Illik hozzá: fehér mártások, krumplipüré, hal, ázsiai levesek. Csípősebb és földesebb a feketénél — és nem látszik a világos ételekben."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "sichuan-pepper",
+     "label": {
+      "en": "Sichuan pepper",
+      "hu": "szecsuáni bors"
+     },
+     "name": {
+      "en": "Sichuan pepper",
+      "hu": "Szecsuáni bors"
+     },
+     "fill": "#7A3B2E",
+     "tag": {
+      "en": "citrusy · tingling · numbing",
+      "hu": "citrusos · bizsergető · zsibbasztó"
+     },
+     "heat": 2,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.0,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "pink-pepper",
+     "label": {
+      "en": "pink pepper",
+      "hu": "rózsabors"
+     },
+     "name": {
+      "en": "Pink peppercorns",
+      "hu": "Rózsabors"
+     },
+     "fill": "#D9727A",
+     "tag": {
+      "en": "fruity · resinous · gentle",
+      "hu": "gyümölcsös · gyantás · szelíd"
+     },
+     "heat": 1,
+     "role": "accent",
+     "timing": "finish",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 0.8,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "mustard-powder",
+     "label": {
+      "en": "mustard powder",
+      "hu": "mustárpor"
+     },
+     "name": {
+      "en": "Mustard powder",
+      "hu": "Mustárpor"
+     },
+     "fill": "#D9A82C",
+     "tag": {
+      "en": "sharp · nose-tingling",
+      "hu": "éles · orrcsípő"
+     },
+     "heat": 2,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "label",
+     "g_per_tsp": 2.0,
+     "note": {
+      "en": "Goes with cheese sauces, dressings, rubs, eggs. Its heat wakes up with cold water in 10 minutes. ⚠️ Some brands (English mustard powder) contain wheat flour.",
+      "hu": "Illik hozzá: sajtmártás, öntetek, fűszerdörzsölők, tojás. Csípőssége hideg vízzel 10 perc alatt ébred. ⚠️ Egyes márkákban (angol mustárpor) búzaliszt van."
+     },
+     "page": "spices/hot"
+    }
+   ]
+  },
+  {
+   "id": "mediterranean",
+   "en": "Mediterranean herbs",
+   "hu": "Mediterrán fűszernövények",
+   "jars": [
+    {
+     "id": "oregano",
+     "label": {
+      "en": "oregano",
+      "hu": "oregánó"
+     },
+     "name": {
+      "en": "Oregano",
+      "hu": "Oregánó"
+     },
+     "fill": "#6E8B3D",
+     "tag": {
+      "en": "earthy · peppery",
+      "hu": "földes · borsos"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.0,
+     "note": {
+      "en": "Goes with pizza, tomato sauce, gyros, Greek salad, beans. One of the few herbs better dried than fresh.",
+      "hu": "Illik hozzá: pizza, paradicsomszósz, gyros, görögsaláta, bab. Azon kevés fűszer egyike, amely szárítva jobb, mint frissen."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "thyme",
+     "label": {
+      "en": "thyme",
+      "hu": "kakukkfű"
+     },
+     "name": {
+      "en": "Thyme",
+      "hu": "Kakukkfű"
+     },
+     "fill": "#7E9A55",
+     "tag": {
+      "en": "earthy · lemony · woody",
+      "hu": "földes · citromos · fás"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.4,
+     "note": {
+      "en": "Goes with roasts, soups, mushrooms, potatoes, lentils. Goes in early. Strip fresh leaves by pulling the stem backwards through your fingers.",
+      "hu": "Illik hozzá: sültek, levesek, gomba, krumpli, lencse. Korán mehet bele. A friss levelet a szárat visszafelé húzva fosztd le."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "rosemary",
+     "label": {
+      "en": "rosemary",
+      "hu": "rozmaring"
+     },
+     "name": {
+      "en": "Rosemary",
+      "hu": "Rozmaring"
+     },
+     "fill": "#5E7D4C",
+     "tag": {
+      "en": "piney · resinous",
+      "hu": "fenyős · gyantás"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.2,
+     "note": {
+      "en": "Goes with lamb, roast potatoes, chicken, focaccia (GF). Strong: chop dried needles finely — they stay tough.",
+      "hu": "Illik hozzá: bárány, sült krumpli, csirke, focaccia (GM). Erős: a szárított tűleveleket aprítsd finomra — kemények maradnak."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "sage-dried",
+     "label": {
+      "en": "sage",
+      "hu": "zsálya"
+     },
+     "name": {
+      "en": "Dried sage",
+      "hu": "Szárított zsálya"
+     },
+     "fill": "#8FA08A",
+     "tag": {
+      "en": "earthy · musky",
+      "hu": "földes · pézsmás"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 0.7,
+     "note": {
+      "en": "Goes with pork, duck, pumpkin, butter sauces, liver. Fried in butter until crisp, it turns nutty.",
+      "hu": "Illik hozzá: sertés, kacsa, tök, vajas mártások, máj. Vajban ropogósra sütve diós ízű lesz."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "marjoram",
+     "label": {
+      "en": "marjoram",
+      "hu": "majoránna"
+     },
+     "name": {
+      "en": "Marjoram",
+      "hu": "Majoránna"
+     },
+     "fill": "#7FA35A",
+     "tag": {
+      "en": "sweet · floral oregano",
+      "hu": "édes · virágos oregánó"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 0.6,
+     "note": {
+      "en": "Goes with liver, bean soups, potatoes, pörkölt, sausages. Hungary’s herb: rub it in near the end — long cooking fades it.",
+      "hu": "Illik hozzá: máj, bablevesek, krumpli, pörkölt, kolbász. A magyar konyha fűszere: a vége felé morzsold bele — a hosszú főzés elveszi."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "savory",
+     "label": {
+      "en": "savory",
+      "hu": "csombord"
+     },
+     "name": {
+      "en": "Savory",
+      "hu": "Csombord"
+     },
+     "fill": "#7B8F5A",
+     "tag": {
+      "en": "peppery · thyme-like",
+      "hu": "borsos · kakukkfűszerű"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.4,
+     "note": {
+      "en": "Goes with beans and lentils, cabbage, sausages. The bean herb: it makes pulses taste better.",
+      "hu": "Illik hozzá: bab és lencse, káposzta, kolbász. A bab fűszere: jobbá teszi a hüvelyesek ízét."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "bay-leaf",
+     "label": {
+      "en": "bay leaf",
+      "hu": "babérlevél"
+     },
+     "name": {
+      "en": "Bay leaves",
+      "hu": "Babérlevél"
+     },
+     "fill": "#8A9A5B",
+     "tag": {
+      "en": "herbal · tea-like",
+      "hu": "füves · teás"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 0.6,
+     "note": {
+      "en": "Goes with soups, stocks, pickles, stews, béchamel. Simmer one or two whole, take them out before serving.",
+      "hu": "Illik hozzá: levesek, alaplé, savanyúság, raguk, besamel. Egy-kettőt főzz együtt egészben, tálalás előtt vedd ki."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "basil-dried",
+     "label": {
+      "en": "basil",
+      "hu": "bazsalikom"
+     },
+     "name": {
+      "en": "Dried basil",
+      "hu": "Szárított bazsalikom"
+     },
+     "fill": "#6F8F3F",
+     "tag": {
+      "en": "sweet · peppery",
+      "hu": "édes · borsos"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.7,
+     "note": {
+      "en": "Goes with tomato sauces, pizza, soups. Dried basil is a different taste — fresh basil goes in at the very end.",
+      "hu": "Illik hozzá: paradicsomszószok, pizza, levesek. A szárított bazsalikom más íz — a friss a legvégén kerül bele."
+     },
+     "page": "spices/mediterranean"
+    },
+    {
+     "id": "lavender",
+     "label": {
+      "en": "lavender",
+      "hu": "levendula"
+     },
+     "name": {
+      "en": "Lavender (dried)",
+      "hu": "Levendula"
+     },
+     "fill": "#9B87C1",
+     "tag": {
+      "en": "floral · perfumed · piney",
+      "hu": "virágos · parfümös · fenyős"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": null,
+     "page": null
+    }
+   ]
+  },
+  {
+   "id": "green",
+   "en": "Green & Hungarian herbs",
+   "hu": "Zöld és magyar fűszernövények",
+   "jars": [
+    {
+     "id": "dill-dried",
+     "label": {
+      "en": "dill",
+      "hu": "kapor"
+     },
+     "name": {
+      "en": "Dried dill",
+      "hu": "Szárított kapor"
+     },
+     "fill": "#8DB255",
+     "tag": {
+      "en": "fresh · anise · grassy",
+      "hu": "friss · ánizsos · füves"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 1.0,
+     "note": {
+      "en": "Goes with tökfőzelék, cucumber salad, kovászos uborka, fish, túró. Fresh or frozen beats dried; add at the end.",
+      "hu": "Illik hozzá: tökfőzelék, uborkasaláta, kovászos uborka, hal, túró. Frissen vagy fagyasztva jobb, mint szárítva; a végén add hozzá."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "parsley-dried",
+     "label": {
+      "en": "parsley",
+      "hu": "petrezselyem"
+     },
+     "name": {
+      "en": "Dried parsley",
+      "hu": "Szárított petrezselyem"
+     },
+     "fill": "#4F8A3A",
+     "tag": {
+      "en": "fresh · green",
+      "hu": "friss · zöld"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": {
+      "en": "Goes with soups, potatoes, fish, butter, almost everything. Flat-leaf has more flavour than curly; the stalks go into stock.",
+      "hu": "Illik hozzá: levesek, krumpli, hal, vaj, szinte minden. A sima levelű ízesebb a fodrosnál; a szára az alaplébe megy."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "lovage-dried",
+     "label": {
+      "en": "lovage",
+      "hu": "lestyán"
+     },
+     "name": {
+      "en": "Dried lovage",
+      "hu": "Szárított lestyán"
+     },
+     "fill": "#6C8A3E",
+     "tag": {
+      "en": "intense celery",
+      "hu": "intenzív zeller"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": {
+      "en": "Goes with húsleves, stocks, stews. The “Maggi herb”: a few leaves are enough for a whole pot of húsleves.",
+      "hu": "Illik hozzá: húsleves, alaplevek, raguk. A „Maggi-fű”: néhány levél egy egész fazék húsleveshez elég."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "tarragon-dried",
+     "label": {
+      "en": "tarragon",
+      "hu": "tárkony"
+     },
+     "name": {
+      "en": "Dried tarragon",
+      "hu": "Szárított tárkony"
+     },
+     "fill": "#7AA05A",
+     "tag": {
+      "en": "aniseed · bittersweet",
+      "hu": "ánizsos · keserédes"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.6,
+     "note": {
+      "en": "Goes with tárkonyos ragu leves, chicken, béarnaise, vinegar. The herb of Szeged’s creamy tárkonyos chicken soup.",
+      "hu": "Illik hozzá: tárkonyos raguleves, csirke, béarnaise, ecet. A szegedi tárkonyos csirkeraguleves fűszere."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "mint-dried",
+     "label": {
+      "en": "mint",
+      "hu": "menta"
+     },
+     "name": {
+      "en": "Dried mint",
+      "hu": "Szárított menta"
+     },
+     "fill": "#5AA469",
+     "tag": {
+      "en": "cool · sweet",
+      "hu": "hűsítő · édes"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": {
+      "en": "Goes with tea, lamb, peas, yoghurt sauces, fruit. Dried mint is great in yoghurt sauces; fresh in drinks and salads.",
+      "hu": "Illik hozzá: tea, bárány, zöldborsó, joghurtos mártások, gyümölcs. A szárított menta joghurtos mártásba jó, a friss italba, salátába."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "chives-dried",
+     "label": {
+      "en": "chives",
+      "hu": "metélőhagyma"
+     },
+     "name": {
+      "en": "Dried chives",
+      "hu": "Szárított metélőhagyma"
+     },
+     "fill": "#3F8F3A",
+     "tag": {
+      "en": "mild onion",
+      "hu": "enyhe hagyma"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.3,
+     "note": {
+      "en": "Goes with eggs, túró spreads, potatoes, sour cream. Snip with scissors; add raw at the end.",
+      "hu": "Illik hozzá: tojás, túrókrém, krumpli, tejföl. Ollóval vágd; nyersen, a végén add hozzá."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "coriander-leaf-dried",
+     "label": {
+      "en": "coriander leaf",
+      "hu": "korianderzöld"
+     },
+     "name": {
+      "en": "Dried coriander leaf",
+      "hu": "Szárított korianderzöld"
+     },
+     "fill": "#4E9A3C",
+     "tag": {
+      "en": "citrusy · fresh",
+      "hu": "citrusos · friss"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": {
+      "en": "Goes with curries, salsas, Asian soups, guacamole. To some it tastes of soap — that is a gene, not a fad. The stalks are full of flavour too.",
+      "hu": "Illik hozzá: curryk, salsák, ázsiai levesek, guacamole. Egyeseknek szappanízű — ez génen múlik, nem divaton. A szára is ízes."
+     },
+     "page": "spices/green"
+    },
+    {
+     "id": "wild-garlic-dried",
+     "label": {
+      "en": "wild garlic",
+      "hu": "medvehagyma"
+     },
+     "name": {
+      "en": "Dried wild garlic",
+      "hu": "Szárított medvehagyma"
+     },
+     "fill": "#5C9E3E",
+     "tag": {
+      "en": "garlicky · green",
+      "hu": "fokhagymás · zöld"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.5,
+     "note": {
+      "en": "Goes with pesto, túró spreads, soups, scrambled eggs. Spring only. Picking it wild? Lily of the valley and autumn crocus look alike and are poisonous.",
+      "hu": "Illik hozzá: pesztó, túrókrém, levesek, rántotta. Csak tavasszal. Ha gyűjtöd: a gyöngyvirág és az őszi kikerics hasonlít rá, és mérgező."
+     },
+     "page": "spices/green"
+    }
+   ]
+  },
+  {
+   "id": "special",
+   "en": "Specials",
+   "hu": "Különlegességek",
+   "jars": [
+    {
+     "id": "saffron",
+     "label": {
+      "en": "saffron",
+      "hu": "sáfrány"
+     },
+     "name": {
+      "en": "Saffron",
+      "hu": "Sáfrány"
+     },
+     "fill": "#D9541E",
+     "tag": {
+      "en": "honeyed · hay-like · golden",
+      "hu": "mézes · szénaillatú · aranyló"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 0.7,
+     "note": {
+      "en": "Goes with risotto, paella, fish soups, sweet buns. Soak a pinch of threads in warm water 15 minutes; add with the liquid. Cheap “saffron” is safflower.",
+      "hu": "Illik hozzá: rizottó, paella, halászlevek, kalácsok. Egy csipet szálat áztass 15 percig langyos vízben, a folyadékkal add hozzá. Az olcsó „sáfrány” pórsáfrány."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "sumac",
+     "label": {
+      "en": "sumac",
+      "hu": "szömörce"
+     },
+     "name": {
+      "en": "Sumac",
+      "hu": "Szömörce"
+     },
+     "fill": "#8E2F3A",
+     "tag": {
+      "en": "tangy · lemony",
+      "hu": "savanykás · citromos"
+     },
+     "heat": 0,
+     "role": "finisher",
+     "timing": "finish",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.6,
+     "note": {
+      "en": "Goes with salads, onions, grilled meat, za’atar, hummus. Sourness without liquid: sprinkle it on at the end.",
+      "hu": "Illik hozzá: saláták, hagyma, grillhús, za’atar, humusz. Savanyúság folyadék nélkül: a végén szórd rá."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "juniper",
+     "label": {
+      "en": "juniper",
+      "hu": "boróka"
+     },
+     "name": {
+      "en": "Juniper berries",
+      "hu": "Borókabogyó"
+     },
+     "fill": "#3D3F5E",
+     "tag": {
+      "en": "piney · resinous · gin",
+      "hu": "fenyős · gyantás · gin"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 1.8,
+     "note": {
+      "en": "Goes with game, sauerkraut, pork, marinades. Crush 4–6 berries per kilo of meat; take them out before serving.",
+      "hu": "Illik hozzá: vad, savanyú káposzta, sertés, pácok. Kilónként 4–6 szemet törj meg; tálalás előtt vedd ki."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "nigella",
+     "label": {
+      "en": "nigella",
+      "hu": "feketekömény"
+     },
+     "name": {
+      "en": "Nigella seeds",
+      "hu": "Feketekömény"
+     },
+     "fill": "#2E2A2A",
+     "tag": {
+      "en": "oniony · peppery",
+      "hu": "hagymás · borsos"
+     },
+     "heat": 1,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.8,
+     "note": {
+      "en": "Goes with breads, flatbreads, curries, pickles. Sprinkle on GF bread before baking.",
+      "hu": "Illik hozzá: kenyerek, lepények, curryk, savanyúság. Sütés előtt szórd a GM kenyérre."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "poppy-seeds",
+     "label": {
+      "en": "poppy seed",
+      "hu": "mák"
+     },
+     "name": {
+      "en": "Poppy seeds",
+      "hu": "Mák"
+     },
+     "fill": "#4A4E5A",
+     "tag": {
+      "en": "nutty · sweet",
+      "hu": "diós · édes"
+     },
+     "heat": 0,
+     "role": "base",
+     "timing": "during",
+     "form": "whole",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 2.8,
+     "note": {
+      "en": "Goes with mákos tészta (GF pasta), bejgli, cakes. Grind it fresh — ground poppy goes rancid within weeks.",
+      "hu": "Illik hozzá: mákos tészta (GM tésztával), bejgli, sütemények. Frissen darald — a darált mák hetek alatt megavasodik."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "sesame",
+     "label": {
+      "en": "sesame",
+      "hu": "szezám"
+     },
+     "name": {
+      "en": "Sesame seeds",
+      "hu": "Szezámmag"
+     },
+     "fill": "#E8D8A8",
+     "tag": {
+      "en": "nutty · toasty",
+      "hu": "diós · pörkölt"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "finish",
+     "form": "both",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.7,
+     "note": {
+      "en": "Goes with stir-fries, salads, za’atar, tahini, GF breading. Toast in a dry pan until golden, 2–3 minutes, stirring.",
+      "hu": "Illik hozzá: wokos ételek, saláták, za’atar, tahini, GM panír. Száraz serpenyőben pirítsd aranyszínűre, 2–3 perc, kevergetve."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "asafoetida",
+     "label": {
+      "en": "asafoetida",
+      "hu": "asafoetida"
+     },
+     "name": {
+      "en": "Asafoetida",
+      "hu": "Asafoetida"
+     },
+     "fill": "#D8C8A0",
+     "tag": {
+      "en": "pungent · garlicky when cooked",
+      "hu": "szúrós · főzve fokhagymás"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "bloom",
+     "form": "ground",
+     "fragile": false,
+     "gluten": "label",
+     "g_per_tsp": 2.5,
+     "note": {
+      "en": "Goes with dal, curries, vegetables. ⚠️ Most powder is cut with WHEAT flour — only GF-labelled (rice-flour based) hing.",
+      "hu": "Illik hozzá: dal, curryk, zöldségek. ⚠️ A legtöbb por BÚZALISZTTEL van keverve — csak GM jelölésű (rizslisztes) hinget vegyél."
+     },
+     "page": "spices/special"
+    },
+    {
+     "id": "orange-peel",
+     "label": {
+      "en": "orange peel",
+      "hu": "narancshéj"
+     },
+     "name": {
+      "en": "Dried orange peel",
+      "hu": "Szárított narancshéj"
+     },
+     "fill": "#E58A2A",
+     "tag": {
+      "en": "bittersweet · zesty · floral",
+      "hu": "keserédes · zamatos · virágos"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "lemon-peel",
+     "label": {
+      "en": "lemon peel",
+      "hu": "citromhéj"
+     },
+     "name": {
+      "en": "Dried lemon peel",
+      "hu": "Szárított citromhéj"
+     },
+     "fill": "#E8C93A",
+     "tag": {
+      "en": "zesty · sharp · clean",
+      "hu": "zamatos · élénk · tiszta"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "finish",
+     "form": "both",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.0,
+     "note": null,
+     "page": null
+    }
+   ]
+  },
+  {
+   "id": "alliums",
+   "en": "Salt, sugar & alliums",
+   "hu": "Só, cukor, hagymafélék",
+   "jars": [
+    {
+     "id": "salt",
+     "label": {
+      "en": "salt",
+      "hu": "só"
+     },
+     "name": {
+      "en": "Salt",
+      "hu": "Só"
+     },
+     "fill": "#F4F1EA",
+     "tag": {
+      "en": "salty · wakes everything up",
+      "hu": "sós · mindent felébreszt"
+     },
+     "heat": 0,
+     "role": "accent",
+     "timing": "during",
+     "form": "both",
+     "fragile": false,
+     "gluten": "free",
+     "g_per_tsp": 5.7,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "sugar",
+     "label": {
+      "en": "sugar",
+      "hu": "kristálycukor"
+     },
+     "name": {
+      "en": "Sugar",
+      "hu": "Kristálycukor"
+     },
+     "fill": "#FBF8F0",
+     "tag": {
+      "en": "sweet · rounds the edges",
+      "hu": "édes · lekerekít"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 4.2,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "brown-sugar",
+     "label": {
+      "en": "brown sugar",
+      "hu": "barna cukor"
+     },
+     "name": {
+      "en": "Brown sugar",
+      "hu": "Barna cukor"
+     },
+     "fill": "#9C6B3C",
+     "tag": {
+      "en": "caramel · molasses",
+      "hu": "karamell · melasz"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 4.6,
+     "note": null,
+     "page": null
+    },
+    {
+     "id": "garlic-powder",
+     "label": {
+      "en": "garlic powder",
+      "hu": "fokhagymapor"
+     },
+     "name": {
+      "en": "Garlic powder",
+      "hu": "Fokhagymapor"
+     },
+     "fill": "#EADDB8",
+     "tag": {
+      "en": "savoury · mellow garlic",
+      "hu": "sós · lágy fokhagyma"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 3.1,
+     "note": {
+      "en": "Goes with rubs, gyros, marinades, breading, popcorn. Burns fast — add it with liquid or in the last minute. ⅛ tsp is about one clove.",
+      "hu": "Illik hozzá: fűszerdörzsölők, gyros, pácok, panír, pattogatott kukorica. Hamar megég — folyadékkal vagy az utolsó percben add hozzá. ⅛ tk kb. egy gerezd."
+     },
+     "page": "spices/hot"
+    },
+    {
+     "id": "onion-powder",
+     "label": {
+      "en": "onion powder",
+      "hu": "hagymapor"
+     },
+     "name": {
+      "en": "Onion powder",
+      "hu": "Hagymapor"
+     },
+     "fill": "#E6CF98",
+     "tag": {
+      "en": "sweet · savoury",
+      "hu": "édeskés · sós"
+     },
+     "heat": 0,
+     "role": "body",
+     "timing": "during",
+     "form": "ground",
+     "fragile": true,
+     "gluten": "free",
+     "g_per_tsp": 2.4,
+     "note": {
+      "en": "Goes with rubs, soups, dressings, burgers. 1 tbsp gives about one medium onion’s flavour, without the moisture.",
+      "hu": "Illik hozzá: fűszerdörzsölők, levesek, öntetek, fasírt. 1 ek kb. egy közepes fej hagyma ízét adja, nedvesség nélkül."
+     },
+     "page": "spices/hot"
+    }
+   ]
+  }
+ ],
+ "foods": [
+  {
+   "id": "pork",
+   "icon": "om-1f416",
+   "en": "Pork",
+   "hu": "Sertés"
+  },
+  {
+   "id": "chicken",
+   "icon": "om-1f357",
+   "en": "Chicken & duck",
+   "hu": "Csirke, kacsa"
+  },
+  {
+   "id": "beef",
+   "icon": "om-1f969",
+   "en": "Beef",
+   "hu": "Marha"
+  },
+  {
+   "id": "lamb",
+   "icon": "om-1f411",
+   "en": "Lamb",
+   "hu": "Bárány"
+  },
+  {
+   "id": "game",
+   "icon": "om-1f98c",
+   "en": "Game",
+   "hu": "Vad"
+  },
+  {
+   "id": "fish",
+   "icon": "om-1f41f",
+   "en": "Fish",
+   "hu": "Hal"
+  },
+  {
+   "id": "seafood",
+   "icon": "om-1f990",
+   "en": "Seafood",
+   "hu": "Tenger gyümölcsei"
+  },
+  {
+   "id": "eggs",
+   "icon": "om-1f95a",
+   "en": "Eggs",
+   "hu": "Tojás"
+  },
+  {
+   "id": "potatoes",
+   "icon": "om-1f954",
+   "en": "Potatoes",
+   "hu": "Krumpli"
+  },
+  {
+   "id": "roots",
+   "icon": "om-1f955",
+   "en": "Root vegetables",
+   "hu": "Gyökérzöldség"
+  },
+  {
+   "id": "cabbage",
+   "icon": "om-1f96c",
+   "en": "Cabbage & greens",
+   "hu": "Káposzta, levélzöld"
+  },
+  {
+   "id": "tomato",
+   "icon": "om-1f345",
+   "en": "Tomatoes",
+   "hu": "Paradicsom"
+  },
+  {
+   "id": "mushrooms",
+   "icon": "om-1f344",
+   "en": "Mushrooms",
+   "hu": "Gomba"
+  },
+  {
+   "id": "pulses",
+   "icon": "om-1fad8",
+   "en": "Beans & lentils",
+   "hu": "Bab, lencse"
+  },
+  {
+   "id": "rice",
+   "icon": "om-1f35a",
+   "en": "Rice & grains",
+   "hu": "Rizs, gabona"
+  },
+  {
+   "id": "pasta",
+   "icon": "om-1f35d",
+   "en": "GF pasta",
+   "hu": "GM tészta"
+  },
+  {
+   "id": "cheese",
+   "icon": "om-1f9c0",
+   "en": "Cheese & yoghurt",
+   "hu": "Sajt, joghurt"
+  },
+  {
+   "id": "bread",
+   "icon": "om-1f35e",
+   "en": "GF bread & flatbread",
+   "hu": "GM kenyér, lepény"
+  },
+  {
+   "id": "fruit",
+   "icon": "om-1f34e",
+   "en": "Fruit",
+   "hu": "Gyümölcs"
+  },
+  {
+   "id": "chocolate",
+   "icon": "om-1f36b",
+   "en": "Chocolate",
+   "hu": "Csokoládé"
+  },
+  {
+   "id": "coffee-tea",
+   "icon": "om-2615",
+   "en": "Coffee & tea",
+   "hu": "Kávé, tea"
+  },
+  {
+   "id": "soups",
+   "icon": "om-1f372",
+   "en": "Soups & stews",
+   "hu": "Leves, ragu"
+  },
+  {
+   "id": "pickles",
+   "icon": "om-1f952",
+   "en": "Pickles",
+   "hu": "Savanyúság"
+  },
+  {
+   "id": "grilled-veg",
+   "icon": "om-1f346",
+   "en": "Grilled & roast vegetables",
+   "hu": "Grillezett, sült zöldség"
+  },
+  {
+   "id": "baking",
+   "icon": "om-1f370",
+   "en": "Cakes & baking",
+   "hu": "Sütemény"
+  }
+ ],
+ "axes": [
+  {
+   "id": "warm",
+   "en": "Warm",
+   "hu": "Meleg"
+  },
+  {
+   "id": "earthy",
+   "en": "Earthy",
+   "hu": "Földes"
+  },
+  {
+   "id": "hot",
+   "en": "Hot",
+   "hu": "Csípős"
+  },
+  {
+   "id": "bright",
+   "en": "Bright",
+   "hu": "Élénk"
+  },
+  {
+   "id": "herbal",
+   "en": "Herbal",
+   "hu": "Füves"
+  },
+  {
+   "id": "floral",
+   "en": "Floral",
+   "hu": "Virágos"
+  },
+  {
+   "id": "bitter",
+   "en": "Bitter",
+   "hu": "Kesernyés"
+  },
+  {
+   "id": "savoury",
+   "en": "Savoury",
+   "hu": "Sós-ízes"
+  }
+ ],
+ "cuisines": [
+  {
+   "id": "hungarian",
+   "en": "Hungarian",
+   "hu": "Magyar"
+  },
+  {
+   "id": "balkan",
+   "en": "Balkan",
+   "hu": "Balkáni"
+  },
+  {
+   "id": "indian",
+   "en": "Indian",
+   "hu": "Indiai"
+  },
+  {
+   "id": "middle-eastern",
+   "en": "Middle Eastern & North African",
+   "hu": "Közel-keleti, észak-afrikai"
+  },
+  {
+   "id": "mediterranean",
+   "en": "Mediterranean",
+   "hu": "Mediterrán"
+  },
+  {
+   "id": "mexican",
+   "en": "Mexican",
+   "hu": "Mexikói"
+  },
+  {
+   "id": "east-asian",
+   "en": "East Asian",
+   "hu": "Kelet-ázsiai"
+  },
+  {
+   "id": "french",
+   "en": "French",
+   "hu": "Francia"
+  },
+  {
+   "id": "american",
+   "en": "American BBQ & Cajun",
+   "hu": "Amerikai (BBQ, cajun)"
+  },
+  {
+   "id": "baking",
+   "en": "Baking & sweets",
+   "hu": "Sütemény, édesség"
+  }
+ ],
+ "roles": [
+  {
+   "id": "base",
+   "en": "Base",
+   "hu": "Alap"
+  },
+  {
+   "id": "body",
+   "en": "Body",
+   "hu": "Test"
+  },
+  {
+   "id": "accent",
+   "en": "Accent",
+   "hu": "Hangsúly"
+  },
+  {
+   "id": "finisher",
+   "en": "Finisher",
+   "hu": "Befejező"
+  }
+ ],
+ "timings": [
+  {
+   "id": "bloom",
+   "en": "Bloom in the fat",
+   "hu": "A zsiradékban"
+  },
+  {
+   "id": "during",
+   "en": "During cooking",
+   "hu": "Főzés közben"
+  },
+  {
+   "id": "finish",
+   "en": "At the end",
+   "hu": "A végén"
+  }
+ ],
+ "words": [
+  {
+   "id": "sings",
+   "min": 80,
+   "mascot": "proud",
+   "en": "Sings",
+   "hu": "Ragyog"
+  },
+  {
+   "id": "good",
+   "min": 60,
+   "mascot": "happy",
+   "en": "Good",
+   "hu": "Jó"
+  },
+  {
+   "id": "muddled",
+   "min": 40,
+   "mascot": "think",
+   "en": "Muddled",
+   "hu": "Zavaros"
+  },
+  {
+   "id": "fighting",
+   "min": 0,
+   "mascot": "worried",
+   "en": "Fighting",
+   "hu": "Veszekszik"
+  }
+ ],
+ "heat": [
+  {
+   "id": "mild",
+   "below": 0.4,
+   "en": "Mild",
+   "hu": "Enyhe"
+  },
+  {
+   "id": "warm",
+   "below": 1.0,
+   "en": "Warm",
+   "hu": "Pikáns"
+  },
+  {
+   "id": "hot",
+   "below": 1.8,
+   "en": "Hot",
+   "hu": "Csípős"
+  },
+  {
+   "id": "fiery",
+   "below": 99,
+   "en": "Fiery",
+   "hu": "Tüzes"
+  }
+ ],
+ "classics": [
+  {
+   "id": "porkolt",
+   "en": "Pörkölt blend",
+   "hu": "Pörköltfűszer",
+   "source": "diy"
+  },
+  {
+   "id": "gyros",
+   "en": "Gyros",
+   "hu": "Gyros",
+   "source": "diy"
+  },
+  {
+   "id": "grill-rub",
+   "en": "Grill rub",
+   "hu": "Grill fűszer",
+   "source": "diy"
+  },
+  {
+   "id": "curry",
+   "en": "Curry powder",
+   "hu": "Curry",
+   "source": "diy"
+  },
+  {
+   "id": "garam-masala",
+   "en": "Garam masala",
+   "hu": "Garam masala",
+   "source": "diy"
+  },
+  {
+   "id": "taco",
+   "en": "Taco seasoning",
+   "hu": "Taco fűszer",
+   "source": "diy"
+  },
+  {
+   "id": "herbes-de-provence",
+   "en": "Herbes de Provence",
+   "hu": "Provence-i keverék",
+   "source": "diy"
+  },
+  {
+   "id": "gingerbread",
+   "en": "Gingerbread spice",
+   "hu": "Mézeskalács-fűszer",
+   "source": "diy"
+  },
+  {
+   "id": "zaatar",
+   "en": "Za'atar",
+   "hu": "Za'atar",
+   "source": "diy"
+  },
+  {
+   "id": "ras-el-hanout",
+   "en": "Ras el hanout",
+   "hu": "Ras el hanout",
+   "source": "diy"
+  },
+  {
+   "id": "cajun",
+   "en": "Cajun",
+   "hu": "Cajun",
+   "source": "diy"
+  },
+  {
+   "id": "five-spice",
+   "en": "Chinese five-spice",
+   "hu": "Kínai ötfűszer",
+   "source": "diy"
+  },
+  {
+   "id": "italian-herbs",
+   "en": "Italian herbs",
+   "hu": "Olasz fűszerkeverék",
+   "source": "diy"
+  },
+  {
+   "id": "kolbasz",
+   "en": "Kolbász (sausage) spice",
+   "hu": "Kolbászfűszer",
+   "source": "diy"
+  },
+  {
+   "id": "pickling",
+   "en": "Pickling spice (savanyúság)",
+   "hu": "Savanyúságfűszer",
+   "source": "diy"
+  },
+  {
+   "id": "mulled-wine",
+   "en": "Mulled wine (forralt bor)",
+   "hu": "Forralt bor fűszer",
+   "source": "diy"
+  },
+  {
+   "id": "baharat",
+   "en": "Baharat",
+   "hu": "Baharat",
+   "source": "world"
+  },
+  {
+   "id": "berbere",
+   "en": "Berbere",
+   "hu": "Berbere",
+   "source": "world"
+  },
+  {
+   "id": "jerk",
+   "en": "Jerk",
+   "hu": "Jerk",
+   "source": "world"
+  },
+  {
+   "id": "chicken-seasoning",
+   "en": "Chicken seasoning",
+   "hu": "Csirkefűszer",
+   "source": "world"
+  },
+  {
+   "id": "roast-potato",
+   "en": "Roast potato",
+   "hu": "Sült krumpli fűszer",
+   "source": "world"
+  },
+  {
+   "id": "quatre-epices",
+   "en": "Quatre épices",
+   "hu": "Quatre épices (négyfűszer)",
+   "source": "world"
+  },
+  {
+   "id": "panch-phoron",
+   "en": "Panch phoron",
+   "hu": "Panch phoron",
+   "source": "world"
+  },
+  {
+   "id": "lemon-pepper",
+   "en": "Lemon pepper",
+   "hu": "Citromos bors",
+   "source": "world"
+  }
+ ],
+ "max_spices": 16
+}

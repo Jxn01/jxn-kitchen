@@ -1,0 +1,33 @@
+{
+  "_comment": "Browse's built-in recipe sites (spec §6.3). Every url and search template was verified by loading it in a real browser on 2026-10-10 (Mindmegette's search takes no URL query, so it opens the home page). The server validates the ids (settings browse_sites).",
+  "sites": [
+    {
+      "id": "nosalty",
+      "name": "Nosalty",
+      "url": "https://www.nosalty.hu/",
+      "search": "https://www.nosalty.hu/kereses/recept/{q}",
+      "color": "tomato"
+    },
+    {
+      "id": "streetkitchen",
+      "name": "Street Kitchen",
+      "url": "https://streetkitchen.hu/",
+      "search": "https://streetkitchen.hu/kereses?contentType=recipe&query={q}",
+      "color": "slate"
+    },
+    {
+      "id": "mindmegette",
+      "name": "Mindmegette",
+      "url": "https://www.mindmegette.hu/",
+      "search": null,
+      "color": "herb"
+    },
+    {
+      "id": "receptneked",
+      "name": "Receptneked",
+      "url": "https://receptneked.hu/",
+      "search": "https://receptneked.hu/?s={q}",
+      "color": "berry"
+    }
+  ]
+}

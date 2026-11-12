@@ -1,0 +1,21 @@
+# The salty, deep ones with each other: depth adds up, salt adds up faster.
+tamari:
+  fish-sauce: [-1, salt-on-salt]
+  miso: [1, umami-depth]
+  tomato-paste: [0, harmless]
+  worcestershire: [0, same-job]
+  salt: [-1, salt-on-salt]
+fish-sauce:
+  miso: [0, harmless]
+  tomato-paste: [0, harmless]
+  worcestershire: [0, same-job]
+  salt: [-2, salt-on-salt]
+miso:
+  tomato-paste: [1, umami-depth]
+  worcestershire: [-1, kitchens-apart]
+  salt: [-1, salt-on-salt]
+tomato-paste:
+  worcestershire: [2, umami-depth]
+  salt: [2, salt-lifts]
+worcestershire:
+  salt: [0, same-job]

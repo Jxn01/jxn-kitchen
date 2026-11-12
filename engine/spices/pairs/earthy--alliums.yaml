@@ -1,0 +1,55 @@
+# Earthy & seeds × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+cumin:
+  salt: [2, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [3, classic-partners, "Cumin and garlic: the savoury floor of tacos, kebabs and chilli.", "Római kömény és fokhagyma: a taco, a kebab és a chili sós-ízes alapja."]
+  onion-powder: [2, cuisine-mates]
+caraway:
+  salt: [2, seasoning-basic]
+  sugar: [-1, dessert-or-roast]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, hungarian-heart]
+  onion-powder: [2, hungarian-heart]
+coriander-seed:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]
+fennel-seed:
+  salt: [2, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]
+turmeric:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [2, cuisine-mates]
+fenugreek:
+  salt: [1, seasoning-basic]
+  sugar: [0, harmless]
+  brown-sugar: [1, bridge]
+  garlic-powder: [1, cuisine-mates]
+  onion-powder: [1, cuisine-mates]
+mustard-seed:
+  salt: [1, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [1, sweet-savoury]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [1, gentle-company]
+celery-seed:
+  salt: [3, classic-partners, "Celery seed and salt: celery salt — the seasoning of a Bloody Mary and every coleslaw.", "Zellermag és só: zellersó — a Bloody Mary és minden káposztasaláta fűszere."]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [0, harmless]
+  garlic-powder: [1, gentle-company]
+  onion-powder: [2, cuisine-mates]
+dill-seed:
+  salt: [2, seasoning-basic]
+  sugar: [1, sweet-savoury]
+  brown-sugar: [0, harmless]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, gentle-company]

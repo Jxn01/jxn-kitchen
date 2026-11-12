@@ -1,0 +1,21 @@
+# Installed by ./deploy.sh as /srv/compose/kitchen/compose.yaml on the server. A reverse proxy (private: LAN + VPN)
+# proxies to 127.0.0.1:8090. The env file (HA_URL, HA_TOKEN, TZ) is root-only and never in git.
+services:
+  kitchen:
+    build:
+      context: ./src
+      dockerfile: deploy/Dockerfile
+      args:
+        KITCHEN_BUILD: "${KITCHEN_BUILD:-dev}"
+    image: jxn-kitchen:latest
+    container_name: kitchen
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8090:8000"
+    env_file: /etc/kitchen/kitchen.env
+    environment:
+      KITCHEN_SCANS_DIR: /scans
+    volumes:
+      - /srv/kitchen/data:/data
+      # the scan inbox (a share the scanner saves to) — read-only, never changed by the app
+      - /srv/share/scans:/scans:ro

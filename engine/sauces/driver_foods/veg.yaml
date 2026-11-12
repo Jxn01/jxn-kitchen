@@ -1,0 +1,15 @@
+cucumber: {pork: [1, cool-for], chicken: [2, cool-for], beef: [1, cool-for], lamb: [3, classic-with], game: [0, wrong-kind],
+  fish: [2, cool-for], seafood: [2, cool-for], eggs: [1, cool-for], potatoes: [1, cool-for], roots: [0, nothing-to-say],
+  cabbage: [1, cool-for], tomato: [2, cool-for], mushrooms: [0, nothing-to-say], pulses: [1, cool-for], rice: [1, cool-for],
+  pasta: [0, nothing-to-say], cheese: [1, cool-for], bread: [1, cool-for], fruit: [1, cool-for], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [2, cool-for], pickles: [3, classic-with], grilled-veg: [2, cool-for], baking: [0, wrong-kind]}
+peanut-butter: {pork: [2, rich-for], chicken: [3, classic-with], beef: [2, rich-for], lamb: [0, nothing-to-say], game: [0, wrong-kind],
+  fish: [0, nothing-to-say], seafood: [1, small-touch], eggs: [0, nothing-to-say], potatoes: [1, small-touch], roots: [2, rich-for],
+  cabbage: [2, rich-for], tomato: [1, small-touch], mushrooms: [0, nothing-to-say], pulses: [1, small-touch], rice: [2, rich-for],
+  pasta: [2, rich-for], cheese: [0, wrong-kind], bread: [2, sweet-for], fruit: [2, sweet-for], chocolate: [3, classic-with],
+  coffee-tea: [0, nothing-to-say], soups: [1, small-touch], pickles: [0, wrong-kind], grilled-veg: [2, rich-for], baking: [3, classic-with]}
+tahini: {pork: [0, nothing-to-say], chicken: [2, rich-for], beef: [1, small-touch], lamb: [2, rich-for], game: [0, nothing-to-say],
+  fish: [2, rich-for], seafood: [1, small-touch], eggs: [1, small-touch], potatoes: [1, small-touch], roots: [2, rich-for],
+  cabbage: [3, classic-with], tomato: [1, small-touch], mushrooms: [1, small-touch], pulses: [3, classic-with], rice: [1, small-touch],
+  pasta: [0, nothing-to-say], cheese: [0, nothing-to-say], bread: [2, rich-for], fruit: [1, small-touch], chocolate: [2, sweet-for],
+  coffee-tea: [0, nothing-to-say], soups: [1, small-touch], pickles: [0, nothing-to-say], grilled-veg: [3, classic-with], baking: [2, sweet-for]}

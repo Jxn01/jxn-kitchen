@@ -1,0 +1,299 @@
+id: temperatures
+order: 1
+icon: "om:1F321"
+color: tomato
+en: {title: Temperatures, sub: "doneness · oven · oil · sugar · safety"}
+hu: {title: Hőfokok, sub: "átsütöttség · sütő · olaj · cukor · biztonság"}
+pages:
+  - id: meat-doneness
+    illustration: doneness
+    en:
+      title: Meat doneness
+      body: |
+        Measure in the **thickest part**, away from the bone. Take the meat off the heat about **3–5 °C below** the
+        target: it keeps cooking while it rests (carry-over), more for big roasts, less for thin steaks.
+
+        | Doneness | Beef, lamb (core) | Looks like |
+        |---|---|---|
+        | Rare | 50–52 °C | deep red, cool centre |
+        | Medium-rare | 55–57 °C | red, warm centre |
+        | Medium | 60–63 °C | pink |
+        | Medium-well | 65–68 °C | hint of pink |
+        | Well done | 70 °C + | grey-brown throughout |
+
+        - **Pork** (whole cuts): 63 °C, then rest 3 minutes — juicy and safe, faintly pink is fine.
+        - **Chicken, turkey, duck**: 74 °C everywhere, including the thigh joint. No "medium".
+        - **Mince** (any meat): 71 °C, because the surface bacteria are mixed all through it.
+        - **Fish**: 63 °C to be safe; salmon is silky at 50–52 °C if it is very fresh or was frozen first.
+
+        > Rest steaks 5 minutes and roasts 10–20 minutes under loose foil before cutting: the juices settle instead of running onto the board.
+    hu:
+      title: Átsütöttség
+      body: |
+        A **legvastagabb részén** mérj, a csonttól távol. Kb. **3–5 °C-kal a cél alatt** vedd le a tűzről: pihentetés
+        közben tovább sül (utóhő) — nagy sültnél jobban, vékony steaknél kevésbé.
+
+        | Fokozat | Marha, bárány (maghő) | Milyen |
+        |---|---|---|
+        | Véres (rare) | 50–52 °C | mélyvörös, hűvös közép |
+        | Angolos (medium-rare) | 55–57 °C | piros, langyos közép |
+        | Közepes (medium) | 60–63 °C | rózsaszín |
+        | Majdnem átsült (medium-well) | 65–68 °C | halvány rózsaszín |
+        | Átsült (well done) | 70 °C felett | végig szürkésbarna |
+
+        - **Sertés** (egész darab): 63 °C, aztán 3 perc pihentetés — szaftos és biztonságos, a halvány rózsaszín rendben van.
+        - **Csirke, pulyka, kacsa**: mindenhol 74 °C, a combízületnél is. Nincs „közepes".
+        - **Darált hús** (bármilyen): 71 °C, mert a felszíni baktériumok az egészbe belekeveredtek.
+        - **Hal**: biztonságosan 63 °C; a lazac 50–52 °C-on selymes, ha nagyon friss vagy előtte fagyasztott volt.
+
+        > A steaket 5, a sültet 10–20 percig pihentesd lazán letakarva, mielőtt felvágod: a szaft visszahúzódik, nem a vágódeszkára folyik.
+  - id: food-safety
+    chart:
+      type: scale
+      unit: °C
+      min: -20
+      max: 80
+      bands:
+        - {from: -20, to: 0, fill: "#7CC4F0", label: {en: Freezer, hu: Fagyasztó}, range: {en: "−18 °C or colder", hu: "−18 °C vagy hidegebb"}, note: {en: "Keep it at −18 °C or colder. Cold stops bacteria growing — it does not kill them.", hu: "Tartsd −18 °C-on vagy hidegebben. A hideg megállítja a baktériumokat — de nem öli meg őket."}}
+        - {from: 0, to: 5, fill: "#B8E3F7", label: {en: Fridge, hu: Hűtő}, note: {en: "0–5 °C. Cooked food goes in within 2 hours (1 hour on a hot day above 32 °C).", hu: "0–5 °C. A főtt étel két órán belül kerüljön be (forró napon, 32 °C fölött egy órán belül)."}}
+        - {from: 5, to: 60, fill: "#E8442E", label: {en: Danger zone, hu: Veszélyzóna}, note: {en: "5–60 °C: bacteria multiply fastest. No longer than 2 hours here — cool big pots fast in shallow boxes.", hu: "5–60 °C: itt szaporodnak a leggyorsabban a baktériumok. Legfeljebb két órát — a nagy fazék tartalmát lapos dobozokban hűtsd gyorsan."}}
+        - {from: 60, to: 80, fill: "#F2A33A", label: {en: Cooked through, hu: Átsütve}, range: {en: "63–74 °C", hu: "63–74 °C"}, note: {en: "Poultry 74 °C, mince 71 °C, whole cuts 63 °C + 3 minutes' rest, fish 63 °C. Reheat leftovers to 74 °C, once.", hu: "Szárnyas 74 °C, darált hús 71 °C, egész húsok 63 °C + 3 perc pihentetés, hal 63 °C. A maradékot 74 °C-ra melegítsd, egyszer."}}
+      marks:
+        - {value: -18, label: "−18"}
+        - {value: 5, label: "5"}
+        - {value: 60, label: "60"}
+        - {value: 74, label: "74"}
+    en:
+      title: Food safety
+      body: |
+        ## The numbers that matter
+        - **Danger zone: 5–60 °C.** Bacteria multiply fastest here. Cooked food goes into the fridge within **2 hours**
+          (1 hour on a hot day above 32 °C).
+        - **Fridge 0–5 °C, freezer −18 °C** or colder.
+        - **Cook through:** poultry **74 °C**, mince **71 °C**, whole cuts of beef, pork and lamb **63 °C** + 3 minutes' rest,
+          fish 63 °C, egg dishes 71 °C.
+        - **Reheat leftovers to 74 °C**, steaming hot all the way through — once. Don't reheat rice more than once.
+        - **Cool big pots fast:** divide into shallow boxes, cool in a sink of cold water, then refrigerate.
+
+        ## Defrosting
+        In the fridge (about a day per 2 kg), in cold water changed every 30 minutes, or in the microwave and cooked at
+        once. Never on the counter.
+
+        > Smell and look tell you about spoilage, not about danger: food can look and smell fine and still make you ill. When in doubt, throw it out.
+    hu:
+      title: Élelmiszer-biztonság
+      body: |
+        ## A fontos számok
+        - **Veszélyzóna: 5–60 °C.** Itt szaporodnak leggyorsabban a baktériumok. A főtt étel **2 órán belül** kerüljön
+          hűtőbe (32 °C feletti melegben 1 órán belül).
+        - **Hűtő 0–5 °C, mélyhűtő −18 °C** vagy hidegebb.
+        - **Átsütés:** szárnyas **74 °C**, darált hús **71 °C**, egész marha-, sertés- és bárányhús **63 °C** + 3 perc
+          pihentetés, hal 63 °C, tojásos étel 71 °C.
+        - **A maradékot 74 °C-ra** melegítsd, végig gőzölgően forróra — egyszer. A rizst ne melegítsd újra többször.
+        - **Nagy fazék gyors hűtése:** oszd szét lapos dobozokba, hűtsd hideg vizes mosogatóban, aztán mehet a hűtőbe.
+
+        ## Kiolvasztás
+        Hűtőben (kb. egy nap 2 kg-onként), hideg vízben 30 percenként cserélve, vagy mikróban és azonnal megfőzve.
+        Soha nem a pulton.
+
+        > A szag és a látvány a romlásról árulkodik, nem a veszélyről: egy étel lehet jó szagú és szép, mégis megbetegíthet. Ha kétséges, dobd ki.
+  - id: oven
+    illustration: oven
+    en:
+      title: Oven temperatures
+      body: |
+        Hungarian ovens and old recipes often give **gas marks** ("gázfokozat"). With a **fan (convection) oven**, set
+        it **about 20 °C lower** than a recipe written for a conventional oven, or shorten the time.
+
+        | Gas mark | Conventional | Fan | Use |
+        |---|---|---|---|
+        | 1 | 140 °C | 120 °C | meringue, slow drying |
+        | 2 | 150 °C | 130 °C | slow roasts, rich fruit cake |
+        | 3 | 160–170 °C | 140–150 °C | sponge, cheesecake |
+        | 4 | 180 °C | 160 °C | most cakes and biscuits |
+        | 5 | 190 °C | 170 °C | muffins, lasagne |
+        | 6 | 200 °C | 180 °C | roast chicken, bread |
+        | 7 | 220 °C | 200 °C | roast potatoes, pizza at home |
+        | 8–9 | 230–240 °C | 210–220 °C | very hot: bread start, flatbreads |
+
+        > Ovens lie by 10–20 °C. A cheap oven thermometer on the middle shelf tells you the truth.
+    hu:
+      title: Sütőhőfokok
+      body: |
+        A magyar sütők és a régi receptek gyakran **gázfokozatot** adnak meg. **Légkeveréses** sütőnél a hagyományos
+        sütőre írt recepthez képest állítsd **kb. 20 °C-kal alacsonyabbra**, vagy rövidítsd az időt.
+
+        | Gázfokozat | Alsó-felső | Légkeveréses | Mire |
+        |---|---|---|---|
+        | 1 | 140 °C | 120 °C | habcsók, lassú szárítás |
+        | 2 | 150 °C | 130 °C | lassú sült, gyümölcskenyér |
+        | 3 | 160–170 °C | 140–150 °C | piskóta, sajttorta |
+        | 4 | 180 °C | 160 °C | a legtöbb sütemény, keksz |
+        | 5 | 190 °C | 170 °C | muffin, lasagne |
+        | 6 | 200 °C | 180 °C | sült csirke, kenyér |
+        | 7 | 220 °C | 200 °C | sült krumpli, otthoni pizza |
+        | 8–9 | 230–240 °C | 210–220 °C | nagyon forró: kenyér indítása, lepények |
+
+        > A sütők 10–20 °C-ot is tévednek. Egy olcsó sütőhőmérő a középső rácson megmondja az igazat.
+  - id: oils
+    illustration: smoke
+    en:
+      title: Oils and smoke points
+      body: |
+        The **smoke point** is where fat starts to break down: it smokes, tastes acrid and irritates the eyes. Refined
+        oils take much more heat than unrefined ones; the numbers below are typical ranges.
+
+        | Fat | Smoke point | Good for |
+        |---|---|---|
+        | Butter | 150–175 °C | gentle frying, sauces, finishing |
+        | Extra virgin olive oil | 180–210 °C | sautéing, roasting, dressing |
+        | Lard (zsír) | 180–200 °C | Hungarian frying, pastry, roasting |
+        | Coconut oil (virgin) | 175 °C | medium heat |
+        | Refined sunflower / rapeseed | 220–230 °C | everyday frying, deep-frying |
+        | Refined (light) olive oil | 230–240 °C | high-heat frying |
+        | Ghee, clarified butter | 230–250 °C | searing with a butter taste |
+        | Refined avocado oil | 250–270 °C | the hottest searing |
+
+        > Don't reuse frying oil that smoked, darkened or smells fishy. Strain cooled oil through a sieve to keep it longer.
+    hu:
+      title: Olajok és füstpont
+      body: |
+        A **füstpont** az a hőfok, ahol a zsiradék bomlani kezd: füstöl, kesernyés lesz és csípi a szemet. A finomított
+        olajok sokkal több hőt bírnak, mint a hidegen sajtoltak; az alábbi számok jellemző tartományok.
+
+        | Zsiradék | Füstpont | Mire jó |
+        |---|---|---|
+        | Vaj | 150–175 °C | kíméletes sütés, mártások, befejezés |
+        | Extra szűz olívaolaj | 180–210 °C | pirítás, sütőben sütés, saláta |
+        | Zsír | 180–200 °C | magyaros sütés, tészta, sült |
+        | Kókuszolaj (szűz) | 175 °C | közepes láng |
+        | Finomított napraforgó / repce | 220–230 °C | mindennapi sütés, olajban sütés |
+        | Finomított (light) olívaolaj | 230–240 °C | nagy hőn sütés |
+        | Ghí, tisztított vaj | 230–250 °C | elősütés vajas ízzel |
+        | Finomított avokádóolaj | 250–270 °C | a legforróbb elősütés |
+
+        > Ne használd újra azt az olajat, amelyik füstölt, megsötétedett vagy halszagú. A kihűlt olajat szűrd át, így tovább bírja.
+  - id: deep-frying
+    chart:
+      type: scale
+      unit: °C
+      min: 140
+      max: 210
+      bands:
+        - {from: 150, to: 160, fill: "#FFE08A", label: {en: "Chips, 1st fry", hu: "Hasáb, 1. sütés"}, note: {en: "150–160 °C until soft, 5–6 minutes; drain and cool. Anything else fried this cool soaks up oil.", hu: "150–160 °C-on puhára, 5–6 perc; csepegtesd le, hűtsd. Minden más ilyen hűvös olajban beszívja az olajat."}}
+        - {from: 170, to: 180, fill: "#F7B744", label: {en: Most things, hu: A legtöbb étel}, note: {en: "170–180 °C. A GF bread cube browns in about 60 seconds at 180 °C; a wooden spoon handle bubbles steadily at about 170 °C.", hu: "170–180 °C. Egy kocka GM kenyér 180 °C-on kb. 60 másodperc alatt pirul meg; egy fakanál nyele kb. 170 °C-on egyenletesen gyöngyözik."}}
+        - {from: 180, to: 190, fill: "#E8892A", label: {en: "Chips, 2nd fry", hu: "Hasáb, 2. sütés"}, note: {en: "180–190 °C until golden. Fry in small batches and let the oil recover between them.", hu: "180–190 °C-on aranybarnára. Kis adagokban süss, és két adag között hagyd visszamelegedni az olajat."}}
+        - {from: 190, to: 210, fill: "#C9302A", label: {en: Too hot, hu: Túl forró}, range: {en: "above 190 °C", hu: "190 °C fölött"}, note: {en: "Above 190 °C the outside burns before the inside cooks. Never leave hot oil alone.", hu: "190 °C fölött a külseje megég, mielőtt a belseje megsülne. A forró olajat soha ne hagyd magára."}}
+      marks:
+        - {value: 160, label: "160"}
+        - {value: 170, label: "170"}
+        - {value: 180, label: "180"}
+        - {value: 190, label: "190"}
+    en:
+      title: Deep-frying
+      body: |
+        - **170–180 °C** for most things. Below 160 °C food soaks up oil; above 190 °C the outside burns before the inside cooks.
+        - **Chips/fries:** twice — first at 150–160 °C until soft (5–6 min), drain and cool, then at 180–190 °C until golden.
+        - **Batters and coatings (GF):** rice flour, cornstarch and potato starch fry crisper than wheat. Sparkling water
+          in the batter makes it lighter; a pinch of baking powder too (check the label).
+        - Fry in small batches so the temperature doesn't crash, and let it recover between batches.
+        - No thermometer? A cube of bread — GF, of course — browns in about 60 seconds at 180 °C; a wooden spoon handle
+          bubbles steadily at about 170 °C.
+
+        > Never leave hot oil alone, never throw water on an oil fire: cover the pan with a lid or a damp tea towel and turn the heat off.
+    hu:
+      title: Olajban sütés
+      body: |
+        - **170–180 °C** a legtöbb ételhez. 160 °C alatt az étel megszívja magát olajjal; 190 °C felett a külseje
+          megég, mielőtt a belseje megsülne.
+        - **Hasábburgonya:** kétszer — először 150–160 °C-on puhára (5–6 perc), lecsepegtetve kihűtve, aztán 180–190 °C-on aranyszínűre.
+        - **Bunda, panír (GM):** a rizsliszt, a kukoricakeményítő és a burgonyakeményítő ropogósabbra sül, mint a búza.
+          Szénsavas víztől a bunda könnyebb; egy csipet sütőportól is (nézd meg a címkéjét).
+        - Kis adagokban süss, hogy ne essen le a hőfok, és hagyd visszamelegedni két adag között.
+        - Nincs hőmérő? Egy kocka — természetesen GM — kenyér 180 °C-on kb. 60 másodperc alatt barnul meg; egy
+          fakanál nyelénél 170 °C körül egyenletesen gyöngyözik.
+
+        > A forró olajat soha ne hagyd magára, és égő olajra soha ne önts vizet: fedd le fedővel vagy vizes konyharuhával, és zárd el a lángot.
+  - id: sugar
+    illustration: sugar
+    en:
+      title: Sugar stages
+      body: |
+        Cooking sugar syrup drives off water; the temperature tells you how much is left and how it will set. Use a sugar
+        thermometer, or drop a little into cold water and look.
+
+        | Stage | Temperature | In cold water | For |
+        |---|---|---|---|
+        | Thread | 106–112 °C | a soft thread | syrups, glazes |
+        | Soft ball | 112–116 °C | a soft, squashable ball | fudge, fondant, Italian meringue |
+        | Firm ball | 118–120 °C | holds its shape | caramels, marshmallow |
+        | Hard ball | 121–130 °C | hard but sticky | nougat, gummies |
+        | Soft crack | 132–143 °C | bends, then snaps | toffee, butterscotch |
+        | Hard crack | 146–154 °C | brittle | brittle (grillázs), spun sugar |
+        | Caramel | 160–177 °C | amber to dark | caramel sauce, crème caramel |
+
+        > Sugar is GF, but check flavoured syrups and glucose syrups made from wheat — in the EU these are allowed in GF food (the gluten is removed), so the label decides.
+    hu:
+      title: Cukorfokok
+      body: |
+        A cukorszirup főzésével vizet párologtatunk el; a hőfok megmutatja, mennyi maradt, és hogyan fog megdermedni.
+        Használj cukorhőmérőt, vagy csepegtess egy kicsit hideg vízbe, és nézd meg.
+
+        | Fok | Hőfok | Hideg vízben | Mire |
+        |---|---|---|---|
+        | Fonal | 106–112 °C | puha fonal | szirupok, máz |
+        | Lágy golyó | 112–116 °C | puha, nyomható golyó | fondant, olasz habcsók |
+        | Kemény golyó | 118–120 °C | megtartja az alakját | karamella, mályvacukor |
+        | Nagyon kemény golyó | 121–130 °C | kemény, de ragadós | nugát, gumicukor |
+        | Lágy törés | 132–143 °C | hajlik, aztán eltörik | tejkaramella |
+        | Kemény törés | 146–154 °C | törékeny | grillázs, cukorszál |
+        | Karamell | 160–177 °C | borostyántól sötétig | karamellszósz, krémkaramell |
+
+        > A cukor GM, de az ízesített és a búzából készült glükózszirupokat nézd meg — az EU-ban ezek GM élelmiszerben is megengedettek (a glutént kivonják belőlük), így a címke dönt.
+  - id: fermentation
+    chart:
+      type: scale
+      unit: °C
+      min: 0
+      max: 60
+      bands:
+        - {from: 2, to: 6, fill: "#9FD3F2", label: {en: Fridge rise, hu: Hűtős kelesztés}, range: {en: "about 4 °C", hu: "kb. 4 °C"}, note: {en: "About 4 °C, overnight: a cold, slow rise that gives more flavour.", hu: "Kb. 4 °C, egy éjszakán át: hideg, lassú kelesztés, ízesebb tésztával."}}
+        - {from: 18, to: 22, fill: "#A6D96A", label: {en: Pickles, hu: Savanyítás}, note: {en: "Lacto-fermentation — sauerkraut, kovászos uborka — at 18–22 °C in a 2–3 % brine (20–30 g salt per litre).", hu: "Tejsavas erjesztés — savanyú káposzta, kovászos uborka — 18–22 °C-on, 2–3 %-os sólében (literenként 20–30 g só)."}}
+        - {from: 24, to: 28, fill: "#F2B705", label: {en: Yeast's best, hu: Az élesztő kedvence}, note: {en: "Yeast doughs rise best at 24–28 °C. GF bread rises once, to about 1.5 times.", hu: "Az élesztős tészta 24–28 °C-on kel a legjobban. A GM kenyér egyszer kel, kb. másfélszeresére."}}
+        - {from: 35, to: 55, fill: "#F28C28", label: {en: Too warm, hu: Túl meleg}, range: {en: "above 35 °C", hu: "35 °C fölött"}, note: {en: "Above 35 °C yeast struggles.", hu: "35 °C fölött az élesztő már küszködik."}}
+        - {from: 55, to: 60, fill: "#C9302A", label: {en: Yeast dies, hu: Az élesztő elpusztul}, range: {en: "about 55 °C", hu: "kb. 55 °C"}, note: {en: "At about 55 °C the yeast dies — the dough will not rise any more.", hu: "Kb. 55 °C-on az élesztő elpusztul — a tészta többé nem kel meg."}}
+      marks:
+        - {value: 4, label: "4"}
+        - {value: 24, label: "24"}
+        - {value: 28, label: "28"}
+        - {value: 35, label: "35"}
+        - {value: 55, label: "55"}
+    en:
+      title: Fermentation and proofing
+      body: |
+        - **Yeast doughs** rise best at **24–28 °C**. A cold, slow rise (fridge, 4 °C, overnight) gives more flavour.
+          Above 35 °C yeast struggles, at about 55 °C it dies.
+        - **GF bread doughs** rise once, not twice: they have no gluten network to rebuild. Proof until about 1.5 times
+          the size, not doubled, or they collapse.
+        - **Lacto-fermentation** (sauerkraut, kovászos uborka, kimchi): **18–22 °C**, brine of **2–3 % salt** by weight
+          (20–30 g salt per litre). Keep everything under the brine.
+        - **Kovászos uborka** (summer pickle): cucumbers, dill, garlic, 2 % brine, and a slice of bread on top for the
+          starter — in a GF kitchen use a slice of **GF bread** or a spoon of brine from a previous batch.
+        - **Sourdough (GF):** buckwheat or brown rice flour + water, fed daily at room temperature; ready when it doubles
+          within 6–8 hours.
+
+        > Fermented vegetables are naturally GF. Store-bought ones may contain malt vinegar or barley — read the label.
+    hu:
+      title: Erjesztés, kelesztés
+      body: |
+        - Az **élesztős tészta** **24–28 °C-on** kel a legjobban. A hideg, lassú kelesztés (hűtő, 4 °C, egy éjszaka)
+          ízesebb. 35 °C felett az élesztő küszködik, 55 °C körül elpusztul.
+        - A **GM kenyértészta** egyszer kel, nem kétszer: nincs sikérhálója, amit újra kellene építeni. Kb. másfélszeresére
+          keleszd, ne duplájára, különben összeesik.
+        - **Tejsavas erjesztés** (savanyú káposzta, kovászos uborka, kimchi): **18–22 °C**, a sóoldat tömegre **2–3 %**
+          (literenként 20–30 g só). Minden legyen a lé alatt.
+        - **Kovászos uborka:** uborka, kapor, fokhagyma, 2 %-os sólé, a tetejére egy szelet kenyér az erjedés indításához —
+          GM konyhában **GM kenyér** szelet, vagy egy kanál lé egy korábbi adagból.
+        - **Kovász (GM):** hajdina- vagy barna rizsliszt + víz, naponta etetve szobahőn; akkor kész, ha 6–8 óra alatt megduplázódik.
+
+        > Az erjesztett zöldség természeténél fogva GM. A boltiban lehet malátaecet vagy árpa — olvasd el a címkét.

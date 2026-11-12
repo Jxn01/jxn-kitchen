@@ -1,0 +1,26 @@
+tamari: {pork: [3, classic-with], chicken: [3, classic-with], beef: [3, classic-with], lamb: [1, savoury-for], game: [0, nothing-to-say],
+  fish: [3, classic-with], seafood: [2, savoury-for], eggs: [2, savoury-for], potatoes: [0, nothing-to-say], roots: [1, savoury-for],
+  cabbage: [2, savoury-for], tomato: [0, nothing-to-say], mushrooms: [3, classic-with], pulses: [1, savoury-for], rice: [3, classic-with],
+  pasta: [2, savoury-for], cheese: [0, wrong-kind], bread: [0, wrong-kind], fruit: [0, wrong-kind], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [2, savoury-for], pickles: [1, small-touch], grilled-veg: [2, savoury-for], baking: [0, wrong-kind]}
+fish-sauce: {pork: [2, savoury-for], chicken: [2, savoury-for], beef: [2, savoury-for], lamb: [0, nothing-to-say], game: [0, wrong-kind],
+  fish: [2, savoury-for], seafood: [3, classic-with], eggs: [2, savoury-for], potatoes: [0, nothing-to-say], roots: [1, small-touch],
+  cabbage: [2, savoury-for], tomato: [1, small-touch], mushrooms: [1, small-touch], pulses: [0, nothing-to-say], rice: [3, classic-with],
+  pasta: [2, savoury-for], cheese: [0, wrong-kind], bread: [0, wrong-kind], fruit: [1, small-touch], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [3, classic-with], pickles: [1, small-touch], grilled-veg: [1, small-touch], baking: [0, wrong-kind]}
+miso: {pork: [2, savoury-for], chicken: [2, savoury-for], beef: [1, small-touch], lamb: [0, nothing-to-say], game: [0, nothing-to-say],
+  fish: [3, classic-with], seafood: [2, savoury-for], eggs: [1, small-touch], potatoes: [1, small-touch], roots: [2, glaze-for],
+  cabbage: [1, small-touch], tomato: [0, nothing-to-say], mushrooms: [3, classic-with], pulses: [2, savoury-for], rice: [2, savoury-for],
+  pasta: [1, small-touch], cheese: [0, nothing-to-say], bread: [0, nothing-to-say], fruit: [0, wrong-kind], chocolate: [1, small-touch],
+  coffee-tea: [0, wrong-kind], soups: [3, classic-with], pickles: [1, small-touch], grilled-veg: [3, classic-with], baking: [1, small-touch]}
+tomato-paste: {pork: [2, savoury-for], chicken: [2, savoury-for], beef: [3, classic-with], lamb: [2, savoury-for], game: [2, savoury-for],
+  fish: [1, small-touch], seafood: [1, small-touch], eggs: [1, small-touch], potatoes: [1, small-touch], roots: [1, small-touch],
+  cabbage: [2, savoury-for], tomato: [2, savoury-for], mushrooms: [1, small-touch], pulses: [2, savoury-for], rice: [2, savoury-for],
+  pasta: [3, classic-with], cheese: [0, nothing-to-say], bread: [0, nothing-to-say], fruit: [0, wrong-kind], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [2, savoury-for], pickles: [0, nothing-to-say], grilled-veg: [1, small-touch], baking: [0, wrong-kind]}
+worcestershire: {pork: [2, savoury-for], chicken: [1, small-touch], beef: [3, classic-with], lamb: [2, savoury-for], game: [2, savoury-for],
+  fish: [0, overpowers], seafood: [1, small-touch], eggs: [1, small-touch], potatoes: [1, small-touch], roots: [0, nothing-to-say],
+  cabbage: [0, nothing-to-say], tomato: [2, savoury-for], mushrooms: [2, savoury-for], pulses: [1, small-touch], rice: [0, nothing-to-say],
+  pasta: [0, nothing-to-say], cheese: [2, savoury-for], bread: [1, small-touch], fruit: [0, wrong-kind], chocolate: [0, wrong-kind],
+  coffee-tea: [0, wrong-kind], soups: [1, small-touch], pickles: [0, nothing-to-say], grilled-veg: [1, small-touch], baking: [0, wrong-kind]}
+# salt has no row: it seasons everything and decides nothing about what a sauce suits (sauce_data.NO_FOODS)

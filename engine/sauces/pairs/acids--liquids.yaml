@@ -1,0 +1,24 @@
+lemon-juice:
+  coconut-milk: [0, harmless]
+  passata: [1, gentle-company]
+lime-juice:
+  coconut-milk: [3, classic-partners, "Coconut milk and lime: rich and bright, the Thai way.", "Kókusztej és lime: gazdag és élénk, thai módra."]
+  passata: [1, gentle-company]
+vinegar:
+  coconut-milk: [-1, odd-couple]
+  passata: [1, gentle-company]
+wine-vinegar:
+  coconut-milk: [-1, kitchens-apart]
+  passata: [1, gentle-company]
+balsamic:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [2, classic-partners]
+rice-vinegar:
+  coconut-milk: [1, cuisine-mates]
+  passata: [-1, kitchens-apart]
+white-wine:
+  coconut-milk: [-1, kitchens-apart]
+  passata: [1, gentle-company]
+red-wine:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [3, classic-partners, "Passata and red wine: a ragù's long, deep simmer.", "Passata és vörösbor: a ragu hosszú, mély főzése."]

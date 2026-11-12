@@ -1,0 +1,44 @@
+fresh-chili:
+  cucumber: [2, heat-and-cool]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]
+mustard:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-1, odd-couple]
+  tahini: [-1, odd-couple]
+eros-pista:
+  cucumber: [1, heat-and-cool]
+  peanut-butter: [-1, kitchens-apart]
+  tahini: [-1, kitchens-apart]
+sweet-paprika:
+  cucumber: [2, hungarian-heart]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+smoked-paprika:
+  cucumber: [-1, drowns]
+  peanut-butter: [1, gentle-company]
+  tahini: [1, gentle-company]
+hot-paprika:
+  cucumber: [1, heat-and-cool]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+chili-flakes:
+  cucumber: [2, heat-and-cool]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]
+cayenne:
+  cucumber: [1, heat-and-cool]
+  peanut-butter: [1, gentle-company]
+  tahini: [1, gentle-company]
+black-pepper:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+white-pepper:
+  cucumber: [0, strangers]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+mustard-powder:
+  cucumber: [0, harmless]
+  peanut-butter: [-1, odd-couple]
+  tahini: [-1, odd-couple]

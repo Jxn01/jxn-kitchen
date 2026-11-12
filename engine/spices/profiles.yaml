@@ -1,0 +1,285 @@
+# One profile per rack jar (spec 2026-10-19 §4.2). Hand-judged, like every number in engine/. Fields:
+#   id         a catalogue id (catalogue/food/*.yaml) — names, aliases and gluten come from there
+#   say?       the short name on the jar and in sentences (default: the catalogue name, lower case)
+#   shelf      meta.yaml shelves
+#   fill       the jar's content colour; a jar on the know-how rack keeps the rack's colour and tag (tested)
+#   tag        three words on the jar
+#   axes       0-5 on each of the radar's eight axes
+#   intensity  1-5: how far a level teaspoon goes (a teaspoon of cloves is not a teaspoon of parsley)
+#   heat       0-5 (the know-how rack's heat)
+#   role       base (the bulk) | body | accent | finisher (sprinkled at the end)
+#   timing     bloom (in the hot fat) | during (with the liquid) | finish (at the end)
+#   fragile    true: burns or goes bitter in hot fat, or loses its aroma to a long cook
+#   form       whole (bought whole: grind it for a fine blend) | ground | both
+#   cuisines   0-3 per cuisine (meta.yaml)
+#   g_per_tsp  grams in one level teaspoon (the batch scaler)
+profiles:
+  # --- warm & sweet ---------------------------------------------------------------------------------------------------
+  - {id: cinnamon, shelf: warm, fill: "#B5651D", tag: {en: "sweet · warm · woody", hu: "édes · meleg · fás"},
+     axes: {warm: 5, earthy: 1, hot: 0, bright: 0, herbal: 0, floral: 1, bitter: 0, savoury: 0},
+     intensity: 3, heat: 0, role: base, timing: during, fragile: false, form: both, g_per_tsp: 2.6,
+     cuisines: {hungarian: 2, balkan: 2, indian: 2, middle-eastern: 3, mediterranean: 1, mexican: 2, east-asian: 2, french: 1, american: 1, baking: 3}}
+  - {id: cloves, shelf: warm, fill: "#5A3A2A", tag: {en: "intense · numbing · sweet", hu: "intenzív · zsibbasztó · édes"},
+     axes: {warm: 5, earthy: 1, hot: 1, bright: 0, herbal: 0, floral: 1, bitter: 2, savoury: 1},
+     intensity: 5, heat: 1, role: accent, timing: bloom, fragile: false, form: both, g_per_tsp: 2.1,
+     cuisines: {hungarian: 2, balkan: 1, indian: 3, middle-eastern: 2, mediterranean: 0, mexican: 1, east-asian: 2, french: 2, american: 1, baking: 3}}
+  - {id: nutmeg, shelf: warm, fill: "#A0704A", tag: {en: "warm · nutty · sweet", hu: "meleg · diós · édes"},
+     axes: {warm: 4, earthy: 2, hot: 0, bright: 0, herbal: 0, floral: 1, bitter: 1, savoury: 1},
+     intensity: 4, heat: 0, role: accent, timing: finish, fragile: false, form: ground, g_per_tsp: 2.2,
+     cuisines: {hungarian: 2, balkan: 1, indian: 2, middle-eastern: 2, mediterranean: 1, mexican: 0, east-asian: 0, french: 3, american: 1, baking: 3}}
+  - {id: allspice, shelf: warm, fill: "#7A4E35", tag: {en: "cinnamon + clove + pepper in one", hu: "fahéj + szegfűszeg + bors egyben"},
+     axes: {warm: 4, earthy: 1, hot: 1, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 1},
+     intensity: 4, heat: 1, role: accent, timing: during, fragile: false, form: both, g_per_tsp: 1.9,
+     cuisines: {hungarian: 2, balkan: 2, indian: 0, middle-eastern: 3, mediterranean: 0, mexican: 1, east-asian: 0, french: 1, american: 2, baking: 2}}
+  - {id: cardamom, shelf: warm, fill: "#9BAF6E", tag: {en: "citrusy · eucalyptus · floral", hu: "citrusos · eukaliptuszos · virágos"},
+     axes: {warm: 3, earthy: 0, hot: 0, bright: 3, herbal: 1, floral: 3, bitter: 0, savoury: 0},
+     intensity: 4, heat: 0, role: accent, timing: bloom, fragile: false, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 0, indian: 3, middle-eastern: 3, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 3}}
+  - {id: star-anise, say: {en: "star anise", hu: "csillagánizs"}, shelf: warm, fill: "#6B3E2E", tag: {en: "liquorice · sweet", hu: "édesgyökér · édes"},
+     axes: {warm: 4, earthy: 0, hot: 0, bright: 0, herbal: 1, floral: 2, bitter: 1, savoury: 1},
+     intensity: 5, heat: 0, role: accent, timing: during, fragile: false, form: whole, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 0, indian: 2, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 3, french: 1, american: 0, baking: 2}}
+  - {id: vanilla-pod, say: {en: "vanilla", hu: "vanília"}, shelf: warm, fill: "#3A2A20", tag: {en: "sweet · creamy · floral", hu: "édes · krémes · virágos"},
+     axes: {warm: 3, earthy: 0, hot: 0, bright: 0, herbal: 0, floral: 4, bitter: 0, savoury: 0},
+     intensity: 3, heat: 0, role: accent, timing: during, fragile: true, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 2, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 1, east-asian: 0, french: 2, american: 1, baking: 3}}
+  - {id: ground-ginger, say: {en: "ginger", hu: "gyömbér"}, shelf: warm, fill: "#E3B76A", tag: {en: "warm · sharp · lemony", hu: "meleg · csípős · citromos"},
+     axes: {warm: 4, earthy: 1, hot: 2, bright: 2, herbal: 0, floral: 0, bitter: 0, savoury: 1},
+     intensity: 3, heat: 1, role: body, timing: during, fragile: false, form: ground, g_per_tsp: 1.8,
+     cuisines: {hungarian: 1, balkan: 0, indian: 3, middle-eastern: 2, mediterranean: 0, mexican: 0, east-asian: 2, french: 1, american: 1, baking: 3}}
+  - {id: anise-seed, say: {en: "anise", hu: "ánizs"}, shelf: warm, fill: "#9B8A63", tag: {en: "liquorice · sweet · herbal", hu: "ánizsos · édes · füves"},
+     axes: {warm: 3, earthy: 1, hot: 0, bright: 1, herbal: 2, floral: 2, bitter: 0, savoury: 0},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: both, g_per_tsp: 2.1,
+     cuisines: {hungarian: 2, balkan: 2, indian: 1, middle-eastern: 2, mediterranean: 2, mexican: 1, east-asian: 0, french: 1, american: 0, baking: 3}}
+  # --- earthy & seeds -------------------------------------------------------------------------------------------------
+  - {id: cumin, shelf: earthy, fill: "#A8743E", tag: {en: "earthy · warm · smoky", hu: "földes · meleg · füstös"},
+     axes: {warm: 2, earthy: 5, hot: 1, bright: 1, herbal: 0, floral: 0, bitter: 2, savoury: 3},
+     intensity: 4, heat: 0, role: body, timing: bloom, fragile: false, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 0, balkan: 2, indian: 3, middle-eastern: 3, mediterranean: 1, mexican: 3, east-asian: 1, french: 0, american: 2, baking: 0}}
+  - {id: caraway, shelf: earthy, fill: "#8A6A3B", tag: {en: "anise-like · earthy", hu: "ánizsos · földes"},
+     axes: {warm: 1, earthy: 4, hot: 0, bright: 1, herbal: 2, floral: 0, bitter: 1, savoury: 3},
+     intensity: 3, heat: 0, role: body, timing: bloom, fragile: false, form: both, g_per_tsp: 2.1,
+     cuisines: {hungarian: 3, balkan: 2, indian: 0, middle-eastern: 2, mediterranean: 0, mexican: 0, east-asian: 0, french: 1, american: 0, baking: 1}}
+  - {id: coriander-seed, say: {en: "coriander", hu: "koriander"}, shelf: earthy, fill: "#C9A86A", tag: {en: "citrusy · floral", hu: "citrusos · virágos"},
+     axes: {warm: 2, earthy: 2, hot: 0, bright: 4, herbal: 1, floral: 3, bitter: 0, savoury: 1},
+     intensity: 2, heat: 0, role: base, timing: bloom, fragile: false, form: both, g_per_tsp: 1.8,
+     cuisines: {hungarian: 1, balkan: 2, indian: 3, middle-eastern: 3, mediterranean: 1, mexican: 2, east-asian: 1, french: 1, american: 1, baking: 1}}
+  - {id: fennel-seed, say: {en: "fennel seed", hu: "édesköménymag"}, shelf: earthy, fill: "#A8B26A", tag: {en: "sweet · anise", hu: "édes · ánizsos"},
+     axes: {warm: 2, earthy: 1, hot: 0, bright: 2, herbal: 2, floral: 2, bitter: 0, savoury: 1},
+     intensity: 3, heat: 0, role: body, timing: bloom, fragile: false, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 1, indian: 2, middle-eastern: 1, mediterranean: 3, mexican: 0, east-asian: 2, french: 1, american: 0, baking: 1}}
+  - {id: turmeric, shelf: earthy, fill: "#F2B705", tag: {en: "earthy · bitter · golden", hu: "földes · kesernyés · aranysárga"},
+     axes: {warm: 1, earthy: 4, hot: 0, bright: 1, herbal: 0, floral: 0, bitter: 3, savoury: 2},
+     intensity: 3, heat: 0, role: body, timing: bloom, fragile: false, form: ground, g_per_tsp: 3.0,
+     cuisines: {hungarian: 0, balkan: 0, indian: 3, middle-eastern: 2, mediterranean: 0, mexican: 0, east-asian: 1, french: 0, american: 1, baking: 0}}
+  - {id: fenugreek, shelf: earthy, fill: "#C99A4A", tag: {en: "bitter · maple-like", hu: "kesernyés · juharszirupos"},
+     axes: {warm: 2, earthy: 3, hot: 0, bright: 0, herbal: 1, floral: 0, bitter: 4, savoury: 3},
+     intensity: 4, heat: 0, role: accent, timing: bloom, fragile: false, form: both, g_per_tsp: 3.7,
+     cuisines: {hungarian: 0, balkan: 0, indian: 3, middle-eastern: 2, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  - {id: mustard-seed, say: {en: "mustard seed", hu: "mustármag"}, shelf: earthy, fill: "#E5B53A", tag: {en: "hot when crushed · nutty when fried", hu: "törve csípős · sütve diós"},
+     axes: {warm: 1, earthy: 2, hot: 2, bright: 1, herbal: 0, floral: 0, bitter: 2, savoury: 2},
+     intensity: 3, heat: 1, role: body, timing: bloom, fragile: false, form: whole, g_per_tsp: 3.3,
+     cuisines: {hungarian: 2, balkan: 1, indian: 3, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 2, american: 2, baking: 0}}
+  - {id: celery-seed, say: {en: "celery seed", hu: "zellermag"}, shelf: earthy, fill: "#8C8A5A", tag: {en: "concentrated celery · bitter", hu: "tömény zeller · kesernyés"},
+     axes: {warm: 0, earthy: 3, hot: 0, bright: 1, herbal: 3, floral: 0, bitter: 3, savoury: 4},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 1, indian: 1, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 1, american: 3, baking: 0}}
+  - {id: dill-seed, say: {en: "dill seed", hu: "kapormag"}, shelf: earthy, fill: "#8E8259", tag: {en: "dill · caraway-like · warm", hu: "kapros · köményes · meleg"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 2, herbal: 3, floral: 0, bitter: 1, savoury: 1},
+     intensity: 3, heat: 0, role: accent, timing: during, fragile: false, form: whole, g_per_tsp: 2.1,
+     cuisines: {hungarian: 2, balkan: 1, indian: 1, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 2, baking: 0}}
+  # --- paprika, chilli & pepper ---------------------------------------------------------------------------------------
+  - {id: sweet-paprika, say: {en: "paprika", hu: "pirospaprika"}, shelf: hot, fill: "#C8281E", tag: {en: "sweet · fruity · mellow", hu: "édes · gyümölcsös · lágy"},
+     axes: {warm: 3, earthy: 2, hot: 0, bright: 1, herbal: 0, floral: 0, bitter: 0, savoury: 3},
+     intensity: 1, heat: 0, role: base, timing: during, fragile: true, form: ground, g_per_tsp: 2.3,
+     cuisines: {hungarian: 3, balkan: 3, indian: 1, middle-eastern: 2, mediterranean: 2, mexican: 2, east-asian: 0, french: 1, american: 2, baking: 0}}
+  - {id: smoked-paprika, say: {en: "smoked paprika", hu: "füstölt paprika"}, shelf: hot, fill: "#9E3426", tag: {en: "smoky · sweet", hu: "füstös · édes"},
+     axes: {warm: 3, earthy: 3, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 4},
+     intensity: 3, heat: 0, role: base, timing: during, fragile: true, form: ground, g_per_tsp: 2.3,
+     cuisines: {hungarian: 1, balkan: 1, indian: 0, middle-eastern: 1, mediterranean: 3, mexican: 2, east-asian: 0, french: 0, american: 3, baking: 0}}
+  - {id: hot-paprika, say: {en: "hot paprika", hu: "csípős paprika"}, shelf: hot, fill: "#A8331C", tag: {en: "hot · fruity · Hungarian", hu: "csípős · gyümölcsös · magyaros"},
+     axes: {warm: 2, earthy: 2, hot: 3, bright: 1, herbal: 0, floral: 0, bitter: 0, savoury: 3},
+     intensity: 2, heat: 3, role: accent, timing: during, fragile: true, form: ground, g_per_tsp: 2.3,
+     cuisines: {hungarian: 3, balkan: 2, indian: 0, middle-eastern: 0, mediterranean: 1, mexican: 1, east-asian: 0, french: 0, american: 1, baking: 0}}
+  - {id: chili-powder, say: {en: "chilli powder", hu: "chilipor"}, shelf: hot, fill: "#A8361F", tag: {en: "earthy · mild heat", hu: "földes · enyhén csípős"},
+     axes: {warm: 2, earthy: 2, hot: 2, bright: 1, herbal: 0, floral: 0, bitter: 1, savoury: 2},
+     intensity: 2, heat: 2, role: base, timing: during, fragile: true, form: ground, g_per_tsp: 2.7,
+     cuisines: {hungarian: 0, balkan: 0, indian: 2, middle-eastern: 1, mediterranean: 0, mexican: 3, east-asian: 1, french: 0, american: 3, baking: 0}}
+  - {id: chili-flakes, say: {en: "chilli flakes", hu: "chilipehely"}, shelf: hot, fill: "#B8322A", tag: {en: "fruity heat", hu: "gyümölcsös csípősség"},
+     axes: {warm: 1, earthy: 1, hot: 4, bright: 2, herbal: 0, floral: 0, bitter: 0, savoury: 1},
+     intensity: 3, heat: 3, role: accent, timing: bloom, fragile: false, form: both, g_per_tsp: 1.3,
+     cuisines: {hungarian: 1, balkan: 2, indian: 2, middle-eastern: 2, mediterranean: 3, mexican: 2, east-asian: 3, french: 0, american: 2, baking: 0}}
+  - {id: cayenne, say: {en: "cayenne", hu: "cayenne-bors"}, shelf: hot, fill: "#C0392B", tag: {en: "clean, sharp heat", hu: "tiszta, éles csípősség"},
+     axes: {warm: 1, earthy: 0, hot: 5, bright: 1, herbal: 0, floral: 0, bitter: 0, savoury: 1},
+     intensity: 4, heat: 4, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 1.8,
+     cuisines: {hungarian: 0, balkan: 0, indian: 3, middle-eastern: 1, mediterranean: 0, mexican: 2, east-asian: 1, french: 0, american: 3, baking: 0}}
+  - {id: chipotle, say: {en: "chipotle", hu: "chipotle"}, shelf: hot, fill: "#8B3A1E", tag: {en: "smoky heat", hu: "füstös csípősség"},
+     axes: {warm: 2, earthy: 3, hot: 3, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 4},
+     intensity: 4, heat: 3, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 2.0,
+     cuisines: {hungarian: 0, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 3, east-asian: 0, french: 0, american: 3, baking: 0}}
+  - {id: black-pepper, say: {en: "black pepper", hu: "fekete bors"}, shelf: hot, fill: "#3A3430", tag: {en: "sharp · warm · piney", hu: "csípős · meleg · fenyős"},
+     axes: {warm: 2, earthy: 1, hot: 3, bright: 2, herbal: 1, floral: 0, bitter: 1, savoury: 2},
+     intensity: 3, heat: 2, role: accent, timing: during, fragile: false, form: both, g_per_tsp: 2.3,
+     cuisines: {hungarian: 3, balkan: 3, indian: 3, middle-eastern: 3, mediterranean: 3, mexican: 2, east-asian: 2, french: 3, american: 3, baking: 1}}
+  - {id: white-pepper, say: {en: "white pepper", hu: "fehér bors"}, shelf: hot, fill: "#E6DFCF", tag: {en: "sharp · earthy · funky", hu: "csípős · földes · fanyar"},
+     axes: {warm: 1, earthy: 3, hot: 3, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 2},
+     intensity: 3, heat: 2, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 2.4,
+     cuisines: {hungarian: 2, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 3, french: 3, american: 0, baking: 0}}
+  - {id: sichuan-pepper, say: {en: "Sichuan pepper", hu: "szecsuáni bors"}, shelf: hot, fill: "#7A3B2E", tag: {en: "citrusy · tingling · numbing", hu: "citrusos · bizsergető · zsibbasztó"},
+     axes: {warm: 1, earthy: 1, hot: 2, bright: 4, herbal: 1, floral: 2, bitter: 0, savoury: 1},
+     intensity: 4, heat: 2, role: accent, timing: bloom, fragile: false, form: both, g_per_tsp: 1.0,
+     cuisines: {hungarian: 0, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 3, french: 0, american: 0, baking: 0}}
+  - {id: pink-pepper, say: {en: "pink pepper", hu: "rózsabors"}, shelf: hot, fill: "#D9727A", tag: {en: "fruity · resinous · gentle", hu: "gyümölcsös · gyantás · szelíd"},
+     axes: {warm: 1, earthy: 0, hot: 1, bright: 3, herbal: 0, floral: 2, bitter: 0, savoury: 0},
+     intensity: 2, heat: 1, role: accent, timing: finish, fragile: false, form: whole, g_per_tsp: 0.8,
+     cuisines: {hungarian: 0, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 1, mexican: 0, east-asian: 0, french: 2, american: 0, baking: 1}}
+  - {id: mustard-powder, say: {en: "mustard powder", hu: "mustárpor"}, shelf: hot, fill: "#D9A82C", tag: {en: "sharp · nose-tingling", hu: "éles · orrcsípő"},
+     axes: {warm: 1, earthy: 1, hot: 4, bright: 2, herbal: 0, floral: 0, bitter: 2, savoury: 2},
+     intensity: 4, heat: 2, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 0, indian: 1, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 2, american: 3, baking: 0}}
+  # --- Mediterranean herbs --------------------------------------------------------------------------------------------
+  - {id: oregano, shelf: mediterranean, fill: "#6E8B3D", tag: {en: "earthy · peppery", hu: "földes · borsos"},
+     axes: {warm: 1, earthy: 3, hot: 1, bright: 1, herbal: 5, floral: 1, bitter: 2, savoury: 2},
+     intensity: 3, heat: 0, role: body, timing: during, fragile: false, form: ground, g_per_tsp: 1.0,
+     cuisines: {hungarian: 1, balkan: 3, indian: 0, middle-eastern: 2, mediterranean: 3, mexican: 2, east-asian: 0, french: 1, american: 2, baking: 0}}
+  - {id: thyme, shelf: mediterranean, fill: "#7E9A55", tag: {en: "earthy · lemony · woody", hu: "földes · citromos · fás"},
+     axes: {warm: 1, earthy: 3, hot: 0, bright: 2, herbal: 5, floral: 1, bitter: 1, savoury: 2},
+     intensity: 3, heat: 0, role: body, timing: during, fragile: false, form: ground, g_per_tsp: 1.4,
+     cuisines: {hungarian: 2, balkan: 2, indian: 0, middle-eastern: 3, mediterranean: 3, mexican: 1, east-asian: 0, french: 3, american: 2, baking: 0}}
+  - {id: rosemary, shelf: mediterranean, fill: "#5E7D4C", tag: {en: "piney · resinous", hu: "fenyős · gyantás"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 2, herbal: 5, floral: 1, bitter: 2, savoury: 2},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 1.2,
+     cuisines: {hungarian: 1, balkan: 1, indian: 0, middle-eastern: 1, mediterranean: 3, mexican: 0, east-asian: 0, french: 3, american: 1, baking: 1}}
+  - {id: sage-dried, say: {en: "sage", hu: "zsálya"}, shelf: mediterranean, fill: "#8FA08A", tag: {en: "earthy · musky", hu: "földes · pézsmás"},
+     axes: {warm: 1, earthy: 3, hot: 0, bright: 0, herbal: 4, floral: 1, bitter: 2, savoury: 3},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 0.7,
+     cuisines: {hungarian: 1, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 2, mexican: 0, east-asian: 0, french: 1, american: 2, baking: 0}}
+  - {id: marjoram, shelf: mediterranean, fill: "#7FA35A", tag: {en: "sweet · floral oregano", hu: "édes · virágos oregánó"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 1, herbal: 4, floral: 3, bitter: 0, savoury: 2},
+     intensity: 2, heat: 0, role: body, timing: during, fragile: false, form: ground, g_per_tsp: 0.6,
+     cuisines: {hungarian: 3, balkan: 2, indian: 0, middle-eastern: 1, mediterranean: 2, mexican: 0, east-asian: 0, french: 2, american: 0, baking: 0}}
+  - {id: savory, shelf: mediterranean, fill: "#7B8F5A", tag: {en: "peppery · thyme-like", hu: "borsos · kakukkfűszerű"},
+     axes: {warm: 1, earthy: 2, hot: 1, bright: 1, herbal: 4, floral: 1, bitter: 1, savoury: 3},
+     intensity: 3, heat: 0, role: body, timing: during, fragile: false, form: ground, g_per_tsp: 1.4,
+     cuisines: {hungarian: 2, balkan: 3, indian: 0, middle-eastern: 0, mediterranean: 1, mexican: 0, east-asian: 0, french: 2, american: 0, baking: 0}}
+  - {id: bay-leaf, say: {en: "bay leaf", hu: "babérlevél"}, shelf: mediterranean, fill: "#8A9A5B", tag: {en: "herbal · tea-like", hu: "füves · teás"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 1, herbal: 3, floral: 2, bitter: 2, savoury: 2},
+     intensity: 3, heat: 0, role: accent, timing: during, fragile: false, form: whole, g_per_tsp: 0.6,
+     cuisines: {hungarian: 3, balkan: 3, indian: 2, middle-eastern: 2, mediterranean: 3, mexican: 1, east-asian: 0, french: 3, american: 2, baking: 0}}
+  - {id: basil-dried, say: {en: "basil", hu: "bazsalikom"}, shelf: mediterranean, fill: "#6F8F3F", tag: {en: "sweet · peppery", hu: "édes · borsos"},
+     axes: {warm: 1, earthy: 1, hot: 1, bright: 1, herbal: 4, floral: 2, bitter: 0, savoury: 1},
+     intensity: 2, heat: 0, role: body, timing: during, fragile: true, form: ground, g_per_tsp: 0.7,
+     cuisines: {hungarian: 1, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 3, mexican: 0, east-asian: 1, french: 1, american: 1, baking: 0}}
+  - {id: lavender, say: {en: "lavender", hu: "levendula"}, shelf: mediterranean, fill: "#9B87C1", tag: {en: "floral · perfumed · piney", hu: "virágos · parfümös · fenyős"},
+     axes: {warm: 1, earthy: 0, hot: 0, bright: 1, herbal: 3, floral: 5, bitter: 2, savoury: 0},
+     intensity: 5, heat: 0, role: accent, timing: during, fragile: true, form: whole, g_per_tsp: 0.5,
+     cuisines: {hungarian: 1, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 1, mexican: 0, east-asian: 0, french: 3, american: 0, baking: 2}}
+  # --- green & Hungarian herbs ----------------------------------------------------------------------------------------
+  - {id: dill-dried, say: {en: "dill", hu: "kapor"}, shelf: green, fill: "#8DB255", tag: {en: "fresh · anise · grassy", hu: "friss · ánizsos · füves"},
+     axes: {warm: 0, earthy: 1, hot: 0, bright: 3, herbal: 4, floral: 1, bitter: 0, savoury: 1},
+     intensity: 2, heat: 0, role: finisher, timing: finish, fragile: true, form: ground, g_per_tsp: 1.0,
+     cuisines: {hungarian: 3, balkan: 3, indian: 0, middle-eastern: 1, mediterranean: 1, mexican: 0, east-asian: 0, french: 0, american: 1, baking: 0}}
+  - {id: parsley-dried, say: {en: "parsley", hu: "petrezselyem"}, shelf: green, fill: "#4F8A3A", tag: {en: "fresh · green", hu: "friss · zöld"},
+     axes: {warm: 0, earthy: 1, hot: 0, bright: 2, herbal: 3, floral: 0, bitter: 1, savoury: 1},
+     intensity: 1, heat: 0, role: finisher, timing: finish, fragile: true, form: ground, g_per_tsp: 0.5,
+     cuisines: {hungarian: 3, balkan: 3, indian: 0, middle-eastern: 2, mediterranean: 3, mexican: 0, east-asian: 0, french: 3, american: 2, baking: 0}}
+  - {id: lovage-dried, say: {en: "lovage", hu: "lestyán"}, shelf: green, fill: "#6C8A3E", tag: {en: "intense celery", hu: "intenzív zeller"},
+     axes: {warm: 0, earthy: 2, hot: 0, bright: 1, herbal: 3, floral: 0, bitter: 2, savoury: 5},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: ground, g_per_tsp: 0.5,
+     cuisines: {hungarian: 3, balkan: 2, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  - {id: tarragon-dried, say: {en: "tarragon", hu: "tárkony"}, shelf: green, fill: "#7AA05A", tag: {en: "aniseed · bittersweet", hu: "ánizsos · keserédes"},
+     axes: {warm: 1, earthy: 0, hot: 0, bright: 2, herbal: 4, floral: 2, bitter: 1, savoury: 1},
+     intensity: 3, heat: 0, role: accent, timing: finish, fragile: true, form: ground, g_per_tsp: 0.6,
+     cuisines: {hungarian: 3, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 3, american: 0, baking: 0}}
+  - {id: mint-dried, say: {en: "mint", hu: "menta"}, shelf: green, fill: "#5AA469", tag: {en: "cool · sweet", hu: "hűsítő · édes"},
+     axes: {warm: 0, earthy: 1, hot: 0, bright: 3, herbal: 4, floral: 1, bitter: 0, savoury: 0},
+     intensity: 3, heat: 0, role: accent, timing: finish, fragile: true, form: ground, g_per_tsp: 0.5,
+     cuisines: {hungarian: 1, balkan: 3, indian: 2, middle-eastern: 3, mediterranean: 2, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  - {id: chives-dried, say: {en: "chives", hu: "metélőhagyma"}, shelf: green, fill: "#3F8F3A", tag: {en: "mild onion", hu: "enyhe hagyma"},
+     axes: {warm: 0, earthy: 0, hot: 1, bright: 1, herbal: 2, floral: 0, bitter: 0, savoury: 3},
+     intensity: 1, heat: 0, role: finisher, timing: finish, fragile: true, form: ground, g_per_tsp: 0.3,
+     cuisines: {hungarian: 2, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 2, american: 1, baking: 0}}
+  - {id: coriander-leaf-dried, say: {en: "coriander leaf", hu: "korianderzöld"}, shelf: green, fill: "#4E9A3C", tag: {en: "citrusy · fresh", hu: "citrusos · friss"},
+     axes: {warm: 0, earthy: 0, hot: 0, bright: 3, herbal: 3, floral: 1, bitter: 0, savoury: 1},
+     intensity: 1, heat: 0, role: finisher, timing: finish, fragile: true, form: ground, g_per_tsp: 0.5,
+     cuisines: {hungarian: 0, balkan: 0, indian: 2, middle-eastern: 2, mediterranean: 0, mexican: 2, east-asian: 2, french: 0, american: 0, baking: 0}}
+  - {id: wild-garlic-dried, say: {en: "wild garlic", hu: "medvehagyma"}, shelf: green, fill: "#5C9E3E", tag: {en: "garlicky · green", hu: "fokhagymás · zöld"},
+     axes: {warm: 0, earthy: 1, hot: 1, bright: 1, herbal: 3, floral: 0, bitter: 0, savoury: 4},
+     intensity: 2, heat: 0, role: finisher, timing: finish, fragile: true, form: ground, g_per_tsp: 0.5,
+     cuisines: {hungarian: 3, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  # --- specials -------------------------------------------------------------------------------------------------------
+  - {id: saffron, shelf: special, fill: "#D9541E", tag: {en: "honeyed · hay-like · golden", hu: "mézes · szénaillatú · aranyló"},
+     axes: {warm: 2, earthy: 2, hot: 0, bright: 1, herbal: 1, floral: 5, bitter: 2, savoury: 1},
+     intensity: 5, heat: 0, role: accent, timing: during, fragile: true, form: whole, g_per_tsp: 0.7,
+     cuisines: {hungarian: 0, balkan: 0, indian: 3, middle-eastern: 3, mediterranean: 3, mexican: 0, east-asian: 0, french: 3, american: 0, baking: 2}}
+  - {id: sumac, shelf: special, fill: "#8E2F3A", tag: {en: "tangy · lemony", hu: "savanykás · citromos"},
+     axes: {warm: 0, earthy: 1, hot: 0, bright: 5, herbal: 0, floral: 1, bitter: 1, savoury: 2},
+     intensity: 2, heat: 0, role: finisher, timing: finish, fragile: false, form: ground, g_per_tsp: 2.6,
+     cuisines: {hungarian: 0, balkan: 1, indian: 0, middle-eastern: 3, mediterranean: 1, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  - {id: juniper, say: {en: "juniper", hu: "boróka"}, shelf: special, fill: "#3D3F5E", tag: {en: "piney · resinous · gin", hu: "fenyős · gyantás · gin"},
+     axes: {warm: 2, earthy: 1, hot: 1, bright: 2, herbal: 3, floral: 1, bitter: 2, savoury: 2},
+     intensity: 4, heat: 0, role: accent, timing: during, fragile: false, form: whole, g_per_tsp: 1.8,
+     cuisines: {hungarian: 2, balkan: 1, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 2, american: 0, baking: 0}}
+  - {id: nigella, say: {en: "nigella", hu: "feketekömény"}, shelf: special, fill: "#2E2A2A", tag: {en: "oniony · peppery", hu: "hagymás · borsos"},
+     axes: {warm: 1, earthy: 2, hot: 1, bright: 1, herbal: 2, floral: 0, bitter: 2, savoury: 3},
+     intensity: 3, heat: 1, role: accent, timing: bloom, fragile: false, form: whole, g_per_tsp: 2.8,
+     cuisines: {hungarian: 0, balkan: 1, indian: 3, middle-eastern: 3, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 2}}
+  - {id: poppy-seeds, say: {en: "poppy seed", hu: "mák"}, shelf: special, fill: "#4A4E5A", tag: {en: "nutty · sweet", hu: "diós · édes"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 1},
+     intensity: 1, heat: 0, role: base, timing: during, fragile: false, form: whole, g_per_tsp: 2.8,
+     cuisines: {hungarian: 3, balkan: 1, indian: 1, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 3}}
+  - {id: sesame, say: {en: "sesame", hu: "szezám"}, shelf: special, fill: "#E8D8A8", tag: {en: "nutty · toasty", hu: "diós · pörkölt"},
+     axes: {warm: 1, earthy: 2, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 3},
+     intensity: 1, heat: 0, role: body, timing: finish, fragile: true, form: both, g_per_tsp: 2.7,
+     cuisines: {hungarian: 0, balkan: 1, indian: 1, middle-eastern: 3, mediterranean: 1, mexican: 1, east-asian: 3, french: 0, american: 1, baking: 2}}
+  - {id: asafoetida, say: {en: "asafoetida", hu: "asafoetida"}, shelf: special, fill: "#D8C8A0", tag: {en: "pungent · garlicky when cooked", hu: "szúrós · főzve fokhagymás"},
+     axes: {warm: 0, earthy: 2, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 2, savoury: 5},
+     intensity: 5, heat: 0, role: accent, timing: bloom, fragile: false, form: ground, g_per_tsp: 2.5,
+     cuisines: {hungarian: 0, balkan: 0, indian: 3, middle-eastern: 1, mediterranean: 0, mexican: 0, east-asian: 0, french: 0, american: 0, baking: 0}}
+  - {id: orange-peel, say: {en: "orange peel", hu: "narancshéj"}, shelf: special, fill: "#E58A2A", tag: {en: "bittersweet · zesty · floral", hu: "keserédes · zamatos · virágos"},
+     axes: {warm: 2, earthy: 0, hot: 0, bright: 4, herbal: 0, floral: 3, bitter: 2, savoury: 0},
+     intensity: 3, heat: 0, role: accent, timing: during, fragile: true, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 0, indian: 0, middle-eastern: 1, mediterranean: 2, mexican: 1, east-asian: 2, french: 2, american: 1, baking: 3}}
+  - {id: lemon-peel, say: {en: "lemon peel", hu: "citromhéj"}, shelf: special, fill: "#E8C93A", tag: {en: "zesty · sharp · clean", hu: "zamatos · élénk · tiszta"},
+     axes: {warm: 0, earthy: 0, hot: 0, bright: 5, herbal: 1, floral: 2, bitter: 2, savoury: 0},
+     intensity: 3, heat: 0, role: accent, timing: finish, fragile: true, form: both, g_per_tsp: 2.0,
+     cuisines: {hungarian: 1, balkan: 1, indian: 0, middle-eastern: 2, mediterranean: 3, mexican: 0, east-asian: 0, french: 2, american: 2, baking: 3}}
+  # --- salt, sugar & alliums ------------------------------------------------------------------------------------------
+  - {id: salt, shelf: alliums, fill: "#F4F1EA", tag: {en: "salty · wakes everything up", hu: "sós · mindent felébreszt"},
+     axes: {warm: 0, earthy: 0, hot: 0, bright: 1, herbal: 0, floral: 0, bitter: 0, savoury: 5},
+     intensity: 5, heat: 0, role: accent, timing: during, fragile: false, form: both, g_per_tsp: 5.7,
+     cuisines: {hungarian: 2, balkan: 2, indian: 2, middle-eastern: 2, mediterranean: 2, mexican: 2, east-asian: 2, french: 2, american: 2, baking: 1}}
+  - {id: sugar, shelf: alliums, fill: "#FBF8F0", tag: {en: "sweet · rounds the edges", hu: "édes · lekerekít"},
+     axes: {warm: 2, earthy: 0, hot: 0, bright: 1, herbal: 0, floral: 0, bitter: 0, savoury: 0},
+     intensity: 2, heat: 0, role: body, timing: during, fragile: true, form: ground, g_per_tsp: 4.2,
+     cuisines: {hungarian: 1, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 0, east-asian: 1, french: 0, american: 2, baking: 3}}
+  - {id: brown-sugar, say: {en: "brown sugar", hu: "barna cukor"}, shelf: alliums, fill: "#9C6B3C", tag: {en: "caramel · molasses", hu: "karamell · melasz"},
+     axes: {warm: 3, earthy: 1, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 1, savoury: 1},
+     intensity: 2, heat: 0, role: body, timing: during, fragile: true, form: ground, g_per_tsp: 4.6,
+     cuisines: {hungarian: 0, balkan: 0, indian: 0, middle-eastern: 0, mediterranean: 0, mexican: 1, east-asian: 1, french: 0, american: 3, baking: 3}}
+  - {id: garlic-powder, say: {en: "garlic powder", hu: "fokhagymapor"}, shelf: alliums, fill: "#EADDB8", tag: {en: "savoury · mellow garlic", hu: "sós · lágy fokhagyma"},
+     axes: {warm: 1, earthy: 2, hot: 1, bright: 0, herbal: 0, floral: 0, bitter: 0, savoury: 5},
+     intensity: 3, heat: 0, role: body, timing: during, fragile: true, form: ground, g_per_tsp: 3.1,
+     cuisines: {hungarian: 2, balkan: 3, indian: 1, middle-eastern: 2, mediterranean: 2, mexican: 3, east-asian: 1, french: 1, american: 3, baking: 0}}
+  - {id: onion-powder, say: {en: "onion powder", hu: "hagymapor"}, shelf: alliums, fill: "#E6CF98", tag: {en: "sweet · savoury", hu: "édeskés · sós"},
+     axes: {warm: 2, earthy: 1, hot: 0, bright: 0, herbal: 0, floral: 0, bitter: 0, savoury: 4},
+     intensity: 2, heat: 0, role: body, timing: during, fragile: true, form: ground, g_per_tsp: 2.4,
+     cuisines: {hungarian: 2, balkan: 2, indian: 1, middle-eastern: 1, mediterranean: 1, mexican: 3, east-asian: 1, french: 1, american: 3, baking: 0}}
+
+# Catalogue spices that are not rack jars, each with its reason (a guard: every spices.yaml item is one or the other)
+not_on_rack:
+  curry-powder: a ready-made blend — the engine knows its components, not the product
+  garam-masala: a ready-made blend
+  five-spice: a ready-made blend
+  vegeta: a ready-made seasoning (and usually not GF)
+  chicken-seasoning: a ready-made seasoning salt
+  gyros-spice: a ready-made blend
+  grill-spice: a ready-made blend
+  cajun: a ready-made blend
+  gingerbread-spice: a ready-made blend
+  herbes-de-provence: a ready-made blend
+  italian-herbs: a ready-made blend
+  cinnamon-stick: the cinnamon jar covers both forms
+  sea-salt: the salt jar
+  vanilla-extract: a liquid — a sauce ingredient, not a dry spice
+  vanilla-sugar: a sweetener, not a spice

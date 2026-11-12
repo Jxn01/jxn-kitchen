@@ -1,0 +1,8 @@
+category: kitchen-supplies
+groups:
+  - id: wraps
+    en: Foil & wraps
+    hu: Fólia, csomagolás
+    icon: "om:1F9FB"
+    items:
+      - {id: alu-foil, en: Aluminium foil, hu: Alufólia, aliases: [tin foil], gluten: free}

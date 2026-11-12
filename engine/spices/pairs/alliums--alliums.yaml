@@ -1,0 +1,15 @@
+# Salt, sugar & alliums × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+salt:
+  sugar: [2, sweet-savoury]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [3, classic-partners, "Salt and garlic: garlic salt — the shortcut to a savoury crust.", "Só és fokhagyma: fokhagymás só — rövid út a sós-ízes kéreghez."]
+  onion-powder: [2, seasoning-basic]
+sugar:
+  brown-sugar: [1, same-family]
+  garlic-powder: [-1, dessert-or-roast]
+  onion-powder: [0, harmless]
+brown-sugar:
+  garlic-powder: [1, sweet-savoury]
+  onion-powder: [1, sweet-savoury]
+garlic-powder:
+  onion-powder: [3, classic-partners, "Garlic and onion powder: the savoury floor under every rub.", "Fokhagyma- és hagymapor: minden dörzsölőfűszer sós-ízes alapja."]

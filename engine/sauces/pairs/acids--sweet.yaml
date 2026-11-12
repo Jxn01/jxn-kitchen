@@ -1,0 +1,48 @@
+lemon-juice:
+  honey: [3, sweet-sour, "Lemon and honey: sweet and sour in perfect balance.", "Citrom és méz: tökéletes egyensúlyban az édes és a savanyú."]
+  maple-syrup: [1, sweet-sour]
+  sour-cherry: [1, gentle-company]
+  sugar: [2, sweet-sour]
+  brown-sugar: [1, sweet-sour]
+lime-juice:
+  honey: [2, sweet-sour]
+  maple-syrup: [1, sweet-sour]
+  sour-cherry: [0, harmless]
+  sugar: [2, sweet-sour]
+  brown-sugar: [2, sweet-sour]
+vinegar:
+  honey: [1, sweet-sour]
+  maple-syrup: [0, harmless]
+  sour-cherry: [1, sweet-sour]
+  sugar: [3, hungarian-heart, "Vinegar and sugar: the sweet-sour of every Hungarian salad dressing.", "Ecet és cukor: minden magyar salátalé édes-savanyúja."]
+  brown-sugar: [1, sweet-sour]
+wine-vinegar:
+  honey: [2, sweet-sour]
+  maple-syrup: [1, sweet-sour]
+  sour-cherry: [1, sweet-sour]
+  sugar: [1, sweet-sour]
+  brown-sugar: [1, sweet-sour]
+balsamic:
+  honey: [2, sweet-sour]
+  maple-syrup: [1, sweet-sour]
+  sour-cherry: [2, sweet-sour]
+  sugar: [0, same-job]
+  brown-sugar: [1, sweet-sour]
+rice-vinegar:
+  honey: [2, sweet-sour]
+  maple-syrup: [1, sweet-sour]
+  sour-cherry: [-1, kitchens-apart]
+  sugar: [2, sweet-sour]
+  brown-sugar: [1, sweet-sour]
+white-wine:
+  honey: [1, gentle-company]
+  maple-syrup: [0, harmless]
+  sour-cherry: [0, harmless]
+  sugar: [0, harmless]
+  brown-sugar: [0, harmless]
+red-wine:
+  honey: [1, gentle-company]
+  maple-syrup: [0, harmless]
+  sour-cherry: [3, classic-partners, "Red wine and sour cherries: a deep, fruity sauce for game.", "Vörösbor és meggy: mély, gyümölcsös mártás vadhoz."]
+  sugar: [1, gentle-company]
+  brown-sugar: [1, gentle-company]

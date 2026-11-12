@@ -1,0 +1,8 @@
+coconut-milk:
+  cucumber: [1, cuisine-mates]
+  peanut-butter: [3, classic-partners, "Peanut butter and coconut milk: satay sauce.", "Mogyoróvaj és kókusztej: a saté szósz."]
+  tahini: [0, harmless]
+passata:
+  cucumber: [1, gentle-company]
+  peanut-butter: [1, cuisine-mates]
+  tahini: [-1, odd-couple]

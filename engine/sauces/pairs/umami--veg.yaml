@@ -1,0 +1,24 @@
+tamari:
+  cucumber: [1, cuisine-mates]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]
+fish-sauce:
+  cucumber: [1, cuisine-mates]
+  peanut-butter: [1, cuisine-mates]
+  tahini: [-1, kitchens-apart]
+miso:
+  cucumber: [1, cuisine-mates]
+  peanut-butter: [1, umami-depth]
+  tahini: [2, umami-depth]
+tomato-paste:
+  cucumber: [0, harmless]
+  peanut-butter: [-1, odd-couple]
+  tahini: [-1, odd-couple]
+worcestershire:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [-1, odd-couple]
+  tahini: [-1, kitchens-apart]
+salt:
+  cucumber: [2, salt-lifts]
+  peanut-butter: [1, salt-lifts]
+  tahini: [2, salt-lifts]

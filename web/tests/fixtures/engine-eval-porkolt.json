@@ -1,0 +1,983 @@
+{
+ "score": 78,
+ "base": 50,
+ "word": "good",
+ "word_text": {
+  "en": "Good",
+  "hu": "Jó"
+ },
+ "mascot": "happy",
+ "findings": [
+  {
+   "id": "backbone:hungarian-base",
+   "kind": "good",
+   "weight": 8,
+   "about": [
+    "sweet-paprika",
+    "caraway",
+    "marjoram"
+   ],
+   "en": "You have the Hungarian base. Paprika, caraway and marjoram: pörkölt in a jar.",
+   "hu": "Ez a magyar alap. Pirospaprika, kömény, majoránna: pörkölt egy üvegben."
+  },
+  {
+   "id": "pairs-rest",
+   "kind": "good",
+   "weight": 5,
+   "about": [],
+   "en": "5 more pairs get along on balance.",
+   "hu": "További 5 páros összességében jól megvan egymással."
+  },
+  {
+   "id": "pair:caraway+sweet-paprika",
+   "kind": "good",
+   "weight": 4,
+   "about": [
+    "caraway",
+    "sweet-paprika"
+   ],
+   "en": "Caraway and paprika: pörkölt, gulyás, kolbász — the Hungarian kitchen in two jars.",
+   "hu": "Kömény és pirospaprika: pörkölt, gulyás, kolbász — a magyar konyha két üvegben."
+  },
+  {
+   "id": "pair:garlic-powder+sweet-paprika",
+   "kind": "good",
+   "weight": 4,
+   "about": [
+    "garlic-powder",
+    "sweet-paprika"
+   ],
+   "en": "Paprika and garlic: the red rub of every Hungarian roast and Balkan grill.",
+   "hu": "Pirospaprika és fokhagyma: minden magyar sült és balkáni grill piros pácja."
+  },
+  {
+   "id": "pair:marjoram+sweet-paprika",
+   "kind": "good",
+   "weight": 3,
+   "about": [
+    "marjoram",
+    "sweet-paprika"
+   ],
+   "en": "Paprika and marjoram: the red and the green of every pörkölt pot.",
+   "hu": "Pirospaprika és majoránna: minden pörköltes fazék pirosa és zöldje."
+  },
+  {
+   "id": "pair:caraway+marjoram",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "caraway",
+    "marjoram"
+   ],
+   "en": "Caraway and marjoram: the seed and the herb of pörkölt, hurka and every Hungarian roast.",
+   "hu": "Kömény és majoránna: a pörkölt, a hurka és minden magyar sült magja és füve."
+  },
+  {
+   "id": "pair:caraway+garlic-powder",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "caraway",
+    "garlic-powder"
+   ],
+   "en": "Caraway and garlic powder — the taste of the Hungarian kitchen.",
+   "hu": "Kömény és fokhagymapor — a magyar konyha íze."
+  },
+  {
+   "id": "timing-conflict",
+   "kind": "notice",
+   "weight": 0,
+   "about": [
+    "caraway",
+    "sweet-paprika",
+    "garlic-powder"
+   ],
+   "en": "In hot fat caraway opens up but paprika and garlic powder burns — stir the blend in off the heat, or bloom the seeds on their own first.",
+   "hu": "Forró zsiradékban kömény kinyílik, pirospaprika és fokhagymapor viszont megég — a keveréket lehúzva a tűzről keverd bele, vagy a magokat előbb külön pirítsd."
+  },
+  {
+   "id": "heat:mild",
+   "kind": "info",
+   "weight": 0,
+   "about": [
+    "black-pepper"
+   ],
+   "en": "Heat: mild — fine for anyone.",
+   "hu": "Csípősség: enyhe — bárkinek jó."
+  },
+  {
+   "id": "cuisine",
+   "kind": "info",
+   "weight": 0,
+   "about": [],
+   "en": "It reads Hungarian 33 %, Balkan 25 %, Middle Eastern & North African 14 %.",
+   "hu": "Ízvilága: Magyar 33 %, Balkáni 25 %, Közel-keleti, észak-afrikai 14 %."
+  },
+  {
+   "id": "classic:porkolt",
+   "kind": "info",
+   "weight": 0,
+   "about": [],
+   "en": "100 % like Pörkölt blend.",
+   "hu": "100 %-ban hasonlít erre: Pörköltfűszer."
+  }
+ ],
+ "radar": {
+  "warm": 0.535,
+  "earthy": 0.733,
+  "hot": 0.174,
+  "bright": 0.279,
+  "herbal": 0.36,
+  "floral": 0.14,
+  "bitter": 0.105,
+  "savoury": 1.0
+ },
+ "profile": {
+  "warm": 1.7,
+  "earthy": 2.33,
+  "hot": 0.56,
+  "bright": 0.89,
+  "herbal": 1.15,
+  "floral": 0.44,
+  "bitter": 0.33,
+  "savoury": 3.19
+ },
+ "web": {
+  "nodes": [
+   {
+    "id": "sweet-paprika",
+    "share": 0.2963
+   },
+   {
+    "id": "caraway",
+    "share": 0.2222
+   },
+   {
+    "id": "marjoram",
+    "share": 0.1481
+   },
+   {
+    "id": "garlic-powder",
+    "share": 0.2222
+   },
+   {
+    "id": "black-pepper",
+    "share": 0.1111
+   }
+  ],
+  "edges": [
+   {
+    "a": "caraway",
+    "b": "sweet-paprika",
+    "score": 3,
+    "reason": "hungarian-heart",
+    "en": "Caraway and paprika: pörkölt, gulyás, kolbász — the Hungarian kitchen in two jars.",
+    "hu": "Kömény és pirospaprika: pörkölt, gulyás, kolbász — a magyar konyha két üvegben."
+   },
+   {
+    "a": "marjoram",
+    "b": "sweet-paprika",
+    "score": 3,
+    "reason": "hungarian-heart",
+    "en": "Paprika and marjoram: the red and the green of every pörkölt pot.",
+    "hu": "Pirospaprika és majoránna: minden pörköltes fazék pirosa és zöldje."
+   },
+   {
+    "a": "garlic-powder",
+    "b": "sweet-paprika",
+    "score": 3,
+    "reason": "classic-partners",
+    "en": "Paprika and garlic: the red rub of every Hungarian roast and Balkan grill.",
+    "hu": "Pirospaprika és fokhagyma: minden magyar sült és balkáni grill piros pácja."
+   },
+   {
+    "a": "black-pepper",
+    "b": "sweet-paprika",
+    "score": 2,
+    "reason": "cuisine-mates",
+    "en": "Black pepper and paprika cook together in the same kitchens.",
+    "hu": "Fekete bors és pirospaprika ugyanazokban a konyhákban főz együtt."
+   },
+   {
+    "a": "caraway",
+    "b": "marjoram",
+    "score": 3,
+    "reason": "hungarian-heart",
+    "en": "Caraway and marjoram: the seed and the herb of pörkölt, hurka and every Hungarian roast.",
+    "hu": "Kömény és majoránna: a pörkölt, a hurka és minden magyar sült magja és füve."
+   },
+   {
+    "a": "caraway",
+    "b": "garlic-powder",
+    "score": 2,
+    "reason": "hungarian-heart",
+    "en": "Caraway and garlic powder — the taste of the Hungarian kitchen.",
+    "hu": "Kömény és fokhagymapor — a magyar konyha íze."
+   },
+   {
+    "a": "black-pepper",
+    "b": "caraway",
+    "score": 2,
+    "reason": "cuisine-mates",
+    "en": "Black pepper and caraway cook together in the same kitchens.",
+    "hu": "Fekete bors és kömény ugyanazokban a konyhákban főz együtt."
+   },
+   {
+    "a": "garlic-powder",
+    "b": "marjoram",
+    "score": 2,
+    "reason": "hungarian-heart",
+    "en": "Garlic powder and marjoram — the taste of the Hungarian kitchen.",
+    "hu": "Fokhagymapor és majoránna — a magyar konyha íze."
+   },
+   {
+    "a": "black-pepper",
+    "b": "marjoram",
+    "score": 2,
+    "reason": "hungarian-heart",
+    "en": "Black pepper and marjoram — the taste of the Hungarian kitchen.",
+    "hu": "Fekete bors és majoránna — a magyar konyha íze."
+   },
+   {
+    "a": "black-pepper",
+    "b": "garlic-powder",
+    "score": 2,
+    "reason": "cuisine-mates",
+    "en": "Black pepper and garlic powder cook together in the same kitchens.",
+    "hu": "Fekete bors és fokhagymapor ugyanazokban a konyhákban főz együtt."
+   }
+  ]
+ },
+ "foods": [
+  {
+   "id": "pork",
+   "score": 1.0,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with pork.",
+     "hu": "Sertés — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with pork.",
+     "hu": "Sertés — kömény: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with pork.",
+     "hu": "Sertés — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "marjoram",
+     "score": 3,
+     "en": "Marjoram is a classic with pork.",
+     "hu": "Sertés — majoránna: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "soups",
+   "score": 0.926,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with soups and stews.",
+     "hu": "Leves, ragu — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with soups and stews.",
+     "hu": "Leves, ragu — kömény: klasszikus társ."
+    },
+    {
+     "spice": "marjoram",
+     "score": 3,
+     "en": "Marjoram is a classic with soups and stews.",
+     "hu": "Leves, ragu — majoránna: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives soups and stews depth.",
+     "hu": "Leves, ragu — fokhagymapor: mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "potatoes",
+   "score": 0.889,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with potatoes.",
+     "hu": "Krumpli — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with potatoes.",
+     "hu": "Krumpli — kömény: klasszikus társ."
+    },
+    {
+     "spice": "marjoram",
+     "score": 3,
+     "en": "Marjoram is a classic with potatoes.",
+     "hu": "Krumpli — majoránna: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives potatoes depth.",
+     "hu": "Krumpli — fokhagymapor: mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "beef",
+   "score": 0.877,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with beef.",
+     "hu": "Marha — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with beef.",
+     "hu": "Marha — kömény: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives beef depth.",
+     "hu": "Marha — fokhagymapor: mélységet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 3,
+     "en": "Black pepper is a classic with beef.",
+     "hu": "Marha — fekete bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "cheese",
+   "score": 0.827,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with cheese and yoghurt.",
+     "hu": "Sajt, joghurt — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with cheese and yoghurt.",
+     "hu": "Sajt, joghurt — kömény: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives cheese and yoghurt depth.",
+     "hu": "Sajt, joghurt — fokhagymapor: mélységet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 3,
+     "en": "Black pepper is a classic with cheese and yoghurt.",
+     "hu": "Sajt, joghurt — fekete bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "mushrooms",
+   "score": 0.765,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with mushrooms.",
+     "hu": "Gomba — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with mushrooms.",
+     "hu": "Gomba — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "marjoram",
+     "score": 2,
+     "en": "Marjoram lifts mushrooms.",
+     "hu": "Gomba — majoránna: feldobja."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons mushrooms — it needs it.",
+     "hu": "Gomba — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "chicken",
+   "score": 0.716,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons chicken and duck — it needs it.",
+     "hu": "Csirke, kacsa — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "cabbage",
+   "score": 0.716,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with cabbage and greens.",
+     "hu": "Káposzta, levélzöld — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with cabbage and greens.",
+     "hu": "Káposzta, levélzöld — kömény: klasszikus társ."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons cabbage and greens — it needs it.",
+     "hu": "Káposzta, levélzöld — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "lamb",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with lamb.",
+     "hu": "Bárány — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives lamb colour and sweetness.",
+     "hu": "Bárány — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "marjoram",
+     "score": 2,
+     "en": "Marjoram lifts lamb.",
+     "hu": "Bárány — majoránna: feldobja."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons lamb — it needs it.",
+     "hu": "Bárány — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "tomato",
+   "score": 0.667,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with tomatoes.",
+     "hu": "Paradicsom — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives tomatoes colour and sweetness.",
+     "hu": "Paradicsom — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "marjoram",
+     "score": 2,
+     "en": "Marjoram lifts tomatoes.",
+     "hu": "Paradicsom — majoránna: feldobja."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons tomatoes — it needs it.",
+     "hu": "Paradicsom — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "pulses",
+   "score": 0.642,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives beans and lentils colour and sweetness.",
+     "hu": "Bab, lencse — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "marjoram",
+     "score": 3,
+     "en": "Marjoram is a classic with beans and lentils.",
+     "hu": "Bab, lencse — majoránna: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives beans and lentils depth.",
+     "hu": "Bab, lencse — fokhagymapor: mélységet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons beans and lentils — it needs it.",
+     "hu": "Bab, lencse — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "grilled-veg",
+   "score": 0.617,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with grilled vegetables.",
+     "hu": "Grillezett zöldség — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives grilled vegetables colour and sweetness.",
+     "hu": "Grillezett zöldség — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons grilled vegetables — it needs it.",
+     "hu": "Grillezett zöldség — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "bread",
+   "score": 0.58,
+   "vouchers": [
+    {
+     "spice": "caraway",
+     "score": 3,
+     "en": "Caraway is a classic with GF bread.",
+     "hu": "GM kenyér — kömény: klasszikus társ."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with GF bread.",
+     "hu": "GM kenyér — fokhagymapor: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "pasta",
+   "score": 0.556,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with GF pasta.",
+     "hu": "GM tészta — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 3,
+     "en": "Black pepper is a classic with GF pasta.",
+     "hu": "GM tészta — fekete bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "game",
+   "score": 0.506,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives game colour and sweetness.",
+     "hu": "Vad — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 3,
+     "en": "Black pepper is a classic with game.",
+     "hu": "Vad — fekete bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "eggs",
+   "score": 0.506,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives eggs colour and sweetness.",
+     "hu": "Tojás — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 3,
+     "en": "Black pepper is a classic with eggs.",
+     "hu": "Tojás — fekete bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "seafood",
+   "score": 0.494,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 3,
+     "en": "Garlic powder is a classic with seafood.",
+     "hu": "Tenger gyümölcsei — fokhagymapor: klasszikus társ."
+    },
+    {
+     "spice": "sweet-paprika",
+     "score": 2,
+     "en": "Paprika gives seafood colour and sweetness.",
+     "hu": "Tenger gyümölcsei — pirospaprika: színt és édességet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons seafood — it needs it.",
+     "hu": "Tenger gyümölcsei — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "pickles",
+   "score": 0.469,
+   "vouchers": [
+    {
+     "spice": "caraway",
+     "score": 2,
+     "en": "Caraway matches the earthiness of pickles.",
+     "hu": "Savanyúság — kömény: illik a földes ízéhez."
+    },
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives pickles depth.",
+     "hu": "Savanyúság — fokhagymapor: mélységet ad."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons pickles — it needs it.",
+     "hu": "Savanyúság — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "score": 0.444,
+   "vouchers": [
+    {
+     "spice": "sweet-paprika",
+     "score": 3,
+     "en": "Paprika is a classic with fish.",
+     "hu": "Hal — pirospaprika: klasszikus társ."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons fish — it needs it.",
+     "hu": "Hal — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "score": 0.444,
+   "vouchers": [
+    {
+     "spice": "caraway",
+     "score": 2,
+     "en": "Caraway matches the earthiness of root vegetables.",
+     "hu": "Gyökérzöldség — kömény: illik a földes ízéhez."
+    },
+    {
+     "spice": "black-pepper",
+     "score": 2,
+     "en": "Black pepper seasons root vegetables — it needs it.",
+     "hu": "Gyökérzöldség — fekete bors: ez kell neki."
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "score": 0.284,
+   "vouchers": [
+    {
+     "spice": "garlic-powder",
+     "score": 2,
+     "en": "Garlic powder gives rice and grains depth.",
+     "hu": "Rizs, gabona — fokhagymapor: mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "baking",
+   "score": 0.111,
+   "vouchers": []
+  },
+  {
+   "id": "fruit",
+   "score": 0.037,
+   "vouchers": []
+  },
+  {
+   "id": "chocolate",
+   "score": 0.037,
+   "vouchers": []
+  },
+  {
+   "id": "coffee-tea",
+   "score": 0.037,
+   "vouchers": []
+  }
+ ],
+ "timing": {
+  "bloom": [
+   "caraway"
+  ],
+  "during": [
+   "sweet-paprika",
+   "marjoram",
+   "garlic-powder",
+   "black-pepper"
+  ],
+  "finish": [],
+  "conflict": true
+ },
+ "heat": {
+  "value": 0.22,
+  "word": "mild",
+  "en": "Mild",
+  "hu": "Enyhe"
+ },
+ "classics": [
+  {
+   "id": "porkolt",
+   "en": "Pörkölt blend",
+   "hu": "Pörköltfűszer",
+   "similarity": 100,
+   "missing": [],
+   "extra": [],
+   "ratios": [
+    {
+     "spice": "sweet-paprika",
+     "yours": 53,
+     "theirs": 53
+    },
+    {
+     "spice": "caraway",
+     "yours": 13,
+     "theirs": 13
+    },
+    {
+     "spice": "marjoram",
+     "yours": 13,
+     "theirs": 13
+    },
+    {
+     "spice": "garlic-powder",
+     "yours": 13,
+     "theirs": 13
+    },
+    {
+     "spice": "black-pepper",
+     "yours": 7,
+     "theirs": 7
+    }
+   ]
+  },
+  {
+   "id": "kolbasz",
+   "en": "Kolbász (sausage) spice",
+   "hu": "Kolbászfűszer",
+   "similarity": 86,
+   "missing": [
+    "hot-paprika"
+   ],
+   "extra": [
+    "marjoram"
+   ],
+   "ratios": [
+    {
+     "spice": "sweet-paprika",
+     "yours": 53,
+     "theirs": 57
+    },
+    {
+     "spice": "garlic-powder",
+     "yours": 13,
+     "theirs": 14
+    },
+    {
+     "spice": "caraway",
+     "yours": 13,
+     "theirs": 7
+    },
+    {
+     "spice": "black-pepper",
+     "yours": 7,
+     "theirs": 7
+    }
+   ]
+  },
+  {
+   "id": "cajun",
+   "en": "Cajun",
+   "hu": "Cajun",
+   "similarity": 53,
+   "missing": [
+    "onion-powder",
+    "oregano",
+    "thyme",
+    "salt",
+    "cayenne"
+   ],
+   "extra": [
+    "caraway",
+    "marjoram"
+   ],
+   "ratios": [
+    {
+     "spice": "sweet-paprika",
+     "yours": 53,
+     "theirs": 29
+    },
+    {
+     "spice": "garlic-powder",
+     "yours": 13,
+     "theirs": 19
+    },
+    {
+     "spice": "black-pepper",
+     "yours": 7,
+     "theirs": 10
+    }
+   ]
+  }
+ ],
+ "cuisines": [
+  {
+   "id": "hungarian",
+   "pct": 33
+  },
+  {
+   "id": "balkan",
+   "pct": 25
+  },
+  {
+   "id": "middle-eastern",
+   "pct": 14
+  }
+ ],
+ "salt_pct": 0,
+ "sugar_pct": 0,
+ "jar_fill": "#B97556",
+ "batch": {
+  "tbsp": 2.5,
+  "tsp": 7.5,
+  "grams": [
+   {
+    "spice": "sweet-paprika",
+    "tsp": 4.0,
+    "g": 9.2
+   },
+   {
+    "spice": "caraway",
+    "tsp": 1.0,
+    "g": 2.1
+   },
+   {
+    "spice": "marjoram",
+    "tsp": 1.0,
+    "g": 0.6
+   },
+   {
+    "spice": "garlic-powder",
+    "tsp": 1.0,
+    "g": 3.1
+   },
+   {
+    "spice": "black-pepper",
+    "tsp": 0.5,
+    "g": 1.1
+   }
+  ],
+  "total_g": 16.1
+ },
+ "suggest": [
+  "hot-paprika",
+  "onion-powder",
+  "salt",
+  "parsley-dried",
+  "chives-dried"
+ ],
+ "shares": {
+  "sweet-paprika": 0.2963,
+  "caraway": 0.2222,
+  "marjoram": 0.1481,
+  "garlic-powder": 0.2222,
+  "black-pepper": 0.1111
+ },
+ "volume": {
+  "sweet-paprika": 0.5333,
+  "caraway": 0.1333,
+  "marjoram": 0.1333,
+  "garlic-powder": 0.1333,
+  "black-pepper": 0.0667
+ },
+ "gluten": {
+  "status": "ok",
+  "about": [],
+  "en": "Single spices only — gluten-free by construction.",
+  "hu": "Csak tiszta fűszerek — eleve gluténmentes."
+ }
+}

@@ -1,0 +1,753 @@
+{
+ "score": 38,
+ "base": 50,
+ "word": "fighting",
+ "word_text": {
+  "en": "Fighting",
+  "hu": "Veszekszik"
+ },
+ "mascot": "worried",
+ "findings": [
+  {
+   "id": "pair:cayenne+lavender",
+   "kind": "warn",
+   "weight": -12,
+   "about": [
+    "cayenne",
+    "lavender"
+   ],
+   "en": "Lavender and cayenne: soap and fire — neither survives the other.",
+   "hu": "Levendula és cayenne-bors: szappan és tűz — egyik sem éli túl a másikat."
+  },
+  {
+   "id": "pair:cumin+lavender",
+   "kind": "warn",
+   "weight": -8,
+   "about": [
+    "cumin",
+    "lavender"
+   ],
+   "en": "Cumin and lavender: perfume against earth, and neither wins.",
+   "hu": "Római kömény és levendula: parfüm a föld ellen — egyik sem nyer."
+  },
+  {
+   "id": "pair:cayenne+cumin",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "cayenne",
+    "cumin"
+   ],
+   "en": "Cayenne and cumin split the work: heat and aroma.",
+   "hu": "Cayenne-bors és római kömény megosztja a munkát: csípősség és illat."
+  },
+  {
+   "id": "pair:cayenne+cinnamon",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "cayenne",
+    "cinnamon"
+   ],
+   "en": "Cayenne and cinnamon split the work: heat and aroma.",
+   "hu": "Cayenne-bors és fahéj megosztja a munkát: csípősség és illat."
+  },
+  {
+   "id": "pair:cinnamon+cumin",
+   "kind": "good",
+   "weight": 2,
+   "about": [
+    "cinnamon",
+    "cumin"
+   ],
+   "en": "Cinnamon and cumin cook together in the same kitchens.",
+   "hu": "Fahéj és római kömény ugyanazokban a konyhákban főz együtt."
+  },
+  {
+   "id": "pairs-rest",
+   "kind": "good",
+   "weight": 2,
+   "about": [],
+   "en": "1 more pairs get along on balance.",
+   "hu": "További 1 páros összességében jól megvan egymással."
+  },
+  {
+   "id": "timing-conflict",
+   "kind": "notice",
+   "weight": 0,
+   "about": [
+    "cumin",
+    "lavender"
+   ],
+   "en": "In hot fat cumin opens up but lavender burns — stir the blend in off the heat, or bloom the seeds on their own first.",
+   "hu": "Forró zsiradékban római kömény kinyílik, levendula viszont megég — a keveréket lehúzva a tűzről keverd bele, vagy a magokat előbb külön pirítsd."
+  },
+  {
+   "id": "heat:hot",
+   "kind": "notice",
+   "weight": 0,
+   "about": [
+    "cayenne"
+   ],
+   "en": "Heat: hot — go easy with it.",
+   "hu": "Csípősség: csípős — óvatosan adagold."
+  },
+  {
+   "id": "cuisine",
+   "kind": "info",
+   "weight": 0,
+   "about": [],
+   "en": "It reads French 19 %, Indian 19 %, American BBQ & Cajun 13 %.",
+   "hu": "Ízvilága: Francia 19 %, Indiai 19 %, Amerikai (BBQ, cajun) 13 %."
+  }
+ ],
+ "radar": {
+  "warm": 1.0,
+  "earthy": 0.719,
+  "hot": 0.75,
+  "bright": 0.406,
+  "herbal": 0.469,
+  "floral": 0.875,
+  "bitter": 0.562,
+  "savoury": 0.5
+ },
+ "profile": {
+  "warm": 2.0,
+  "earthy": 1.44,
+  "hot": 1.5,
+  "bright": 0.81,
+  "herbal": 0.94,
+  "floral": 1.75,
+  "bitter": 1.12,
+  "savoury": 1.0
+ },
+ "web": {
+  "nodes": [
+   {
+    "id": "lavender",
+    "share": 0.3125
+   },
+   {
+    "id": "cayenne",
+    "share": 0.25
+   },
+   {
+    "id": "cumin",
+    "share": 0.25
+   },
+   {
+    "id": "cinnamon",
+    "share": 0.1875
+   }
+  ],
+  "edges": [
+   {
+    "a": "cayenne",
+    "b": "lavender",
+    "score": -3,
+    "reason": "soap-and-fire",
+    "en": "Lavender and cayenne: soap and fire — neither survives the other.",
+    "hu": "Levendula és cayenne-bors: szappan és tűz — egyik sem éli túl a másikat."
+   },
+   {
+    "a": "cumin",
+    "b": "lavender",
+    "score": -2,
+    "reason": "perfume-and-earth",
+    "en": "Cumin and lavender: perfume against earth, and neither wins.",
+    "hu": "Római kömény és levendula: parfüm a föld ellen — egyik sem nyer."
+   },
+   {
+    "a": "cinnamon",
+    "b": "lavender",
+    "score": 1,
+    "reason": "gentle-company",
+    "en": "Cinnamon and lavender get along without fuss.",
+    "hu": "Fahéj és levendula gond nélkül megvan egymással."
+   },
+   {
+    "a": "cayenne",
+    "b": "cumin",
+    "score": 2,
+    "reason": "heat-and-aroma",
+    "en": "Cayenne and cumin split the work: heat and aroma.",
+    "hu": "Cayenne-bors és római kömény megosztja a munkát: csípősség és illat."
+   },
+   {
+    "a": "cayenne",
+    "b": "cinnamon",
+    "score": 2,
+    "reason": "heat-and-aroma",
+    "en": "Cayenne and cinnamon split the work: heat and aroma.",
+    "hu": "Cayenne-bors és fahéj megosztja a munkát: csípősség és illat."
+   },
+   {
+    "a": "cinnamon",
+    "b": "cumin",
+    "score": 2,
+    "reason": "cuisine-mates",
+    "en": "Cinnamon and cumin cook together in the same kitchens.",
+    "hu": "Fahéj és római kömény ugyanazokban a konyhákban főz együtt."
+   }
+  ]
+ },
+ "foods": [
+  {
+   "id": "lamb",
+   "score": 0.729,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 3,
+     "en": "Cumin is a classic with lamb.",
+     "hu": "Bárány — római kömény: klasszikus társ."
+    },
+    {
+     "spice": "lavender",
+     "score": 2,
+     "en": "Lavender lifts lamb.",
+     "hu": "Bárány — levendula: feldobja."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 3,
+     "en": "Cinnamon is a classic with lamb.",
+     "hu": "Bárány — fahéj: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "chicken",
+   "score": 0.646,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 3,
+     "en": "Cayenne is a classic with chicken and duck.",
+     "hu": "Csirke, kacsa — cayenne-bors: klasszikus társ."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of chicken and duck.",
+     "hu": "Csirke, kacsa — római kömény: illik a földes ízéhez."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 2,
+     "en": "Cinnamon gives chicken and duck warmth.",
+     "hu": "Csirke, kacsa — fahéj: melegséget ad."
+    }
+   ]
+  },
+  {
+   "id": "beef",
+   "score": 0.542,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 3,
+     "en": "Cumin is a classic with beef.",
+     "hu": "Marha — római kömény: klasszikus társ."
+    },
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to beef.",
+     "hu": "Marha — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 2,
+     "en": "Cinnamon gives beef depth.",
+     "hu": "Marha — fahéj: mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "pork",
+   "score": 0.5,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to pork.",
+     "hu": "Sertés — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of pork.",
+     "hu": "Sertés — római kömény: illik a földes ízéhez."
+    }
+   ]
+  },
+  {
+   "id": "cheese",
+   "score": 0.5,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to cheese and yoghurt.",
+     "hu": "Sajt, joghurt — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin lifts cheese and yoghurt.",
+     "hu": "Sajt, joghurt — római kömény: feldobja."
+    }
+   ]
+  },
+  {
+   "id": "roots",
+   "score": 0.479,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 3,
+     "en": "Cumin is a classic with root vegetables.",
+     "hu": "Gyökérzöldség — római kömény: klasszikus társ."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 2,
+     "en": "Cinnamon suits the sweetness of root vegetables.",
+     "hu": "Gyökérzöldség — fahéj: illik az édességéhez."
+    }
+   ]
+  },
+  {
+   "id": "pulses",
+   "score": 0.479,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 3,
+     "en": "Cumin is a classic with beans and lentils.",
+     "hu": "Bab, lencse — római kömény: klasszikus társ."
+    },
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to beans and lentils.",
+     "hu": "Bab, lencse — cayenne-bors: tüzet hoz."
+    }
+   ]
+  },
+  {
+   "id": "rice",
+   "score": 0.458,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to rice and grains.",
+     "hu": "Rizs, gabona — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of rice and grains.",
+     "hu": "Rizs, gabona — római kömény: illik a földes ízéhez."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 2,
+     "en": "Cinnamon gives rice and grains warmth.",
+     "hu": "Rizs, gabona — fahéj: melegséget ad."
+    }
+   ]
+  },
+  {
+   "id": "chocolate",
+   "score": 0.458,
+   "vouchers": [
+    {
+     "spice": "cinnamon",
+     "score": 3,
+     "en": "Cinnamon is a classic with chocolate.",
+     "hu": "Csokoládé — fahéj: klasszikus társ."
+    },
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to chocolate.",
+     "hu": "Csokoládé — cayenne-bors: tüzet hoz."
+    }
+   ]
+  },
+  {
+   "id": "game",
+   "score": 0.396,
+   "vouchers": [
+    {
+     "spice": "cinnamon",
+     "score": 2,
+     "en": "Cinnamon gives game warmth.",
+     "hu": "Vad — fahéj: melegséget ad."
+    }
+   ]
+  },
+  {
+   "id": "fruit",
+   "score": 0.396,
+   "vouchers": [
+    {
+     "spice": "lavender",
+     "score": 2,
+     "en": "Lavender suits the sweetness of fruit.",
+     "hu": "Gyümölcs — levendula: illik az édességéhez."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 3,
+     "en": "Cinnamon is a classic with fruit.",
+     "hu": "Gyümölcs — fahéj: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "coffee-tea",
+   "score": 0.396,
+   "vouchers": [
+    {
+     "spice": "lavender",
+     "score": 2,
+     "en": "Lavender suits the sweetness of coffee and tea.",
+     "hu": "Kávé, tea — levendula: illik az édességéhez."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 3,
+     "en": "Cinnamon is a classic with coffee and tea.",
+     "hu": "Kávé, tea — fahéj: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "soups",
+   "score": 0.396,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to soups and stews.",
+     "hu": "Leves, ragu — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of soups and stews.",
+     "hu": "Leves, ragu — római kömény: illik a földes ízéhez."
+    }
+   ]
+  },
+  {
+   "id": "baking",
+   "score": 0.396,
+   "vouchers": [
+    {
+     "spice": "lavender",
+     "score": 2,
+     "en": "Lavender suits the sweetness of cakes and baking.",
+     "hu": "Sütemény — levendula: illik az édességéhez."
+    },
+    {
+     "spice": "cinnamon",
+     "score": 3,
+     "en": "Cinnamon is a classic with cakes and baking.",
+     "hu": "Sütemény — fahéj: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "seafood",
+   "score": 0.333,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 3,
+     "en": "Cayenne is a classic with seafood.",
+     "hu": "Tenger gyümölcsei — cayenne-bors: klasszikus társ."
+    }
+   ]
+  },
+  {
+   "id": "eggs",
+   "score": 0.333,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to eggs.",
+     "hu": "Tojás — cayenne-bors: tüzet hoz."
+    },
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin lifts eggs.",
+     "hu": "Tojás — római kömény: feldobja."
+    }
+   ]
+  },
+  {
+   "id": "tomato",
+   "score": 0.312,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin gives tomatoes depth.",
+     "hu": "Paradicsom — római kömény: mélységet ad."
+    }
+   ]
+  },
+  {
+   "id": "grilled-veg",
+   "score": 0.312,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of grilled vegetables.",
+     "hu": "Grillezett zöldség — római kömény: illik a földes ízéhez."
+    }
+   ]
+  },
+  {
+   "id": "fish",
+   "score": 0.25,
+   "vouchers": [
+    {
+     "spice": "cayenne",
+     "score": 2,
+     "en": "Cayenne brings heat to fish.",
+     "hu": "Hal — cayenne-bors: tüzet hoz."
+    }
+   ]
+  },
+  {
+   "id": "potatoes",
+   "score": 0.25,
+   "vouchers": [
+    {
+     "spice": "cumin",
+     "score": 2,
+     "en": "Cumin matches the earthiness of potatoes.",
+     "hu": "Krumpli — római kömény: illik a földes ízéhez."
+    }
+   ]
+  },
+  {
+   "id": "pickles",
+   "score": 0.229,
+   "vouchers": []
+  },
+  {
+   "id": "cabbage",
+   "score": 0.167,
+   "vouchers": []
+  },
+  {
+   "id": "bread",
+   "score": 0.146,
+   "vouchers": []
+  },
+  {
+   "id": "mushrooms",
+   "score": 0.083,
+   "vouchers": []
+  },
+  {
+   "id": "pasta",
+   "score": 0.062,
+   "vouchers": []
+  }
+ ],
+ "timing": {
+  "bloom": [
+   "cumin"
+  ],
+  "during": [
+   "lavender",
+   "cayenne",
+   "cinnamon"
+  ],
+  "finish": [],
+  "conflict": true
+ },
+ "heat": {
+  "value": 1.0,
+  "word": "hot",
+  "en": "Hot",
+  "hu": "Csípős"
+ },
+ "classics": [
+  {
+   "id": "baharat",
+   "en": "Baharat",
+   "hu": "Baharat",
+   "similarity": 42,
+   "missing": [
+    "black-pepper",
+    "sweet-paprika",
+    "coriander-seed",
+    "cloves",
+    "cardamom",
+    "nutmeg"
+   ],
+   "extra": [
+    "lavender",
+    "cayenne"
+   ],
+   "ratios": [
+    {
+     "spice": "cumin",
+     "yours": 25,
+     "theirs": 19
+    },
+    {
+     "spice": "cinnamon",
+     "yours": 25,
+     "theirs": 10
+    }
+   ]
+  },
+  {
+   "id": "ras-el-hanout",
+   "en": "Ras el hanout",
+   "hu": "Ras el hanout",
+   "similarity": 41,
+   "missing": [
+    "ground-ginger",
+    "coriander-seed",
+    "turmeric",
+    "sweet-paprika",
+    "cardamom",
+    "allspice",
+    "black-pepper"
+   ],
+   "extra": [
+    "lavender",
+    "cayenne"
+   ],
+   "ratios": [
+    {
+     "spice": "cumin",
+     "yours": 25,
+     "theirs": 19
+    },
+    {
+     "spice": "cinnamon",
+     "yours": 25,
+     "theirs": 10
+    }
+   ]
+  },
+  {
+   "id": "curry",
+   "en": "Curry powder",
+   "hu": "Curry",
+   "similarity": 38,
+   "missing": [
+    "coriander-seed",
+    "turmeric",
+    "ground-ginger",
+    "fenugreek",
+    "cardamom",
+    "black-pepper"
+   ],
+   "extra": [
+    "lavender"
+   ],
+   "ratios": [
+    {
+     "spice": "cumin",
+     "yours": 25,
+     "theirs": 17
+    },
+    {
+     "spice": "cinnamon",
+     "yours": 25,
+     "theirs": 4
+    },
+    {
+     "spice": "cayenne",
+     "yours": 25,
+     "theirs": 4
+    }
+   ]
+  }
+ ],
+ "cuisines": [
+  {
+   "id": "french",
+   "pct": 19
+  },
+  {
+   "id": "indian",
+   "pct": 19
+  },
+  {
+   "id": "american",
+   "pct": 13
+  }
+ ],
+ "salt_pct": 0,
+ "sugar_pct": 0,
+ "jar_fill": "#AF6B6E",
+ "batch": {
+  "tbsp": 1.33,
+  "tsp": 4.0,
+  "grams": [
+   {
+    "spice": "lavender",
+    "tsp": 1.0,
+    "g": 0.5
+   },
+   {
+    "spice": "cayenne",
+    "tsp": 1.0,
+    "g": 1.8
+   },
+   {
+    "spice": "cumin",
+    "tsp": 1.0,
+    "g": 2.0
+   },
+   {
+    "spice": "cinnamon",
+    "tsp": 1.0,
+    "g": 2.6
+   }
+  ],
+  "total_g": 6.9
+ },
+ "suggest": [
+  "lemon-peel",
+  "coriander-seed",
+  "ground-ginger",
+  "salt",
+  "cardamom"
+ ],
+ "shares": {
+  "lavender": 0.3125,
+  "cayenne": 0.25,
+  "cumin": 0.25,
+  "cinnamon": 0.1875
+ },
+ "volume": {
+  "lavender": 0.25,
+  "cayenne": 0.25,
+  "cumin": 0.25,
+  "cinnamon": 0.25
+ },
+ "gluten": {
+  "status": "ok",
+  "about": [],
+  "en": "Single spices only — gluten-free by construction.",
+  "hu": "Csak tiszta fűszerek — eleve gluténmentes."
+ }
+}

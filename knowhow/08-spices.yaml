@@ -1,0 +1,857 @@
+id: spices
+order: 11
+icon: "om:1F9C2"
+color: mustard
+en: {title: Spices, sub: "the spice rack (48) · what goes with what · whole vs ground · paprika"}
+hu: {title: Fűszerek, sub: "fűszerpolc (48) · mi mihez illik · egész vagy őrölt · paprika"}
+pages:
+  - id: pairings
+    chart:
+      type: picker
+      items:
+        - {label: {en: Beef, hu: Marha}, icon: "om:1F969", note: {en: "Black pepper, caraway, bay, thyme, paprika, mustard, horseradish.", hu: "Fekete bors, kömény, babér, kakukkfű, paprika, mustár, torma."}}
+        - {label: {en: Pork, hu: Sertés}, icon: "om:1F416", note: {en: "Caraway, marjoram, garlic, paprika, fennel seed, juniper, sage.", hu: "Kömény, majoránna, fokhagyma, paprika, édesköménymag, boróka, zsálya."}}
+        - {label: {en: Chicken, hu: Csirke}, icon: "om:1F357", note: {en: "Paprika, thyme, rosemary, tarragon, lemon, garlic, curry spices.", hu: "Paprika, kakukkfű, rozmaring, tárkony, citrom, fokhagyma, curryfűszerek."}}
+        - {label: {en: Lamb, hu: Bárány}, icon: "om:1F411", note: {en: "Rosemary, garlic, mint, cumin, coriander, oregano.", hu: "Rozmaring, fokhagyma, menta, római kömény, koriander, oregánó."}}
+        - {label: {en: Fish, hu: Hal}, icon: "om:1F41F", note: {en: "Dill, lemon, parsley, fennel, bay, paprika (halászlé).", hu: "Kapor, citrom, petrezselyem, édeskömény, babér, paprika (halászlé)."}}
+        - {label: {en: Potatoes, hu: Krumpli}, icon: "om:1F954", note: {en: "Caraway, marjoram, dill, paprika, nutmeg, rosemary.", hu: "Kömény, majoránna, kapor, paprika, szerecsendió, rozmaring."}}
+        - {label: {en: Cabbage, hu: Káposzta}, icon: "om:1F96C", note: {en: "Caraway, dill, black pepper, juniper.", hu: "Kömény, kapor, fekete bors, boróka."}}
+        - {label: {en: "Squash, cucumber", hu: "Tök, uborka"}, icon: "om:1F952", note: {en: "Dill, garlic, vinegar.", hu: "Kapor, fokhagyma, ecet."}}
+        - {label: {en: "Tomatoes, peppers", hu: "Paradicsom, paprika"}, icon: "om:1F345", note: {en: "Basil, oregano, garlic, paprika.", hu: "Bazsalikom, oregánó, fokhagyma, paprika."}}
+        - {label: {en: "Cakes, fruit", hu: "Sütemény, gyümölcs"}, icon: "om:1F370", note: {en: "Cinnamon, vanilla, clove, lemon zest, cardamom, nutmeg.", hu: "Fahéj, vanília, szegfűszeg, citromhéj, kardamom, szerecsendió."}}
+    en:
+      title: What goes with what
+      body: |
+        | With | Classic partners |
+        |---|---|
+        | Beef | black pepper, caraway, bay, thyme, paprika, mustard, horseradish |
+        | Pork | caraway, marjoram, garlic, paprika, fennel seed, juniper, sage |
+        | Chicken | paprika, thyme, rosemary, tarragon, lemon, garlic, curry spices |
+        | Lamb | rosemary, garlic, mint, cumin, coriander, oregano |
+        | Fish | dill, lemon, parsley, fennel, bay, paprika (halászlé) |
+        | Potatoes | caraway, marjoram, dill, paprika, nutmeg, rosemary |
+        | Cabbage | caraway, dill, black pepper, juniper |
+        | Squash, cucumber | dill, garlic, vinegar |
+        | Tomatoes, peppers | basil, oregano, garlic, paprika |
+        | Cakes, fruit | cinnamon, vanilla, clove, lemon zest, cardamom, nutmeg |
+
+        > Hungarian food leans on **paprika, caraway (kömény), marjoram, black pepper, bay and dill** — keep those fresh.
+    hu:
+      title: Mi mihez illik
+      body: |
+        | Mihez | Klasszikus társai |
+        |---|---|
+        | Marha | fekete bors, kömény, babérlevél, kakukkfű, paprika, mustár, torma |
+        | Sertés | kömény, majoránna, fokhagyma, paprika, édeskömény, boróka, zsálya |
+        | Csirke | paprika, kakukkfű, rozmaring, tárkony, citrom, fokhagyma, curry |
+        | Bárány | rozmaring, fokhagyma, menta, római kömény, koriander, oregánó |
+        | Hal | kapor, citrom, petrezselyem, édeskömény, babér, paprika (halászlé) |
+        | Burgonya | kömény, majoránna, kapor, paprika, szerecsendió, rozmaring |
+        | Káposzta | kömény, kapor, fekete bors, boróka |
+        | Tök, uborka | kapor, fokhagyma, ecet |
+        | Paradicsom, paprika | bazsalikom, oregánó, fokhagyma, pirospaprika |
+        | Sütemény, gyümölcs | fahéj, vanília, szegfűszeg, citromhéj, kardamom, szerecsendió |
+
+        > A magyar konyha alapja a **pirospaprika, a kömény, a majoránna, a fekete bors, a babér és a kapor** — ezeket tartsd frissen.
+  - id: whole-ground
+    chart:
+      type: bars
+      unit: {en: months, hu: hónap}
+      max: 26
+      items:
+        - {value: 12, to: 24, label: {en: Whole spices, hu: Egész fűszer}, fill: "#8A6A3B", note: {en: "grind as you go", hu: "frissen őröld"}}
+        - {value: 6, label: {en: Ground spices, hu: Őrölt fűszer}, fill: "#C99A4A", note: {en: about 6 months, hu: kb. 6 hónap}}
+    en:
+      title: Whole vs ground, fresh vs dried
+      body: |
+        - **Whole spices** keep their aroma for 1–2 years; **ground** ones fade in about 6 months. Buy small, grind as
+          you go (a mortar or an old coffee grinder).
+        - **Toast whole spices** (cumin, coriander, caraway, fennel) in a dry pan for 30–60 seconds until fragrant, then
+          grind: twice the flavour.
+        - **Bloom ground spices** in hot fat for a few seconds — but **paprika and chilli burn instantly**: always off the
+          heat (see *Hungarian technique*).
+        - **Fresh herbs:** woody ones (rosemary, thyme, bay) go in early; soft ones (parsley, dill, basil, chives,
+          coriander) go in at the end.
+        - **Dried herbs:** use about a third of the fresh amount, early in the cooking.
+        - Store spices dark, dry and away from the stove's steam.
+
+        > Single spices are GF. **Blends** (curry powder, gyros or grill mixes, bouillon powders) can contain wheat flour as a carrier or anti-caking agent — read the label.
+    hu:
+      title: Egész vagy őrölt, friss vagy szárított
+      body: |
+        - Az **egész fűszer** 1–2 évig megtartja az illatát; az **őrölt** kb. 6 hónap alatt elveszti. Vegyél kis
+          kiszerelést, és őrölj frissen (mozsár vagy egy régi kávédaráló).
+        - **Pirítsd** az egész fűszert (római kömény, koriander, kömény, édeskömény) száraz serpenyőben 30–60 másodpercig,
+          amíg illatos, aztán őröld: kétszer ízesebb.
+        - Az őrölt fűszert **forró zsiradékban** pár másodpercig engedd ki — de **a pirospaprika és a chili azonnal megég**:
+          mindig a tűzről levéve (lásd *Magyaros technikák*).
+        - **Friss zöldfűszer:** a fás szárúak (rozmaring, kakukkfű, babér) korán mennek bele; a puhák (petrezselyem, kapor,
+          bazsalikom, metélőhagyma, koriander) a végén.
+        - **Szárított zöldfűszer:** a friss mennyiség kb. harmada, a főzés elején.
+        - A fűszert sötétben, szárazon, a tűzhely gőzétől távol tárold.
+
+        > Az egynemű fűszer GM. A **keverékekben** (curry, gyros- és grillfűszer, levesporok) hordozóként vagy csomósodásgátlóként lehet búzaliszt — olvasd el a címkét.
+  - id: paprika
+    chart:
+      type: swatches
+      items:
+        - {fill: "#E2231A", label: Különleges, heat: 0, note: {en: "The finest: bright red and mild. For finishing and garnish.", hu: "A legfinomabb: élénkpiros és enyhe. Befejezéshez, díszítéshez."}}
+        - {fill: "#C8281E", label: Édesnemes, heat: 0, note: {en: "Noble sweet — sweet and full, the everyday one: pörkölt, paprikás, gulyás.", hu: "Édes, telt, a mindennapi: pörkölt, paprikás, gulyás."}}
+        - {fill: "#CC3B22", label: Csemege, heat: 1, note: {en: "Mild, slightly spicy. For everyday cooking.", hu: "Enyhe, kissé csípős. A mindennapi főzéshez."}}
+        - {fill: "#B9451F", label: Félédes, heat: 1, note: {en: "Half-sweet with a little heat. Sausages, stews.", hu: "Félédes, egy kis csípősséggel. Kolbászba, ragukba."}}
+        - {fill: "#B5532B", label: Rózsa, heat: 2, note: {en: "Aromatic and mildly hot. Stronger stews.", hu: "Aromás, enyhén csípős. Erősebb ragukba."}}
+        - {fill: "#A8331C", label: {en: Erős / csípős, hu: Erős / csípős}, heat: 4, note: {en: "Hot. To taste, together with sweet paprika.", hu: "Csípős. Ízlés szerint, édes paprikával együtt."}}
+        - {fill: "#7E2A1A", label: Füstölt, note: {en: "Smoked. Lecsó, beans, roasts.", hu: "Füstölt. Lecsóba, babhoz, sültekhez."}}
+    en:
+      title: Hungarian paprika
+      body: |
+        | Kind | Taste | Use |
+        |---|---|---|
+        | Különleges | the finest, bright red, mild | finishing, garnish |
+        | Édesnemes (noble sweet) | sweet, full, the everyday one | pörkölt, paprikás, gulyás |
+        | Csemege | mild, slightly spicy | everyday cooking |
+        | Félédes | half-sweet, a little heat | sausages, stews |
+        | Rózsa | aromatic, mildly hot | stronger stews |
+        | Erős / csípős | hot | to taste, with sweet paprika |
+        | Füstölt | smoked | lecsó, beans, roasts |
+
+        - Its sugars burn within seconds in hot fat and it turns bitter: add it to fat **off the flame**, or to a dish
+          that already has liquid.
+        - Kept in the fridge or freezer, an open bag stays red and sweet far longer.
+    hu:
+      title: Magyar pirospaprika
+      body: |
+        | Fajta | Íz | Mire |
+        |---|---|---|
+        | Különleges | a legfinomabb, élénkpiros, enyhe | befejezés, díszítés |
+        | Édesnemes | édes, teltebb, a mindennapi | pörkölt, paprikás, gulyás |
+        | Csemege | enyhe, kissé csípős | mindennapi főzés |
+        | Félédes | félédes, kicsit csíp | kolbász, raguk |
+        | Rózsa | illatos, enyhén csípős | erősebb raguk |
+        | Erős / csípős | csípős | ízlés szerint, édes paprikával |
+        | Füstölt | füstös | lecsó, bab, sültek |
+
+        - A cukortartalma forró zsiradékban másodpercek alatt megég, és megkeseredik: a zsiradékhoz **lehúzva a tűzről**
+          add, vagy olyan ételhez, amiben már van folyadék.
+        - Hűtőben vagy mélyhűtőben a megbontott zacskó sokkal tovább marad piros és édes.
+  - id: warm
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#B5651D'
+        label:
+          en: Cinnamon
+          hu: Fahéj
+        value:
+          en: sweet · warm · woody
+          hu: édes · meleg · fás
+        note:
+          en: Goes with apple, plum, pumpkin, rice pudding, mulled wine, lamb. Ceylon is mild and sweet; cassia (the common one) is stronger.
+          hu: 'Illik hozzá: alma, szilva, tök, tejberizs, forralt bor, bárány. A ceyloni enyhe és édes; a kasszia (a gyakoribb) erősebb.'
+      - fill: '#5A3A2A'
+        label:
+          en: Cloves
+          hu: Szegfűszeg
+        value:
+          en: intense · numbing · sweet
+          hu: intenzív · zsibbasztó · édes
+        note:
+          en: 'Goes with mulled wine, ham, gingerbread, pickles, red cabbage. Very strong: 2–3 whole cloves flavour a whole pot. Fish them out.'
+          hu: 'Illik hozzá: forralt bor, sonka, mézeskalács, savanyúság, párolt lilakáposzta. Nagyon erős: 2–3 szem egy egész fazékhoz elég. Szedd ki a végén.'
+      - fill: '#A0704A'
+        label:
+          en: Nutmeg
+          hu: Szerecsendió
+        value:
+          en: warm · nutty · sweet
+          hu: meleg · diós · édes
+        note:
+          en: Goes with béchamel, mashed potato, spinach, főzelék, cakes. Grate it fresh, a little at a time — ground nutmeg fades fast.
+          hu: 'Illik hozzá: besamel, krumplipüré, spenót, főzelék, sütemények. Frissen reszeld, keveset — az őrölt hamar elveszti az ízét.'
+      - fill: '#7A4E35'
+        label:
+          en: Allspice
+          hu: Szegfűbors
+        value:
+          en: cinnamon + clove + pepper in one
+          hu: fahéj + szegfűszeg + bors egyben
+        note:
+          en: Goes with pickles, marinades, gingerbread, stews, jerk chicken. Whole berries in brines and stews; ground in baking.
+          hu: 'Illik hozzá: savanyúság, pácok, mézeskalács, raguk, jerk csirke. Egészben pácléhez és ragukhoz, őrölve sütéshez.'
+      - fill: '#9BAF6E'
+        label:
+          en: Cardamom
+          hu: Kardamom
+        value:
+          en: citrusy · eucalyptus · floral
+          hu: citrusos · eukaliptuszos · virágos
+        note:
+          en: Goes with coffee, rice, curries, sweet buns, chai. Crack the green pods and use the black seeds. One pod in the coffee grounds is a classic.
+          hu: 'Illik hozzá: kávé, rizs, curryk, kalácsok, chai. Törd fel a zöld tokot, a fekete magok kellenek. Egy szem a kávéőrleménybe: klasszikus.'
+      - fill: '#6B3E2E'
+        label:
+          en: Star anise
+          hu: Csillagánizs
+        value:
+          en: liquorice · sweet
+          hu: édesgyökér · édes
+        note:
+          en: Goes with beef stews, plums, mulled wine, pho, five-spice. One star per pot — take it out before serving.
+          hu: 'Illik hozzá: marharaguk, szilva, forralt bor, pho, ötfűszer. Fazekanként egy csillag — tálalás előtt vedd ki.'
+      - fill: '#3A2A20'
+        label:
+          en: Vanilla
+          hu: Vanília
+        value:
+          en: sweet · creamy · floral
+          hu: édes · krémes · virágos
+        note:
+          en: Goes with custard, cakes, rice pudding, fruit, coffee. Scrape the pod; keep the empty pod in a jar of sugar. Vanillin sugar is the cheap stand-in.
+          hu: 'Illik hozzá: puding, sütemények, tejberizs, gyümölcs, kávé. Kapard ki a rudat, az üreset tedd egy üveg cukorba. A vaníliás cukor az olcsó pótlék.'
+      - fill: '#E3B76A'
+        label:
+          en: Ginger (ground)
+          hu: Gyömbér (őrölt)
+        value:
+          en: warm · sharp · lemony
+          hu: meleg · csípős · citromos
+        note:
+          en: 'Goes with gingerbread, curries, pumpkin, carrots, stir-fries. Warmer and less zingy than fresh: ¼ tsp ground is about 1 tbsp fresh.'
+          hu: 'Illik hozzá: mézeskalács, curryk, tök, répa, wokos ételek. Melegebb, kevésbé friss, mint a nyers: ¼ tk őrölt kb. 1 ek reszelt friss.'
+    en:
+      title: Warm & sweet
+      body: |
+        Baking, mulled wine, pickles and slow stews: the spices of a Hungarian Christmas.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Cinnamon** | sweet · warm · woody | apple, plum, pumpkin, rice pudding, mulled wine, lamb | Ceylon is mild and sweet; cassia (the common one) is stronger. |
+        | **Cloves** | intense · numbing · sweet | mulled wine, ham, gingerbread, pickles, red cabbage | Very strong: 2–3 whole cloves flavour a whole pot. Fish them out. |
+        | **Nutmeg** | warm · nutty · sweet | béchamel, mashed potato, spinach, főzelék, cakes | Grate it fresh, a little at a time — ground nutmeg fades fast. |
+        | **Allspice** | cinnamon + clove + pepper in one | pickles, marinades, gingerbread, stews, jerk chicken | Whole berries in brines and stews; ground in baking. |
+        | **Cardamom** | citrusy · eucalyptus · floral | coffee, rice, curries, sweet buns, chai | Crack the green pods and use the black seeds. One pod in the coffee grounds is a classic. |
+        | **Star anise** | liquorice · sweet | beef stews, plums, mulled wine, pho, five-spice | One star per pot — take it out before serving. |
+        | **Vanilla** | sweet · creamy · floral | custard, cakes, rice pudding, fruit, coffee | Scrape the pod; keep the empty pod in a jar of sugar. Vanillin sugar is the cheap stand-in. |
+        | **Ginger (ground)** | warm · sharp · lemony | gingerbread, curries, pumpkin, carrots, stir-fries | Warmer and less zingy than fresh: ¼ tsp ground is about 1 tbsp fresh. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Meleg, édes fűszerek
+      body: |
+        Sütemény, forralt bor, savanyúság és lassú raguk: a magyar karácsony fűszerei.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Fahéj** | édes · meleg · fás | alma, szilva, tök, tejberizs, forralt bor, bárány | A ceyloni enyhe és édes; a kasszia (a gyakoribb) erősebb. |
+        | **Szegfűszeg** | intenzív · zsibbasztó · édes | forralt bor, sonka, mézeskalács, savanyúság, párolt lilakáposzta | Nagyon erős: 2–3 szem egy egész fazékhoz elég. Szedd ki a végén. |
+        | **Szerecsendió** | meleg · diós · édes | besamel, krumplipüré, spenót, főzelék, sütemények | Frissen reszeld, keveset — az őrölt hamar elveszti az ízét. |
+        | **Szegfűbors** | fahéj + szegfűszeg + bors egyben | savanyúság, pácok, mézeskalács, raguk, jerk csirke | Egészben pácléhez és ragukhoz, őrölve sütéshez. |
+        | **Kardamom** | citrusos · eukaliptuszos · virágos | kávé, rizs, curryk, kalácsok, chai | Törd fel a zöld tokot, a fekete magok kellenek. Egy szem a kávéőrleménybe: klasszikus. |
+        | **Csillagánizs** | édesgyökér · édes | marharaguk, szilva, forralt bor, pho, ötfűszer | Fazekanként egy csillag — tálalás előtt vedd ki. |
+        | **Vanília** | édes · krémes · virágos | puding, sütemények, tejberizs, gyümölcs, kávé | Kapard ki a rudat, az üreset tedd egy üveg cukorba. A vaníliás cukor az olcsó pótlék. |
+        | **Gyömbér (őrölt)** | meleg · csípős · citromos | mézeskalács, curryk, tök, répa, wokos ételek | Melegebb, kevésbé friss, mint a nyers: ¼ tk őrölt kb. 1 ek reszelt friss. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.
+  - id: earthy
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#A8743E'
+        label:
+          en: Cumin
+          hu: Római kömény
+        value:
+          en: earthy · warm · smoky
+          hu: földes · meleg · füstös
+        note:
+          en: Goes with chilli, curries, beans, lamb, roast carrots, hummus. Not the same as kömény (caraway) — Hungarian recipes mean caraway when they say kömény.
+          hu: 'Illik hozzá: chili, curryk, bab, bárány, sült répa, humusz. Nem azonos a köménnyel — a magyar recept „kömény” alatt a köményt érti, nem a római köményt.'
+      - fill: '#8A6A3B'
+        label:
+          en: Caraway
+          hu: Kömény
+        value:
+          en: anise-like · earthy
+          hu: ánizsos · földes
+        note:
+          en: Goes with pörkölt, cabbage, potatoes, körözött, breads. Crush it for körözött and pörkölt; whole in cabbage and roast potatoes.
+          hu: 'Illik hozzá: pörkölt, káposzta, krumpli, körözött, kenyerek. Körözöttbe, pörköltbe törve; káposztába, sült krumpliba egészben.'
+      - fill: '#C9A86A'
+        label:
+          en: Coriander seed
+          hu: Koriandermag
+        value:
+          en: citrusy · floral
+          hu: citrusos · virágos
+        note:
+          en: Goes with curries, pickles, sausages, roast vegetables, gyros. Toast the whole seeds and crush them — the flavour doubles.
+          hu: 'Illik hozzá: curryk, savanyúság, kolbász, sült zöldség, gyros. Pirítsd meg egészben, aztán törd meg — duplájára nő az íze.'
+      - fill: '#A8B26A'
+        label:
+          en: Fennel seed
+          hu: Édesköménymag
+        value:
+          en: sweet · anise
+          hu: édes · ánizsos
+        note:
+          en: Goes with pork, sausages, fish, tomato sauce, breads. Lightly toasted fennel seed is the taste of Italian sausage.
+          hu: 'Illik hozzá: sertés, kolbász, hal, paradicsomszósz, kenyerek. A pirított édesköménymag az olasz kolbász íze.'
+      - fill: '#F2B705'
+        label:
+          en: Turmeric
+          hu: Kurkuma
+        value:
+          en: earthy · bitter · golden
+          hu: földes · kesernyés · aranysárga
+        note:
+          en: Goes with curries, rice, lentils, eggs, golden milk. Mostly colour — a little goes far. It stains boards and fingers. Black pepper helps you absorb it.
+          hu: 'Illik hozzá: curryk, rizs, lencse, tojás, aranytej. Főleg szín — kevés is elég. Megfogja a deszkát és az ujjat. A fekete bors segíti a felszívódását.'
+      - fill: '#C99A4A'
+        label:
+          en: Fenugreek
+          hu: Görögszéna
+        value:
+          en: bitter · maple-like
+          hu: kesernyés · juharszirupos
+        note:
+          en: 'Goes with curries, dal, spice rubs, pickles. Bitter raw: toast the seeds lightly. The dried leaves (kasuri methi) finish curries.'
+          hu: 'Illik hozzá: curryk, dal, fűszerdörzsölők, savanyúság. Nyersen keserű: pirítsd meg enyhén. A szárított levele (kasuri methi) a curry végére.'
+      - fill: '#E5B53A'
+        label:
+          en: Mustard seed
+          hu: Mustármag
+        value:
+          en: hot when crushed · nutty when fried
+          hu: törve csípős · sütve diós
+        note:
+          en: Goes with pickles (savanyúság), curries, dressings, cabbage. Fry in hot oil until they pop for a nutty taste; crush them raw for heat.
+          hu: 'Illik hozzá: savanyúság, curryk, öntetek, káposzta. Forró olajban pattogtasd — diós lesz; nyersen törve csíp.'
+      - fill: '#8C8A5A'
+        label:
+          en: Celery seed
+          hu: Zellermag
+        value:
+          en: concentrated celery · bitter
+          hu: tömény zeller · kesernyés
+        note:
+          en: Goes with soups, coleslaw, pickles, potato salad, tomato juice. Strong — a pinch is enough. Dried lovage gives a similar taste.
+          hu: 'Illik hozzá: levesek, káposztasaláta, savanyúság, krumplisaláta, paradicsomlé. Erős — egy csipet elég. A szárított lestyán hasonló ízű.'
+    en:
+      title: Earthy spices & seeds
+      body: |
+        Toast the whole seeds in a dry pan for a minute, then crush them — twice the flavour.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Cumin** | earthy · warm · smoky | chilli, curries, beans, lamb, roast carrots, hummus | Not the same as kömény (caraway) — Hungarian recipes mean caraway when they say kömény. |
+        | **Caraway** | anise-like · earthy | pörkölt, cabbage, potatoes, körözött, breads | Crush it for körözött and pörkölt; whole in cabbage and roast potatoes. |
+        | **Coriander seed** | citrusy · floral | curries, pickles, sausages, roast vegetables, gyros | Toast the whole seeds and crush them — the flavour doubles. |
+        | **Fennel seed** | sweet · anise | pork, sausages, fish, tomato sauce, breads | Lightly toasted fennel seed is the taste of Italian sausage. |
+        | **Turmeric** | earthy · bitter · golden | curries, rice, lentils, eggs, golden milk | Mostly colour — a little goes far. It stains boards and fingers. Black pepper helps you absorb it. |
+        | **Fenugreek** | bitter · maple-like | curries, dal, spice rubs, pickles | Bitter raw: toast the seeds lightly. The dried leaves (kasuri methi) finish curries. |
+        | **Mustard seed** | hot when crushed · nutty when fried | pickles (savanyúság), curries, dressings, cabbage | Fry in hot oil until they pop for a nutty taste; crush them raw for heat. |
+        | **Celery seed** | concentrated celery · bitter | soups, coleslaw, pickles, potato salad, tomato juice | Strong — a pinch is enough. Dried lovage gives a similar taste. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Földes fűszerek, magvak
+      body: |
+        Az egész magokat egy percig pirítsd száraz serpenyőben, aztán törd meg — kétszer ízesebb.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Római kömény** | földes · meleg · füstös | chili, curryk, bab, bárány, sült répa, humusz | Nem azonos a köménnyel — a magyar recept „kömény” alatt a köményt érti, nem a római köményt. |
+        | **Kömény** | ánizsos · földes | pörkölt, káposzta, krumpli, körözött, kenyerek | Körözöttbe, pörköltbe törve; káposztába, sült krumpliba egészben. |
+        | **Koriandermag** | citrusos · virágos | curryk, savanyúság, kolbász, sült zöldség, gyros | Pirítsd meg egészben, aztán törd meg — duplájára nő az íze. |
+        | **Édesköménymag** | édes · ánizsos | sertés, kolbász, hal, paradicsomszósz, kenyerek | A pirított édesköménymag az olasz kolbász íze. |
+        | **Kurkuma** | földes · kesernyés · aranysárga | curryk, rizs, lencse, tojás, aranytej | Főleg szín — kevés is elég. Megfogja a deszkát és az ujjat. A fekete bors segíti a felszívódását. |
+        | **Görögszéna** | kesernyés · juharszirupos | curryk, dal, fűszerdörzsölők, savanyúság | Nyersen keserű: pirítsd meg enyhén. A szárított levele (kasuri methi) a curry végére. |
+        | **Mustármag** | törve csípős · sütve diós | savanyúság, curryk, öntetek, káposzta | Forró olajban pattogtasd — diós lesz; nyersen törve csíp. |
+        | **Zellermag** | tömény zeller · kesernyés | levesek, káposztasaláta, savanyúság, krumplisaláta, paradicsomlé | Erős — egy csipet elég. A szárított lestyán hasonló ízű. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.
+  - id: hot
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#3A3430'
+        label:
+          en: Black pepper
+          hu: Fekete bors
+        value:
+          en: sharp · warm · piney
+          hu: csípős · meleg · fenyős
+        note:
+          en: 'Goes with almost everything savoury: steak, eggs, gulyás. Grind it fresh, near the end — pre-ground pepper is mostly dust.'
+          hu: 'Illik hozzá: szinte minden sós étel: steak, tojás, gulyás. Frissen őröld, a vége felé — az előre őrölt bors szinte csak por.'
+        heat: 2
+      - fill: '#E6DFCF'
+        label:
+          en: White pepper
+          hu: Fehér bors
+        value:
+          en: sharp · earthy · funky
+          hu: csípős · földes · fanyar
+        note:
+          en: Goes with white sauces, mashed potato, fish, Asian soups. Hotter and earthier than black — and invisible in pale dishes.
+          hu: 'Illik hozzá: fehér mártások, krumplipüré, hal, ázsiai levesek. Csípősebb és földesebb a feketénél — és nem látszik a világos ételekben.'
+        heat: 2
+      - fill: '#B8322A'
+        label:
+          en: Chilli flakes
+          hu: Chilipehely
+        value:
+          en: fruity heat
+          hu: gyümölcsös csípősség
+        note:
+          en: Goes with pizza, pasta, stir-fries, chilli oil, marinades. Bloom in oil at the start for even heat, or sprinkle at the end for sparks.
+          hu: 'Illik hozzá: pizza, tészta, wokos ételek, chiliolaj, pácok. Az elején olajban futtasd az egyenletes csípősségért, vagy a végén szórd rá.'
+        heat: 3
+      - fill: '#C0392B'
+        label:
+          en: Cayenne
+          hu: Cayenne-bors
+        value:
+          en: clean, sharp heat
+          hu: tiszta, éles csípősség
+        note:
+          en: Goes with chilli, eggs, cheese sauces, rubs, hot chocolate. Start with a pinch.
+          hu: 'Illik hozzá: chili, tojás, sajtmártás, fűszerdörzsölők, forró csoki. Egy csipettel kezdd.'
+        heat: 4
+      - fill: '#8B3A1E'
+        label:
+          en: Chipotle
+          hu: Chipotle
+        value:
+          en: smoky heat
+          hu: füstös csípősség
+        note:
+          en: 'Goes with chilli con carne, beans, BBQ sauce, mayonnaise. Smoked, dried jalapeño: heat and smoke in one.'
+          hu: 'Illik hozzá: chili con carne, bab, BBQ-szósz, majonéz. Füstölt, szárított jalapeño: csípősség és füst egyben.'
+        heat: 3
+      - fill: '#EADDB8'
+        label:
+          en: Garlic powder
+          hu: Fokhagymapor
+        value:
+          en: savoury · mellow garlic
+          hu: sós · lágy fokhagyma
+        note:
+          en: Goes with rubs, gyros, marinades, breading, popcorn. Burns fast — add it with liquid or in the last minute. ⅛ tsp is about one clove.
+          hu: 'Illik hozzá: fűszerdörzsölők, gyros, pácok, panír, pattogatott kukorica. Hamar megég — folyadékkal vagy az utolsó percben add hozzá. ⅛ tk kb. egy gerezd.'
+      - fill: '#E6CF98'
+        label:
+          en: Onion powder
+          hu: Hagymapor
+        value:
+          en: sweet · savoury
+          hu: édeskés · sós
+        note:
+          en: Goes with rubs, soups, dressings, burgers. 1 tbsp gives about one medium onion’s flavour, without the moisture.
+          hu: 'Illik hozzá: fűszerdörzsölők, levesek, öntetek, fasírt. 1 ek kb. egy közepes fej hagyma ízét adja, nedvesség nélkül.'
+      - fill: '#D9A82C'
+        label:
+          en: Mustard powder
+          hu: Mustárpor
+        value:
+          en: sharp · nose-tingling
+          hu: éles · orrcsípő
+        note:
+          en: Goes with cheese sauces, dressings, rubs, eggs. Its heat wakes up with cold water in 10 minutes. ⚠️ Some brands (English mustard powder) contain wheat flour.
+          hu: 'Illik hozzá: sajtmártás, öntetek, fűszerdörzsölők, tojás. Csípőssége hideg vízzel 10 perc alatt ébred. ⚠️ Egyes márkákban (angol mustárpor) búzaliszt van.'
+        heat: 2
+    en:
+      title: Hot & pungent
+      body: |
+        Heat builds: add a little, taste, add more — you can always add, you can never take it out.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Black pepper** | sharp · warm · piney | almost everything savoury: steak, eggs, gulyás | Grind it fresh, near the end — pre-ground pepper is mostly dust. |
+        | **White pepper** | sharp · earthy · funky | white sauces, mashed potato, fish, Asian soups | Hotter and earthier than black — and invisible in pale dishes. |
+        | **Chilli flakes** | fruity heat | pizza, pasta, stir-fries, chilli oil, marinades | Bloom in oil at the start for even heat, or sprinkle at the end for sparks. |
+        | **Cayenne** | clean, sharp heat | chilli, eggs, cheese sauces, rubs, hot chocolate | Start with a pinch. |
+        | **Chipotle** | smoky heat | chilli con carne, beans, BBQ sauce, mayonnaise | Smoked, dried jalapeño: heat and smoke in one. |
+        | **Garlic powder** | savoury · mellow garlic | rubs, gyros, marinades, breading, popcorn | Burns fast — add it with liquid or in the last minute. ⅛ tsp is about one clove. |
+        | **Onion powder** | sweet · savoury | rubs, soups, dressings, burgers | 1 tbsp gives about one medium onion’s flavour, without the moisture. |
+        | **Mustard powder** | sharp · nose-tingling | cheese sauces, dressings, rubs, eggs | Its heat wakes up with cold water in 10 minutes. ⚠️ Some brands (English mustard powder) contain wheat flour. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Csípős, erős fűszerek
+      body: |
+        A csípősség halmozódik: tégy keveset, kóstold, aztán többet — hozzáadni mindig lehet, kivenni soha.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Fekete bors** | csípős · meleg · fenyős | szinte minden sós étel: steak, tojás, gulyás | Frissen őröld, a vége felé — az előre őrölt bors szinte csak por. |
+        | **Fehér bors** | csípős · földes · fanyar | fehér mártások, krumplipüré, hal, ázsiai levesek | Csípősebb és földesebb a feketénél — és nem látszik a világos ételekben. |
+        | **Chilipehely** | gyümölcsös csípősség | pizza, tészta, wokos ételek, chiliolaj, pácok | Az elején olajban futtasd az egyenletes csípősségért, vagy a végén szórd rá. |
+        | **Cayenne-bors** | tiszta, éles csípősség | chili, tojás, sajtmártás, fűszerdörzsölők, forró csoki | Egy csipettel kezdd. |
+        | **Chipotle** | füstös csípősség | chili con carne, bab, BBQ-szósz, majonéz | Füstölt, szárított jalapeño: csípősség és füst egyben. |
+        | **Fokhagymapor** | sós · lágy fokhagyma | fűszerdörzsölők, gyros, pácok, panír, pattogatott kukorica | Hamar megég — folyadékkal vagy az utolsó percben add hozzá. ⅛ tk kb. egy gerezd. |
+        | **Hagymapor** | édeskés · sós | fűszerdörzsölők, levesek, öntetek, fasírt | 1 ek kb. egy közepes fej hagyma ízét adja, nedvesség nélkül. |
+        | **Mustárpor** | éles · orrcsípő | sajtmártás, öntetek, fűszerdörzsölők, tojás | Csípőssége hideg vízzel 10 perc alatt ébred. ⚠️ Egyes márkákban (angol mustárpor) búzaliszt van. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.
+  - id: mediterranean
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#6E8B3D'
+        label:
+          en: Oregano
+          hu: Oregánó
+        value:
+          en: earthy · peppery
+          hu: földes · borsos
+        note:
+          en: Goes with pizza, tomato sauce, gyros, Greek salad, beans. One of the few herbs better dried than fresh.
+          hu: 'Illik hozzá: pizza, paradicsomszósz, gyros, görögsaláta, bab. Azon kevés fűszer egyike, amely szárítva jobb, mint frissen.'
+      - fill: '#7E9A55'
+        label:
+          en: Thyme
+          hu: Kakukkfű
+        value:
+          en: earthy · lemony · woody
+          hu: földes · citromos · fás
+        note:
+          en: Goes with roasts, soups, mushrooms, potatoes, lentils. Goes in early. Strip fresh leaves by pulling the stem backwards through your fingers.
+          hu: 'Illik hozzá: sültek, levesek, gomba, krumpli, lencse. Korán mehet bele. A friss levelet a szárat visszafelé húzva fosztd le.'
+      - fill: '#5E7D4C'
+        label:
+          en: Rosemary
+          hu: Rozmaring
+        value:
+          en: piney · resinous
+          hu: fenyős · gyantás
+        note:
+          en: 'Goes with lamb, roast potatoes, chicken, focaccia (GF). Strong: chop dried needles finely — they stay tough.'
+          hu: 'Illik hozzá: bárány, sült krumpli, csirke, focaccia (GM). Erős: a szárított tűleveleket aprítsd finomra — kemények maradnak.'
+      - fill: '#8FA08A'
+        label:
+          en: Sage
+          hu: Zsálya
+        value:
+          en: earthy · musky
+          hu: földes · pézsmás
+        note:
+          en: Goes with pork, duck, pumpkin, butter sauces, liver. Fried in butter until crisp, it turns nutty.
+          hu: 'Illik hozzá: sertés, kacsa, tök, vajas mártások, máj. Vajban ropogósra sütve diós ízű lesz.'
+      - fill: '#7FA35A'
+        label:
+          en: Marjoram
+          hu: Majoránna
+        value:
+          en: sweet · floral oregano
+          hu: édes · virágos oregánó
+        note:
+          en: 'Goes with liver, bean soups, potatoes, pörkölt, sausages. Hungary’s herb: rub it in near the end — long cooking fades it.'
+          hu: 'Illik hozzá: máj, bablevesek, krumpli, pörkölt, kolbász. A magyar konyha fűszere: a vége felé morzsold bele — a hosszú főzés elveszi.'
+      - fill: '#7B8F5A'
+        label:
+          en: Savory
+          hu: Borsikafű
+        value:
+          en: peppery · thyme-like
+          hu: borsos · kakukkfűszerű
+        note:
+          en: 'Goes with beans and lentils, cabbage, sausages. The bean herb: it makes pulses taste better.'
+          hu: 'Illik hozzá: bab és lencse, káposzta, kolbász. A bab fűszere: jobbá teszi a hüvelyesek ízét.'
+      - fill: '#8A9A5B'
+        label:
+          en: Bay leaf
+          hu: Babérlevél
+        value:
+          en: herbal · tea-like
+          hu: füves · teás
+        note:
+          en: Goes with soups, stocks, pickles, stews, béchamel. Simmer one or two whole, take them out before serving.
+          hu: 'Illik hozzá: levesek, alaplé, savanyúság, raguk, besamel. Egy-kettőt főzz együtt egészben, tálalás előtt vedd ki.'
+      - fill: '#6F8F3F'
+        label:
+          en: Basil (dried)
+          hu: Bazsalikom (szárított)
+        value:
+          en: sweet · peppery
+          hu: édes · borsos
+        note:
+          en: Goes with tomato sauces, pizza, soups. Dried basil is a different taste — fresh basil goes in at the very end.
+          hu: 'Illik hozzá: paradicsomszószok, pizza, levesek. A szárított bazsalikom más íz — a friss a legvégén kerül bele.'
+    en:
+      title: Mediterranean herbs (dried)
+      body: |
+        Woody herbs go in early and cook with the dish; rub dried leaves between your palms to wake them up.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Oregano** | earthy · peppery | pizza, tomato sauce, gyros, Greek salad, beans | One of the few herbs better dried than fresh. |
+        | **Thyme** | earthy · lemony · woody | roasts, soups, mushrooms, potatoes, lentils | Goes in early. Strip fresh leaves by pulling the stem backwards through your fingers. |
+        | **Rosemary** | piney · resinous | lamb, roast potatoes, chicken, focaccia (GF) | Strong: chop dried needles finely — they stay tough. |
+        | **Sage** | earthy · musky | pork, duck, pumpkin, butter sauces, liver | Fried in butter until crisp, it turns nutty. |
+        | **Marjoram** | sweet · floral oregano | liver, bean soups, potatoes, pörkölt, sausages | Hungary’s herb: rub it in near the end — long cooking fades it. |
+        | **Savory** | peppery · thyme-like | beans and lentils, cabbage, sausages | The bean herb: it makes pulses taste better. |
+        | **Bay leaf** | herbal · tea-like | soups, stocks, pickles, stews, béchamel | Simmer one or two whole, take them out before serving. |
+        | **Basil (dried)** | sweet · peppery | tomato sauces, pizza, soups | Dried basil is a different taste — fresh basil goes in at the very end. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Mediterrán fűszernövények (szárított)
+      body: |
+        A fás szárúak korán mennek bele, és együtt főnek az étellel; a szárított levelet dörzsöld el a tenyeredben, hogy felébredjen.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Oregánó** | földes · borsos | pizza, paradicsomszósz, gyros, görögsaláta, bab | Azon kevés fűszer egyike, amely szárítva jobb, mint frissen. |
+        | **Kakukkfű** | földes · citromos · fás | sültek, levesek, gomba, krumpli, lencse | Korán mehet bele. A friss levelet a szárat visszafelé húzva fosztd le. |
+        | **Rozmaring** | fenyős · gyantás | bárány, sült krumpli, csirke, focaccia (GM) | Erős: a szárított tűleveleket aprítsd finomra — kemények maradnak. |
+        | **Zsálya** | földes · pézsmás | sertés, kacsa, tök, vajas mártások, máj | Vajban ropogósra sütve diós ízű lesz. |
+        | **Majoránna** | édes · virágos oregánó | máj, bablevesek, krumpli, pörkölt, kolbász | A magyar konyha fűszere: a vége felé morzsold bele — a hosszú főzés elveszi. |
+        | **Borsikafű** | borsos · kakukkfűszerű | bab és lencse, káposzta, kolbász | A bab fűszere: jobbá teszi a hüvelyesek ízét. |
+        | **Babérlevél** | füves · teás | levesek, alaplé, savanyúság, raguk, besamel | Egy-kettőt főzz együtt egészben, tálalás előtt vedd ki. |
+        | **Bazsalikom (szárított)** | édes · borsos | paradicsomszószok, pizza, levesek | A szárított bazsalikom más íz — a friss a legvégén kerül bele. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.
+  - id: green
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#8DB255'
+        label:
+          en: Dill
+          hu: Kapor
+        value:
+          en: fresh · anise · grassy
+          hu: friss · ánizsos · füves
+        note:
+          en: Goes with tökfőzelék, cucumber salad, kovászos uborka, fish, túró. Fresh or frozen beats dried; add at the end.
+          hu: 'Illik hozzá: tökfőzelék, uborkasaláta, kovászos uborka, hal, túró. Frissen vagy fagyasztva jobb, mint szárítva; a végén add hozzá.'
+      - fill: '#4F8A3A'
+        label:
+          en: Parsley
+          hu: Petrezselyem
+        value:
+          en: fresh · green
+          hu: friss · zöld
+        note:
+          en: Goes with soups, potatoes, fish, butter, almost everything. Flat-leaf has more flavour than curly; the stalks go into stock.
+          hu: 'Illik hozzá: levesek, krumpli, hal, vaj, szinte minden. A sima levelű ízesebb a fodrosnál; a szára az alaplébe megy.'
+      - fill: '#6C8A3E'
+        label:
+          en: Lovage
+          hu: Lestyán
+        value:
+          en: intense celery
+          hu: intenzív zeller
+        note:
+          en: 'Goes with húsleves, stocks, stews. The “Maggi herb”: a few leaves are enough for a whole pot of húsleves.'
+          hu: 'Illik hozzá: húsleves, alaplevek, raguk. A „Maggi-fű”: néhány levél egy egész fazék húsleveshez elég.'
+      - fill: '#7AA05A'
+        label:
+          en: Tarragon
+          hu: Tárkony
+        value:
+          en: aniseed · bittersweet
+          hu: ánizsos · keserédes
+        note:
+          en: Goes with tárkonyos ragu leves, chicken, béarnaise, vinegar. The herb of Szeged’s creamy tárkonyos chicken soup.
+          hu: 'Illik hozzá: tárkonyos raguleves, csirke, béarnaise, ecet. A szegedi tárkonyos csirkeraguleves fűszere.'
+      - fill: '#5AA469'
+        label:
+          en: Mint
+          hu: Menta
+        value:
+          en: cool · sweet
+          hu: hűsítő · édes
+        note:
+          en: Goes with tea, lamb, peas, yoghurt sauces, fruit. Dried mint is great in yoghurt sauces; fresh in drinks and salads.
+          hu: 'Illik hozzá: tea, bárány, zöldborsó, joghurtos mártások, gyümölcs. A szárított menta joghurtos mártásba jó, a friss italba, salátába.'
+      - fill: '#3F8F3A'
+        label:
+          en: Chives
+          hu: Metélőhagyma
+        value:
+          en: mild onion
+          hu: enyhe hagyma
+        note:
+          en: Goes with eggs, túró spreads, potatoes, sour cream. Snip with scissors; add raw at the end.
+          hu: 'Illik hozzá: tojás, túrókrém, krumpli, tejföl. Ollóval vágd; nyersen, a végén add hozzá.'
+      - fill: '#4E9A3C'
+        label:
+          en: Coriander leaf
+          hu: Koriander (zöld)
+        value:
+          en: citrusy · fresh
+          hu: citrusos · friss
+        note:
+          en: Goes with curries, salsas, Asian soups, guacamole. To some it tastes of soap — that is a gene, not a fad. The stalks are full of flavour too.
+          hu: 'Illik hozzá: curryk, salsák, ázsiai levesek, guacamole. Egyeseknek szappanízű — ez génen múlik, nem divaton. A szára is ízes.'
+      - fill: '#5C9E3E'
+        label:
+          en: Wild garlic
+          hu: Medvehagyma
+        value:
+          en: garlicky · green
+          hu: fokhagymás · zöld
+        note:
+          en: Goes with pesto, túró spreads, soups, scrambled eggs. Spring only. Picking it wild? Lily of the valley and autumn crocus look alike and are poisonous.
+          hu: 'Illik hozzá: pesztó, túrókrém, levesek, rántotta. Csak tavasszal. Ha gyűjtöd: a gyöngyvirág és az őszi kikerics hasonlít rá, és mérgező.'
+    en:
+      title: Green & Hungarian herbs
+      body: |
+        Soft herbs are best fresh and go in at the end. Frozen chopped herbs keep their taste far better than dried.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Dill** | fresh · anise · grassy | tökfőzelék, cucumber salad, kovászos uborka, fish, túró | Fresh or frozen beats dried; add at the end. |
+        | **Parsley** | fresh · green | soups, potatoes, fish, butter, almost everything | Flat-leaf has more flavour than curly; the stalks go into stock. |
+        | **Lovage** | intense celery | húsleves, stocks, stews | The “Maggi herb”: a few leaves are enough for a whole pot of húsleves. |
+        | **Tarragon** | aniseed · bittersweet | tárkonyos ragu leves, chicken, béarnaise, vinegar | The herb of Szeged’s creamy tárkonyos chicken soup. |
+        | **Mint** | cool · sweet | tea, lamb, peas, yoghurt sauces, fruit | Dried mint is great in yoghurt sauces; fresh in drinks and salads. |
+        | **Chives** | mild onion | eggs, túró spreads, potatoes, sour cream | Snip with scissors; add raw at the end. |
+        | **Coriander leaf** | citrusy · fresh | curries, salsas, Asian soups, guacamole | To some it tastes of soap — that is a gene, not a fad. The stalks are full of flavour too. |
+        | **Wild garlic** | garlicky · green | pesto, túró spreads, soups, scrambled eggs | Spring only. Picking it wild? Lily of the valley and autumn crocus look alike and are poisonous. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Zöldfűszerek, magyar kedvencek
+      body: |
+        A puha fűszernövények frissen a legjobbak, és a végén kerülnek bele. A fagyasztott aprított zöldfűszer sokkal jobban megőrzi az ízét, mint a szárított.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Kapor** | friss · ánizsos · füves | tökfőzelék, uborkasaláta, kovászos uborka, hal, túró | Frissen vagy fagyasztva jobb, mint szárítva; a végén add hozzá. |
+        | **Petrezselyem** | friss · zöld | levesek, krumpli, hal, vaj, szinte minden | A sima levelű ízesebb a fodrosnál; a szára az alaplébe megy. |
+        | **Lestyán** | intenzív zeller | húsleves, alaplevek, raguk | A „Maggi-fű”: néhány levél egy egész fazék húsleveshez elég. |
+        | **Tárkony** | ánizsos · keserédes | tárkonyos raguleves, csirke, béarnaise, ecet | A szegedi tárkonyos csirkeraguleves fűszere. |
+        | **Menta** | hűsítő · édes | tea, bárány, zöldborsó, joghurtos mártások, gyümölcs | A szárított menta joghurtos mártásba jó, a friss italba, salátába. |
+        | **Metélőhagyma** | enyhe hagyma | tojás, túrókrém, krumpli, tejföl | Ollóval vágd; nyersen, a végén add hozzá. |
+        | **Koriander (zöld)** | citrusos · friss | curryk, salsák, ázsiai levesek, guacamole | Egyeseknek szappanízű — ez génen múlik, nem divaton. A szára is ízes. |
+        | **Medvehagyma** | fokhagymás · zöld | pesztó, túrókrém, levesek, rántotta | Csak tavasszal. Ha gyűjtöd: a gyöngyvirág és az őszi kikerics hasonlít rá, és mérgező. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.
+  - id: special
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#D9541E'
+        label:
+          en: Saffron
+          hu: Sáfrány
+        value:
+          en: honeyed · hay-like · golden
+          hu: mézes · szénaillatú · aranyló
+        note:
+          en: Goes with risotto, paella, fish soups, sweet buns. Soak a pinch of threads in warm water 15 minutes; add with the liquid. Cheap “saffron” is safflower.
+          hu: 'Illik hozzá: rizottó, paella, halászlevek, kalácsok. Egy csipet szálat áztass 15 percig langyos vízben, a folyadékkal add hozzá. Az olcsó „sáfrány” pórsáfrány.'
+      - fill: '#8E2F3A'
+        label:
+          en: Sumac
+          hu: Szömörce
+        value:
+          en: tangy · lemony
+          hu: savanykás · citromos
+        note:
+          en: 'Goes with salads, onions, grilled meat, za’atar, hummus. Sourness without liquid: sprinkle it on at the end.'
+          hu: 'Illik hozzá: saláták, hagyma, grillhús, za’atar, humusz. Savanyúság folyadék nélkül: a végén szórd rá.'
+      - fill: '#9E3426'
+        label:
+          en: Smoked paprika
+          hu: Füstölt paprika
+        value:
+          en: smoky · sweet
+          hu: füstös · édes
+        note:
+          en: Goes with lecsó, beans, roasts, BBQ. Off the heat like all paprika — it burns in seconds.
+          hu: 'Illik hozzá: lecsó, bab, sültek, BBQ. Mint minden paprika, a tűzről levéve — másodpercek alatt megég.'
+        heat: 0
+      - fill: '#3D3F5E'
+        label:
+          en: Juniper
+          hu: Borókabogyó
+        value:
+          en: piney · resinous · gin
+          hu: fenyős · gyantás · gin
+        note:
+          en: Goes with game, sauerkraut, pork, marinades. Crush 4–6 berries per kilo of meat; take them out before serving.
+          hu: 'Illik hozzá: vad, savanyú káposzta, sertés, pácok. Kilónként 4–6 szemet törj meg; tálalás előtt vedd ki.'
+      - fill: '#2E2A2A'
+        label:
+          en: Nigella
+          hu: Feketekömény
+        value:
+          en: oniony · peppery
+          hu: hagymás · borsos
+        note:
+          en: Goes with breads, flatbreads, curries, pickles. Sprinkle on GF bread before baking.
+          hu: 'Illik hozzá: kenyerek, lepények, curryk, savanyúság. Sütés előtt szórd a GM kenyérre.'
+      - fill: '#4A4E5A'
+        label:
+          en: Poppy seed
+          hu: Mák
+        value:
+          en: nutty · sweet
+          hu: diós · édes
+        note:
+          en: Goes with mákos tészta (GF pasta), bejgli, cakes. Grind it fresh — ground poppy goes rancid within weeks.
+          hu: 'Illik hozzá: mákos tészta (GM tésztával), bejgli, sütemények. Frissen darald — a darált mák hetek alatt megavasodik.'
+      - fill: '#E8D8A8'
+        label:
+          en: Sesame
+          hu: Szezámmag
+        value:
+          en: nutty · toasty
+          hu: diós · pörkölt
+        note:
+          en: Goes with stir-fries, salads, za’atar, tahini, GF breading. Toast in a dry pan until golden, 2–3 minutes, stirring.
+          hu: 'Illik hozzá: wokos ételek, saláták, za’atar, tahini, GM panír. Száraz serpenyőben pirítsd aranyszínűre, 2–3 perc, kevergetve.'
+      - fill: '#D8C8A0'
+        label:
+          en: Asafoetida (hing)
+          hu: Asafoetida (hing)
+        value:
+          en: pungent · garlicky when cooked
+          hu: szúrós · főzve fokhagymás
+        note:
+          en: Goes with dal, curries, vegetables. ⚠️ Most powder is cut with WHEAT flour — only GF-labelled (rice-flour based) hing.
+          hu: 'Illik hozzá: dal, curryk, zöldségek. ⚠️ A legtöbb por BÚZALISZTTEL van keverve — csak GM jelölésű (rizslisztes) hinget vegyél.'
+    en:
+      title: Special spices
+      body: |
+        A little goes a long way — and one of them hides wheat.
+
+        | Spice | Tastes | Goes with | Tip |
+        |---|---|---|---|
+        | **Saffron** | honeyed · hay-like · golden | risotto, paella, fish soups, sweet buns | Soak a pinch of threads in warm water 15 minutes; add with the liquid. Cheap “saffron” is safflower. |
+        | **Sumac** | tangy · lemony | salads, onions, grilled meat, za’atar, hummus | Sourness without liquid: sprinkle it on at the end. |
+        | **Smoked paprika** | smoky · sweet | lecsó, beans, roasts, BBQ | Off the heat like all paprika — it burns in seconds. |
+        | **Juniper** | piney · resinous · gin | game, sauerkraut, pork, marinades | Crush 4–6 berries per kilo of meat; take them out before serving. |
+        | **Nigella** | oniony · peppery | breads, flatbreads, curries, pickles | Sprinkle on GF bread before baking. |
+        | **Poppy seed** | nutty · sweet | mákos tészta (GF pasta), bejgli, cakes | Grind it fresh — ground poppy goes rancid within weeks. |
+        | **Sesame** | nutty · toasty | stir-fries, salads, za’atar, tahini, GF breading | Toast in a dry pan until golden, 2–3 minutes, stirring. |
+        | **Asafoetida (hing)** | pungent · garlicky when cooked | dal, curries, vegetables | ⚠️ Most powder is cut with WHEAT flour — only GF-labelled (rice-flour based) hing. |
+
+        > Single spices are gluten-free. Store them dark, dry and away from the stove’s steam; ground spices fade within about 6 months, whole ones keep 1–2 years.
+    hu:
+      title: Különleges fűszerek
+      body: |
+        Kevés is sokat ad — és az egyikben búza bujkál.
+
+        | Fűszer | Íze | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Sáfrány** | mézes · szénaillatú · aranyló | rizottó, paella, halászlevek, kalácsok | Egy csipet szálat áztass 15 percig langyos vízben, a folyadékkal add hozzá. Az olcsó „sáfrány” pórsáfrány. |
+        | **Szömörce** | savanykás · citromos | saláták, hagyma, grillhús, za’atar, humusz | Savanyúság folyadék nélkül: a végén szórd rá. |
+        | **Füstölt paprika** | füstös · édes | lecsó, bab, sültek, BBQ | Mint minden paprika, a tűzről levéve — másodpercek alatt megég. |
+        | **Borókabogyó** | fenyős · gyantás · gin | vad, savanyú káposzta, sertés, pácok | Kilónként 4–6 szemet törj meg; tálalás előtt vedd ki. |
+        | **Feketekömény** | hagymás · borsos | kenyerek, lepények, curryk, savanyúság | Sütés előtt szórd a GM kenyérre. |
+        | **Mák** | diós · édes | mákos tészta (GM tésztával), bejgli, sütemények | Frissen darald — a darált mák hetek alatt megavasodik. |
+        | **Szezámmag** | diós · pörkölt | wokos ételek, saláták, za’atar, tahini, GM panír | Száraz serpenyőben pirítsd aranyszínűre, 2–3 perc, kevergetve. |
+        | **Asafoetida (hing)** | szúrós · főzve fokhagymás | dal, curryk, zöldségek | ⚠️ A legtöbb por BÚZALISZTTEL van keverve — csak GM jelölésű (rizslisztes) hinget vegyél. |
+
+        > Az egynemű fűszerek gluténmentesek. Sötétben, szárazon, a tűzhely gőzétől távol tárold; az őrölt kb. 6 hónap alatt, az egész 1–2 év alatt veszít az ízéből.

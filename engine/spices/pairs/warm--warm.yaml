@@ -1,0 +1,45 @@
+# Warm & sweet × warm & sweet — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+cinnamon:
+  cloves: [3, classic-partners, "Cinnamon and clove: mulled wine, gingerbread, garam masala — the warmest handshake on the rack.", "Fahéj és szegfűszeg: forralt bor, mézeskalács, garam masala — a polc legmelegebb kézfogása."]
+  nutmeg: [3, classic-partners, "Cinnamon and nutmeg: apple pie and rice pudding in two jars.", "Fahéj és szerecsendió: almás pite és tejberizs két üvegben."]
+  allspice: [2, same-family]
+  cardamom: [2, warm-together]
+  star-anise: [2, warm-together]
+  vanilla-pod: [2, same-family]
+  ground-ginger: [3, classic-partners, "Cinnamon and ginger: the two pillars of gingerbread.", "Fahéj és gyömbér: a mézeskalács két oszlopa."]
+  anise-seed: [1, gentle-company]
+cloves:
+  nutmeg: [2, warm-together]
+  allspice: [1, same-family]
+  cardamom: [2, warm-together]
+  star-anise: [2, warm-together]
+  vanilla-pod: [-1, drowned]
+  ground-ginger: [2, warm-together]
+  anise-seed: [0, harmless]
+nutmeg:
+  allspice: [2, same-family]
+  cardamom: [1, gentle-company]
+  star-anise: [0, harmless]
+  vanilla-pod: [2, warm-together]
+  ground-ginger: [2, warm-together]
+  anise-seed: [0, harmless]
+allspice:
+  cardamom: [1, gentle-company]
+  star-anise: [1, warm-together]
+  vanilla-pod: [0, harmless]
+  ground-ginger: [2, warm-together]
+  anise-seed: [0, harmless]
+cardamom:
+  star-anise: [1, gentle-company]
+  vanilla-pod: [2, bridge]
+  ground-ginger: [2, warm-together]
+  anise-seed: [0, harmless]
+star-anise:
+  vanilla-pod: [1, gentle-company]
+  ground-ginger: [2, cuisine-mates]
+  anise-seed: [-2, doubled-note]
+vanilla-pod:
+  ground-ginger: [1, gentle-company]
+  anise-seed: [0, harmless]
+ground-ginger:
+  anise-seed: [0, harmless]

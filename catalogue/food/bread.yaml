@@ -1,0 +1,39 @@
+category: bread
+groups:
+  - id: gf-bread-all
+    en: Bread (GF)
+    hu: Kenyér (gluténmentes)
+    icon: "om:1F35E"
+    items:
+      - {id: gf-bread, en: Bread, hu: Kenyér, icon: "om:1F35E", aliases: [gf bread, gluten-free bread, gluténmentes kenyér, gm kenyér]}
+      - {id: gf-toast, en: Toast bread, hu: Toastkenyér, aliases: [gf toast, gluténmentes toast, gluténmentes toastkenyér]}
+      - {id: gf-rolls, en: Rolls & buns, hu: "Zsemle, buci", icon: "om:1F956", aliases: [gf rolls, gf buns, gluténmentes zsemle, gluténmentes kifli, gf burger buns]}
+      - {id: gf-baguette, en: Baguette, hu: Bagett, icon: "om:1F956", aliases: [gf baguette, gluténmentes bagett]}
+      - {id: gf-wraps, en: Wraps, hu: Tortillalap, icon: "om:1FAD3", aliases: [gf wraps, gf tortillas, gluténmentes tortilla, gluténmentes wrap]}
+      - {id: corn-tortilla, en: Corn tortillas, hu: Kukorica tortilla, icon: "om:1FAD3", aliases: [corn tortilla, taco shells, tacohéj]}
+      - {id: rice-cakes, en: Rice cakes, hu: Puffasztott rizs, aliases: [puffed rice cakes, rizsszelet, puffancs]}
+      - {id: gf-crispbread, en: Crispbread, hu: Ropogós kenyér, aliases: [gf crispbread, gf crackers, gluténmentes kréker]}
+  - id: gf-doughs
+    en: Crumbs & doughs (GF)
+    hu: Morzsa, tészták (GM)
+    icon: "om:1F950"
+    items:
+      - {id: gf-breadcrumbs, en: Breadcrumbs, hu: Zsemlemorzsa, aliases: [gf breadcrumbs, gf panko, gluténmentes zsemlemorzsa, gluténmentes panko, gm morzsa]}
+      - {id: gf-puff-pastry, en: Puff pastry, hu: Leveles tészta, icon: "om:1F950", aliases: [gf puff pastry, gluténmentes leveles tészta]}
+      - {id: gf-pizza-base, en: Pizza base, hu: Pizzalap, icon: "om:1F355", aliases: [gf pizza base, gf pizza dough, gluténmentes pizzalap, gluténmentes pizzatészta]}
+  - id: wheat-bakery
+    en: Wheat bakery (recipe words)
+    hu: Búzás pékáru (receptszavak)
+    icon: "om:1F35E"
+    items:
+      - {id: wheat-bread, en: Bread (wheat), hu: Kenyér (búza), gluten: contains, swap: gf-bread, pantry: false, aliases: [bread, white bread, kenyér, fehér kenyér, félbarna kenyér, kenyérszelet, kalács, briós, brioche, sandwich bread], tip_en: "GF bread is best toasted or warm.", tip_hu: "A GM kenyér pirítva vagy melegen a legjobb."}
+      - {id: wheat-toast, en: Toast bread (wheat), hu: Toastkenyér (búza), gluten: contains, swap: gf-toast, pantry: false, aliases: [toast, toast bread, toastkenyér, pirítós, pirított kenyér], tip_en: "GF bread is best toasted or warm.", tip_hu: "A GM kenyér pirítva vagy melegen a legjobb."}
+      - {id: wheat-rolls, en: Rolls (wheat), hu: Zsemle (búza), gluten: contains, swap: gf-rolls, pantry: false, aliases: [roll, rolls, bun, buns, rolls & buns, rolls and buns, "zsemle, buci", burger bun, zsemle, zsemlét, kifli, buci, hamburgerzsemle, hot dog bun], tip_en: "Warm GF rolls in the oven for a few minutes before serving.", tip_hu: "A GM zsemlét tálalás előtt melegítsd meg néhány percre a sütőben."}
+      - {id: crispbread, en: Crispbread (wheat/rye), hu: Ropogós kenyér (búza/rozs), gluten: contains, swap: gf-crispbread, pantry: false, aliases: [crispbread, rye crispbread, knäckebröd, knäckebrot, knäcke, wasa, ropogós kenyér, rozsos ropogós kenyér], tip_en: "GF crispbread (or rice cakes) works the same.", tip_hu: "GM ropogós kenyérrel (vagy puffasztott rizzsel) ugyanúgy működik."}
+      - {id: wheat-baguette, en: Baguette (wheat), hu: Bagett (búza), gluten: contains, swap: gf-baguette, pantry: false, aliases: [baguette, bagett, ciabatta, focaccia, french bread], tip_en: "Warm a GF baguette in the oven for a few minutes before serving.", tip_hu: "A GM bagettet tálalás előtt melegítsd meg néhány percre a sütőben."}
+      - {id: breadcrumbs, en: Breadcrumbs (wheat), hu: Zsemlemorzsa (búza), gluten: contains, swap: gf-breadcrumbs, pantry: false, aliases: [breadcrumbs, panko, morzsa, prézli, zsemlemorzsa, zsemlemorzsát, bread crumbs, rántott (panír)], tip_en: "GF breadcrumbs brown faster: fry a little cooler (160–170 °C). Crushed cornflakes work too (check the label).", tip_hu: "A GM morzsa hamarabb pirul: kicsit alacsonyabb hőfokon (160–170 °C) süsd. A darált kukoricapehely is jó (nézd meg a címkét)."}
+      - {id: puff-pastry, en: Puff pastry (wheat), hu: Leveles tészta (búza), gluten: contains, swap: gf-puff-pastry, pantry: false, aliases: [puff pastry, leveles tészta, vajas tészta, leveles tésztát, croissant dough], tip_en: "GF puff pastry tears easily: roll it between sheets of baking paper and keep it cold.", tip_hu: "A GM leveles tészta könnyen szakad: sütőpapírok között nyújtsd, és tartsd hidegen."}
+      - {id: filo, en: Filo pastry, hu: Réteslap, gluten: contains, swap: gf-puff-pastry, pantry: false, aliases: [filo, phyllo, yufka, réteslap, réteslapot, strudel pastry], tip_en: "No GF filo at hand? GF puff pastry rolled very thin between baking paper is the closest.", tip_hu: "Nincs GM réteslap? A sütőpapírok között vékonyra nyújtott GM leveles tészta áll hozzá a legközelebb."}
+      - {id: pizza-dough, en: Pizza dough (wheat), hu: Pizzatészta (búza), gluten: contains, swap: gf-pizza-base, pantry: false, aliases: [pizza dough, pizza base, pizzatészta, pizzalap], tip_en: "Pre-bake a GF pizza base for 5 minutes before the toppings go on.", tip_hu: "A GM pizzalapot a feltét előtt süsd elő 5 percig."}
+      - {id: wheat-tortilla, en: Tortilla wraps (wheat), hu: Tortilla (búza), gluten: contains, swap: gf-wraps, pantry: false, aliases: [tortilla, tortillas, wrap, wraps, flour tortilla, tortillalap, tortilla lap, pita, pitát, naan, lavash], tip_en: "Warm GF wraps before rolling, or they crack.", tip_hu: "A GM tortillát tekerés előtt melegítsd meg, különben eltörik."}
+      - {id: croutons, en: Croutons, hu: Krutonok, gluten: contains, swap: gf-bread, pantry: false, aliases: [crouton, kruton, pirított kenyérkocka], tip_en: "Make croutons from cubed GF bread, tossed in oil and baked at 180 °C until golden.", tip_hu: "Krutonnak kockázd fel a GM kenyeret, forgasd olajba, és 180 °C-on süsd aranybarnára."}

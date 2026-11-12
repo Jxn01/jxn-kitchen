@@ -1,0 +1,18 @@
+tamari:
+  coconut-milk: [1, cuisine-mates]
+  passata: [-1, kitchens-apart]
+fish-sauce:
+  coconut-milk: [3, classic-partners, "Coconut milk and fish sauce: the savoury depth of a Thai curry.", "Kókusztej és halszósz: a thai curry sós mélysége."]
+  passata: [0, harmless]
+miso:
+  coconut-milk: [1, gentle-company]
+  passata: [-1, kitchens-apart]
+tomato-paste:
+  coconut-milk: [1, cuisine-mates]
+  passata: [2, same-family]
+worcestershire:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [2, umami-depth]
+salt:
+  coconut-milk: [1, salt-lifts]
+  passata: [2, salt-lifts]

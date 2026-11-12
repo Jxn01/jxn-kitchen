@@ -1,0 +1,61 @@
+# The sauce engine's sentences (spec 2026-10-19 §5.2, §5.3): the ledger lines that are not a pair, the stability lines,
+# the keeps card and the fix-it rows. Every one bilingual; the engine fills the placeholders and capitalises the first
+# letter. Weights live in sauce_engine.py (WEIGHTS) and are listed in the README. Placeholders:
+#   {name} {note} a family · {items} a list of ingredients · {suggest} an ingredient that would help · {pct} a whole
+#   percent · {oil} {cap} millilitres · {days} whole days · {why} the keeps class · {line} a typed line as written ·
+#   {blend} a blend's name · {spices} a list of its spices · {n} a count · {body} the body class's words
+family: {en: "Recognised: {name}. {note}", hu: "Felismerve: {name}. {note}"}
+family-other: {en: "A sauce of its own — no classic family matches it.", hu: "Saját mártás — egyik klasszikus családhoz sem illik."}
+flat: {en: "No acid to speak of — it may taste flat. A squeeze of {suggest} wakes it up.", hu: "Alig van benne sav — lapos lehet az íze. Egy kevés felébreszti: {suggest}."}
+too-sharp: {en: "The acid leads — round it with a pinch of sugar, a knob of butter or a spoon of cream.", hu: "A sav vezet — kerekítsd le egy csipet cukorral, egy darabka vajjal vagy egy kanál tejszínnel."}
+too-salty: {en: "It is salty — about {pct} % salt. Dilute it with unsalted liquid; a potato does not draw salt out.", hu: "Sós — kb. {pct} % só. Hígítsd sótlan folyadékkal; a krumpli nem szívja ki a sót."}
+under-salted: {en: "Hardly any salt — season it to taste at the end.", hu: "Alig van benne só — a végén sózd ízlés szerint."}
+too-sweet: {en: "Sweeter than a savoury sauce likes — a splash of acid or a pinch of salt pulls it back.", hu: "Édesebb, mint amit egy sós mártás szeret — egy kevés sav vagy egy csipet só visszahúzza."}
+greasy: {en: "Very rich, and nothing holds it together — it will feel greasy. Skim it, or add acid or liquid.", hu: "Nagyon zsíros, és semmi sem tartja össze — zsírosnak fog hatni. Szedd le, vagy adj hozzá savat, folyadékot."}
+emulsion-ok: {en: "The emulsion holds: {oil} ml of fat in room for {cap} ml ({pct} %).", hu: "Az emulzió megáll: {oil} ml zsiradék {cap} ml-nyi helyen ({pct} %)."}
+emulsion-at-limit: {en: "{oil} ml of fat in room for {cap} ml — at the limit. Pour slowly, or add another yolk.", hu: "{oil} ml zsiradék {cap} ml-nyi helyen — a határon. Lassan csorgasd, vagy adj hozzá még egy sárgáját."}
+emulsion-split: {en: "{oil} ml of fat, but the emulsifiers hold only {cap} ml — it will split. Another yolk holds 250 ml more.", hu: "{oil} ml zsiradék, de az emulgeálók csak {cap} ml-t bírnak — ki fog válni. Egy újabb sárgája még 250 ml-t megtart."}
+vinaigrette: {en: "Oil and acid, held together only for a while — shake it before use.", hu: "Olaj és sav, csak egy ideig marad együtt — használat előtt rázd össze."}
+yolk-heat: {en: "Keep the yolks under 65 °C — any hotter and they scramble: a bowl over barely simmering water.", hu: "A sárgája maradjon 65 °C alatt — melegebben rántotta lesz: tál alig gyöngyöző víz fölött."}
+curdle-warn: {en: "{items} with acid and a boil: it will curdle. Temper it first (habarás) and only warm it through.", hu: "{items} savval és forralva: ki fog csapódni. Előbb habard el, és csak melegítsd át."}
+curdle-notice: {en: "{items} in a hot sauce: the starch protects it, but don't boil it hard — temper it first (habarás).", hu: "{items} forró mártásban: a keményítő védi, de ne forrald erősen — előbb habard el."}
+starch-long-boil: {en: "Potato starch thins again if it boils long — stir it in at the end.", hu: "A burgonyakeményítő hosszú forralástól újra hígul — a végén keverd bele."}
+starch-arrowroot-dairy: {en: "Arrowroot goes slimy with dairy — use cornstarch here.", hu: "Az arrowroot tejtermékkel nyálkás lesz — ide kukoricakeményítő kell."}
+starch-corn-acid: {en: "Cornstarch is weaker in acid — use a little more.", hu: "A kukoricakeményítő savban gyengébb — tegyél bele kicsit többet."}
+starch-raw: {en: "{items} only thickens once it cooks — no step heats the sauce.", hu: "{items} csak főzve sűrít — egyik lépés sem melegíti a mártást."}
+raw-egg: {en: "Raw yolk: 2 days in the fridge; for pregnant, elderly or very young guests, pasteurised eggs.", hu: "Nyers sárgája: 2 napig a hűtőben; várandós, idős vagy egészen kicsi vendégnek pasztőrözött tojásból."}
+garlic-in-oil: {en: "Fresh {items} in oil, with no acid and no cooking: fridge only, 4 days — never on the counter.", hu: "Friss {items} olajban, sav és főzés nélkül: csak hűtőben, 4 napig — soha a pulton."}
+body-reduce: {en: "How thick it ends up depends on how far you reduce it.", hu: "Hogy milyen sűrű lesz, azon múlik, mennyire forralod be."}
+body-right: {en: "The right body for {name}: {body}.", hu: "Pont jó sűrűség ehhez: {name} — {body}."}
+seasoned: {en: "Seasoned right — about {pct} % salt.", hu: "Jól sózva — kb. {pct} % só."}
+too-thin-for: {en: "{name} is usually thicker — this one reads: {body}.", hu: "{name} általában sűrűbb — ez: {body}."}
+too-thick-for: {en: "{name} is usually thinner — this one reads: {body}.", hu: "{name} általában hígabb — ez: {body}."}
+unknown-line: {en: "“{line}” is not matched: it counts for nothing here, and the sauce can't read gluten-free until it is.", hu: "„{line}” nincs felismerve: itt semmibe sem számít bele, és addig a mártás nem lehet gluténmentes."}
+off-shelf: {en: "{items}: not on the sauce shelves — it counts for gluten only.", hu: "{items}: nincs a mártáspolcon — csak a glutén szempontjából számít."}
+pairs-rest-good: {en: "{n} more pairs get along on balance.", hu: "További {n} páros összességében jól megvan egymással."}
+pairs-rest-bad: {en: "Among {n} more pairs, the ones that grate outweigh the rest.", hu: "További {n} páros között többet ér, ami dörzsölődik."}
+and: {en: and, hu: és}
+blend-gluten: {en: "{blend}: {spices} — read the label, some contain wheat flour.", hu: "{blend}: {spices} — nézd meg a címkét, némelyikben búzaliszt van."}
+keeps: {en: "Keeps {days} days in the fridge — {why}.", hu: "{days} napig eláll a hűtőben — {why}."}
+heat:
+  mild: {en: "Heat: mild — fine for anyone.", hu: "Csípősség: enyhe — bárkinek jó."}
+  warm: {en: "Heat: warm — a pleasant bite.", hu: "Csípősség: pikáns — kellemes harapás."}
+  hot: {en: "Heat: hot — go easy with it.", hu: "Csípősség: csípős — óvatosan adagold."}
+  fiery: {en: "Heat: fiery — it builds as you eat.", hu: "Csípősség: tüzes — evés közben erősödik."}
+body:
+  thin: {en: "thin, it runs off the spoon", hu: "híg, lefolyik a kanálról"}
+  coats: {en: "it coats a spoon", hu: "bevonja a kanalat"}
+  thick: {en: "thick, it holds its shape", hu: "sűrű, tartja a formáját"}
+  stiff: {en: "stiff, it stands up", hu: "kemény, megáll magában"}
+# the fix-it ledger: the nine rows of the know-how's "Fixing a sauce" (knowhow/17-sauces.yaml → fixes), word for word —
+# a test keeps the two equal
+fixes:
+  too-thin: {label: {en: Too thin, hu: Túl híg}, en: "Simmer it uncovered to reduce, or whisk in a cornstarch slurry (1 tsp in a spoon of cold water) and simmer a minute.", hu: "Forrald be fedő nélkül, vagy keverj bele hideg vízzel elkevert keményítőt (1 tk egy kanál vízben), és forrald egy percig."}
+  too-thick: {label: {en: Too thick, hu: Túl sűrű}, en: "Whisk in warm stock, milk or water, a splash at a time.", hu: "Apránként habarj bele meleg alaplét, tejet vagy vizet."}
+  lumpy: {label: {en: Lumpy, hu: Csomós}, en: "Whisk hard; still lumpy — pass it through a sieve or give it a blitz with a stick blender.", hu: "Erősen habard ki; ha még mindig csomós, szűrd át, vagy turmixold át egy botmixerrel."}
+  curdled: {label: {en: Curdled cream sauce, hu: Kicsapódott tejfölös}, en: "Off the heat, a splash of cold cream, whisk. Next time temper the sour cream first (habarás) and don't boil it hard.", hu: "Vedd le a tűzről, egy kevés hideg tejszín, habard el. Legközelebb előbb hígítsd a tejfölt (habarás), és ne forrald erősen."}
+  split: {label: {en: Split emulsion, hu: Kivált emulzió}, en: "Mayonnaise: a fresh yolk, whisk the split one into it. Hollandaise: an ice cube, whisked hard.", hu: "Majonéz: új sárgája, abba keverd bele a kiváltat. Hollandi: egy jégkocka, erősen elkeverve."}
+  too-salty: {label: {en: Too salty, hu: Túl sós}, en: "Dilute with unsalted liquid or more of the other ingredients. A potato does NOT draw salt out — that is a myth.", hu: "Hígítsd sótlan folyadékkal vagy a többi hozzávalóból. A krumpli NEM szívja ki a sót — ez tévhit."}
+  too-sour: {label: {en: "Too sour, too sharp", hu: "Túl savanyú, éles"}, en: "A pinch of sugar, a knob of butter or a spoon of cream rounds it off.", hu: "Egy csipet cukor, egy darabka vaj vagy egy kanál tejszín lekerekíti."}
+  greasy: {label: {en: Greasy, hu: Zsíros}, en: "Skim the fat with a spoon or a paper towel; or chill it and lift the fat off.", hu: "Szedd le a zsírt kanállal vagy papírtörlővel; vagy hűtsd le, és emeld le a megdermedt zsírt."}
+  raw-flour: {label: {en: Tastes of raw flour, hu: Nyers lisztíz}, en: "It needs more time: simmer 5 more minutes, stirring.", hu: "Több idő kell neki: még 5 percig gyöngyöztesd, kevergetve."}

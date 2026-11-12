@@ -1,0 +1,100 @@
+# The sauce engine's vocabulary of labels (spec 2026-10-19 §4.3). Everything here is shown on screen, so every entry is
+# bilingual. Order matters: shelves appear in this order in the sauce editor, and the pair blocks are named after it.
+shelves:
+  - {id: fats, en: "Fats & oils", hu: "Zsiradék, olaj"}
+  - {id: acids, en: "Acids & wine", hu: "Savak, bor"}
+  - {id: dairy-eggs, en: "Dairy & eggs", hu: "Tejtermék, tojás"}
+  - {id: alliums, en: "Onions & aromatics", hu: "Hagymák, aromák"}
+  - {id: herbs, en: "Fresh herbs", hu: "Friss zöldfűszerek"}
+  - {id: umami, en: "Umami & salt", hu: "Umami, só"}
+  - {id: sweet, en: "Sweet", hu: "Édes"}
+  - {id: heat, en: "Heat, paprika & mustard", hu: "Csípős, paprika, mustár"}
+  - {id: thickeners, en: "Thickeners", hu: "Sűrítők"}
+  - {id: liquids, en: "Liquids & stock", hu: "Folyadék, alaplé"}
+  - {id: veg, en: "Vegetables, fruit & nuts", hu: "Zöldség, gyümölcs, olajos mag"}
+
+roles:
+  - {id: fat, en: Fat, hu: Zsiradék}
+  - {id: acid, en: Acid, hu: Sav}
+  - {id: dairy, en: Dairy, hu: Tejtermék}
+  - {id: egg, en: Egg, hu: Tojás}
+  - {id: allium, en: "Onion & aromatic", hu: "Hagyma, aroma"}
+  - {id: herb, en: Herb, hu: Zöldfűszer}
+  - {id: umami, en: "Umami & salt", hu: "Umami, só"}
+  - {id: sweet, en: Sweet, hu: Édes}
+  - {id: heat, en: Heat, hu: Csípős}
+  - {id: thickener, en: Thickener, hu: Sűrítő}
+  - {id: liquid, en: Liquid, hu: Folyadék}
+  - {id: veg, en: "Vegetable, fruit, nut", hu: "Zöldség, gyümölcs, mag"}
+
+# the taste wheel's seven axes, clockwise from the top
+taste:
+  - {id: salt, en: Salty, hu: Sós}
+  - {id: acid, en: Sour, hu: Savanyú}
+  - {id: fat, en: Rich, hu: Gazdag}
+  - {id: sweet, en: Sweet, hu: Édes}
+  - {id: heat, en: Hot, hu: Csípős}
+  - {id: umami, en: Savoury, hu: Umami}
+  - {id: aromatic, en: Aromatic, hu: Illatos}
+
+units:
+  - {id: tbsp, en: tbsp, hu: ek}
+  - {id: tsp, en: tsp, hu: tk}
+  - {id: ml, en: ml, hu: ml}
+  - {id: dl, en: dl, hu: dl}
+  - {id: g, en: g, hu: g}
+  - {id: pcs, en: pcs, hu: db}
+
+# how long a sauce keeps in the fridge: the shortest class among its ingredients (spec §5.2)
+keeps:
+  - {id: raw-egg, days: 2, en: "Raw egg", hu: "Nyers tojás"}
+  - {id: fresh-dairy, days: 3, en: "Fresh dairy", hu: "Friss tejtermék"}
+  - {id: fresh, days: 4, en: "Fresh vegetables and herbs", hu: "Friss zöldség, zöldfűszer"}
+  - {id: oil-infusion, days: 4, en: "Fresh garlic or herbs in oil", hu: "Olajban álló friss fokhagyma, zöldfűszer"}
+  - {id: cooked, days: 5, en: "Cooked", hu: "Főtt"}
+  - {id: acid-preserved, days: 14, en: "Kept by its acid", hu: "A sava tartósítja"}
+  - {id: dry-stable, days: 30, en: "Keeps well", hu: "Jól eláll"}
+
+# the sideboard's family filter chips (spec §6.3)
+chips:
+  - {id: hungarian, en: "Hungarian mártások", hu: "Magyar mártások"}
+  - {id: roux-dairy, en: "Roux, pan & dairy", hu: "Rántásos, serpenyős"}
+  - {id: emulsions, en: Emulsions, hu: Emulziók}
+  - {id: dressings, en: Dressings, hu: Öntetek}
+  - {id: dips-cold, en: "Dips, cold & pestos", hu: "Mártogatós, hideg, pesto"}
+  - {id: marinades, en: "Marinades & wet rubs", hu: "Pácok"}
+  - {id: asian, en: Asian-style, hu: Ázsiai}
+  - {id: sweet, en: Sweet, hu: Édes}
+
+# the body gauge's four classes (the spoon: runs off · coats · holds · stands)
+body:
+  - {id: thin, en: "Thin — runs off the spoon", hu: "Híg — lefolyik a kanálról"}
+  - {id: coats, en: "Coats a spoon", hu: "Bevonja a kanalat"}
+  - {id: thick, en: "Thick — holds its shape", hu: "Sűrű — tartja a formáját"}
+  - {id: stiff, en: "Stiff — stands up", hu: "Kemény — megáll magában"}
+
+# the stability meter's kinds and levels
+stability:
+  - {id: emulsion, en: Emulsion, hu: Emulzió}
+  - {id: curdle, en: Curdling, hu: Kicsapódás}
+  - {id: starch, en: Starch, hu: Keményítő}
+  - {id: raw-egg, en: "Raw egg", hu: "Nyers tojás"}
+  - {id: garlic-in-oil, en: "Garlic in oil", hu: "Fokhagyma olajban"}
+levels:
+  - {id: ok, en: Fine, hu: Rendben}
+  - {id: at-limit, en: "At the limit", hu: "A határon"}
+  - {id: warn, en: Careful, hu: Vigyázat}
+
+# the verdict word by score (as the spices': >= 80 sings, >= 60 good, >= 40 muddled, else fighting) and the mascot's face
+words:
+  - {id: sings, min: 80, mascot: proud, en: Sings, hu: Ragyog}
+  - {id: good, min: 60, mascot: happy, en: Good, hu: Jó}
+  - {id: muddled, min: 40, mascot: think, en: Muddled, hu: Zavaros}
+  - {id: fighting, min: 0, mascot: worried, en: Fighting, hu: Veszekszik}
+
+# the heat word by the taste wheel's heat (0-1)
+heat:
+  - {id: mild, below: 0.15, en: Mild, hu: Enyhe}
+  - {id: warm, below: 0.4, en: Warm, hu: Pikáns}
+  - {id: hot, below: 0.75, en: Hot, hu: Csípős}
+  - {id: fiery, below: 99, en: Fiery, hu: Tüzes}

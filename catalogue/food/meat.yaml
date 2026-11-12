@@ -1,0 +1,114 @@
+category: meat
+groups:
+  - id: chicken
+    en: Chicken
+    hu: Csirke
+    icon: "c:roast-chicken"
+    items:
+      - {id: chicken-breast, en: Breast, hu: Csirkemell, icon: "c:chicken-breast", aliases: [chicken breast, chicken breasts, chicken fillet, csirkemellfilé, csirkemell filé, csirkemellek]}
+      - {id: chicken-thighs, en: Thighs, hu: Felsőcomb, icon: "om:1F357", aliases: [chicken thigh, chicken thighs, thigh fillet, combfilé, csirkecombfilé, csirke felsőcomb, felső comb]}
+      - {id: chicken-drumsticks, en: Drumsticks, hu: Alsócomb, icon: "om:1F357", aliases: [drumstick, chicken drumsticks, csirke alsócomb, alsó comb]}
+      - {id: chicken-legs, en: Whole legs, hu: Egész comb, icon: "om:1F357", aliases: [chicken leg, chicken legs, csirkecomb, csirkecombok, egész csirkecomb]}
+      - {id: chicken-wings, en: Wings, hu: Szárny, icon: "c:chicken-wing", aliases: [chicken wing, chicken wings, csirkeszárny, csirkeszárnyak, szárnyak]}
+      - {id: chicken-whole, en: Whole chicken, hu: Egész csirke, icon: "c:roast-chicken", aliases: [whole chicken, egész csirkék, roast chicken]}
+      - {id: chicken-liver, en: Chicken liver, hu: Csirkemáj, icon: "c:liver", aliases: [chicken livers, csirkemájak]}
+      - {id: chicken-gizzards, en: Gizzards, hu: Zúza, aliases: [chicken gizzards, csirkezúza]}
+      - {id: chicken-back, en: Back & carcass, hu: Far-hát, aliases: [chicken carcass, chicken back, csirke far-hát, farhát, csontos csirke]}
+      - {id: chicken-giblets, en: Giblets, hu: Aprólék, aliases: [chicken giblets, csirkeaprólék, levesbe való aprólék]}
+  - id: turkey
+    en: Turkey
+    hu: Pulyka
+    icon: "om:1F983"
+    items:
+      - {id: turkey-breast, en: Turkey breast, hu: Pulykamell, aliases: [turkey fillet, pulykamellfilé]}
+      - {id: turkey-thigh, en: Turkey thigh, hu: Pulykacomb, icon: "om:1F357", aliases: [turkey leg, turkey thighs, pulyka felsőcomb, pulykacombfilé]}
+      - {id: turkey-wings, en: Turkey wings, hu: Pulykaszárny, icon: "c:chicken-wing", aliases: [turkey wing]}
+  - id: duck-goose
+    en: Duck & goose
+    hu: Kacsa, liba
+    icon: "om:1F986"
+    items:
+      - {id: duck-breast, en: Duck breast, hu: Kacsamell, aliases: [duck breasts, kacsamellfilé]}
+      - {id: duck-legs, en: Duck legs, hu: Kacsacomb, icon: "om:1F357", aliases: [duck leg, kacsacombok]}
+      - {id: duck-whole, en: Whole duck, hu: Egész kacsa, aliases: [whole duck]}
+      - {id: goose-legs, en: Goose legs, hu: Libacomb, icon: "om:1F357", aliases: [goose leg, libacombok]}
+      - {id: goose-breast, en: Goose breast, hu: Libamell, aliases: [goose breasts]}
+      - {id: goose-liver, en: Foie gras, hu: Libamáj, aliases: [foie gras, goose liver, kacsamáj, duck liver]}
+  - id: pork
+    en: Pork
+    hu: Sertés
+    icon: "om:1F416"
+    items:
+      - {id: pork-loin, en: Loin (chops), hu: Karaj, icon: "c:pork-chop", aliases: [pork loin, pork chop, pork chops, sertéskaraj, karajszelet, csontos karaj]}
+      - {id: pork-tenderloin, en: Tenderloin, hu: Szűzpecsenye, aliases: [pork tenderloin, sertésszűz, szűzérme, sertés bélszín]}
+      - {id: pork-neck, en: Neck (collar), hu: Tarja, aliases: [pork neck, pork collar, sertéstarja, tarjaszelet]}
+      - {id: pork-shoulder, en: Shoulder, hu: Lapocka, aliases: [pork shoulder, sertéslapocka, pork butt, boston butt]}
+      - {id: pork-leg, en: Leg (ham joint), hu: Sertéscomb, aliases: [pork leg, fresh ham, comb (sertés), sertés comb]}
+      - {id: pork-belly, en: Belly, hu: Dagadó, aliases: [pork belly, hasaalja, sertéshas]}
+      - {id: pork-ribs, en: Spare ribs, hu: Oldalas, icon: "c:ribs", aliases: [ribs, spare ribs, baby back ribs, sertésoldalas, oldalasok]}
+      - {id: pork-knuckle, en: Knuckle (hock), hu: Csülök, aliases: [pork knuckle, ham hock, hock, sertéscsülök, füstölt csülök]}
+      - {id: pork-liver, en: Pork liver, hu: Sertésmáj, icon: "c:liver", aliases: [pig liver]}
+      - {id: pork-cheek, en: Cheek & jowl, hu: Sertéspofa, aliases: [pork cheek, pork jowl, toka]}
+  - id: beef
+    en: Beef
+    hu: Marha
+    icon: "om:1F404"
+    items:
+      - {id: beef-tenderloin, en: Tenderloin (fillet), hu: Bélszín, icon: "om:1F969", aliases: [beef tenderloin, beef fillet, filet mignon, marhabélszín, bélszínérme]}
+      - {id: beef-ribeye, en: Ribeye, hu: Rostélyos, icon: "om:1F969", aliases: [rib eye, rib-eye, entrecote, marharostélyos, steak]}
+      - {id: beef-sirloin, en: Sirloin, hu: Hátszín, icon: "om:1F969", aliases: [sirloin steak, striploin, new york strip, marhahátszín]}
+      - {id: beef-shin, en: Shin (shank), hu: Lábszár, aliases: [beef shin, beef shank, marhalábszár, pörköltnek való marha]}
+      - {id: beef-shoulder, en: Shoulder (chuck), hu: Marhalapocka, aliases: [beef chuck, chuck, beef shoulder, stewing beef, stew meat]}
+      - {id: beef-brisket, en: Brisket, hu: Szegy, aliases: [beef brisket, marhaszegy]}
+      - {id: beef-ribs, en: Short ribs, hu: Marhaoldalas, icon: "c:ribs", aliases: [beef ribs, beef short ribs, marhaborda]}
+      - {id: beef-cheek, en: Beef cheek, hu: Marhapofa, aliases: [ox cheek, beef cheeks]}
+      - {id: oxtail, en: Oxtail, hu: Ökörfarok, aliases: [ox tail, marhafarok]}
+      - {id: beef-bones, en: Soup bones (marrow), hu: Velőscsont, aliases: [marrow bones, beef bones, soup bones, leveshez csont, marhacsont]}
+  - id: mince
+    en: Mince
+    hu: Darált hús
+    icon: "c:mince"
+    items:
+      - {id: mince-mixed, en: Mixed mince, hu: Darált hús (vegyes), aliases: [minced meat, ground meat, mince, darált hús, darálthús, vegyes darált hús]}
+      - {id: mince-pork, en: Pork mince, hu: Darált sertés, aliases: [ground pork, minced pork, sertés darált hús, darált sertéshús]}
+      - {id: mince-beef, en: Beef mince, hu: Darált marha, aliases: [ground beef, minced beef, marha darált hús, darált marhahús]}
+      - {id: mince-chicken, en: Chicken mince, hu: Darált csirke, aliases: [ground chicken, minced chicken, darált csirkehús]}
+      - {id: mince-turkey, en: Turkey mince, hu: Darált pulyka, aliases: [ground turkey, minced turkey, darált pulykahús]}
+      - {id: mince-lamb, en: Lamb mince, hu: Darált bárány, aliases: [ground lamb, minced lamb]}
+  - id: lamb
+    en: Lamb
+    hu: Bárány
+    icon: "om:1F411"
+    items:
+      - {id: lamb-leg, en: Leg of lamb, hu: Báránycomb, aliases: [lamb leg, bárány comb]}
+      - {id: lamb-chops, en: Chops & rack, hu: Báránykaraj, icon: "c:pork-chop", aliases: [lamb chops, rack of lamb, lamb rack, bárányborda, báránybordák]}
+      - {id: lamb-shoulder, en: Lamb shoulder, hu: Báránylapocka, aliases: [bárány lapocka]}
+      - {id: lamb-shank, en: Lamb shank, hu: Bárány lábszár, aliases: [lamb shanks]}
+  - id: game
+    en: Game
+    hu: Vad
+    icon: "om:1F98C"
+    items:
+      - {id: venison, en: Venison, hu: Szarvas, aliases: [deer, deer meat, szarvashús, őz, őzhús]}
+      - {id: wild-boar, en: Wild boar, hu: Vaddisznó, icon: "om:1F417", aliases: [boar, vaddisznóhús]}
+      - {id: rabbit, en: Rabbit, hu: Nyúl, icon: "om:1F407", aliases: [nyúlhús, házinyúl, rabbit meat]}
+      - {id: pheasant, en: Pheasant, hu: Fácán, aliases: [fácánhús]}
+  - id: cured
+    en: Sausage & cured
+    hu: Kolbász, felvágott
+    icon: "c:kolbasz"
+    items:
+      - {id: bacon, en: Bacon, hu: Bacon, icon: "om:1F953", aliases: [streaky bacon, bacon szalonna, angolszalonna, bacon strips]}
+      - {id: smoked-bacon-slab, en: Smoked bacon (slab), hu: Füstölt szalonna, icon: "om:1F953", gluten: free, aliases: [kolozsvári szalonna, császárszalonna, szalonna, smoked pork fat]}
+      - {id: smoked-sausage, en: Smoked sausage, hu: Füstölt kolbász, gluten: label, aliases: [kolbász, sausage, smoked sausages, házi kolbász]}
+      - {id: lecso-sausage, en: Lecsó sausage, hu: Lecsókolbász, gluten: label, aliases: [lecsó kolbász, paprika sausage]}
+      - {id: dry-sausage, en: Dry sausage (csabai), hu: Szárazkolbász, gluten: label, aliases: [csabai, gyulai, csabai kolbász, gyulai kolbász, cured sausage]}
+      - {id: frankfurters, en: Frankfurters, hu: Virsli, icon: "om:1F32D", gluten: label, aliases: [hot dog sausages, wiener, wieners, virslik]}
+      - {id: ham, en: Cooked ham, hu: Sonka, gluten: label, aliases: [ham, főtt sonka, sonkaszelet, ham slices]}
+      - {id: smoked-ham, en: Smoked ham, hu: Füstölt sonka, gluten: label, aliases: [smoked ham hock, parasztsonka]}
+      - {id: prosciutto, en: Prosciutto, hu: Pármai sonka, gluten: free, aliases: [parma ham, serrano, serrano ham, sonka (pármai)]}
+      - {id: salami, en: Salami, hu: Szalámi, gluten: label, aliases: [téliszalámi, pick szalámi, salami slices]}
+      - {id: chorizo, en: Chorizo, hu: Chorizo, gluten: label, aliases: [chorizo sausage]}
+      - {id: pancetta, en: Pancetta, hu: Pancetta, icon: "om:1F953", gluten: label, aliases: [guanciale]}
+      - {id: parizer, en: Bologna (párizsi), hu: Párizsi, gluten: label, aliases: [bologna, parizer, párizsi felvágott]}
+      - {id: liver-sausage, en: Liver sausage (hurka), hu: Májas hurka, gluten: label, aliases: [májas, hurka, véres hurka, black pudding]}

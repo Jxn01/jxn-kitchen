@@ -1,0 +1,21 @@
+category: herbs
+groups:
+  - id: fresh-herbs
+    en: Fresh herbs
+    hu: Friss zöldfűszer
+    icon: "om:1F33F"
+    items:
+      - {id: parsley, en: Parsley, hu: Petrezselyem, icon: "om:1F33F", aliases: [flat-leaf parsley, curly parsley, petrezselyemzöld, petrezselyemzöldet, zöldpetrezselyem, fresh parsley]}
+      - {id: dill, en: Dill, hu: Kapor, icon: "om:1F33F", aliases: [fresh dill, kaprot, friss kapor]}
+      - {id: chives, en: Chives, hu: Metélőhagyma, aliases: [snidling, snidlinget]}
+      - {id: basil, en: Basil, hu: Bazsalikom, icon: "om:1F33F", aliases: [fresh basil, friss bazsalikom, bazsalikomlevél, basil leaves]}
+      - {id: coriander-leaf, en: Coriander (leaves), hu: Koriander (zöld), icon: "om:1F33F", aliases: [cilantro, fresh coriander, korianderzöld, friss koriander]}
+      - {id: mint, en: Mint, hu: Menta, icon: "om:1F33F", aliases: [fresh mint, mentalevél, borsmenta]}
+      - {id: rosemary-fresh, en: Fresh rosemary, hu: Friss rozmaring, aliases: [rosemary sprig, rozmaringág]}
+      - {id: thyme-fresh, en: Fresh thyme, hu: Friss kakukkfű, aliases: [thyme sprigs, kakukkfűág]}
+      - {id: sage, en: Sage, hu: Zsálya, aliases: [sage leaves, zsályalevél]}
+      - {id: tarragon, en: Tarragon, hu: Tárkony, aliases: [fresh tarragon, friss tárkony]}
+      - {id: lovage, en: Lovage, hu: Lestyán, aliases: [levelzeller]}
+      - {id: lemongrass, en: Lemongrass, hu: Citromnád, aliases: [lemon grass]}
+      - {id: oregano-fresh, en: Fresh oregano, hu: Friss oregánó}
+      - {id: marjoram-fresh, en: Fresh marjoram, hu: Friss majoránna}

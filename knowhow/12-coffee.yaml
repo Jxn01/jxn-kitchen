@@ -1,0 +1,494 @@
+id: coffee
+order: 15
+icon: "om:2615"
+color: cocoa
+en:
+  title: Coffee & tea
+  sub: "beans · Nespresso · French press · kotyogós · milk · tea"
+hu:
+  title: Kávé és tea
+  sub: "babkávé · Nespresso · dugattyús · kotyogós · tej · tea"
+pages:
+  - id: roast
+    chart:
+      type: swatches
+      items:
+        - fill: "#B07A47"
+          label: {en: Light, hu: Világos}
+          note: {en: "Bright, fruity, tea-like, more acidity. Filter and French press.", hu: "Élénk, gyümölcsös, teára emlékeztető, savasabb. Filterhez és dugattyúshoz."}
+        - fill: "#8A5530"
+          label: {en: Medium, hu: Közepes}
+          note: {en: "Balanced: caramel and nuts. Good in everything — French press, kotyogós, espresso.", hu: "Kiegyensúlyozott: karamell és dió. Mindenhez jó — dugattyús, kotyogós, eszpresszó."}
+        - fill: "#5E3720"
+          label: {en: Medium-dark, hu: Közepesen sötét}
+          note: {en: "Chocolate, fuller body, less acidity. Espresso, kotyogós, milk drinks.", hu: "Csokoládé, teltebb test, kevesebb sav. Eszpresszó, kotyogós, tejes kávék."}
+        - fill: "#3A2216"
+          label: {en: Dark, hu: Sötét}
+          note: {en: "Smoky, bitter-sweet, little acidity. Kotyogós and milk drinks.", hu: "Füstös, keserédes, alig savas. Kotyogósba és tejes kávékhoz."}
+    en:
+      title: Beans and roasts
+      body: |
+        **Arabica** is the sweeter, more aromatic bean; **robusta** is stronger, more bitter and has about twice the
+        caffeine — espresso blends often add a little for crema.
+
+        | Roast | Tastes | Best in |
+        |---|---|---|
+        | Light | bright, fruity, tea-like, more acidity | filter, French press |
+        | Medium | balanced, caramel, nutty | everything: French press, kotyogós, espresso |
+        | Medium-dark | chocolate, fuller body, less acidity | espresso, kotyogós, milk drinks |
+        | Dark | smoky, bitter-sweet, little acidity | kotyogós, milk drinks |
+
+        - **Buy whole beans** and grind just before brewing — ground coffee goes flat within days.
+        - **Store** airtight, dark and cool — not in the fridge (moisture and smells). Use within about a month of opening.
+        - The **roast date** matters more than the best-before date: beans are at their best 1–4 weeks after roasting.
+
+        > **Gluten:** plain coffee — beans, ground, capsules — is gluten-free. **Barley "coffee"** (árpakávé, malátakávé, Inka-type grain coffee) is not, and some instant cappuccino and flavoured mixes contain wheat or barley: read the label.
+    hu:
+      title: Babkávé és pörkölés
+      body: |
+        Az **arabica** az édesebb, illatosabb bab; a **robusta** erősebb, keserűbb, és nagyjából kétszer annyi koffein
+        van benne — az eszpresszókeverékekbe gyakran tesznek egy keveset a crema miatt.
+
+        | Pörkölés | Íze | Mire a legjobb |
+        |---|---|---|
+        | Világos | élénk, gyümölcsös, teaszerű, savasabb | filter, dugattyús |
+        | Közepes | kiegyensúlyozott, karamell, dió | mindenre: dugattyús, kotyogós, eszpresszó |
+        | Közepesen sötét | csokoládé, teltebb, kevésbé savas | eszpresszó, kotyogós, tejes kávék |
+        | Sötét | füstös, keserédes, alig savas | kotyogós, tejes kávék |
+
+        - **Szemes kávét vegyél**, és közvetlenül főzés előtt őröld — az őrölt kávé napok alatt elveszti az ízét.
+        - **Tárold** légmentesen, sötétben, hűvösön — ne a hűtőben (pára és szagok). Felbontás után kb. egy hónapon belül használd el.
+        - A **pörkölés dátuma** többet számít a minőségmegőrzésinél: a kávé a pörkölés után 1–4 héttel a legjobb.
+
+        > **Glutén:** a sima kávé — szemes, őrölt, kapszulás — gluténmentes. Az **árpakávé**, a malátakávé és az Inka-féle gabonakávé nem az, és egyes instant cappuccinók, ízesített keverékek búzát vagy árpát tartalmaznak: olvasd el a címkét.
+  - id: grind
+    chart:
+      type: bars
+      unit: mm
+      max: 1.5
+      items:
+        - value: 0.2
+          to: 0.3
+          label: {en: Espresso, hu: Eszpresszó}
+          fill: "#3A2216"
+          note: {en: "fine — flour to table salt", hu: "finom — liszttől az asztali sóig"}
+        - value: 0.3
+          to: 0.5
+          label: {en: Kotyogós (moka), hu: Kotyogós}
+          fill: "#5E3720"
+          note: {en: "fine-medium — fine salt", hu: "közepesen finom — finom só"}
+        - value: 0.6
+          to: 0.9
+          label: {en: "Filter, pour-over", hu: "Filter, kézi csepegtetés"}
+          fill: "#8A5530"
+          note: {en: "medium — sand", hu: "közepes — homok"}
+        - value: 1.0
+          to: 1.4
+          label: {en: French press, hu: Dugattyús}
+          fill: "#B07A47"
+          note: {en: "coarse — coarse sea salt", hu: "durva — durva tengeri só"}
+    en:
+      title: Grind size
+      body: |
+        Match the grind to how long the water spends with the coffee: **short contact, fine grind; long contact, coarse
+        grind.**
+
+        | Method | Grind | About | Feels like |
+        |---|---|---|---|
+        | Espresso (machine) | fine | 0.2–0.3 mm | flour to table salt |
+        | Kotyogós (moka) | fine-medium | 0.3–0.5 mm | fine salt — a little coarser than espresso |
+        | Filter, pour-over | medium | 0.6–0.9 mm | sand |
+        | French press | coarse | 1.0–1.4 mm | coarse sea salt |
+
+        - Too **bitter, harsh, drying**? The grind is too fine (or it brewed too long) — go coarser.
+        - Too **sour, thin, weak**? Too coarse (or too short) — go finer.
+        - **Nespresso** capsules are ground for the machine already: nothing to set.
+        - A blade grinder makes dust and boulders; a burr grinder an even size. With a blade grinder, pulse and shake.
+    hu:
+      title: Az őrlés finomsága
+      body: |
+        Az őrlés igazodjon ahhoz, mennyi ideig ér a víz a kávéhoz: **rövid érintkezés, finom őrlés; hosszú érintkezés,
+        durva őrlés.**
+
+        | Módszer | Őrlés | Kb. | Olyan, mint |
+        |---|---|---|---|
+        | Eszpresszó (gép) | finom | 0,2–0,3 mm | liszttől az asztali sóig |
+        | Kotyogós | közepesen finom | 0,3–0,5 mm | finom só — kicsit durvább, mint az eszpresszó |
+        | Filter, kézi csepegtetés | közepes | 0,6–0,9 mm | homok |
+        | Dugattyús (French press) | durva | 1,0–1,4 mm | durva tengeri só |
+
+        - Túl **keserű, fanyar, szárító**? Túl finom az őrlés (vagy túl sokáig főtt) — őrölj durvábbra.
+        - Túl **savanyú, híg, gyenge**? Túl durva (vagy túl rövid) — őrölj finomabbra.
+        - A **Nespresso** kapszulák a géphez vannak őrölve: nincs mit állítani.
+        - A késes daráló port és darabokat ad, a tárcsás egyenletes méretet. Késes darálóval szakaszosan őrölj, és rázd meg közben.
+  - id: nespresso
+    chart:
+      type: vessel
+      shape: cup
+      max: 150
+      unit: ml
+      ticks:
+        - {value: 25, label: "25"}
+        - {value: 40, label: "40"}
+        - {value: 110, label: "110"}
+      items:
+        - value: 25
+          label: Ristretto
+          fill: "#2E1B10"
+          note: {en: "About 25 ml — stop it early by hand. The strongest, sweetest shot.", hu: "Kb. 25 ml — állítsd le kézzel korábban. A legerősebb, legédesebb adag."}
+        - value: 40
+          label: {en: Espresso, hu: Eszpresszó}
+          fill: "#3B2416"
+          note: {en: "40 ml — the small-cup button. The classic.", hu: "40 ml — a kis csésze gomb. A klasszikus."}
+        - value: 110
+          label: Lungo
+          fill: "#6B4226"
+          note: {en: "110 ml — the big-cup button. Use lungo capsules: an espresso capsule pulled long turns bitter and thin.", hu: "110 ml — a nagy csésze gomb. Lungo kapszulával: a hosszúra engedett eszpresszókapszula keserű és híg."}
+    en:
+      title: Nespresso capsules
+      body: |
+        An Original-line Nespresso machine has two cup buttons. Out of the box:
+
+        | Cup | Amount | For |
+        |---|---|---|
+        | Ristretto (stop it early by hand) | about 25 ml | the strongest, sweetest shot |
+        | Espresso (small-cup button) | 40 ml | the classic |
+        | Lungo (big-cup button) | 110 ml | a longer cup — with **lungo** capsules |
+
+        - An espresso capsule pulled long over-extracts: bitter and thin. Long cups need lungo capsules.
+        - **Preheat:** run one shot of plain water (no capsule) into the cup first.
+        - The buttons can be **reprogrammed** to your own amount — on most models you hold the button while it brews and
+          let go at the amount you want (check your machine's manual).
+        - **Descale** every 3 months, or when the light says so, with descaler or citric acid — hard water scales fast.
+        - Empty and rinse the drip tray and capsule container every few days: old grounds go mouldy.
+        - Milk: the Aeroccino or a hand frother, milk at 55–65 °C — see *Milk drinks*.
+
+        > Capsules are just coffee and gluten-free. Flavoured ones use flavourings, not cereals — but third-party "cappuccino" capsules with milk powder: read the label.
+    hu:
+      title: Nespresso kapszulák
+      body: |
+        Az Original rendszerű Nespresso gépen két csészegomb van. Gyári beállítással:
+
+        | Csésze | Mennyiség | Mire |
+        |---|---|---|
+        | Ristretto (kézzel állítsd le korábban) | kb. 25 ml | a legerősebb, legédesebb adag |
+        | Eszpresszó (kis csésze gomb) | 40 ml | a klasszikus |
+        | Lungo (nagy csésze gomb) | 110 ml | hosszabb kávé — **lungo** kapszulával |
+
+        - A hosszúra engedett eszpresszókapszula túlextrahálódik: keserű és híg. Hosszú kávéhoz lungo kapszula kell.
+        - **Előmelegítés:** először engedj a csészébe egy adag sima vizet (kapszula nélkül).
+        - A gombok **átprogramozhatók** a saját mennyiségedre — a legtöbb modellen főzés közben nyomva tartod a gombot,
+          és a kívánt mennyiségnél elengeded (nézd meg a géped leírását).
+        - **Vízkőtelenítsd** háromhavonta, vagy amikor a jelzőfény mutatja, vízkőoldóval vagy citromsavval — a kemény víz gyorsan vízkövesedik.
+        - A csepptálcát és a kapszulatartót pár naponta ürítsd és öblítsd ki: a régi zacc bepenészedik.
+        - Tej: Aeroccino vagy kézi habosító, a tej 55–65 °C — lásd *Tejes kávék*.
+
+        > A kapszula csak kávé, gluténmentes. Az ízesítettekben aroma van, nem gabona — de a más gyártók tejporos „cappuccino” kapszuláinál olvasd el a címkét.
+  - id: french-press
+    illustration: press
+    en:
+      title: French press
+      body: |
+        Full-bodied coffee with all its oils — the metal mesh lets them through where a paper filter would not.
+
+        1. Preheat the press with hot water and pour it out.
+        2. **Coarse** grounds in: about **6–7 g per 100 ml** of water (1 : 15) — for a 350 ml press about 23 g,
+           3–4 tablespoons.
+        3. Water just off the boil, **93–96 °C** (boil, wait 30 seconds). Wet the grounds with a splash and wait
+           30 seconds — they bloom.
+        4. Fill up, stir gently, lid on with the plunger up. **Steep 4 minutes.**
+        5. Press slowly, 15–20 seconds. If it fights back, the grind is too fine — lift a little and go again.
+        6. **Pour it all out at once** — coffee left on the grounds keeps brewing and turns bitter.
+
+        - A cleaner cup: after 4 minutes, skim the floating crust with two spoons, wait 5 more minutes, then press only
+          down to the surface.
+        - Grounds go in the bin or compost, never down the sink.
+        - **Cold brew** in the same press: coarse grounds 1 : 8 with cold water, 12–16 hours in the fridge, press, dilute
+          to taste.
+    hu:
+      title: Dugattyús kávéfőző (French press)
+      body: |
+        Testes kávé minden olajával — a fémszűrő átengedi őket, a papírfilter nem.
+
+        1. Melegítsd át a kancsót forró vízzel, aztán öntsd ki.
+        2. **Durvára** őrölt kávé bele: kb. **6–7 g 100 ml vízhez** (1 : 15) — egy 350 ml-es kancsóhoz kb. 23 g,
+           3–4 evőkanál.
+        3. Épp forrás alatti víz, **93–96 °C** (forrald fel, várj 30 másodpercet). Egy kevéssel nedvesítsd át a kávét,
+           és várj 30 másodpercet — megduzzad, „virágzik”.
+        4. Töltsd fel, keverd meg finoman, fedő rá felhúzott dugattyúval. **Ázzon 4 percig.**
+        5. Nyomd le lassan, 15–20 másodperc alatt. Ha ellenáll, túl finom az őrlés — emeld meg kicsit, és újra.
+        6. **Azonnal öntsd ki az egészet** — a zaccon hagyott kávé tovább ázik és megkeseredik.
+
+        - Tisztább csésze: 4 perc után két kanállal szedd le a tetején úszó réteget, várj még 5 percet, és csak a
+          felszínig nyomd le a dugattyút.
+        - A zacc a kukába vagy a komposztba megy, soha ne a lefolyóba.
+        - **Hidegen áztatott kávé** ugyanebben: durva őrlés 1 : 8 arányban hideg vízzel, 12–16 óra a hűtőben, lenyomni,
+          ízlés szerint hígítani.
+  - id: moka
+    illustration: moka
+    en:
+      title: Kotyogós (moka pot)
+      body: |
+        The stovetop espresso pot: steam pressure pushes the water up through the coffee into the top. Strong and rich —
+        about 50 ml per "cup" of its size (a 3-cup pot makes about 150 ml).
+
+        1. Fill the bottom with **hot water** up to just below the **safety valve** — never above it. Hot water means less
+           time on the flame, so the coffee doesn't cook.
+        2. Fill the basket with **fine-medium** coffee — a little coarser than espresso — and level it. **Don't press
+           it down.**
+        3. Screw it together tightly (hold the hot base with a cloth). **Medium-low heat**, lid open.
+        4. The coffee rises like warm honey. A strong jet means the heat is too high.
+        5. When it starts to **gurgle** — that is the *kotyog* — take it off and cool the base under the cold tap. Stir,
+           then pour.
+
+        - **Aluminium pots:** rinse with hot water only — no soap, no dishwasher (the metal darkens and the coffee tastes
+          metallic). Dry it in parts.
+        - Replace the **rubber seal** and the filter plate about once a year, or when it leaks around the middle.
+        - Fill the basket fully — a half-filled basket brews weak and uneven. For less coffee, use a smaller pot.
+        - Never heat it empty. On gas, keep the flame under the base (the handle melts); aluminium pots need an adapter
+          plate on induction.
+    hu:
+      title: Kotyogós
+      body: |
+        A tűzhelyen főző „eszpresszó”: a gőz nyomása felnyomja a vizet a kávén át a felső részbe. Erős és testes — a
+        mérete szerinti „csészénként” kb. 50 ml (egy 3 személyes kb. 150 ml-t főz).
+
+        1. Az alját töltsd fel **forró vízzel** épp a **biztonsági szelep** alá — soha ne fölé. A forró víz miatt
+           kevesebb ideig van a tűzön, így a kávé nem „fő meg”.
+        2. A szűrőkosarat töltsd meg **közepesen finomra** őrölt kávéval — kicsit durvábbra, mint az eszpresszó —, és
+           simítsd el. **Ne nyomkodd le.**
+        3. Csavard össze szorosan (a forró alját konyharuhával fogd). **Közepes-alacsony láng**, nyitott fedő.
+        4. A kávé meleg mézként csordogál fel. Ha erősen spriccel, túl nagy a láng.
+        5. Amikor **kotyogni** kezd, vedd le a tűzről, és az alját hűtsd le hideg csap alatt. Keverd meg, aztán töltsd ki.
+
+        - **Alumínium kotyogós:** csak forró vízzel öblítsd — se mosogatószer, se mosogatógép (a fém besötétedik, a kávé
+          fémes ízű lesz). Szétszedve szárítsd.
+        - A **gumitömítést** és a szűrőlapot évente cseréld, vagy ha középen szivárog.
+        - A kosarat mindig töltsd tele — félig töltve gyenge és egyenetlen. Kevesebb kávéhoz kisebb kotyogós kell.
+        - Soha ne melegítsd üresen. Gázon a láng maradjon az alja alatt (a nyél megolvad); indukción az alumíniumhoz
+          adapterlap kell.
+  - id: milk-drinks
+    chart:
+      type: layers
+      shape: glass
+      items:
+        - label: {en: Espresso, hu: Eszpresszó}
+          value: 40 ml
+          note: {en: "One shot.", hu: "Egy adag."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+        - label: {en: Americano, hu: Americano}
+          value: 150–200 ml
+          note: {en: "Espresso topped up with hot water.", hu: "Eszpresszó forró vízzel felöntve."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#B98A5A", part: 3, label: {en: hot water, hu: forró víz}}
+        - label: Macchiato
+          value: 60 ml
+          note: {en: "Espresso “stained” with a spoon of milk foam.", hu: "Eszpresszó egy kanál tejhabbal „megjelölve”."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#FFFFFF", part: 0.5, label: {en: milk foam, hu: tejhab}}
+        - label: Cortado
+          value: 90 ml
+          note: {en: "Espresso and the same amount of warm milk.", hu: "Eszpresszó és ugyanannyi meleg tej."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#EADCC8", part: 1, label: {en: steamed milk, hu: gőzölt tej}}
+        - label: Cappuccino
+          value: 150–180 ml
+          note: {en: "A third espresso, a third milk, a third foam.", hu: "Egyharmad eszpresszó, egyharmad tej, egyharmad hab."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#EADCC8", part: 1, label: {en: steamed milk, hu: gőzölt tej}}
+            - {fill: "#FFFFFF", part: 1, label: {en: milk foam, hu: tejhab}}
+        - label: Flat white
+          value: 160 ml
+          note: {en: "A double ristretto with thin, velvety milk.", hu: "Dupla ristretto vékony, bársonyos tejjel."}
+          layers:
+            - {fill: "#2E1B10", part: 1.5, label: {en: double ristretto, hu: dupla ristretto}}
+            - {fill: "#EADCC8", part: 2.5, label: {en: steamed milk, hu: gőzölt tej}}
+            - {fill: "#F6EFE4", part: 0.3, label: {en: microfoam, hu: mikrohab}}
+        - label: {en: Caffè latte, hu: Caffè latte}
+          value: 240–300 ml
+          note: {en: "Espresso with lots of milk and a thin layer of foam.", hu: "Eszpresszó sok tejjel és vékony habréteggel."}
+          layers:
+            - {fill: "#3B2416", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#EADCC8", part: 4, label: {en: steamed milk, hu: gőzölt tej}}
+            - {fill: "#FFFFFF", part: 0.5, label: {en: milk foam, hu: tejhab}}
+        - label: Latte macchiato
+          value: 300 ml
+          note: {en: "Milk first, then the espresso poured slowly through the foam — it settles between them in a layer.", hu: "Előbb a tej, aztán a habon át lassan beleöntött eszpresszó — a kettő között rétegben áll meg."}
+          layers:
+            - {fill: "#EADCC8", part: 3.5, label: {en: steamed milk, hu: gőzölt tej}}
+            - {fill: "#5A3A22", part: 1, label: {en: espresso, hu: eszpresszó}}
+            - {fill: "#FFFFFF", part: 1, label: {en: milk foam, hu: tejhab}}
+    en:
+      title: Milk drinks
+      body: |
+        All built on an espresso (or a Nespresso ristretto or espresso). Rough proportions:
+
+        | Drink | Build | Cup |
+        |---|---|---|
+        | Espresso | one shot | 40 ml |
+        | Americano | espresso + hot water | 150–200 ml |
+        | Macchiato | espresso + a spoon of milk foam | 60 ml |
+        | Cortado | espresso + the same of warm milk | 90 ml |
+        | Cappuccino | a third espresso, a third milk, a third foam | 150–180 ml |
+        | Flat white | double ristretto + thin, velvety milk | 160 ml |
+        | Caffè latte | espresso + lots of milk + a thin layer of foam | 240–300 ml |
+        | Latte macchiato | milk, then the espresso poured through it (it layers), foam on top | 300 ml glass |
+
+        - **Milk at 55–65 °C** — hot to the hand, never boiling: above about 70 °C it tastes cooked and won't foam.
+        - **Whole milk** foams creamiest, and cold milk straight from the fridge foams best.
+        - **Plant milks:** the "barista" versions foam. ⚠️ **Oat drinks** are often made from ordinary oats — only
+          **GF-labelled** ones.
+        - Frothing without a frother: half-fill the French press with warm milk and pump the plunger 20–30 times.
+    hu:
+      title: Tejes kávék
+      body: |
+        Mind egy eszpresszóra épül (vagy egy Nespresso ristrettóra, eszpresszóra). Nagyjából:
+
+        | Ital | Felépítés | Csésze |
+        |---|---|---|
+        | Eszpresszó | egy adag | 40 ml |
+        | Americano | eszpresszó + forró víz | 150–200 ml |
+        | Macchiato | eszpresszó + egy kanál tejhab | 60 ml |
+        | Cortado | eszpresszó + ugyanannyi meleg tej | 90 ml |
+        | Cappuccino | egyharmad eszpresszó, egyharmad tej, egyharmad hab | 150–180 ml |
+        | Flat white | dupla ristretto + vékony, bársonyos tej | 160 ml |
+        | Caffè latte | eszpresszó + sok tej + vékony habréteg | 240–300 ml |
+        | Latte macchiato | tej, aztán rajta át az eszpresszó (rétegben áll meg), tetején hab | 300 ml-es pohár |
+
+        - **A tej 55–65 °C** legyen — a kéznek forró, de sose forrjon: kb. 70 °C fölött főtt íze lesz, és nem habosodik.
+        - A **teljes tej** habosodik a legkrémesebbre, és a hűtőből jövő hideg tej a legjobban.
+        - **Növényi italok:** a „barista” változatok habosíthatók. ⚠️ A **zabitalok** gyakran sima zabból készülnek —
+          csak a **GM jelölésűt**.
+        - Habosító nélkül: töltsd félig a dugattyúst meleg tejjel, és pumpáld a dugattyút 20–30-szor.
+  - id: tea
+    chart:
+      type: scale
+      unit: °C
+      min: 60
+      max: 100
+      bands:
+        - from: 70
+          to: 80
+          fill: "#8DC26F"
+          label: {en: Green, hu: Zöld}
+          note: {en: "70–80 °C, 1–3 minutes. Boiling water makes it bitter.", hu: "70–80 °C, 1–3 perc. A forró víz megkeseríti."}
+        - from: 80
+          to: 85
+          fill: "#E8DFB0"
+          label: {en: White, hu: Fehér}
+          note: {en: "80–85 °C, 2–4 minutes.", hu: "80–85 °C, 2–4 perc."}
+        - from: 85
+          to: 95
+          fill: "#D9A441"
+          label: Oolong
+          note: {en: "85–95 °C, 3–5 minutes.", hu: "85–95 °C, 3–5 perc."}
+        - from: 95
+          to: 100
+          fill: "#A0522D"
+          label: {en: "Black, herbal", hu: "Fekete, gyógy"}
+          note: {en: "Black tea 95–100 °C, 3–5 minutes. Herbal, fruit and rooibos at a full boil, 5–10 minutes.", hu: "Fekete tea 95–100 °C, 3–5 perc. Gyógy-, gyümölcs- és rooibos tea lobogó forrón, 5–10 perc."}
+      marks:
+        - {value: 70, label: "70"}
+        - {value: 80, label: "80"}
+        - {value: 85, label: "85"}
+        - {value: 95, label: "95"}
+        - {value: 100, label: "100"}
+    en:
+      title: "Tea: temperature and time"
+      body: |
+        Boiling water scalds delicate leaves and makes them bitter — let the kettle rest.
+
+        | Tea | Water | Steep |
+        |---|---|---|
+        | Green | 70–80 °C | 1–3 min |
+        | White | 80–85 °C | 2–4 min |
+        | Oolong | 85–95 °C | 3–5 min |
+        | Black (and Earl Grey) | 95–100 °C | 3–5 min |
+        | Herbal, fruit, rooibos | 100 °C | 5–10 min |
+
+        - No thermometer on the kettle? With the lid open, boiled water cools to about **95 °C in 1 minute, 85 °C in 3,
+          75–80 °C in 5** (a full kettle cools more slowly).
+        - About 2 g of leaves (a teaspoon) per 200 ml. Take the leaves out when it's done — tea left in turns bitter.
+        - Fresh water each time: water boiled again and again tastes flat.
+
+        > Plain teas are gluten-free. **Barley tea** (mugicha, boricha) is not, nor are malted drink powders; some chai mixes and flavoured teas contain barley malt — read the label.
+    hu:
+      title: "Tea: hőfok és idő"
+      body: |
+        A forrásban lévő víz leforrázza a kényes leveleket, és megkeseríti őket — hagyd pihenni a vízforralót.
+
+        | Tea | Víz | Áztatás |
+        |---|---|---|
+        | Zöld | 70–80 °C | 1–3 perc |
+        | Fehér | 80–85 °C | 2–4 perc |
+        | Oolong | 85–95 °C | 3–5 perc |
+        | Fekete (és Earl Grey) | 95–100 °C | 3–5 perc |
+        | Gyógy-, gyümölcs-, rooibos tea | 100 °C | 5–10 perc |
+
+        - Nincs hőmérő a vízforralón? Nyitott fedővel a felforralt víz kb. **1 perc alatt 95 °C-ra, 3 perc alatt 85-re,
+          5 perc alatt 75–80-ra** hűl (a teli forraló lassabban).
+        - Kb. 2 g levél (egy teáskanál) 200 ml-hez. Ha kész, vedd ki a leveleket — a benne hagyott tea megkeseredik.
+        - Mindig friss víz: az újra meg újra felforralt víz íze lapos.
+
+        > A sima tea gluténmentes. Az **árpatea** (mugicha, boricha) nem az, és a malátás italporok sem; egyes chai-keverékekben és ízesített teákban árpamaláta van — olvasd el a címkét.
+  - id: caffeine
+    chart:
+      type: bars
+      unit: mg
+      max: 220
+      marker: {value: 200, label: {en: "200 mg — EFSA: safe at once for healthy adults", hu: "200 mg — EFSA: egészséges felnőttnek egyszerre biztonságos"}}
+      items:
+        - {value: 60, to: 80, label: {en: Espresso (40 ml), hu: Eszpresszó (40 ml)}, fill: "#3B2416"}
+        - {value: 50, to: 120, label: {en: Nespresso capsule, hu: Nespresso kapszula}, fill: "#5A3A22", note: {en: varies by blend, hu: keveréktől függ}}
+        - {value: 60, to: 100, label: {en: Kotyogós (50 ml), hu: Kotyogós (50 ml)}, fill: "#6B4226"}
+        - {value: 80, to: 135, label: {en: French press (250 ml), hu: Dugattyús (250 ml)}, fill: "#8A5530"}
+        - {value: 40, to: 60, label: {en: Black tea (250 ml), hu: Fekete tea (250 ml)}, fill: "#A0522D"}
+        - {value: 25, to: 45, label: {en: Green tea (250 ml), hu: Zöld tea (250 ml)}, fill: "#8DC26F"}
+        - {value: 30, to: 35, label: {en: Cola (330 ml), hu: Kóla (330 ml)}, fill: "#4A2C1E"}
+        - {value: 2, to: 5, label: {en: Decaf coffee, hu: Koffeinmentes kávé}, fill: "#C9A27E"}
+    en:
+      title: Caffeine
+      body: |
+        Rough amounts per cup — the beans, the roast and the brew all move them:
+
+        | Drink | Caffeine |
+        |---|---|
+        | Espresso (40 ml) | about 60–80 mg |
+        | Nespresso capsule | about 50–120 mg, by blend |
+        | Kotyogós (a 50 ml cup) | about 60–100 mg |
+        | French press (250 ml) | about 80–135 mg |
+        | Black tea (250 ml) | about 40–60 mg |
+        | Green tea (250 ml) | about 25–45 mg |
+        | Cola (330 ml) | about 30–35 mg |
+        | Decaf coffee | about 2–5 mg |
+
+        - **EFSA:** for healthy adults up to **400 mg a day**, and up to **200 mg at once**, is safe; in pregnancy up to
+          200 mg a day.
+        - Caffeine peaks in the blood 30–60 minutes after the cup and halves in about 5 hours: an afternoon coffee still
+          counts at bedtime.
+        - Robusta has about twice the caffeine of arabica.
+    hu:
+      title: Koffein
+      body: |
+        Hozzávetőleges mennyiségek csészénként — a bab, a pörkölés és a főzés is változtat rajtuk:
+
+        | Ital | Koffein |
+        |---|---|
+        | Eszpresszó (40 ml) | kb. 60–80 mg |
+        | Nespresso kapszula | kb. 50–120 mg, keveréktől függően |
+        | Kotyogós (egy 50 ml-es csésze) | kb. 60–100 mg |
+        | Dugattyús (250 ml) | kb. 80–135 mg |
+        | Fekete tea (250 ml) | kb. 40–60 mg |
+        | Zöld tea (250 ml) | kb. 25–45 mg |
+        | Kóla (330 ml) | kb. 30–35 mg |
+        | Koffeinmentes kávé | kb. 2–5 mg |
+
+        - **EFSA:** egészséges felnőttnek napi **400 mg**-ig, egyszerre **200 mg**-ig biztonságos; várandósan napi 200 mg-ig.
+        - A koffein 30–60 perccel a kávé után tetőzik a vérben, és kb. 5 óra alatt feleződik: a délutáni kávé lefekvéskor
+          még hat.
+        - A robustában kb. kétszer annyi koffein van, mint az arabicában.

@@ -1,0 +1,20 @@
+honey:
+  cucumber: [0, harmless]
+  peanut-butter: [2, classic-partners]
+  tahini: [2, classic-partners]
+maple-syrup:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [2, classic-partners]
+  tahini: [1, gentle-company]
+sour-cherry:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [1, gentle-company]
+  tahini: [-1, odd-couple]
+sugar:
+  cucumber: [2, hungarian-heart]
+  peanut-butter: [1, gentle-company]
+  tahini: [1, gentle-company]
+brown-sugar:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]

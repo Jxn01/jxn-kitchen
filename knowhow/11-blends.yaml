@@ -1,0 +1,539 @@
+id: blends
+order: 12
+icon: "om:1FAD9"
+color: rust
+en: {title: Spice blends, sub: "seasoning · fixing a dish · world and Hungarian blends · 16 to make"}
+hu: {title: Fűszerkeverékek, sub: "ízesítés · javítás · világ és magyar keverékek · 16 házilag"}
+pages:
+  - id: season
+    illustration: balance
+    en:
+      title: How to season
+      body: |
+        Good seasoning is **balance**, built up in layers. Taste at every stage, not only at the end.
+
+        - **Salt** wakes everything up. Salt meat ahead of time (an hour, or the night before), salt the pasta and
+          potato water well, and add the rest little by little. A few flakes on top at the end add crunch and pop.
+        - **Acid** (lemon, vinegar, wine, sour cream, tomato) makes a heavy dish taste bright. If something tastes "flat"
+          but salty enough, it usually needs acid.
+        - **Fat** (butter, oil, lard, cream) carries flavour and softens sharp edges. Spices bloom in hot fat.
+        - **Sweetness** (a pinch of sugar, onion cooked slowly, carrot, honey) rounds off acidity and bitterness.
+        - **Heat** (chilli, black pepper, hot paprika, mustard, horseradish) adds energy. It builds as you eat, so go
+          easy, and remember that it gets stronger as a dish sits overnight.
+        - **Umami** (tomato paste, mushrooms, parmesan, anchovy, GF tamari) gives depth. Cook tomato paste in the fat
+          for a minute until it darkens.
+        - **Bitterness** (coffee, cocoa, chicory, charred bits, walnuts) in small amounts makes a dish grown-up.
+
+        | Stage | What goes in |
+        |---|---|
+        | Start (in the fat) | onion, garlic, whole spices, ground spices for a few seconds, tomato paste |
+        | During cooking | salt, bay leaf, woody herbs (thyme, rosemary), stock, wine |
+        | The end | acid, soft herbs (parsley, dill, chives, basil), a knob of butter, a little more salt |
+        | At the table | flaky salt, freshly ground pepper, a drizzle of oil, lemon zest |
+
+        > Season cold dishes (salads, terrines, ice cream) a little more: cold dulls the taste.
+    hu:
+      title: Az ízesítés alapjai
+      body: |
+        A jó ízesítés **egyensúly**, rétegekben felépítve. Minden lépésnél kóstolj, ne csak a végén.
+
+        - A **só** mindent felébreszt. A húst előre sózd be (egy órával előtte vagy előző este), a tészta- és a
+          krumplifőző vizet sózd bátran, a többit apránként add hozzá. A végén néhány pehelysó a tetején ropogós és élénk.
+        - A **sav** (citrom, ecet, bor, tejföl, paradicsom) a nehéz ételt is frissé teszi. Ha valami „lapos”, de elég
+          sós, általában savat kér.
+        - A **zsiradék** (vaj, olaj, zsír, tejszín) viszi az ízt és tompítja az éles széleket. A fűszer forró
+          zsiradékban bomlik ki.
+        - Az **édesség** (egy csipet cukor, lassan párolt hagyma, sárgarépa, méz) kerekíti a savanyút és a keserűt.
+        - A **csípős** (chili, fekete bors, erős paprika, mustár, torma) energiát ad. Evés közben erősödik, és állás
+          után, másnapra is erősebb lesz, ezért óvatosan.
+        - Az **umami** (paradicsompüré, gomba, parmezán, szardella, GM tamari) mélységet ad. A paradicsompürét egy
+          percig pirítsd a zsiradékban, amíg sötétebb lesz.
+        - A **kesernyés** (kávé, kakaó, cikória, pirult részek, dió) kis mennyiségben felnőttessé teszi az ételt.
+
+        | Mikor | Mi kerül bele |
+        |---|---|
+        | Az elején (a zsiradékba) | hagyma, fokhagyma, egész fűszerek, őrölt fűszer pár másodpercre, paradicsompüré |
+        | Főzés közben | só, babérlevél, fás szárú zöldfűszer (kakukkfű, rozmaring), alaplé, bor |
+        | A végén | sav, puha zöldfűszer (petrezselyem, kapor, metélőhagyma, bazsalikom), egy darabka vaj, még egy kis só |
+        | Az asztalnál | pehelysó, frissen őrölt bors, egy csepp olaj, citromhéj |
+
+        > A hideg ételt (saláta, pástétom, fagylalt) sózd egy kicsit jobban: a hideg tompítja az ízt.
+  - id: fix
+    chart:
+      type: picker
+      items:
+        - {label: {en: Too salty, hu: Túl sós}, icon: "om:1F9C2", note: {en: "More of the unsalted base (stock, cream, rice, vegetables); a little acid or fat to balance. The raw-potato trick barely works.", hu: "Több a sótlan alapból (alaplé, tejszín, rizs, zöldség); egy kis sav vagy zsír egyensúlyoz. A nyers krumplis trükk alig működik."}}
+        - {label: {en: Too sour, hu: Túl savanyú}, icon: "om:1F34B", note: {en: "A pinch of sugar or honey, a spoon of cream or butter — or dilute with more base.", hu: "Egy csipet cukor vagy méz, egy kanál tejszín vagy vaj — vagy hígítsd több alappal."}}
+        - {label: {en: Too spicy, hu: Túl csípős}, icon: "om:1F336", note: {en: "Sour cream, yoghurt, butter, a little sugar or lime — or more of everything else.", hu: "Tejföl, joghurt, vaj, egy kis cukor vagy lime — vagy több a többiből."}}
+        - {label: {en: Too bitter, hu: Túl keserű}, icon: "om:2615", note: {en: "A pinch of salt, a little sweetness, fat; cook it longer if it is raw garlic or onion.", hu: "Egy csipet só, kevés édesség, zsír; főzd tovább, ha nyers fokhagyma vagy hagyma okozza."}}
+        - {label: {en: Too sweet, hu: Túl édes}, icon: "om:1F36F", note: {en: "Acid (lemon, vinegar), salt, a little heat — something bitter (cocoa, coffee) in dark dishes.", hu: "Sav (citrom, ecet), só, kevés csípősség — sötét ételekbe valami keserű (kakaó, kávé)."}}
+        - {label: {en: "Flat, boring", hu: "Lapos, unalmas"}, icon: "om:1F9C8", note: {en: "Salt first, then acid; fresh herbs, a knob of butter, black pepper.", hu: "Előbb só, aztán sav; friss fűszernövény, egy darabka vaj, fekete bors."}}
+        - {label: {en: Burnt at the bottom, hu: Leégett az alja}, icon: "om:1F525", note: {en: "Don't scrape: tip the good part into a clean pot. A pinch of sugar and acid can hide a slight smoky note.", hu: "Ne kapard: a jó részt öntsd át egy tiszta edénybe. Egy csipet cukor és sav elfedheti az enyhe füstös ízt."}}
+    en:
+      title: Fixing a dish
+      body: |
+        | It tastes… | Add | Or |
+        |---|---|---|
+        | **Too salty** | more of the unsalted base (stock, cream, rice, vegetables) | a little acid or fat to balance; the "raw potato soaks it up" trick barely works |
+        | **Too sour** | a pinch of sugar or honey, a spoon of cream or butter | dilute with more base |
+        | **Too spicy** | sour cream, yoghurt, butter, a little sugar or lime | more of everything else |
+        | **Too bitter** | a pinch of salt, a little sweetness, fat | cook it longer if it is raw garlic or onion |
+        | **Too sweet** | acid (lemon, vinegar), salt, a little heat | something bitter (cocoa, coffee) in dark dishes |
+        | **Flat, boring** | salt first, then acid | fresh herbs, a knob of butter, black pepper |
+        | **Burnt at the bottom** | do not scrape: tip the good part into a clean pot | a pinch of sugar and acid can hide a slight smoky note |
+
+        > Fix in small steps and taste after each. It is easy to add, impossible to take out.
+    hu:
+      title: Mentsük meg!
+      body: |
+        | Ha az étel… | Adj hozzá | Vagy |
+        |---|---|---|
+        | **Túl sós** | több sózatlan alapot (alaplé, tejszín, rizs, zöldség) | egy kis savat vagy zsiradékot; a „nyers krumpli kiszívja” trükk alig működik |
+        | **Túl savanyú** | egy csipet cukrot vagy mézet, egy kanál tejszínt vagy vajat | hígítsd több alappal |
+        | **Túl csípős** | tejfölt, joghurtot, vajat, kevés cukrot vagy limet | több mindenből a többiből |
+        | **Túl keserű** | egy csipet sót, egy kis édeset, zsiradékot | ha nyers a fokhagyma vagy hagyma, főzd tovább |
+        | **Túl édes** | savat (citrom, ecet), sót, egy kis csípőset | sötét ételbe valami kesernyéset (kakaó, kávé) |
+        | **Lapos, unalmas** | előbb sót, aztán savat | friss zöldfűszert, egy darabka vajat, fekete borsot |
+        | **Leégett az alja** | ne kapard fel: a jó részét öntsd át egy tiszta edénybe | egy csipet cukor és sav elfedheti az enyhe füstös ízt |
+
+        > Apránként javíts, és minden lépés után kóstolj. Hozzáadni könnyű, kivenni lehetetlen.
+  - id: classics
+    chart:
+      type: picker
+      items:
+        - {label: {en: Pörkölt / paprikás, hu: Pörkölt- / paprikásfűszer}, icon: "om:1F336", value: {en: "sweet paprika, caraway, marjoram, garlic, pepper", hu: "édesnemes paprika, kömény, majoránna, fokhagyma, bors"}, note: {en: "Pörkölt, paprikás, goulash, roast pork.", hu: "Pörkölt, paprikás, gulyás, sült karaj."}}
+        - {label: Gyros, icon: "om:1F959", value: {en: "oregano, garlic, onion, paprika, thyme, cumin, coriander, pepper", hu: "oregánó, fokhagyma, hagyma, paprika, kakukkfű, római kömény, koriander, bors"}, note: {en: "Chicken, pork, grilled vegetables.", hu: "Csirke, sertés, grillezett zöldség."}}
+        - {label: {en: Grill / BBQ rub, hu: Grill / BBQ}, icon: "om:1F525", value: {en: "smoked paprika, brown sugar, salt, garlic, onion, mustard, chilli", hu: "füstölt paprika, barna cukor, só, fokhagyma, hagyma, mustár, chili"}, note: {en: "Ribs, chicken wings, pork neck, corn.", hu: "Oldalas, csirkeszárny, tarja, kukorica."}}
+        - {label: {en: Curry powder, hu: Curry}, icon: "om:1F35B", value: {en: "coriander, cumin, turmeric, ginger, fenugreek, chilli", hu: "koriander, római kömény, kurkuma, gyömbér, görögszéna, chili"}, note: {en: "Chicken, lentils, cauliflower, rice.", hu: "Csirke, lencse, karfiol, rizs."}}
+        - {label: Garam masala, icon: "om:1F35B", value: {en: "coriander, cumin, cardamom, pepper, cinnamon, clove, nutmeg", hu: "koriander, római kömény, kardamom, bors, fahéj, szegfűszeg, szerecsendió"}, note: {en: "Added at the end: curries, dal, lamb.", hu: "A végén adagolva: curryk, dal, bárány."}}
+        - {label: Ras el hanout, icon: "om:1F411", value: {en: "many warm spices, often rose", hu: "sok meleg fűszer, gyakran rózsa"}, note: {en: "Lamb, couscous-style dishes (with GF grains), carrots.", hu: "Bárány, kuszkusz jellegű ételek (GM gabonával), sárgarépa."}}
+        - {label: "Za'atar", icon: "om:1FAD3", value: {en: "thyme, sumac, sesame, salt", hu: "kakukkfű, szömörce, szezám, só"}, note: {en: "Flatbread, eggs, yoghurt, roast vegetables.", hu: "Lepény, tojás, joghurt, sült zöldség."}}
+        - {label: {en: Herbes de Provence, hu: Provence-i keverék}, icon: "om:1F33F", value: {en: "thyme, rosemary, savory, oregano, (lavender)", hu: "kakukkfű, rozmaring, borsikafű, oregánó, (levendula)"}, note: {en: "Roast chicken, potatoes, tomatoes, lamb.", hu: "Sült csirke, krumpli, paradicsom, bárány."}}
+        - {label: {en: Italian herbs, hu: Olasz fűszerkeverék}, icon: "om:1F345", value: {en: "oregano, basil, thyme, rosemary", hu: "oregánó, bazsalikom, kakukkfű, rozmaring"}, note: {en: "Tomato sauces, pizza (GF base), minestrone.", hu: "Paradicsomos szószok, pizza (GM tésztán), minestrone."}}
+        - {label: {en: Chinese five-spice, hu: Kínai ötfűszer}, icon: "om:2B50", value: {en: "star anise, clove, cinnamon, fennel, Sichuan pepper", hu: "csillagánizs, szegfűszeg, fahéj, édeskömény, szecsuáni bors"}, note: {en: "Duck, pork belly, stir-fries.", hu: "Kacsa, sertéshas, wokos ételek."}}
+        - {label: Cajun, icon: "om:1F364", value: {en: "paprika, garlic, onion, cayenne, thyme, oregano, pepper", hu: "paprika, fokhagyma, hagyma, cayenne, kakukkfű, oregánó, bors"}, note: {en: "Chicken, prawns, potato wedges.", hu: "Csirke, garnélarák, burgonyacikk."}}
+        - {label: {en: Taco / chili, hu: Taco / chili}, icon: "om:1F32E", value: {en: "chilli, cumin, paprika, garlic, oregano", hu: "chili, római kömény, paprika, fokhagyma, oregánó"}, note: {en: "Minced beef, beans, chilli con carne.", hu: "Darált marha, bab, chili con carne."}}
+        - {label: {en: Gingerbread (mézeskalács), hu: Mézeskalács-fűszer}, icon: "om:1F36A", value: {en: "cinnamon, ginger, clove, nutmeg, allspice", hu: "fahéj, gyömbér, szegfűszeg, szerecsendió, szegfűbors"}, note: {en: "Gingerbread, apple desserts, mulled wine.", hu: "Mézeskalács, almás sütik, forralt bor."}}
+    en:
+      title: Classic blends and what they go with
+      body: |
+        | Blend | What is in it | Goes with |
+        |---|---|---|
+        | Pörkölt / paprikás | sweet paprika, caraway, marjoram, garlic, black pepper | pörkölt, paprikás, goulash, roast pork |
+        | Gyros | oregano, garlic, onion, paprika, thyme, cumin, coriander, pepper | chicken, pork, grilled vegetables |
+        | Grill / BBQ rub | smoked paprika, brown sugar, salt, garlic, onion, mustard, chilli | ribs, chicken wings, pork neck, corn |
+        | Curry powder | coriander, cumin, turmeric, ginger, fenugreek, chilli | chicken, lentils, cauliflower, rice |
+        | Garam masala | coriander, cumin, cardamom, pepper, cinnamon, clove, nutmeg | added at the end: curries, dal, lamb |
+        | Ras el hanout | many warm spices, often rose | lamb, couscous-style dishes (use GF grains), carrots |
+        | Za'atar | thyme, sumac, sesame, salt | flatbread, eggs, yoghurt, roast vegetables |
+        | Herbes de Provence | thyme, rosemary, savory, oregano, (lavender) | roast chicken, potatoes, tomatoes, lamb |
+        | Italian herbs | oregano, basil, thyme, rosemary | tomato sauces, pizza (GF base), minestrone |
+        | Chinese five-spice | star anise, clove, cinnamon, fennel, Sichuan pepper | duck, pork belly, stir-fries |
+        | Cajun | paprika, garlic, onion, cayenne, thyme, oregano, pepper | chicken, prawns, potato wedges |
+        | Taco / chili | chilli, cumin, paprika, garlic, oregano | minced beef, beans, chilli con carne |
+        | Mézeskalács / gingerbread | cinnamon, ginger, clove, nutmeg, allspice | gingerbread, apple desserts, mulled wine |
+
+        > **Celiac:** a commercial blend can contain **wheat flour or wheat starch** as a carrier or anti-caking agent, and bouillon or "ételízesítő" powders often do. Buy blends labelled GF, or make your own (next page). Single spices are GF.
+    hu:
+      title: Klasszikus keverékek és mihez illenek
+      body: |
+        | Keverék | Mi van benne | Mihez |
+        |---|---|---|
+        | Pörkölt- / paprikásfűszer | édesnemes paprika, kömény, majoránna, fokhagyma, fekete bors | pörkölt, paprikás, gulyás, sült karaj |
+        | Gyros | oregánó, fokhagyma, hagyma, paprika, kakukkfű, római kömény, koriander, bors | csirke, sertés, grillezett zöldség |
+        | Grill / BBQ | füstölt paprika, barna cukor, só, fokhagyma, hagyma, mustár, chili | oldalas, csirkeszárny, tarja, kukorica |
+        | Curry | koriander, római kömény, kurkuma, gyömbér, görögszéna, chili | csirke, lencse, karfiol, rizs |
+        | Garam masala | koriander, római kömény, kardamom, bors, fahéj, szegfűszeg, szerecsendió | a végén adagolva: curryk, dal, bárány |
+        | Ras el hanout | sok meleg fűszer, gyakran rózsa | bárány, kuszkusz jellegű ételek (GM gabonával), sárgarépa |
+        | Za'atar | kakukkfű, szömörce, szezám, só | lepény, tojás, joghurt, sült zöldség |
+        | Provence-i keverék | kakukkfű, rozmaring, borsikafű, oregánó, (levendula) | sült csirke, burgonya, paradicsom, bárány |
+        | Olasz fűszerkeverék | oregánó, bazsalikom, kakukkfű, rozmaring | paradicsomos szószok, pizza (GM tésztán), minestrone |
+        | Kínai ötfűszer | csillagánizs, szegfűszeg, fahéj, édeskömény, szecsuáni bors | kacsa, sertéshas, wokos ételek |
+        | Cajun | paprika, fokhagyma, hagyma, cayenne-i bors, kakukkfű, oregánó, bors | csirke, garnélarák, burgonyacikk |
+        | Taco / chili | chili, római kömény, paprika, fokhagyma, oregánó | darált marha, bab, chili con carne |
+        | Mézeskalács-fűszer | fahéj, gyömbér, szegfűszeg, szerecsendió, szegfűbors | mézeskalács, almás sütik, forralt bor |
+
+        > **Cöliákia:** a bolti keverékben **búzaliszt vagy búzakeményítő** is lehet hordozóként vagy csomósodásgátlóként, és a leveskockákban, ételízesítőkben gyakran van. GM jelölésű keveréket vegyél, vagy keverd magad (következő oldal). Az egynemű fűszer GM.
+  - id: diy
+    illustration: blend
+    open: spices
+    en:
+      title: Make your own — always gluten-free
+      body: |
+        Measured in **level teaspoons**; mix, store in a dry jar with the date on it, and use within **6 months**.
+        For more flavour, toast whole seeds (cumin, coriander, caraway, fennel) in a dry pan until fragrant and grind.
+
+        - **Pörkölt blend:** 4 sweet paprika, 1 ground caraway, 1 marjoram, 1 garlic powder, ½ black pepper
+          (+ ½ hot paprika if you like). Add it off the heat, with the onions.
+        - **Gyros:** 2 oregano, 2 garlic powder, 2 onion powder, 2 sweet paprika, 1 thyme, 1 cumin, 1 coriander,
+          1 black pepper. With oil and lemon as a marinade.
+        - **Grill rub:** 6 smoked paprika, 3 brown sugar, 2 salt, 2 garlic powder, 2 onion powder, 1 black pepper,
+          1 mustard powder (a GF one — some contain wheat flour), ½ chilli. Rub on the night before.
+        - **Curry powder:** 4 coriander, 2 cumin, 2 turmeric, 1 ginger, 1 fenugreek, ½ cinnamon, ½ cardamom, ½ chilli,
+          ½ black pepper. Fry it in the fat for a minute before the liquid goes in.
+        - **Garam masala:** 3 coriander, 2 cumin, 1 cardamom, 1 black pepper, ½ cinnamon, ½ clove, ½ nutmeg. Stir in
+          at the end.
+        - **Taco seasoning:** 4 mild chilli powder, 2 cumin, 1 paprika, 1 garlic powder, 1 onion powder, 1 oregano,
+          ½ black pepper, 1 salt. Check the chilli powder is pure chilli (some blends hide flour).
+        - **Herbes de Provence:** 3 thyme, 2 rosemary, 2 savory, 1 oregano, 1 marjoram (+ ½ lavender).
+        - **Gingerbread spice:** 4 cinnamon, 2 ginger, 1 clove, 1 nutmeg, 1 allspice, ½ cardamom, ½ star anise.
+        - **Za'atar:** 3 thyme, 2 sumac, 2 toasted sesame, ½ salt. Stir into olive oil for a dip.
+        - **Ras el hanout:** 2 cumin, 2 ginger, 2 coriander, 1 turmeric, 1 cinnamon, 1 sweet paprika, ½ cardamom,
+          ½ allspice, ½ black pepper. Lamb, chickpeas, carrots.
+        - **Cajun:** 3 sweet paprika, 2 garlic powder, 1 onion powder, 1 oregano, 1 thyme, 1 black pepper, 1 salt,
+          ½ cayenne. Chicken, prawns, potato wedges.
+        - **Chinese five-spice:** 2 star anise, 2 fennel seed, 1 cinnamon, 1 Sichuan (or black) pepper, ½ clove —
+          ground fine. Duck, pork belly.
+        - **Italian herbs:** 2 oregano, 2 basil, 1 thyme, 1 rosemary, 1 marjoram. Tomato sauces, pizza.
+        - **Kolbász (sausage) spice:** 4 sweet paprika, 1 hot paprika, 1 garlic powder, ½ ground caraway,
+          ½ black pepper — about 2 tablespoons and 18–20 g salt per kilo of mince.
+        - **Pickling spice (savanyúság):** whole — 2 mustard seed, 1 coriander seed, 1 black peppercorns, 1 dill seed,
+          ½ allspice, ½ crumbled bay. A tablespoon per litre jar.
+        - **Mulled wine (forralt bor):** whole — 2 broken cinnamon, 2 dried orange peel, 1 clove, 1 star anise,
+          1 allspice, ½ cardamom. A tablespoon per litre of red wine with 3–4 tablespoons sugar; heat, never boil.
+
+        > Write "GF" on the jar. The next guest who cooks in your kitchen will know.
+    hu:
+      title: Házi keverék — mindig gluténmentes
+      body: |
+        **Csapott teáskanálban** mérve; keverd össze, tárold száraz, dátummal felcímkézett üvegben, és **6 hónapon
+        belül** használd el. Ízesebb, ha az egész magokat (római kömény, koriander, kömény, édeskömény) száraz
+        serpenyőben illatosra pirítod, és megőrlöd.
+
+        - **Pörköltfűszer:** 4 édesnemes paprika, 1 őrölt kömény, 1 majoránna, 1 fokhagymapor, ½ fekete bors
+          (+ ½ erős paprika, ha szereted). A hagymához add, lehúzva a tűzről.
+        - **Gyros:** 2 oregánó, 2 fokhagymapor, 2 hagymapor, 2 édesnemes paprika, 1 kakukkfű, 1 római kömény,
+          1 koriander, 1 fekete bors. Olajjal és citrommal pácnak.
+        - **Grill fűszer:** 6 füstölt paprika, 3 barna cukor, 2 só, 2 fokhagymapor, 2 hagymapor, 1 fekete bors,
+          1 mustárpor (GM — némelyikben búzaliszt van), ½ chili. Előző este dörzsöld a húsba.
+        - **Curry:** 4 koriander, 2 római kömény, 2 kurkuma, 1 gyömbér, 1 görögszéna, ½ fahéj, ½ kardamom, ½ chili,
+          ½ fekete bors. Egy percig pirítsd a zsiradékban, mielőtt a folyadék rákerül.
+        - **Garam masala:** 3 koriander, 2 római kömény, 1 kardamom, 1 fekete bors, ½ fahéj, ½ szegfűszeg,
+          ½ szerecsendió. A végén keverd bele.
+        - **Taco fűszer:** 4 enyhe chilipor, 2 római kömény, 1 paprika, 1 fokhagymapor, 1 hagymapor, 1 oregánó,
+          ½ fekete bors, 1 só. Nézd meg, hogy a chilipor tiszta chili legyen (egyes keverékekben liszt is van).
+        - **Provence-i keverék:** 3 kakukkfű, 2 rozmaring, 2 borsikafű, 1 oregánó, 1 majoránna (+ ½ levendula).
+        - **Mézeskalács-fűszer:** 4 fahéj, 2 gyömbér, 1 szegfűszeg, 1 szerecsendió, 1 szegfűbors, ½ kardamom,
+          ½ csillagánizs.
+        - **Za'atar:** 3 kakukkfű, 2 szömörce, 2 pirított szezámmag, ½ só. Olívaolajjal keverve mártogatósnak.
+        - **Ras el hanout:** 2 római kömény, 2 gyömbér, 2 koriander, 1 kurkuma, 1 fahéj, 1 édesnemes paprika,
+          ½ kardamom, ½ szegfűbors, ½ fekete bors. Bárány, csicseriborsó, répa.
+        - **Cajun:** 3 édesnemes paprika, 2 fokhagymapor, 1 hagymapor, 1 oregánó, 1 kakukkfű, 1 fekete bors, 1 só,
+          ½ cayenne-bors. Csirke, garnélarák, steakburgonya.
+        - **Kínai ötfűszer:** 2 csillagánizs, 2 édesköménymag, 1 fahéj, 1 szecsuáni (vagy fekete) bors, ½ szegfűszeg
+          — finomra őrölve. Kacsa, sertésoldalas.
+        - **Olasz fűszerkeverék:** 2 oregánó, 2 bazsalikom, 1 kakukkfű, 1 rozmaring, 1 majoránna. Paradicsomszószok, pizza.
+        - **Kolbászfűszer:** 4 édesnemes paprika, 1 erős paprika, 1 fokhagymapor, ½ őrölt kömény, ½ fekete bors —
+          kilónként kb. 2 evőkanál és 18–20 g só a darált húshoz.
+        - **Savanyúságfűszer:** egészben — 2 mustármag, 1 koriandermag, 1 egész fekete bors, 1 kapormag,
+          ½ szegfűbors, ½ morzsolt babérlevél. Literes üveghez egy evőkanál.
+        - **Forralt bor fűszer:** egészben — 2 tört fahéj, 2 szárított narancshéj, 1 szegfűszeg, 1 csillagánizs,
+          1 szegfűbors, ½ kardamom. Egy liter vörösborhoz egy evőkanál, 3–4 evőkanál cukorral; melegítsd, de ne forrald.
+
+        > Írd rá az üvegre, hogy „GM”. A következő vendég, aki a konyhádban főz, tudni fogja.
+  - id: by-food
+    chart:
+      type: picker
+      items:
+        - {label: {en: Chicken, hu: Csirke}, icon: "om:1F357", note: {en: "Blends: pörkölt, gyros, curry, Cajun, herbes de Provence. Herbs: thyme, tarragon, lemon, garlic.", hu: "Keverékek: pörkölt, gyros, curry, cajun, provence-i. Fűszernövények: kakukkfű, tárkony, citrom, fokhagyma."}}
+        - {label: {en: Pork, hu: Sertés}, icon: "om:1F416", note: {en: "Blends: pörkölt, grill rub, five-spice. Herbs: caraway, marjoram, sage, fennel seed, apple.", hu: "Keverékek: pörkölt, grill, ötfűszer. Fűszernövények: kömény, majoránna, zsálya, édesköménymag, alma."}}
+        - {label: {en: Beef, hu: Marha}, icon: "om:1F969", note: {en: "Blends: grill rub, taco, garam masala. Herbs: black pepper, bay, thyme, mustard, horseradish.", hu: "Keverékek: grill, taco, garam masala. Fűszernövények: fekete bors, babér, kakukkfű, mustár, torma."}}
+        - {label: {en: Lamb, hu: Bárány}, icon: "om:1F411", note: {en: "Blends: ras el hanout, za'atar, garam masala. Herbs: rosemary, mint, garlic.", hu: "Keverékek: ras el hanout, za'atar, garam masala. Fűszernövények: rozmaring, menta, fokhagyma."}}
+        - {label: {en: Fish, hu: Hal}, icon: "om:1F41F", note: {en: "Blends: Cajun, za'atar. Herbs: dill, parsley, lemon, capers.", hu: "Keverékek: cajun, za'atar. Fűszernövények: kapor, petrezselyem, citrom, kapribogyó."}}
+        - {label: {en: Potatoes, hu: Krumpli}, icon: "om:1F954", note: {en: "Blends: Cajun, herbes de Provence, pörkölt. Herbs: rosemary, caraway, dill, garlic.", hu: "Keverékek: cajun, provence-i, pörkölt. Fűszernövények: rozmaring, kömény, kapor, fokhagyma."}}
+        - {label: {en: Vegetables, hu: Zöldségek}, icon: "om:1F966", note: {en: "Blends: za'atar, curry, Italian herbs. Extras: lemon zest, olive oil, toasted seeds.", hu: "Keverékek: za'atar, curry, olasz. Extrák: citromhéj, olívaolaj, pirított magvak."}}
+        - {label: {en: Lentils and beans, hu: Lencse és bab}, icon: "om:1FAD8", note: {en: "Blends: curry, garam masala, taco. Herbs: cumin, smoked paprika, bay, a splash of vinegar.", hu: "Keverékek: curry, garam masala, taco. Fűszerek: római kömény, füstölt paprika, babér, egy kevés ecet."}}
+        - {label: {en: Eggs, hu: Tojás}, icon: "om:1F95A", note: {en: "Blends: za'atar, Cajun. Herbs: chives, dill, paprika.", hu: "Keverékek: za'atar, cajun. Fűszernövények: metélőhagyma, kapor, paprika."}}
+        - {label: {en: Rice, hu: Rizs}, icon: "om:1F35A", note: {en: "Blends: curry, five-spice. Extras: bay, cardamom, a knob of butter.", hu: "Keverékek: curry, ötfűszer. Extrák: babér, kardamom, egy darabka vaj."}}
+        - {label: {en: Desserts, hu: Desszertek}, icon: "om:1F370", note: {en: "Blend: gingerbread spice. Extras: vanilla, lemon zest, cinnamon, cardamom.", hu: "Keverék: mézeskalács-fűszer. Extrák: vanília, citromhéj, fahéj, kardamom."}}
+    en:
+      title: Which flavour for which food
+      body: |
+        | Food | Blends | Herbs and extras |
+        |---|---|---|
+        | Chicken | pörkölt, gyros, curry, Cajun, herbes de Provence | thyme, tarragon, lemon, garlic |
+        | Pork | pörkölt, grill rub, five-spice | caraway, marjoram, sage, fennel seed, apple |
+        | Beef | grill rub, taco, garam masala | black pepper, bay, thyme, mustard, horseradish |
+        | Lamb | ras el hanout, za'atar, garam masala | rosemary, mint, garlic |
+        | Fish | Cajun, za'atar | dill, parsley, lemon, capers |
+        | Potatoes | Cajun, herbes de Provence, pörkölt | rosemary, caraway, dill, garlic |
+        | Vegetables | za'atar, curry, Italian herbs | lemon zest, olive oil, toasted seeds |
+        | Lentils and beans | curry, garam masala, taco | cumin, smoked paprika, bay, a splash of vinegar |
+        | Eggs | za'atar, Cajun | chives, dill, paprika |
+        | Rice | curry, five-spice | bay, cardamom, a knob of butter |
+        | Desserts | gingerbread spice | vanilla, lemon zest, cinnamon, cardamom |
+
+        > Start with less than the recipe says when you use a new blend; you can always add a second pinch.
+    hu:
+      title: Melyik íz mihez
+      body: |
+        | Étel | Keverékek | Zöldfűszer és extrák |
+        |---|---|---|
+        | Csirke | pörkölt, gyros, curry, cajun, provence-i | kakukkfű, tárkony, citrom, fokhagyma |
+        | Sertés | pörkölt, grill, ötfűszer | kömény, majoránna, zsálya, édeskömény, alma |
+        | Marha | grill, taco, garam masala | fekete bors, babér, kakukkfű, mustár, torma |
+        | Bárány | ras el hanout, za'atar, garam masala | rozmaring, menta, fokhagyma |
+        | Hal | cajun, za'atar | kapor, petrezselyem, citrom, kapribogyó |
+        | Burgonya | cajun, provence-i, pörkölt | rozmaring, kömény, kapor, fokhagyma |
+        | Zöldségek | za'atar, curry, olasz | citromhéj, olívaolaj, pirított magvak |
+        | Lencse, bab | curry, garam masala, taco | római kömény, füstölt paprika, babér, egy csepp ecet |
+        | Tojás | za'atar, cajun | metélőhagyma, kapor, paprika |
+        | Rizs | curry, ötfűszer | babér, kardamom, egy darabka vaj |
+        | Desszertek | mézeskalács-fűszer | vanília, citromhéj, fahéj, kardamom |
+
+        > Új keveréknél kezdd kevesebbel, mint amennyit a recept ír; egy második csipetet mindig hozzáadhatsz.
+  - id: world
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#7E8B4A'
+        label:
+          en: Za'atar
+          hu: Za'atar
+        value:
+          en: thyme, sumac, sesame, salt
+          hu: kakukkfű, szömörce, szezám, só
+        note:
+          en: Goes with GF flatbread, eggs, yoghurt, roast vegetables. Stir into olive oil for a dip.
+          hu: 'Illik hozzá: GM lepény, tojás, joghurt, sült zöldség. Olívaolajba keverve mártogatós.'
+      - fill: '#B0663A'
+        label:
+          en: Ras el hanout
+          hu: Ras el hanout
+        value:
+          en: cumin, ginger, coriander, cinnamon, turmeric, paprika, cardamom
+          hu: római kömény, gyömbér, koriander, fahéj, kurkuma, paprika, kardamom
+        note:
+          en: Goes with lamb, chickpeas, carrots, millet or quinoa “couscous”. “The shop’s best” — every Moroccan spice seller has their own.
+          hu: 'Illik hozzá: bárány, csicseriborsó, répa, köles- vagy quinoa-„kuszkusz”. „A bolt legjava” — minden marokkói fűszeresnek saját receptje van.'
+      - fill: '#8A4A2A'
+        label:
+          en: Baharat
+          hu: Baharat
+        value:
+          en: black pepper, paprika, cumin, coriander, cinnamon, clove, cardamom, nutmeg
+          hu: fekete bors, paprika, római kömény, koriander, fahéj, szegfűszeg, kardamom, szerecsendió
+        note:
+          en: Goes with kebabs, kofta, rice, lentil soup. The Middle East’s everyday blend — warm, not hot.
+          hu: 'Illik hozzá: kebab, kofta, rizs, lencseleves. A Közel-Kelet mindennapi keveréke — meleg, nem csípős.'
+      - fill: '#B23A24'
+        label:
+          en: Berbere
+          hu: Berbere
+        value:
+          en: chilli, fenugreek, ginger, coriander, cardamom, allspice, clove
+          hu: chili, görögszéna, gyömbér, koriander, kardamom, szegfűbors, szegfűszeg
+        note:
+          en: Goes with Ethiopian stews (doro wat), lentils, roast meat. Hot and deep — fry it gently in fat first.
+          hu: 'Illik hozzá: etióp raguk (doro wat), lencse, sült hús. Csípős és mély — előbb finoman pirítsd zsiradékban.'
+        heat: 3
+      - fill: '#7A5232'
+        label:
+          en: Garam masala
+          hu: Garam masala
+        value:
+          en: coriander, cumin, cardamom, pepper, cinnamon, clove, nutmeg
+          hu: koriander, római kömény, kardamom, bors, fahéj, szegfűszeg, szerecsendió
+        note:
+          en: Goes with curries, dal, lamb, roast vegetables. Stirred in at the end, not fried at the start.
+          hu: 'Illik hozzá: curryk, dal, bárány, sült zöldség. A végén keverd bele, ne az elején pirítsd.'
+      - fill: '#6B4434'
+        label:
+          en: Chinese five-spice
+          hu: Kínai ötfűszer
+        value:
+          en: star anise, clove, cinnamon, fennel, Sichuan pepper
+          hu: csillagánizs, szegfűszeg, fahéj, édeskömény, szecsuáni bors
+        note:
+          en: 'Goes with duck, pork belly, stir-fries, roast squash. Strong: a teaspoon seasons a whole duck.'
+          hu: 'Illik hozzá: kacsa, sertésoldalas, wokos ételek, sült tök. Erős: egy teáskanál egy egész kacsához elég.'
+      - fill: '#C0552E'
+        label:
+          en: Cajun
+          hu: Cajun
+        value:
+          en: paprika, garlic, onion, cayenne, thyme, oregano, pepper
+          hu: paprika, fokhagyma, hagyma, cayenne, kakukkfű, oregánó, bors
+        note:
+          en: 'Goes with chicken, prawns, potato wedges, corn. Great in the air fryer: oil, Cajun, 200 °C.'
+          hu: 'Illik hozzá: csirke, garnélarák, steakburgonya, kukorica. Forrólevegős sütőben remek: olaj, cajun, 200 °C.'
+        heat: 2
+      - fill: '#6E5A2E'
+        label:
+          en: Jerk
+          hu: Jerk
+        value:
+          en: allspice, thyme, chilli, garlic, ginger, cinnamon
+          hu: szegfűbors, kakukkfű, chili, fokhagyma, gyömbér, fahéj
+        note:
+          en: Goes with chicken, pork, grilled vegetables. Jamaica’s blend; allspice is its heart.
+          hu: 'Illik hozzá: csirke, sertés, grillezett zöldség. Jamaica keveréke; a szíve a szegfűbors.'
+        heat: 3
+      - fill: '#B08A5A'
+        label:
+          en: Dukkah
+          hu: Dukkah
+        value:
+          en: toasted hazelnuts, sesame, coriander, cumin, salt
+          hu: pirított mogyoró, szezám, koriander, római kömény, só
+        note:
+          en: 'Goes with GF bread dipped in olive oil, salads, eggs, fish. Crunchy: pulse the nuts coarse, not to powder.'
+          hu: 'Illik hozzá: olívaolajba mártott GM kenyér, saláták, tojás, hal. Ropogós: a diót csak durvára darald, ne porrá.'
+      - fill: '#A8442E'
+        label:
+          en: Taco
+          hu: Taco
+        value:
+          en: chilli, cumin, paprika, garlic, oregano
+          hu: chili, római kömény, paprika, fokhagyma, oregánó
+        note:
+          en: Goes with mince, beans, chilli con carne, roast vegetables. Shop packets often hold wheat flour — make it yourself.
+          hu: 'Illik hozzá: darált hús, bab, chili con carne, sült zöldség. A bolti tasakokban gyakran búzaliszt van — készítsd el magad.'
+        heat: 2
+    en:
+      title: World blends
+      body: |
+        What is in the famous blends and what they are for. Recipes for many of them are on *Make your own*.
+
+        | Blend | What is in it | Goes with | Tip |
+        |---|---|---|---|
+        | **Za'atar** | thyme, sumac, sesame, salt | GF flatbread, eggs, yoghurt, roast vegetables | Stir into olive oil for a dip. |
+        | **Ras el hanout** | cumin, ginger, coriander, cinnamon, turmeric, paprika, cardamom | lamb, chickpeas, carrots, millet or quinoa “couscous” | “The shop’s best” — every Moroccan spice seller has their own. |
+        | **Baharat** | black pepper, paprika, cumin, coriander, cinnamon, clove, cardamom, nutmeg | kebabs, kofta, rice, lentil soup | The Middle East’s everyday blend — warm, not hot. |
+        | **Berbere** | chilli, fenugreek, ginger, coriander, cardamom, allspice, clove | Ethiopian stews (doro wat), lentils, roast meat | Hot and deep — fry it gently in fat first. |
+        | **Garam masala** | coriander, cumin, cardamom, pepper, cinnamon, clove, nutmeg | curries, dal, lamb, roast vegetables | Stirred in at the end, not fried at the start. |
+        | **Chinese five-spice** | star anise, clove, cinnamon, fennel, Sichuan pepper | duck, pork belly, stir-fries, roast squash | Strong: a teaspoon seasons a whole duck. |
+        | **Cajun** | paprika, garlic, onion, cayenne, thyme, oregano, pepper | chicken, prawns, potato wedges, corn | Great in the air fryer: oil, Cajun, 200 °C. |
+        | **Jerk** | allspice, thyme, chilli, garlic, ginger, cinnamon | chicken, pork, grilled vegetables | Jamaica’s blend; allspice is its heart. |
+        | **Dukkah** | toasted hazelnuts, sesame, coriander, cumin, salt | GF bread dipped in olive oil, salads, eggs, fish | Crunchy: pulse the nuts coarse, not to powder. |
+        | **Taco** | chilli, cumin, paprika, garlic, oregano | mince, beans, chilli con carne, roast vegetables | Shop packets often hold wheat flour — make it yourself. |
+
+        > **Celiac:** a shop blend can carry **wheat flour or starch** as a filler — buy GF-labelled or mix your own from single spices.
+    hu:
+      title: Világ fűszerkeverékei
+      body: |
+        Mi van a híres keverékekben, és mire valók. Sokuk receptje a *Házi keverék* oldalon van.
+
+        | Keverék | Mi van benne | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Za'atar** | kakukkfű, szömörce, szezám, só | GM lepény, tojás, joghurt, sült zöldség | Olívaolajba keverve mártogatós. |
+        | **Ras el hanout** | római kömény, gyömbér, koriander, fahéj, kurkuma, paprika, kardamom | bárány, csicseriborsó, répa, köles- vagy quinoa-„kuszkusz” | „A bolt legjava” — minden marokkói fűszeresnek saját receptje van. |
+        | **Baharat** | fekete bors, paprika, római kömény, koriander, fahéj, szegfűszeg, kardamom, szerecsendió | kebab, kofta, rizs, lencseleves | A Közel-Kelet mindennapi keveréke — meleg, nem csípős. |
+        | **Berbere** | chili, görögszéna, gyömbér, koriander, kardamom, szegfűbors, szegfűszeg | etióp raguk (doro wat), lencse, sült hús | Csípős és mély — előbb finoman pirítsd zsiradékban. |
+        | **Garam masala** | koriander, római kömény, kardamom, bors, fahéj, szegfűszeg, szerecsendió | curryk, dal, bárány, sült zöldség | A végén keverd bele, ne az elején pirítsd. |
+        | **Kínai ötfűszer** | csillagánizs, szegfűszeg, fahéj, édeskömény, szecsuáni bors | kacsa, sertésoldalas, wokos ételek, sült tök | Erős: egy teáskanál egy egész kacsához elég. |
+        | **Cajun** | paprika, fokhagyma, hagyma, cayenne, kakukkfű, oregánó, bors | csirke, garnélarák, steakburgonya, kukorica | Forrólevegős sütőben remek: olaj, cajun, 200 °C. |
+        | **Jerk** | szegfűbors, kakukkfű, chili, fokhagyma, gyömbér, fahéj | csirke, sertés, grillezett zöldség | Jamaica keveréke; a szíve a szegfűbors. |
+        | **Dukkah** | pirított mogyoró, szezám, koriander, római kömény, só | olívaolajba mártott GM kenyér, saláták, tojás, hal | Ropogós: a diót csak durvára darald, ne porrá. |
+        | **Taco** | chili, római kömény, paprika, fokhagyma, oregánó | darált hús, bab, chili con carne, sült zöldség | A bolti tasakokban gyakran búzaliszt van — készítsd el magad. |
+
+        > **Cöliákia:** a bolti keverékben **búzaliszt vagy -keményítő** lehet töltőanyagként — GM jelölésűt vegyél, vagy keverd ki egynemű fűszerekből.
+  - id: kitchen
+    chart:
+      type: swatches
+      shape: jars
+      items:
+      - fill: '#C8281E'
+        label:
+          en: Pörkölt
+          hu: Pörkölt
+        value:
+          en: sweet paprika, caraway, marjoram, garlic, black pepper
+          hu: édesnemes paprika, kömény, majoránna, fokhagyma, fekete bors
+        note:
+          en: Goes with pörkölt, paprikás, gulyás, roast pork. Into the onions off the heat — paprika burns in seconds.
+          hu: 'Illik hozzá: pörkölt, paprikás, gulyás, sült sertés. A hagymára, lehúzva a tűzről — a paprika másodpercek alatt megég.'
+      - fill: '#B23022'
+        label:
+          en: Kolbász
+          hu: Kolbász
+        value:
+          en: sweet and hot paprika, garlic, caraway, black pepper
+          hu: édes és erős paprika, fokhagyma, kömény, fekete bors
+        note:
+          en: Goes with home-made sausage, sausage-style mince, lecsó. About 2 tablespoons and 18–20 g salt per kilo of mince.
+          hu: 'Illik hozzá: házi kolbász, kolbászos darált hús, lecsó. Kilónként kb. 2 evőkanál és 18–20 g só a darált húshoz.'
+        heat: 1
+      - fill: '#D4703A'
+        label:
+          en: Chicken seasoning
+          hu: Csirkefűszer
+        value:
+          en: paprika, garlic, onion, black pepper, thyme, salt
+          hu: paprika, fokhagyma, hagyma, fekete bors, kakukkfű, só
+        note:
+          en: Goes with roast chicken, wings, thighs, air-fried chicken. Shop “csirkefűszer” often carries wheat or flavour enhancer — mix your own.
+          hu: 'Illik hozzá: sült csirke, szárny, comb, forrólevegős csirke. A bolti csirkefűszerben gyakran búza vagy ízfokozó van — keverd magad.'
+      - fill: '#C9783A'
+        label:
+          en: Roast potato
+          hu: Sült krumpli
+        value:
+          en: paprika, garlic, rosemary, caraway, salt
+          hu: paprika, fokhagyma, rozmaring, kömény, só
+        note:
+          en: Goes with roast or air-fried potatoes, wedges. Toss the potatoes in oil first, then the blend.
+          hu: 'Illik hozzá: sült vagy forrólevegős krumpli, steakburgonya. Előbb olajban forgasd meg a krumplit, aztán a fűszerben.'
+      - fill: '#C9A84A'
+        label:
+          en: Pickling (savanyúság)
+          hu: Savanyúságfűszer
+        value:
+          en: mustard seed, coriander seed, peppercorns, dill seed, allspice, bay
+          hu: mustármag, koriandermag, egész bors, kapormag, szegfűbors, babér
+        note:
+          en: Goes with vinegar pickles, csalamádé, pickled peppers. Whole spices — a tablespoon per litre jar.
+          hu: 'Illik hozzá: ecetes savanyúság, csalamádé, ecetes paprika. Egész fűszerek — literes üveghez egy evőkanál.'
+      - fill: '#6B2E2E'
+        label:
+          en: Mulled wine (forralt bor)
+          hu: Forralt bor
+        value:
+          en: cinnamon, orange peel, clove, star anise, allspice, cardamom
+          hu: fahéj, narancshéj, szegfűszeg, csillagánizs, szegfűbors, kardamom
+        note:
+          en: Goes with red wine (or grape juice), 3–4 tbsp sugar per litre. Heat to 70–80 °C — never boil, or the alcohol and aroma go.
+          hu: 'Illik hozzá: vörösbor (vagy szőlőlé), literenként 3–4 ek cukor. 70–80 °C-ra melegítsd — ne forrald, mert elszáll az alkohol és az illat.'
+      - fill: '#8A4E2A'
+        label:
+          en: Gingerbread
+          hu: Mézeskalács
+        value:
+          en: cinnamon, ginger, clove, nutmeg, allspice, cardamom, star anise
+          hu: fahéj, gyömbér, szegfűszeg, szerecsendió, szegfűbors, kardamom, csillagánizs
+        note:
+          en: Goes with gingerbread (GF flour), apple desserts, mulled wine, coffee. Shop “mézeskalács fűszer” is usually just spices — check anyway.
+          hu: 'Illik hozzá: mézeskalács (GM liszttel), almás desszertek, forralt bor, kávé. A bolti mézeskalács-fűszer általában csak fűszer — azért ellenőrizd.'
+    en:
+      title: Hungarian kitchen blends
+      body: |
+        The jars a Hungarian kitchen reaches for — all GF when you mix them yourself.
+
+        | Blend | What is in it | Goes with | Tip |
+        |---|---|---|---|
+        | **Pörkölt** | sweet paprika, caraway, marjoram, garlic, black pepper | pörkölt, paprikás, gulyás, roast pork | Into the onions off the heat — paprika burns in seconds. |
+        | **Kolbász** | sweet and hot paprika, garlic, caraway, black pepper | home-made sausage, sausage-style mince, lecsó | About 2 tablespoons and 18–20 g salt per kilo of mince. |
+        | **Chicken seasoning** | paprika, garlic, onion, black pepper, thyme, salt | roast chicken, wings, thighs, air-fried chicken | Shop “csirkefűszer” often carries wheat or flavour enhancer — mix your own. |
+        | **Roast potato** | paprika, garlic, rosemary, caraway, salt | roast or air-fried potatoes, wedges | Toss the potatoes in oil first, then the blend. |
+        | **Pickling (savanyúság)** | mustard seed, coriander seed, peppercorns, dill seed, allspice, bay | vinegar pickles, csalamádé, pickled peppers | Whole spices — a tablespoon per litre jar. |
+        | **Mulled wine (forralt bor)** | cinnamon, orange peel, clove, star anise, allspice, cardamom | red wine (or grape juice), 3–4 tbsp sugar per litre | Heat to 70–80 °C — never boil, or the alcohol and aroma go. |
+        | **Gingerbread** | cinnamon, ginger, clove, nutmeg, allspice, cardamom, star anise | gingerbread (GF flour), apple desserts, mulled wine, coffee | Shop “mézeskalács fűszer” is usually just spices — check anyway. |
+
+        > **Celiac:** a shop blend can carry **wheat flour or starch** as a filler — buy GF-labelled or mix your own from single spices.
+    hu:
+      title: Magyar konyha keverékei
+      body: |
+        A magyar konyha kedvenc üvegei — házilag keverve mind gluténmentes.
+
+        | Keverék | Mi van benne | Mihez illik | Tipp |
+        |---|---|---|---|
+        | **Pörkölt** | édesnemes paprika, kömény, majoránna, fokhagyma, fekete bors | pörkölt, paprikás, gulyás, sült sertés | A hagymára, lehúzva a tűzről — a paprika másodpercek alatt megég. |
+        | **Kolbász** | édes és erős paprika, fokhagyma, kömény, fekete bors | házi kolbász, kolbászos darált hús, lecsó | Kilónként kb. 2 evőkanál és 18–20 g só a darált húshoz. |
+        | **Csirkefűszer** | paprika, fokhagyma, hagyma, fekete bors, kakukkfű, só | sült csirke, szárny, comb, forrólevegős csirke | A bolti csirkefűszerben gyakran búza vagy ízfokozó van — keverd magad. |
+        | **Sült krumpli** | paprika, fokhagyma, rozmaring, kömény, só | sült vagy forrólevegős krumpli, steakburgonya | Előbb olajban forgasd meg a krumplit, aztán a fűszerben. |
+        | **Savanyúságfűszer** | mustármag, koriandermag, egész bors, kapormag, szegfűbors, babér | ecetes savanyúság, csalamádé, ecetes paprika | Egész fűszerek — literes üveghez egy evőkanál. |
+        | **Forralt bor** | fahéj, narancshéj, szegfűszeg, csillagánizs, szegfűbors, kardamom | vörösbor (vagy szőlőlé), literenként 3–4 ek cukor | 70–80 °C-ra melegítsd — ne forrald, mert elszáll az alkohol és az illat. |
+        | **Mézeskalács** | fahéj, gyömbér, szegfűszeg, szerecsendió, szegfűbors, kardamom, csillagánizs | mézeskalács (GM liszttel), almás desszertek, forralt bor, kávé | A bolti mézeskalács-fűszer általában csak fűszer — azért ellenőrizd. |
+
+        > **Cöliákia:** a bolti keverékben **búzaliszt vagy -keményítő** lehet töltőanyagként — GM jelölésűt vegyél, vagy keverd ki egynemű fűszerekből.

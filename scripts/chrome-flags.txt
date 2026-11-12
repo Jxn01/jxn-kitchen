@@ -1,0 +1,32 @@
+# The flags EVERY headless Chrome in scripts/ starts with (read by cdp.py's CHROME_FLAGS and by screens.sh; a hygiene test
+# keeps each launch on them). Puppeteer's automation baseline, measured 2026-11-11: a 9-screen walk took 3m27s
+# without them and 43.6 s with them — a fresh profile otherwise starts Chrome's background machinery (component updates,
+# safe-browsing lists, optimization hints, sync…) on the browser's MAIN thread, the thread that also serves every DevTools
+# call, so each call queued behind it (seen: CrBrowserMain at 99.8 % CPU, the page itself idle). Bisected the same night:
+# --disable-background-networking ALONE takes the walk to 43 s; --disable-ipc-flooding-protection alone changes nothing (207 s).
+--password-store=basic
+# ^ without it Chrome asks the GNOME keyring for its key; while nobody is logged in to GNOME the keyring is locked and can only
+#   prompt on a display that does not exist, and Chrome hangs at its first page load forever
+--no-first-run
+--disable-background-networking
+--disable-component-update
+--disable-default-apps
+--disable-extensions
+--disable-sync
+--metrics-recording-only
+--disable-client-side-phishing-detection
+--disable-component-extensions-with-background-pages
+--disable-breakpad
+--disable-hang-monitor
+--disable-ipc-flooding-protection
+--disable-background-timer-throttling
+--disable-backgrounding-occluded-windows
+--disable-renderer-backgrounding
+--disable-popup-blocking
+--disable-prompt-on-repost
+--disable-search-engine-choice-screen
+--disable-infobars
+--disable-dev-shm-usage
+--allow-pre-commit-input
+--force-color-profile=srgb
+--disable-features=Translate,AcceptCHFrame,MediaRouter,OptimizationHints,ProcessPerSiteUpToMainFrameThreshold,IsolateSandboxedIframes

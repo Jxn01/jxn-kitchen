@@ -1,0 +1,54 @@
+category: dairy
+groups:
+  - id: eggs-all
+    en: Eggs
+    hu: Tojás
+    icon: "om:1F95A"
+    items:
+      - {id: eggs, en: Eggs, hu: Tojás, aliases: [egg, tojások, tyúktojás, egész tojás, tojássárgája, tojásfehérje, egg yolk, egg yolks, egg white, egg whites]}
+      - {id: quail-eggs, en: Quail eggs, hu: Fürjtojás, aliases: [quail egg]}
+  - id: milk-cream
+    en: Milk & cream
+    hu: Tej, tejszín
+    icon: "om:1F95B"
+    items:
+      - {id: milk, en: Milk, hu: Tej, aliases: [whole milk, teljes tej, tehéntej, 2.8%-os tej, 1.5%-os tej, semi-skimmed milk]}
+      - {id: lactose-free-milk, en: Lactose-free milk, hu: Laktózmentes tej}
+      - {id: plant-milk, en: Plant milk, hu: Növényi tej, aliases: [oat milk, almond milk, soy milk, rizstej, mandulatej, zabital, szójatej]}
+      - {id: cream-cooking, en: Cooking cream, hu: Főzőtejszín, icon: "c:tub", aliases: [cooking cream, főző tejszín, light cream]}
+      - {id: cream-whipping, en: Whipping cream, hu: Habtejszín, icon: "c:tub", aliases: [heavy cream, double cream, whipping cream, tejszín, habtejszínt, cream]}
+      - {id: sour-cream, en: Sour cream, hu: Tejföl, icon: "c:tub", aliases: [tejföl (20%), tejfölt, 20%-os tejföl, 12%-os tejföl]}
+      - {id: creme-fraiche, en: Crème fraîche, hu: Crème fraîche, icon: "c:tub", aliases: [creme fraiche, crème fraiche]}
+      - {id: buttermilk, en: Buttermilk, hu: Író, aliases: [írót]}
+      - {id: kefir, en: Kefir, hu: Kefir, icon: "c:tub"}
+      - {id: yogurt, en: Yogurt, hu: Joghurt, icon: "c:tub", aliases: [natural yogurt, plain yogurt, natúr joghurt, yoghurt, joghurtot]}
+      - {id: greek-yogurt, en: Greek yogurt, hu: Görög joghurt, icon: "c:tub", aliases: [greek yoghurt, görög típusú joghurt]}
+  - id: butter-all
+    en: Butter
+    hu: Vaj
+    icon: "om:1F9C8"
+    items:
+      - {id: butter, en: Butter, hu: Vaj, aliases: [unsalted butter, salted butter, vajat, teavaj, sótlan vaj, 82%-os vaj]}
+  - id: cheese
+    en: Cheese
+    hu: Sajt
+    icon: "om:1F9C0"
+    items:
+      - {id: semi-hard-cheese, en: Semi-hard cheese, hu: Trappista, aliases: [cheese, grated cheese, sajt, reszelt sajt, trappista sajt, edami, eidam, gouda, trappistát, sajtot]}
+      - {id: parmesan, en: Parmesan, hu: Parmezán, aliases: [parmigiano, parmigiano reggiano, grana padano, parmezánt, pecorino]}
+      - {id: mozzarella, en: Mozzarella, hu: Mozzarella, aliases: [buffalo mozzarella, bivalymozzarella, pizza mozzarella]}
+      - {id: feta, en: Feta, hu: Feta, aliases: [feta cheese, fetasajt, sós sajt]}
+      - {id: goat-cheese, en: Goat cheese, hu: Kecskesajt, aliases: [chèvre, chevre, goat's cheese]}
+      - {id: turo, en: Quark (túró), hu: Túró, aliases: [quark, curd cheese, tehéntúró, túrót, farmer cheese]}
+      - {id: juhturo, en: Sheep's cheese (juhtúró), hu: Juhtúró, aliases: [bryndza, juhtúrót]}
+      - {id: cottage-cheese, en: Cottage cheese, hu: Cottage cheese, aliases: [cottage]}
+      - {id: cream-cheese, en: Cream cheese, hu: Krémsajt, aliases: [philadelphia, natúr krémsajt, cream cheese spread]}
+      - {id: mascarpone, en: Mascarpone, hu: Mascarpone}
+      - {id: ricotta, en: Ricotta, hu: Ricotta}
+      - {id: cheddar, en: Cheddar, hu: Cheddar}
+      - {id: emmental, en: Emmental, hu: Ementáli, aliases: [emmentaler, swiss cheese, ementáli sajt]}
+      - {id: blue-cheese, en: Blue cheese, hu: Kéksajt, aliases: [gorgonzola, roquefort, stilton, márványsajt]}
+      - {id: brie, en: Brie & camembert, hu: "Brie, camembert", aliases: [brie, camembert, camembert sajt]}
+      - {id: halloumi, en: Halloumi, hu: Halloumi, aliases: [grillsajt, grilling cheese]}
+      - {id: smoked-cheese, en: Smoked cheese, hu: Füstölt sajt, aliases: [parenyica, füstölt trappista]}
+      - {id: processed-cheese, en: Processed cheese, hu: Ömlesztett sajt, gluten: label, aliases: [cheese slices, sajtkrém, kockasajt, burger cheese]}

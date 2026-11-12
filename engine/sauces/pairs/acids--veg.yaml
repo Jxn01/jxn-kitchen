@@ -1,0 +1,32 @@
+lemon-juice:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, harmless]
+  tahini: [3, classic-partners, "Tahini and lemon: the tart, creamy base of hummus.", "Tahini és citrom: a humusz savanykás, krémes alapja."]
+lime-juice:
+  cucumber: [2, cuisine-mates]
+  peanut-butter: [2, acid-cuts-rich]
+  tahini: [1, acid-cuts-rich]
+vinegar:
+  cucumber: [3, hungarian-heart, "Cucumber and vinegar: the Hungarian cucumber salad.", "Uborka és ecet: a magyar uborkasaláta."]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+wine-vinegar:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-1, odd-couple]
+  tahini: [0, harmless]
+balsamic:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [-1, odd-couple]
+  tahini: [-1, odd-couple]
+rice-vinegar:
+  cucumber: [2, cuisine-mates]
+  peanut-butter: [1, cuisine-mates]
+  tahini: [1, cuisine-mates]
+white-wine:
+  cucumber: [0, harmless]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-1, kitchens-apart]
+red-wine:
+  cucumber: [-2, odd-couple]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-2, kitchens-apart]

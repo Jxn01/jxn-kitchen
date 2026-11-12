@@ -1,0 +1,21 @@
+# The pantry's top level (spec §4.1): 16 food categories + 2 supply categories, in tile order.
+# color = a palette key (web/src/lib/palette.ts). kind: food | supply (supplies never match recipes).
+categories:
+  - {id: meat, en: "Meat", hu: "Hús", icon: "om:1F969", color: tomato, kind: food}
+  - {id: fish, en: "Fish & seafood", hu: "Hal, tenger gyümölcsei", icon: "om:1F41F", color: sky, kind: food}
+  - {id: dairy, en: "Eggs & dairy", hu: "Tojás, tejtermék", icon: "om:1F9C0", color: butter, kind: food}
+  - {id: vegetables, en: "Vegetables", hu: "Zöldség", icon: "om:1F955", color: herb, kind: food}
+  - {id: fruit, en: "Fruit", hu: "Gyümölcs", icon: "om:1F34E", color: berry, kind: food}
+  - {id: herbs, en: "Fresh herbs", hu: "Friss zöldfűszer", icon: "om:1F33F", color: leaf, kind: food}
+  - {id: spices, en: "Spices", hu: "Fűszerek", icon: "om:1F336", color: tangerine, kind: food}
+  - {id: grains, en: "Pasta, rice & grains", hu: "Tészta, rizs, gabona", icon: "om:1F35D", color: mustard, kind: food}
+  - {id: baking, en: "Flour & baking", hu: "Liszt, sütés", icon: "c:flour-bag", color: cocoa, kind: food}
+  - {id: bread, en: "Bread & bakery", hu: "Kenyér, pékáru", icon: "om:1F35E", color: rust, kind: food}
+  - {id: legumes, en: "Beans, nuts & seeds", hu: "Hüvelyes, dió, mag", icon: "om:1FAD8", color: olive, kind: food}
+  - {id: sauces, en: "Sauces & condiments", hu: "Szószok, ízesítők", icon: "om:1FAD9", color: plum, kind: food}
+  - {id: oils, en: "Oils, vinegar & fats", hu: "Olaj, ecet, zsiradék", icon: "om:E0CB", color: teal, kind: food}
+  - {id: cans, en: "Cans & jars", hu: "Konzerv, üveges", icon: "om:1F96B", color: slate, kind: food}
+  - {id: sweet, en: "Sweet stuff", hu: "Édesség", icon: "om:1F36F", color: salmon, kind: food}
+  - {id: drinks, en: "Drinks & booze", hu: "Ital, főzéshez", icon: "om:1F377", color: wine, kind: food}
+  - {id: kitchen-supplies, en: "Kitchen supplies", hu: "Konyhai kellékek", icon: "om:1F9FB", color: indigo, kind: supply}
+  - {id: cleaning, en: "Cleaning & laundry", hu: "Tisztítás, mosás", icon: "om:1F9FD", color: mint, kind: supply}

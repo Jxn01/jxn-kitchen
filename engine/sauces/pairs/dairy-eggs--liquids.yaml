@@ -1,0 +1,18 @@
+sour-cream:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [1, gentle-company]
+creme-fraiche:
+  coconut-milk: [-1, kitchens-apart]
+  passata: [1, gentle-company]
+yogurt:
+  coconut-milk: [0, harmless]
+  passata: [0, harmless]
+parmesan:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [3, classic-partners, "Passata and parmesan: the plain, perfect tomato sauce.", "Passata és parmezán: az egyszerű, tökéletes paradicsomszósz."]
+feta:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [2, cuisine-mates]
+blue-cheese:
+  coconut-milk: [-2, kitchens-apart]
+  passata: [-1, two-leads]

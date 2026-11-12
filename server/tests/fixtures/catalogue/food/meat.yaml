@@ -1,0 +1,15 @@
+category: meat
+groups:
+  - id: chicken
+    en: Chicken
+    hu: Csirke
+    icon: "om:1F414"
+    items:
+      - {id: chicken-breast, en: Breast, hu: Csirkemell, aliases: [chicken breast, csirkemellfilé], gluten: free}
+      - {id: chicken-wings, en: Wings, hu: Csirkeszárny, aliases: [chicken wing, szárny], gluten: free}
+  - id: sausage
+    en: Sausage & cured
+    hu: Kolbász, felvágott
+    icon: "om:1F32D"
+    items:
+      - {id: smoked-sausage, en: Smoked sausage, hu: Füstölt kolbász, gluten: label}

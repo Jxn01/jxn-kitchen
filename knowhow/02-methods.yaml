@@ -1,0 +1,307 @@
+id: methods
+order: 3
+icon: "om:1F373"
+color: tangerine
+en: {title: Methods, sub: "sear · braise · roast · steam · fry · pickle"}
+hu: {title: Módszerek, sub: "elősütés · párolás · sütés · gőzölés · pácolás"}
+pages:
+  - id: sear-saute
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F9C2", label: {en: "Dry, salt", hu: "Szárítás, sózás"}, note: {en: "Dry the meat with paper towel and salt it — ideally 40 minutes before, or right before, not in between.", hu: "Itasd le a húst papírtörlővel, és sózd — ideálisan 40 perccel előtte, vagy közvetlenül előtte, nem a kettő között."}}
+        - {icon: "om:1F525", label: {en: Hot pan, hu: Forró serpenyő}, note: {en: "A heavy pan (cast iron, steel) until a drop of water dances, then a thin film of high-smoke-point oil.", hu: "Nehéz serpenyő (öntöttvas, acél), amíg egy vízcsepp táncol rajta, aztán vékony réteg magas füstpontú olaj."}}
+        - {icon: "om:270B", label: {en: "Don't move it", hu: "Ne mozgasd"}, note: {en: "Don't crowd the pan, and don't move the meat until it releases by itself.", hu: "Ne zsúfold tele a serpenyőt, és ne mozgasd a húst, amíg magától el nem válik."}}
+        - {icon: "om:1F504", label: {en: Turn once, hu: Egyszer fordítsd}, note: {en: "Turn it once, brown the other side. Sautéing is the small-piece version: medium-high heat, tossed often.", hu: "Egyszer fordítsd meg, pirítsd a másik oldalát. A pirítás az apró darabos változat: közepesen magas láng, gyakran átforgatva."}}
+        - {icon: "om:1F377", label: {en: Deglaze, hu: Felöntés}, note: {en: "A splash of wine or stock lifts the brown bits into a sauce.", hu: "Egy kevés bor vagy alaplé felveszi a pirult részeket — kész a szósz alapja."}}
+    en:
+      title: Searing and sautéing
+      body: |
+        **Searing** browns the surface of meat in a very hot pan: the Maillard reaction makes the flavour. It does not
+        "seal in juices" — it makes taste.
+
+        - Dry the meat with paper towel and salt it (ideally 40 minutes before, or right before — not in between).
+        - Heat a heavy pan (cast iron, steel) until a drop of water dances, then add a thin film of high-smoke-point oil.
+        - Don't crowd the pan and **don't move** the meat until it releases by itself.
+        - **Sauté** (pirítás): smaller pieces, medium-high heat, tossed often — onions, mushrooms, vegetables.
+        - **Deglaze** afterwards: a splash of wine or stock lifts the brown bits into a sauce.
+
+        > For a GF crust, dust with rice flour or cornstarch instead of wheat flour — it browns just as well and stays crisper.
+    hu:
+      title: Elősütés és pirítás
+      body: |
+        Az **elősütés** nagyon forró serpenyőben megbarnítja a hús felületét: a Maillard-reakció adja az ízt. Nem „zárja
+        be a szaftot" — ízt ad.
+
+        - Töröld szárazra papírtörlővel és sózd meg (ideálisan 40 perccel előtte, vagy közvetlenül előtte — a kettő között ne).
+        - Hevíts nehéz serpenyőt (öntöttvas, acél), amíg egy csepp víz táncol rajta, aztán egy vékony réteg magas
+          füstpontú olaj.
+        - Ne zsúfold tele, és **ne mozgasd** a húst, amíg magától el nem válik.
+        - **Pirítás:** kisebb darabok, közepesen erős tűz, gyakran forgatva — hagyma, gomba, zöldség.
+        - **Felöntés** utána: egy kevés bor vagy alaplé felveszi a barna lerakódást, abból lesz a mártás.
+
+        > GM kéreghez rizsliszttel vagy kukoricakeményítővel szórd meg búzaliszt helyett — ugyanúgy pirul, és ropogósabb marad.
+  - id: braise
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F969", label: {en: Brown in batches, hu: Adagonként elősütve}, note: {en: "Brown the meat in batches — a crowded pot steams it.", hu: "A húst adagonként pirítsd — a zsúfolt fazékban párolódik."}}
+        - {icon: "om:1F9C5", label: {en: Soften onions, hu: Hagyma}, note: {en: "Soften the onions in the same pot, in the fat and the brown bits.", hu: "Ugyanabban a fazékban, a zsiradékban és a pirult részeken párold meg a hagymát."}}
+        - {icon: "om:1F4A7", label: {en: Liquid, hu: Folyadék}, note: {en: "Stock, wine or tomatoes: halfway up the meat for a braise, covering it for a stew.", hu: "Alaplé, bor vagy paradicsom: a hús feléig párolásnál, ellepve raguhoz."}}
+        - {icon: "om:23F2", label: {en: Low and slow, hu: "Lassan, alacsonyan"}, time: {en: "2–4 h", hu: "2–4 óra"}, note: {en: "Lid on, barely simmering on the hob or in the oven at 150–160 °C, until a fork slides in. The collagen melts at 70–90 °C over hours.", hu: "Fedő, alig gyöngyözve a főzőlapon vagy 150–160 °C-os sütőben, amíg a villa könnyen belecsúszik. A kollagén 70–90 °C-on órák alatt olvad el."}}
+        - {icon: "om:1FAD5", label: {en: Finish the sauce, hu: A szósz}, note: {en: "Reduce it, purée some of the vegetables into it, or cornstarch in cold water, simmered a minute.", hu: "Forrald be, turmixold bele a zöldség egy részét, vagy hideg vízzel elkevert keményítő, egy perc forralás."}}
+    en:
+      title: Braising and stewing
+      body: |
+        Slow, moist cooking turns tough, sinewy cuts (shin, shoulder, cheek, brisket) tender: the collagen melts into
+        gelatine at 70–90 °C over hours.
+
+        1. Brown the meat in batches, then soften onions in the same pot.
+        2. Add liquid — stock, wine, tomatoes — to come **halfway up** the meat (braise) or to cover it (stew).
+        3. Lid on, barely simmering on the hob or in the oven at **150–160 °C**, for 2–4 hours until a fork slides in.
+        4. Reduce or thicken the sauce at the end.
+
+        Hungarian **pörkölt** is a braise: lots of onion, paprika, the meat cooks in its own juice with just a splash of
+        water — see *Hungarian technique*.
+
+        > Thicken GF: reduce it, purée some of the vegetables into it, or stir in cornstarch mixed with cold water and simmer one minute.
+    hu:
+      title: Párolás, ragu
+      body: |
+        A lassú, nedves főzés a rágós, inas darabokat (lábszár, lapocka, pofa, szegy) puhává teszi: a kollagén
+        órák alatt, 70–90 °C-on zselatinná olvad.
+
+        1. Adagonként pirítsd meg a húst, aztán ugyanabban a lábasban a hagymát.
+        2. Önts rá folyadékot — alaplé, bor, paradicsom — **félig érjen** a húsra (párolás), vagy lepje el (ragu).
+        3. Fedővel, épp hogy gyöngyözve a tűzhelyen, vagy sütőben **150–160 °C-on**, 2–4 órát, amíg a villa könnyen belecsúszik.
+        4. A végén sűrítsd vagy forrald be a szaftot.
+
+        A magyar **pörkölt** párolás: sok hagyma, paprika, a hús a saját levében fő, csak egy kevés vízzel — lásd *Magyaros technikák*.
+
+        > GM sűrítés: forrald be, turmixolj bele a zöldségből, vagy keverj bele hideg vízzel elkevert kukoricakeményítőt, és forrald egy percig.
+  - id: roast
+    chart:
+      type: scale
+      unit: °C
+      min: 100
+      max: 240
+      bands:
+        - from: 120
+          to: 160
+          fill: "#F7D774"
+          label: {en: Low and slow, hu: "Alacsonyan, lassan"}
+          note: {en: "Big joints, pork shoulder, duck legs — even doneness, then a short blast of high heat at the end for the skin.", hu: "Nagy húsok, sertéslapocka, kacsacomb — egyenletes átsülés, a végén pár perc erős hő a bőrnek."}
+        - from: 200
+          to: 230
+          fill: "#E8442E"
+          label: {en: Hot and fast, hu: "Forrón, gyorsan"}
+          note: {en: "Chicken pieces, vegetables, potatoes, tender cuts: browning and crisp edges. A whole chicken: 200 °C, about 20 minutes per 500 g + 20, until the thigh reads 74 °C.", hu: "Csirkedarabok, zöldség, burgonya, omlós húsok: pirult, ropogós szélek. Egész csirke: 200 °C, kb. 20 perc 500 g-onként + 20, amíg a comb 74 °C."}
+      marks:
+        - {value: 120, label: "120"}
+        - {value: 160, label: "160"}
+        - {value: 200, label: "200"}
+        - {value: 230, label: "230"}
+    en:
+      title: Roasting
+      body: |
+        Dry heat in the oven, uncovered.
+
+        - **Hot and fast** (200–230 °C): chicken pieces, vegetables, potatoes, tender cuts. Browning and crisp edges.
+        - **Low and slow** (120–160 °C): big joints, pork shoulder, duck legs — even doneness, then a short blast of high
+          heat at the end for the skin.
+        - **Whole chicken:** 200 °C, about 20 minutes per 500 g + 20 minutes, until the thigh reads 74 °C.
+        - **Vegetables:** cut evenly, toss in oil and salt, one layer with space between — crowded vegetables steam
+          instead of browning.
+        - Use a thermometer, not the clock. Rest the meat (10–20 min) before carving.
+    hu:
+      title: Sütés sütőben
+      body: |
+        Száraz hő a sütőben, fedő nélkül.
+
+        - **Forrón, gyorsan** (200–230 °C): csirkedarabok, zöldségek, burgonya, omlós húsok. Pirult, ropogós szélek.
+        - **Alacsonyan, lassan** (120–160 °C): nagy húsok, sertéslapocka, kacsacomb — egyenletes átsülés, a végén pár perc
+          erős hő a bőrnek.
+        - **Egész csirke:** 200 °C, kb. 20 perc 500 g-onként + 20 perc, amíg a comb 74 °C-ot mutat.
+        - **Zöldség:** egyforma darabok, olajjal és sóval összeforgatva, egy rétegben, helyet hagyva — a zsúfolt zöldség
+          párolódik, nem pirul.
+        - Hőmérő, ne óra. Szeletelés előtt pihentesd a húst (10–20 perc).
+  - id: moist-heat
+    chart:
+      type: scale
+      unit: °C
+      min: 60
+      max: 100
+      bands:
+        - from: 70
+          to: 80
+          fill: "#B8E3F7"
+          label: {en: Poach, hu: Buggyantás}
+          note: {en: "Barely moving: eggs, fish, chicken breast, fruit. A poached egg: fresh egg, 80 °C water, a swirl, 3 minutes.", hu: "Alig mozdul: tojás, hal, csirkemell, gyümölcs. Buggyantott tojás: friss tojás, 80 °C-os víz, örvény, 3 perc."}
+        - from: 85
+          to: 95
+          fill: "#7CC4F0"
+          label: {en: Simmer, hu: Gyöngyöztetés}
+          note: {en: "Small bubbles: stock, soups, sauces.", hu: "Apró buborékok: alaplé, levesek, mártások."}
+        - from: 97
+          to: 100
+          fill: "#E8442E"
+          label: {en: "Boil, steam", hu: "Forralás, gőzölés"}
+          range: "100 °C"
+          note: {en: "A rolling boil: pasta, potatoes (start them in cold water); blanching 30 s – 3 min, then ice water. Steam over boiling water: vegetables, fish, dumplings.", hu: "Lobogó forrás: tészta, krumpli (hideg vízből indítva); blansírozás 30 mp – 3 perc, aztán jeges víz. Gőzölés forrásban lévő víz fölött: zöldség, hal, gombóc."}
+      marks:
+        - {value: 70, label: "70"}
+        - {value: 80, label: "80"}
+        - {value: 85, label: "85"}
+        - {value: 95, label: "95"}
+        - {value: 100, label: "100"}
+    en:
+      title: Boiling, poaching, steaming, blanching
+      body: |
+        | Method | Water | For |
+        |---|---|---|
+        | Boil | 100 °C, rolling | pasta, potatoes (start potatoes in cold water) |
+        | Simmer | 85–95 °C, small bubbles | stock, soups, sauces |
+        | Poach | 70–80 °C, barely moving | eggs, fish, chicken breast, fruit |
+        | Steam | over boiling water | vegetables, fish, dumplings |
+        | Blanch | 30 s – 3 min boiling, then ice water | green vegetables, peeling tomatoes, before freezing |
+
+        - **GF pasta:** a big pot, lots of salted water, stir in the first 2 minutes, and taste 1–2 minutes before the
+          packet time — it goes from firm to mushy fast. Rinse briefly if it won't be sauced at once.
+        - **Poached egg:** fresh egg, 80 °C water, a swirl, 3 minutes.
+    hu:
+      title: Főzés, buggyantás, gőzölés, blansírozás
+      body: |
+        | Módszer | Víz | Mire |
+        |---|---|---|
+        | Forralás | 100 °C, lobogó | tészta, burgonya (a krumplit hideg vízben tedd fel) |
+        | Gyöngyöző főzés | 85–95 °C, apró buborék | alaplé, leves, mártás |
+        | Buggyantás | 70–80 °C, épp hogy mozog | tojás, hal, csirkemell, gyümölcs |
+        | Gőzölés | forrásban lévő víz felett | zöldség, hal, gombóc |
+        | Blansírozás | 30 mp – 3 perc forralás, aztán jeges víz | zöldségek, paradicsom hámozása, fagyasztás előtt |
+
+        - **GM tészta:** nagy fazék, sok sós víz, az első 2 percben keverd, és a csomagon írt idő előtt 1–2 perccel
+          kóstold — gyorsan megy át keményből szétfőttbe. Ha nem kerül azonnal szószba, öblítsd át röviden.
+        - **Buggyantott tojás:** friss tojás, 80 °C-os víz, egy örvény, 3 perc.
+  - id: frying
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F35A", label: {en: GF flour, hu: GM liszt}, note: {en: "Dust the meat in a GF flour mix, shake off the excess.", hu: "Forgasd a húst GM lisztkeverékbe, a fölösleget rázd le."}}
+        - {icon: "om:1F95A", label: {en: Beaten egg, hu: Felvert tojás}, note: {en: "Through the beaten egg, let it drip.", hu: "Húzd át a felvert tojáson, hagyd lecsöpögni."}}
+        - {icon: "om:1F35E", label: {en: GF crumbs, hu: GM morzsa}, note: {en: "GF breadcrumbs — or crushed GF-labelled cornflakes, or polenta. Press them on.", hu: "GM zsemlemorzsa — vagy összetört, GM jelölésű kukoricapehely, vagy polenta. Nyomkodd rá."}}
+        - {icon: "om:1F9CA", label: {en: Rest, hu: Pihentetés}, time: {en: "10 min", hu: "10 perc"}, note: {en: "10 minutes in the fridge: the coat sticks and stays on in the pan.", hu: "10 perc a hűtőben: a bunda megtapad, és nem válik le sütéskor."}}
+        - {icon: "om:1F525", label: {en: Fry, hu: Sütés}, time: "160–170 °C", note: {en: "1–2 cm of oil at 160–170 °C (GF crumbs brown faster than wheat), turn once.", hu: "1–2 cm olaj, 160–170 °C (a GM morzsa hamarabb barnul, mint a búzás), egyszer fordítsd."}}
+    en:
+      title: Pan-frying, stir-frying, breading
+      body: |
+        - **Shallow-frying** (bundázás, rántás in Hungarian home cooking): 1–2 cm of oil at 170–180 °C, turn once.
+        - **Stir-frying:** everything cut small and ready before you start, a very hot wok, little oil, constant movement.
+          Sauce last. **Soy sauce has wheat** — use tamari or a GF soy sauce.
+        - **Breading (rántott hús) GF:** GF flour mix → beaten egg → GF breadcrumbs (or crushed cornflakes labelled GF,
+          or polenta). Press the crumbs on, rest 10 minutes in the fridge, fry at 160–170 °C — GF crumbs brown faster.
+    hu:
+      title: Serpenyőben sütés, wok, panírozás
+      body: |
+        - **Bő olajban sütés serpenyőben** (bundázás, rántás): 1–2 cm olaj 170–180 °C-on, egyszer fordítva.
+        - **Wokban sütés:** mindent apróra vágva, előkészítve, mielőtt elkezded; nagyon forró wok, kevés olaj, folyamatos
+          mozgatás. A szósz a végén. **A szójaszószban búza van** — tamarit vagy GM szójaszószt használj.
+        - **Rántott hús GM:** GM lisztkeverék → felvert tojás → GM zsemlemorzsa (vagy GM jelölésű kukoricapehely-morzsa,
+          vagy kukoricadara). Nyomkodd rá, pihentesd 10 percig hűtőben, és 160–170 °C-on süsd — a GM morzsa gyorsabban barnul.
+  - id: sous-vide-smoke
+    chart:
+      type: scale
+      unit: °C
+      min: 20
+      max: 130
+      bands:
+        - from: 20
+          to: 30
+          fill: "#9FD3F2"
+          label: {en: Cold smoking, hu: Hidegfüstölés}
+          range: {en: "below 30 °C", hu: "30 °C alatt"}
+          note: {en: "After curing: bacon (szalonna), ham, cheese. Curing salt and time do the safety work — follow a tested recipe.", hu: "Pácolás után: szalonna, sonka, sajt. A pácsó és az idő adja a biztonságot — kipróbált receptet kövess."}
+        - from: 49
+          to: 51
+          fill: "#F4A08A"
+          label: {en: Salmon, hu: Lazac}
+          range: {en: "50 °C · 30–40 min", hu: "50 °C · 30–40 perc"}
+          note: {en: "Sous-vide salmon: 50 °C for 30–40 minutes.", hu: "Sous-vide lazac: 50 °C, 30–40 perc."}
+        - from: 54
+          to: 56
+          fill: "#B5523A"
+          label: {en: Steak, hu: Steak}
+          range: {en: "54–56 °C · 1–3 h", hu: "54–56 °C · 1–3 óra"}
+          note: {en: "Steak: 54–56 °C for 1–3 hours, then a hard sear.", hu: "Steak: 54–56 °C 1–3 óráig, aztán erős elősütés."}
+        - from: 63
+          to: 65
+          fill: "#E8C77A"
+          label: {en: Chicken breast, hu: Csirkemell}
+          range: {en: "63–65 °C · 1.5–2 h", hu: "63–65 °C · 1,5–2 óra"}
+          note: {en: "Chicken breast: 63–65 °C for 1.5–2 hours — safe because of the time it is held.", hu: "Csirkemell: 63–65 °C 1,5–2 óráig — a tartási idő miatt biztonságos."}
+        - from: 90
+          to: 120
+          fill: "#C9612E"
+          label: {en: Hot smoking, hu: Melegfüstölés}
+          note: {en: "90–120 °C: cooks and flavours — fish, sausages, ribs. Hungarian classics use beech wood.", hu: "90–120 °C: megsüti és ízesíti — hal, kolbász, oldalas. A magyar klasszikusok bükkfával füstölnek."}
+      marks:
+        - {value: 30, label: "30"}
+        - {value: 50, label: "50"}
+        - {value: 65, label: "65"}
+        - {value: 90, label: "90"}
+        - {value: 120, label: "120"}
+    en:
+      title: Sous-vide and smoking
+      body: |
+        **Sous-vide:** food vacuum-sealed and held in a water bath at the exact target temperature, then seared.
+        Perfect edge-to-edge doneness. Steak 54–56 °C for 1–3 hours; chicken breast 63–65 °C for 1.5–2 hours (safe
+        because of the time held); salmon 50 °C for 30–40 minutes.
+
+        **Smoking:**
+        - **Hot smoking** (90–120 °C): cooks and flavours — fish, sausages, ribs. Hungarian classics use beech wood.
+        - **Cold smoking** (below 30 °C, after curing): bacon (szalonna), ham, cheese. Curing salt and time do the safety
+          work — follow a tested recipe.
+
+        > Smoked meats from the shop: some cures and sausages contain wheat fillers or malt. Check the label (and the sausage maker).
+    hu:
+      title: Sous-vide és füstölés
+      body: |
+        **Sous-vide:** vákuumozott étel vízfürdőben, pontosan a célhőfokon tartva, utána elősütve. Széltől szélig
+        egyforma átsültség. Steak 54–56 °C, 1–3 óra; csirkemell 63–65 °C, 1,5–2 óra (az idő miatt biztonságos);
+        lazac 50 °C, 30–40 perc.
+
+        **Füstölés:**
+        - **Melegfüstölés** (90–120 °C): süt és ízesít — hal, kolbász, oldalas. A magyar hagyomány bükkfát használ.
+        - **Hidegfüstölés** (30 °C alatt, pácolás után): szalonna, sonka, sajt. A pácsó és az idő adja a biztonságot —
+          kipróbált receptet kövess.
+
+        > Bolti füstölt húsok: egyes pácokban és kolbászokban búzás töltőanyag vagy maláta van. Nézd meg a címkét (és a kolbászkészítőt).
+  - id: pickle
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F9FC", label: {en: Clean jars, hu: Tiszta üvegek}, note: {en: "Wash the jars in hot soapy water and dry them in the oven at 120 °C for 15 minutes.", hu: "Mosd el az üvegeket forró mosogatószeres vízben, és szárítsd 120 °C-os sütőben 15 percig."}}
+        - {icon: "om:1F952", label: {en: Pack, hu: Töltés}, note: {en: "Pack the vegetables in the clean jars.", hu: "Rakd a zöldséget a tiszta üvegekbe."}}
+        - {icon: "om:1F4A7", label: {en: The brine, hu: A felöntő}, time: "1 : 1", note: {en: "Water and vinegar (5 % acidity) about 1 : 1, with 1 tbsp salt and 2–4 tbsp sugar per litre. Malt vinegar is barley — use cider, wine or spirit vinegar.", hu: "Víz és ecet (5 %-os) kb. 1 : 1, literenként 1 ek só és 2–4 ek cukor. A malátaecet árpából készül — alma-, bor- vagy szeszecetet használj."}}
+        - {icon: "om:1F525", label: {en: Pour hot, hu: Forrón rá}, note: {en: "Pour the brine hot over the vegetables and close the jars.", hu: "A felöntőt forrón öntsd a zöldségre, és zárd le az üvegeket."}}
+        - {icon: "om:1FAD9", label: {en: Store, hu: Tárolás}, note: {en: "Cool, dark, labelled with the date. Jam is the same idea: fruit and sugar to 104–105 °C, hot into hot jars.", hu: "Hűvösen, sötétben, dátummal. A lekvár ugyanígy: gyümölcs és cukor 104–105 °C-ig, forrón a forró üvegekbe."}}
+    en:
+      title: Pickling and preserving
+      body: |
+        - **Vinegar pickles** (ecetes uborka, csalamádé): a brine of water, vinegar (5 % acidity), sugar and salt —
+          classic Hungarian ratio about **1 : 1 water to vinegar**, 1 tbsp salt and 2–4 tbsp sugar per litre. Pour hot
+          over the vegetables in clean jars.
+        - **Fermented** (kovászos uborka, savanyú káposzta): salt only — see *Temperatures → Fermentation*.
+        - **Jams:** fruit + sugar boiled to 104–105 °C (or until a drop wrinkles on a cold plate); hot into hot jars.
+        - Wash jars in hot soapy water and dry them in the oven at 120 °C for 15 minutes.
+
+        > **Malt vinegar** (malátaecet) is made from barley — use apple cider, wine or spirit vinegar. Plain distilled vinegar is GF in the EU.
+    hu:
+      title: Savanyítás, tartósítás
+      body: |
+        - **Ecetes savanyúság** (ecetes uborka, csalamádé): víz, ecet (5 %-os), cukor és só felöntőlé — a klasszikus
+          magyar arány kb. **1 : 1 víz és ecet**, literenként 1 ek só és 2–4 ek cukor. Forrón öntsd a tiszta üvegekben lévő zöldségre.
+        - **Erjesztett** (kovászos uborka, savanyú káposzta): csak só — lásd *Hőfokok → Erjesztés*.
+        - **Lekvár:** gyümölcs + cukor 104–105 °C-ig főzve (vagy amíg egy csepp a hideg tányéron ráncosodik); forrón a forró üvegekbe.
+        - Az üvegeket mosd el forró mosogatószeres vízben, és szárítsd 120 °C-os sütőben 15 percig.
+
+        > A **malátaecet** árpából készül — almaecetet, borecetet vagy szeszecetet használj. A sima szeszecet az EU-ban GM.

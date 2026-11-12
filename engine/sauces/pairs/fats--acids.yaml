@@ -1,0 +1,10 @@
+# Toasted sesame oil (the one driver of the fats shelf) with the acids.
+sesame-oil:
+  lemon-juice: [1, gentle-company]
+  lime-juice: [2, cuisine-mates]
+  vinegar: [0, harmless]
+  wine-vinegar: [-1, kitchens-apart]
+  balsamic: [-1, kitchens-apart]
+  rice-vinegar: [3, classic-partners, "Toasted sesame oil and rice vinegar: the base of an Asian dressing.", "Pirított szezámolaj és rizsecet: az ázsiai öntetek alapja."]
+  white-wine: [-1, kitchens-apart]
+  red-wine: [-2, kitchens-apart]

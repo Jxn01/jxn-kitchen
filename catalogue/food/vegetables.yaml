@@ -1,0 +1,113 @@
+category: vegetables
+groups:
+  - id: onions
+    en: Onions & garlic
+    hu: Hagymafélék
+    icon: "om:1F9C5"
+    items:
+      - {id: onion, en: Onion, hu: Vöröshagyma, icon: "om:1F9C5", aliases: [onions, yellow onion, brown onion, hagyma, vöröshagymát, fej hagyma, fej vöröshagyma]}
+      - {id: red-onion, en: Red onion, hu: Lilahagyma, icon: "om:1F9C5", aliases: [red onions, lila hagyma]}
+      - {id: spring-onion, en: Spring onion, hu: Újhagyma, aliases: [scallion, scallions, green onion, green onions, spring onions, zöldhagyma]}
+      - {id: shallot, en: Shallot, hu: Mogyoróhagyma, aliases: [shallots, salottahagyma]}
+      - {id: leek, en: Leek, hu: Póréhagyma, aliases: [leeks, póré]}
+      - {id: garlic, en: Garlic, hu: Fokhagyma, icon: "om:1F9C4", aliases: [garlic clove, garlic cloves, gerezd fokhagyma, fokhagymát, fej fokhagyma]}
+      - {id: wild-garlic, en: Wild garlic, hu: Medvehagyma, aliases: [ramsons, bear's garlic]}
+  - id: roots
+    en: Root vegetables
+    hu: Gyökérzöldség
+    icon: "om:1FADC"
+    items:
+      - {id: carrot, en: Carrot, hu: Sárgarépa, icon: "om:1F955", aliases: [carrots, répa, sárgarépát]}
+      - {id: parsley-root, en: Parsley root, hu: Petrezselyemgyökér, aliases: [hamburg parsley, fehérrépa, petrezselyemgyökeret]}
+      - {id: parsnip, en: Parsnip, hu: Paszternák, aliases: [parsnips]}
+      - {id: celeriac, en: Celeriac, hu: Zeller, aliases: [celery root, zellergumó, zellert]}
+      - {id: beetroot, en: Beetroot, hu: Cékla, aliases: [beet, beets, céklát]}
+      - {id: radish, en: Radish, hu: Retek, aliases: [radishes, hónapos retek]}
+      - {id: horseradish, en: Horseradish (fresh), hu: Torma, aliases: [fresh horseradish, tormagyökér]}
+      - {id: ginger, en: Ginger, hu: Gyömbér, icon: "om:1FADA", aliases: [fresh ginger, ginger root, gyömbérgyökér, friss gyömbér]}
+  - id: potatoes-all
+    en: Potatoes
+    hu: Burgonya
+    icon: "om:1F954"
+    items:
+      - {id: potatoes, en: Potatoes, hu: Krumpli, icon: "om:1F954", aliases: [potato, burgonya, krumplit, burgonyát]}
+      - {id: new-potatoes, en: New potatoes, hu: Újkrumpli, icon: "om:1F954", aliases: [baby potatoes, újburgonya]}
+      - {id: sweet-potato, en: Sweet potato, hu: Édesburgonya, icon: "om:1F360", aliases: [sweet potatoes, batáta]}
+  - id: cabbages
+    en: Cabbage & co.
+    hu: Káposztafélék
+    icon: "om:1F966"
+    items:
+      - {id: white-cabbage, en: White cabbage, hu: Fejes káposzta, aliases: [cabbage, káposzta, káposztát]}
+      - {id: red-cabbage, en: Red cabbage, hu: Lilakáposzta, aliases: [lila káposzta]}
+      - {id: savoy-cabbage, en: Savoy cabbage, hu: Kelkáposzta, aliases: [savoy]}
+      - {id: chinese-cabbage, en: Chinese cabbage, hu: Kínai kel, aliases: [napa cabbage, pak choi, bok choy]}
+      - {id: broccoli, en: Broccoli, hu: Brokkoli, icon: "om:1F966"}
+      - {id: cauliflower, en: Cauliflower, hu: Karfiol, aliases: [karfiolt]}
+      - {id: brussels-sprouts, en: Brussels sprouts, hu: Kelbimbó}
+      - {id: kohlrabi, en: Kohlrabi, hu: Karalábé}
+      - {id: kale, en: Kale, hu: Fodros kel, aliases: [leveles kel]}
+  - id: peppers-tomatoes
+    en: Peppers & tomatoes
+    hu: Paprika, paradicsom
+    icon: "om:1FAD1"
+    items:
+      - {id: tomato, en: Tomato, hu: Paradicsom, icon: "om:1F345", aliases: [tomatoes, paradicsomot, friss paradicsom]}
+      - {id: cherry-tomato, en: Cherry tomatoes, hu: Koktélparadicsom, icon: "om:1F345", aliases: [cherry tomato, koktél paradicsom, grape tomatoes]}
+      - {id: hungarian-pepper, en: Hungarian wax pepper, hu: TV paprika, icon: "om:1FAD1", aliases: [green pepper, zöldpaprika, tölteni való paprika, lecsópaprika, banánpaprika, paprikát, tv-paprika, hegyes erős paprika]}
+      - {id: bell-pepper, en: Bell pepper, hu: Kaliforniai paprika, icon: "om:1FAD1", aliases: [bell peppers, red pepper, yellow pepper, red bell pepper, kaliforniai paprikát, színes paprika]}
+      - {id: kapia, en: Pointed red pepper, hu: Kápia paprika, icon: "om:1FAD1", aliases: [kápia, ramiro pepper]}
+      - {id: fresh-chili, en: Fresh chili, hu: Friss csípős paprika, icon: "om:1F336", aliases: [chili pepper, hot pepper, chilli, cseresznyepaprika, erős paprika, jalapeño (fresh), bird's eye chili, csilipaprika]}
+  - id: squash
+    en: Squash, cucumber, eggplant
+    hu: Tökfélék, padlizsán
+    icon: "om:1F952"
+    items:
+      - {id: zucchini, en: Zucchini, hu: Cukkini, aliases: [courgette, courgettes, cukkinit]}
+      - {id: cucumber, en: Cucumber, hu: Uborka, icon: "om:1F952", aliases: [cucumbers, kígyóuborka, salátauborka]}
+      - {id: pumpkin, en: Pumpkin, hu: Sütőtök, aliases: [butternut squash, hokkaido, winter squash, sütőtököt]}
+      - {id: marrow, en: Marrow (főzőtök), hu: Főzőtök, aliases: [vegetable marrow, főzőtököt]}
+      - {id: eggplant, en: Eggplant, hu: Padlizsán, icon: "om:1F346", aliases: [aubergine, aubergines, padlizsánt]}
+  - id: leafy
+    en: Salad & leaves
+    hu: Saláta, levélzöldség
+    icon: "om:1F96C"
+    items:
+      - {id: lettuce, en: Lettuce, hu: Fejes saláta, icon: "om:1F96C", aliases: [salad, saláta, romaine, római saláta]}
+      - {id: iceberg, en: Iceberg lettuce, hu: Jégsaláta, aliases: [iceberg, jégsalátát]}
+      - {id: rocket, en: Rocket, hu: Rukkola, aliases: [arugula, borsmustár]}
+      - {id: spinach, en: Spinach, hu: Spenót, aliases: [baby spinach, spenótot, bébispenót]}
+      - {id: salad-mix, en: Salad mix, hu: Salátamix, aliases: [mixed leaves, mixed salad, saláta keverék]}
+      - {id: lambs-lettuce, en: Lamb's lettuce, hu: Galambbegy, aliases: [corn salad, mache]}
+      - {id: sorrel, en: Sorrel, hu: Sóska, aliases: [sóskát]}
+      - {id: chard, en: Chard, hu: Mángold, aliases: [swiss chard]}
+  - id: mushrooms
+    en: Mushrooms
+    hu: Gomba
+    icon: "om:1F344"
+    items:
+      - {id: champignon, en: Mushrooms (white), hu: Csiperke, icon: "om:E0C9", aliases: [mushroom, mushrooms, button mushrooms, champignon, gomba, csiperkegomba, gombát]}
+      - {id: brown-mushroom, en: Brown mushrooms, hu: Barna csiperke, icon: "om:E0C8", aliases: [chestnut mushrooms, cremini, portobello]}
+      - {id: oyster-mushroom, en: Oyster mushrooms, hu: Laskagomba, aliases: [oyster mushroom, laska]}
+      - {id: shiitake, en: Shiitake, hu: Shiitake, aliases: [shiitake gomba]}
+      - {id: chanterelle, en: Chanterelles, hu: Rókagomba, aliases: [chanterelle, rókagombát]}
+      - {id: porcini-dried, en: Dried porcini, hu: Szárított vargánya, aliases: [porcini, ceps, vargánya, szárított gomba, dried mushrooms]}
+  - id: pods
+    en: Beans, peas & corn
+    hu: Zöldbab, borsó, kukorica
+    icon: "om:1FADB"
+    items:
+      - {id: green-beans, en: Green beans, hu: Zöldbab, aliases: [string beans, french beans, zöldbabot, sárgahüvelyű bab, vajbab]}
+      - {id: peas, en: Peas, hu: Zöldborsó, icon: "om:1FADB", aliases: [green peas, frozen peas, borsó, zöldborsót, fagyasztott borsó]}
+      - {id: corn-cob, en: Corn on the cob, hu: Csöves kukorica, icon: "om:1F33D", aliases: [corn cob, főtt kukorica, kukoricacső]}
+      - {id: sugar-snap, en: Sugar snap peas, hu: Cukorborsó, aliases: [snow peas, mangetout]}
+  - id: other-veg
+    en: Other veg
+    hu: Egyéb zöldség
+    icon: "om:1F96C"
+    items:
+      - {id: celery, en: Celery (stalks), hu: Szárzeller, aliases: [celery, celery stalks, celery leaves, halványító zeller, zellerszár, zellerzöld, zeller zöldje, zellerlevél]}
+      - {id: asparagus, en: Asparagus, hu: Spárga, aliases: [green asparagus, white asparagus, zöldspárga, fehér spárga, spárgát]}
+      - {id: fennel, en: Fennel (bulb), hu: Édeskömény (gumó), aliases: [fennel bulb, fennel, édeskömény gumó]}
+      - {id: artichoke, en: Artichoke, hu: Articsóka, aliases: [artichokes, artichoke hearts]}
+      - {id: sprouts, en: Sprouts, hu: Csíra, aliases: [bean sprouts, mungbab csíra, csírák]}

@@ -1,0 +1,67 @@
+# Every icon the app uses. `openmoji: <code>` = OpenMoji 17 colour SVG (CC BY-SA 4.0, fetched by build_sprite.py);
+# `custom: <file>` = one we drew in OpenMoji's style (icons/custom/). The sprite id is `i-<key>`.
+icons:
+  # home tiles
+  recipes: {openmoji: 1F4D6}
+  pantry: {openmoji: 1F96B}
+  cook: {openmoji: 23F1}
+  browse: {openmoji: 1F310}
+  knowhow: {openmoji: 1F525}
+  shopping: {openmoji: 1F6D2}
+  spices: {openmoji: 1FAD9-200D-1F7E5}   # a red spice jar
+  sauces: {openmoji: 1FAD7}              # pouring liquid: "anything that flows"
+  settings: {openmoji: '2699'}
+  # weather (HA conditions -> server/kitchen/weather.py)
+  sunny: {openmoji: '2600'}
+  clear-night: {openmoji: 1F319}
+  partlycloudy: {openmoji: 26C5}
+  cloudy: {openmoji: '2601'}
+  rainy: {openmoji: 1F327}
+  pouring: {openmoji: 1F327}
+  snowy: {openmoji: 1F328}
+  fog: {openmoji: 1F32B}
+  lightning: {openmoji: 26C8}
+  windy: {openmoji: 1F32C}
+  hail: {openmoji: 1F328}
+  exceptional: {openmoji: 26A0}
+  # chrome
+  timer: {openmoji: 23F2}
+  back: {openmoji: 2B05}
+  home: {openmoji: 1F3E0}       # Browse overlay: back to the kitchen app
+  save: {openmoji: 1F4E5}       # Browse overlay: save this recipe
+  camera: {openmoji: 1F4F7}     # Recipes: from a photo
+  tip: {openmoji: 1F4A1}        # Recipe: the GF tips (was a 💡 emoji glyph)
+  keyboard: {openmoji: '2328'}
+  language: {openmoji: 1F310}
+  moon: {openmoji: 1F319}
+  sound-on: {openmoji: 1F50A}
+  sound-off: {openmoji: 1F507}
+  offline: {openmoji: 1F4F5}
+  wheat: {openmoji: 1F33E}
+  search: {openmoji: 1F50D}
+  checkmark: {openmoji: 2714}
+  trash: {openmoji: 1F5D1}
+  plus: {openmoji: 2795}
+  folder: {openmoji: 1F4C1}          # recipe folders: a folder tile, the Move buttons
+  folder-open: {openmoji: 1F4C2}     # the folder being looked at (breadcrumbs, the picker's current place)
+  # idle-scene props
+  chicken: {openmoji: 1F414}
+  carrot: {openmoji: 1F955}
+  knife: {openmoji: 1F52A}
+
+  # drawn by components themselves (web/src — Fridge, Swatches…): named in code, so they must be declared here
+  om-1f336: {openmoji: 1F336}
+  om-1f34e: {openmoji: 1F34E}
+  om-1f41f: {openmoji: 1F41F}
+  om-1f955: {openmoji: 1F955}
+  om-1f95a: {openmoji: 1F95A}
+  om-1f95b: {openmoji: 1F95B}
+  om-1f961: {openmoji: 1F961}
+  om-1f963: {openmoji: 1F963}
+  om-1f966: {openmoji: 1F966}
+  om-1f969: {openmoji: 1F969}
+  om-1f96b: {openmoji: 1F96B}
+  om-1f9c0: {openmoji: 1F9C0}
+  om-1f9c3: {openmoji: 1F9C3}
+  om-1f9c8: {openmoji: 1F9C8}
+  om-1fad9: {openmoji: 1FAD9}

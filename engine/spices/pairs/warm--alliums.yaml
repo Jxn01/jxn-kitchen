@@ -1,0 +1,55 @@
+# Warm & sweet × salt, sugar & alliums — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+cinnamon:
+  salt: [1, seasoning-basic]
+  sugar: [3, classic-partners, "Cinnamon and sugar: the jar on every Hungarian table for pancakes and rice pudding.", "Fahéj és cukor: fahéjas cukor minden palacsintához és tejberizshez."]
+  brown-sugar: [2, warm-together]
+  garlic-powder: [-1, dessert-or-roast]
+  onion-powder: [0, harmless]
+cloves:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [2, warm-together]
+  garlic-powder: [0, harmless]
+  onion-powder: [1, cuisine-mates]
+nutmeg:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [0, harmless]
+  onion-powder: [1, gentle-company]
+allspice:
+  salt: [1, seasoning-basic]
+  sugar: [1, gentle-company]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [2, cuisine-mates]
+  onion-powder: [1, cuisine-mates]
+cardamom:
+  salt: [0, harmless]
+  sugar: [2, warm-together]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [-1, dessert-or-roast]
+  onion-powder: [-1, dessert-or-roast]
+star-anise:
+  salt: [0, harmless]
+  sugar: [1, gentle-company]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [1, cuisine-mates]
+  onion-powder: [0, harmless]
+vanilla-pod:
+  salt: [1, seasoning-basic]
+  sugar: [3, classic-partners, "Vanilla and sugar: vaníliás cukor — the most Hungarian of baking jars.", "Vanília és cukor: vaníliás cukor — a legmagyarabb sütős üveg."]
+  brown-sugar: [2, warm-together]
+  garlic-powder: [-3, dessert-or-roast, "Vanilla and garlic: no dish on earth wants both in one pinch.", "Vanília és fokhagyma: a világon egy étel sem kéri a kettőt egy csipetben."]
+  onion-powder: [-2, dessert-or-roast]
+ground-ginger:
+  salt: [1, seasoning-basic]
+  sugar: [2, warm-together]
+  brown-sugar: [2, sweet-savoury]
+  garlic-powder: [3, classic-partners, "Ginger and garlic: the paste that starts half the curries and stir-fries of Asia.", "Gyömbér és fokhagyma: ez a páros indítja Ázsiában a curryk és a wokos ételek felét."]
+  onion-powder: [2, cuisine-mates]
+anise-seed:
+  salt: [0, harmless]
+  sugar: [2, warm-together]
+  brown-sugar: [1, gentle-company]
+  garlic-powder: [-1, two-leads]
+  onion-powder: [0, harmless]

@@ -1,0 +1,10 @@
+sesame-oil:
+  onion: [1, gentle-company]
+  shallot: [1, cuisine-mates]
+  garlic: [2, aromatic-base]
+  ginger: [3, classic-partners, "Sesame oil and ginger: the scent of a wok.", "Szezámolaj és gyömbér: a wok illata."]
+  horseradish: [-1, two-leads]
+  capers: [-2, kitchens-apart]
+  anchovies: [-1, kitchens-apart]
+  garlic-powder: [1, aromatic-base]
+  onion-powder: [0, harmless]

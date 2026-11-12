@@ -1,0 +1,9 @@
+# Defence in depth (deploy.sh already ships only git-visible files): never let these into an image.
+.git
+**/.env
+**/.env.*
+!**/.env.example
+**/*.token
+**/kitchen.env
+**/node_modules
+**/dist

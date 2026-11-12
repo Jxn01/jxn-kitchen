@@ -1,0 +1,168 @@
+# The reference blends (spec 2026-10-19 §4.2) — ONE structured source.
+#   source: diy   = the know-how's "Make your own" page; seeded into the library once, and tested against that page's text
+#           world = reference only: the know-how's World and Hungarian-kitchen pages, and a few more — for "nearest classic"
+#   parts in level teaspoons (the page's own numbers; optional "(+ …)" extras on the page are left out)
+#   expected: the calibration fixture — the verdict word and EXACTLY the finding ids the engine must report (§9)
+classics:
+  # --- diy: the 16 of "Make your own" --------------------------------------------------------------------------------
+  - id: porkolt
+    source: diy
+    en: Pörkölt blend
+    hu: Pörköltfűszer
+    parts: {sweet-paprika: 4, caraway: 1, marjoram: 1, garlic-powder: 1, black-pepper: 0.5}
+    method: {en: "Add it off the heat, with the onions.", hu: "A hagymához add, lehúzva a tűzről."}
+    expected: {word: good, findings: [backbone:hungarian-base, classic:porkolt, cuisine, heat:mild, pair:caraway+garlic-powder, pair:caraway+marjoram, pair:caraway+sweet-paprika, pair:garlic-powder+sweet-paprika, pair:marjoram+sweet-paprika, pairs-rest, timing-conflict]}
+  - id: gyros
+    source: diy
+    en: Gyros
+    hu: Gyros
+    parts: {oregano: 2, garlic-powder: 2, onion-powder: 2, sweet-paprika: 2, thyme: 1, cumin: 1, coriander-seed: 1, black-pepper: 1}
+    method: {en: "With oil and lemon as a marinade.", hu: "Olajjal és citrommal pácnak."}
+    expected: {word: good, findings: [backbone:rub-base, classic:gyros, cuisine, heat:mild, pair:cumin+garlic-powder, pair:garlic-powder+onion-powder, pair:garlic-powder+oregano, pairs-rest, timing-conflict]}
+  - id: grill-rub
+    source: diy
+    en: Grill rub
+    hu: Grill fűszer
+    parts: {smoked-paprika: 6, brown-sugar: 3, salt: 2, garlic-powder: 2, onion-powder: 2, black-pepper: 1, mustard-powder: 1, cayenne: 0.5}
+    method: {en: "Rub on the night before. Use a GF mustard powder — some contain wheat flour.", hu: "Előző este dörzsöld a húsba. GM mustárport használj — némelyikben búzaliszt van."}
+    expected: {word: good, findings: [backbone:rub-base, classic:grill-rub, cuisine, heat:warm, no-lift, pair:brown-sugar+smoked-paprika, pair:garlic-powder+smoked-paprika, pair:salt+smoked-paprika, pairs-rest, sugar-burns]}
+  - id: curry
+    source: diy
+    en: Curry powder
+    hu: Curry
+    parts: {coriander-seed: 4, cumin: 2, turmeric: 2, ground-ginger: 1, fenugreek: 1, cinnamon: 0.5, cardamom: 0.5, cayenne: 0.5, black-pepper: 0.5}
+    method: {en: "Fry it in the fat for a minute before the liquid goes in.", hu: "Egy percig pirítsd a zsiradékban, mielőtt a folyadék rákerül."}
+    expected: {word: sings, findings: [backbone:curry-base, backbone:warm-earthy-core, classic:curry, cuisine, heat:mild, pair:coriander-seed+cumin, pair:cumin+turmeric, pairs-rest]}
+  - id: garam-masala
+    source: diy
+    en: Garam masala
+    hu: Garam masala
+    parts: {coriander-seed: 3, cumin: 2, cardamom: 1, black-pepper: 1, cinnamon: 0.5, cloves: 0.5, nutmeg: 0.5}
+    method: {en: "Stir it in at the end.", hu: "A végén keverd bele."}
+    expected: {word: sings, findings: [backbone:masala-warmth, backbone:warm-earthy-core, backbone:warm-trio, classic:garam-masala, cuisine, heat:mild, pair:cardamom+coriander-seed, pair:cardamom+cumin, pair:coriander-seed+cumin, pairs-rest]}
+  - id: taco
+    source: diy
+    en: Taco seasoning
+    hu: Taco fűszer
+    parts: {chili-powder: 4, cumin: 2, sweet-paprika: 1, garlic-powder: 1, onion-powder: 1, oregano: 1, black-pepper: 0.5, salt: 1}
+    method: {en: "Check the chilli powder is pure chilli — some blends hide flour.", hu: "Nézd meg, hogy a chilipor tiszta chili legyen — egyes keverékekben liszt is van."}
+    expected: {word: good, findings: [backbone:chilli-base, backbone:rub-base, classic:taco, cuisine, heat:warm, no-lift, pair:chili-powder+cumin, pair:cumin+salt, pairs-rest, timing-conflict]}
+  - id: herbes-de-provence
+    source: diy
+    en: Herbes de Provence
+    hu: Provence-i keverék
+    parts: {thyme: 3, rosemary: 2, savory: 2, oregano: 1, marjoram: 1}
+    method: {en: "Half a teaspoon of lavender is the Provençal extra.", hu: "Egy fél teáskanál levendula a provence-i extra."}
+    expected: {word: good, findings: [backbone:mediterranean, classic:herbes-de-provence, cuisine, heat:mild, pair:oregano+thyme, pair:rosemary+thyme, pair:savory+thyme, pairs-rest]}
+  - id: gingerbread
+    source: diy
+    en: Gingerbread spice
+    hu: Mézeskalács-fűszer
+    parts: {cinnamon: 4, ground-ginger: 2, cloves: 1, nutmeg: 1, allspice: 1, cardamom: 0.5, star-anise: 0.5}
+    method: {en: "Gingerbread with GF flour, apple desserts, mulled wine.", hu: "GM lisztes mézeskalács, almás sütik, forralt bor."}
+    expected: {word: sings, findings: [backbone:gingerbread, backbone:warm-trio, classic:gingerbread, cuisine, heat:warm, pair:allspice+cinnamon, pair:cinnamon+cloves, pair:cinnamon+ground-ginger, pair:cinnamon+nutmeg, pairs-rest]}
+  - id: zaatar
+    source: diy
+    en: Za'atar
+    hu: Za'atar
+    parts: {thyme: 3, sumac: 2, sesame: 2, salt: 0.5}
+    method: {en: "Toast the sesame. Stir into olive oil for a dip.", hu: "A szezámmagot pirítsd meg. Olívaolajjal keverve mártogatósnak."}
+    expected: {word: good, findings: [backbone:zaatar, classic:zaatar, cuisine, heat:mild, pair:salt+thyme, pair:sesame+sumac, pair:sesame+thyme, pair:sumac+thyme, pairs-rest]}
+  - id: ras-el-hanout
+    source: diy
+    en: Ras el hanout
+    hu: Ras el hanout
+    parts: {cumin: 2, ground-ginger: 2, coriander-seed: 2, turmeric: 1, cinnamon: 1, sweet-paprika: 1, cardamom: 0.5, allspice: 0.5, black-pepper: 0.5}
+    method: {en: "Lamb, chickpeas, carrots.", hu: "Bárány, csicseriborsó, répa."}
+    expected: {word: sings, findings: [backbone:curry-base, backbone:warm-earthy-core, classic:ras-el-hanout, cuisine, heat:mild, pair:coriander-seed+cumin, pair:cumin+ground-ginger, pair:cumin+turmeric, pairs-rest, timing-conflict]}
+  - id: cajun
+    source: diy
+    en: Cajun
+    hu: Cajun
+    parts: {sweet-paprika: 3, garlic-powder: 2, onion-powder: 1, oregano: 1, thyme: 1, black-pepper: 1, salt: 1, cayenne: 0.5}
+    method: {en: "Chicken, prawns, potato wedges.", hu: "Csirke, garnélarák, steakburgonya."}
+    expected: {word: good, findings: [backbone:rub-base, classic:cajun, cuisine, heat:warm, pair:garlic-powder+salt, pairs-rest]}
+  - id: five-spice
+    source: diy
+    en: Chinese five-spice
+    hu: Kínai ötfűszer
+    parts: {star-anise: 2, fennel-seed: 2, cinnamon: 1, sichuan-pepper: 1, cloves: 0.5}
+    method: {en: "Ground fine. Duck, pork belly. Black pepper stands in if you have no Sichuan.", hu: "Finomra őrölve. Kacsa, sertésoldalas. Ha nincs szecsuáni bors, fekete is jó."}
+    expected: {word: good, findings: [backbone:chinese-five, classic:five-spice, cuisine, heat:warm, pair:cinnamon+star-anise, pair:cloves+star-anise, pair:fennel-seed+star-anise, pair:sichuan-pepper+star-anise, pairs-rest]}
+  - id: italian-herbs
+    source: diy
+    en: Italian herbs
+    hu: Olasz fűszerkeverék
+    parts: {oregano: 2, basil-dried: 2, thyme: 1, rosemary: 1, marjoram: 1}
+    method: {en: "Tomato sauces, pizza on a GF base.", hu: "Paradicsomszószok, pizza GM tésztán."}
+    expected: {word: good, findings: [backbone:mediterranean, classic:italian-herbs, cuisine, heat:mild, pair:basil-dried+oregano, pair:oregano+rosemary, pair:oregano+thyme, pair:rosemary+thyme, pairs-rest]}
+  - id: kolbasz
+    source: diy
+    en: Kolbász (sausage) spice
+    hu: Kolbászfűszer
+    parts: {sweet-paprika: 4, hot-paprika: 1, garlic-powder: 1, caraway: 0.5, black-pepper: 0.5}
+    method: {en: "About 2 tablespoons and 18–20 g salt per kilo of mince.", hu: "Kilónként kb. 2 evőkanál és 18–20 g só a darált húshoz."}
+    expected: {word: good, findings: [backbone:kolbasz-base, classic:kolbasz, cuisine, heat:warm, no-lift, pair:black-pepper+sweet-paprika, pair:caraway+sweet-paprika, pair:garlic-powder+hot-paprika, pair:garlic-powder+sweet-paprika, pair:hot-paprika+sweet-paprika, pairs-rest, timing-conflict]}
+  - id: pickling
+    source: diy
+    en: Pickling spice (savanyúság)
+    hu: Savanyúságfűszer
+    parts: {mustard-seed: 2, coriander-seed: 1, black-pepper: 1, dill-seed: 1, allspice: 0.5, bay-leaf: 0.5}
+    method: {en: "Whole spices — a tablespoon per litre jar.", hu: "Egészben — literes üveghez egy evőkanál."}
+    expected: {word: good, findings: [backbone:pickling, classic:pickling, cuisine, heat:warm, pair:allspice+mustard-seed, pair:black-pepper+mustard-seed, pair:coriander-seed+mustard-seed, pair:dill-seed+mustard-seed, pairs-rest]}
+  - id: mulled-wine
+    source: diy
+    en: Mulled wine (forralt bor)
+    hu: Forralt bor fűszer
+    parts: {cinnamon: 2, orange-peel: 2, cloves: 1, star-anise: 1, allspice: 1, cardamom: 0.5}
+    method: {en: "Whole spices. A tablespoon per litre of red wine with 3–4 tablespoons sugar; heat, never boil.", hu: "Egészben. Egy liter vörösborhoz egy evőkanál, 3–4 evőkanál cukorral; melegítsd, de ne forrald."}
+    expected: {word: good, findings: [backbone:mulled, classic:mulled-wine, cuisine, heat:mild, pair:cinnamon+cloves, pair:cinnamon+orange-peel, pair:cinnamon+star-anise, pair:cloves+orange-peel, pair:orange-peel+star-anise, pairs-rest]}
+  # --- world: reference blends (the know-how's World and Hungarian-kitchen pages, and a few classics more) -----------
+  - id: baharat
+    source: world
+    en: Baharat
+    hu: Baharat
+    parts: {black-pepper: 2, sweet-paprika: 2, cumin: 2, coriander-seed: 2, cinnamon: 1, cloves: 0.5, cardamom: 0.5, nutmeg: 0.5}
+    expected: {word: sings, findings: [backbone:masala-warmth, backbone:warm-earthy-core, backbone:warm-trio, classic:baharat, cuisine, heat:warm, pair:black-pepper+cumin, pair:coriander-seed+cumin, pairs-rest, timing-conflict]}
+  - id: berbere
+    source: world
+    en: Berbere
+    hu: Berbere
+    parts: {chili-powder: 3, cayenne: 1, fenugreek: 1, ground-ginger: 1, coriander-seed: 1, cardamom: 0.5, allspice: 0.5, cloves: 0.5, black-pepper: 0.5}
+    expected: {word: good, findings: [classic:berbere, cuisine, heat:hot, pairs-rest, timing-conflict]}
+  - id: jerk
+    source: world
+    en: Jerk
+    hu: Jerk
+    parts: {allspice: 3, thyme: 2, garlic-powder: 2, cayenne: 1, ground-ginger: 1, black-pepper: 1, brown-sugar: 1, salt: 1, cinnamon: 0.5, nutmeg: 0.5}
+    expected: {word: good, findings: [backbone:jerk, classic:jerk, cuisine, heat:warm, pair:allspice+thyme, pairs-rest, sugar-burns]}
+  - id: chicken-seasoning
+    source: world
+    en: Chicken seasoning
+    hu: Csirkefűszer
+    parts: {sweet-paprika: 3, salt: 3, garlic-powder: 2, onion-powder: 1, black-pepper: 1, thyme: 1}
+    expected: {word: good, findings: [backbone:rub-base, classic:chicken-seasoning, cuisine, heat:mild, pair:black-pepper+salt, pair:garlic-powder+salt, pair:salt+sweet-paprika, pair:salt+thyme, pairs-rest]}
+  - id: roast-potato
+    source: world
+    en: Roast potato
+    hu: Sült krumpli fűszer
+    parts: {sweet-paprika: 2, salt: 2, garlic-powder: 1, rosemary: 1, caraway: 1}
+    expected: {word: good, findings: [classic:roast-potato, cuisine, heat:mild, pair:caraway+salt, pair:garlic-powder+salt, pair:rosemary+salt, pair:salt+sweet-paprika, pairs-rest, timing-conflict]}
+  - id: quatre-epices
+    source: world
+    en: Quatre épices
+    hu: Quatre épices (négyfűszer)
+    parts: {white-pepper: 4, nutmeg: 1, cloves: 1, ground-ginger: 1}
+    expected: {word: good, findings: [backbone:quatre-epices, classic:quatre-epices, cuisine, heat:hot, no-lift, pair:cloves+white-pepper, pair:ground-ginger+white-pepper, pair:nutmeg+white-pepper, pairs-rest]}
+  - id: panch-phoron
+    source: world
+    en: Panch phoron
+    hu: Panch phoron
+    parts: {cumin: 1, fennel-seed: 1, mustard-seed: 1, fenugreek: 1, nigella: 1}
+    expected: {word: good, findings: [backbone:panch-phoron, classic:panch-phoron, cuisine, heat:mild, pair:cumin+fennel-seed, pair:cumin+fenugreek, pair:cumin+mustard-seed, pair:cumin+nigella, pair:fenugreek+mustard-seed, pair:fenugreek+nigella, pairs-rest]}
+  - id: lemon-pepper
+    source: world
+    en: Lemon pepper
+    hu: Citromos bors
+    parts: {black-pepper: 3, lemon-peel: 2, salt: 1, garlic-powder: 0.5}
+    expected: {word: good, findings: [backbone:lemon-pepper, classic:lemon-pepper, cuisine, heat:warm, pair:black-pepper+lemon-peel, pair:black-pepper+salt, pair:lemon-peel+salt, pairs-rest]}

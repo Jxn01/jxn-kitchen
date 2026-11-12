@@ -1,0 +1,38 @@
+category: sweet
+groups:
+  - id: spreads-syrups
+    en: Honey, jam & syrups
+    hu: Méz, lekvár, szirup
+    icon: "om:1F36F"
+    items:
+      - {id: honey, en: Honey, hu: Méz, icon: "om:1F36F", aliases: [mézet, akácméz, virágméz]}
+      - {id: jam, en: Jam, hu: Lekvár, icon: "om:1FAD9-200D-1F7E5", aliases: [preserves, jelly, dzsem, baracklekvár, szilvalekvár, eperlekvár, lekvárt]}
+      - {id: maple-syrup, en: Maple syrup, hu: Juharszirup, aliases: [juhar szirup]}
+      - {id: agave, en: Agave syrup, hu: Agávészirup, aliases: [agave, agave nectar]}
+      - {id: condensed-milk, en: Condensed milk, hu: Sűrített tej, aliases: [sweetened condensed milk, tubusos sűrített tej, karamellizált sűrített tej, dulce de leche]}
+      - {id: chocolate-spread, en: Chocolate hazelnut spread, hu: Kakaós mogyorókrém, gluten: label, aliases: [nutella, mogyorókrém, chocolate spread]}
+      - {id: malt-extract, en: Malt extract, hu: Malátakivonat, gluten: contains, swap: honey, pantry: false, aliases: [malt, malt syrup, barley malt, barley malt syrup, maláta, malátaszirup, árpamaláta, malátakivonatot], tip_en: "Malt is barley: use honey or maple syrup for the sweetness and colour.", tip_hu: "A maláta árpából készül: mézzel vagy juharsziruppal pótold az édességét és a színét."}
+      - {id: chestnut-puree, en: Chestnut purée, hu: Gesztenyemassza, aliases: [chestnut puree, gesztenyepüré, gesztenyemasszát]}
+  - id: chocolate
+    en: Chocolate
+    hu: Csokoládé
+    icon: "om:1F36B"
+    items:
+      - {id: dark-chocolate, en: Dark chocolate, hu: Étcsokoládé, icon: "om:1F36B", gluten: label, aliases: [dark chocolate, cooking chocolate, étcsoki, főzőcsokoládé, tortabevonó, 70%-os csokoládé]}
+      - {id: milk-chocolate, en: Milk chocolate, hu: Tejcsokoládé, icon: "om:1F36B", gluten: label, aliases: [tejcsoki]}
+      - {id: white-chocolate, en: White chocolate, hu: Fehér csokoládé, icon: "om:1F36B", gluten: label, aliases: [fehércsoki]}
+  - id: biscuits-snacks
+    en: Biscuits & snacks (GF)
+    hu: Keksz, nasi (GM)
+    icon: "om:1F36A"
+    items:
+      - {id: gf-biscuits, en: Biscuits, hu: Keksz, icon: "om:1F36A", aliases: [gf biscuits, gf cookies, gluténmentes keksz, gluténmentes háztartási keksz]}
+      - {id: gf-ladyfingers, en: Ladyfingers, hu: Babapiskóta, aliases: [gf ladyfingers, gluténmentes babapiskóta]}
+      - {id: gf-wafers, en: Wafers, hu: Ostya, aliases: [gf wafers, gluténmentes ostya, gluténmentes nápolyi]}
+      - {id: cornflakes, en: Cornflakes, hu: Kukoricapehely, gluten: label, aliases: [corn flakes, gf cornflakes]}
+      - {id: popcorn, en: Popcorn kernels, hu: Pattogatni való kukorica, icon: "om:1F37F", aliases: [popcorn, pattogatott kukorica]}
+      - {id: crisps, en: Crisps, hu: Chips, gluten: label, aliases: [chips, potato chips, burgonyachips]}
+      - {id: ice-cream, en: Ice cream, hu: Jégkrém, icon: "om:1F368", gluten: label, aliases: [fagylalt, vanilla ice cream, vaníliafagylalt]}
+      - {id: biscuits, en: Biscuits (wheat), hu: Keksz (búza), gluten: contains, swap: gf-biscuits, pantry: false, aliases: [biscuits, cookies, digestive, keksz, háztartási keksz, kekszet, graham crackers, butter biscuits], tip_en: "GF biscuits soak faster: dip them only briefly.", tip_hu: "A GM keksz gyorsabban átázik: csak röviden mártsd meg."}
+      - {id: ladyfingers, en: Ladyfingers (wheat), hu: Babapiskóta (búza), gluten: contains, swap: gf-ladyfingers, pantry: false, aliases: [ladyfingers, savoiardi, babapiskóta, babapiskótát], tip_en: "GF ladyfingers soak faster: dip them only briefly.", tip_hu: "A GM babapiskóta gyorsabban átázik: csak röviden mártsd meg."}
+      - {id: wafers, en: Wafers (wheat), hu: Ostya (búza), gluten: contains, swap: gf-wafers, pantry: false, aliases: [wafer, wafers, ostya, ostyalap, nápolyi], tip_en: "Use GF wafers; they are more fragile, so fill them gently.", tip_hu: "GM ostyát használj; törékenyebb, ezért óvatosan töltsd."}

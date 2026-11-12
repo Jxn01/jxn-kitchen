@@ -1,0 +1,275 @@
+id: grains
+order: 8
+icon: "om:1F35A"
+color: olive
+en:
+  title: GF grains & rice
+  sub: "water ratios · kinds of rice · the method · GF pasta"
+hu:
+  title: GM gabonák, rizs
+  sub: "víz arányok · rizsfajták · a módszer · GM tészta"
+pages:
+  - id: ratios
+    chart:
+      type: layers
+      shape: pot
+      items:
+        - label: {en: White rice, hu: Fehér rizs}
+          value: {en: "1 : 1.5 · 15 min", hu: "1 : 1,5 · 15 perc"}
+          note: {en: "Rinse, simmer covered 15 minutes on the lowest heat, then rest 10 minutes off the heat.", hu: "Mosd meg, fedővel 15 percig a legkisebb lángon, aztán 10 percig pihentesd a tűzről levéve."}
+          layers:
+            - {fill: "#F4F1EA", part: 1, label: {en: rice, hu: rizs}}
+            - {fill: "#9FD3F2", part: 1.5, label: {en: water, hu: víz}}
+        - label: Basmati
+          value: {en: "1 : 1.25 · 12 min", hu: "1 : 1,25 · 12 perc"}
+          note: {en: "Rinse until clear; a little less water keeps the grains long and separate.", hu: "Mosd tisztára; kicsit kevesebb víztől a szemek hosszúak és különállók maradnak."}
+          layers:
+            - {fill: "#F6F0E2", part: 1, label: {en: basmati, hu: basmati}}
+            - {fill: "#9FD3F2", part: 1.25, label: {en: water, hu: víz}}
+        - label: {en: Brown rice, hu: Barna rizs}
+          value: {en: "1 : 2 · 40–45 min", hu: "1 : 2 · 40–45 perc"}
+          note: {en: "The bran slows it down: 40–45 minutes, then 10 minutes' rest.", hu: "A korpája lassítja: 40–45 perc, aztán 10 perc pihentetés."}
+          layers:
+            - {fill: "#C9A27E", part: 1, label: {en: brown rice, hu: barna rizs}}
+            - {fill: "#9FD3F2", part: 2, label: {en: water, hu: víz}}
+        - label: {en: Wild rice, hu: Vadrizs}
+          value: {en: "1 : 3 · 45–55 min", hu: "1 : 3 · 45–55 perc"}
+          note: {en: "Really a grass seed. Cook until some grains split open; drain any water left.", hu: "Valójában fűmag. Addig főzd, amíg néhány szem fel nem reped; a maradék vizet öntsd le."}
+          layers:
+            - {fill: "#3A2E28", part: 1, label: {en: wild rice, hu: vadrizs}}
+            - {fill: "#9FD3F2", part: 3, label: {en: water, hu: víz}}
+        - label: Quinoa
+          value: {en: "1 : 2 · 15 min", hu: "1 : 2 · 15 perc"}
+          note: {en: "Rinse well — the coating is bitter. Done when the little white tails curl out.", hu: "Mosd meg alaposan — a bevonata keserű. Kész, amikor kibújnak a kis fehér farkincák."}
+          layers:
+            - {fill: "#E6D4A8", part: 1, label: {en: quinoa, hu: quinoa}}
+            - {fill: "#9FD3F2", part: 2, label: {en: water, hu: víz}}
+        - label: {en: Millet, hu: Köles}
+          value: {en: "1 : 2.5 · 20 min", hu: "1 : 2,5 · 20 perc"}
+          note: {en: "Rinse, toast it dry for a nutty taste. Less water for a fluffy side, more for a creamy one.", hu: "Mosd meg, pirítsd szárazon a diós ízért. Kevesebb víz a szemes körethez, több a krémeshez."}
+          layers:
+            - {fill: "#F2D36B", part: 1, label: {en: millet, hu: köles}}
+            - {fill: "#9FD3F2", part: 2.5, label: {en: water, hu: víz}}
+        - label: {en: Buckwheat, hu: Hajdina}
+          value: {en: "1 : 2 · 15–20 min", hu: "1 : 2 · 15–20 perc"}
+          note: {en: "No relation to wheat — it is GF. Toasted (kasha) stays separate; raw cooks softer.", hu: "Semmi köze a búzához — gluténmentes. A pirított (kása) szemes marad, a nyers puhábbra fő."}
+          layers:
+            - {fill: "#8A6A4A", part: 1, label: {en: buckwheat, hu: hajdina}}
+            - {fill: "#9FD3F2", part: 2, label: {en: water, hu: víz}}
+        - label: {en: Amaranth, hu: Amaránt}
+          value: {en: "1 : 3 · 20–25 min", hu: "1 : 3 · 20–25 perc"}
+          note: {en: "Tiny and sticky — porridge-like rather than fluffy. Lovely in soups.", hu: "Apró és ragacsos — inkább kásás, mint szemes. Levesbe kiváló."}
+          layers:
+            - {fill: "#EAD9A6", part: 1, label: {en: amaranth, hu: amaránt}}
+            - {fill: "#9FD3F2", part: 3, label: {en: water, hu: víz}}
+        - label: Teff
+          value: {en: "1 : 3 · 15–20 min", hu: "1 : 3 · 15–20 perc"}
+          note: {en: "The world's tiniest grain: stir now and then, it turns into a soft porridge.", hu: "A világ legapróbb gabonája: néha keverd meg, puha kása lesz belőle."}
+          layers:
+            - {fill: "#A0673C", part: 1, label: {en: teff, hu: teff}}
+            - {fill: "#9FD3F2", part: 3, label: {en: water, hu: víz}}
+        - label: {en: Polenta (cornmeal), hu: Polenta (kukoricadara)}
+          value: {en: "1 : 4 · 5–40 min", hu: "1 : 4 · 5–40 perc"}
+          note: {en: "Whisk it into boiling salted water. Instant: 5 minutes; coarse: 30–40, stirring often.", hu: "Habverővel keverd a forrásban lévő sós vízbe. Instant: 5 perc; durva: 30–40, gyakran keverve."}
+          layers:
+            - {fill: "#F2B705", part: 1, label: {en: cornmeal, hu: kukoricadara}}
+            - {fill: "#9FD3F2", part: 4, label: {en: water, hu: víz}}
+    en:
+      title: Water ratios
+      body: |
+        By volume — the same cup for the grain and the water. Simmer covered on the lowest heat, then rest off the heat.
+
+        | Grain | Grain : water | Simmer |
+        |---|---|---|
+        | White rice | 1 : 1.5 | 15 min + 10 rest |
+        | Basmati | 1 : 1.25 | 12 min + 10 rest |
+        | Brown rice | 1 : 2 | 40–45 min + 10 rest |
+        | Wild rice | 1 : 3 | 45–55 min |
+        | Quinoa | 1 : 2 | 15 min |
+        | Millet | 1 : 2.5 | 20 min |
+        | Buckwheat | 1 : 2 | 15–20 min |
+        | Amaranth | 1 : 3 | 20–25 min |
+        | Teff | 1 : 3 | 15–20 min |
+        | Polenta (cornmeal) | 1 : 4 | 5 (instant) – 40 min |
+
+        - **Salt** the water: about ½ teaspoon per cup of grain.
+        - A cup of raw rice makes about **3 cups** cooked — about 2–3 portions.
+        - In the rice cooker the ratios are the same; see *Appliances → Rice cooker*.
+
+        > All of these are naturally GF. Buy grains and flakes labelled GF where you can — mills that also handle wheat can carry it.
+    hu:
+      title: Víz arányok
+      body: |
+        Térfogat szerint — ugyanazzal a pohárral a gabonát és a vizet. Fedővel, a legkisebb lángon főzd, aztán a tűzről
+        levéve pihentesd.
+
+        | Gabona | Gabona : víz | Főzés |
+        |---|---|---|
+        | Fehér rizs | 1 : 1,5 | 15 perc + 10 pihentetés |
+        | Basmati | 1 : 1,25 | 12 perc + 10 pihentetés |
+        | Barna rizs | 1 : 2 | 40–45 perc + 10 pihentetés |
+        | Vadrizs | 1 : 3 | 45–55 perc |
+        | Quinoa | 1 : 2 | 15 perc |
+        | Köles | 1 : 2,5 | 20 perc |
+        | Hajdina | 1 : 2 | 15–20 perc |
+        | Amaránt | 1 : 3 | 20–25 perc |
+        | Teff | 1 : 3 | 15–20 perc |
+        | Polenta (kukoricadara) | 1 : 4 | 5 (instant) – 40 perc |
+
+        - **Sózd** a vizet: pohár gabonánként kb. ½ teáskanál.
+        - Egy pohár nyers rizsből kb. **3 pohár** főtt lesz — kb. 2–3 adag.
+        - A rizsfőzőben ugyanezek az arányok; lásd *Konyhagépek → Rizsfőző*.
+
+        > Ezek mind természettől gluténmentesek. Ahol lehet, GM jelölésű gabonát és pelyhet vegyél — a búzát is őrlő malmok szennyezhetik.
+  - id: rice-kinds
+    chart:
+      type: board
+      groups:
+        - color: olive
+          icon: "om:1F35A"
+          label: {en: "Long grain: fluffy", hu: "Hosszú szemű: szemes"}
+          note: {en: "Stays separate: side dishes, pilaf, curries. Rinse first.", hu: "Szemes marad: köretnek, piláfnak, curryhez. Előbb mosd meg."}
+          items:
+            - {label: Basmati}
+            - {label: {en: Jasmine, hu: Jázmin}}
+            - {label: {en: Long-grain white, hu: Hosszú szemű fehér}}
+            - {label: {en: Parboiled, hu: Parboiled}}
+        - color: butter
+          icon: "om:1F963"
+          label: {en: "Round grain: creamy", hu: "Gömbölyű szemű: krémes"}
+          note: {en: "Its starch makes it creamy: risotto, rice pudding (tejberizs), stuffed peppers and cabbage. Don't rinse it for risotto.", hu: "A keményítője krémessé teszi: rizottó, tejberizs, töltött paprika és káposzta. Rizottóhoz ne mosd meg."}
+          items:
+            - {label: Arborio}
+            - {label: Carnaroli}
+            - {label: {en: Hungarian round rice, hu: Gömbölyű rizs}}
+            - {label: {en: Sushi rice, hu: Szusirizs}}
+        - color: cocoa
+          icon: "om:1F33E"
+          label: {en: "Whole: chewy, nutty", hu: "Teljes: rágós, diós"}
+          note: {en: "The bran is left on: more flavour and fibre, longer cooking (40–55 minutes).", hu: "Rajta marad a korpa: több íz és rost, hosszabb főzés (40–55 perc)."}
+          items:
+            - {label: {en: Brown rice, hu: Barna rizs}}
+            - {label: {en: Red rice, hu: Vörös rizs}}
+            - {label: {en: Black rice, hu: Fekete rizs}}
+            - {label: {en: Wild rice, hu: Vadrizs}}
+        - color: plum
+          icon: "om:1F361"
+          label: {en: "Sticky: glutinous", hu: "Ragacsos: „glutinous”"}
+          note: {en: "“Glutinous” means sticky — it has NO gluten. Soak, then steam: Asian sweets and mochi.", hu: "A „glutinous” ragacsosat jelent — glutén NINCS benne. Áztasd, aztán gőzöld: ázsiai édességek, mochi."}
+          items:
+            - {label: {en: Sticky rice, hu: Ragacsos rizs}}
+            - {label: {en: Mochi rice, hu: Mochirizs}}
+    en:
+      title: Kinds of rice
+      body: |
+        | Kind | Cooks | Use |
+        |---|---|---|
+        | Long grain — basmati, jasmine, long-grain white, parboiled | fluffy, separate | sides, pilaf, curries |
+        | Round grain — arborio, carnaroli, Hungarian round rice, sushi rice | creamy, sticky | risotto, tejberizs, stuffed peppers and cabbage, sushi |
+        | Whole — brown, red, black, wild | chewy, nutty | salads, bowls (40–55 minutes) |
+        | Sticky ("glutinous") | very sticky | Asian sweets, mochi |
+
+        - **"Glutinous" rice has no gluten** — the word means sticky. It is GF.
+        - Rinse long grain until the water runs clear; don't rinse risotto rice — its surface starch makes it creamy.
+        - Cooked rice keeps a day in the fridge — cool it fast, reheat it once, steaming hot.
+    hu:
+      title: Rizsfajták
+      body: |
+        | Fajta | Főzve | Mire |
+        |---|---|---|
+        | Hosszú szemű — basmati, jázmin, hosszú szemű fehér, parboiled | szemes, különálló | köret, piláf, curry |
+        | Gömbölyű szemű — arborio, carnaroli, gömbölyű rizs, szusirizs | krémes, ragadós | rizottó, tejberizs, töltött paprika és káposzta, szusi |
+        | Teljes — barna, vörös, fekete, vad | rágós, diós | saláták, tálak (40–55 perc) |
+        | Ragacsos („glutinous”) | nagyon ragadós | ázsiai édességek, mochi |
+
+        - **A „glutinous” rizsben nincs glutén** — a szó ragacsosat jelent. Gluténmentes.
+        - A hosszú szemű rizst mosd, amíg tiszta nem lesz a víz; a rizottórizst ne — a felületi keményítője teszi krémessé.
+        - A főtt rizs egy napig áll el a hűtőben — gyorsan hűtsd le, egyszer és forróra melegítsd.
+  - id: method
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F4A7", label: {en: Rinse, hu: Mosás}, note: {en: "Rinse in a sieve until the water runs clear (not risotto rice). Quinoa always — its coating is bitter.", hu: "Szűrőben mosd, amíg tiszta nem lesz a víz (a rizottórizst ne). A quinoát mindig — a bevonata keserű."}}
+        - {icon: "om:1F525", label: {en: Toast, hu: Pirítás}, time: {en: optional, hu: elhagyható}, note: {en: "A minute in a little fat or a dry pan: nuttier grains that stay separate (millet, buckwheat, rice for pilaf).", hu: "Egy perc kevés zsiradékban vagy száraz edényben: diósabb, szemes marad (köles, hajdina, piláfrizs)."}}
+        - {icon: "om:1F9C2", label: {en: "Water, salt", hu: "Víz, só"}, note: {en: "The ratio for the grain, about ½ teaspoon salt per cup. Bring to the boil.", hu: "A gabonának megfelelő arány, poharanként kb. ½ teáskanál só. Forrald fel."}}
+        - {icon: "om:23F2", label: {en: "Lid on, lowest heat", hu: "Fedő, legkisebb láng"}, time: {en: "by grain", hu: "gabona szerint"}, note: {en: "Turn it right down, lid on, and don't lift it or stir — the steam does the work.", hu: "Vedd lejjebb a lángot, fedő rá, és ne emelgesd, ne keverd — a gőz dolgozik."}}
+        - {icon: "om:1F35A", label: {en: "Rest, fluff", hu: "Pihentetés, lazítás"}, time: {en: "10 min", hu: "10 perc"}, note: {en: "Off the heat, lid on, 10 minutes. Then fluff with a fork.", hu: "A tűzről levéve, fedővel 10 percig. Aztán villával lazítsd fel."}}
+    en:
+      title: The method
+      body: |
+        1. **Rinse** in a sieve until the water runs clear (not risotto rice); quinoa always.
+        2. **Toast** (optional): a minute in a little fat or a dry pan — nuttier and more separate.
+        3. **Water and salt:** the ratio for the grain (*Water ratios*), about ½ teaspoon salt per cup; bring to the boil.
+        4. **Lid on, lowest heat** — and don't lift the lid or stir: the steam does the work.
+        5. **Rest** off the heat, lid on, 10 minutes; fluff with a fork.
+
+        - **The pasta method** suits brown rice, wild rice and quinoa: plenty of salted water, boil until tender, drain.
+          No ratio to get wrong.
+        - Burnt bottom? Don't scrape it: lift the good rice off the top into a clean pot.
+    hu:
+      title: A módszer
+      body: |
+        1. **Mosás** szűrőben, amíg tiszta nem lesz a víz (a rizottórizst ne); a quinoát mindig.
+        2. **Pirítás** (elhagyható): egy perc kevés zsiradékban vagy száraz edényben — diósabb és szemesebb.
+        3. **Víz és só:** a gabonának megfelelő arány (*Víz arányok*), poharanként kb. ½ teáskanál só; forrald fel.
+        4. **Fedő, legkisebb láng** — és ne emelgesd a fedőt, ne keverd: a gőz dolgozik.
+        5. **Pihentetés** a tűzről levéve, fedővel, 10 percig; villával lazítsd fel.
+
+        - A **tésztamódszer** a barna rizshez, vadrizshez és quinoához jó: sok sós víz, főzd puhára, szűrd le. Nincs
+          arány, amit el lehetne téveszteni.
+        - Leégett az alja? Ne kapard: a jó rizst felülről emeld át egy tiszta edénybe.
+  - id: gf-pasta
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 12
+      items:
+        - {value: 8, to: 10, label: {en: Corn and rice spaghetti, hu: Kukorica-rizs spagetti}, fill: "#F2D36B"}
+        - {value: 9, to: 11, label: {en: Rice penne, hu: Rizs penne}, fill: "#F4F1EA"}
+        - {value: 6, to: 8, label: {en: "Lentil, chickpea pasta", hu: "Lencse-, csicseriborsó-tészta"}, fill: "#E8892A"}
+        - {value: 7, to: 9, label: {en: Quinoa pasta, hu: Quinoatészta}, fill: "#E6D4A8"}
+        - {value: 5, to: 6, label: {en: "Soba, 100 % buckwheat", hu: "Soba, 100 % hajdina"}, fill: "#8A6A4A", note: {en: "check: most soba has wheat", hu: "nézd meg: a legtöbb sobában búza van"}}
+        - {value: 3, to: 5, label: {en: "Thin rice noodles (soak)", hu: "Vékony rizstészta (áztatva)"}, fill: "#FBF8F0"}
+        - {value: 2, to: 3, label: {en: "GF gnocchi, nokedli", hu: "GM gnocchi, nokedli"}, fill: "#F6E7B0", note: {en: "done when they float", hu: "kész, ha feljön"}}
+    en:
+      title: GF pasta
+      body: |
+        GF pasta is less forgiving than wheat pasta: it goes from firm to mushy faster, and it sticks at the start.
+
+        | Pasta | Minutes |
+        |---|---|
+        | Corn and rice spaghetti | 8–10 |
+        | Rice penne | 9–11 |
+        | Lentil, chickpea pasta | 6–8 |
+        | Quinoa pasta | 7–9 |
+        | Soba — **100 % buckwheat only** | 5–6 |
+        | Thin rice noodles | soak 3–5 in boiling water |
+        | GF gnocchi, nokedli | 2–3, until they float |
+
+        - **Plenty of water** (1 litre per 100 g), well salted, at a rolling boil.
+        - **Stir in the first two minutes** — that is when GF pasta sticks.
+        - **Taste a minute before** the packet time; drain at once, sauce at once.
+        - For a pasta salad, rinse it in cold water; for a hot dish, don't — keep a cup of the water for the sauce.
+
+        > **Soba** is usually a wheat–buckwheat mix — only "100 % buckwheat" (and GF-labelled) is safe. Never use the water a wheat pasta was cooked in.
+    hu:
+      title: GM tészta
+      body: |
+        A GM tészta kevésbé bocsátó, mint a búzás: hamarabb lesz keményből szétfőtt, és az elején összeragad.
+
+        | Tészta | Perc |
+        |---|---|
+        | Kukorica-rizs spagetti | 8–10 |
+        | Rizs penne | 9–11 |
+        | Lencse-, csicseriborsó-tészta | 6–8 |
+        | Quinoatészta | 7–9 |
+        | Soba — **csak 100 % hajdina** | 5–6 |
+        | Vékony rizstészta | 3–5 percig forró vízben áztatva |
+        | GM gnocchi, nokedli | 2–3, amíg fel nem jön |
+
+        - **Sok víz** (100 g-hoz 1 liter), jól megsózva, lobogva forrjon.
+        - **Az első két percben keverd** — akkor ragad össze a GM tészta.
+        - **A csomagon írt idő előtt egy perccel kóstold**; azonnal szűrd le, azonnal szószt rá.
+        - Tésztasalátához öblítsd hideg vízzel; meleg ételhez ne — tegyél félre egy bögre főzővizet a szószhoz.
+
+        > A **soba** általában búza-hajdina keverék — csak a „100 % hajdina” (és GM jelölésű) biztonságos. Búzás tészta főzővizét soha ne használd.

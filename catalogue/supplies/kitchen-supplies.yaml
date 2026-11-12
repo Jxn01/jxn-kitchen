@@ -1,0 +1,50 @@
+category: kitchen-supplies
+groups:
+  - id: wraps
+    en: Foil & wraps
+    hu: Fólia, csomagolás
+    icon: "c:foil-roll"
+    items:
+      - {id: alu-foil, en: Aluminium foil, hu: Alufólia, icon: "c:foil-roll", aliases: [tin foil, aluminum foil, foil, alufóliát]}
+      - {id: baking-paper, en: Baking paper, hu: Sütőpapír, icon: "c:foil-roll", aliases: [parchment paper, parchment, sütőpapírt]}
+      - {id: cling-film, en: Cling film, hu: Folpack, icon: "c:foil-roll", aliases: [plastic wrap, saran wrap, frissentartó fólia, háztartási fólia]}
+      - {id: zip-bags, en: Zip bags, hu: Zipzáras zacskó, aliases: [ziploc, freezer bags, sandwich bags, fagyasztózacskó, uzsonnás zacskó]}
+      - {id: roasting-bags, en: Roasting bags, hu: Sütőzacskó, aliases: [oven bags, sütőfólia]}
+      - {id: muffin-cases, en: Muffin cases, hu: Muffinpapír, aliases: [cupcake liners, muffin cups]}
+  - id: paper
+    en: Paper
+    hu: Papíráru
+    icon: "om:1F9FB"
+    items:
+      - {id: paper-towel, en: Paper towels, hu: Papírtörlő, icon: "om:1F9FB", aliases: [kitchen roll, paper towel, konyhai papírtörlő, kéztörlő]}
+      - {id: napkins, en: Napkins, hu: Szalvéta, aliases: [serviettes, papírszalvéta]}
+      - {id: toilet-paper, en: Toilet paper, hu: WC-papír, icon: "om:1F9FB", aliases: [toilet roll, loo roll, vécépapír]}
+      - {id: tissues, en: Tissues, hu: Papírzsebkendő, aliases: [kleenex, zsebkendő]}
+  - id: bins
+    en: Bin bags
+    hu: Szemeteszsák
+    icon: "om:1F5D1"
+    items:
+      - {id: bin-bags, en: Bin bags, hu: Szemeteszsák, aliases: [garbage bags, trash bags, bin liners, szemetes zacskó]}
+      - {id: compost-bags, en: Compost bags, hu: Komposztzacskó, aliases: [biodegradable bags]}
+  - id: sponges-all
+    en: Sponges & cloths
+    hu: Szivacs, törlőkendő
+    icon: "om:1F9FD"
+    items:
+      - {id: sponges, en: Sponges, hu: Mosogatószivacs, icon: "om:1F9FD", aliases: [sponge, scrub sponge, szivacs]}
+      - {id: dish-brush, en: Dish brush, hu: Mosogatókefe, aliases: [washing-up brush]}
+      - {id: scourer, en: Scourers, hu: Dörzsi, aliases: [steel wool, scouring pad, fémdörzsi, súrolószivacs]}
+      - {id: cloths, en: Cloths, hu: Törlőkendő, aliases: [dishcloth, microfiber cloth, mikroszálas kendő, konyharuha]}
+      - {id: rubber-gloves, en: Rubber gloves, hu: Gumikesztyű, icon: "om:1F9E4", aliases: [dishwashing gloves, háztartási kesztyű]}
+  - id: odds
+    en: Odds & ends
+    hu: Apróságok
+    icon: "om:1F52A"
+    items:
+      - {id: matches, en: Matches & lighter, hu: "Gyufa, öngyújtó", aliases: [matches, lighter, gyufa, öngyújtó]}
+      - {id: skewers, en: Skewers, hu: Nyárs, aliases: [wooden skewers, hurkapálca, saslik nyárs]}
+      - {id: toothpicks, en: Toothpicks, hu: Fogpiszkáló, aliases: [cocktail sticks]}
+      - {id: batteries, en: Batteries, hu: Elem, icon: "om:1F50B", aliases: [battery, AA, AAA, ceruzaelem]}
+      - {id: light-bulbs, en: Light bulbs, hu: Izzó, icon: "om:1F4A1", aliases: [bulb, villanykörte, led izzó]}
+      - {id: charcoal, en: Charcoal, hu: Faszén, aliases: [bbq charcoal, grillszén]}

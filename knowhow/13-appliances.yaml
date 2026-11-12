@@ -1,0 +1,425 @@
+id: appliances
+order: 4
+icon: "c:stove"
+color: sky
+en:
+  title: Appliances
+  sub: "what goes where · air fryer · microwave · rice cooker · kettle · stove"
+hu:
+  title: Konyhagépek
+  sub: "mit miben · forrólevegős sütő · mikró · rizsfőző · vízforraló · tűzhely"
+pages:
+  - id: where
+    chart:
+      type: matrix
+      levels:
+        - {en: "no", hu: nem}
+        - {en: works, hu: megy}
+        - {en: best, hu: legjobb}
+      cols:
+        - label: {en: Kettle, hu: Vízforraló}
+          icon: "c:kettle"
+          note: {en: "Boils water fastest — tea, the French press, and a head start for pasta water. Water only.", hu: "A leggyorsabban forral vizet — tea, dugattyús kávé, és előny a tésztavízhez. Csak vizet."}
+        - label: {en: Rice cooker, hu: Rizsfőző}
+          icon: "c:rice-cooker"
+          note: {en: "Rice and GF grains by itself, and it steams vegetables, fish and eggs in the basket above.", hu: "Magától megfőzi a rizst és a GM gabonákat, a felső kosárban zöldséget, halat, tojást gőzöl."}
+        - label: {en: Microwave, hu: Mikró}
+          icon: "c:microwave"
+          note: {en: "Reheating, steaming vegetables, porridge, melting — fast and even if you stir and let it stand.", hu: "Melegítés, zöldségpárolás, kása, olvasztás — gyors és egyenletes, ha megkevered és pihenteted."}
+        - label: {en: Air fryer, hu: Forrólevegős}
+          icon: "c:air-fryer"
+          note: {en: "A small, fast fan oven: crisp roast vegetables, chips, chicken, toast — and crisp reheating.", hu: "Kicsi, gyors légkeveréses sütő: ropogós zöldség, hasáb, csirke, pirítós — és ropogós újramelegítés."}
+        - label: {en: Stove, hu: Tűzhely}
+          icon: "c:stove"
+          note: {en: "Everything that simmers, fries or boils: soups, sauces, pasta, eggs, pörkölt.", hu: "Minden, ami fő, sül vagy forr: levesek, mártások, tészta, tojás, pörkölt."}
+      rows:
+        - {label: {en: "Tea, coffee water", hu: "Tea-, kávévíz"}, icon: "om:2615", cells: [2, 0, 1, 0, 1]}
+        - {label: {en: Rice and GF grains, hu: Rizs és GM gabonák}, icon: "om:1F35A", cells: [0, 2, 1, 0, 1]}
+        - {label: {en: GF pasta, hu: GM tészta}, icon: "om:1F35D", cells: [1, 0, 0, 0, 2]}
+        - {label: {en: Steamed vegetables, hu: Párolt zöldség}, icon: "om:1F966", cells: [0, 2, 2, 0, 1]}
+        - {label: {en: "Roast vegetables, potatoes", hu: "Sült zöldség, krumpli"}, icon: "om:1F954", cells: [0, 0, 0, 2, 1]}
+        - {label: {en: Chicken pieces, hu: Csirkedarabok}, icon: "om:1F357", cells: [0, 0, 0, 2, 1]}
+        - {label: {en: Boiled eggs, hu: Főtt tojás}, icon: "om:1F95A", cells: [0, 1, 0, 1, 2]}
+        - {label: {en: "Porridge (GF oats, millet)", hu: "Kása (GM zab, köles)"}, icon: "om:1F963", cells: [0, 1, 2, 0, 2]}
+        - {label: {en: "Soups, stews, sauces", hu: "Levesek, raguk, mártások"}, icon: "om:1F372", cells: [0, 0, 1, 0, 2]}
+        - {label: {en: Reheating leftovers, hu: Maradék melegítése}, icon: "om:1F961", cells: [0, 0, 2, 2, 1]}
+        - {label: {en: Toasting GF bread, hu: GM kenyér pirítása}, icon: "om:1F35E", cells: [0, 0, 0, 2, 1]}
+        - {label: {en: "Melting butter, chocolate", hu: "Vaj, csoki olvasztása"}, icon: "om:1F9C8", cells: [0, 0, 2, 0, 1]}
+    en:
+      title: What goes where
+      body: |
+        Five appliances, one kitchen. **Best** is where a dish turns out best; **works** is fine when the best one is busy.
+
+        | | Kettle | Rice cooker | Microwave | Air fryer | Stove |
+        |---|---|---|---|---|---|
+        | Tea, coffee water | best | — | works | — | works |
+        | Rice and GF grains | — | best | works | — | works |
+        | GF pasta | works (boil the water) | — | — | — | best |
+        | Steamed vegetables | — | best | best | — | works |
+        | Roast vegetables, potatoes | — | — | — | best | works |
+        | Chicken pieces | — | — | — | best | works |
+        | Boiled eggs | — | works | — | works | best |
+        | Porridge (GF oats, millet) | — | works | best | — | best |
+        | Soups, stews, sauces | — | — | works | — | best |
+        | Reheating leftovers | — | — | best | best (crisp things) | works |
+        | Toasting GF bread | — | — | — | best | works (dry pan) |
+        | Melting butter, chocolate | — | — | best | — | works (water bath) |
+
+        - **Never in the microwave:** eggs in their shell (they explode), metal and foil, takeaway plastic, an empty run.
+        - **Never in the air fryer:** runny batter (it drips), loose baking paper without food on it (it lifts into the
+          element), food piled in layers.
+        - **The kettle:** water only — milk and soup burn onto the element.
+
+        > The air fryer is a small fan oven: whatever an oven roasts at 180–220 °C, it does faster and crisper.
+    hu:
+      title: Mit miben?
+      body: |
+        Öt gép, egy konyha. A **legjobb** az, amiben az étel a legjobban sikerül; a **megy** is jó, ha a legjobb épp foglalt.
+
+        | | Vízforraló | Rizsfőző | Mikró | Forrólevegős | Tűzhely |
+        |---|---|---|---|---|---|
+        | Tea-, kávévíz | legjobb | — | megy | — | megy |
+        | Rizs és GM gabonák | — | legjobb | megy | — | megy |
+        | GM tészta | megy (vizet forral) | — | — | — | legjobb |
+        | Párolt zöldség | — | legjobb | legjobb | — | megy |
+        | Sült zöldség, krumpli | — | — | — | legjobb | megy |
+        | Csirkedarabok | — | — | — | legjobb | megy |
+        | Főtt tojás | — | megy | — | megy | legjobb |
+        | Kása (GM zab, köles) | — | megy | legjobb | — | legjobb |
+        | Levesek, raguk, mártások | — | — | megy | — | legjobb |
+        | Maradék melegítése | — | — | legjobb | legjobb (ropogós ételek) | megy |
+        | GM kenyér pirítása | — | — | — | legjobb | megy (száraz serpenyő) |
+        | Vaj, csoki olvasztása | — | — | legjobb | — | megy (vízfürdő) |
+
+        - **Soha a mikróba:** héjas tojás (felrobban), fém és fólia, elviteles műanyag doboz, üres járatás.
+        - **Soha a forrólevegős sütőbe:** híg massza (lecsöpög), üres sütőpapír étel nélkül (felszáll a fűtőszálra),
+          rétegesen halmozott étel.
+        - **A vízforraló:** csak vizet — a tej és a leves odaég a fűtőelemre.
+
+        > A forrólevegős sütő egy kis légkeveréses sütő: amit a sütő 180–220 °C-on süt, azt gyorsabban és ropogósabbra süti.
+  - id: air-fryer
+    chart:
+      type: bars
+      unit: {en: min, hu: perc}
+      max: 30
+      items:
+        - {value: 12, to: 18, label: {en: Frozen GF chips, hu: Fagyasztott GM hasáb}, fill: "#F2C94C", note: {en: "200 °C · shake halfway", hu: "200 °C · félidőben rázd át"}}
+        - {value: 20, to: 25, label: {en: Fresh potato wedges, hu: Friss steakburgonya}, fill: "#E8B04A", note: {en: "200 °C · dry, 1 tbsp oil", hu: "200 °C · szárítva, 1 ek olaj"}}
+        - {value: 20, to: 25, label: {en: Chicken wings, hu: Csirkeszárny}, fill: "#D4703A", note: {en: "200 °C · turn halfway · 74 °C", hu: "200 °C · félidőben fordítsd · 74 °C"}}
+        - {value: 22, to: 28, label: {en: "Chicken thighs, bone-in", hu: "Csirkecomb, csontos"}, fill: "#C9612E", note: {en: "190 °C · skin up · 74 °C", hu: "190 °C · bőrrel felfelé · 74 °C"}}
+        - {value: 15, to: 20, label: {en: Chicken breast, hu: Csirkemell}, fill: "#E8A27A", note: {en: "180 °C · 74 °C · rest 5 min", hu: "180 °C · 74 °C · 5 perc pihentetés"}}
+        - {value: 8, to: 12, label: {en: Salmon fillet, hu: Lazacfilé}, fill: "#F4A08A", note: {en: "200 °C · skin down · 63 °C", hu: "200 °C · bőrrel lefelé · 63 °C"}}
+        - {value: 8, to: 12, label: {en: Vegetables, hu: Zöldségek}, fill: "#8DC26F", note: {en: "190 °C · peppers, courgette, broccoli", hu: "190 °C · paprika, cukkini, brokkoli"}}
+        - {value: 10, to: 14, label: {en: Sausages, hu: "Kolbász, virsli"}, fill: "#B5523A", note: {en: "180 °C · turn halfway", hu: "180 °C · félidőben fordítsd"}}
+        - {value: 13, to: 15, label: {en: Hard-boiled eggs, hu: Kemény tojás}, fill: "#F6E7B0", note: {en: "150 °C · then iced water", hu: "150 °C · utána jeges víz"}}
+        - {value: 3, to: 5, label: {en: Reheating pizza or chips, hu: "Pizza, hasáb melegítése"}, fill: "#E8892A", note: {en: "180 °C · crisper than the microwave", hu: "180 °C · ropogósabb, mint a mikróban"}}
+    en:
+      title: Air fryer cheat sheet
+      body: |
+        Starting points — models differ, so check early the first time.
+
+        | Food | °C | Minutes | Tip |
+        |---|---|---|---|
+        | Frozen GF chips | 200 | 12–18 | shake halfway |
+        | Fresh potato wedges | 200 | 20–25 | dry them, 1 tbsp oil, shake twice |
+        | Chicken wings | 200 | 20–25 | turn halfway; to 74 °C |
+        | Chicken thighs, bone-in | 190 | 22–28 | skin up; to 74 °C |
+        | Chicken breast | 180 | 15–20 | to 74 °C, rest 5 minutes |
+        | Salmon fillet | 200 | 8–12 | skin down; to 63 °C |
+        | Vegetables (peppers, courgette, broccoli) | 190 | 8–12 | oil and salt, shake |
+        | Sausages | 180 | 10–14 | turn halfway |
+        | Hard-boiled eggs | 150 | 13–15 | straight into iced water |
+        | Reheating pizza or chips | 180 | 3–5 | crisper than the microwave |
+        | Toasting GF bread | 180 | 3–5 | no preheating needed |
+
+        - **Preheat** 3–5 minutes for crisp results.
+        - **One layer**, don't crowd the basket — the air has to move. Cook in batches.
+        - **A little oil**, brushed or from a pump bottle — aerosol cooking sprays damage the non-stick coating.
+        - **Shake or turn** halfway. Check meat with a thermometer, not the clock.
+        - **Baking paper** only under food — on its own it lifts into the element.
+        - Clean the basket after fatty food, or the next batch smokes.
+
+        > **Celiac:** breaded or battered frozen food must be GF-labelled. If wheat-breaded food is also made in the same air fryer, the basket carries crumbs — wash it, or use a liner for the GF food.
+    hu:
+      title: Forrólevegős sütő — puska
+      body: |
+        Kiindulópontok — a gépek különböznek, első alkalommal nézz rá korábban.
+
+        | Étel | °C | Perc | Tipp |
+        |---|---|---|---|
+        | Fagyasztott GM hasáb | 200 | 12–18 | félidőben rázd át |
+        | Friss steakburgonya | 200 | 20–25 | szárítsd meg, 1 ek olaj, kétszer rázd át |
+        | Csirkeszárny | 200 | 20–25 | félidőben fordítsd; 74 °C-ig |
+        | Csirkecomb, csontos | 190 | 22–28 | bőrrel felfelé; 74 °C-ig |
+        | Csirkemell | 180 | 15–20 | 74 °C-ig, 5 perc pihentetés |
+        | Lazacfilé | 200 | 8–12 | bőrrel lefelé; 63 °C-ig |
+        | Zöldségek (paprika, cukkini, brokkoli) | 190 | 8–12 | olaj, só, rázd át |
+        | Kolbász, virsli | 180 | 10–14 | félidőben fordítsd |
+        | Kemény tojás | 150 | 13–15 | egyenesen jeges vízbe |
+        | Pizza, hasáb melegítése | 180 | 3–5 | ropogósabb, mint a mikróban |
+        | GM kenyér pirítása | 180 | 3–5 | előmelegítés nem kell |
+
+        - **Melegítsd elő** 3–5 percig a ropogós eredményért.
+        - **Egy rétegben**, ne zsúfold tele a kosarat — a levegőnek mozognia kell. Süss több adagban.
+        - **Kevés olaj**, ecsettel vagy pumpás flakonból — a hajtógázos sütőspray tönkreteszi a tapadásmentes bevonatot.
+        - Félidőben **rázd át vagy fordítsd**. A húst hőmérővel ellenőrizd, ne az órával.
+        - **Sütőpapírt** csak étel alá — magában felszáll a fűtőszálra.
+        - Zsíros étel után tisztítsd ki a kosarat, különben a következő adag füstöl.
+
+        > **Cöliákia:** a panírozott, bundázott fagyasztott étel legyen GM jelölésű. Ha ugyanabban a gépben búzás panírú étel is készül, a kosárban morzsa marad — mosd el, vagy a GM ételhez használj betétet.
+  - id: microwave
+    chart:
+      type: scale
+      unit: "%"
+      min: 0
+      max: 100
+      bands:
+        - from: 20
+          to: 30
+          fill: "#9FD3F2"
+          label: {en: Defrost, hu: Kiolvasztás}
+          note: {en: "20–30 %: thaw in short bursts, turning — and cook it straight after.", hu: "20–30 %: rövid szakaszokban, forgatva olvaszd ki — és utána rögtön főzd meg."}
+        - from: 30
+          to: 50
+          fill: "#F7D774"
+          label: {en: Melt, hu: Olvasztás}
+          note: {en: "30–50 %: butter and chocolate in 20–30 second bursts, stirring in between.", hu: "30–50 %: vaj és csoki 20–30 másodperces szakaszokban, közben keverd meg."}
+        - from: 50
+          to: 70
+          fill: "#F2A33A"
+          label: {en: Reheat, hu: Melegítés}
+          note: {en: "50–70 %: dense leftovers heat through evenly. Stir halfway, rest 1–2 minutes, steaming hot all through.", hu: "50–70 %: a sűrű maradék egyenletesen melegszik át. Félidőben keverd meg, pihentesd 1–2 percig, mindenhol gőzölögjön."}
+        - from: 90
+          to: 100
+          fill: "#E8442E"
+          label: {en: Full power, hu: Teljes erő}
+          range: "100 %"
+          note: {en: "Water, steamed vegetables (a splash of water, covered, 3–5 min), a pricked jacket potato (5–8 min at 800 W).", hu: "Víz, párolt zöldség (egy kevés víz, letakarva, 3–5 perc), megszurkált héjas krumpli (5–8 perc 800 W-on)."}
+      marks:
+        - {value: 30, label: "30"}
+        - {value: 50, label: "50"}
+        - {value: 70, label: "70"}
+        - {value: 100, label: "100"}
+    en:
+      title: Microwave
+      body: |
+        A microwave heats the water in food from the outside in, about 2–3 cm deep — the middle warms by conduction.
+        That is why **stirring** and **standing time** matter.
+
+        | Setting | Power | For |
+        |---|---|---|
+        | Defrost | 20–30 % | thawing in short bursts — cook straight after |
+        | Low, medium-low | 30–50 % | melting butter and chocolate, softening |
+        | Medium | 50–70 % | reheating dense leftovers evenly |
+        | High | 100 % | water, steaming vegetables, potatoes |
+
+        - **Reheat to 74 °C**, steaming hot all through: stir halfway, then let it stand 1–2 minutes. Rice only once.
+        - **Steam vegetables:** a splash of water, a vented lid, 3–5 minutes on high.
+        - **Jacket potato:** prick it, 5–8 minutes on high (800 W) for a medium one, turning once.
+        - **Cover** with a microwave lid or a plate — not cling film touching the food.
+        - **Never:** eggs in their shell, metal or foil, takeaway plastic, an empty run. Water can **superheat** and
+          erupt when disturbed — leave a wooden spoon in the mug.
+        - Times are for 800 W: at 1000 W take off a fifth, at 600 W add a third.
+    hu:
+      title: Mikró
+      body: |
+        A mikró az étel víztartalmát melegíti, kívülről befelé, kb. 2–3 cm mélyen — a közepe hővezetéssel melegszik.
+        Ezért fontos a **keverés** és a **pihentetés**.
+
+        | Beállítás | Teljesítmény | Mire |
+        |---|---|---|
+        | Kiolvasztás | 20–30 % | rövid szakaszokban — utána rögtön főzd meg |
+        | Alacsony, közepesen alacsony | 30–50 % | vaj és csoki olvasztása, puhítás |
+        | Közepes | 50–70 % | sűrű maradék egyenletes melegítése |
+        | Magas | 100 % | víz, zöldségpárolás, krumpli |
+
+        - **74 °C-ra melegítsd**, mindenhol gőzölögjön: félidőben keverd meg, aztán 1–2 percig pihentesd. A rizst csak egyszer.
+        - **Zöldségpárolás:** egy kevés víz, szellőzős fedő, 3–5 perc teljes erőn.
+        - **Héjas krumpli:** szurkáld meg, egy közepeshez 5–8 perc teljes erőn (800 W), egyszer fordítsd meg.
+        - **Takard le** mikrós fedővel vagy tányérral — ne az ételhez érő fóliával.
+        - **Soha:** héjas tojás, fém vagy fólia, elviteles műanyag, üres járatás. A víz **túlhevülhet**, és megmozdítva
+          kicsaphat — hagyj egy fakanalat a bögrében.
+        - Az idők 800 W-ra vonatkoznak: 1000 W-on vegyél le egyötödöt, 600 W-on adj hozzá egyharmadot.
+  - id: rice-cooker
+    chart:
+      type: picker
+      items:
+        - {label: {en: White rice, hu: Fehér rizs}, icon: "om:1F35A", value: {en: "1 : 1.25–1.5", hu: "1 : 1,25–1,5"}, note: {en: "Rinse until the water runs clear, then fill to the line in the bowl. Rest 10 minutes after the click.", hu: "Mosd, amíg tiszta nem lesz a víz, aztán töltsd a tál jelzéséig. A kattanás után pihentesd 10 percig."}}
+        - {label: {en: Brown rice, hu: Barna rizs}, icon: "om:1F35A", value: {en: "1 : 2–2.25", hu: "1 : 2–2,25"}, note: {en: "The brown-rice setting if it has one, or 10–15 minutes' extra rest on keep-warm.", hu: "Barnarizs-programmal, ha van, vagy 10–15 perc extra pihentetés melegen tartáson."}}
+        - {label: {en: "Basmati, jasmine", hu: "Basmati, jázmin"}, icon: "om:1F35A", value: {en: "1 : 1.25", hu: "1 : 1,25"}, note: {en: "A little less water than plain white rice; a pinch of salt.", hu: "Kicsit kevesebb víz, mint a sima fehér rizshez; egy csipet só."}}
+        - {label: Quinoa, icon: "om:1F33E", value: "1 : 2", note: {en: "Rinse it well first — the coating is bitter. Then the white-rice setting.", hu: "Előbb alaposan mosd meg — a bevonata keserű. Aztán fehérrizs-program."}}
+        - {label: {en: Millet, hu: Köles}, icon: "om:1F33E", value: {en: "1 : 2.5", hu: "1 : 2,5"}, note: {en: "Toast it in a dry pan first for a nuttier taste.", hu: "Előbb pirítsd meg száraz serpenyőben, diósabb lesz."}}
+        - {label: {en: Buckwheat, hu: Hajdina}, icon: "om:1F33E", value: "1 : 2", note: {en: "Toasted buckwheat stays separate; raw buckwheat cooks softer.", hu: "A pirított hajdina szemes marad, a nyers puhábbra fő."}}
+        - {label: {en: "Porridge (GF oats, millet)", hu: "Kása (GM zab, köles)"}, icon: "om:1F963", value: "1 : 3–4", note: {en: "Porridge mode, milk or water. GF-labelled oats only.", hu: "Kása program, tejjel vagy vízzel. Csak GM jelölésű zab."}}
+        - {label: {en: Red lentils, hu: Vörös lencse}, icon: "om:1FAD8", value: "1 : 2", note: {en: "With spices and a little onion — a quick dal.", hu: "Fűszerekkel, kevés hagymával — gyors dal."}}
+        - {label: {en: Steamed vegetables, hu: Párolt zöldség}, icon: "om:1F966", value: {en: "basket", hu: "kosár"}, note: {en: "In the steaming basket above the rice: carrots about 15 minutes, broccoli 8–10.", hu: "A gőzölőkosárban a rizs fölött: répa kb. 15 perc, brokkoli 8–10."}}
+        - {label: {en: Steamed eggs, hu: Gőzölt tojás}, icon: "om:1F95A", value: {en: "12–15 min", hu: "12–15 perc"}, note: {en: "Eggs in the basket on steam mode, then iced water — they peel easily.", hu: "Tojás a kosárban, gőz programon, aztán jeges víz — könnyen hámozható."}}
+        - {label: {en: Keep warm, hu: Melegen tartás}, icon: "om:1F321", value: "> 63 °C", note: {en: "Holds cooked rice above 63 °C — fine for a few hours. Leftovers: cool within an hour, fridge, reheat once.", hu: "A főtt rizst 63 °C fölött tartja — néhány óráig rendben van. A maradékot egy órán belül hűtsd le, hűtőbe, egyszer melegítsd."}}
+    en:
+      title: Rice cooker
+      body: |
+        Rinse, water, button — it switches itself to keep-warm when the water is gone. Let it rest 10 minutes before you
+        open it.
+
+        | Grain | Grain : water | Note |
+        |---|---|---|
+        | White rice | 1 : 1.25–1.5 | rinse until clear |
+        | Brown rice | 1 : 2–2.25 | brown setting, or rest longer |
+        | Basmati, jasmine | 1 : 1.25 | |
+        | Quinoa | 1 : 2 | rinse well |
+        | Millet | 1 : 2.5 | toast first |
+        | Buckwheat | 1 : 2 | |
+        | Porridge (GF oats, millet) | 1 : 3–4 | porridge mode |
+        | Red lentils | 1 : 2 | a quick dal |
+
+        - The **cup that comes with it** usually holds **180 ml**, not 250 — use it with the lines inside the bowl.
+        - **Steaming basket:** carrots about 15 minutes, broccoli 8–10, eggs 12–15 (then iced water).
+        - **Keep-warm** holds rice above 63 °C — fine for a few hours. Leftover rice: cool within an hour, fridge,
+          reheat only once.
+
+        > Plain rice and grains are gluten-free. Flavoured rice mixes and "risotto" kits may hold stock with wheat — read the label.
+    hu:
+      title: Rizsfőző
+      body: |
+        Mosás, víz, gomb — ha elfogyott a víz, magától melegen tartásra vált. Nyitás előtt pihentesd 10 percig.
+
+        | Gabona | Gabona : víz | Megjegyzés |
+        |---|---|---|
+        | Fehér rizs | 1 : 1,25–1,5 | mosd, amíg tiszta |
+        | Barna rizs | 1 : 2–2,25 | barnarizs-program vagy hosszabb pihentetés |
+        | Basmati, jázmin | 1 : 1,25 | |
+        | Quinoa | 1 : 2 | alaposan mosd |
+        | Köles | 1 : 2,5 | előbb pirítsd |
+        | Hajdina | 1 : 2 | |
+        | Kása (GM zab, köles) | 1 : 3–4 | kása program |
+        | Vörös lencse | 1 : 2 | gyors dal |
+
+        - A **géphez adott pohár** általában **180 ml**-es, nem 250 — a tál belsejében lévő jelzésekkel együtt használd.
+        - **Gőzölőkosár:** répa kb. 15 perc, brokkoli 8–10, tojás 12–15 (utána jeges víz).
+        - A **melegen tartás** 63 °C fölött tartja a rizst — néhány óráig rendben van. A maradék rizst egy órán belül
+          hűtsd le, hűtőbe, és csak egyszer melegítsd.
+
+        > A sima rizs és gabona gluténmentes. Az ízesített rizskeverékekben és „rizottó” csomagokban búzás alaplé lehet — olvasd el a címkét.
+  - id: kettle
+    chart:
+      type: picker
+      items:
+        - {label: Tea, icon: "om:1FAD6", value: "70–100 °C", note: {en: "Let it rest for green and white tea: about 95 °C after 1 minute, 85 °C after 3, 75–80 °C after 5.", hu: "Zöld és fehér teához hagyd pihenni: 1 perc után kb. 95 °C, 3 után 85, 5 után 75–80."}}
+        - {label: {en: French press, hu: Dugattyús kávé}, icon: "om:2615", value: "93–96 °C", note: {en: "Boil, then wait 30 seconds.", hu: "Forrald fel, aztán várj 30 másodpercet."}}
+        - {label: {en: Pasta water head start, hu: Előny a tésztavíznek}, icon: "om:1F35D", note: {en: "Boil the water in the kettle and pour it into the pot — faster and cheaper than heating it on the hob.", hu: "Forrald fel a vizet a forralóban, és öntsd a fazékba — gyorsabb és olcsóbb, mint a főzőlapon."}}
+        - {label: {en: Peeling tomatoes, hu: Paradicsomhámozás}, icon: "om:1F345", value: "30 s", note: {en: "Cut a cross in the skin, cover with boiling water for 30 seconds, then cold water — the skin slips off. Peaches too.", hu: "Vágj keresztet a héjába, 30 másodpercre önts rá forró vizet, aztán hideg víz — a héja lecsúszik. Barackkal is."}}
+        - {label: {en: Soaking dried mushrooms, hu: Szárított gomba áztatása}, icon: "om:1F344", value: {en: "20 min", hu: "20 perc"}, note: {en: "Hot water over dried mushrooms or sun-dried tomatoes; keep the soaking water for the sauce.", hu: "Forró víz a szárított gombára vagy aszalt paradicsomra; az áztatóvizet tedd a mártásba."}}
+        - {label: {en: Rice noodles, hu: Rizstészta}, icon: "om:1F35C", value: {en: "3–5 min", hu: "3–5 perc"}, note: {en: "Pour boiling water over thin rice noodles and wait. Rice-only noodles are GF — check the label.", hu: "Önts forró vizet a vékony rizstésztára, és várj. A csak rizsből készült tészta GM — nézd meg a címkét."}}
+        - {label: {en: Rinsing jars, hu: Befőttesüvegek}, icon: "om:1FAD9", note: {en: "Boiling water into clean jars and over the lids before hot jam goes in; to sterilise, dry them in the oven at 120 °C.", hu: "Forró víz a tiszta üvegekbe és a tetőkre, mielőtt a forró lekvár bekerül; csírátlanításhoz 120 °C-os sütőben szárítsd."}}
+        - {label: {en: Descaling, hu: Vízkőtelenítés}, icon: "om:1F34B", value: {en: "monthly", hu: "havonta"}, note: {en: "Half full of water with 1–2 tbsp citric acid (or vinegar): boil, leave 20 minutes, rinse twice.", hu: "Félig vízzel, 1–2 ek citromsavval (vagy ecettel): forrald fel, hagyd 20 percig, öblítsd ki kétszer."}}
+        - {label: {en: Only what you need, hu: Csak amennyi kell}, icon: "om:26A1", note: {en: "Boil only the water you need — a full kettle takes far longer and uses far more power.", hu: "Csak annyi vizet forralj, amennyi kell — a teli forraló sokkal tovább tart és sokkal több áramot fogyaszt."}}
+    en:
+      title: Kettle
+      body: |
+        The fastest way to boiling water — and more useful than tea alone.
+
+        - **Tea:** green and white tea want 70–85 °C — let it rest: about 95 °C after 1 minute, 85 °C after 3, 75–80 °C
+          after 5 (lid open).
+        - **French press:** boil, then wait 30 seconds (93–96 °C).
+        - **Pasta water:** boil it in the kettle and pour it into the pot — faster and cheaper than the hob.
+        - **Peeling tomatoes or peaches:** a cross in the skin, 30 seconds under boiling water, then cold water.
+        - **Dried mushrooms, sun-dried tomatoes:** 20 minutes in hot water; keep the water for the sauce.
+        - **Rice noodles:** boiling water over them, 3–5 minutes. Rice-only noodles are GF — check the label.
+        - **Jars:** boiling water into clean jars and over the lids before hot jam; to sterilise, dry them in the oven at 120 °C.
+        - **Descale monthly** with hard water: half full, 1–2 tbsp citric acid (or vinegar), boil, leave 20 minutes, rinse twice.
+        - Boil only what you need — a full kettle takes far longer.
+        - Water only: milk, soup or instant drinks burn onto the element.
+    hu:
+      title: Vízforraló
+      body: |
+        A leggyorsabb út a forró vízhez — és nemcsak teához jó.
+
+        - **Tea:** a zöld és fehér tea 70–85 °C-ot kér — hagyd pihenni: 1 perc után kb. 95 °C, 3 után 85, 5 után
+          75–80 °C (nyitott fedővel).
+        - **Dugattyús kávé:** forrald fel, aztán várj 30 másodpercet (93–96 °C).
+        - **Tésztavíz:** forrald a forralóban, és öntsd a fazékba — gyorsabb és olcsóbb, mint a főzőlapon.
+        - **Paradicsom, barack hámozása:** kereszt a héjába, 30 másodperc forró víz alatt, aztán hideg víz.
+        - **Szárított gomba, aszalt paradicsom:** 20 perc forró vízben; az áztatóvizet tedd a mártásba.
+        - **Rizstészta:** forró vizet rá, 3–5 perc. A csak rizsből készült tészta GM — nézd meg a címkét.
+        - **Befőttesüvegek:** forró víz a tiszta üvegekbe és a tetőkre a forró lekvár előtt; csírátlanításhoz 120 °C-os
+          sütőben szárítsd.
+        - **Vízkőtelenítés havonta** kemény víznél: félig vízzel, 1–2 ek citromsavval (vagy ecettel) forrald fel,
+          hagyd 20 percig, öblítsd ki kétszer.
+        - Csak annyit forralj, amennyi kell — a teli forraló sokkal tovább tart.
+        - Csak vizet: a tej, a leves és az instant italok odaégnek a fűtőelemre.
+  - id: stove
+    chart:
+      type: scale
+      unit: {en: level, hu: fokozat}
+      min: 0
+      max: 9
+      bands:
+        - from: 1
+          to: 3
+          fill: "#9FD3F2"
+          label: {en: Low, hu: Alacsony}
+          range: "1–3"
+          note: {en: "Melting butter, sweating onions slowly for pörkölt, keeping warm, a bare simmer for stews and rice.", hu: "Vajolvasztás, hagyma lassú párolása a pörkölthöz, melegen tartás, alig gyöngyöző ragu és rizs."}
+        - from: 3
+          to: 6
+          fill: "#F7D774"
+          label: {en: Medium, hu: Közepes}
+          range: "3–6"
+          note: {en: "Sautéing, palacsinta, eggs, sauces, rántás, a steady simmer.", hu: "Pirítás, palacsinta, tojás, mártások, rántás, egyenletes gyöngyözés."}
+        - from: 6
+          to: 8
+          fill: "#F2A33A"
+          label: {en: Medium-high, hu: Közepesen magas}
+          range: "6–8"
+          note: {en: "Searing meat, stir-frying, browning vegetables in the pan.", hu: "Hús elősütése, wokos sütés, zöldség pirítása serpenyőben."}
+        - from: 8
+          to: 9
+          fill: "#E8442E"
+          label: {en: High, hu: Magas}
+          range: "8–9"
+          note: {en: "Bringing water to the boil — then turn it down. A boil needs far more than a simmer.", hu: "Víz felforralása — utána vedd lejjebb. A forraláshoz sokkal több kell, mint a gyöngyözéshez."}
+      marks:
+        - {value: 1, label: "1"}
+        - {value: 3, label: "3"}
+        - {value: 6, label: "6"}
+        - {value: 9, label: "9"}
+    en:
+      title: "Stove: heat levels"
+      body: |
+        For a hob with levels 1–9 (on gas: from a small to a full flame).
+
+        | Level | Heat | For |
+        |---|---|---|
+        | 1–3 | low | melting, sweating onions, keeping warm, a bare simmer |
+        | 3–6 | medium | sautéing, palacsinta, eggs, sauces, rántás |
+        | 6–8 | medium-high | searing, stir-frying, browning |
+        | 8–9 | high | bringing water to the boil |
+
+        - Bring it to the boil on high, **then turn it down** — a simmer needs much less heat than a boil.
+        - A **lid** brings water to the boil faster and saves energy.
+        - **Pans:** cast iron and steel for searing; non-stick for eggs and palacsinta, kept below medium-high.
+        - **Induction** needs magnetic pans — if a magnet sticks to the base, it works.
+        - On **gas**, the flame should stay under the pan, not lick up the sides.
+        - **Electric rings** stay hot after you switch off: turn them off a few minutes early.
+
+        > GF kitchen: when a guest's wheat pasta is cooked, it gets its own pot and colander — gluten stays in the water and in the holes.
+    hu:
+      title: "Tűzhely: lángfokozatok"
+      body: |
+        1–9 fokozatú főzőlapra (gázon: a kis lángtól a teljes lángig).
+
+        | Fokozat | Hő | Mire |
+        |---|---|---|
+        | 1–3 | alacsony | olvasztás, hagymapárolás, melegen tartás, alig gyöngyöző főzés |
+        | 3–6 | közepes | pirítás, palacsinta, tojás, mártások, rántás |
+        | 6–8 | közepesen magas | elősütés, wokos sütés, pirítás |
+        | 8–9 | magas | víz felforralása |
+
+        - Magas fokozaton forrald fel, **aztán vedd lejjebb** — a gyöngyözéshez sokkal kevesebb hő kell, mint a forraláshoz.
+        - A **fedő** gyorsítja a forrást és energiát spórol.
+        - **Edények:** öntöttvas és acél az elősütéshez; tapadásmentes a tojáshoz, palacsintához, közepesen magas fokozat alatt.
+        - Az **indukcióhoz** mágneses edény kell — ha a mágnes megtapad az alján, jó.
+        - **Gázon** a láng maradjon az edény alatt, ne nyaldossa az oldalát.
+        - Az **elektromos főzőlap** kikapcsolás után is meleg marad: kapcsold le pár perccel korábban.
+
+        > GM konyha: ha vendégnek búzás tésztát főzöl, annak külön fazék és szűrő jár — a glutén a vízben és a lyukakban marad.

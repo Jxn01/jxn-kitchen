@@ -1,0 +1,12 @@
+sesame-oil:
+  fresh-chili: [2, cuisine-mates]
+  mustard: [-1, kitchens-apart]
+  eros-pista: [-1, kitchens-apart]
+  sweet-paprika: [-1, kitchens-apart]
+  smoked-paprika: [-1, two-leads]
+  hot-paprika: [-1, kitchens-apart]
+  chili-flakes: [3, classic-partners, "Chilli flakes in sesame oil: the start of a chilli oil.", "Chilipehely szezámolajban: így indul a chiliolaj."]
+  cayenne: [0, harmless]
+  black-pepper: [0, harmless]
+  white-pepper: [2, cuisine-mates]
+  mustard-powder: [-1, kitchens-apart]

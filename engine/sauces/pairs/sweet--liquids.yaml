@@ -1,0 +1,15 @@
+honey:
+  coconut-milk: [1, gentle-company]
+  passata: [0, harmless]
+maple-syrup:
+  coconut-milk: [1, gentle-company]
+  passata: [-1, odd-couple]
+sour-cherry:
+  coconut-milk: [-1, odd-couple]
+  passata: [-1, odd-couple]
+sugar:
+  coconut-milk: [2, cuisine-mates]
+  passata: [2, classic-partners]
+brown-sugar:
+  coconut-milk: [2, cuisine-mates]
+  passata: [1, gentle-company]

@@ -1,0 +1,41 @@
+category: drinks
+groups:
+  - id: wine
+    en: Wine
+    hu: Bor
+    icon: "om:1F377"
+    items:
+      - {id: red-wine, en: Red wine, hu: Vörösbor, icon: "om:1F377", aliases: [dry red wine, száraz vörösbor, vörösbort]}
+      - {id: white-wine, en: White wine, hu: Fehérbor, icon: "om:1F377", aliases: [dry white wine, száraz fehérbor, fehérbort]}
+      - {id: sparkling-wine, en: Sparkling wine, hu: Pezsgő, icon: "om:1F37E", aliases: [prosecco, champagne, pezsgőt]}
+      - {id: port, en: Port, hu: Portói, aliases: [port wine, portói bor, marsala, sherry]}
+  - id: spirits
+    en: Spirits & liqueurs
+    hu: Röviditalok, likőrök
+    icon: "om:1F943"
+    items:
+      - {id: palinka, en: Pálinka, hu: Pálinka, aliases: [palinka, fruit brandy, barackpálinka, szilvapálinka]}
+      - {id: rum, en: Rum, hu: Rum, aliases: [dark rum, barna rum]}
+      - {id: brandy, en: Brandy, hu: Brandy, aliases: [cognac, konyak]}
+      - {id: vodka, en: Vodka, hu: Vodka}
+      - {id: whisky, en: Whisky, hu: Whisky, aliases: [whiskey, bourbon]}
+      - {id: liqueur, en: Liqueur, hu: Likőr, gluten: label, aliases: [amaretto, baileys, kahlúa, tojáslikőr]}
+  - id: beer-all
+    en: Beer (GF)
+    hu: Sör (gluténmentes)
+    icon: "om:1F37A"
+    items:
+      - {id: gf-beer, en: GF beer, hu: Gluténmentes sör, icon: "om:1F37A", aliases: [gluten-free beer, gf lager]}
+      - {id: beer, en: Beer, hu: Sör, gluten: contains, swap: gf-beer, pantry: false, aliases: [lager, ale, stout, világos sör, barna sör, sört, dark beer], tip_en: "Use GF beer; for a batter, ice-cold sparkling water works too.", tip_hu: "GM sört használj; bundába a jéghideg szódavíz is jó."}
+  - id: soft-drinks
+    en: Coffee, tea & softs
+    hu: Kávé, tea, üdítő
+    icon: "om:2615"
+    items:
+      - {id: coffee, en: Coffee, hu: Kávé, icon: "om:2615", aliases: [ground coffee, coffee beans, espresso, instant coffee, őrölt kávé, szemes kávé, eszpresszó, kávét]}
+      - {id: tea, en: Tea, hu: Tea, icon: "om:1F375", aliases: [black tea, green tea, tea bags, filteres tea, fekete tea, zöld tea]}
+      - {id: soda-water, en: Soda water, hu: Szódavíz, aliases: [sparkling water, mineral water, szóda, ásványvíz, szénsavas víz]}
+      - {id: orange-juice, en: Orange juice, hu: Narancslé, aliases: [OJ, narancslevet]}
+      - {id: apple-juice, en: Apple juice, hu: Almalé, aliases: [almalevet]}
+      - {id: cola, en: Cola, hu: Kóla, aliases: [coke, coca-cola, pepsi]}
+      - {id: water, en: Water, hu: Víz, staple: true, pantry: false, aliases: [vizet, hideg víz, langyos víz, forró víz, meleg víz, csapvíz, cold water, warm water, hot water, boiling water, lukewarm water]}

@@ -1,0 +1,58 @@
+# The spice engine's vocabulary of labels (spec 2026-10-19 §4.2). Everything here is shown on screen, so every entry is
+# bilingual. Order matters: shelves appear in this order in the rack picker, and the pair blocks are named after it.
+shelves:
+  - {id: warm, en: "Warm & sweet", hu: "Meleg, édes"}
+  - {id: earthy, en: "Earthy & seeds", hu: "Földes, magvas"}
+  - {id: hot, en: "Paprika, chilli & pepper", hu: "Paprika, chili, bors"}
+  - {id: mediterranean, en: "Mediterranean herbs", hu: "Mediterrán fűszernövények"}
+  - {id: green, en: "Green & Hungarian herbs", hu: "Zöld és magyar fűszernövények"}
+  - {id: special, en: "Specials", hu: "Különlegességek"}
+  - {id: alliums, en: "Salt, sugar & alliums", hu: "Só, cukor, hagymafélék"}
+
+# the radar's eight axes, clockwise from the top
+axes:
+  - {id: warm, en: Warm, hu: Meleg}
+  - {id: earthy, en: Earthy, hu: Földes}
+  - {id: hot, en: Hot, hu: Csípős}
+  - {id: bright, en: Bright, hu: Élénk}
+  - {id: herbal, en: Herbal, hu: Füves}
+  - {id: floral, en: Floral, hu: Virágos}
+  - {id: bitter, en: Bitter, hu: Kesernyés}
+  - {id: savoury, en: Savoury, hu: Sós-ízes}
+
+cuisines:
+  - {id: hungarian, en: Hungarian, hu: Magyar}
+  - {id: balkan, en: Balkan, hu: Balkáni}
+  - {id: indian, en: Indian, hu: Indiai}
+  - {id: middle-eastern, en: "Middle Eastern & North African", hu: "Közel-keleti, észak-afrikai"}
+  - {id: mediterranean, en: Mediterranean, hu: Mediterrán}
+  - {id: mexican, en: Mexican, hu: Mexikói}
+  - {id: east-asian, en: East Asian, hu: Kelet-ázsiai}
+  - {id: french, en: French, hu: Francia}
+  - {id: american, en: "American BBQ & Cajun", hu: "Amerikai (BBQ, cajun)"}
+  - {id: baking, en: "Baking & sweets", hu: "Sütemény, édesség"}
+
+roles:
+  - {id: base, en: Base, hu: Alap}
+  - {id: body, en: Body, hu: Test}
+  - {id: accent, en: Accent, hu: Hangsúly}
+  - {id: finisher, en: Finisher, hu: Befejező}
+
+timings:
+  - {id: bloom, en: "Bloom in the fat", hu: "A zsiradékban"}
+  - {id: during, en: "During cooking", hu: "Főzés közben"}
+  - {id: finish, en: "At the end", hu: "A végén"}
+
+# the verdict word by score (spec §5.1: >= 80 sings, >= 60 good, >= 40 muddled, else fighting) and the mascot's face
+words:
+  - {id: sings, min: 80, mascot: proud, en: Sings, hu: Ragyog}
+  - {id: good, min: 60, mascot: happy, en: Good, hu: Jó}
+  - {id: muddled, min: 40, mascot: think, en: Muddled, hu: Zavaros}
+  - {id: fighting, min: 0, mascot: worried, en: Fighting, hu: Veszekszik}
+
+# the heat word by the share-weighted heat (0-5)
+heat:
+  - {id: mild, below: 0.4, en: Mild, hu: Enyhe}
+  - {id: warm, below: 1.0, en: Warm, hu: Pikáns}
+  - {id: hot, below: 1.8, en: Hot, hu: Csípős}
+  - {id: fiery, below: 99, en: Fiery, hu: Tüzes}

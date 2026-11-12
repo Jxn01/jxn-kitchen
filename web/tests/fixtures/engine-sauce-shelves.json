@@ -1,0 +1,3281 @@
+{
+ "shelves": [
+  {
+   "id": "fats",
+   "en": "Fats & oils",
+   "hu": "Zsiradék, olaj",
+   "items": [
+    {
+     "id": "sunflower-oil",
+     "name": {
+      "en": "Cooking oil",
+      "hu": "Étolaj"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "ml",
+      "dl"
+     ],
+     "g_per_ml": 0.92,
+     "g_per_pc": null,
+     "fill": "#F2D86B",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "olive-oil",
+     "name": {
+      "en": "Olive oil",
+      "hu": "Olívaolaj"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "ml",
+      "dl"
+     ],
+     "g_per_ml": 0.92,
+     "g_per_pc": null,
+     "fill": "#C9B458",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "sesame-oil",
+     "name": {
+      "en": "Sesame oil",
+      "hu": "Szezámolaj"
+     },
+     "role": "fat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 0.92,
+     "g_per_pc": null,
+     "fill": "#B5793A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "coconut-oil",
+     "name": {
+      "en": "Coconut oil",
+      "hu": "Kókuszolaj"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "ml"
+     ],
+     "g_per_ml": 0.92,
+     "g_per_pc": null,
+     "fill": "#F4F1E6",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "butter",
+     "name": {
+      "en": "Butter",
+      "hu": "Vaj"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "g",
+     "default": 30,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.91,
+     "g_per_pc": null,
+     "fill": "#F6E27A",
+     "gluten": "free",
+     "body": "mount",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "ghee",
+     "name": {
+      "en": "Ghee",
+      "hu": "Ghí"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.9,
+     "g_per_pc": null,
+     "fill": "#E9C25A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "lard",
+     "name": {
+      "en": "Lard",
+      "hu": "Zsír"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.9,
+     "g_per_pc": null,
+     "fill": "#F5F0E2",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "cooked"
+    },
+    {
+     "id": "duck-fat",
+     "name": {
+      "en": "Duck & goose fat",
+      "hu": "Kacsazsír, libazsír"
+     },
+     "role": "fat",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.9,
+     "g_per_pc": null,
+     "fill": "#EDE0B5",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "cooked"
+    }
+   ]
+  },
+  {
+   "id": "acids",
+   "en": "Acids & wine",
+   "hu": "Savak, bor",
+   "items": [
+    {
+     "id": "lemon-juice",
+     "name": {
+      "en": "Lemon juice",
+      "hu": "Citromlé"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#F7E979",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "lime-juice",
+     "name": {
+      "en": "Lime juice",
+      "hu": "Limelé"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#C9E07A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "vinegar",
+     "name": {
+      "en": "Vinegar",
+      "hu": "Ecet"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.01,
+     "g_per_pc": null,
+     "fill": "#F4F1E8",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "wine-vinegar",
+     "name": {
+      "en": "Wine vinegar",
+      "hu": "Borecet"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.01,
+     "g_per_pc": null,
+     "fill": "#D8A7A0",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "balsamic",
+     "name": {
+      "en": "Balsamic vinegar",
+      "hu": "Balzsamecet"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.1,
+     "g_per_pc": null,
+     "fill": "#4A2A22",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "rice-vinegar",
+     "name": {
+      "en": "Rice vinegar",
+      "hu": "Rizsecet"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.01,
+     "g_per_pc": null,
+     "fill": "#F3ECD8",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "white-wine",
+     "name": {
+      "en": "White wine",
+      "hu": "Fehérbor"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 0.99,
+     "g_per_pc": null,
+     "fill": "#EBE3A2",
+     "gluten": "free",
+     "body": "reduce",
+     "keeps": "cooked"
+    },
+    {
+     "id": "red-wine",
+     "name": {
+      "en": "Red wine",
+      "hu": "Vörösbor"
+     },
+     "role": "acid",
+     "driver": true,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 0.99,
+     "g_per_pc": null,
+     "fill": "#7A1F2B",
+     "gluten": "free",
+     "body": "reduce",
+     "keeps": "cooked"
+    }
+   ]
+  },
+  {
+   "id": "dairy-eggs",
+   "en": "Dairy & eggs",
+   "hu": "Tejtermék, tojás",
+   "items": [
+    {
+     "id": "milk",
+     "name": {
+      "en": "Milk",
+      "hu": "Tej"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "dl",
+     "default": 2,
+     "step": 0.5,
+     "alt": [
+      "ml"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#FBF8F0",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "cream-cooking",
+     "name": {
+      "en": "Cooking cream",
+      "hu": "Főzőtejszín"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#FBF4E4",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "cream-whipping",
+     "name": {
+      "en": "Whipping cream",
+      "hu": "Habtejszín"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 0.99,
+     "g_per_pc": null,
+     "fill": "#FFF8E8",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "sour-cream",
+     "name": {
+      "en": "Sour cream",
+      "hu": "Tejföl"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 4,
+     "step": 1,
+     "alt": [
+      "dl",
+      "g"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#FBF6EC",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "creme-fraiche",
+     "name": {
+      "en": "Crème fraîche",
+      "hu": "Crème fraîche"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 4,
+     "step": 1,
+     "alt": [
+      "dl",
+      "g"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#FBF2DE",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "yogurt",
+     "name": {
+      "en": "Yogurt",
+      "hu": "Joghurt"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 4,
+     "step": 1,
+     "alt": [
+      "dl",
+      "g"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#F9F8F3",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "greek-yogurt",
+     "name": {
+      "en": "Greek yogurt",
+      "hu": "Görög joghurt"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 4,
+     "step": 1,
+     "alt": [
+      "dl",
+      "g"
+     ],
+     "g_per_ml": 1.05,
+     "g_per_pc": null,
+     "fill": "#FAF7EE",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "kefir",
+     "name": {
+      "en": "Kefir",
+      "hu": "Kefir"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#F7F6F0",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "buttermilk",
+     "name": {
+      "en": "Buttermilk",
+      "hu": "Író"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#F5F3EA",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "cream-cheese",
+     "name": {
+      "en": "Cream cheese",
+      "hu": "Krémsajt"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#FBF7EF",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "mascarpone",
+     "name": {
+      "en": "Mascarpone",
+      "hu": "Mascarpone"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#FFF6E2",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "parmesan",
+     "name": {
+      "en": "Parmesan",
+      "hu": "Parmezán"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "g",
+     "default": 20,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.45,
+     "g_per_pc": null,
+     "fill": "#F3E3A6",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "cooked"
+    },
+    {
+     "id": "semi-hard-cheese",
+     "name": {
+      "en": "Semi-hard cheese",
+      "hu": "Trappista"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.4,
+     "g_per_pc": null,
+     "fill": "#F7E08A",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "cooked"
+    },
+    {
+     "id": "cheddar",
+     "name": {
+      "en": "Cheddar",
+      "hu": "Cheddar"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.4,
+     "g_per_pc": null,
+     "fill": "#F2B33D",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "cooked"
+    },
+    {
+     "id": "feta",
+     "name": {
+      "en": "Feta",
+      "hu": "Feta"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#FAF7EF",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "blue-cheese",
+     "name": {
+      "en": "Blue cheese",
+      "hu": "Kéksajt"
+     },
+     "role": "dairy",
+     "driver": true,
+     "unit": "g",
+     "default": 40,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#DCE3E8",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "goat-cheese",
+     "name": {
+      "en": "Goat cheese",
+      "hu": "Kecskesajt"
+     },
+     "role": "dairy",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.8,
+     "g_per_pc": null,
+     "fill": "#FBFAF4",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "eggs",
+     "name": {
+      "en": "Eggs",
+      "hu": "Tojás"
+     },
+     "role": "egg",
+     "driver": false,
+     "unit": "pcs",
+     "default": 1,
+     "step": 1,
+     "alt": [],
+     "g_per_ml": 1.03,
+     "g_per_pc": 50,
+     "fill": "#F6D45A",
+     "gluten": "free",
+     "body": "liaison",
+     "keeps": "raw-egg"
+    },
+    {
+     "id": "egg-yolk",
+     "name": {
+      "en": "Egg yolk",
+      "hu": "Tojássárgája"
+     },
+     "role": "egg",
+     "driver": false,
+     "unit": "pcs",
+     "default": 1,
+     "step": 1,
+     "alt": [],
+     "g_per_ml": 1.03,
+     "g_per_pc": 18,
+     "fill": "#F7B733",
+     "gluten": "free",
+     "body": "liaison",
+     "keeps": "raw-egg"
+    }
+   ]
+  },
+  {
+   "id": "alliums",
+   "en": "Onions & aromatics",
+   "hu": "Hagymák, aromák",
+   "items": [
+    {
+     "id": "onion",
+     "name": {
+      "en": "Onion",
+      "hu": "Vöröshagyma"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "pcs",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 110,
+     "fill": "#EFE6CF",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "fresh"
+    },
+    {
+     "id": "red-onion",
+     "name": {
+      "en": "Red onion",
+      "hu": "Lilahagyma"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "pcs",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 110,
+     "fill": "#9C4C7A",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "fresh"
+    },
+    {
+     "id": "shallot",
+     "name": {
+      "en": "Shallot",
+      "hu": "Mogyoróhagyma"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "pcs",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 25,
+     "fill": "#D9B8B0",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "fresh"
+    },
+    {
+     "id": "garlic",
+     "name": {
+      "en": "Garlic",
+      "hu": "Fokhagyma"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "pcs",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 5,
+     "fill": "#F4EFE0",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "ginger",
+     "name": {
+      "en": "Ginger",
+      "hu": "Gyömbér"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.9,
+     "g_per_pc": null,
+     "fill": "#E8C77A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "horseradish",
+     "name": {
+      "en": "Horseradish (fresh)",
+      "hu": "Torma"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.5,
+     "g_per_pc": null,
+     "fill": "#F1ECDD",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "capers",
+     "name": {
+      "en": "Capers",
+      "hu": "Kapribogyó"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#7E8C4A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "anchovies",
+     "name": {
+      "en": "Anchovies",
+      "hu": "Szardella"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "pcs",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.9,
+     "g_per_pc": 4,
+     "fill": "#8C5A3C",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "cooked"
+    },
+    {
+     "id": "garlic-powder",
+     "name": {
+      "en": "Garlic powder",
+      "hu": "Fokhagymapor"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.5,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.62,
+     "g_per_pc": null,
+     "fill": "#EADDB8",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "onion-powder",
+     "name": {
+      "en": "Onion powder",
+      "hu": "Hagymapor"
+     },
+     "role": "allium",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.5,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.48,
+     "g_per_pc": null,
+     "fill": "#E6CF98",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    }
+   ]
+  },
+  {
+   "id": "herbs",
+   "en": "Fresh herbs",
+   "hu": "Friss zöldfűszerek",
+   "items": [
+    {
+     "id": "parsley",
+     "name": {
+      "en": "Parsley",
+      "hu": "Petrezselyem"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#4F8A3A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "dill",
+     "name": {
+      "en": "Dill",
+      "hu": "Kapor"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#6E9E3A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "chives",
+     "name": {
+      "en": "Chives",
+      "hu": "Metélőhagyma"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#5E8C34",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "basil",
+     "name": {
+      "en": "Basil",
+      "hu": "Bazsalikom"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#3E7F35",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "coriander-leaf",
+     "name": {
+      "en": "Coriander leaf",
+      "hu": "Korianderzöld"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#4D8C3E",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "mint",
+     "name": {
+      "en": "Mint",
+      "hu": "Menta"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#4CAF6A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "tarragon",
+     "name": {
+      "en": "Tarragon",
+      "hu": "Tárkony"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#6B8F3E",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "thyme-fresh",
+     "name": {
+      "en": "Thyme",
+      "hu": "Kakukkfű"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tbsp"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#7A8B54",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "rosemary-fresh",
+     "name": {
+      "en": "Rosemary",
+      "hu": "Rozmaring"
+     },
+     "role": "herb",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tbsp"
+     ],
+     "g_per_ml": 0.25,
+     "g_per_pc": null,
+     "fill": "#5A7A4A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    }
+   ]
+  },
+  {
+   "id": "umami",
+   "en": "Umami & salt",
+   "hu": "Umami, só",
+   "items": [
+    {
+     "id": "tamari",
+     "name": {
+      "en": "Tamari (GF soy sauce)",
+      "hu": "Tamari (GM szójaszósz)"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.15,
+     "g_per_pc": null,
+     "fill": "#3B2418",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "fish-sauce",
+     "name": {
+      "en": "Fish sauce",
+      "hu": "Halszósz"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "ml"
+     ],
+     "g_per_ml": 1.2,
+     "g_per_pc": null,
+     "fill": "#9C5A25",
+     "gluten": "label",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "miso",
+     "name": {
+      "en": "Miso paste",
+      "hu": "Miszó"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "g"
+     ],
+     "g_per_ml": 1.15,
+     "g_per_pc": null,
+     "fill": "#C8954A",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "tomato-paste",
+     "name": {
+      "en": "Tomato paste",
+      "hu": "Paradicsompüré"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "g"
+     ],
+     "g_per_ml": 1.1,
+     "g_per_pc": null,
+     "fill": "#B8341F",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "cooked"
+    },
+    {
+     "id": "worcestershire",
+     "name": {
+      "en": "Worcestershire sauce",
+      "hu": "Worcestershire szósz"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "ml"
+     ],
+     "g_per_ml": 1.1,
+     "g_per_pc": null,
+     "fill": "#4A2814",
+     "gluten": "label",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "salt",
+     "name": {
+      "en": "Salt",
+      "hu": "Só"
+     },
+     "role": "umami",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.5,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 1.14,
+     "g_per_pc": null,
+     "fill": "#F4F1EA",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "stock-cube",
+     "name": {
+      "en": "Stock cubes",
+      "hu": "Leveskocka"
+     },
+     "role": "umami",
+     "driver": false,
+     "unit": "pcs",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.8,
+     "g_per_pc": 10,
+     "fill": "#C9A15A",
+     "gluten": "label",
+     "body": "none",
+     "keeps": "dry-stable"
+    }
+   ]
+  },
+  {
+   "id": "sweet",
+   "en": "Sweet",
+   "hu": "Édes",
+   "items": [
+    {
+     "id": "honey",
+     "name": {
+      "en": "Honey",
+      "hu": "Méz"
+     },
+     "role": "sweet",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "g"
+     ],
+     "g_per_ml": 1.42,
+     "g_per_pc": null,
+     "fill": "#E8A93A",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "maple-syrup",
+     "name": {
+      "en": "Maple syrup",
+      "hu": "Juharszirup"
+     },
+     "role": "sweet",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.33,
+     "g_per_pc": null,
+     "fill": "#B8722C",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "sour-cherry",
+     "name": {
+      "en": "Sour cherries",
+      "hu": "Meggy"
+     },
+     "role": "sweet",
+     "driver": true,
+     "unit": "g",
+     "default": 200,
+     "step": 50,
+     "alt": [
+      "dl"
+     ],
+     "g_per_ml": 0.65,
+     "g_per_pc": null,
+     "fill": "#8E1B2C",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "sugar",
+     "name": {
+      "en": "Sugar",
+      "hu": "Kristálycukor"
+     },
+     "role": "sweet",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 0.84,
+     "g_per_pc": null,
+     "fill": "#FBF8F0",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "brown-sugar",
+     "name": {
+      "en": "Brown sugar",
+      "hu": "Barna cukor"
+     },
+     "role": "sweet",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 0.92,
+     "g_per_pc": null,
+     "fill": "#9C6B3C",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "dark-chocolate",
+     "name": {
+      "en": "Dark chocolate",
+      "hu": "Étcsokoládé"
+     },
+     "role": "sweet",
+     "driver": false,
+     "unit": "g",
+     "default": 50,
+     "step": 10,
+     "alt": [],
+     "g_per_ml": 1.2,
+     "g_per_pc": null,
+     "fill": "#4A2A1C",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "mirin",
+     "name": {
+      "en": "Mirin",
+      "hu": "Mirin"
+     },
+     "role": "sweet",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tsp",
+      "ml"
+     ],
+     "g_per_ml": 1.1,
+     "g_per_pc": null,
+     "fill": "#F0DFA8",
+     "gluten": "label",
+     "body": "none",
+     "keeps": "dry-stable"
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "en": "Heat, paprika & mustard",
+   "hu": "Csípős, paprika, mustár",
+   "items": [
+    {
+     "id": "fresh-chili",
+     "name": {
+      "en": "Fresh chili",
+      "hu": "Friss csípős paprika"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "pcs",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 15,
+     "fill": "#D6302A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "mustard",
+     "name": {
+      "en": "Mustard",
+      "hu": "Mustár"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 1.05,
+     "g_per_pc": null,
+     "fill": "#D9A522",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "dijon",
+     "name": {
+      "en": "Dijon mustard",
+      "hu": "Dijoni mustár"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 1,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 1.05,
+     "g_per_pc": null,
+     "fill": "#C9A03A",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "eros-pista",
+     "name": {
+      "en": "Erős Pista (paprika paste)",
+      "hu": "Erős Pista"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 1.1,
+     "g_per_pc": null,
+     "fill": "#B3241C",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "acid-preserved"
+    },
+    {
+     "id": "sweet-paprika",
+     "name": {
+      "en": "Sweet paprika",
+      "hu": "Édes pirospaprika"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 0.46,
+     "g_per_pc": null,
+     "fill": "#C8281E",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "smoked-paprika",
+     "name": {
+      "en": "Smoked paprika",
+      "hu": "Füstölt paprika"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 0.46,
+     "g_per_pc": null,
+     "fill": "#9E3426",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "hot-paprika",
+     "name": {
+      "en": "Hot paprika",
+      "hu": "Csípős pirospaprika"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "tbsp",
+      "g"
+     ],
+     "g_per_ml": 0.46,
+     "g_per_pc": null,
+     "fill": "#A8331C",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "chili-flakes",
+     "name": {
+      "en": "Chili flakes",
+      "hu": "Chilipehely"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.5,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.26,
+     "g_per_pc": null,
+     "fill": "#B8322A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "cayenne",
+     "name": {
+      "en": "Cayenne pepper",
+      "hu": "Cayenne-bors"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.25,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.36,
+     "g_per_pc": null,
+     "fill": "#C0392B",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "black-pepper",
+     "name": {
+      "en": "Black pepper",
+      "hu": "Fekete bors"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.25,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.46,
+     "g_per_pc": null,
+     "fill": "#3A3430",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "white-pepper",
+     "name": {
+      "en": "White pepper",
+      "hu": "Fehér bors"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.25,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.48,
+     "g_per_pc": null,
+     "fill": "#E6DFCF",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "mustard-powder",
+     "name": {
+      "en": "Mustard powder",
+      "hu": "Mustárpor"
+     },
+     "role": "heat",
+     "driver": true,
+     "unit": "tsp",
+     "default": 0.5,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.4,
+     "g_per_pc": null,
+     "fill": "#D9A82C",
+     "gluten": "label",
+     "body": "none",
+     "keeps": "dry-stable"
+    }
+   ]
+  },
+  {
+   "id": "thickeners",
+   "en": "Thickeners",
+   "hu": "Sűrítők",
+   "items": [
+    {
+     "id": "rice-flour",
+     "name": {
+      "en": "Rice flour",
+      "hu": "Rizsliszt"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.67,
+     "g_per_pc": null,
+     "fill": "#F6F0E2",
+     "gluten": "free",
+     "body": "roux",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "gf-flour-mix",
+     "name": {
+      "en": "GF flour mix",
+      "hu": "GM lisztkeverék"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#F1E4C6",
+     "gluten": "free",
+     "body": "roux",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "cornstarch",
+     "name": {
+      "en": "Cornstarch",
+      "hu": "Kukoricakeményítő"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.53,
+     "g_per_pc": null,
+     "fill": "#FFFDF6",
+     "gluten": "free",
+     "body": "slurry",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "potato-starch",
+     "name": {
+      "en": "Potato starch",
+      "hu": "Burgonyakeményítő"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.67,
+     "g_per_pc": null,
+     "fill": "#F6F2E8",
+     "gluten": "free",
+     "body": "slurry",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "tapioca-starch",
+     "name": {
+      "en": "Tapioca starch",
+      "hu": "Tápiókakeményítő"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.53,
+     "g_per_pc": null,
+     "fill": "#F4F1EA",
+     "gluten": "free",
+     "body": "slurry",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "arrowroot",
+     "name": {
+      "en": "Arrowroot",
+      "hu": "Arrowroot"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tbsp",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "g",
+      "tsp"
+     ],
+     "g_per_ml": 0.53,
+     "g_per_pc": null,
+     "fill": "#EFE8D6",
+     "gluten": "free",
+     "body": "slurry",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "xanthan",
+     "name": {
+      "en": "Xanthan gum",
+      "hu": "Xantángumi"
+     },
+     "role": "thickener",
+     "driver": false,
+     "unit": "tsp",
+     "default": 0.25,
+     "step": 0.25,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#F7F4EA",
+     "gluten": "free",
+     "body": "slurry",
+     "keeps": "dry-stable"
+    }
+   ]
+  },
+  {
+   "id": "liquids",
+   "en": "Liquids & stock",
+   "hu": "Folyadék, alaplé",
+   "items": [
+    {
+     "id": "water",
+     "name": {
+      "en": "Water",
+      "hu": "Víz"
+     },
+     "role": "liquid",
+     "driver": false,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#E8F1F5",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "stock-liquid",
+     "name": {
+      "en": "Stock (liquid)",
+      "hu": "Alaplé"
+     },
+     "role": "liquid",
+     "driver": false,
+     "unit": "dl",
+     "default": 2,
+     "step": 0.5,
+     "alt": [
+      "ml"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#D9B26A",
+     "gluten": "label",
+     "body": "reduce",
+     "keeps": "cooked"
+    },
+    {
+     "id": "coconut-milk",
+     "name": {
+      "en": "Coconut milk",
+      "hu": "Kókusztej"
+     },
+     "role": "liquid",
+     "driver": true,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 1,
+     "g_per_pc": null,
+     "fill": "#F6F2EA",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "fresh-dairy"
+    },
+    {
+     "id": "passata",
+     "name": {
+      "en": "Passata",
+      "hu": "Passata"
+     },
+     "role": "liquid",
+     "driver": true,
+     "unit": "dl",
+     "default": 1,
+     "step": 0.5,
+     "alt": [
+      "ml",
+      "tbsp"
+     ],
+     "g_per_ml": 1.03,
+     "g_per_pc": null,
+     "fill": "#C2361F",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "cooked"
+    }
+   ]
+  },
+  {
+   "id": "veg",
+   "en": "Vegetables, fruit & nuts",
+   "hu": "Zöldség, gyümölcs, olajos mag",
+   "items": [
+    {
+     "id": "cucumber",
+     "name": {
+      "en": "Cucumber",
+      "hu": "Uborka"
+     },
+     "role": "veg",
+     "driver": true,
+     "unit": "g",
+     "default": 150,
+     "step": 50,
+     "alt": [
+      "pcs"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 300,
+     "fill": "#8FBF6A",
+     "gluten": "free",
+     "body": "none",
+     "keeps": "fresh"
+    },
+    {
+     "id": "peanut-butter",
+     "name": {
+      "en": "Peanut butter",
+      "hu": "Mogyoróvaj"
+     },
+     "role": "veg",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 1.08,
+     "g_per_pc": null,
+     "fill": "#B67A3C",
+     "gluten": "label",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "tahini",
+     "name": {
+      "en": "Tahini",
+      "hu": "Tahini"
+     },
+     "role": "veg",
+     "driver": true,
+     "unit": "tbsp",
+     "default": 2,
+     "step": 1,
+     "alt": [
+      "g"
+     ],
+     "g_per_ml": 1.08,
+     "g_per_pc": null,
+     "fill": "#D9BE8E",
+     "gluten": "free",
+     "body": "base",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "carrot",
+     "name": {
+      "en": "Carrot",
+      "hu": "Sárgarépa"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 100,
+     "step": 50,
+     "alt": [
+      "pcs"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 80,
+     "fill": "#E8822A",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "parsley-root",
+     "name": {
+      "en": "Parsley root",
+      "hu": "Petrezselyemgyökér"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 80,
+     "step": 20,
+     "alt": [
+      "pcs"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": 70,
+     "fill": "#F0E2C4",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "celeriac",
+     "name": {
+      "en": "Celeriac",
+      "hu": "Zeller"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 80,
+     "step": 20,
+     "alt": [],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#E6DCC0",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "roasted-peppers",
+     "name": {
+      "en": "Roasted peppers (jar)",
+      "hu": "Sült paprika (üveges)"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 150,
+     "step": 50,
+     "alt": [],
+     "g_per_ml": 0.8,
+     "g_per_pc": null,
+     "fill": "#C7372A",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "champignon",
+     "name": {
+      "en": "Mushrooms (white)",
+      "hu": "Csiperke"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 200,
+     "step": 50,
+     "alt": [],
+     "g_per_ml": 0.5,
+     "g_per_pc": null,
+     "fill": "#CFC0A8",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "cooked"
+    },
+    {
+     "id": "raspberry",
+     "name": {
+      "en": "Raspberries",
+      "hu": "Málna"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 150,
+     "step": 50,
+     "alt": [],
+     "g_per_ml": 0.55,
+     "g_per_pc": null,
+     "fill": "#C82A4A",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "fresh"
+    },
+    {
+     "id": "walnuts",
+     "name": {
+      "en": "Walnuts",
+      "hu": "Dió"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 30,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.45,
+     "g_per_pc": null,
+     "fill": "#9C7048",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "dry-stable"
+    },
+    {
+     "id": "pine-nuts",
+     "name": {
+      "en": "Pine nuts",
+      "hu": "Fenyőmag"
+     },
+     "role": "veg",
+     "driver": false,
+     "unit": "g",
+     "default": 30,
+     "step": 10,
+     "alt": [
+      "tbsp"
+     ],
+     "g_per_ml": 0.6,
+     "g_per_pc": null,
+     "fill": "#EDDBA8",
+     "gluten": "free",
+     "body": "puree",
+     "keeps": "dry-stable"
+    }
+   ]
+  }
+ ],
+ "families": [
+  {
+   "id": "hungarian",
+   "en": "Hungarian mártások",
+   "hu": "Magyar mártások",
+   "parent": null,
+   "vessel": "jug",
+   "chip": "hungarian",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "paprikas",
+   "en": "Paprikás sauce",
+   "hu": "Paprikás mártás",
+   "parent": "hungarian",
+   "vessel": "jug",
+   "chip": "hungarian",
+   "body": "coats",
+   "note": {
+    "en": "Paprika stirred into the onion's fat off the heat, sour cream tempered in — the base of csirkepaprikás.",
+    "hu": "A paprika a tűzről lehúzva a hagymás zsiradékba, a tejföl elhabarva — ez a csirkepaprikás alapja."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "kapormartas",
+   "en": "Dill sauce",
+   "hu": "Kapormártás",
+   "parent": "hungarian",
+   "vessel": "jug",
+   "chip": "hungarian",
+   "body": "coats",
+   "note": {
+    "en": "A pale roux, milk and sour cream, dill, a little sugar and vinegar — sweet-sour and green.",
+    "hu": "Világos rántás, tej és tejföl, kapor, egy kevés cukor és ecet — édes-savanyú és zöld."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "vadas",
+   "en": "Vadas",
+   "hu": "Vadas",
+   "parent": "hungarian",
+   "vessel": "jug",
+   "chip": "hungarian",
+   "body": "coats",
+   "note": {
+    "en": "Roots cooked soft and blended, mustard, sugar and lemon, sour cream — the sauce of a Sunday roast.",
+    "hu": "Puhára főtt, turmixolt gyökérzöldség, mustár, cukor és citrom, tejföl — a vasárnapi sült mártása."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "meggymartas",
+   "en": "Sour cherry sauce",
+   "hu": "Meggymártás",
+   "parent": "hungarian",
+   "vessel": "jug",
+   "chip": "hungarian",
+   "body": "coats",
+   "note": {
+    "en": "Sour cherries with sugar and cinnamon, thickened and softened with sour cream — for boiled beef, or cold in summer.",
+    "hu": "Meggy cukorral és fahéjjal, besűrítve és tejföllel lágyítva — főtt marhához, vagy nyáron hidegen."
+   },
+   "kind": "sweet"
+  },
+  {
+   "id": "cold",
+   "en": "Dips and cold sauces",
+   "hu": "Mártogatósok, hideg mártások",
+   "parent": null,
+   "vessel": "bowl",
+   "chip": "dips-cold",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "tzatziki",
+   "en": "Tzatziki",
+   "hu": "Tzatziki",
+   "parent": "cold",
+   "vessel": "bowl",
+   "chip": "dips-cold",
+   "body": "thick",
+   "note": {
+    "en": "Thick yoghurt, cucumber squeezed dry, garlic, and dill or mint.",
+    "hu": "Sűrű joghurt, kinyomkodott uborka, fokhagyma, kapor vagy menta."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "tormamartas",
+   "en": "Horseradish sauce",
+   "hu": "Tormamártás",
+   "parent": "cold",
+   "vessel": "bowl",
+   "chip": "dips-cold",
+   "body": null,
+   "note": {
+    "en": "Grated horseradish softened with sour cream (or a white roux), a little sugar and acid — for ham and boiled beef.",
+    "hu": "Reszelt torma tejföllel (vagy világos rántással) lágyítva, egy kevés cukor és sav — sonkához, főtt húshoz."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "herb-yoghurt",
+   "en": "Herb yoghurt",
+   "hu": "Zöldfűszeres joghurt",
+   "parent": "cold",
+   "vessel": "bowl",
+   "chip": "dips-cold",
+   "body": "thick",
+   "note": {
+    "en": "Yoghurt and a fistful of herbs: a cool sauce for grilled meat.",
+    "hu": "Joghurt és egy marék zöldfűszer: hűsítő mártás grillezett húshoz."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "emulsions",
+   "en": "Emulsions",
+   "hu": "Emulziók",
+   "parent": null,
+   "vessel": "bowl",
+   "chip": "emulsions",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "mayonnaise",
+   "en": "Mayonnaise",
+   "hu": "Majonéz",
+   "parent": "emulsions",
+   "vessel": "bowl",
+   "chip": "emulsions",
+   "body": "stiff",
+   "note": {
+    "en": "Oil held in tiny drops by the yolk — about 250 ml per yolk.",
+    "hu": "A sárgája apró cseppekben tartja az olajat — sárgájánként kb. 250 ml."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "aioli",
+   "en": "Aioli",
+   "hu": "Aioli",
+   "parent": "mayonnaise",
+   "vessel": "bowl",
+   "chip": "emulsions",
+   "body": "stiff",
+   "note": {
+    "en": "Garlic mayonnaise.",
+    "hu": "Fokhagymás majonéz."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "tartare",
+   "en": "Tartare sauce",
+   "hu": "Tartármártás",
+   "parent": "mayonnaise",
+   "vessel": "bowl",
+   "chip": "emulsions",
+   "body": "thick",
+   "note": {
+    "en": "Mayonnaise with capers and chopped pickles — for fish.",
+    "hu": "Majonéz kapribogyóval és apróra vágott csemegeuborkával — halhoz."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "hollandaise",
+   "en": "Hollandaise",
+   "hu": "Hollandi mártás",
+   "parent": "emulsions",
+   "vessel": "sauceboat",
+   "chip": "emulsions",
+   "body": "coats",
+   "note": {
+    "en": "Yolks whisked warm, butter in a thin stream, lemon — for eggs, fish and asparagus.",
+    "hu": "Melegen felvert sárgája, vékony sugárban vaj, citrom — tojáshoz, halhoz, spárgához."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "bearnaise",
+   "en": "Béarnaise",
+   "hu": "Béarnaise",
+   "parent": "hollandaise",
+   "vessel": "sauceboat",
+   "chip": "emulsions",
+   "body": "coats",
+   "note": {
+    "en": "Hollandaise with tarragon and a shallot-and-vinegar reduction — for steak.",
+    "hu": "Hollandi tárkonnyal és salottás-ecetes redukcióval — steakhez."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "beurre-blanc",
+   "en": "Beurre blanc",
+   "hu": "Beurre blanc",
+   "parent": "emulsions",
+   "vessel": "sauceboat",
+   "chip": "emulsions",
+   "body": "coats",
+   "note": {
+    "en": "A wine-and-shallot reduction with cold butter whisked in — for fish.",
+    "hu": "Boros-salottás redukció, hideg vajjal felverve — halhoz."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "dressings",
+   "en": "Dressings",
+   "hu": "Öntetek",
+   "parent": null,
+   "vessel": "bottle",
+   "chip": "dressings",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "vinaigrette",
+   "en": "Vinaigrette",
+   "hu": "Vinaigrette",
+   "parent": "dressings",
+   "vessel": "bottle",
+   "chip": "dressings",
+   "body": "thin",
+   "note": {
+    "en": "Three parts oil to one of acid, and mustard to hold it a while.",
+    "hu": "Három rész olaj, egy rész sav, és mustár, hogy egy ideig együtt maradjon."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "asian",
+   "en": "Asian-style",
+   "hu": "Ázsiai",
+   "parent": null,
+   "vessel": "bottle",
+   "chip": "asian",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "teriyaki",
+   "en": "Teriyaki",
+   "hu": "Teriyaki",
+   "parent": "asian",
+   "vessel": "bottle",
+   "chip": "asian",
+   "body": "coats",
+   "note": {
+    "en": "Tamari, honey and rice vinegar (2 : 1 : ½), simmered glossy — GF, unlike the bottled soy one.",
+    "hu": "Tamari, méz és rizsecet (2 : 1 : ½), fényesre főzve — GM, nem úgy, mint az üveges, szójaszószos."
+   },
+   "kind": "condiment"
+  },
+  {
+   "id": "peanut",
+   "en": "Peanut sauce",
+   "hu": "Mogyorószósz",
+   "parent": "asian",
+   "vessel": "bowl",
+   "chip": "asian",
+   "body": "coats",
+   "note": {
+    "en": "Peanut butter loosened with tamari and lime, a little sweet and a little heat.",
+    "hu": "Mogyoróvaj tamarival és limével lazítva, egy kevés édessel és csípőssel."
+   },
+   "kind": "condiment"
+  },
+  {
+   "id": "sweet-chilli",
+   "en": "Sweet chilli sauce",
+   "hu": "Édes chiliszósz",
+   "parent": "asian",
+   "vessel": "bottle",
+   "chip": "asian",
+   "body": "coats",
+   "note": {
+    "en": "Chilli, sugar and vinegar, cooked to a glossy dip.",
+    "hu": "Chili, cukor és ecet, fényes mártogatóssá főzve."
+   },
+   "kind": "condiment"
+  },
+  {
+   "id": "sweet",
+   "en": "Sweet sauces",
+   "hu": "Édes mártások",
+   "parent": null,
+   "vessel": "jug",
+   "chip": "sweet",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "custard",
+   "en": "Custard",
+   "hu": "Vaníliasodó",
+   "parent": "sweet",
+   "vessel": "jug",
+   "chip": "sweet",
+   "body": "coats",
+   "note": {
+    "en": "Milk, yolks and sugar, stirred gently until it coats a spoon — never boiled.",
+    "hu": "Tej, sárgája, cukor, lassan kevergetve, amíg bevonja a kanalat — sosem forralva."
+   },
+   "kind": "sweet"
+  },
+  {
+   "id": "chocolate",
+   "en": "Chocolate sauce",
+   "hu": "Csokoládéöntet",
+   "parent": "sweet",
+   "vessel": "jug",
+   "chip": "sweet",
+   "body": "coats",
+   "note": {
+    "en": "Dark chocolate melted into warm cream.",
+    "hu": "Étcsokoládé meleg tejszínben megolvasztva."
+   },
+   "kind": "sweet"
+  },
+  {
+   "id": "caramel",
+   "en": "Caramel sauce",
+   "hu": "Karamellszósz",
+   "parent": "sweet",
+   "vessel": "jug",
+   "chip": "sweet",
+   "body": "coats",
+   "note": {
+    "en": "Sugar cooked to amber, cream and butter whisked in.",
+    "hu": "Borostyánszínűre főzött cukor, beledolgozott tejszín és vaj."
+   },
+   "kind": "sweet"
+  },
+  {
+   "id": "coulis",
+   "en": "Fruit coulis",
+   "hu": "Gyümölcsöntet",
+   "parent": "sweet",
+   "vessel": "jug",
+   "chip": "sweet",
+   "body": "coats",
+   "note": {
+    "en": "Fruit blended with sugar and a little lemon, then sieved.",
+    "hu": "Cukorral és kevés citrommal turmixolt, átszűrt gyümölcs."
+   },
+   "kind": "sweet"
+  },
+  {
+   "id": "purees",
+   "en": "Purées and pestos",
+   "hu": "Pürék, pestók",
+   "parent": null,
+   "vessel": "jar",
+   "chip": "dips-cold",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "pesto",
+   "en": "Pesto",
+   "hu": "Pesto",
+   "parent": "purees",
+   "vessel": "jar",
+   "chip": "dips-cold",
+   "body": "thick",
+   "note": {
+    "en": "Basil, nuts, hard cheese and olive oil, pounded or blitzed.",
+    "hu": "Bazsalikom, olajos mag, kemény sajt és olívaolaj, mozsárban vagy aprítóval."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "pepper-paste",
+   "en": "Pepper paste",
+   "hu": "Paprikakrém",
+   "parent": "purees",
+   "vessel": "jar",
+   "chip": "dips-cold",
+   "body": "thick",
+   "note": {
+    "en": "Roasted peppers blended smooth — ajvar's family.",
+    "hu": "Simára turmixolt sült paprika — az ajvár rokona."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "marinades",
+   "en": "Marinades and wet rubs",
+   "hu": "Pácok, fűszerpaszták",
+   "parent": null,
+   "vessel": "bottle",
+   "chip": "marinades",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "wet-rub",
+   "en": "Wet rub",
+   "hu": "Fűszerpaszta",
+   "parent": "marinades",
+   "vessel": "jar",
+   "chip": "marinades",
+   "body": "thick",
+   "note": {
+    "en": "Spices in a little oil, rubbed into the meat.",
+    "hu": "Fűszerek kevés olajban, a húsba dörzsölve."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "marinade",
+   "en": "Marinade",
+   "hu": "Pác",
+   "parent": "marinades",
+   "vessel": "bottle",
+   "chip": "marinades",
+   "body": "thin",
+   "note": {
+    "en": "Acid, oil and aromatics; the meat sits in it before it is cooked.",
+    "hu": "Sav, olaj és aromák; a hús sütés előtt ebben áll."
+   },
+   "kind": "rich"
+  },
+  {
+   "id": "pan",
+   "en": "Pan and reduced sauces",
+   "hu": "Serpenyős, beforralt mártások",
+   "parent": null,
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "red-wine-sauce",
+   "en": "Red wine sauce",
+   "hu": "Vörösboros mártás",
+   "parent": "pan",
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": "coats",
+   "note": {
+    "en": "Red wine reduced with shallot and stock, butter at the end.",
+    "hu": "Salottával és alaplével beforralt vörösbor, a végén vaj."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "gravy",
+   "en": "Gravy",
+   "hu": "Pecsenyelé",
+   "parent": "pan",
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": "coats",
+   "note": {
+    "en": "The pan's juices with stock, thickened — the stock must be GF.",
+    "hu": "A sült leve alaplével, besűrítve — az alaplé legyen GM."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "roux",
+   "en": "Roux sauces",
+   "hu": "Rántásos mártások",
+   "parent": null,
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": null,
+   "note": null,
+   "kind": "savoury"
+  },
+  {
+   "id": "bechamel",
+   "en": "Béchamel",
+   "hu": "Besamel",
+   "parent": "roux",
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": "coats",
+   "note": {
+    "en": "Butter and rice flour, milk whisked in: 30 g + 30 g + 500 ml coats a spoon.",
+    "hu": "Vaj és rizsliszt, beledolgozott tej: 30 g + 30 g + 500 ml bevonja a kanalat."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "mornay",
+   "en": "Cheese sauce (Mornay)",
+   "hu": "Sajtmártás (Mornay)",
+   "parent": "bechamel",
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": "coats",
+   "note": {
+    "en": "Béchamel with grated cheese stirred in off the heat.",
+    "hu": "Besamel, a tűzről levéve belekevert reszelt sajttal."
+   },
+   "kind": "savoury"
+  },
+  {
+   "id": "veloute",
+   "en": "Velouté",
+   "hu": "Velouté",
+   "parent": "roux",
+   "vessel": "jug",
+   "chip": "roux-dairy",
+   "body": "coats",
+   "note": {
+    "en": "A pale roux with stock instead of milk.",
+    "hu": "Világos rántás, tej helyett alaplével."
+   },
+   "kind": "savoury"
+  }
+ ],
+ "foods": [
+  {
+   "id": "pork",
+   "icon": "om-1f416",
+   "en": "Pork",
+   "hu": "Sertés"
+  },
+  {
+   "id": "chicken",
+   "icon": "om-1f357",
+   "en": "Chicken & duck",
+   "hu": "Csirke, kacsa"
+  },
+  {
+   "id": "beef",
+   "icon": "om-1f969",
+   "en": "Beef",
+   "hu": "Marha"
+  },
+  {
+   "id": "lamb",
+   "icon": "om-1f411",
+   "en": "Lamb",
+   "hu": "Bárány"
+  },
+  {
+   "id": "game",
+   "icon": "om-1f98c",
+   "en": "Game",
+   "hu": "Vad"
+  },
+  {
+   "id": "fish",
+   "icon": "om-1f41f",
+   "en": "Fish",
+   "hu": "Hal"
+  },
+  {
+   "id": "seafood",
+   "icon": "om-1f990",
+   "en": "Seafood",
+   "hu": "Tenger gyümölcsei"
+  },
+  {
+   "id": "eggs",
+   "icon": "om-1f95a",
+   "en": "Eggs",
+   "hu": "Tojás"
+  },
+  {
+   "id": "potatoes",
+   "icon": "om-1f954",
+   "en": "Potatoes",
+   "hu": "Krumpli"
+  },
+  {
+   "id": "roots",
+   "icon": "om-1f955",
+   "en": "Root vegetables",
+   "hu": "Gyökérzöldség"
+  },
+  {
+   "id": "cabbage",
+   "icon": "om-1f96c",
+   "en": "Cabbage & greens",
+   "hu": "Káposzta, levélzöld"
+  },
+  {
+   "id": "tomato",
+   "icon": "om-1f345",
+   "en": "Tomatoes",
+   "hu": "Paradicsom"
+  },
+  {
+   "id": "mushrooms",
+   "icon": "om-1f344",
+   "en": "Mushrooms",
+   "hu": "Gomba"
+  },
+  {
+   "id": "pulses",
+   "icon": "om-1fad8",
+   "en": "Beans & lentils",
+   "hu": "Bab, lencse"
+  },
+  {
+   "id": "rice",
+   "icon": "om-1f35a",
+   "en": "Rice & grains",
+   "hu": "Rizs, gabona"
+  },
+  {
+   "id": "pasta",
+   "icon": "om-1f35d",
+   "en": "GF pasta",
+   "hu": "GM tészta"
+  },
+  {
+   "id": "cheese",
+   "icon": "om-1f9c0",
+   "en": "Cheese & yoghurt",
+   "hu": "Sajt, joghurt"
+  },
+  {
+   "id": "bread",
+   "icon": "om-1f35e",
+   "en": "GF bread & flatbread",
+   "hu": "GM kenyér, lepény"
+  },
+  {
+   "id": "fruit",
+   "icon": "om-1f34e",
+   "en": "Fruit",
+   "hu": "Gyümölcs"
+  },
+  {
+   "id": "chocolate",
+   "icon": "om-1f36b",
+   "en": "Chocolate",
+   "hu": "Csokoládé"
+  },
+  {
+   "id": "coffee-tea",
+   "icon": "om-2615",
+   "en": "Coffee & tea",
+   "hu": "Kávé, tea"
+  },
+  {
+   "id": "soups",
+   "icon": "om-1f372",
+   "en": "Soups & stews",
+   "hu": "Leves, ragu"
+  },
+  {
+   "id": "pickles",
+   "icon": "om-1f952",
+   "en": "Pickles",
+   "hu": "Savanyúság"
+  },
+  {
+   "id": "grilled-veg",
+   "icon": "om-1f346",
+   "en": "Grilled & roast vegetables",
+   "hu": "Grillezett, sült zöldség"
+  },
+  {
+   "id": "baking",
+   "icon": "om-1f370",
+   "en": "Cakes & baking",
+   "hu": "Sütemény"
+  }
+ ],
+ "roles": [
+  {
+   "id": "fat",
+   "en": "Fat",
+   "hu": "Zsiradék"
+  },
+  {
+   "id": "acid",
+   "en": "Acid",
+   "hu": "Sav"
+  },
+  {
+   "id": "dairy",
+   "en": "Dairy",
+   "hu": "Tejtermék"
+  },
+  {
+   "id": "egg",
+   "en": "Egg",
+   "hu": "Tojás"
+  },
+  {
+   "id": "allium",
+   "en": "Onion & aromatic",
+   "hu": "Hagyma, aroma"
+  },
+  {
+   "id": "herb",
+   "en": "Herb",
+   "hu": "Zöldfűszer"
+  },
+  {
+   "id": "umami",
+   "en": "Umami & salt",
+   "hu": "Umami, só"
+  },
+  {
+   "id": "sweet",
+   "en": "Sweet",
+   "hu": "Édes"
+  },
+  {
+   "id": "heat",
+   "en": "Heat",
+   "hu": "Csípős"
+  },
+  {
+   "id": "thickener",
+   "en": "Thickener",
+   "hu": "Sűrítő"
+  },
+  {
+   "id": "liquid",
+   "en": "Liquid",
+   "hu": "Folyadék"
+  },
+  {
+   "id": "veg",
+   "en": "Vegetable, fruit, nut",
+   "hu": "Zöldség, gyümölcs, mag"
+  }
+ ],
+ "taste": [
+  {
+   "id": "salt",
+   "en": "Salty",
+   "hu": "Sós"
+  },
+  {
+   "id": "acid",
+   "en": "Sour",
+   "hu": "Savanyú"
+  },
+  {
+   "id": "fat",
+   "en": "Rich",
+   "hu": "Gazdag"
+  },
+  {
+   "id": "sweet",
+   "en": "Sweet",
+   "hu": "Édes"
+  },
+  {
+   "id": "heat",
+   "en": "Hot",
+   "hu": "Csípős"
+  },
+  {
+   "id": "umami",
+   "en": "Savoury",
+   "hu": "Umami"
+  },
+  {
+   "id": "aromatic",
+   "en": "Aromatic",
+   "hu": "Illatos"
+  }
+ ],
+ "units": [
+  {
+   "id": "tbsp",
+   "en": "tbsp",
+   "hu": "ek"
+  },
+  {
+   "id": "tsp",
+   "en": "tsp",
+   "hu": "tk"
+  },
+  {
+   "id": "ml",
+   "en": "ml",
+   "hu": "ml"
+  },
+  {
+   "id": "dl",
+   "en": "dl",
+   "hu": "dl"
+  },
+  {
+   "id": "g",
+   "en": "g",
+   "hu": "g"
+  },
+  {
+   "id": "pcs",
+   "en": "pcs",
+   "hu": "db"
+  }
+ ],
+ "keeps": [
+  {
+   "id": "raw-egg",
+   "days": 2,
+   "en": "Raw egg",
+   "hu": "Nyers tojás"
+  },
+  {
+   "id": "fresh-dairy",
+   "days": 3,
+   "en": "Fresh dairy",
+   "hu": "Friss tejtermék"
+  },
+  {
+   "id": "fresh",
+   "days": 4,
+   "en": "Fresh vegetables and herbs",
+   "hu": "Friss zöldség, zöldfűszer"
+  },
+  {
+   "id": "oil-infusion",
+   "days": 4,
+   "en": "Fresh garlic or herbs in oil",
+   "hu": "Olajban álló friss fokhagyma, zöldfűszer"
+  },
+  {
+   "id": "cooked",
+   "days": 5,
+   "en": "Cooked",
+   "hu": "Főtt"
+  },
+  {
+   "id": "acid-preserved",
+   "days": 14,
+   "en": "Kept by its acid",
+   "hu": "A sava tartósítja"
+  },
+  {
+   "id": "dry-stable",
+   "days": 30,
+   "en": "Keeps well",
+   "hu": "Jól eláll"
+  }
+ ],
+ "chips": [
+  {
+   "id": "hungarian",
+   "en": "Hungarian mártások",
+   "hu": "Magyar mártások"
+  },
+  {
+   "id": "roux-dairy",
+   "en": "Roux, pan & dairy",
+   "hu": "Rántásos, serpenyős"
+  },
+  {
+   "id": "emulsions",
+   "en": "Emulsions",
+   "hu": "Emulziók"
+  },
+  {
+   "id": "dressings",
+   "en": "Dressings",
+   "hu": "Öntetek"
+  },
+  {
+   "id": "dips-cold",
+   "en": "Dips, cold & pestos",
+   "hu": "Mártogatós, hideg, pesto"
+  },
+  {
+   "id": "marinades",
+   "en": "Marinades & wet rubs",
+   "hu": "Pácok"
+  },
+  {
+   "id": "asian",
+   "en": "Asian-style",
+   "hu": "Ázsiai"
+  },
+  {
+   "id": "sweet",
+   "en": "Sweet",
+   "hu": "Édes"
+  }
+ ],
+ "stability": [
+  {
+   "id": "emulsion",
+   "en": "Emulsion",
+   "hu": "Emulzió"
+  },
+  {
+   "id": "curdle",
+   "en": "Curdling",
+   "hu": "Kicsapódás"
+  },
+  {
+   "id": "starch",
+   "en": "Starch",
+   "hu": "Keményítő"
+  },
+  {
+   "id": "raw-egg",
+   "en": "Raw egg",
+   "hu": "Nyers tojás"
+  },
+  {
+   "id": "garlic-in-oil",
+   "en": "Garlic in oil",
+   "hu": "Fokhagyma olajban"
+  }
+ ],
+ "levels": [
+  {
+   "id": "ok",
+   "en": "Fine",
+   "hu": "Rendben"
+  },
+  {
+   "id": "at-limit",
+   "en": "At the limit",
+   "hu": "A határon"
+  },
+  {
+   "id": "warn",
+   "en": "Careful",
+   "hu": "Vigyázat"
+  }
+ ],
+ "words": [
+  {
+   "id": "sings",
+   "min": 80,
+   "mascot": "proud",
+   "en": "Sings",
+   "hu": "Ragyog"
+  },
+  {
+   "id": "good",
+   "min": 60,
+   "mascot": "happy",
+   "en": "Good",
+   "hu": "Jó"
+  },
+  {
+   "id": "muddled",
+   "min": 40,
+   "mascot": "think",
+   "en": "Muddled",
+   "hu": "Zavaros"
+  },
+  {
+   "id": "fighting",
+   "min": 0,
+   "mascot": "worried",
+   "en": "Fighting",
+   "hu": "Veszekszik"
+  }
+ ],
+ "heat": [
+  {
+   "id": "mild",
+   "below": 0.15,
+   "en": "Mild",
+   "hu": "Enyhe"
+  },
+  {
+   "id": "warm",
+   "below": 0.4,
+   "en": "Warm",
+   "hu": "Pikáns"
+  },
+  {
+   "id": "hot",
+   "below": 0.75,
+   "en": "Hot",
+   "hu": "Csípős"
+  },
+  {
+   "id": "fiery",
+   "below": 99,
+   "en": "Fiery",
+   "hu": "Tüzes"
+  }
+ ],
+ "body": [
+  {
+   "id": "thin",
+   "en": "Thin — runs off the spoon",
+   "hu": "Híg — lefolyik a kanálról",
+   "below": 0.6
+  },
+  {
+   "id": "coats",
+   "en": "Coats a spoon",
+   "hu": "Bevonja a kanalat",
+   "below": 1.9
+  },
+  {
+   "id": "thick",
+   "en": "Thick — holds its shape",
+   "hu": "Sűrű — tartja a formáját",
+   "below": 3.0
+  },
+  {
+   "id": "stiff",
+   "en": "Stiff — stands up",
+   "hu": "Kemény — megáll magában",
+   "below": 99
+  }
+ ],
+ "max_lines": 24
+}

@@ -1,0 +1,36 @@
+# The acids with each other: mostly the same job; wines and wine vinegars are family.
+lemon-juice:
+  lime-juice: [0, same-job]
+  vinegar: [0, same-job]
+  wine-vinegar: [0, same-job]
+  balsamic: [-1, two-leads]
+  rice-vinegar: [0, same-job]
+  white-wine: [1, gentle-company]
+  red-wine: [-1, odd-couple]
+lime-juice:
+  vinegar: [0, same-job]
+  wine-vinegar: [-1, kitchens-apart]
+  balsamic: [-2, kitchens-apart]
+  rice-vinegar: [1, cuisine-mates]
+  white-wine: [-1, kitchens-apart]
+  red-wine: [-2, kitchens-apart]
+vinegar:
+  wine-vinegar: [0, same-job]
+  balsamic: [-1, two-leads]
+  rice-vinegar: [0, same-job]
+  white-wine: [0, harmless]
+  red-wine: [-1, two-leads]
+wine-vinegar:
+  balsamic: [0, same-job]
+  rice-vinegar: [0, same-job]
+  white-wine: [2, same-family]
+  red-wine: [2, same-family]
+balsamic:
+  rice-vinegar: [-1, kitchens-apart]
+  white-wine: [0, harmless]
+  red-wine: [2, same-family]
+rice-vinegar:
+  white-wine: [-1, kitchens-apart]
+  red-wine: [-2, kitchens-apart]
+white-wine:
+  red-wine: [0, same-job]

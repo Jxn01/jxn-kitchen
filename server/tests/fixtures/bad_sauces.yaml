@@ -1,0 +1,34 @@
+# Sauces that fail, and how (spec 2026-10-19 §9, plan SP11 step 6). Each must score under 40 with at least the findings
+# named here — a sauce engine that praises a split mayonnaise or a botulism risk is broken.
+bad:
+  - id: split-mayonnaise
+    why: one yolk asked to hold 600 ml of oil
+    lines: [{id: egg-yolk, qty: 1, unit: pcs}, {id: sunflower-oil, qty: 600, unit: ml}, {id: salt, qty: 0.25, unit: tsp}]
+    steps: ["Whisk the oil into the yolk."]
+    findings: [emulsion-split, raw-egg]
+  - id: boiled-yoghurt
+    why: yoghurt and lemon brought to the boil, no starch to protect it
+    lines: [{id: yogurt, qty: 300, unit: g}, {id: lemon-juice, qty: 3, unit: tbsp}]
+    steps: ["Bring it to the boil and simmer 5 minutes."]
+    findings: [curdle-warn]
+  - id: garlic-oil-on-the-counter
+    why: raw garlic and herbs in oil with no acid and no cooking
+    lines: [{id: olive-oil, qty: 2, unit: dl}, {id: garlic, qty: 6, unit: pcs}, {id: basil, qty: 3, unit: tbsp}]
+    steps: ["Crush the garlic into the oil and leave it to infuse."]
+    findings: [garlic-in-oil]
+  - id: everything-fights
+    why: sour cream, fish sauce, balsamic, tarragon and peanut butter — kitchens that never meet
+    lines: [{id: sour-cream, qty: 2, unit: dl}, {id: fish-sauce, qty: 2, unit: tbsp}, {id: balsamic, qty: 3, unit: tbsp},
+            {id: tarragon, qty: 3, unit: tbsp}, {id: peanut-butter, qty: 3, unit: tbsp}, {id: coconut-milk, qty: 1, unit: dl}]
+    steps: ["Stir it together."]
+    findings: [pairs-rest]
+  - id: raw-starch-gravy
+    why: cornstarch stirred into cold milk and served — it never thickens
+    lines: [{id: milk, qty: 5, unit: dl}, {id: cornstarch, qty: 3, unit: tbsp}, {id: salt, qty: 0.5, unit: tsp}]
+    steps: ["Stir the cornstarch into the milk and serve."]
+    findings: [starch-raw]
+  - id: salt-bomb
+    why: a béchamel with nine teaspoons of salt
+    lines: [{id: butter, qty: 30, unit: g}, {id: rice-flour, qty: 3, unit: tbsp}, {id: milk, qty: 5, unit: dl}, {id: salt, qty: 9, unit: tsp}]
+    steps: ["Melt the butter, stir in the flour, whisk in the milk and simmer 5 minutes."]
+    findings: [too-salty]

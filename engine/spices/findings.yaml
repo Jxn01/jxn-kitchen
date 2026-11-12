@@ -1,0 +1,38 @@
+# The structure findings of the spice engine (spec 2026-10-19 §5.1) — the ledger lines that are not a pair. Every one
+# bilingual; the engine fills the placeholders and capitalises the first letter. Weights live in spice_engine.py
+# (WEIGHTS) and are listed in the README. Placeholders:
+#   {spice} one jar · {spices} a list of jars · {name} {note} a backbone · {pct} a whole percent · {suggest} up to three
+#   jars that would help (chosen from the matrix) · {bloom} {fragile} two lists of jars · {cuisines} "Hungarian 60 %, …"
+#   {classic} a classic's name · {sim} similarity in percent · {diff} what differs from it (built from `diff` below)
+backbone: {en: "You have {name}. {note}", hu: "Ez {name}. {note}"}
+one-note: {en: "{spice} is {pct} % of what you taste — the rest can hardly speak.", hu: "{spice}: az íz {pct} %-a — a többi alig jut szóhoz."}
+shouting: {en: "{spices}: four or more loud accents that don't agree — let one or two of them lead.", hu: "{spices}: négy vagy több hangos fűszer, amelyek nem értenek egyet — egy-kettő vezessen."}
+pairs-rest-good: {en: "{n} more pairs get along on balance.", hu: "További {n} páros összességében jól megvan egymással."}
+pairs-rest-bad: {en: "Among {n} more pairs, the ones that grate outweigh the rest.", hu: "További {n} páros között többet ér, ami dörzsölődik."}
+no-lift: {en: "Everything is warm and deep — nothing lifts it. Try {suggest}.", hu: "Minden meleg és mély — semmi sem emeli meg. Próbáld ezzel: {suggest}."}
+no-backbone: {en: "No spice carries the blend — give it a base, such as {suggest}.", hu: "Egyik fűszer sem viszi a keveréket — adj neki alapot, például: {suggest}."}
+seasoning-salt: {en: "Salt is {pct} % of the jar: this is a seasoning salt — call it that, and salt the dish less.", hu: "A só a keverék {pct} %-a: ez fűszersó — nevezd így, és az ételt sózd kevésbé."}
+sugar-burns: {en: "The sugar burns on a hot grill — rub it on late, or cook low and slow.", hu: "A cukor megég a forró grillen — a végén dörzsöld rá, vagy süsd lassan, alacsony hőn."}
+timing-conflict: {en: "In hot fat {bloom} opens up but {fragile} burns — stir the blend in off the heat, or bloom the seeds on their own first.", hu: "Forró zsiradékban {bloom} kinyílik, {fragile} viszont megég — a keveréket lehúzva a tűzről keverd bele, vagy a magokat előbb külön pirítsd."}
+toast-and-grind: {en: "Whole spice: {spices} — toast and grind first for a fine blend.", hu: "Egész fűszer: {spices} — finom keverékhez előbb pirítsd és őröld meg."}
+single-spice: {en: "A single spice is not a blend yet — add a partner from the rack.", hu: "Egy fűszer még nem keverék — adj mellé társat a polcról."}
+heat:
+  mild: {en: "Heat: mild — fine for anyone.", hu: "Csípősség: enyhe — bárkinek jó."}
+  warm: {en: "Heat: warm — a pleasant bite.", hu: "Csípősség: pikáns — kellemes harapás."}
+  hot: {en: "Heat: hot — go easy with it.", hu: "Csípősség: csípős — óvatosan adagold."}
+  fiery: {en: "Heat: fiery — it builds as you eat and is hotter still the next day.", hu: "Csípősség: tüzes — evés közben erősödik, másnapra még csípősebb."}
+cuisine: {en: "It reads {cuisines}.", hu: "Ízvilága: {cuisines}."}
+classic: {en: "{sim} % like {classic}{diff}.", hu: "{sim} %-ban hasonlít erre: {classic}{diff}."}
+# the pieces of {diff}, joined with "; " after a " — "
+diff:
+  same: {en: "", hu: ""}
+  missing: {en: "missing {spices}", hu: "hiányzik: {spices}"}
+  extra: {en: "plus {spices}", hu: "plusz: {spices}"}
+  double: {en: "your {spice} is double", hu: "{spice}: kétszer annyi"}
+  half: {en: "your {spice} is half", hu: "{spice}: feleannyi"}
+# a food voucher's line comes from reasons.yaml (kind food); the blend's own gluten line:
+gluten-label: {en: "{spices}: read the label — some contain wheat flour.", hu: "{spices}: nézd meg a címkét — némelyikben búzaliszt van."}
+gluten-yours: {en: "{spices}: your own GF one from the pantry.", hu: "{spices}: a saját GM változatod a kamrából."}
+gluten-ok: {en: "Single spices only — gluten-free by construction.", hu: "Csak tiszta fűszerek — eleve gluténmentes."}
+# list joining
+and: {en: and, hu: és}

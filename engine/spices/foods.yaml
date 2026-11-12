@@ -1,0 +1,28 @@
+# The 25 foods a blend can suit (spec 2026-10-19 §4.2) — the "goes with" board. Every rack jar is scored 0-3 against
+# every one of them (engine/spices/spice_foods/). `say` is the name inside a sentence, in lower case.
+foods:
+  - {id: pork, icon: "om:1F416", en: Pork, hu: Sertés, say: {en: pork, hu: sertés}}
+  - {id: chicken, icon: "om:1F357", en: "Chicken & duck", hu: "Csirke, kacsa", say: {en: "chicken and duck", hu: "csirke, kacsa"}}
+  - {id: beef, icon: "om:1F969", en: Beef, hu: Marha, say: {en: beef, hu: marha}}
+  - {id: lamb, icon: "om:1F411", en: Lamb, hu: Bárány, say: {en: lamb, hu: bárány}}
+  - {id: game, icon: "om:1F98C", en: Game, hu: Vad, say: {en: game, hu: vad}}
+  - {id: fish, icon: "om:1F41F", en: Fish, hu: Hal, say: {en: fish, hu: hal}}
+  - {id: seafood, icon: "om:1F990", en: Seafood, hu: "Tenger gyümölcsei", say: {en: seafood, hu: "tenger gyümölcsei"}}
+  - {id: eggs, icon: "om:1F95A", en: Eggs, hu: Tojás, say: {en: eggs, hu: tojás}}
+  - {id: potatoes, icon: "om:1F954", en: Potatoes, hu: Krumpli, say: {en: potatoes, hu: krumpli}}
+  - {id: roots, icon: "om:1F955", en: "Root vegetables", hu: Gyökérzöldség, say: {en: "root vegetables", hu: gyökérzöldség}}
+  - {id: cabbage, icon: "om:1F96C", en: "Cabbage & greens", hu: "Káposzta, levélzöld", say: {en: "cabbage and greens", hu: "káposzta, levélzöld"}}
+  - {id: tomato, icon: "om:1F345", en: Tomatoes, hu: Paradicsom, say: {en: tomatoes, hu: paradicsom}}
+  - {id: mushrooms, icon: "om:1F344", en: Mushrooms, hu: Gomba, say: {en: mushrooms, hu: gomba}}
+  - {id: pulses, icon: "om:1FAD8", en: "Beans & lentils", hu: "Bab, lencse", say: {en: "beans and lentils", hu: "bab, lencse"}}
+  - {id: rice, icon: "om:1F35A", en: "Rice & grains", hu: "Rizs, gabona", say: {en: "rice and grains", hu: "rizs, gabona"}}
+  - {id: pasta, icon: "om:1F35D", en: "GF pasta", hu: "GM tészta", say: {en: "GF pasta", hu: "GM tészta"}}
+  - {id: cheese, icon: "om:1F9C0", en: "Cheese & yoghurt", hu: "Sajt, joghurt", say: {en: "cheese and yoghurt", hu: "sajt, joghurt"}}
+  - {id: bread, icon: "om:1F35E", en: "GF bread & flatbread", hu: "GM kenyér, lepény", say: {en: "GF bread", hu: "GM kenyér"}}
+  - {id: fruit, icon: "om:1F34E", en: Fruit, hu: Gyümölcs, say: {en: fruit, hu: gyümölcs}}
+  - {id: chocolate, icon: "om:1F36B", en: Chocolate, hu: Csokoládé, say: {en: chocolate, hu: csokoládé}}
+  - {id: coffee-tea, icon: "om:2615", en: "Coffee & tea", hu: "Kávé, tea", say: {en: "coffee and tea", hu: "kávé, tea"}}
+  - {id: soups, icon: "om:1F372", en: "Soups & stews", hu: "Leves, ragu", say: {en: "soups and stews", hu: "leves, ragu"}}
+  - {id: pickles, icon: "om:1F952", en: Pickles, hu: Savanyúság, say: {en: pickles, hu: savanyúság}}
+  - {id: grilled-veg, icon: "om:1F346", en: "Grilled & roast vegetables", hu: "Grillezett, sült zöldség", say: {en: "grilled vegetables", hu: "grillezett zöldség"}}
+  - {id: baking, icon: "om:1F370", en: "Cakes & baking", hu: "Sütemény", say: {en: "cakes and baking", hu: sütemény}}

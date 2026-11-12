@@ -1,0 +1,21 @@
+# The cultured creams and the flavoured cheeses with each other.
+sour-cream:
+  creme-fraiche: [0, same-job]
+  yogurt: [1, same-family]
+  parmesan: [0, harmless]
+  feta: [1, gentle-company]
+  blue-cheese: [1, gentle-company]
+creme-fraiche:
+  yogurt: [0, same-job]
+  parmesan: [2, classic-partners]
+  feta: [0, harmless]
+  blue-cheese: [2, classic-partners]
+yogurt:
+  parmesan: [-1, odd-couple]
+  feta: [2, cuisine-mates]
+  blue-cheese: [0, harmless]
+parmesan:
+  feta: [-1, salt-on-salt]
+  blue-cheese: [-1, two-leads]
+feta:
+  blue-cheese: [-1, salt-on-salt]

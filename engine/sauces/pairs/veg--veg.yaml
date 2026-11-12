@@ -1,0 +1,5 @@
+cucumber:
+  peanut-butter: [-1, odd-couple]
+  tahini: [1, gentle-company]
+peanut-butter:
+  tahini: [0, same-job]

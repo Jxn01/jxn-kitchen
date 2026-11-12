@@ -1,0 +1,147 @@
+id: cuts
+order: 6
+icon: "om:1F969"
+color: wine
+en: {title: Cuts, sub: "beef · pork · chicken · lamb — what each is for"}
+hu: {title: Húsrészek, sub: "marha · sertés · csirke · bárány — mire jó"}
+pages:
+  - id: beef
+    illustration: cuts
+    en:
+      title: Beef
+      body: |
+        Muscles that work hard (legs, shoulder, chest) are tough and full of flavour: **cook them slowly**. Muscles along
+        the back barely work: **cook them fast**.
+
+        | Cut | Hungarian | Best for |
+        |---|---|---|
+        | Chuck, neck | tarja, nyak | pörkölt, gulyás, mince, braising |
+        | Rib, ribeye | rostélyos | steaks, roasting (marbled, forgiving) |
+        | Sirloin, striploin | hátszín | steaks, quick roasts |
+        | Tenderloin | bélszín | tenderest: steaks, Wellington, tartare |
+        | Topside, silverside | felsál, fehérpecsenye | thin slices, slow roasts, braising |
+        | Rump | far, fartő | steaks, roasts |
+        | Brisket | szegy | slow braising, smoking, boiled beef |
+        | Flank, plate | dagadó, oldalas | marinated and grilled fast, sliced across the grain |
+        | Shin, shank | lábszár | pörkölt, soup, osso buco — the gelatin makes it rich |
+
+        > Slice across the grain: short fibres chew tender even on tougher cuts.
+    hu:
+      title: Marha
+      body: |
+        A sokat dolgozó izmok (láb, lapocka, szegy) rágósak és ízesek: **lassan főzd őket**. A gerinc menti izmok alig
+        dolgoznak: **gyorsan süsd őket**.
+
+        | Rész | Angolul | Mire a legjobb |
+        |---|---|---|
+        | Tarja, nyak | chuck, neck | pörkölt, gulyás, darált hús, párolás |
+        | Rostélyos | rib, ribeye | steak, sült (márványos, megbocsátó) |
+        | Hátszín | sirloin, striploin | steak, gyors sült |
+        | Bélszín | tenderloin | a legpuhább: steak, Wellington, tatár |
+        | Felsál, fehérpecsenye | topside, silverside | vékony szeletek, lassú sült, párolás |
+        | Far, fartő | rump | steak, sült |
+        | Szegy | brisket | lassú párolás, füstölés, főtt marha |
+        | Dagadó, oldalas | flank, plate | pácolva, gyorsan grillezve, rostjaira merőlegesen szeletelve |
+        | Lábszár | shin, shank | pörkölt, leves, osso buco — a zselatin teszi gazdaggá |
+
+        > Rostjaira merőlegesen szeletelj: a rövid rostok a keményebb húsnál is puhán rághatók.
+  - id: pork
+    illustration: cuts
+    en:
+      title: Pork
+      body: |
+        | Cut | Hungarian | Best for |
+        |---|---|---|
+        | Neck, collar | tarja | the all-rounder: steaks, roasts, pörkölt, grilling |
+        | Loin | karaj | chops, roasts, schnitzel (lean — don't overcook) |
+        | Tenderloin | szűzpecsenye | medallions, quick roasts, wrapped in bacon |
+        | Leg, ham | comb | roasts, schnitzel, boiled ham, mince |
+        | Shoulder | lapocka | pulled pork, pörkölt, roasts |
+        | Belly | dagadó, hasaalja | crackling roasts, bacon, slow cooking |
+        | Ribs | oldalas | slow roasting or braising, then glazed |
+        | Knuckle, hock | csülök | pékné módra, bean soup (bableves), smoked |
+
+        - Whole cuts are safe at **63 °C** with a 3-minute rest; mince and sausages at **71 °C**.
+        - **Sausages, kolbász, hurka:** fillers and binders can contain wheat or breadcrumbs — buy from a maker who
+          tells you, or choose GF-labelled ones.
+    hu:
+      title: Sertés
+      body: |
+        | Rész | Angolul | Mire a legjobb |
+        |---|---|---|
+        | Tarja | neck, collar | a mindenes: szelet, sült, pörkölt, grill |
+        | Karaj | loin | szelet, sült, rántott (sovány — ne süsd túl) |
+        | Szűzpecsenye | tenderloin | medalion, gyors sült, baconbe tekerve |
+        | Comb | leg, ham | sült, rántott hús, főtt sonka, darált hús |
+        | Lapocka | shoulder | tépett hús, pörkölt, sült |
+        | Dagadó, hasaalja | belly | ropogós bőrű sült, szalonna, lassú főzés |
+        | Oldalas | ribs | lassan sütve vagy párolva, aztán glazúrozva |
+        | Csülök | knuckle, hock | pékné módra, bableves, füstölt |
+
+        - Az egész darab **63 °C-on** biztonságos 3 perc pihentetéssel; a darált hús és a kolbász **71 °C-on**.
+        - **Kolbász, hurka:** a töltő- és kötőanyagban lehet búza vagy zsemlemorzsa — olyan készítőtől vegyél, aki
+          megmondja, vagy GM jelöléseset válassz.
+  - id: chicken
+    illustration: cuts
+    en:
+      title: Chicken
+      body: |
+        | Cut | Hungarian | Best for |
+        |---|---|---|
+        | Breast | mell | quick: grilling, poaching, schnitzel — lean, dries out past 74 °C |
+        | Whole leg | egész comb | roasting, paprikás, braising |
+        | Thigh | felsőcomb | the juiciest: paprikás, curry, grill |
+        | Drumstick | alsócomb | roasting, frying, kids |
+        | Wings | szárny | crispy roasting, stock |
+        | Back, carcass | far, hát, nyak | stock (húsleves) |
+        | Liver, giblets | máj, zúza | pâté, rizottó, fried liver |
+
+        - Always cook through: **74 °C** at the thickest point, juices run clear.
+        - Don't wash raw chicken — it splashes bacteria around the sink; cooking kills them.
+        - Dark meat (legs) stays juicy far longer than breast — it forgives a few minutes too many.
+    hu:
+      title: Csirke
+      body: |
+        | Rész | Angolul | Mire a legjobb |
+        |---|---|---|
+        | Mell | breast | gyors: grill, buggyantás, rántott — sovány, 74 °C felett kiszárad |
+        | Egész comb | whole leg | sütés, paprikás, párolás |
+        | Felsőcomb | thigh | a legszaftosabb: paprikás, curry, grill |
+        | Alsócomb | drumstick | sütés, rántva, gyerekeknek |
+        | Szárny | wings | ropogósra sütve, alaplé |
+        | Far, hát, nyak | back, carcass | húsleves, alaplé |
+        | Máj, zúza | liver, giblets | pástétom, rizottó, sült máj |
+
+        - Mindig süsd át: a legvastagabb részén **74 °C**, a leve tiszta.
+        - A nyers csirkét ne mosd meg — szétfröcsköli a baktériumokat a mosogatóban; a sütés elpusztítja őket.
+        - A sötét hús (comb) sokkal tovább marad szaftos, mint a mell — elnéz pár perc túlsütést.
+  - id: lamb
+    illustration: cuts
+    en:
+      title: Lamb
+      body: |
+        | Cut | Hungarian | Best for |
+        |---|---|---|
+        | Shoulder | lapocka | slow roasting, stews, pörkölt |
+        | Rack, chops | borda, szűzérme | quick roasting pink, grilling |
+        | Loin, saddle | gerinc, nyereg | quick roasting |
+        | Leg | comb | roasting whole (pink at 57–60 °C) or slow |
+        | Shank | lábszár | braising until it falls off the bone |
+        | Neck | nyak | stews, curries |
+
+        - Lamb fat tastes strong: trim the thick outer layer for milder dishes.
+        - Rosemary, garlic, mint, cumin and paprika love lamb (see *Spices*).
+    hu:
+      title: Bárány
+      body: |
+        | Rész | Angolul | Mire a legjobb |
+        |---|---|---|
+        | Lapocka | shoulder | lassú sült, ragu, pörkölt |
+        | Borda, szűzérme | rack, chops | gyorsan rózsaszínre sütve, grill |
+        | Gerinc, nyereg | loin, saddle | gyors sült |
+        | Comb | leg | egészben sütve (rózsaszín 57–60 °C-on) vagy lassan |
+        | Lábszár | shank | párolva, amíg leválik a csontról |
+        | Nyak | neck | ragu, curry |
+
+        - A bárányfaggyú erős ízű: enyhébb ételhez vágd le a vastag külső réteget.
+        - Rozmaring, fokhagyma, menta, kömény és paprika illik hozzá (lásd *Fűszerek*).

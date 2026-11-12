@@ -1,0 +1,229 @@
+id: cheese
+order: 10
+icon: "om:1F9C0"
+color: leaf
+en:
+  title: Cheeses
+  sub: "by texture · what each is good for · storing · cheese and gluten"
+hu:
+  title: Sajtok
+  sub: "állag szerint · mire jó · tárolás · sajt és glutén"
+pages:
+  - id: kinds
+    chart:
+      type: board
+      groups:
+        - color: sky
+          icon: "om:1F95B"
+          label: {en: "Fresh: soft, mild", hu: "Friss: lágy, enyhe"}
+          note: {en: "Unripened, moist, short-lived: days in the fridge. Túrós dishes, spreads, salads, pizza.", hu: "Éretlen, nedves, rövid életű: napokig áll el a hűtőben. Túrós ételek, krémek, saláták, pizza."}
+          items:
+            - {label: {en: Túró, hu: Túró}}
+            - {label: {en: Juhtúró, hu: Juhtúró}}
+            - {label: Mozzarella}
+            - {label: Ricotta}
+            - {label: Mascarpone}
+            - {label: {en: Feta, hu: Feta}}
+        - color: butter
+          icon: "om:1F9C0"
+          label: {en: "Soft and blue: creamy, bold", hu: "Lágy és kék: krémes, erős"}
+          note: {en: "A white or washed rind, or blue veins. Serve at room temperature. Pálpusztai smells strong and tastes mild.", hu: "Fehér vagy mosott kéreg, vagy kék erezet. Szobahőmérsékleten tálald. A pálpusztai erős szagú, de enyhe ízű."}
+          items:
+            - {label: Camembert}
+            - {label: Brie}
+            - {label: {en: Pálpusztai, hu: Pálpusztai}}
+            - {label: Gorgonzola}
+            - {label: Roquefort}
+        - color: mustard
+          icon: "om:1F9C0"
+          label: {en: "Semi-hard: the everyday", hu: "Félkemény: a mindennapi"}
+          note: {en: "Melts and slices well — sandwiches, rakott dishes, sauces. Trappista is the Hungarian everyday cheese; Karaván is smoked.", hu: "Jól olvad és szeletelhető — szendvics, rakott ételek, mártások. A trappista a magyar mindennapi sajt; a Karaván füstölt."}
+          items:
+            - {label: Trappista}
+            - {label: Óvári}
+            - {label: Pannónia}
+            - {label: Karaván}
+            - {label: Gouda}
+            - {label: Edam}
+            - {label: Emmental}
+            - {label: Cheddar}
+        - color: rust
+          icon: "om:1F9C0"
+          label: {en: "Hard: aged, grated", hu: "Kemény: érlelt, reszelni"}
+          note: {en: "Long-aged, salty, full of flavour: a little goes far. Keeps for weeks.", hu: "Sokáig érlelt, sós, ízes: kevés is sokat ad. Hetekig eláll."}
+          items:
+            - {label: {en: Parmesan, hu: Parmezán}}
+            - {label: Grana Padano}
+            - {label: Pecorino}
+            - {label: {en: Aged gouda, hu: Érlelt gouda}}
+    en:
+      title: Cheeses by texture
+      body: |
+        | Texture | Cheeses | For |
+        |---|---|---|
+        | Fresh | túró, juhtúró, mozzarella, ricotta, mascarpone, feta | túrós dishes, spreads, salads, pizza |
+        | Soft and blue | camembert, brie, Pálpusztai, gorgonzola, roquefort | the cheese board, sauces, salads |
+        | Semi-hard | trappista, Óvári, Pannónia, Karaván (smoked), gouda, edam, emmental, cheddar | sandwiches, melting, rakott dishes |
+        | Hard | parmesan, Grana Padano, pecorino, aged gouda | grating, pasta, soups |
+
+        - **Túró** is not cottage cheese: it is drier and crumblier — the base of túrós csusza, túrógombóc, rétes
+          fillings and körözött.
+        - **Juhtúró** (bryndza) is salty sheep's cheese — the heart of sztrapacska and körözött.
+    hu:
+      title: Sajtok állag szerint
+      body: |
+        | Állag | Sajtok | Mire |
+        |---|---|---|
+        | Friss | túró, juhtúró, mozzarella, ricotta, mascarpone, feta | túrós ételek, krémek, saláták, pizza |
+        | Lágy és kék | camembert, brie, pálpusztai, gorgonzola, roquefort | sajttál, mártások, saláták |
+        | Félkemény | trappista, Óvári, Pannónia, Karaván (füstölt), gouda, edami, ementáli, cheddar | szendvics, olvasztás, rakott ételek |
+        | Kemény | parmezán, Grana Padano, pecorino, érlelt gouda | reszelés, tészta, levesek |
+
+        - A **túró** nem cottage cheese: szárazabb és morzsálódóbb — a túrós csusza, a túrógombóc, a rétestöltelék és a
+          körözött alapja.
+        - A **juhtúró** sós juhsajt — a sztrapacska és a körözött lelke.
+  - id: uses
+    chart:
+      type: matrix
+      levels:
+        - {en: "no", hu: nem}
+        - {en: works, hu: megy}
+        - {en: best, hu: legjobb}
+      cols:
+        - label: {en: Melts, hu: Olvad}
+          icon: "om:1F355"
+          note: {en: "Pizza, sauces, toasties, rakott dishes: young, moist cheeses stretch and melt; aged ones go oily.", hu: "Pizza, mártás, melegszendvics, rakott étel: a fiatal, nedves sajt nyúlik és olvad; az érlelt olajosodik."}
+        - label: {en: Grates, hu: Reszelhető}
+          icon: "om:1F9C0"
+          note: {en: "Hard and semi-hard cheeses grate; freeze grated cheese in a bag and use it from frozen.", hu: "A kemény és félkemény sajt reszelhető; a reszeltet zacskóban fagyaszd, és fagyosan használd."}
+        - label: {en: Cheese board, hu: Sajttál}
+          icon: "om:1F37D"
+          note: {en: "Three to five cheeses of different textures, at room temperature, with fruit and GF crackers.", hu: "Három-öt különböző állagú sajt, szobahőmérsékleten, gyümölccsel és GM keksszel."}
+        - label: {en: Túrós baking, hu: Túrós sütés}
+          icon: "om:1F370"
+          note: {en: "Túrós csusza, túrógombóc, rétes and cakes need fresh, dry curd cheese.", hu: "A túrós csuszához, túrógombóchoz, réteshez és süteményhez friss, száraz túró kell."}
+        - label: {en: Salads, hu: Saláták}
+          icon: "om:1F957"
+          note: {en: "Crumbly or fresh cheeses: feta, mozzarella, blue, a shaving of parmesan.", hu: "Morzsálódó vagy friss sajtok: feta, mozzarella, kéksajt, egy kis gyalult parmezán."}
+      rows:
+        - {label: Mozzarella, cells: [2, 0, 1, 0, 2]}
+        - {label: Trappista, cells: [2, 2, 1, 0, 1]}
+        - {label: Óvári, cells: [2, 2, 2, 0, 1]}
+        - {label: {en: "Pannónia, emmental", hu: "Pannónia, ementáli"}, cells: [2, 2, 2, 0, 1]}
+        - {label: Cheddar, cells: [2, 2, 2, 0, 1]}
+        - {label: {en: Parmesan, hu: Parmezán}, cells: [1, 2, 2, 0, 2]}
+        - {label: {en: "Camembert, brie", hu: "Camembert, brie"}, cells: [1, 0, 2, 0, 1]}
+        - {label: {en: Blue cheese, hu: Kéksajt}, cells: [1, 0, 2, 0, 2]}
+        - {label: Feta, cells: [0, 0, 1, 0, 2]}
+        - {label: {en: Túró, hu: Túró}, cells: [0, 0, 0, 2, 1]}
+        - {label: {en: Juhtúró, hu: Juhtúró}, cells: [1, 0, 1, 2, 1]}
+        - {label: Halloumi, cells: [0, 0, 1, 0, 2]}
+        - {label: Ricotta, cells: [1, 0, 0, 2, 1]}
+    en:
+      title: What each is good for
+      body: |
+        | Cheese | Melts | Grates | Board | Túrós baking | Salads |
+        |---|---|---|---|---|---|
+        | Mozzarella | best | — | works | — | best |
+        | Trappista | best | best | works | — | works |
+        | Óvári | best | best | best | — | works |
+        | Pannónia, emmental | best | best | best | — | works |
+        | Cheddar | best | best | best | — | works |
+        | Parmesan | works | best | best | — | best |
+        | Camembert, brie | works | — | best | — | works |
+        | Blue cheese | works | — | best | — | best |
+        | Feta | — | — | works | — | best |
+        | Túró | — | — | — | best | works |
+        | Juhtúró | works | — | works | best (sztrapacska, körözött) | works |
+        | Halloumi | — (it grills instead) | — | works | — | best |
+        | Ricotta | works | — | — | best | works |
+
+        - **Halloumi** doesn't melt — it browns in a dry pan or the air fryer (200 °C, 6–8 minutes).
+        - For the smoothest melt, grate it yourself: pre-grated cheese carries anti-caking starch.
+    hu:
+      title: Mire jó?
+      body: |
+        | Sajt | Olvad | Reszelhető | Sajttál | Túrós sütés | Saláta |
+        |---|---|---|---|---|---|
+        | Mozzarella | legjobb | — | megy | — | legjobb |
+        | Trappista | legjobb | legjobb | megy | — | megy |
+        | Óvári | legjobb | legjobb | legjobb | — | megy |
+        | Pannónia, ementáli | legjobb | legjobb | legjobb | — | megy |
+        | Cheddar | legjobb | legjobb | legjobb | — | megy |
+        | Parmezán | megy | legjobb | legjobb | — | legjobb |
+        | Camembert, brie | megy | — | legjobb | — | megy |
+        | Kéksajt | megy | — | legjobb | — | legjobb |
+        | Feta | — | — | megy | — | legjobb |
+        | Túró | — | — | — | legjobb | megy |
+        | Juhtúró | megy | — | megy | legjobb (sztrapacska, körözött) | megy |
+        | Halloumi | — (inkább grillezhető) | — | megy | — | legjobb |
+        | Ricotta | megy | — | — | legjobb | megy |
+
+        - A **halloumi** nem olvad — száraz serpenyőben vagy a forrólevegős sütőben pirul (200 °C, 6–8 perc).
+        - A legsimább olvadáshoz magad reszeld: a reszelt sajtban csomósodásgátló keményítő van.
+  - id: storing
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F4C4", label: {en: Wrap it, hu: Csomagolás}, note: {en: "In baking or waxed paper, then loosely in a box — cling film straight on the cheese makes it sweat.", hu: "Sütő- vagy viaszos papírba, aztán lazán egy dobozba — a közvetlenül rátett fólia alatt bebefullad."}}
+        - {icon: "om:1F9CA", label: {en: The cheese drawer, hu: A sajtfiók}, note: {en: "The vegetable drawer or a cheese box, about 4–8 °C. Strong cheeses in their own box.", hu: "A zöldségfiók vagy egy sajtdoboz, kb. 4–8 °C. Az erős szagúak külön dobozba."}}
+        - {icon: "om:1F552", label: {en: Room temperature, hu: Szobahőmérséklet}, time: {en: "30–60 min", hu: "30–60 perc"}, note: {en: "Out of the fridge 30–60 minutes before serving — cold cheese tastes of little.", hu: "Tálalás előtt 30–60 perccel vedd ki a hűtőből — a hideg sajtnak alig van íze."}}
+        - {icon: "om:1F9A0", label: {en: Mould, hu: Penész}, note: {en: "Hard cheese: cut off at least 2.5 cm around and below the spot. Soft, fresh, grated or sliced cheese: throw it out.", hu: "Kemény sajt: legalább 2,5 cm-t vágj le a folt körül és alatt. Lágy, friss, reszelt vagy szeletelt sajt: dobd ki."}}
+        - {icon: "om:2744", label: {en: Freeze, hu: Fagyasztás}, note: {en: "Grated hard and semi-hard cheese freezes well for cooking; soft and fresh cheeses turn crumbly.", hu: "A reszelt kemény és félkemény sajt jól fagyasztható főzéshez; a lágy és friss sajt morzsálódó lesz."}}
+    en:
+      title: Storing and serving
+      body: |
+        1. **Wrap it** in baking or waxed paper, then loosely in a box — cling film straight on it makes it sweat.
+        2. **The cheese drawer:** the vegetable drawer or a cheese box, about 4–8 °C; strong cheeses in their own box.
+        3. **Room temperature:** out of the fridge 30–60 minutes before serving.
+        4. **Mould:** on hard cheese, cut away at least **2.5 cm** around and below the spot; soft, fresh, grated or sliced
+           cheese with mould goes in the bin (blue cheese's own veins are the exception, of course).
+        5. **Freeze** grated hard and semi-hard cheese for cooking; soft and fresh cheeses go crumbly.
+
+        | Cheese | Keeps (fridge, opened) |
+        |---|---|
+        | Fresh (túró, mozzarella, ricotta) | 3–7 days |
+        | Soft (camembert, brie) | about a week |
+        | Semi-hard (trappista, gouda) | 2–3 weeks |
+        | Hard (parmesan) | 3–4 weeks and more |
+    hu:
+      title: Tárolás és tálalás
+      body: |
+        1. **Csomagold** sütő- vagy viaszos papírba, aztán lazán egy dobozba — a közvetlenül rátett fólia alatt bebefullad.
+        2. **A sajtfiók:** a zöldségfiók vagy egy sajtdoboz, kb. 4–8 °C; az erős szagúak külön dobozba.
+        3. **Szobahőmérséklet:** tálalás előtt 30–60 perccel vedd ki a hűtőből.
+        4. **Penész:** kemény sajtról legalább **2,5 cm-t** vágj le a folt körül és alatt; a penészes lágy, friss, reszelt
+           vagy szeletelt sajt a kukába megy (a kéksajt saját erezete persze kivétel).
+        5. **Fagyaszd** a reszelt kemény és félkemény sajtot főzéshez; a lágy és friss sajt morzsálódó lesz.
+
+        | Sajt | Eláll (hűtőben, felbontva) |
+        |---|---|
+        | Friss (túró, mozzarella, ricotta) | 3–7 nap |
+        | Lágy (camembert, brie) | kb. egy hét |
+        | Félkemény (trappista, gouda) | 2–3 hét |
+        | Kemény (parmezán) | 3–4 hét és tovább |
+  - id: gluten
+    chart:
+      type: picker
+      items:
+        - {label: {en: Plain cheese, hu: Natúr sajt}, icon: "om:2705", value: {en: GF, hu: GM}, note: {en: "Milk, cultures, rennet, salt: naturally gluten-free — blue cheeses included.", hu: "Tej, kultúra, oltó, só: természettől gluténmentes — a kéksajtok is."}}
+        - {label: {en: "Processed cheese, spreads", hu: "Ömlesztett sajt, krémsajt"}, icon: "om:26A0", value: {en: check, hu: ellenőrizd}, note: {en: "Some use wheat starch or other additives — read the label (Medve-type portions, Pikáns-type spreads).", hu: "Némelyikben búzakeményítő vagy más adalék van — olvasd el a címkét (Medve-féle kockák, Pikáns-féle krémek)."}}
+        - {label: {en: Grated cheese, hu: Reszelt sajt}, icon: "om:26A0", value: {en: check, hu: ellenőrizd}, note: {en: "The anti-caking agent is usually potato starch or cellulose — rarely wheat. Check, or grate your own.", hu: "A csomósodásgátló általában burgonyakeményítő vagy cellulóz — ritkán búza. Ellenőrizd, vagy reszeld magad."}}
+        - {label: {en: Beer-washed rinds, hu: Sörrel mosott kéreg}, icon: "om:1F37A", value: {en: avoid, hu: kerüld}, note: {en: "Some washed-rind cheeses are washed with beer — the rind can carry gluten.", hu: "Néhány mosott kérgű sajtot sörrel mosnak — a kéreg glutént hordozhat."}}
+        - {label: {en: "Breaded cheese (rántott sajt)", hu: Rántott sajt}, icon: "om:274C", value: {en: wheat, hu: búza}, note: {en: "Ready-breaded cheese is wheat — bread it yourself with GF crumbs, rice flour and egg.", hu: "A kész panírozott sajt búzás — panírozd magad GM morzsával, rizsliszttel és tojással."}}
+        - {label: {en: Cheese sauce and fondue mixes, hu: Sajtmártás- és fondükeverék}, icon: "om:26A0", value: {en: check, hu: ellenőrizd}, note: {en: "Often thickened with wheat flour. Make your own with cornstarch (fondue) or rice-flour béchamel.", hu: "Gyakran búzaliszttel sűrítik. Készítsd magad kukoricakeményítővel (fondü) vagy rizslisztes besamellel."}}
+    en:
+      title: Cheese and gluten
+      body: |
+        - **Plain cheese is gluten-free** — milk, cultures, rennet and salt. Blue cheeses too: their mould does not
+          carry gluten into the cheese.
+        - **Check the label:** processed cheese and spreads (some use wheat starch), pre-grated cheese (the
+          anti-caking agent is usually potato starch or cellulose, rarely wheat), cheese sauce and fondue mixes (flour).
+        - **Avoid:** beer-washed rinds, and ready-breaded cheese — make **rántott sajt** yourself with GF crumbs.
+    hu:
+      title: Sajt és glutén
+      body: |
+        - **A natúr sajt gluténmentes** — tej, kultúra, oltó és só. A kéksajtok is: a penészük nem visz glutént a sajtba.
+        - **Olvasd el a címkét:** ömlesztett sajt és krémsajt (némelyikben búzakeményítő van), reszelt sajt (a
+          csomósodásgátló általában burgonyakeményítő vagy cellulóz, ritkán búza), sajtmártás- és fondükeverék (liszt).
+        - **Kerüld:** a sörrel mosott kérget és a kész panírozott sajtot — a **rántott sajtot** készítsd magad GM morzsával.

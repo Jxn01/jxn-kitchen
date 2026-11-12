@@ -1,0 +1,24 @@
+sour-cream:
+  cucumber: [3, hungarian-heart, "Sour cream and cucumber: tejfölös uborkasaláta.", "Tejföl és uborka: a tejfölös uborkasaláta."]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-1, odd-couple]
+creme-fraiche:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-1, kitchens-apart]
+  tahini: [-1, odd-couple]
+yogurt:
+  cucumber: [3, classic-partners, "Yoghurt and cucumber: tzatziki and raita, cool and clean.", "Joghurt és uborka: tzatziki és raita, hűvösen, tisztán."]
+  peanut-butter: [-1, odd-couple]
+  tahini: [2, cuisine-mates]
+parmesan:
+  cucumber: [0, harmless]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-1, odd-couple]
+feta:
+  cucumber: [2, cuisine-mates]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [1, gentle-company]
+blue-cheese:
+  cucumber: [-1, odd-couple]
+  peanut-butter: [-2, kitchens-apart]
+  tahini: [-2, two-leads]

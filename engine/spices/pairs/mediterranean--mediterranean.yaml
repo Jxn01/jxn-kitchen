@@ -1,0 +1,45 @@
+# Mediterranean herbs × Mediterranean herbs — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+oregano:
+  thyme: [3, herb-garden, "Oregano and thyme: the Mediterranean hillside in two pinches.", "Oregánó és kakukkfű: a mediterrán hegyoldal két csipetben."]
+  rosemary: [2, herb-garden]
+  sage-dried: [1, herb-garden]
+  marjoram: [1, same-family]
+  savory: [1, herb-garden]
+  bay-leaf: [2, cuisine-mates]
+  basil-dried: [3, classic-partners, "Oregano and basil: the two herbs of a tomato sauce.", "Oregánó és bazsalikom: a paradicsomszósz két füve."]
+  lavender: [-1, perfume-and-earth]
+thyme:
+  rosemary: [3, herb-garden, "Thyme and rosemary: the roast-chicken pair — woody, piney and generous.", "Kakukkfű és rozmaring: a sült csirke párosa — fás, fenyős, bőkezű."]
+  sage-dried: [2, herb-garden]
+  marjoram: [2, herb-garden]
+  savory: [2, same-family]
+  bay-leaf: [3, classic-partners, "Thyme and bay leaf: the heart of a bouquet garni and the start of every stock.", "Kakukkfű és babérlevél: a bouquet garni szíve, minden alaplé kezdete."]
+  basil-dried: [1, herb-garden]
+  lavender: [2, herb-garden]
+rosemary:
+  sage-dried: [2, herb-garden]
+  marjoram: [1, herb-garden]
+  savory: [1, herb-garden]
+  bay-leaf: [2, cuisine-mates]
+  basil-dried: [1, herb-garden]
+  lavender: [-1, pine-forest]
+sage-dried:
+  marjoram: [1, herb-garden]
+  savory: [1, herb-garden]
+  bay-leaf: [1, gentle-company]
+  basil-dried: [0, harmless]
+  lavender: [-2, medicinal]
+marjoram:
+  savory: [1, herb-garden]
+  bay-leaf: [2, hungarian-heart]
+  basil-dried: [1, herb-garden]
+  lavender: [1, bridge]
+savory:
+  bay-leaf: [2, cuisine-mates]
+  basil-dried: [0, harmless]
+  lavender: [1, herb-garden]
+bay-leaf:
+  basil-dried: [1, gentle-company]
+  lavender: [-1, two-leads]
+basil-dried:
+  lavender: [-1, two-leads]

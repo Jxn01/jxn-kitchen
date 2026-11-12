@@ -1,0 +1,27 @@
+# Salt, sugar & alliums × the 25 foods — hand-judged, 0..3, a reason on every cell (reasons.yaml, kind food).
+# Salt seasons nearly everything, so it vouches at 2 — it never decides on its own what a blend is for.
+salt: {pork: [2, seasons], chicken: [2, seasons], beef: [2, seasons], lamb: [2, seasons], game: [2, seasons],
+  fish: [2, seasons], seafood: [2, seasons], eggs: [2, seasons], potatoes: [2, seasons], roots: [2, seasons],
+  cabbage: [2, seasons], tomato: [2, seasons], mushrooms: [2, seasons], pulses: [2, seasons], rice: [2, seasons],
+  pasta: [2, seasons], cheese: [1, seasons], bread: [2, seasons], fruit: [1, small-touch], chocolate: [1, lifts],
+  coffee-tea: [0, nothing-to-say], soups: [2, seasons], pickles: [3, classic-with], grilled-veg: [2, seasons], baking: [1, small-touch]}
+sugar: {pork: [1, small-touch], chicken: [1, small-touch], beef: [0, nothing-to-say], lamb: [0, nothing-to-say], game: [0, nothing-to-say],
+  fish: [1, small-touch], seafood: [0, nothing-to-say], eggs: [1, small-touch], potatoes: [0, wrong-shelf], roots: [1, sweet-match],
+  cabbage: [1, small-touch], tomato: [2, small-touch], mushrooms: [0, nothing-to-say], pulses: [1, small-touch], rice: [1, sweet-match],
+  pasta: [2, small-touch], cheese: [2, sweet-match], bread: [1, small-touch], fruit: [3, classic-with], chocolate: [3, classic-with],
+  coffee-tea: [2, sweet-match], soups: [0, nothing-to-say], pickles: [2, small-touch], grilled-veg: [0, nothing-to-say], baking: [3, classic-with]}
+brown-sugar: {pork: [3, classic-with], chicken: [2, sweet-match], beef: [2, sweet-match], lamb: [0, nothing-to-say], game: [1, small-touch],
+  fish: [2, sweet-match], seafood: [1, small-touch], eggs: [0, nothing-to-say], potatoes: [0, nothing-to-say], roots: [2, sweet-match],
+  cabbage: [0, nothing-to-say], tomato: [1, small-touch], mushrooms: [0, nothing-to-say], pulses: [2, sweet-match], rice: [0, nothing-to-say],
+  pasta: [0, nothing-to-say], cheese: [0, nothing-to-say], bread: [1, small-touch], fruit: [2, sweet-match], chocolate: [2, sweet-match],
+  coffee-tea: [2, sweet-match], soups: [0, nothing-to-say], pickles: [1, small-touch], grilled-veg: [1, small-touch], baking: [3, classic-with]}
+garlic-powder: {pork: [3, classic-with], chicken: [3, classic-with], beef: [2, depth], lamb: [3, classic-with], game: [1, depth],
+  fish: [1, small-touch], seafood: [3, classic-with], eggs: [1, small-touch], potatoes: [2, depth], roots: [1, small-touch],
+  cabbage: [1, small-touch], tomato: [3, classic-with], mushrooms: [3, classic-with], pulses: [2, depth], rice: [2, depth],
+  pasta: [3, classic-with], cheese: [2, depth], bread: [3, classic-with], fruit: [0, wrong-shelf], chocolate: [0, wrong-shelf],
+  coffee-tea: [0, wrong-shelf], soups: [2, depth], pickles: [2, depth], grilled-veg: [3, classic-with], baking: [0, wrong-shelf]}
+onion-powder: {pork: [2, depth], chicken: [2, depth], beef: [2, depth], lamb: [1, depth], game: [1, depth],
+  fish: [1, small-touch], seafood: [1, small-touch], eggs: [1, small-touch], potatoes: [2, depth], roots: [1, small-touch],
+  cabbage: [1, small-touch], tomato: [2, depth], mushrooms: [2, depth], pulses: [2, depth], rice: [1, small-touch],
+  pasta: [1, small-touch], cheese: [2, depth], bread: [1, small-touch], fruit: [0, wrong-shelf], chocolate: [0, wrong-shelf],
+  coffee-tea: [0, wrong-shelf], soups: [2, depth], pickles: [1, small-touch], grilled-veg: [1, small-touch], baking: [0, wrong-shelf]}

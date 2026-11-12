@@ -1,0 +1,51 @@
+category: sauces
+groups:
+  - id: condiments
+    en: Mustard, ketchup, mayo
+    hu: Mustár, ketchup, majonéz
+    icon: "om:1FAD9-200D-1F7E8"
+    items:
+      - {id: mustard, en: Mustard, hu: Mustár, gluten: label, aliases: [yellow mustard, plain mustard, csemege mustár, mustárt]}
+      - {id: dijon, en: Dijon mustard, hu: Dijoni mustár, gluten: label, aliases: [dijon, grainy mustard, wholegrain mustard, magos mustár]}
+      - {id: ketchup, en: Ketchup, hu: Ketchup, gluten: label, aliases: [tomato ketchup, catsup]}
+      - {id: mayonnaise, en: Mayonnaise, hu: Majonéz, gluten: label, aliases: [mayo, majonézt]}
+      - {id: horseradish-sauce, en: Horseradish sauce, hu: Tormakrém, gluten: label, aliases: [reszelt torma, üveges torma, tormát (üveges)]}
+      - {id: bbq-sauce, en: BBQ sauce, hu: BBQ szósz, gluten: label, aliases: [barbecue sauce, barbecue szósz]}
+      - {id: sweet-chili-sauce, en: Sweet chili sauce, hu: Édes chiliszósz, gluten: label, aliases: [sweet chilli sauce, édes chili szósz]}
+      - {id: hot-sauce, en: Hot sauce, hu: Csípős szósz, gluten: label, aliases: [tabasco, sriracha, chili sauce, chilliszósz, erős szósz]}
+      - {id: eros-pista, en: Erős Pista (paprika paste), hu: Erős Pista, gluten: label, aliases: [erős pista, hot paprika paste, piros arany, paprikakrém]}
+      - {id: pesto, en: Pesto, hu: Pesto, gluten: label, aliases: [basil pesto, bazsalikomos pesto, pesztó]}
+      - {id: ajvar, en: Ajvar, hu: Ajvár, gluten: label, aliases: [ajvár, roasted pepper relish]}
+  - id: asian
+    en: Asian sauces
+    hu: Ázsiai szószok
+    icon: "om:1FAD9-200D-1F7EB"
+    items:
+      - {id: tamari, en: Tamari (GF soy sauce), hu: Tamari (GM szójaszósz), aliases: [tamari, gluten-free soy sauce, gf soy sauce, gluténmentes szójaszósz, gm szójaszósz]}
+      - {id: soy-sauce, en: Soy sauce, hu: Szójaszósz, gluten: contains, swap: tamari, pantry: false, aliases: [soy sauce, szójaszószt, light soy sauce, dark soy sauce, shoyu, kecap manis], tip_en: "Tamari is a 1:1 swap for soy sauce.", tip_hu: "A tamari 1:1-ben helyettesíti a szójaszószt."}
+      - {id: teriyaki, en: Teriyaki sauce, hu: Teriyaki szósz, gluten: contains, swap: tamari, pantry: false, aliases: [teriyaki], tip_en: "Make it: tamari + honey + a splash of rice vinegar (2:1:½).", tip_hu: "Készítsd el: tamari + méz + egy kevés rizsecet (2:1:½)."}
+      - {id: gf-oyster-sauce, en: Oyster sauce (GF), hu: Osztrigaszósz (GM), aliases: [gf oyster sauce, gluténmentes osztrigaszósz]}
+      - {id: oyster-sauce, en: Oyster sauce, hu: Osztrigaszósz, gluten: contains, swap: gf-oyster-sauce, pantry: false, aliases: [oyster sauce, osztrigaszószt], tip_en: "Use a GF oyster sauce (check its label once).", tip_hu: "GM osztrigaszószt használj (egyszer nézd meg a címkéjét)."}
+      - {id: gf-hoisin, en: Hoisin (GF), hu: Hoisin szósz (GM), aliases: [gf hoisin, gluténmentes hoisin]}
+      - {id: hoisin, en: Hoisin sauce, hu: Hoisin szósz, gluten: contains, swap: gf-hoisin, pantry: false, aliases: [hoisin], tip_en: "Use a GF hoisin (check its label once).", tip_hu: "GM hoisin szószt használj (egyszer nézd meg a címkéjét)."}
+      - {id: fish-sauce, en: Fish sauce, hu: Halszósz, gluten: label, aliases: [nam pla, nuoc mam, halszószt]}
+      - {id: miso, en: Miso paste, hu: Miszó, gluten: label, aliases: [miso, white miso, miszópaszta]}
+      - {id: mirin, en: Mirin, hu: Mirin, gluten: label, aliases: [rice wine (sweet)]}
+      - {id: sambal, en: Sambal oelek, hu: Sambal oelek, gluten: label, aliases: [sambal, chili paste]}
+      - {id: gochujang, en: Gochujang, hu: Gochujang, gluten: label, aliases: [korean chili paste]}
+      - {id: curry-paste, en: Curry paste, hu: Currypaszta, gluten: label, aliases: [red curry paste, green curry paste, vörös currypaszta, zöld currypaszta]}
+  - id: stock
+    en: Stock & bouillon
+    hu: Alaplé, leveskocka
+    icon: "c:stock-cube"
+    items:
+      - {id: stock-cube, en: Stock cubes, hu: Leveskocka, gluten: label, aliases: [stock cube, bouillon cube, bouillon, húsleveskocka, zöldségleveskocka, tyúkhúsleves kocka, marhahúsleves kocka, leveskockát, alaplé kocka, bouillon powder]}
+      - {id: stock-liquid, en: Stock (liquid), hu: Alaplé, gluten: label, aliases: [stock, broth, chicken stock, beef stock, vegetable stock, csirkealaplé, zöldségalaplé, alaplevet, húsleves alaplé]}
+  - id: other-sauces
+    en: Other flavourings
+    hu: Egyéb ízesítők
+    icon: "om:1FAD9-200D-1F7E5"
+    items:
+      - {id: lemon-juice, en: Lemon juice, hu: Citromlé, aliases: [citromlevet, lemon juice (bottled), citrom leve]}
+      - {id: worcestershire, en: Worcestershire sauce, hu: Worcestershire szósz, gluten: label, aliases: [worcester sauce, worcester szósz]}
+      - {id: liquid-smoke, en: Liquid smoke, hu: Füstaroma}

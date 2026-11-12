@@ -1,0 +1,83 @@
+@import './fonts.css';
+@import './tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+#app { height: 100%; }
+
+/* ── Phones: the mobile-first layer (2026-10-26) ──────────────────────────────────────────────────────────────────────
+   The kiosk is 1024×640 landscape and never matches anything below (env() is 0 there too); this is for the owner's
+   iPhone in Safari, or the app added to its home screen. Every screen already stacks in portrait
+   (`max-aspect-ratio: 1/1`, same query here); this layer makes the phone first-class:
+   * safe areas: `viewport-fit=cover` lets the page run under the notch / Dynamic Island and the home indicator, so the
+     app keeps clear of them (landscape notch on the sides too);
+   * `100dvh`: in Safari a `100%` height can be taller than what the toolbars leave visible, hiding the bottom row
+     (Cook's Next button); the dynamic viewport is exactly what is visible;
+   * `--touch: 48px`: 64 px is the kiosk's wet-finger target; a phone held in the hand needs Apple's 44 pt, and the
+     room goes to titles and content. Everything sized by the token follows. */
+#app { padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); }
+@media (max-aspect-ratio: 1/1) {
+  /* --kb-h 0: screens pad their bottom by the kiosk's on-screen keyboard height so a field can scroll above it; a phone
+     has its own keyboard (the app's never opens there), so that was 312 px of empty scroll under every form. */
+  :root { --touch: 48px; --shadow: 4px 4px 0 var(--ink); --shadow-sm: 3px 3px 0 var(--ink); --kb-h: 0px; }
+  @supports (height: 100dvh) { #app { height: 100dvh; } }
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; margin: 0; }
+
+/* the shared "press" feedback: transform only (spec §5 motion) */
+.pressable { transition: transform 120ms ease-out; }
+.pressable:active { transform: scale(0.94); }
+
+/* Reduced motion — for people who ask for it, NOT for the kiosk: the kiosk's "reduce" comes from the gut switching
+   off Windows' UI animations for speed, and it silently cut every act there to 1 ms (found 2026-10-10). And never
+   `transition-duration` on `*`: with the default `transition-property: all` that makes EVERY style change a
+   transition (it turned fit()'s font-size writes into a 330×/s loop). */
+@media (prefers-reduced-motion: reduce) {
+  :root:not(.kiosk) *, :root:not(.kiosk) *::before, :root:not(.kiosk) *::after {
+    animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition: none !important;
+  }
+}
+
+/* Scrollbars: thin + themed on desktops; none on the kiosk (touch scrolls; Windows' classic bars look broken there) */
+* { scrollbar-width: thin; scrollbar-color: var(--ink) transparent; }
+:root.kiosk * { scrollbar-width: none; }
+:root.kiosk ::-webkit-scrollbar { display: none; }
+
+/* Motion polish (visual round, 2026-10-11): a screen eases in; grids of tiles pop in one after another.
+   transform/opacity only; `backwards` so nothing is held after the entrance (the press squash keeps working). */
+.screen-in { height: 100%; animation: screen-in .26s cubic-bezier(.2, .8, .3, 1) backwards; }
+@keyframes screen-in { from { opacity: 0; transform: translateY(10px); } }
+.stagger > * { animation: tile-in .46s cubic-bezier(.34, 1.56, .64, 1) backwards; }
+@keyframes tile-in { from { opacity: 0; transform: translateY(16px) scale(.92); } }
+.stagger > :nth-child(1) { animation-delay: 0ms; }
+.stagger > :nth-child(2) { animation-delay: 38ms; }
+.stagger > :nth-child(3) { animation-delay: 76ms; }
+.stagger > :nth-child(4) { animation-delay: 114ms; }
+.stagger > :nth-child(5) { animation-delay: 152ms; }
+.stagger > :nth-child(6) { animation-delay: 190ms; }
+.stagger > :nth-child(7) { animation-delay: 228ms; }
+.stagger > :nth-child(8) { animation-delay: 266ms; }
+.stagger > :nth-child(9) { animation-delay: 304ms; }
+.stagger > :nth-child(10) { animation-delay: 342ms; }
+.stagger > :nth-child(11) { animation-delay: 380ms; }
+.stagger > :nth-child(12) { animation-delay: 418ms; }
+.stagger > :nth-child(13) { animation-delay: 456ms; }
+.stagger > :nth-child(14) { animation-delay: 494ms; }
+.stagger > :nth-child(15) { animation-delay: 532ms; }
+.stagger > :nth-child(16) { animation-delay: 570ms; }
+.stagger > :nth-child(17) { animation-delay: 608ms; }
+.stagger > :nth-child(18) { animation-delay: 646ms; }
+.stagger > :nth-child(19) { animation-delay: 684ms; }
+.stagger > :nth-child(20) { animation-delay: 722ms; }

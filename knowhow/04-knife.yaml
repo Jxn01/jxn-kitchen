@@ -1,0 +1,116 @@
+id: knife
+order: 5
+icon: "om:1F52A"
+color: slate
+en: {title: Knife skills, sub: "grips · cuts · onions · sharpening"}
+hu: {title: Késtechnika, sub: "fogás · vágások · hagyma · élezés"}
+pages:
+  - id: grip
+    chart:
+      type: picker
+      items:
+        - {label: {en: Pinch grip, hu: Csippentő fogás}, icon: "om:1F52A", note: {en: "Thumb and the side of the bent index finger pinch the blade just in front of the handle; the other fingers wrap the handle.", hu: "A hüvelykujj és a behajlított mutatóujj oldala a nyél előtt fogja meg a pengét; a többi ujj a nyelet öleli."}}
+        - {label: {en: The claw, hu: Karomfogás}, icon: "om:270B", note: {en: "Fingertips tucked in, knuckles forward; the flat of the blade rides against the knuckles.", hu: "Az ujjbegyek behajlítva, a bütykök elöl; a penge lapja a bütykökhöz simul."}}
+        - {label: {en: Rock, hu: Billegtetés}, icon: "om:1F33F", note: {en: "The tip stays on the board, the heel goes up and down — herbs, garlic.", hu: "A hegye a deszkán marad, a sarka fel-le jár — fűszernövény, fokhagyma."}}
+        - {label: {en: Slice, hu: Szeletelés}, icon: "om:1F955", note: {en: "The whole blade slides forward and down — vegetables, meat. Let the knife do the work.", hu: "Az egész penge előre és lefelé csúszik — zöldség, hús. Hagyd, hogy a kés dolgozzon."}}
+        - {label: {en: A stable board, hu: Stabil deszka}, icon: "om:1F9FB", note: {en: "A damp cloth or a sheet of paper towel underneath stops it sliding.", hu: "Alá tett nedves ruha vagy papírtörlő megakadályozza, hogy elcsússzon."}}
+        - {label: {en: Round things, hu: Gömbölyű dolgok}, icon: "om:1F9C5", note: {en: "Onion, carrot, potato: cut a thin slice off one side first so it lies flat.", hu: "Hagyma, répa, krumpli: előbb vágj le egy vékony szeletet az egyik oldaláról, hogy stabilan feküdjön."}}
+    en:
+      title: Holding the knife and the food
+      body: |
+        - **Pinch grip:** thumb and the side of your bent index finger pinch the blade just in front of the handle; the
+          other fingers wrap the handle. More control than holding only the handle.
+        - **The claw:** the other hand holds the food with fingertips tucked in and the knuckles forward. The flat of the
+          blade rides against the knuckles — you can't cut a fingertip that isn't there.
+        - **Rock or slice:** the tip stays on the board and the heel goes up and down (herbs, garlic), or the whole blade
+          slides forward and down (vegetables, meat). Let the knife do the work; a sharp knife needs no force.
+        - **A stable board:** a damp cloth or a sheet of paper towel underneath stops it sliding.
+        - Round things (onion, carrot, potato): cut a thin slice off one side first so it lies flat.
+    hu:
+      title: A kés és az alapanyag fogása
+      body: |
+        - **Csippentő fogás:** a hüvelykujj és a behajlított mutatóujj oldala közvetlenül a nyél előtt fogja a pengét; a
+          többi ujj a nyelet. Sokkal jobban irányítható, mint ha csak a nyelet fogod.
+        - **A karom:** a másik kéz behajlított ujjhegyekkel fogja az alapanyagot, a bütykök előre néznek. A penge lapja a
+          bütyköknek támaszkodik — azt az ujjbegyet nem vághatod meg, ami nincs ott.
+        - **Billentés vagy szeletelés:** a hegy a deszkán marad, a sarok fel-le jár (zöldfűszer, fokhagyma), vagy az egész
+          penge előre-lefelé siklik (zöldség, hús). Hagyd, hogy a kés dolgozzon; az éles késhez nem kell erő.
+        - **Stabil deszka:** alatta egy nedves konyharuha vagy papírtörlő nem hagyja elcsúszni.
+        - Gömbölyű alapanyag (hagyma, répa, krumpli): először vágj le egy vékony szeletet az egyik oldaláról, hogy stabilan feküdjön.
+  - id: cuts
+    illustration: cutsizes
+    en:
+      title: The classic cuts
+      body: |
+        | Cut | Size | For |
+        |---|---|---|
+        | Brunoise | 2–3 mm cubes | garnish, fine sauces, fried rice |
+        | Small dice | 5 mm | soffritto, sauces, fillings |
+        | Medium dice | 1–1.5 cm | soups, stews, lecsó |
+        | Large dice | 2 cm + | slow stews, roasting |
+        | Julienne | 2–3 mm × 5 cm sticks | salads, stir-fries |
+        | Batonnet | 6 mm × 6 cm sticks | chips, crudités |
+        | Chiffonade | thin ribbons | basil, spinach, sorrel |
+        | Mince | as fine as it gets | garlic, ginger, herbs |
+
+        > Same size = same cooking time. Uneven pieces mean some burn while others are raw.
+    hu:
+      title: A klasszikus vágások
+      body: |
+        | Vágás | Méret | Mire |
+        |---|---|---|
+        | Brunoise | 2–3 mm-es kocka | díszítés, finom mártások, pirított rizs |
+        | Kis kocka | 5 mm | soffritto, mártások, töltelékek |
+        | Közepes kocka | 1–1,5 cm | levesek, raguk, lecsó |
+        | Nagy kocka | 2 cm felett | lassú raguk, sütőben sütés |
+        | Julienne (gyufaszál) | 2–3 mm × 5 cm | saláták, wok |
+        | Hasáb | 6 mm × 6 cm | hasábburgonya, nyers zöldség |
+        | Chiffonade | vékony csík | bazsalikom, spenót, sóska |
+        | Aprítás | amilyen finom csak lehet | fokhagyma, gyömbér, zöldfűszer |
+
+        > Egyforma méret = egyforma főzési idő. Ha egyenetlenek a darabok, egyik megég, a másik nyers marad.
+  - id: onion
+    illustration: onion
+    en:
+      title: Dicing an onion
+      body: |
+        1. Cut the onion in half from root to tip. Peel it, leave the root on — it holds the layers together.
+        2. Half flat on the board: make vertical cuts from the tip towards the root, stopping short of it. Closer cuts =
+           finer dice.
+        3. One or two horizontal cuts towards the root (careful, claw on top).
+        4. Now slice across: the dice falls away. Stop at the root and throw it in the stock bag.
+
+        Less crying: a sharp knife (it crushes fewer cells), a cold onion, and working quickly. For pörkölt the onion
+        is diced fine so it melts into the sauce.
+    hu:
+      title: Hagyma felkockázása
+      body: |
+        1. Vágd félbe a hagymát a gyökerétől a csúcsáig. Hámozd meg, de a gyökér maradjon rajta — az tartja össze a rétegeket.
+        2. A felét fektesd a deszkára: függőleges vágások a csúcstól a gyökér felé, a gyökér előtt megállva. Sűrűbb vágás = apróbb kocka.
+        3. Egy-két vízszintes vágás a gyökér felé (óvatosan, a karommal felül).
+        4. Most vágd keresztben: a kockák leválnak. A gyökérnél állj meg, és tedd az alaplés zacskóba.
+
+        Kevesebb könny: éles kés (kevesebb sejtet tör össze), hideg hagyma, gyors munka. Pörkölthöz finomra kockázzuk,
+        hogy beleolvadjon a szaftba.
+  - id: sharpening
+    illustration: angle
+    en:
+      title: Sharpening and care
+      body: |
+        - **Honing** (the steel rod) straightens the edge — do it often, a few strokes at the same angle as the edge
+          (about 15–20°). Japanese-style knives usually take about **15°** per side, European chef's knives about **20°**.
+        - **Sharpening** (whetstone, 1000 then 3000–6000 grit) removes metal and makes a new edge — a few times a year.
+          Soak water stones 10 minutes; keep the angle steady; work until you feel a slight burr, then switch sides.
+        - **Paper test:** a sharp knife slices a sheet of paper cleanly without tearing.
+        - Wash by hand, dry at once, never in the dishwasher, never left in the sink.
+        - Wood or plastic boards only — glass, stone and plates destroy edges.
+    hu:
+      title: Élezés és ápolás
+      body: |
+        - A **fenőacél** kiegyenesíti az élt — gyakran, néhány húzás az él szögében (kb. 15–20°). A japán stílusú kések
+          éle általában oldalanként kb. **15°**, az európai szakácskéseké kb. **20°**.
+        - Az **élezés** (vizes kő, 1000-es, aztán 3000–6000-es szemcse) fémet vesz le és új élt készít — évente néhányszor.
+          A vizes követ áztasd 10 percig; tartsd egyenletesen a szöget; addig dolgozz, amíg enyhe sorját érzel, aztán fordíts.
+        - **Papírteszt:** az éles kés tisztán átvágja a papírlapot, nem tépi.
+        - Kézzel mosd, azonnal töröld szárazra, soha ne mosogatógépbe, soha ne hagyd a mosogatóban.
+        - Csak fa vagy műanyag deszka — az üveg, a kő és a tányér tönkreteszi az élt.

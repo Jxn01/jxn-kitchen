@@ -1,0 +1,13 @@
+# secrets: .env AND every variant (an exact `.env` rule covers nothing else)
+.env
+.env.*
+!.env.example
+*.token
+kitchen.env
+# build / runtime output (the web app is built in ~/.cache/jxn-kitchen, never here)
+node_modules/
+dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+kiosk/agent/*.exe

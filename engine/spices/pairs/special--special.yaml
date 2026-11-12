@@ -1,0 +1,45 @@
+# Specials × specials — hand-judged, -3..3, a reason on every cell, a note on every ±3.
+saffron:
+  sumac: [1, cuisine-mates]
+  juniper: [-2, two-leads]
+  nigella: [0, harmless]
+  poppy-seeds: [0, harmless]
+  sesame: [0, harmless]
+  asafoetida: [-3, drowned, "Saffron and asafoetida: the most delicate jar on the rack against the loudest.", "Sáfrány és asafoetida: a polc legfinomabb üvege a leghangosabb ellen."]
+  orange-peel: [2, bridge]
+  lemon-peel: [1, bridge]
+sumac:
+  juniper: [0, strangers]
+  nigella: [1, cuisine-mates]
+  poppy-seeds: [0, strangers]
+  sesame: [3, classic-partners, "Sumac and sesame: the sour half and the nutty half of za'atar.", "Szömörce és szezám: a za'atar savanyú és diós fele."]
+  asafoetida: [0, strangers]
+  orange-peel: [1, bridge]
+  lemon-peel: [-1, doubled-note]
+juniper:
+  nigella: [0, strangers]
+  poppy-seeds: [0, strangers]
+  sesame: [0, strangers]
+  asafoetida: [-2, two-leads]
+  orange-peel: [2, bridge]
+  lemon-peel: [1, bridge]
+nigella:
+  poppy-seeds: [2, cuisine-mates]
+  sesame: [2, cuisine-mates]
+  asafoetida: [1, cuisine-mates]
+  orange-peel: [0, strangers]
+  lemon-peel: [0, harmless]
+poppy-seeds:
+  sesame: [2, cuisine-mates]
+  asafoetida: [0, strangers]
+  orange-peel: [1, gentle-company]
+  lemon-peel: [3, classic-partners, "Poppy seed and lemon: lemon poppy-seed cake, and the zest in every Hungarian mákos.", "Mák és citrom: citromos mákos sütemény, és a reszelt héj minden magyar mákosban."]
+sesame:
+  asafoetida: [0, strangers]
+  orange-peel: [1, gentle-company]
+  lemon-peel: [1, gentle-company]
+asafoetida:
+  orange-peel: [-2, two-leads]
+  lemon-peel: [1, cuisine-mates]
+orange-peel:
+  lemon-peel: [2, same-family]

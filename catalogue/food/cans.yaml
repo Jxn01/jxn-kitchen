@@ -1,0 +1,52 @@
+category: cans
+groups:
+  - id: tomato-cans
+    en: Tomato
+    hu: Paradicsomos
+    icon: "om:1F96B"
+    items:
+      - {id: canned-tomatoes, en: Chopped tomatoes, hu: Darabolt paradicsom, icon: "om:1F96B", aliases: [canned tomatoes, tinned tomatoes, chopped tomatoes, hámozott paradicsom, paradicsomkonzerv, konzerv paradicsom, darabolt paradicsomot]}
+      - {id: passata, en: Passata, hu: Passata, aliases: [tomato passata, paradicsom passata, sűrű paradicsomszósz, tomato sauce]}
+      - {id: tomato-paste, en: Tomato paste, hu: Paradicsompüré, icon: "c:tube", aliases: [tomato puree, tomato concentrate, sűrített paradicsom, paradicsompürét, paradicsomsűrítmény]}
+      - {id: sun-dried-tomatoes, en: Sun-dried tomatoes, hu: Szárított paradicsom, aliases: [aszalt paradicsom, sun dried tomatoes]}
+      - {id: lecso-jar, en: Lecsó (jar), hu: Lecsó (üveges), aliases: [lecsó alap, üveges lecsó]}
+  - id: bean-cans
+    en: Canned beans & veg
+    hu: Hüvelyes, zöldség konzerv
+    icon: "om:1F96B"
+    items:
+      - {id: canned-kidney-beans, en: Kidney beans, hu: Vörösbab, aliases: [kidney beans, red beans, vörösbab konzerv, babkonzerv, chili bab]}
+      - {id: canned-white-beans, en: White beans (can), hu: Fehérbab konzerv, aliases: [cannellini, cannellini beans, butter beans, konzerv fehérbab]}
+      - {id: canned-chickpeas, en: Chickpeas, hu: Csicseriborsó, aliases: [chickpeas, garbanzo beans, csicseriborsót, csicseriborsó konzerv]}
+      - {id: canned-corn, en: Sweetcorn, hu: Csemegekukorica, icon: "om:1F33D", aliases: [sweetcorn, canned corn, corn, kukorica, kukoricakonzerv, csemegekukoricát]}
+      - {id: canned-peas, en: Canned peas, hu: Zöldborsó konzerv, aliases: [tinned peas]}
+      - {id: canned-mushrooms, en: Canned mushrooms, hu: Gombakonzerv, aliases: [tinned mushrooms, konzerv gomba]}
+      - {id: baked-beans, en: Baked beans, hu: Baked beans, gluten: label, aliases: [paradicsomos bab]}
+  - id: fish-cans
+    en: Canned fish
+    hu: Halkonzerv
+    icon: "om:1F96B"
+    items:
+      - {id: canned-tuna, en: Tuna, hu: Tonhalkonzerv, aliases: [tuna, canned tuna, tinned tuna, tonhal, tonhalat]}
+      - {id: canned-sardines, en: Sardines, hu: Szardínia, aliases: [sardines, szardíniakonzerv]}
+  - id: pickles
+    en: Pickles & olives
+    hu: Savanyúság, olívabogyó
+    icon: "om:1F952"
+    items:
+      - {id: pickled-cucumbers, en: Pickles (gherkins), hu: Csemegeuborka, aliases: [gherkins, pickles, cornichons, savanyú uborka, ecetes uborka, kovászos uborka]}
+      - {id: sauerkraut, en: Sauerkraut, hu: Savanyú káposzta, aliases: [savanyúkáposzta, savanyú káposztát, kraut]}
+      - {id: pickled-peppers, en: Pickled peppers, hu: Almapaprika, aliases: [ecetes paprika, savanyú paprika, töltött almapaprika, pepperoncini]}
+      - {id: olives, en: Olives, hu: Olívabogyó, icon: "om:1FAD2", aliases: [black olives, green olives, kalamata, olivabogyó, olajbogyó]}
+      - {id: capers, en: Capers, hu: Kapribogyó, aliases: [caper, kapri]}
+      - {id: jalapenos, en: Jalapeños (jar), hu: Jalapeño, aliases: [jalapenos, jalapeño, pickled jalapeños]}
+      - {id: roasted-peppers, en: Roasted peppers (jar), hu: Sült paprika (üveges), aliases: [roasted red peppers, grillezett paprika]}
+      - {id: pickled-beetroot, en: Pickled beetroot, hu: Céklasaláta, aliases: [pickled beets, ecetes cékla]}
+  - id: other-cans
+    en: Other jars & cans
+    hu: Egyéb konzerv
+    icon: "om:1F96B"
+    items:
+      - {id: coconut-milk, en: Coconut milk, hu: Kókusztej, icon: "om:1F965", aliases: [coconut cream, kókuszkrém, kókusztejet]}
+      - {id: canned-fruit, en: Canned fruit (compote), hu: Befőtt, aliases: [compote, canned peaches, tinned fruit, gyümölcskonzerv, őszibarackbefőtt, meggybefőtt]}
+      - {id: canned-pineapple, en: Canned pineapple, hu: Ananászkonzerv, icon: "om:1F34D", aliases: [tinned pineapple, ananász konzerv]}

@@ -1,0 +1,36 @@
+onion:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+shallot:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]
+garlic:
+  cucumber: [3, classic-partners, "Garlic and cucumber: the bite inside a tzatziki.", "Fokhagyma és uborka: a tzatziki harapása."]
+  peanut-butter: [1, gentle-company]
+  tahini: [3, classic-partners, "Garlic and tahini: the backbone of hummus and tarator.", "Fokhagyma és tahini: a humusz és a tarator gerince."]
+ginger:
+  cucumber: [1, gentle-company]
+  peanut-butter: [2, cuisine-mates]
+  tahini: [1, gentle-company]
+horseradish:
+  cucumber: [0, harmless]
+  peanut-butter: [-2, odd-couple]
+  tahini: [-2, odd-couple]
+capers:
+  cucumber: [1, gentle-company]
+  peanut-butter: [-2, odd-couple]
+  tahini: [-1, odd-couple]
+anchovies:
+  cucumber: [0, harmless]
+  peanut-butter: [-2, odd-couple]
+  tahini: [-1, odd-couple]
+garlic-powder:
+  cucumber: [1, gentle-company]
+  peanut-butter: [1, gentle-company]
+  tahini: [1, gentle-company]
+onion-powder:
+  cucumber: [1, gentle-company]
+  peanut-butter: [0, harmless]
+  tahini: [0, harmless]

@@ -1,0 +1,111 @@
+# Recognised bases (spec 2026-10-19 §4.2): when a blend holds `need` of a backbone's slots, the ledger gets a good line
+# (+10) naming it. A slot is one spice id, or a list of ids any one of which fills it (sweet OR smoked paprika).
+backbones:
+  - id: hungarian-base
+    spices: [sweet-paprika, caraway, marjoram]
+    need: 3
+    en: "the Hungarian base"
+    hu: "a magyar alap"
+    note: {en: "Paprika, caraway and marjoram: pörkölt in a jar.", hu: "Pirospaprika, kömény, majoránna: pörkölt egy üvegben."}
+  - id: kolbasz-base
+    spices: [sweet-paprika, hot-paprika, garlic-powder, caraway]
+    need: 4
+    en: "the sausage base"
+    hu: "a kolbászalap"
+    note: {en: "Sweet and hot paprika, garlic and caraway: what makes a Hungarian sausage taste like one.", hu: "Édes és csípős paprika, fokhagyma, kömény: ettől lesz a kolbász kolbászíze."}
+  - id: curry-base
+    spices: [cumin, coriander-seed, turmeric]
+    need: 3
+    en: "the curry base"
+    hu: "a curry alapja"
+    note: {en: "Cumin, coriander and turmeric: every curry starts here.", hu: "Római kömény, koriander, kurkuma: minden curry itt kezdődik."}
+  - id: masala-warmth
+    spices: [cardamom, cinnamon, cloves, black-pepper]
+    need: 4
+    en: "the masala warmth"
+    hu: "a masala melegsége"
+    note: {en: "Cardamom, cinnamon, clove and pepper: the 'garam' — the warming — in garam masala.", hu: "Kardamom, fahéj, szegfűszeg, bors: ettől „garam”, vagyis melegítő a garam masala."}
+  - id: warm-trio
+    spices: [cinnamon, cloves, nutmeg]
+    need: 3
+    en: "the warm trio"
+    hu: "a meleg hármas"
+    note: {en: "Cinnamon, clove and nutmeg: the warm heart of gingerbread and garam masala alike.", hu: "Fahéj, szegfűszeg, szerecsendió: a mézeskalács és a garam masala közös meleg szíve."}
+  - id: warm-earthy-core
+    spices: [cumin, coriander-seed, cinnamon, [black-pepper, allspice]]
+    need: 4
+    en: "the warm-earthy core"
+    hu: "a meleg-földes mag"
+    note: {en: "Cumin and coriander under cinnamon and pepper: the core of baharat, ras el hanout and garam masala.", hu: "Római kömény és koriander, fölöttük fahéj és bors: a baharat, a ras el hanout és a garam masala magja."}
+  - id: mediterranean
+    spices: [thyme, rosemary, oregano, marjoram, savory]
+    need: 3
+    en: "the Mediterranean herb garden"
+    hu: "a mediterrán fűszerkert"
+    note: {en: "Three or more of thyme, rosemary, oregano, marjoram and savory: the hillside herbs of the south.", hu: "Kakukkfű, rozmaring, oregánó, majoránna, csombord — közülük legalább három: a déli hegyoldalak füvei."}
+  - id: quatre-epices
+    spices: [white-pepper, nutmeg, cloves, ground-ginger]
+    need: 4
+    en: "quatre épices"
+    hu: "a négyfűszer (quatre épices)"
+    note: {en: "White pepper, nutmeg, clove and ginger: France's four spices for pâtés and sausages.", hu: "Fehér bors, szerecsendió, szegfűszeg, gyömbér: a franciák négy fűszere pástétomhoz, kolbászhoz."}
+  - id: chinese-five
+    spices: [star-anise, fennel-seed, cinnamon, sichuan-pepper, cloves]
+    need: 4
+    en: "the five-spice core"
+    hu: "az ötfűszer magja"
+    note: {en: "Star anise, fennel, cinnamon, Sichuan pepper and clove: sweet, warm and tingling at once.", hu: "Csillagánizs, édeskömény, fahéj, szecsuáni bors, szegfűszeg: édes, meleg és bizsergető egyszerre."}
+  - id: rub-base
+    spices: [[sweet-paprika, smoked-paprika], garlic-powder, onion-powder, [cayenne, chili-powder, chipotle, black-pepper]]
+    need: 4
+    en: "the rub base"
+    hu: "a dörzsölőfűszer alapja"
+    note: {en: "Paprika, garlic, onion and a little heat: the base of every great rub.", hu: "Paprika, fokhagyma, hagyma és egy kis csípősség: minden jó dörzsölőfűszer alapja."}
+  - id: chilli-base
+    spices: [[chili-powder, chipotle], cumin, oregano]
+    need: 3
+    en: "the chilli base"
+    hu: "a chilis alap"
+    note: {en: "Chilli, cumin and oregano: the backbone of a pot of chilli and every taco.", hu: "Chili, római kömény, oregánó: a chili con carne és minden taco gerince."}
+  - id: zaatar
+    spices: [thyme, sumac, sesame]
+    need: 3
+    en: "za'atar"
+    hu: "a za'atar"
+    note: {en: "Thyme, sumac and sesame: herbal, sour and nutty — the Levant's breakfast.", hu: "Kakukkfű, szömörce, szezám: füves, savanykás, diós — a Levante reggelije."}
+  - id: pickling
+    spices: [mustard-seed, coriander-seed, dill-seed, allspice, bay-leaf, black-pepper]
+    need: 4
+    en: "the pickling jar"
+    hu: "a savanyúságos üveg"
+    note: {en: "Mustard seed, coriander, dill seed, allspice, bay and pepper — the spices that float in a jar of savanyúság.", hu: "Mustármag, koriander, kapormag, szegfűbors, babér, bors — ezek úsznak a savanyúságos üvegben."}
+  - id: mulled
+    spices: [cinnamon, cloves, star-anise, orange-peel]
+    need: 4
+    en: "the mulled-wine spice"
+    hu: "a forralt bor fűszere"
+    note: {en: "Cinnamon, clove, star anise and orange peel: the smell of a Christmas market.", hu: "Fahéj, szegfűszeg, csillagánizs, narancshéj: a karácsonyi vásár illata."}
+  - id: gingerbread
+    spices: [cinnamon, ground-ginger, cloves, allspice, nutmeg]
+    need: 5
+    en: "the gingerbread spice"
+    hu: "a mézeskalács fűszere"
+    note: {en: "Cinnamon and ginger with clove, allspice and nutmeg: mézeskalács.", hu: "Fahéj és gyömbér szegfűszeggel, szegfűborssal, szerecsendióval: mézeskalács."}
+  - id: panch-phoron
+    spices: [cumin, fennel-seed, mustard-seed, fenugreek, nigella]
+    need: 5
+    en: "panch phoron"
+    hu: "a panch phoron"
+    note: {en: "Five whole seeds popped in hot oil: Bengal's tempering.", hu: "Öt egész mag forró olajban pattogtatva: a bengáli ízesítés."}
+  - id: jerk
+    spices: [allspice, thyme, [cayenne, chili-flakes], garlic-powder]
+    need: 4
+    en: "the jerk base"
+    hu: "a jerk alapja"
+    note: {en: "Allspice and thyme with chilli and garlic: Jamaica on the grill.", hu: "Szegfűbors és kakukkfű chilivel, fokhagymával: Jamaica a grillen."}
+  - id: lemon-pepper
+    spices: [lemon-peel, black-pepper]
+    need: 2
+    en: "lemon pepper"
+    hu: "a citromos bors"
+    note: {en: "Lemon peel and black pepper: bright heat for fish, chicken and roast vegetables.", hu: "Citromhéj és fekete bors: élénk csípősség halhoz, csirkéhez, sült zöldséghez."}

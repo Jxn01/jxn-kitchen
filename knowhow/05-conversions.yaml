@@ -1,0 +1,158 @@
+id: conversions
+order: 17
+icon: "om:2696"
+color: teal
+en: {title: Conversions, sub: "dkg · dl · ek · cups · oz · °F"}
+hu: {title: Átváltások, sub: "dkg · dl · ek · bögre · uncia · °F"}
+pages:
+  - id: hungarian-measures
+    chart:
+      type: vessel
+      shape: jug
+      max: 500
+      unit: ml
+      ticks: [{value: 100, label: 1 dl}, {value: 200, label: 2 dl}, {value: 300, label: 3 dl}, {value: 400, label: 4 dl}, {value: 500, label: 5 dl}]
+      items:
+        - {value: 100, label: 1 dl, note: {en: "A decilitre: 100 ml — 6–7 level tablespoons.", hu: "Egy deciliter: 100 ml — 6–7 csapott evőkanál."}}
+        - {value: 200, label: {en: 1 pohár (glass), hu: 1 pohár}, note: {en: "A glass: about 2 dl.", hu: "Egy pohár: kb. 2 dl."}}
+        - {value: 250, label: {en: 1 bögre (mug), hu: 1 bögre}, note: {en: "A mug: about 2.5 dl.", hu: "Egy bögre: kb. 2,5 dl."}}
+        - {value: 500, label: ½ l, note: {en: "Half a litre: 5 dl. A whole litre is 10 dl.", hu: "Fél liter: 5 dl. Egy egész liter 10 dl."}}
+    en:
+      title: Hungarian measures
+      body: |
+        | Recipe says | Means |
+        |---|---|
+        | 1 dkg (deka) | 10 g |
+        | 1 dl | 100 ml |
+        | 1 l | 1000 ml = 10 dl |
+        | 1 ek (evőkanál) | tablespoon, 15 ml |
+        | 1 tk (teáskanál) | teaspoon, 5 ml |
+        | 1 kk / mk (kávés-, mokkáskanál) | about 2.5 ml |
+        | 1 csipet | a pinch, about 0.3 g |
+        | 1 bögre | a mug, about 2.5 dl |
+        | 1 pohár | a glass, about 2 dl |
+        | 1 csomag sütőpor | 12 g baking powder |
+        | 1 csomag vaníliás cukor | 10 g |
+        | 1 csomag szárított élesztő | 7 g (= about 21–25 g fresh) |
+        | 1 púpozott / csapott ek | heaped / level tablespoon |
+
+        > The app's recipe screen does these sums for you when you change the servings.
+    hu:
+      title: Magyar mértékek
+      body: |
+        | A recept szerint | Jelentése |
+        |---|---|
+        | 1 dkg (deka) | 10 g |
+        | 1 dl | 100 ml |
+        | 1 l | 1000 ml = 10 dl |
+        | 1 ek (evőkanál) | 15 ml |
+        | 1 tk (teáskanál) | 5 ml |
+        | 1 kk / mk (kávés-, mokkáskanál) | kb. 2,5 ml |
+        | 1 csipet | kb. 0,3 g |
+        | 1 bögre | kb. 2,5 dl |
+        | 1 pohár | kb. 2 dl |
+        | 1 csomag sütőpor | 12 g |
+        | 1 csomag vaníliás cukor | 10 g |
+        | 1 csomag szárított élesztő | 7 g (= kb. 21–25 g friss) |
+        | 1 púpozott / csapott ek | púpozott / egyenesre húzott evőkanál |
+
+        > Az app receptoldala elvégzi ezeket a számításokat, ha átállítod az adagszámot.
+  - id: weights-by-volume
+    chart:
+      type: bars
+      unit: g
+      max: 150
+      marker: {value: 100, label: {en: "water: 100 g — the yardstick", hu: "víz: 100 g — a mérce"}}
+      items:
+        - {value: 100, label: {en: "Water, milk", hu: "Víz, tej"}, fill: "#BFE3F5", note: {en: 1 tbsp ≈ 15 g, hu: 1 ek ≈ 15 g}}
+        - {value: 60, to: 65, label: {en: GF flour mix, hu: GM lisztkeverék}, fill: "#F1E4C6", note: {en: 1 tbsp ≈ 10 g, hu: 1 ek ≈ 10 g}}
+        - {value: 65, label: {en: Rice flour, hu: Rizsliszt}, fill: "#F6F0E2", note: {en: 1 tbsp ≈ 10 g, hu: 1 ek ≈ 10 g}}
+        - {value: 60, label: {en: Cornstarch, hu: Kukoricakeményítő}, fill: "#FFFDF6", note: {en: 1 tbsp ≈ 9 g, hu: 1 ek ≈ 9 g}}
+        - {value: 85, to: 90, label: {en: Sugar, hu: Cukor}, fill: "#F4EEE2", note: {en: 1 tbsp ≈ 13 g, hu: 1 ek ≈ 13 g}}
+        - {value: 55, label: {en: Icing sugar, hu: Porcukor}, fill: "#FFFFFF", note: {en: 1 tbsp ≈ 8 g, hu: 1 ek ≈ 8 g}}
+        - {value: 90, label: {en: Oil, hu: Olaj}, fill: "#F2C94C", note: {en: 1 tbsp ≈ 13 g, hu: 1 ek ≈ 13 g}}
+        - {value: 95, label: {en: Butter (melted), hu: Vaj (olvasztott)}, fill: "#F7D774", note: {en: 1 tbsp ≈ 14 g, hu: 1 ek ≈ 14 g}}
+        - {value: 140, label: {en: Honey, hu: Méz}, fill: "#E3A21A", note: {en: 1 tbsp ≈ 21 g, hu: 1 ek ≈ 21 g}}
+        - {value: 50, label: {en: Ground poppy / walnuts, hu: Darált mák / dió}, fill: "#8C7A6B", note: {en: 1 tbsp ≈ 7 g, hu: 1 ek ≈ 7 g}}
+    en:
+      title: How much does a decilitre weigh?
+      body: |
+        Baking is more reliable by weight. Typical weights of **1 dl**:
+
+        | Ingredient | 1 dl ≈ | 1 tbsp ≈ |
+        |---|---|---|
+        | Water, milk | 100 g | 15 g |
+        | Wheat flour | 55–60 g | 9 g |
+        | GF flour mix | 60–65 g | 10 g |
+        | Rice flour | 65 g | 10 g |
+        | Cornstarch | 60 g | 9 g |
+        | Sugar | 85–90 g | 13 g |
+        | Icing sugar | 55 g | 8 g |
+        | Rice (raw) | 85 g | — |
+        | Oil | 90 g | 13 g |
+        | Butter (melted) | 95 g | 14 g |
+        | Honey | 140 g | 21 g |
+        | Ground poppy seeds / walnuts | 50 g | 7 g |
+    hu:
+      title: Mennyit nyom egy deciliter?
+      body: |
+        A sütés grammra megbízhatóbb. **1 dl** jellemző tömege:
+
+        | Alapanyag | 1 dl ≈ | 1 ek ≈ |
+        |---|---|---|
+        | Víz, tej | 100 g | 15 g |
+        | Búzaliszt | 55–60 g | 9 g |
+        | GM lisztkeverék | 60–65 g | 10 g |
+        | Rizsliszt | 65 g | 10 g |
+        | Kukoricakeményítő | 60 g | 9 g |
+        | Kristálycukor | 85–90 g | 13 g |
+        | Porcukor | 55 g | 8 g |
+        | Rizs (nyersen) | 85 g | — |
+        | Olaj | 90 g | 13 g |
+        | Vaj (olvasztva) | 95 g | 14 g |
+        | Méz | 140 g | 21 g |
+        | Darált mák / dió | 50 g | 7 g |
+  - id: imperial
+    chart:
+      type: scale
+      unit: °C
+      min: 150
+      max: 240
+      bands:
+        - {from: 175, to: 180, fill: "#F7B744", label: "350 °F", range: "175–180 °C", note: {en: "The everyday baking heat: cakes, cookies, casseroles. °F to °C: subtract 32, multiply by 5, divide by 9.", hu: "A mindennapi sütési hő: sütemények, keksz, rakott ételek. °F-ból °C: vonj le 32-t, szorozd 5-tel, oszd 9-cel."}}
+        - {from: 198, to: 202, fill: "#F28C28", label: "400 °F", range: "200 °C", note: {en: "Roasting vegetables and potatoes.", hu: "Zöldség- és krumplisütés."}}
+        - {from: 218, to: 222, fill: "#E8442E", label: "425 °F", range: "220 °C", note: {en: "A hot oven: crisping, bread crusts.", hu: "Forró sütő: ropogósra sütés, kenyérhéj."}}
+      marks:
+        - {value: 180, label: "180"}
+        - {value: 200, label: "200"}
+        - {value: 220, label: "220"}
+    en:
+      title: Cups, ounces, Fahrenheit
+      body: |
+        | Unit | Metric |
+        |---|---|
+        | 1 US cup | 240 ml (a metric cup is 250 ml) |
+        | 1 cup flour | about 125–130 g |
+        | 1 cup sugar | about 200 g |
+        | 1 cup butter (2 sticks) | 227 g |
+        | 1 fl oz | 29.6 ml |
+        | 1 oz | 28.35 g |
+        | 1 lb | 454 g |
+        | 1 inch | 2.54 cm |
+
+        **°F to °C:** subtract 32, multiply by 5, divide by 9. 350 °F = 175–180 °C · 400 °F = 200 °C · 425 °F = 220 °C.
+    hu:
+      title: Bögre, uncia, Fahrenheit
+      body: |
+        | Mértékegység | Metrikus |
+        |---|---|
+        | 1 amerikai cup (bögre) | 240 ml (a metrikus 250 ml) |
+        | 1 cup liszt | kb. 125–130 g |
+        | 1 cup cukor | kb. 200 g |
+        | 1 cup vaj (2 stick) | 227 g |
+        | 1 fl oz (folyadékuncia) | 29,6 ml |
+        | 1 oz (uncia) | 28,35 g |
+        | 1 lb (font) | 454 g |
+        | 1 inch (hüvelyk) | 2,54 cm |
+
+        **°F-ból °C:** vonj ki 32-t, szorozd 5-tel, oszd 9-cel. 350 °F = 175–180 °C · 400 °F = 200 °C · 425 °F = 220 °C.

@@ -1,0 +1,68 @@
+category: fruit
+groups:
+  - id: apples-pears
+    en: Apples & pears
+    hu: Alma, körte
+    icon: "om:1F34E"
+    items:
+      - {id: apple, en: Apples, hu: Alma, icon: "om:1F34E", aliases: [apple, almát, almák, green apple, zöldalma]}
+      - {id: pear, en: Pears, hu: Körte, icon: "om:1F350", aliases: [pear, körtét]}
+      - {id: quince, en: Quince, hu: Birsalma, aliases: [birs]}
+  - id: citrus
+    en: Citrus
+    hu: Citrusfélék
+    icon: "om:1F34B"
+    items:
+      - {id: lemon, en: Lemons, hu: Citrom, icon: "om:1F34B", aliases: [lemon, lemon zest, citromhéj, citromot, citromok]}
+      - {id: lime, en: Limes, hu: Lime, icon: "om:1F34B-200D-1F7E9", aliases: [lime, lime zest, zöldcitrom]}
+      - {id: orange, en: Oranges, hu: Narancs, icon: "om:1F34A", aliases: [orange, orange zest, narancshéj, narancsot]}
+      - {id: tangerine, en: Tangerines, hu: Mandarin, icon: "om:1F34A", aliases: [tangerine, clementine, clementines, mandarint]}
+      - {id: grapefruit, en: Grapefruit, hu: Grapefruit, aliases: [grépfrút]}
+  - id: berries
+    en: Berries & cherries
+    hu: Bogyós, cseresznye
+    icon: "om:1F353"
+    items:
+      - {id: strawberry, en: Strawberries, hu: Eper, icon: "om:1F353", aliases: [strawberry, epret, földieper]}
+      - {id: raspberry, en: Raspberries, hu: Málna, aliases: [raspberry, málnát]}
+      - {id: blueberry, en: Blueberries, hu: Áfonya, icon: "om:1FAD0", aliases: [blueberry, kék áfonya, fekete áfonya]}
+      - {id: blackberry, en: Blackberries, hu: Szeder, aliases: [blackberry]}
+      - {id: redcurrant, en: Redcurrants, hu: Ribizli, aliases: [redcurrant, currants, ribiszke]}
+      - {id: sour-cherry, en: Sour cherries, hu: Meggy, icon: "om:1F352", aliases: [sour cherry, morello cherries, meggyet, magozott meggy]}
+      - {id: cherry, en: Cherries, hu: Cseresznye, icon: "om:1F352", aliases: [cherry, sweet cherries, cseresznyét]}
+      - {id: grapes, en: Grapes, hu: Szőlő, icon: "om:1F347", aliases: [grape, szőlőt]}
+  - id: stone-fruit
+    en: Stone fruit
+    hu: Csonthéjas
+    icon: "om:1F351"
+    items:
+      - {id: peach, en: Peaches, hu: Őszibarack, icon: "om:1F351", aliases: [peach, őszibarackot]}
+      - {id: apricot, en: Apricots, hu: Sárgabarack, icon: "om:1F351", aliases: [apricot, kajszi, kajszibarack, barack, sárgabarackot]}
+      - {id: plum, en: Plums, hu: Szilva, aliases: [plum, besztercei szilva, szilvát]}
+      - {id: nectarine, en: Nectarines, hu: Nektarin, icon: "om:1F351", aliases: [nectarine]}
+  - id: tropical
+    en: Tropical & melons
+    hu: Déligyümölcs, dinnye
+    icon: "om:1F34C"
+    items:
+      - {id: banana, en: Bananas, hu: Banán, icon: "om:1F34C", aliases: [banana, banánt]}
+      - {id: pineapple, en: Pineapple, hu: Ananász, icon: "om:1F34D", aliases: [fresh pineapple, friss ananász]}
+      - {id: mango, en: Mango, hu: Mangó, icon: "om:1F96D", aliases: [mangoes]}
+      - {id: kiwi, en: Kiwi, hu: Kivi, icon: "om:1F95D", aliases: [kiwi fruit, kiwis]}
+      - {id: avocado, en: Avocado, hu: Avokádó, icon: "om:1F951", aliases: [avocados, avokádót]}
+      - {id: coconut, en: Coconut (fresh), hu: Kókuszdió, icon: "om:1F965", aliases: [fresh coconut]}
+      - {id: pomegranate, en: Pomegranate, hu: Gránátalma, icon: "om:E0C4", aliases: [pomegranate seeds]}
+      - {id: melon, en: Melon, hu: Sárgadinnye, icon: "om:1F348", aliases: [cantaloupe, honeydew, dinnye]}
+      - {id: watermelon, en: Watermelon, hu: Görögdinnye, icon: "om:1F349"}
+      - {id: figs, en: Figs, hu: Füge, aliases: [fig, fresh figs]}
+  - id: dried-fruit
+    en: Dried fruit
+    hu: Aszalt gyümölcs
+    icon: "om:1F347"
+    items:
+      - {id: raisins, en: Raisins, hu: Mazsola, aliases: [sultanas, mazsolát]}
+      - {id: dried-apricots, en: Dried apricots, hu: Aszalt sárgabarack, aliases: [aszalt barack]}
+      - {id: prunes, en: Prunes, hu: Aszalt szilva, aliases: [dried plums]}
+      - {id: dates, en: Dates, hu: Datolya, aliases: [medjool dates, aszalt datolya]}
+      - {id: dried-cranberries, en: Dried cranberries, hu: Aszalt vörösáfonya, aliases: [craisins, vörös áfonya]}
+      - {id: dried-figs, en: Dried figs, hu: Aszalt füge}

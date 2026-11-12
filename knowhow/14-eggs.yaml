@@ -1,0 +1,221 @@
+id: eggs
+order: 7
+icon: "om:1F95A"
+color: butter
+en:
+  title: Eggs
+  sub: "boiling · freshness · cooking · sizes · whipping"
+hu:
+  title: Tojás
+  sub: "főzés · frissesség · elkészítés · méretek · habverés"
+pages:
+  - id: boiling
+    illustration: eggtimer
+    en:
+      title: Boiling times
+      body: |
+        For **large eggs straight from the fridge**, lowered gently into **boiling** water with a spoon, kept at a lively
+        simmer, then **2 minutes in iced water** — it stops the cooking and makes them peel easily. Medium eggs: half a
+        minute less; room-temperature eggs: about a minute less.
+
+        | Minutes | Yolk | For |
+        |---|---|---|
+        | 5 | runny, white set | the dippy egg |
+        | 6 | runny centre, jammy rim | ramen egg (6½) |
+        | 7 | jammy | salads, toast |
+        | 8 | just set, creamy | snacks |
+        | 10 | hard, yellow | slicing, kaszinótojás |
+        | 12 | fully hard, pale | egg salad, spreads |
+        | 14 + | overcooked: grey-green ring | — |
+
+        - **Peeling:** older eggs (2–3 weeks) peel easiest. Crack all over and peel under running water, starting at the
+          blunt end where the air cell is.
+        - **A cracked shell?** A splash of vinegar in the water sets the white that leaks out.
+        - Hard-boiled eggs keep **a week in the fridge** in their shells.
+    hu:
+      title: Főzési idők
+      body: |
+        **L-es, hűtőből kivett tojásra**, kanállal óvatosan **forrásban lévő** vízbe engedve, élénken gyöngyözve, utána
+        **2 perc jeges víz** — megállítja a főzést, és könnyű lesz hámozni. M-es tojás: fél perccel kevesebb;
+        szobahőmérsékletű: kb. egy perccel kevesebb.
+
+        | Perc | Sárgája | Mire |
+        |---|---|---|
+        | 5 | folyós, a fehérje kemény | lágy tojás |
+        | 6 | folyós közép, lekvárszerű szél | ramen-tojás (6½) |
+        | 7 | lekváros | saláta, pirítós |
+        | 8 | épp megkötött, krémes | falatkák |
+        | 10 | kemény, sárga | szeletelés, kaszinótojás |
+        | 12 | teljesen kemény, halvány | tojássaláta, tojáskrém |
+        | 14 + | túlfőtt: szürkészöld gyűrű | — |
+
+        - **Hámozás:** az idősebb (2–3 hetes) tojás hámozható a legkönnyebben. Törd meg körben, és folyó víz alatt
+          hámozd, a tompa végétől kezdve, ahol a légkamra van.
+        - **Megrepedt héj?** Egy kis ecet a vízben megköti a kifolyó fehérjét.
+        - A keményre főtt tojás héjában **egy hétig** eláll a hűtőben.
+  - id: freshness
+    illustration: eggfloat
+    en:
+      title: How fresh is it?
+      body: |
+        **The float test:** put the egg in a glass of cold water.
+
+        | In the water | Age | Use |
+        |---|---|---|
+        | lies flat | days | poaching, frying |
+        | tilts up | 1–2 weeks | everything |
+        | stands on its point | 2–3 weeks | hard-boiling (peels easiest) — use soon |
+        | floats | old | crack it into a separate bowl; if it smells, out |
+
+        The shell is porous: as an egg ages, water leaves it and the **air cell** at the blunt end grows — that is what
+        lifts it. The test tells you **age, not safety**.
+
+        **The stamp on the shell** (EU), e.g. **1-HU-1234**:
+        - first digit: **0** organic · **1** free-range · **2** barn · **3** cages;
+        - **HU** — the country; then the farm's number.
+
+        - **Best before** is 28 days after laying. Keep eggs in the fridge in their box (they take on smells), not in the door.
+        - Don't wash eggs before storing them — it strips the protective layer.
+
+        > Eggs are naturally gluten-free.
+    hu:
+      title: Mennyire friss?
+      body: |
+        **Az úszópróba:** tedd a tojást egy pohár hideg vízbe.
+
+        | A vízben | Kor | Mire |
+        |---|---|---|
+        | fekszik | néhány napos | buggyantva, tükörtojásnak |
+        | megbillen | 1–2 hetes | mindenre |
+        | a hegyére áll | 2–3 hetes | keményre főzni (így hámozható a legjobban) — hamar használd el |
+        | feljön | öreg | üsd külön tálba; ha szaga van, dobd ki |
+
+        A héj pórusos: ahogy a tojás öregszik, víz távozik belőle, és a tompa végén lévő **légkamra** megnő — ez emeli
+        fel. A próba a **kort mutatja, nem a biztonságot**.
+
+        **A pecsét a héjon** (EU), pl. **1-HU-1234**:
+        - az első szám: **0** bio · **1** szabadtartásos · **2** mélyalmos (istállós) · **3** ketreces;
+        - **HU** — az ország; utána a gazdaság száma.
+
+        - A **minőségmegőrzési idő** a tojásrakás utáni 28. nap. Hűtőben, a dobozában tárold (átveszi a szagokat), ne az ajtóban.
+        - Tárolás előtt ne mosd meg — lemosod róla a védőréteget.
+
+        > A tojás természeténél fogva gluténmentes.
+  - id: cooking
+    chart:
+      type: picker
+      items:
+        - {label: {en: Fried, hu: Tükörtojás}, icon: "om:1F373", value: {en: medium-low, hu: közepes-alacsony}, note: {en: "Butter or oil, medium-low heat, crack it in, lid on for 2–3 minutes to set the top. Crisp edges: a hotter pan and more fat.", hu: "Vaj vagy olaj, közepes-alacsony láng, üsd bele, fedővel 2–3 percig, hogy a teteje is megkössön. Ropogós szél: forróbb serpenyő, több zsiradék."}}
+        - {label: {en: Over easy, hu: Fordított tükörtojás}, icon: "om:1F373", value: {en: "+30 s", hu: "+30 mp"}, note: {en: "Flip it once, 30 seconds more for a runny yolk.", hu: "Fordítsd meg egyszer, még 30 másodperc a folyós sárgájáért."}}
+        - {label: {en: Poached, hu: Buggyantott}, icon: "om:1F95A", value: {en: "3 min", hu: "3 perc"}, note: {en: "A very fresh egg, water barely simmering, a splash of vinegar, a gentle swirl; 3 minutes, out with a slotted spoon.", hu: "Nagyon friss tojás, alig gyöngyöző víz, egy kevés ecet, óvatos örvény; 3 perc, szűrőkanállal ki."}}
+        - {label: {en: Scrambled, hu: Tojásrántotta}, icon: "om:1F963", value: {en: low, hu: alacsony}, note: {en: "Low heat, butter, stir slowly and take it off while still a little wet — it keeps cooking. A spoon of sour cream at the end makes it creamier.", hu: "Alacsony láng, vaj, lassan keverd, és még kicsit nedvesen vedd le — tovább sül. A végén egy kanál tejföl krémesebbé teszi."}}
+        - {label: {en: Omelette, hu: Omlett}, icon: "om:1F95A", value: {en: "1–2 min", hu: "1–2 perc"}, note: {en: "2–3 eggs beaten with a pinch of salt; medium heat, butter; pull the edges in, fill, fold.", hu: "2–3 tojás egy csipet sóval felverve; közepes láng, vaj; a szélét húzd befelé, töltsd meg, hajtsd félbe."}}
+        - {label: {en: Hungarian rántotta, hu: Kolbászos rántotta}, icon: "om:1F953", value: {en: "bacon or kolbász", hu: "szalonna vagy kolbász"}, note: {en: "Bacon or kolbász first, a little onion, then the eggs — stirred, not too dry. Check the sausage is GF.", hu: "Előbb a szalonna vagy kolbász, egy kis hagyma, aztán a tojás — keverve, nem túl szárazra. A kolbász legyen GM."}}
+        - {label: {en: Eggs in lecsó, hu: Tojásos lecsó}, icon: "om:1F958", value: {en: "6–8 min", hu: "6–8 perc"}, note: {en: "Make hollows in hot lecsó or tomato sauce, crack the eggs in, lid on, 6–8 minutes.", hu: "A forró lecsóba vagy paradicsomszószba mélyedéseket csinálj, üsd bele a tojásokat, fedő, 6–8 perc."}}
+    en:
+      title: Ways to cook them
+      body: |
+        - **Fried:** butter or oil, medium-low heat, lid on for 2–3 minutes to set the top. **Over easy:** flip once,
+          30 seconds more.
+        - **Poached:** the freshest eggs; water barely simmering with a splash of vinegar; a gentle swirl, 3 minutes.
+        - **Scrambled:** low heat, butter, stir slowly, off the heat while still a little wet; a spoon of sour cream for
+          creaminess.
+        - **Omelette:** 2–3 eggs, a pinch of salt, medium heat, butter; pull in the edges, fill, fold — 1–2 minutes.
+        - **Hungarian rántotta:** bacon or kolbász first (GF sausage), a little onion, then the eggs.
+        - **Eggs in lecsó:** hollows in the hot lecsó, eggs in, lid on, 6–8 minutes.
+
+        > Raw or runny eggs for small children, pregnant or elderly guests: use pasteurised eggs, or cook them through.
+    hu:
+      title: Elkészítési módok
+      body: |
+        - **Tükörtojás:** vaj vagy olaj, közepes-alacsony láng, fedővel 2–3 percig, hogy a teteje megkössön.
+          **Fordított:** egyszer fordítsd meg, még 30 másodperc.
+        - **Buggyantott:** a legfrissebb tojás; alig gyöngyöző víz egy kevés ecettel; óvatos örvény, 3 perc.
+        - **Tojásrántotta:** alacsony láng, vaj, lassan keverd, és még kicsit nedvesen vedd le; egy kanál tejföl a
+          krémességért.
+        - **Omlett:** 2–3 tojás, egy csipet só, közepes láng, vaj; a szélét húzd befelé, töltsd meg, hajtsd félbe — 1–2 perc.
+        - **Kolbászos rántotta:** előbb a szalonna vagy kolbász (GM kolbász), kevés hagyma, aztán a tojás.
+        - **Tojásos lecsó:** mélyedések a forró lecsóban, bele a tojás, fedő, 6–8 perc.
+
+        > Kisgyereknek, várandós vagy idős vendégnek nyers vagy folyós tojást csak pasztőrözött tojásból — vagy süsd, főzd át.
+  - id: sizes
+    chart:
+      type: bars
+      unit: g
+      max: 85
+      marker: {value: 53, label: {en: "53 g — recipes usually mean M (53–63 g)", hu: "53 g — a recept általában M-es tojással számol (53–63 g)"}}
+      items:
+        - {value: 45, to: 53, label: "S", fill: "#F6E7B0", note: {en: under 53 g, hu: 53 g alatt}}
+        - {value: 53, to: 63, label: "M", fill: "#F3D77A", note: {en: "53–63 g", hu: "53–63 g"}}
+        - {value: 63, to: 73, label: "L", fill: "#F2C440", note: {en: "63–73 g", hu: "63–73 g"}}
+        - {value: 73, to: 80, label: "XL", fill: "#E8B04A", note: {en: 73 g and up, hu: 73 g felett}}
+    en:
+      title: Sizes and separating
+      body: |
+        EU size classes, by weight in the shell:
+
+        | Size | Weight |
+        |---|---|
+        | S | under 53 g |
+        | M | 53–63 g |
+        | L | 63–73 g |
+        | XL | 73 g and up |
+
+        - Recipes mean **M** unless they say otherwise. Out of the shell an M egg is about **50 g**: yolk about 17 g, white
+          about 33 g — useful when GF baking goes by weight.
+        - **Separating:** cold eggs separate more cleanly; pass the yolk between the shell halves, or lift it out with
+          clean fingers. Separate each over a small bowl first, so one broken yolk can't spoil the whole batch of whites.
+        - Spare whites freeze for months; spare yolks keep a day or two in the fridge under a little water.
+    hu:
+      title: Méretek és szétválasztás
+      body: |
+        Uniós méretosztályok, héjjal mért tömeg szerint:
+
+        | Méret | Tömeg |
+        |---|---|
+        | S | 53 g alatt |
+        | M | 53–63 g |
+        | L | 63–73 g |
+        | XL | 73 g felett |
+
+        - A receptek **M-es** tojással számolnak, hacsak mást nem írnak. Héj nélkül egy M-es tojás kb. **50 g**: a sárgája
+          kb. 17 g, a fehérje kb. 33 g — jól jön, ha a GM sütés grammra megy.
+        - **Szétválasztás:** a hideg tojás tisztábban válik szét; a sárgáját öntögesd át a két héjfél között, vagy emeld ki
+          tiszta ujjal. Mindegyiket előbb egy kis tál fölött válaszd szét, hogy egy kifolyt sárgája ne rontsa el az összes
+          fehérjét.
+        - A megmaradt fehérje hónapokig fagyasztható; a sárgája egy-két napig áll el a hűtőben, kevés vízzel leöntve.
+  - id: whipping
+    chart:
+      type: steps
+      items:
+        - {icon: "om:1F963", label: {en: Clean bowl, hu: Tiszta tál}, note: {en: "A spotless, grease-free bowl (wipe it with lemon or vinegar), whites at room temperature, not a speck of yolk.", hu: "Makulátlan, zsírmentes tál (töröld ki citrommal vagy ecettel), szobahőmérsékletű fehérje, egy csepp sárgája se."}}
+        - {icon: "om:1F4A8", label: {en: Foamy, hu: Habos}, time: {en: "1 min", hu: "1 perc"}, note: {en: "Medium speed until frothy and white; a pinch of salt or a few drops of lemon juice steadies it.", hu: "Közepes fokozaton, amíg habos és fehér; egy csipet só vagy pár csepp citromlé stabilizálja."}}
+        - {icon: "om:2601", label: {en: Soft peaks, hu: Lágy hab}, note: {en: "The peaks droop over when you lift the whisk — for folding into batters and soufflés.", hu: "A habverőt kiemelve a csúcsok lehajlanak — masszába, felfújtba forgatáshoz."}}
+        - {icon: "om:26F0", label: {en: Stiff and glossy, hu: "Kemény, fényes"}, note: {en: "Add sugar a spoon at a time (about 50–60 g per white for meringue) until glossy and standing; tip the bowl — it doesn't slide.", hu: "Kanalanként add hozzá a cukrot (habcsókhoz fehérjénként kb. 50–60 g), amíg fényes és megáll; ha megdöntöd a tálat, nem csúszik."}}
+        - {icon: "om:26A0", label: {en: Overbeaten, hu: Túlvert}, note: {en: "Grainy and dry, water seeps out — stop earlier next time. Rescue: beat in one more white.", hu: "Darabos és száraz, víz válik ki belőle — legközelebb állj meg előbb. Mentés: verj bele még egy fehérjét."}}
+    en:
+      title: Whipping whites
+      body: |
+        1. **A clean bowl:** spotless and grease-free (wipe it with lemon or vinegar); whites at room temperature; not a
+           speck of yolk — fat stops the foam.
+        2. **Foamy:** medium speed until frothy; a pinch of salt or a few drops of lemon juice steadies it.
+        3. **Soft peaks** droop over when you lift the whisk — for folding into batters and soufflés.
+        4. **Stiff and glossy:** add sugar a spoon at a time (about 50–60 g per white for meringue) until the peaks stand
+           and the bowl can be tipped.
+        5. **Overbeaten:** grainy, dry, weeping — stop earlier. Rescue it by beating in one more white.
+
+        - **Folding in:** a third first to loosen the batter, then the rest gently with a spatula, in figures of eight.
+        - Whipped whites are the lift in GF sponge cakes — see *Baking*.
+    hu:
+      title: Habverés
+      body: |
+        1. **Tiszta tál:** makulátlan, zsírmentes (töröld ki citrommal vagy ecettel); szobahőmérsékletű fehérje; egy csepp
+           sárgája se — a zsír nem engedi habosodni.
+        2. **Habos:** közepes fokozaton, amíg habos; egy csipet só vagy pár csepp citromlé stabilizálja.
+        3. **Lágy hab:** a habverőt kiemelve a csúcsok lehajlanak — masszába, felfújtba forgatáshoz.
+        4. **Kemény, fényes:** kanalanként add hozzá a cukrot (habcsókhoz fehérjénként kb. 50–60 g), amíg a csúcsok
+           megállnak, és a tál megdönthető.
+        5. **Túlvert:** darabos, száraz, levet ereszt — állj meg előbb. Mentés: verj bele még egy fehérjét.
+
+        - **Beforgatás:** előbb egyharmadát, hogy lazuljon a massza, aztán a többit óvatosan, spatulával, nyolcasokat leírva.
+        - A felvert fehérje adja a GM piskóta emelését — lásd *Sütés*.
